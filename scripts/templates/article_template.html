@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ excerpt }}">
+    <meta name="keywords" content="{{ tags | join(', ') }}">
+    <meta name="author" content="{{ author }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ title }} | Al-Tijarah — Islamic Economics">
+    <meta property="og:description" content="{{ excerpt }}">
+    <title>{{ title }} | Al-Tijarah — Islamic Economics</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+    <script>
+      (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">Islamic Economics</a>
+            <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                  <button class="nav-dropdown-toggle">Learn <span class="nav-dropdown-arrow">&#9662;</span></button>
+                  <ul class="nav-dropdown-menu">
+                    <li><a href="../foundations.html">Foundations</a></li>
+                    <li><a href="../theory.html">Theory</a></li>
+                    <li><a href="../research.html">Research</a></li>
+                    <li><a href="../history.html">History</a></li>
+                  </ul>
+                </li>
+                <li><a href="../scriptures.html" class="nav-link">Scriptures</a></li>
+                <li><a href="../dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="../podcast.html" class="nav-link">Media</a></li>
+                <li><a href="../blog.html" class="nav-link active">Al-Tijarah</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+            </ul>
+            <a href="../ur/blog.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+              <span class="icon-moon">&#9790;</span>
+              <span class="icon-sun">&#9788;</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="blog-main">
+        <div class="container">
+            <!-- Breadcrumb Navigation -->
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog.html">Al-Tijarah</a></li>
+                    <li><span aria-current="page">{{ title }}</span></li>
+                </ol>
+            </nav>
+
+            <div class="blog-content-wrapper">
+                <!-- Main Article -->
+                <article class="blog-article">
+                    <!-- Article Header -->
+                    <header class="article-header">
+                        <h1>{{ title }}</h1>
+                        <div class="article-meta">
+                            <span class="meta-author">
+                                <strong>By</strong> {{ author }}
+                            </span>
+                            <span class="meta-date">
+                                {{ date_formatted }}
+                            </span>
+                            <span class="meta-reading-time">
+                                {{ read_time }} min read
+                            </span>
+                            <span class="meta-category">
+                                <a href="../blog.html?category={{ category }}">{{ category_label }}</a>
+                            </span>
+                        </div>
+                    </header>
+
+                    <!-- Article Body -->
+                    <section class="article-body">
+                        {{ content }}
+                    </section>
+
+                    <!-- Article Footer -->
+                    <footer class="article-footer">
+                        <!-- Tags -->
+                        <div class="article-tags">
+                            <span class="tag-label">Tags:</span>
+                            {% for tag in tags %}
+                            <a href="../blog.html?tag={{ tag | lower | replace(' ', '-') }}" class="tag">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Share Buttons -->
+                        <div class="article-share">
+                            <span class="share-label">Share:</span>
+                            <a href="https://twitter.com/intent/tweet?url=&text={{ title | urlencode }}" class="share-btn share-twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">Twitter</a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/" class="share-btn share-linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">LinkedIn</a>
+                            <a href="mailto:?subject={{ title | urlencode }}&body=" class="share-btn share-email" aria-label="Share via Email">Email</a>
+                        </div>
+
+                        <!-- Author Bio -->
+                        <div class="author-bio">
+                            <div class="author-bio-content">
+                                <h3 class="author-name">{{ author }}</h3>
+                                <p>{{ author_bio }}</p>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Related Posts -->
+                    <section class="sidebar-section">
+                        <h3 class="sidebar-heading">Related Posts</h3>
+                        <div class="related-posts">
+                            {% for related in related_articles %}
+                            <article class="related-post-card">
+                                <h4><a href="{{ related.slug }}.html">{{ related.title }}</a></h4>
+                                <p class="post-excerpt">{{ related.excerpt }}</p>
+                                <span class="post-date">{{ related.date_formatted }}</span>
+                            </article>
+                            {% endfor %}
+                        </div>
+                    </section>
+
+                    <!-- Subscribe Box -->
+                    <section class="sidebar-section">
+                        <div class="subscribe-box">
+                            <h3 class="sidebar-heading">Subscribe to Al-Tijarah</h3>
+                            <p>Get the latest articles on Islamic economics delivered to your inbox.</p>
+                            <form class="subscribe-form" onsubmit="event.preventDefault(); this.innerHTML='<p style=\'color:var(--color-primary); font-weight:600;\'>Thank you for subscribing!</p>';">
+                                <input type="email" placeholder="Your email" required aria-label="Email address">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <!-- Categories -->
+                    <section class="sidebar-section">
+                        <h3 class="sidebar-heading">Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="../blog.html?category=markets">Markets & Finance</a></li>
+                            <li><a href="../blog.html?category=policy">Policy & Governance</a></li>
+                            <li><a href="../blog.html?category=analysis">Analysis</a></li>
+                            <li><a href="../blog.html?category=scripture">Scripture & Economy</a></li>
+                            <li><a href="../blog.html?category=opinion">Opinion</a></li>
+                            <li><a href="../blog.html?category=oic">OIC Economies</a></li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">Islamic Economics</a>
+            <p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought — from the earliest markets of Medina to today's global Islamic finance industry.</p>
+            <blockquote class="footer-ayah">
+              <p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
+              <cite>— Al-Baqarah 2:188</cite>
+            </blockquote>
+          </div>
+          <nav class="footer-nav">
+            <div class="footer-nav-group">
+              <h4 class="footer-heading">Knowledge</h4>
+              <ul class="footer-links">
+                <li><a href="../foundations.html">Foundations</a></li>
+                <li><a href="../scriptures.html">Scriptures</a></li>
+                <li><a href="../theory.html">Theory</a></li>
+                <li><a href="../history.html">History</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-group">
+              <h4 class="footer-heading">Modern Economy</h4>
+              <ul class="footer-links">
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../dashboard.html">Dashboard</a></li>
+                <li><a href="../podcast.html">Media</a></li>
+                <li><a href="../blog.html">Al-Tijarah</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-group">
+              <h4 class="footer-heading">Connect</h4>
+              <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+                <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+              </div>
+              <form class="footer-subscribe" data-newsletter-form>
+                <input type="email" placeholder="Your email" class="form-input" required>
+                <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Islamic Economics</p>
+          <a href="../about.html" class="footer-bottom-link">About</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">&uarr;</button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script>
+    // Dropdown nav toggle
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.closest('.nav-dropdown').classList.toggle('open');
+      });
+    });
+    </script>
+</body>
+</html>

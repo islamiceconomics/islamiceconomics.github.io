@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="صحائف — قرآنی آیات اور اہم احادیث کی تلاش جو اسلامی معاشیات کے موضوعات پر ہوں۔ سود، زکوٰۃ، تجارت، عدل وغیرہ کا جامع حوالہ۔">
+  <title>صحائف — اسلامی معاشیات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+  <script>
+    (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <style>
+    /* ========== SOURCES PAGE STYLES ========== */
+
+    .sources-search-bar {
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+    .sources-search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.25rem 0.9rem 3rem;
+      font-size: 1.05rem;
+      font-family: var(--font-sans);
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-full);
+      background: #fff;
+      color: var(--color-text-primary);
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+      outline: none;
+    }
+    .sources-search-bar input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(26,92,58,0.12);
+    }
+    .sources-search-bar .search-icon {
+      position: absolute;
+      right: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--color-text-light);
+      font-size: 1.1rem;
+      pointer-events: none;
+    }
+    .sources-search-bar .search-clear {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--color-text-light);
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: none;
+      padding: 0.25rem;
+    }
+    .sources-search-bar .search-clear.visible { display: block; }
+
+    /* Stats bar */
+    .sources-stats {
+      text-align: center;
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      margin-bottom: 1.5rem;
+    }
+    .sources-stats strong { color: var(--color-primary); font-weight: 600; }
+
+    /* Source type toggle */
+    .source-type-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .type-btn {
+      padding: 0.45rem 1.1rem;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-full);
+      background: #fff;
+      color: var(--color-text-secondary);
+      font-family: var(--font-sans);
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .type-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .type-btn.active {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+
+    /* Topic filter chips */
+    .topic-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .topic-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1.5px solid var(--color-border);
+      background: #fff;
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-sm);
+      font-family: var(--font-sans);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+    .topic-chip:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .topic-chip.active {
+      color: #fff;
+      border-color: transparent;
+    }
+    .topic-chip .chip-icon { font-size: 0.85rem; }
+    .topic-chip .chip-count {
+      background: rgba(0,0,0,0.08);
+      border-radius: var(--radius-full);
+      padding: 0.1rem 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    .topic-chip.active .chip-count { background: rgba(255,255,255,0.25); }
+
+    /* Entry cards */
+    .entries-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .entry-card {
+      background: #fff;
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+      position: relative;
+    }
+    .entry-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+    }
+    .entry-card.expanded {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Card header row */
+    .entry-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .entry-type-badge {
+      flex-shrink: 0;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 0.15rem;
+    }
+    .entry-type-badge.quran {
+      background: #e8f5e9;
+      color: #1b5e20;
+    }
+    .entry-type-badge.hadith {
+      background: #e3f2fd;
+      color: #0d47a1;
+    }
+    .entry-ref {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      font-size: 0.95rem;
+      flex: 1;
+    }
+    .entry-expand-icon {
+      flex-shrink: 0;
+      color: var(--color-text-light);
+      font-size: 1.1rem;
+      transition: transform var(--transition-fast);
+    }
+    .entry-card.expanded .entry-expand-icon { transform: rotate(180deg); }
+
+    /* Translation preview */
+    .entry-translation-preview {
+      margin-top: 0.5rem;
+      color: var(--color-text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .entry-card.expanded .entry-translation-preview {
+      -webkit-line-clamp: unset;
+      overflow: visible;
+    }
+
+    /* Topic tags on card */
+    .entry-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.6rem;
+    }
+    .entry-topic-tag {
+      font-size: 0.68rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    /* Expanded content */
+    .entry-expanded-content {
+      display: none;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--color-border-light);
+    }
+    .entry-card.expanded .entry-expanded-content { display: block; }
+
+    .entry-arabic {
+      font-size: 1.35rem;
+      line-height: 2;
+      text-align: right;
+      direction: rtl;
+      color: var(--color-text-primary);
+      font-family: 'Traditional Arabic', 'Simplified Arabic', serif;
+      background: #faf8f0;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-md);
+      border-right: 3px solid var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+    .entry-full-translation {
+      color: var(--color-text-primary);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+    .entry-context {
+      color: var(--color-text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.55;
+      padding: 0.75rem;
+      background: var(--color-bg-secondary);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.75rem;
+    }
+    .entry-context strong { color: var(--color-text-primary); }
+    .entry-hadith-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--color-text-light);
+      margin-bottom: 0.75rem;
+    }
+    .entry-hadith-meta span { display: inline-flex; align-items: center; gap: 0.3rem; }
+
+    /* Related entries */
+    .entry-related {
+      margin-top: 0.5rem;
+    }
+    .entry-related-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+    .entry-related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .entry-related-link {
+      font-size: 0.78rem;
+      color: var(--color-primary);
+      background: rgba(26,92,58,0.06);
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background var(--transition-fast);
+    }
+    .entry-related-link:hover {
+      background: rgba(26,92,58,0.14);
+    }
+
+    /* No results */
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--color-text-light);
+    }
+    .no-results-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .no-results h3 {
+      font-family: var(--font-serif);
+      color: var(--color-text-secondary);
+      font-size: 1.15rem;
+      margin-bottom: 0.35rem;
+    }
+
+    /* Topic detail header */
+    .topic-detail-banner {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius-lg);
+      color: #fff;
+      position: relative;
+    }
+    .topic-detail-banner.visible { display: block; }
+    .topic-detail-banner h3 {
+      color: #fff;
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 0.25rem;
+    }
+    .topic-ar {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      direction: rtl;
+    }
+    .topic-detail-banner p {
+      font-size: 0.88rem;
+      opacity: 0.9;
+      margin-top: 0.35rem;
+      line-height: 1.5;
+    }
+    .topic-detail-close {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: #fff;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Interlinkage map section */
+    .interlinkage-section {
+      max-width: 900px;
+      margin: 3rem auto 0;
+      padding: 2rem 0;
+      border-top: 1px solid var(--color-border-light);
+    }
+    .interlinkage-section h2 {
+      font-family: var(--font-serif);
+      color: var(--color-text-primary);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .interlinkage-section p {
+      color: var(--color-text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .topic-network {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .topic-network-card {
+      padding: 1rem;
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+    .topic-network-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .topic-network-card h4 {
+      font-family: var(--font-serif);
+      color: var(--color-text-primary);
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .topic-network-card .connections {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+    .topic-network-card .connection-dots {
+      display: flex;
+      gap: 0.25rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .connection-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+
+    /* Dark mode overrides for Sources page */
+    [data-theme="dark"] .sources-search-bar input {
+      background: #151d28;
+      border-color: #3a4555;
+      color: #f0f4f8;
+    }
+    [data-theme="dark"] .sources-search-bar input:focus {
+      border-color: #4cc882;
+      box-shadow: 0 0 0 3px rgba(76,200,130,0.15);
+    }
+    [data-theme="dark"] .sources-search-bar .search-icon { color: #6b7a8a; }
+    [data-theme="dark"] .type-btn {
+      background: #1a2230;
+      border-color: #334155;
+      color: #b8c4d0;
+    }
+    [data-theme="dark"] .type-btn:hover { border-color: #4cc882; color: #4cc882; }
+    [data-theme="dark"] .type-btn.active {
+      background: #4cc882;
+      color: #0b0e11;
+      border-color: #4cc882;
+    }
+    [data-theme="dark"] .topic-chip {
+      background: #1a2230;
+      border-color: #334155;
+      color: #b8c4d0;
+    }
+    [data-theme="dark"] .topic-chip:hover { border-color: #4cc882; color: #4cc882; }
+    [data-theme="dark"] .entry-card {
+      background: #1a2230;
+      border-color: #334155;
+    }
+    [data-theme="dark"] .entry-card:hover,
+    [data-theme="dark"] .entry-card.expanded {
+      border-color: #4cc882;
+    }
+    [data-theme="dark"] .entry-ref { color: #f0f4f8; }
+    [data-theme="dark"] .entry-translation-preview { color: #b8c4d0; }
+    [data-theme="dark"] .entry-arabic {
+      background: #151d28;
+      color: #e8dcc8;
+      border-right-color: #e8c65a;
+    }
+    [data-theme="dark"] .entry-full-translation { color: #c8d6e0; }
+    [data-theme="dark"] .entry-context {
+      background: #111820;
+      color: #9ca8b8;
+    }
+    [data-theme="dark"] .entry-context strong { color: #e0e8f0; }
+    [data-theme="dark"] .entry-expanded-content { border-top-color: #2a3545; }
+    [data-theme="dark"] .entry-related-link {
+      background: rgba(76,200,130,0.1);
+      color: #5ad994;
+    }
+    [data-theme="dark"] .entry-related-link:hover { background: rgba(76,200,130,0.2); }
+    [data-theme="dark"] .topic-detail-banner { box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+    [data-theme="dark"] .topic-network-card {
+      background: #1a2230;
+      border-color: #334155;
+    }
+    [data-theme="dark"] .topic-network-card:hover { border-color: #4cc882; }
+    [data-theme="dark"] .interlinkage-section { border-top-color: #2a3545; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .sources-search-bar input { font-size: 0.95rem; padding-right: 2.5rem; }
+      .topic-filters { gap: 0.35rem; }
+      .topic-chip { font-size: 0.75rem; padding: 0.25rem 0.6rem; }
+      .entry-card { padding: 1rem; }
+      .entry-arabic { font-size: 1.15rem; }
+      .source-type-toggle { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">اسلامی معاشیات</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="نیویگیشن ٹوگل">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">ہوم</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle">سیکھیں <span class="nav-dropdown-arrow">&#9662;</span></button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="foundations.html">بنیادیں</a></li>
+            <li><a href="theory.html">نظریہ</a></li>
+            <li><a href="research.html">تحقیق</a></li>
+            <li><a href="history.html">تاریخ</a></li>
+          </ul>
+        </li>
+        <li><a href="scriptures.html" class="nav-link active">قرآن و حدیث</a></li>
+        <li><a href="dashboard.html" class="nav-link">ڈیش بورڈ</a></li>
+        <li><a href="podcast.html" class="nav-link">میڈیا</a></li>
+        <li><a href="blog.html" class="nav-link">التجارۃ</a></li>
+        <li><a href="about.html" class="nav-link">تعارف</a></li>
+      </ul>
+      <a href="../scriptures.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+      <button class="theme-toggle" aria-label="ڈارک موڈ ٹوگل">
+        <span class="icon-moon">&#9790;</span>
+        <span class="icon-sun">&#9788;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-sm">
+    <div class="container">
+      <h1 class="fade-up">قرآن و حدیث</h1>
+      <p>قرآنی آیات اور احادیث کے بارے میں جو اسلامی معاشیات کے موضوعات سے متعلق ہوں — قابل تلاش، حوالہ جات کے ساتھ، اور ایک دوسرے سے جڑے ہوئے۔</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+
+    <!-- Search Bar -->
+    <div class="sources-search-bar">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="sourceSearch" placeholder="آیات، احادیث یا مختلف الفاظ تلاش کریں..." autocomplete="off">
+      <button class="search-clear" id="searchClear">&times;</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="sources-stats" id="sourcesStats"></div>
+
+    <!-- Source Type Toggle -->
+    <div class="source-type-toggle">
+      <button class="type-btn active" data-type="all">تمام ذرائع</button>
+      <button class="type-btn" data-type="quran">قرآن</button>
+      <button class="type-btn" data-type="hadith">حدیث</button>
+    </div>
+
+    <!-- Topic Filter Chips -->
+    <div class="topic-filters" id="topicFilters"></div>
+
+    <!-- Topic Detail Banner -->
+    <div class="topic-detail-banner" id="topicDetailBanner">
+      <button class="topic-detail-close" id="topicDetailClose">&times;</button>
+      <h3 id="topicDetailName"></h3>
+      <span class="topic-ar" id="topicDetailAr"></span>
+      <p id="topicDetailDesc"></p>
+    </div>
+
+    <!-- Entry Cards -->
+    <div class="entries-grid" id="entriesGrid"></div>
+
+    <!-- No Results -->
+    <div class="no-results" id="noResults" style="display:none;">
+      <div class="no-results-icon">&#128214;</div>
+      <h3>کوئی نتیجہ نہیں ملا</h3>
+      <p>براہ کرم اپنی تلاش یا فلٹر تبدیل کریں۔</p>
+    </div>
+
+    <!-- Interlinkage Map -->
+    <div class="interlinkage-section" id="interlinkageSection">
+      <h2>موضوعات کے درمیان تعلق</h2>
+      <p>دیکھیں کہ اسلامی معاشیات کے موضوعات کتنے ایک دوسرے سے جڑے ہوئے ہیں۔ کوئی بھی موضوع اختیار کریں۔</p>
+      <div class="topic-network" id="topicNetwork"></div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">اسلامی معاشیات</a>
+          <p class="footer-brand-desc">اسلامی معاشی فکر کی الہٰیاتی بنیادوں، باقاعدہ نظریے، تاریخی ارتقاء اور جدید عمل کی تلاش — مدینہ کی ابتدائی منڈیوں سے لے کر آج کی عالمی اسلامی مالیاتی صنعت تک۔</p>
+          <blockquote class="footer-ayah">
+            <p>"اور ایک دوسرے کا مال ناحق نہ کھاؤ اور نہ حکمرانوں کو رشوت دو تاکہ لوگوں کے مال کا کچھ حصہ ناجائز طور پر کھا سکو۔"</p>
+            <cite>— البقرۃ 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">علم</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">بنیادیں</a></li>
+              <li><a href="scriptures.html">قرآن و حدیث</a></li>
+              <li><a href="theory.html">نظریہ</a></li>
+              <li><a href="history.html">تاریخ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">جدید معیشت</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">تحقیق</a></li>
+              <li><a href="dashboard.html">ڈیش بورڈ</a></li>
+              <li><a href="podcast.html">میڈیا</a></li>
+              <li><a href="blog.html">التجارۃ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">رابطہ</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="آپ کی ای میل" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">سبسکرائب</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 اسلامی معاشیات</p>
+        <a href="about.html" class="footer-bottom-link">تعارف</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load Urdu scripture data -->
+  <script src="../js/scripture-data-ur.js"></script>
+  <script src="../js/main.js"></script>
+
+  <button class="back-to-top" data-back-to-top aria-label="اوپر جائیں">&uarr;</button>
+
+  <script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+</script>
+
+  <script>
+  /* Scroll-triggered fade-up animation */
+  (function() {
+    var fadeEls = document.querySelectorAll('.fade-up');
+    if (!fadeEls.length) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    fadeEls.forEach(function(el) { observer.observe(el); });
+  })();
+  </script>
+
+  <script>
+  (function() {
+    'use strict';
+
+    // State
+    let activeType = 'all';
+    let activeTopic = null;
+    let searchQuery = '';
+    let expandedCards = new Set();
+
+    // DOM refs
+    const searchInput = document.getElementById('sourceSearch');
+    const searchClear = document.getElementById('searchClear');
+    const statsEl = document.getElementById('sourcesStats');
+    const filtersEl = document.getElementById('topicFilters');
+    const gridEl = document.getElementById('entriesGrid');
+    const noResultsEl = document.getElementById('noResults');
+    const topicBanner = document.getElementById('topicDetailBanner');
+    const networkEl = document.getElementById('topicNetwork');
+    const interlinkageSection = document.getElementById('interlinkageSection');
+
+    // Get topic by id
+    function getTopic(id) {
+      return SCRIPTURE_DATA_UR.topics.find(t => t.id === id);
+    }
+
+    // Get entry by id
+    function getEntry(id) {
+      return SCRIPTURE_DATA_UR.entries.find(e => e.id === id);
+    }
+
+    // Count entries per topic
+    function countByTopic(topicId) {
+      return SCRIPTURE_DATA_UR.entries.filter(e => e.topics.includes(topicId)).length;
+    }
+
+    // Render topic filter chips
+    function renderFilters() {
+      filtersEl.innerHTML = SCRIPTURE_DATA_UR.topics.map(t => {
+        const count = countByTopic(t.id);
+        const isActive = activeTopic === t.id;
+        return `<button class="topic-chip${isActive ? ' active' : ''}" data-topic="${t.id}" style="${isActive ? 'background:'+t.color+';border-color:'+t.color : ''}">
+          <span class="chip-icon">${t.icon}</span>
+          ${t.name}
+          <span class="chip-count">${count}</span>
+        </button>`;
+      }).join('');
+    }
+
+    // Render topic detail banner
+    function renderTopicBanner() {
+      if (!activeTopic) {
+        topicBanner.classList.remove('visible');
+        return;
+      }
+      const t = getTopic(activeTopic);
+      topicBanner.style.background = t.color;
+      document.getElementById('topicDetailName').textContent = t.icon + ' ' + t.name;
+      document.getElementById('topicDetailAr').textContent = t.nameAr;
+      document.getElementById('topicDetailDesc').textContent = t.description;
+      topicBanner.classList.add('visible');
+    }
+
+    // Filter entries
+    function getFilteredEntries() {
+      let entries = SCRIPTURE_DATA_UR.entries;
+
+      // Type filter
+      if (activeType !== 'all') {
+        entries = entries.filter(e => e.type === activeType);
+      }
+
+      // Topic filter
+      if (activeTopic) {
+        entries = entries.filter(e => e.topics.includes(activeTopic));
+      }
+
+      // Search filter
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase();
+        entries = entries.filter(e =>
+          e.reference.toLowerCase().includes(q) ||
+          e.translation.toLowerCase().includes(q) ||
+          e.arabic.includes(q) ||
+          e.context.toLowerCase().includes(q) ||
+          (e.collection && e.collection.toLowerCase().includes(q)) ||
+          e.topics.some(tid => {
+            const tp = getTopic(tid);
+            return tp && (tp.name.toLowerCase().includes(q) || tp.nameAr.includes(q));
+          })
+        );
+      }
+
+      return entries;
+    }
+
+    // Render entry card HTML
+    function renderEntryCard(entry) {
+      const isExpanded = expandedCards.has(entry.id);
+      const topicTags = entry.topics.map(tid => {
+        const t = getTopic(tid);
+        return t ? `<span class="entry-topic-tag" style="background:${t.color}">${t.name}</span>` : '';
+      }).join('');
+
+      // Related entries
+      let relatedHtml = '';
+      if (entry.relatedIds && entry.relatedIds.length > 0) {
+        const links = entry.relatedIds.map(rid => {
+          const rel = getEntry(rid);
+          return rel ? `<a class="entry-related-link" data-entry-id="${rid}">${rel.reference}</a>` : '';
+        }).filter(Boolean).join('');
+        if (links) {
+          relatedHtml = `<div class="entry-related">
+            <div class="entry-related-label">متعلقہ ذرائع</div>
+            <div class="entry-related-links">${links}</div>
+          </div>`;
+        }
+      }
+
+      // Hadith meta
+      let hadithMeta = '';
+      if (entry.type === 'hadith') {
+        hadithMeta = `<div class="entry-hadith-meta">
+          ${entry.collection ? `<span>&#128218; ${entry.collection}</span>` : ''}
+          ${entry.strength ? `<span>&#9989; ${entry.strength.charAt(0).toUpperCase() + entry.strength.slice(1)}</span>` : ''}
+        </div>`;
+      }
+
+      return `<div class="entry-card${isExpanded ? ' expanded' : ''}" data-entry-id="${entry.id}">
+        <div class="entry-header">
+          <span class="entry-type-badge ${entry.type}">${entry.type === 'quran' ? 'قرآن' : 'حدیث'}</span>
+          <span class="entry-ref">${entry.reference}</span>
+          <span class="entry-expand-icon">&#9660;</span>
+        </div>
+        <div class="entry-translation-preview">${entry.translation}</div>
+        <div class="entry-topics">${topicTags}</div>
+        <div class="entry-expanded-content">
+          <div class="entry-arabic">${entry.arabic}</div>
+          <div class="entry-full-translation">"${entry.translation}"</div>
+          ${hadithMeta}
+          <div class="entry-context"><strong>سیاق و تناسب:</strong> ${entry.context}</div>
+          ${relatedHtml}
+        </div>
+      </div>`;
+    }
+
+    // Render entries
+    function renderEntries() {
+      const filtered = getFilteredEntries();
+
+      // Stats
+      const quranCount = filtered.filter(e => e.type === 'quran').length;
+      const hadithCount = filtered.filter(e => e.type === 'hadith').length;
+      statsEl.innerHTML = `ظاہر ہو رہے ہیں <strong>${filtered.length}</strong> ذریعہ${filtered.length !== 1 ? 'ے' : ''} &mdash; <strong>${quranCount}</strong> قرآنی آیت${quranCount !== 1 ? 'یں' : ''}, <strong>${hadithCount}</strong> حدیث`;
+
+      if (filtered.length === 0) {
+        gridEl.innerHTML = '';
+        noResultsEl.style.display = 'block';
+        interlinkageSection.style.display = 'none';
+        return;
+      }
+
+      noResultsEl.style.display = 'none';
+      interlinkageSection.style.display = activeTopic || searchQuery.trim() ? 'none' : 'block';
+
+      gridEl.innerHTML = filtered.map(renderEntryCard).join('');
+    }
+
+    // Render interlinkage network
+    function renderNetwork() {
+      networkEl.innerHTML = SCRIPTURE_DATA_UR.topics.map(topic => {
+        // Find which other topics share entries with this topic
+        const thisEntries = SCRIPTURE_DATA_UR.entries.filter(e => e.topics.includes(topic.id));
+        const connectedTopics = new Set();
+        thisEntries.forEach(e => {
+          e.topics.forEach(tid => { if (tid !== topic.id) connectedTopics.add(tid); });
+        });
+
+        const dots = Array.from(connectedTopics).map(tid => {
+          const ct = getTopic(tid);
+          return ct ? `<span class="connection-dot" style="background:${ct.color}" title="${ct.name}"></span>` : '';
+        }).join('');
+
+        return `<div class="topic-network-card" data-topic="${topic.id}">
+          <h4>${topic.icon} ${topic.name}</h4>
+          <div class="connections">${thisEntries.length} ذرائع &middot; ${connectedTopics.size} جڑے ہوئے موضوعات</div>
+          <div class="connection-dots">${dots}</div>
+        </div>`;
+      }).join('');
+    }
+
+    // Scroll to entry by id
+    function scrollToEntry(entryId) {
+      expandedCards.add(entryId);
+      renderEntries();
+      setTimeout(() => {
+        const card = gridEl.querySelector(`[data-entry-id="${entryId}"]`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.style.boxShadow = '0 0 0 3px rgba(26,92,58,0.3)';
+          setTimeout(() => { card.style.boxShadow = ''; }, 2000);
+        }
+      }, 100);
+    }
+
+    // Event: search
+    searchInput.addEventListener('input', function() {
+      searchQuery = this.value;
+      searchClear.classList.toggle('visible', searchQuery.length > 0);
+      renderEntries();
+    });
+    searchClear.addEventListener('click', function() {
+      searchInput.value = '';
+      searchQuery = '';
+      searchClear.classList.remove('visible');
+      searchInput.focus();
+      renderEntries();
+    });
+
+    // Event: type toggle
+    document.querySelectorAll('.type-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        activeType = this.dataset.type;
+        renderEntries();
+      });
+    });
+
+    // Event: topic chip click
+    filtersEl.addEventListener('click', function(e) {
+      const chip = e.target.closest('.topic-chip');
+      if (!chip) return;
+      const tid = chip.dataset.topic;
+      if (activeTopic === tid) {
+        activeTopic = null; // deselect
+      } else {
+        activeTopic = tid;
+      }
+      renderFilters();
+      renderTopicBanner();
+      renderEntries();
+    });
+
+    // Event: topic banner close
+    document.getElementById('topicDetailClose').addEventListener('click', function() {
+      activeTopic = null;
+      renderFilters();
+      renderTopicBanner();
+      renderEntries();
+    });
+
+    // Event: card expand / related link click
+    gridEl.addEventListener('click', function(e) {
+      // Related link
+      const relLink = e.target.closest('.entry-related-link');
+      if (relLink) {
+        e.stopPropagation();
+        const rid = parseInt(relLink.dataset.entryId);
+        // Check if the entry is visible in current filter
+        const filtered = getFilteredEntries();
+        if (filtered.find(en => en.id === rid)) {
+          scrollToEntry(rid);
+        } else {
+          // Reset filters and show entry
+          activeTopic = null;
+          activeType = 'all';
+          searchQuery = '';
+          searchInput.value = '';
+          searchClear.classList.remove('visible');
+          document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+          document.querySelector('.type-btn[data-type="all"]').classList.add('active');
+          renderFilters();
+          renderTopicBanner();
+          scrollToEntry(rid);
+        }
+        return;
+      }
+
+      // Card expand/collapse
+      const card = e.target.closest('.entry-card');
+      if (!card) return;
+      const eid = parseInt(card.dataset.entryId);
+      if (expandedCards.has(eid)) {
+        expandedCards.delete(eid);
+      } else {
+        expandedCards.add(eid);
+      }
+      card.classList.toggle('expanded');
+    });
+
+    // Event: network card click
+    networkEl.addEventListener('click', function(e) {
+      const card = e.target.closest('.topic-network-card');
+      if (!card) return;
+      activeTopic = card.dataset.topic;
+      renderFilters();
+      renderTopicBanner();
+      renderEntries();
+      window.scrollTo({ top: filtersEl.offsetTop - 100, behavior: 'smooth' });
+    });
+
+    // Check URL params for topic
+    const urlParams = new URLSearchParams(window.location.search);
+    const topicParam = urlParams.get('topic');
+    if (topicParam && getTopic(topicParam)) {
+      activeTopic = topicParam;
+    }
+    const searchParam = urlParams.get('q');
+    if (searchParam) {
+      searchQuery = searchParam;
+      searchInput.value = searchParam;
+      searchClear.classList.add('visible');
+    }
+
+    // Initial render
+    renderFilters();
+    renderTopicBanner();
+    renderEntries();
+    renderNetwork();
+  })();
+  </script>
+</body>
+</html>

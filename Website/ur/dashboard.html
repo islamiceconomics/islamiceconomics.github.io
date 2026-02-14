@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معاشیات کا ڈیش بورڈ — اسلامی معاشیات</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+  <script>
+    (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <style>
+    /* ========== DASHBOARD STYLES ========== */
+
+    /* Aggregate stats row */
+    .agg-stats { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+    .agg-stat { text-align: center; flex: 1; min-width: 120px; }
+    .agg-stat-value { font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-primary); }
+    .agg-stat-label { font-size: 0.8rem; color: var(--color-text-secondary); margin-top: 0.15rem; }
+
+    /* Country selector grid */
+    .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 2.5rem; }
+    .country-card {
+      display: flex; align-items: center; gap: 0.8rem;
+      padding: 0.85rem 1rem; border: 1.5px solid var(--color-border); border-radius: var(--radius-md);
+      background: var(--color-surface); cursor: pointer; transition: all 0.2s; text-decoration: none; color: inherit;
+    }
+    .country-card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+    .country-card.active { border-color: var(--color-primary); background: rgba(26,92,58,0.04); box-shadow: 0 0 0 2px rgba(26,92,58,0.15); }
+    [data-theme="dark"] .country-card { background: #1a2230; border-color: #334155; }
+    [data-theme="dark"] .country-card:hover { border-color: #4cc882; }
+    [data-theme="dark"] .country-card.active { background: rgba(76,200,130,0.06); border-color: #4cc882; box-shadow: 0 0 0 2px rgba(76,200,130,0.15); }
+    .country-flag { font-size: 1.8rem; line-height: 1; }
+    .country-info { flex: 1; }
+    .country-name { font-family: var(--font-serif); font-size: 0.95rem; font-weight: 700; color: var(--color-text-primary); }
+    .country-meta { font-size: 0.72rem; color: var(--color-text-light); margin-top: 0.1rem; }
+    .country-gdp { font-size: 0.8rem; font-weight: 600; color: var(--color-primary); white-space: nowrap; }
+
+    /* Section tabs (Monitoring / Outlook / DSGE) */
+    .dash-tabs { display: flex; gap: 0; border-bottom: 2px solid var(--color-border); margin-bottom: 2rem; }
+    .dash-tab {
+      padding: 0.7rem 1.5rem; cursor: pointer; font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600;
+      color: var(--color-text-secondary); border: none; background: none; border-bottom: 3px solid transparent;
+      margin-bottom: -2px; transition: all 0.15s;
+    }
+    .dash-tab:hover { color: var(--color-primary); }
+    .dash-tab.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+    [data-theme="dark"] .dash-tabs { border-bottom-color: #334155; }
+    [data-theme="dark"] .dash-tab.active { color: #5ad994; border-bottom-color: #5ad994; }
+
+    /* Tab panels */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* Country header */
+    .country-header {
+      display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
+      padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-light);
+    }
+    .country-header-flag { font-size: 2.5rem; }
+    .country-header-name { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 700; color: var(--color-text-primary); }
+    .country-header-region { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .country-header-rating {
+      margin-right: auto; padding: 0.3rem 0.9rem; border-radius: var(--radius-full);
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .rating-positive { background: #d1fae5; color: #065f46; }
+    .rating-stable { background: #dbeafe; color: #1e40af; }
+    .rating-cautious { background: #fef3c7; color: #92400e; }
+    .rating-negative { background: #fee2e2; color: #991b1b; }
+    [data-theme="dark"] .rating-positive { background: rgba(16,185,129,0.15); color: #6ee7b7; }
+    [data-theme="dark"] .rating-stable { background: rgba(59,130,246,0.15); color: #93c5fd; }
+    [data-theme="dark"] .rating-cautious { background: rgba(245,158,11,0.15); color: #fcd34d; }
+    [data-theme="dark"] .rating-negative { background: rgba(239,68,68,0.15); color: #fca5a5; }
+
+    /* KPI grid */
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 0.8rem; margin-bottom: 2rem; }
+    .kpi-card {
+      padding: 1rem; border: 1px solid var(--color-border-light); border-radius: var(--radius-md);
+      background: var(--color-surface); text-align: center;
+    }
+    .kpi-value { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700; color: var(--color-primary); }
+    .kpi-label { font-size: 0.75rem; color: var(--color-text-secondary); margin-top: 0.2rem; }
+    .kpi-change { font-size: 0.7rem; margin-top: 0.15rem; }
+    .kpi-up { color: #10b981; }
+    .kpi-down { color: #ef4444; }
+    [data-theme="dark"] .kpi-card { background: #1a2230; border-color: #334155; }
+
+    /* Charts area */
+    .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+    .chart-box {
+      border: 1px solid var(--color-border-light); border-radius: var(--radius-md);
+      background: var(--color-surface); padding: 1.25rem; min-height: 280px;
+    }
+    .chart-box h4 { font-family: var(--font-serif); font-size: 0.95rem; color: var(--color-text-primary); margin-bottom: 1rem; }
+    [data-theme="dark"] .chart-box { background: #1a2230; border-color: #334155; }
+
+    /* Simple SVG chart styles */
+    .mini-chart { width: 100%; height: 200px; }
+    .chart-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .chart-area { opacity: 0.1; }
+    .chart-grid-line { stroke: var(--color-border-light); stroke-width: 0.5; }
+    [data-theme="dark"] .chart-grid-line { stroke: #2a3545; }
+    .chart-label { font-size: 10px; fill: var(--color-text-light); font-family: var(--font-sans); }
+    .chart-dot { r: 3.5; stroke: #fff; stroke-width: 1.5; }
+    [data-theme="dark"] .chart-dot { stroke: #1a2230; }
+
+    /* Bar chart (horizontal) */
+    .h-bar-container { display: flex; flex-direction: column; gap: 0.65rem; }
+    .h-bar-row { display: flex; align-items: center; gap: 0.6rem; }
+    .h-bar-label { font-size: 0.78rem; color: var(--color-text-secondary); min-width: 80px; text-align: left; }
+    .h-bar-track { flex: 1; height: 22px; background: var(--color-bg-secondary); border-radius: 4px; overflow: hidden; position: relative; }
+    .h-bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; display: flex; align-items: center; justify-content: flex-start; padding-left: 6px; }
+    .h-bar-val { font-size: 0.7rem; font-weight: 700; color: #fff; }
+    [data-theme="dark"] .h-bar-track { background: #111820; }
+
+    /* Structure pie placeholder */
+    .structure-row { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+    .structure-bars { flex: 1; min-width: 200px; }
+    .struct-bar-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
+    .struct-bar-label { font-size: 0.8rem; color: var(--color-text-secondary); min-width: 85px; }
+    .struct-bar-outer { flex: 1; height: 18px; background: var(--color-bg-secondary); border-radius: 4px; overflow: hidden; }
+    .struct-bar-inner { height: 100%; border-radius: 4px; }
+    .struct-bar-pct { font-size: 0.75rem; font-weight: 600; color: var(--color-text-primary); min-width: 40px; text-align: left; }
+    [data-theme="dark"] .struct-bar-outer { background: #111820; }
+
+    /* Outlook section */
+    .outlook-narrative {
+      font-size: 1rem; line-height: 1.75; color: var(--color-text-primary); margin-bottom: 2rem;
+      padding: 1.5rem; background: var(--color-bg-secondary); border-radius: var(--radius-md); border-right: 4px solid var(--color-primary);
+    }
+    [data-theme="dark"] .outlook-narrative { background: #151d28; }
+
+    .forecast-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+    .forecast-table th { background: var(--color-primary); color: #fff; padding: 0.6rem 0.8rem; font-size: 0.82rem; text-align: right; font-weight: 600; }
+    .forecast-table td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--color-border-light); font-size: 0.88rem; color: var(--color-text-primary); }
+    .forecast-table tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+    [data-theme="dark"] .forecast-table th { background: #1a3a2a; color: #d0f0e0; }
+    [data-theme="dark"] .forecast-table td { border-bottom-color: #2a3545; }
+    [data-theme="dark"] .forecast-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+    .risk-driver-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+    .risk-box, .driver-box {
+      padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);
+    }
+    .risk-box { border-right: 4px solid #ef4444; }
+    .driver-box { border-right: 4px solid #10b981; }
+    .risk-box h4, .driver-box h4 { font-size: 0.9rem; font-family: var(--font-serif); margin-bottom: 0.6rem; }
+    .risk-box h4 { color: #ef4444; }
+    .driver-box h4 { color: #10b981; }
+    .risk-box li, .driver-box li { font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 0.35rem; padding-right: 0.5rem; list-style: disc inside; }
+    [data-theme="dark"] .risk-box, [data-theme="dark"] .driver-box { background: #1a2230; border-color: #334155; }
+    [data-theme="dark"] .risk-box { border-right-color: #f87171; }
+    [data-theme="dark"] .driver-box { border-right-color: #34d399; }
+
+    /* DSGE section */
+    .dsge-status-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 700;
+    }
+    .dsge-available { background: #d1fae5; color: #065f46; }
+    .dsge-in-progress { background: #fef3c7; color: #92400e; }
+    .dsge-planned { background: #e5e7eb; color: #4b5563; }
+    [data-theme="dark"] .dsge-available { background: rgba(16,185,129,0.15); color: #6ee7b7; }
+    [data-theme="dark"] .dsge-in-progress { background: rgba(245,158,11,0.15); color: #fcd34d; }
+    [data-theme="dark"] .dsge-planned { background: rgba(156,163,175,0.15); color: #9ca3af; }
+
+    .dsge-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+    .dsge-detail-box { padding: 1.25rem; border: 1px solid var(--color-border-light); border-radius: var(--radius-md); }
+    .dsge-detail-box h4 { font-family: var(--font-serif); font-size: 0.9rem; color: var(--color-text-primary); margin-bottom: 0.6rem; }
+    .dsge-detail-box li { font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 0.3rem; padding-right: 0.5rem; list-style: disc inside; }
+    [data-theme="dark"] .dsge-detail-box { background: #1a2230; border-color: #334155; }
+
+    .dsge-placeholder {
+      text-align: center; padding: 3rem 1.5rem; border: 2px dashed var(--color-border);
+      border-radius: var(--radius-lg); margin-top: 1.5rem;
+    }
+    .dsge-placeholder-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .dsge-placeholder h3 { font-family: var(--font-serif); color: var(--color-text-secondary); font-size: 1.1rem; }
+    .dsge-placeholder p { color: var(--color-text-light); font-size: 0.88rem; margin-top: 0.3rem; }
+    [data-theme="dark"] .dsge-placeholder { border-color: #334155; }
+
+    /* Exports & partners tags */
+    .tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+    .tag-item {
+      padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600;
+      background: rgba(26,92,58,0.08); color: var(--color-primary);
+    }
+    [data-theme="dark"] .tag-item { background: rgba(76,200,130,0.1); color: #5ad994; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .charts-row { grid-template-columns: 1fr; }
+      .risk-driver-grid { grid-template-columns: 1fr; }
+      .dsge-detail-grid { grid-template-columns: 1fr; }
+      .country-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+      .kpi-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+      .dash-tab { padding: 0.55rem 0.8rem; font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">اسلامی معاشیات</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="نیویگیشن ٹوگل">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">ہوم</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle">سیکھیں <span class="nav-dropdown-arrow">&#9662;</span></button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="foundations.html">بنیادیں</a></li>
+            <li><a href="theory.html">نظریہ</a></li>
+            <li><a href="research.html">تحقیق</a></li>
+            <li><a href="history.html">تاریخ</a></li>
+          </ul>
+        </li>
+        <li><a href="scriptures.html" class="nav-link">قرآن و حدیث</a></li>
+        <li><a href="dashboard.html" class="nav-link active">ڈیش بورڈ</a></li>
+        <li><a href="podcast.html" class="nav-link">میڈیا</a></li>
+        <li><a href="blog.html" class="nav-link">التجارۃ</a></li>
+        <li><a href="about.html" class="nav-link">تعارف</a></li>
+      </ul>
+      <a href="../dashboard.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+      <button class="theme-toggle" aria-label="ڈارک موڈ ٹوگل">
+        <span class="icon-moon">&#9790;</span>
+        <span class="icon-sun">&#9788;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-sm">
+    <div class="container">
+      <h1 class="fade-up">معاشیات کا ڈیش بورڈ</h1>
+      <p>بڑی اسلام پر عمل کرنے والی معیشتوں کی نگرانی، نقطہ نظر، اور ساختی تجزیہ۔</p>
+    </div>
+  </section>
+
+  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
+
+    <!-- Aggregate Stats -->
+    <div class="agg-stats fade-up" id="aggStats"></div>
+
+    <!-- Country Selector -->
+    <h2 class="fade-up" style="font-family:var(--font-serif); font-size:1.3rem; margin-bottom:1rem;">معیشت کا انتخاب کریں</h2>
+    <div class="country-grid" id="countryGrid"></div>
+
+    <!-- Country Dashboard (hidden until selected) -->
+    <div id="countryDashboard" style="display:none;">
+
+      <!-- Country Header -->
+      <div class="country-header" id="countryHeaderEl"></div>
+
+      <!-- Section Tabs -->
+      <div class="dash-tabs">
+        <button class="dash-tab active" data-tab="monitoring">نگرانی</button>
+        <button class="dash-tab" data-tab="outlook">نقطہ نظر</button>
+        <button class="dash-tab" data-tab="dsge">DSGE تجزیہ</button>
+      </div>
+
+      <!-- ===== MONITORING TAB ===== -->
+      <div class="tab-panel active" id="panel-monitoring">
+        <h3 style="font-family:var(--font-serif); font-size:1.2rem; margin-bottom:1rem;">کلیدی اشارے</h3>
+        <div class="kpi-grid" id="kpiGrid"></div>
+
+        <div class="charts-row" id="chartsRow">
+          <div class="chart-box">
+            <h4>GDP کی شرح میں اضافہ (٪، سالانہ)</h4>
+            <div id="chart-gdpGrowth" class="mini-chart"></div>
+          </div>
+          <div class="chart-box">
+            <h4>Inflation (٪، CPI)</h4>
+            <div id="chart-inflation" class="mini-chart"></div>
+          </div>
+          <div class="chart-box">
+            <h4>Debt-to-GDP (٪)</h4>
+            <div id="chart-debtToGdp" class="mini-chart"></div>
+          </div>
+          <div class="chart-box">
+            <h4>موجودہ حساب (GDP کا ٪)</h4>
+            <div id="chart-currentAccount" class="mini-chart"></div>
+          </div>
+        </div>
+
+        <!-- Economic Structure -->
+        <h3 style="font-family:var(--font-serif); font-size:1.1rem; margin-bottom:1rem;">معاشیات کی ساخت</h3>
+        <div id="structureSection"></div>
+      </div>
+
+      <!-- ===== OUTLOOK TAB ===== -->
+      <div class="tab-panel" id="panel-outlook">
+        <h3 style="font-family:var(--font-serif); font-size:1.2rem; margin-bottom:1rem;">معاشیات کا نقطہ نظر</h3>
+        <div id="outlookContent"></div>
+      </div>
+
+      <!-- ===== DSGE TAB ===== -->
+      <div class="tab-panel" id="panel-dsge">
+        <h3 style="font-family:var(--font-serif); font-size:1.2rem; margin-bottom:1rem;">DSGE ڈھانچاتی ماڈل</h3>
+        <div id="dsgeContent"></div>
+      </div>
+    </div>
+
+    <!-- Data Sources -->
+    <div style="margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--color-border-light);">
+      <p style="font-size:0.82rem; color:var(--color-text-light);">ڈیٹا: IMF World Economic Outlook، World Bank کھلے ڈیٹا، SESRIC، IsDB۔ اعداد و شمار 2024-2025 کی تخمین ہیں۔ آخری اپڈیٹ: Q4 2025۔</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">اسلامی معاشیات</a>
+          <p class="footer-brand-desc">اسلامی معاشی فکر کی الہٰیاتی بنیادوں، باقاعدہ نظریے، تاریخی ارتقاء اور جدید عمل کی تلاش — مدینہ کی ابتدائی منڈیوں سے لے کر آج کی عالمی اسلامی مالیاتی صنعت تک۔</p>
+          <blockquote class="footer-ayah">
+            <p>"اور ایک دوسرے کا مال ناحق نہ کھاؤ اور نہ حکمرانوں کو رشوت دو تاکہ لوگوں کے مال کا کچھ حصہ ناجائز طور پر کھا سکو۔"</p>
+            <cite>— البقرۃ 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">علم</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">بنیادیں</a></li>
+              <li><a href="scriptures.html">قرآن و حدیث</a></li>
+              <li><a href="theory.html">نظریہ</a></li>
+              <li><a href="history.html">تاریخ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">جدید معیشت</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">تحقیق</a></li>
+              <li><a href="dashboard.html">ڈیش بورڈ</a></li>
+              <li><a href="podcast.html">میڈیا</a></li>
+              <li><a href="blog.html">التجارۃ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">رابطہ</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="آپ کی ای میل" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">سبسکرائب</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 اسلامی معاشیات</p>
+        <a href="about.html" class="footer-bottom-link">تعارف</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/economic-data.js"></script>
+  <script src="../js/main.js"></script>
+
+  <button class="back-to-top" data-back-to-top aria-label="اوپر جائیں">&uarr;</button>
+
+  <script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+</script>
+
+  <script>
+  /* Scroll-triggered fade-up animation */
+  (function() {
+    var fadeEls = document.querySelectorAll('.fade-up');
+    if (!fadeEls.length) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    fadeEls.forEach(function(el) { observer.observe(el); });
+  })();
+  </script>
+
+  <script>
+  (function() {
+    'use strict';
+
+    if (typeof ECON_DATA === 'undefined') return;
+
+    const countryKeys = Object.keys(ECON_DATA.countries);
+    let activeCountry = null;
+    let activeTab = 'monitoring';
+
+    // Colors for charts
+    const COLORS = {
+      green: '#1a5c3a', greenLight: 'rgba(26,92,58,0.1)',
+      blue: '#2563eb', blueLight: 'rgba(37,99,235,0.1)',
+      orange: '#d97706', orangeLight: 'rgba(217,119,6,0.1)',
+      red: '#dc2626', redLight: 'rgba(220,38,38,0.1)',
+      purple: '#7c3aed'
+    };
+    function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+    function chartColor(base) { return isDark() ? base.replace('#1a5c3a','#5ad994').replace('#2563eb','#60a5fa').replace('#d97706','#fbbf24').replace('#dc2626','#f87171') : base; }
+
+    // ========== Aggregate Stats ==========
+    function renderAgg() {
+      const a = ECON_DATA.aggregate;
+      document.getElementById('aggStats').innerHTML = `
+        <div class="agg-stat"><div class="agg-stat-value">${a.totalCountries}</div><div class="agg-stat-label">OIC اقوام</div></div>
+        <div class="agg-stat"><div class="agg-stat-value">$${a.combinedGDP}T</div><div class="agg-stat-label">مشترکہ GDP</div></div>
+        <div class="agg-stat"><div class="agg-stat-value">${a.population}B</div><div class="agg-stat-label">آبادی</div></div>
+        <div class="agg-stat"><div class="agg-stat-value">${a.landArea}%</div><div class="agg-stat-label">عالمی رقبہ</div></div>
+      `;
+    }
+
+    // ========== Country Grid ==========
+    function renderCountryGrid() {
+      document.getElementById('countryGrid').innerHTML = countryKeys.map(key => {
+        const c = ECON_DATA.countries[key];
+        return `<div class="country-card${activeCountry===key?' active':''}" data-country="${key}">
+          <span class="country-flag">${c.flag}</span>
+          <div class="country-info">
+            <div class="country-name">${c.name}</div>
+            <div class="country-meta">${c.region} &middot; ${c.incomeGroup}</div>
+          </div>
+          <span class="country-gdp">$${c.headline.gdp}B</span>
+        </div>`;
+      }).join('');
+    }
+
+    // ========== SVG Line Chart ==========
+    function drawLineChart(containerId, years, values, color, unit) {
+      const el = document.getElementById(containerId);
+      if (!el) return;
+      const w = 360, h = 180, px = 40, py = 20, pw = w - px - 15, ph = h - py - 25;
+      const mn = Math.min(...values), mx = Math.max(...values);
+      const range = mx - mn || 1;
+      const padded_mn = mn - range * 0.1, padded_mx = mx + range * 0.1;
+      const pRange = padded_mx - padded_mn;
+
+      function x(i) { return px + (i / (years.length - 1)) * pw; }
+      function y(v) { return py + ph - ((v - padded_mn) / pRange) * ph; }
+
+      const points = values.map((v,i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+      const areaPoints = points + ` ${x(values.length-1).toFixed(1)},${(py+ph).toFixed(1)} ${px.toFixed(1)},${(py+ph).toFixed(1)}`;
+
+      // Grid lines
+      const gridCount = 4;
+      let gridLines = '';
+      for (let g = 0; g <= gridCount; g++) {
+        const gy = py + (g / gridCount) * ph;
+        const gv = padded_mx - (g / gridCount) * pRange;
+        gridLines += `<line x1="${px}" y1="${gy.toFixed(1)}" x2="${px+pw}" y2="${gy.toFixed(1)}" class="chart-grid-line"/>`;
+        gridLines += `<text x="${px-5}" y="${(gy+3).toFixed(1)}" class="chart-label" text-anchor="end">${gv.toFixed(1)}${unit||''}</text>`;
+      }
+
+      // Year labels
+      let yearLabels = '';
+      years.forEach((yr,i) => {
+        if (i % 2 === 0 || i === years.length-1) {
+          yearLabels += `<text x="${x(i).toFixed(1)}" y="${(py+ph+15).toFixed(1)}" class="chart-label" text-anchor="middle">${yr}</text>`;
+        }
+      });
+
+      // Dots
+      const dots = values.map((v,i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" class="chart-dot" fill="${chartColor(color)}"/>`).join('');
+
+      // Latest value label
+      const lastVal = values[values.length-1];
+      const lastLabel = `<text x="${x(values.length-1).toFixed(1)}" y="${(y(lastVal)-10).toFixed(1)}" class="chart-label" text-anchor="middle" font-weight="700" fill="${chartColor(color)}">${lastVal.toFixed(1)}${unit||''}</text>`;
+
+      const lightColor = color.replace('#1a5c3a','rgba(26,92,58,0.1)').replace('#2563eb','rgba(37,99,235,0.1)').replace('#d97706','rgba(217,119,6,0.1)').replace('#dc2626','rgba(220,38,38,0.1)');
+
+      el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;">
+        ${gridLines}
+        <polygon points="${areaPoints}" fill="${chartColor(color)}" opacity="0.08"/>
+        <polyline points="${points}" class="chart-line" stroke="${chartColor(color)}"/>
+        ${dots}${lastLabel}${yearLabels}
+      </svg>`;
+    }
+
+    // ========== Render Country Dashboard ==========
+    function renderCountry() {
+      if (!activeCountry) {
+        document.getElementById('countryDashboard').style.display = 'none';
+        return;
+      }
+      document.getElementById('countryDashboard').style.display = 'block';
+      const c = ECON_DATA.countries[activeCountry];
+      const h = c.headline, ts = c.timeSeries, s = c.structure, o = c.outlook, d = c.dsge;
+
+      // Header
+      const ratingClass = o.rating.toLowerCase();
+      document.getElementById('countryHeaderEl').innerHTML = `
+        <span class="country-header-flag">${c.flag}</span>
+        <div>
+          <div class="country-header-name">${c.name}</div>
+          <div class="country-header-region">${c.region} &middot; ${c.incomeGroup} &middot; ${c.currency}</div>
+        </div>
+        <span class="country-header-rating rating-${ratingClass}">${o.rating} نقطہ نظر</span>
+      `;
+
+      // KPI Grid
+      const kpis = [
+        { label: 'GDP (Nominal)', value: '$'+h.gdp+'B', unit: 'USD' },
+        { label: 'حقیقی GDP کی شرح میں اضافہ', value: h.gdpGrowth+'%', change: h.gdpGrowth > 0 ? 'up' : 'down' },
+        { label: 'Inflation (CPI)', value: h.inflation+'%', change: h.inflation > 5 ? 'high' : 'moderate' },
+        { label: 'بیروزگاری', value: h.unemployment+'%' },
+        { label: 'Debt/GDP', value: h.debtToGdp+'%' },
+        { label: 'موجودہ حساب', value: h.currentAccount+'% GDP', change: h.currentAccount > 0 ? 'up' : 'down' },
+        { label: 'مالیاتی توازن', value: h.fiscalBalance+'% GDP', change: h.fiscalBalance > 0 ? 'up' : 'down' },
+        { label: 'پالیسی کی شرح', value: h.policyRate+'%' },
+        { label: 'FDI Inflows', value: h.fdi+'% GDP' },
+        { label: 'Reserves', value: '$'+h.reserves+'B' },
+        { label: 'زرِ رابطہ', value: h.exchangeRate+' / USD' },
+        { label: 'آبادی', value: h.population+'M' }
+      ];
+      document.getElementById('kpiGrid').innerHTML = kpis.map(k => {
+        let changeHtml = '';
+        if (k.change === 'up') changeHtml = '<div class="kpi-change kpi-up">&#9650;</div>';
+        else if (k.change === 'down') changeHtml = '<div class="kpi-change kpi-down">&#9660;</div>';
+        else if (k.change === 'high') changeHtml = '<div class="kpi-change kpi-down">&#9650; بہت</div>';
+        return `<div class="kpi-card"><div class="kpi-value">${k.value}</div><div class="kpi-label">${k.label}</div>${changeHtml}</div>`;
+      }).join('');
+
+      // Charts
+      drawLineChart('chart-gdpGrowth', ts.years, ts.gdpGrowth, COLORS.green, '%');
+      drawLineChart('chart-inflation', ts.years, ts.inflation, COLORS.orange, '%');
+      drawLineChart('chart-debtToGdp', ts.years, ts.debtToGdp, COLORS.blue, '%');
+      drawLineChart('chart-currentAccount', ts.years, ts.currentAccount, COLORS.purple, '%');
+
+      // Structure
+      const sectors = s.gdpBysector;
+      const sectorColors = { agriculture: '#10b981', industry: '#2563eb', services: '#8b5cf6' };
+      document.getElementById('structureSection').innerHTML = `
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+          <div class="chart-box">
+            <h4>شعبے کے لحاظ سے GDP</h4>
+            <div class="h-bar-container">
+              ${Object.entries(sectors).map(([k,v]) => `<div class="h-bar-row">
+                <span class="h-bar-label" style="text-transform:capitalize">${k === 'agriculture' ? 'زراعت' : k === 'industry' ? 'صنعت' : 'خدمات'}</span>
+                <div class="h-bar-track"><div class="h-bar-fill" style="width:${v}%; background:${sectorColors[k]}"><span class="h-bar-val">${v}%</span></div></div>
+              </div>`).join('')}
+            </div>
+            <div style="margin-top:1rem; font-size:0.82rem; color:var(--color-text-secondary);">
+              تجارتی کھلاپن: <strong>${s.tradeOpenness}%</strong> &middot;
+              اسلامی فائنانس کا حصہ: <strong>${s.islamicFinanceShare}%</strong>
+            </div>
+          </div>
+          <div class="chart-box">
+            <h4>اہم برآمدات</h4>
+            <div class="tag-list" style="margin-bottom:1rem;">${s.topExports.map(e => `<span class="tag-item">${e}</span>`).join('')}</div>
+            <h4>اہم تجارتی شراکاء</h4>
+            <div class="tag-list">${s.topPartners.map(p => `<span class="tag-item">${p}</span>`).join('')}</div>
+          </div>
+        </div>
+      `;
+
+      // Outlook
+      document.getElementById('outlookContent').innerHTML = `
+        <div class="outlook-narrative">${o.summary}</div>
+        <table class="forecast-table">
+          <thead><tr><th>اشارہ</th><th>2024</th><th>2025 (est.)</th><th>2026 (f)</th><th>2027 (f)</th></tr></thead>
+          <tbody>
+            <tr><td>حقیقی GDP کی شرح میں اضافہ (٪)</td><td>${ts.gdpGrowth[5]}</td><td>${ts.gdpGrowth[6]}</td><td>${o.gdpForecast2026}</td><td>${o.gdpForecast2027}</td></tr>
+            <tr><td>Inflation (٪)</td><td>${ts.inflation[5]}</td><td>${ts.inflation[6]}</td><td>${o.inflationForecast2026}</td><td>—</td></tr>
+            <tr><td>Debt/GDP (٪)</td><td>${ts.debtToGdp[5]}</td><td>${ts.debtToGdp[6]}</td><td>—</td><td>—</td></tr>
+            <tr><td>موجودہ حساب (% GDP)</td><td>${ts.currentAccount[5]}</td><td>${ts.currentAccount[6]}</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+        <div class="risk-driver-grid">
+          <div class="risk-box">
+            <h4>کلیدی خطرات</h4>
+            <ul>${o.keyRisks.map(r => `<li>${r}</li>`).join('')}</ul>
+          </div>
+          <div class="driver-box">
+            <h4>ترقی کے ڈرائیور</h4>
+            <ul>${o.keyDrivers.map(d => `<li>${d}</li>`).join('')}</ul>
+          </div>
+        </div>
+      `;
+
+      // DSGE
+      const statusLabel = { available: 'ماڈل دستیاب ہے', 'in-progress': 'تیاری میں ہے', planned: 'منصوبہ بندی' };
+      const statusIcon = { available: '&#9989;', 'in-progress': '&#9881;', planned: '&#128197;' };
+      let dsgeHtml = `
+        <div style="margin-bottom:1.5rem;">
+          <span class="dsge-status-badge dsge-${d.status}">${statusIcon[d.status]} ${statusLabel[d.status]}</span>
+          <span style="margin-left:0.75rem; font-size:0.88rem; color:var(--color-text-secondary);">${d.modelType}</span>
+        </div>
+      `;
+
+      if (d.status === 'available' || d.status === 'in-progress') {
+        dsgeHtml += `
+          <div class="dsge-detail-grid">
+            <div class="dsge-detail-box">
+              <h4>ماڈل کی خصوصیات</h4>
+              <ul>${d.keyFeatures.map(f => `<li>${f}</li>`).join('')}</ul>
+            </div>
+            <div class="dsge-detail-box">
+              <h4>Shock تجزیہ</h4>
+              <ul>${d.shocks.map(s => `<li>${s}</li>`).join('')}</ul>
+              ${d.calibrationDate ? `<p style="margin-top:0.8rem; font-size:0.8rem; color:var(--color-text-light);">Calibrated: ${d.calibrationDate}</p>` : ''}
+            </div>
+          </div>
+        `;
+        if (d.status === 'available') {
+          const dsgeLink = d.linkPath || '../theory/chapter8_macro_foundations.html';
+          dsgeHtml += `<div style="margin-top:1.5rem; text-align:center;">
+            <a href="${dsgeLink}" style="display:inline-block; padding:0.6rem 1.5rem; background:var(--color-primary); color:#fff; border-radius:var(--radius-full); font-size:0.88rem; font-weight:600; text-decoration:none;">${c.name} کا DSGE ماڈل دیکھیں &rarr;</a>
+            <a href="../theory/chapter8_macro_foundations.html" style="display:inline-block; margin-right:0.75rem; padding:0.6rem 1.5rem; background:transparent; color:var(--color-primary); border:1.5px solid var(--color-primary); border-radius:var(--radius-full); font-size:0.88rem; font-weight:600; text-decoration:none;">بنیادی ڈھانچہ &rarr;</a>
+          </div>`;
+        }
+      } else {
+        dsgeHtml += `<div class="dsge-placeholder">
+          <div class="dsge-placeholder-icon">&#128202;</div>
+          <h3>DSGE ماڈل تیاری میں ہے</h3>
+          <p>${c.name} کے لیے ایک custom ڈھانچاتی ماڈل تیار کیا جا رہا ہے۔ کلیدی خصوصیات میں شامل ہوگی: ${d.keyFeatures.slice(0,2).join(', ')}۔</p>
+        </div>`;
+      }
+      document.getElementById('dsgeContent').innerHTML = dsgeHtml;
+
+      // Scroll to dashboard
+      document.getElementById('countryDashboard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ========== Tab switching ==========
+    document.querySelectorAll('.dash-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.dash-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        activeTab = this.dataset.tab;
+        document.getElementById('panel-' + activeTab).classList.add('active');
+      });
+    });
+
+    // ========== Country selection ==========
+    document.getElementById('countryGrid').addEventListener('click', function(e) {
+      const card = e.target.closest('.country-card');
+      if (!card) return;
+      activeCountry = card.dataset.country;
+      // Reset to monitoring tab
+      activeTab = 'monitoring';
+      document.querySelectorAll('.dash-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelector('.dash-tab[data-tab="monitoring"]').classList.add('active');
+      document.getElementById('panel-monitoring').classList.add('active');
+
+      renderCountryGrid();
+      renderCountry();
+    });
+
+    // URL param support
+    const urlParams = new URLSearchParams(window.location.search);
+    const countryParam = urlParams.get('country');
+    if (countryParam && ECON_DATA.countries[countryParam]) {
+      activeCountry = countryParam;
+    }
+
+    // Init
+    renderAgg();
+    renderCountryGrid();
+    if (activeCountry) renderCountry();
+
+    // Re-render charts on theme change (for color updates)
+    const observer = new MutationObserver(() => { if (activeCountry) renderCountry(); });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+  </script>
+</body>
+</html>

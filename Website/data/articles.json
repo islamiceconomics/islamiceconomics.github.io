@@ -1,0 +1,27 @@
+{
+  "articles": [
+    {
+      "id": "riba-original",
+      "title": "Understanding Riba: Beyond Simple Interest",
+      "slug": "understanding-riba",
+      "category": "scripture",
+      "kicker": "Scripture & Economy",
+      "author": "Editorial Desk",
+      "date": "2026-02-08",
+      "date_formatted": "February 8, 2026",
+      "date_short": "Feb 8, 2026",
+      "content": "",
+      "excerpt": "Examine the Islamic prohibition on riba and its distinction from contemporary interest. Explore how Islamic banks structure financing to comply with this foundational principle.",
+      "excerpt_short": "Examine the Islamic prohibition on riba and its distinction from contemporary interest.",
+      "tags": ["Riba", "Islamic Finance", "Foundations", "Fiqh"],
+      "read_time": 8,
+      "source_url": "",
+      "featured": true
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-13T00:00:00Z",
+    "total_articles": 1,
+    "articles_generated": 0
+  }
+}

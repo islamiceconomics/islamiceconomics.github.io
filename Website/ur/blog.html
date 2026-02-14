@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التجارۃ — عالمی اسلامی معیشت کی خبریں، تجزیہ اور تبصرے</title>
+    <meta name="description" content="التجارۃ: عالمی اسلامی معیشت پر خبریں، تجزیہ، اور تبصرے — اسلامی مالیاتی نظام، OIC کی معیشتیں، اور مذہبی معاشی سوچ۔">
+    <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+    <style>
+    /* ============================================================
+       AL-TIJARAH NEWSPAPER STYLES
+       ============================================================ */
+
+    /* --- Masthead --- */
+    .tj-masthead {
+      text-align: center;
+      padding: 2.2rem 0 1.2rem;
+      border-bottom: 4px double var(--color-primary);
+      margin-bottom: 0;
+    }
+    .tj-masthead-date {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--color-text-light);
+      margin-bottom: 0.5rem;
+    }
+    .tj-masthead-title {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin: 0 0 0.15rem;
+    }
+    .tj-masthead-title-ar {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      font-size: 1.6rem;
+      color: var(--color-accent);
+      font-weight: 400;
+      margin: 0;
+      direction: rtl;
+    }
+    .tj-masthead-tagline {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--color-text-secondary);
+      margin: 0.4rem 0 0;
+    }
+
+    /* --- Section Bar --- */
+    .tj-section-bar {
+      display: flex;
+      gap: 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      overflow-x: auto;
+      padding: 0;
+      margin-bottom: 2rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tj-section-bar a {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-secondary);
+      padding: 0.7rem 1.1rem;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tj-section-bar a:hover, .tj-section-bar a.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    /* --- Lead Story --- */
+    .tj-lead {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 2rem;
+    }
+    .tj-lead-main {}
+    .tj-lead-main .tj-kicker {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--color-accent);
+      margin-bottom: 0.4rem;
+    }
+    .tj-lead-main h2 {
+      font-family: var(--font-serif);
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-text-primary);
+      margin: 0 0 0.8rem;
+    }
+    .tj-lead-main h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .tj-lead-main h2 a:hover {
+      color: var(--color-primary);
+    }
+    .tj-lead-main .tj-lead-excerpt {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.8rem;
+    }
+    .tj-lead-main .tj-byline {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+    .tj-lead-main .tj-byline strong {
+      color: var(--color-text-secondary);
+      font-weight: 600;
+    }
+    .tj-lead-img {
+      background: var(--color-bg-secondary);
+      border-radius: var(--radius-sm);
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: var(--color-primary);
+      border: 1px solid var(--color-border-light);
+    }
+
+    /* --- Secondary Lead Stack --- */
+    .tj-lead-side {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .tj-lead-side-item {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .tj-lead-side-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .tj-lead-side-item .tj-kicker {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      margin-bottom: 0.3rem;
+    }
+    .tj-lead-side-item h3 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0 0 0.4rem;
+    }
+    .tj-lead-side-item h3 a { color: var(--color-text-primary); text-decoration: none; }
+    .tj-lead-side-item h3 a:hover { color: var(--color-primary); }
+    .tj-lead-side-item p {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--color-text-secondary);
+      margin: 0;
+    }
+
+    /* --- Section Header --- */
+    .tj-section-header {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--color-primary);
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    /* --- Article Grid --- */
+    .tj-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+    .tj-card {}
+    .tj-card .tj-kicker {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      margin-bottom: 0.3rem;
+    }
+    .tj-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0 0 0.5rem;
+    }
+    .tj-card h3 a { color: var(--color-text-primary); text-decoration: none; }
+    .tj-card h3 a:hover { color: var(--color-primary); }
+    .tj-card p {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--color-text-secondary);
+      margin: 0 0 0.5rem;
+    }
+    .tj-card .tj-byline {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      color: var(--color-text-light);
+    }
+
+    /* --- Two-Column Layout --- */
+    .tj-two-col {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* --- Opinion Column --- */
+    .tj-opinion-item {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .tj-opinion-item:first-child { padding-top: 0; }
+    .tj-opinion-item:last-child { border-bottom: none; }
+    .tj-opinion-item h4 {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 0 0 0.3rem;
+    }
+    .tj-opinion-item h4 a { color: var(--color-text-primary); text-decoration: none; }
+    .tj-opinion-item h4 a:hover { color: var(--color-primary); }
+    .tj-opinion-author {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    /* --- Data Ticker Strip --- */
+    .tj-ticker {
+      background: var(--color-primary);
+      color: #fff;
+      padding: 0.55rem 0;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .tj-ticker-inner {
+      display: flex;
+      gap: 2.5rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 1rem;
+    }
+    .tj-ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+    }
+    .tj-ticker-label { opacity: 0.7; }
+    .tj-ticker-value { font-weight: 700; }
+    .tj-ticker-change { font-weight: 600; }
+    .tj-ticker-up { color: #4ade80; }
+    .tj-ticker-down { color: #f87171; }
+
+    /* --- Newsletter Banner --- */
+    .tj-newsletter {
+      background: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 1.8rem 2rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .tj-newsletter h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin: 0 0 0.4rem;
+      color: var(--color-text-primary);
+    }
+    .tj-newsletter p {
+      font-family: var(--font-serif);
+      font-size: 0.92rem;
+      color: var(--color-text-secondary);
+      margin: 0 0 1rem;
+    }
+    .tj-newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .tj-newsletter-form input {
+      flex: 1;
+      padding: 0.55rem 0.9rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-family: var(--font-sans);
+      background: var(--color-surface);
+      color: var(--color-text-primary);
+    }
+    .tj-newsletter-form button {
+      padding: 0.55rem 1.4rem;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tj-newsletter-form button:hover { background: var(--color-primary-dark); }
+
+    /* --- Sidebar Widgets --- */
+    .tj-sidebar-widget {
+      margin-bottom: 2rem;
+    }
+    .tj-sidebar-widget h4 {
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-primary);
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    .tj-trending-item {
+      display: flex;
+      gap: 0.6rem;
+      align-items: baseline;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .tj-trending-item:last-child { border-bottom: none; }
+    .tj-trending-num {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-border);
+      line-height: 1;
+      min-width: 1.5rem;
+    }
+    .tj-trending-text a {
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      text-decoration: none;
+      line-height: 1.3;
+      display: block;
+    }
+    .tj-trending-text a:hover { color: var(--color-primary); }
+    .tj-trending-meta {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      color: var(--color-text-light);
+      margin-top: 0.15rem;
+    }
+
+    /* --- Dark Mode --- */
+    [data-theme="dark"] .tj-masthead { border-bottom-color: #4cc882; }
+    [data-theme="dark"] .tj-masthead-title { color: #4cc882; }
+    [data-theme="dark"] .tj-masthead-title-ar { color: var(--color-accent-light); }
+    [data-theme="dark"] .tj-section-bar { border-color: #334155; }
+    [data-theme="dark"] .tj-section-bar a { color: #94a3b8; }
+    [data-theme="dark"] .tj-section-bar a:hover,
+    [data-theme="dark"] .tj-section-bar a.active { color: #4cc882; border-bottom-color: #4cc882; }
+    [data-theme="dark"] .tj-lead { border-bottom-color: #334155; }
+    [data-theme="dark"] .tj-lead-img { background: #1a2230; border-color: #334155; color: #4cc882; }
+    [data-theme="dark"] .tj-lead-side-item { border-bottom-color: #334155; }
+    [data-theme="dark"] .tj-section-header { color: #4cc882; border-bottom-color: #4cc882; }
+    [data-theme="dark"] .tj-opinion-item { border-bottom-color: #334155; }
+    [data-theme="dark"] .tj-ticker { background: #0f1923; }
+    [data-theme="dark"] .tj-newsletter { background: #1a2230; border-color: #334155; }
+    [data-theme="dark"] .tj-newsletter-form input { background: #0f1923; border-color: #334155; color: #e2e8f0; }
+    [data-theme="dark"] .tj-newsletter-form button { background: #4cc882; color: #0f1923; }
+    [data-theme="dark"] .tj-trending-item { border-bottom-color: #334155; }
+    [data-theme="dark"] .tj-trending-num { color: #334155; }
+    [data-theme="dark"] .tj-sidebar-widget h4 { color: #4cc882; border-bottom-color: #4cc882; }
+
+    /* --- Responsive --- */
+    @media (max-width: 900px) {
+      .tj-lead { grid-template-columns: 1fr; }
+      .tj-grid { grid-template-columns: 1fr 1fr; }
+      .tj-two-col { grid-template-columns: 1fr; }
+      .tj-masthead-title { font-size: 2.4rem; }
+    }
+    @media (max-width: 600px) {
+      .tj-grid { grid-template-columns: 1fr; }
+      .tj-masthead-title { font-size: 2rem; }
+      .tj-lead-main h2 { font-size: 1.5rem; }
+      .tj-newsletter-form { flex-direction: column; }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">اسلامی معاشیات</a>
+            <button class="nav-toggle" data-nav-toggle aria-label="نیویگیشن ٹوگل">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ہوم</a></li>
+                <li class="nav-dropdown">
+                  <button class="nav-dropdown-toggle">سیکھیں <span class="nav-dropdown-arrow">&#9662;</span></button>
+                  <ul class="nav-dropdown-menu">
+                    <li><a href="foundations.html">بنیادیں</a></li>
+                    <li><a href="theory.html">نظریہ</a></li>
+                    <li><a href="research.html">تحقیق</a></li>
+                    <li><a href="history.html">تاریخ</a></li>
+                  </ul>
+                </li>
+                <li><a href="scriptures.html" class="nav-link">قرآن و حدیث</a></li>
+                <li><a href="dashboard.html" class="nav-link">ڈیش بورڈ</a></li>
+                <li><a href="podcast.html" class="nav-link">میڈیا</a></li>
+                <li><a href="blog.html" class="nav-link active">التجارۃ</a></li>
+                <li><a href="about.html" class="nav-link">تعارف</a></li>
+            </ul>
+            <a href="../blog.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+            <button class="theme-toggle" aria-label="ڈارک موڈ ٹوگل">
+              <span class="icon-moon">&#9790;</span>
+              <span class="icon-sun">&#9788;</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="tj-masthead">
+      <div class="container">
+        <div class="tj-masthead-date" id="tjDate"></div>
+        <h1 class="tj-masthead-title">التجارۃ</h1>
+        <p class="tj-masthead-title-ar">التجارة</p>
+        <p class="tj-masthead-tagline">عالمی اسلامی معیشت کی خبریں، تجزیہ اور تبصرے</p>
+      </div>
+    </header>
+
+    <!-- Data Ticker -->
+    <div class="tj-ticker">
+      <div class="container">
+        <div class="tj-ticker-inner">
+          <div class="tj-ticker-item"><span class="tj-ticker-label">برنٹ کروڈ</span> <span class="tj-ticker-value">$75.20</span> <span class="tj-ticker-change tj-ticker-down">-0.8%</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">سونا</span> <span class="tj-ticker-value">$2,842</span> <span class="tj-ticker-change tj-ticker-up">+0.3%</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">SAU GDP نمو</span> <span class="tj-ticker-value">3.2%</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">TUR مہنگائی</span> <span class="tj-ticker-value">41.5%</span> <span class="tj-ticker-change tj-ticker-down">-10.6pp</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">IDN نمو</span> <span class="tj-ticker-value">5.0%</span> <span class="tj-ticker-change tj-ticker-up">+0.2pp</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">اسلامی مالیاتی AUM</span> <span class="tj-ticker-value">$4.5T</span> <span class="tj-ticker-change tj-ticker-up">+11.3%</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">عالمی صکوک</span> <span class="tj-ticker-value">$236B</span> <span class="tj-ticker-change tj-ticker-up">+8.1%</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">MYR/USD</span> <span class="tj-ticker-value">4.47</span></div>
+          <div class="tj-ticker-item"><span class="tj-ticker-label">PKR/USD</span> <span class="tj-ticker-value">278</span> <span class="tj-ticker-change tj-ticker-up">+2.1%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Navigation -->
+    <div class="container">
+      <nav class="tj-section-bar">
+        <a href="#" class="active" data-section="all">تمام</a>
+        <a href="#" data-section="markets">منڈیاں اور مالیاتیات</a>
+        <a href="#" data-section="policy">حکمرانی اور پالیسی</a>
+        <a href="#" data-section="analysis">تجزیہ</a>
+        <a href="#" data-section="scripture">صحیفہ اور معیشت</a>
+        <a href="#" data-section="opinion">رائے</a>
+        <a href="#" data-section="oic">OIC معیشتیں</a>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+      <!-- Lead Story Section -->
+      <div class="tj-lead">
+        <div class="tj-lead-main">
+          <div class="tj-kicker">منڈیاں اور مالیاتیات</div>
+          <h2><a href="blog/understanding-riba.html">عالمی صکوک کی نشریات $236 بلین سے تجاوز کر گئیں جیسے اسلامی سرمایہ منڈیاں پختہ ہو رہی ہیں</a></h2>
+          <p class="tj-lead-excerpt">عالمی صکوک منڈی سالانہ $236 بلین کی نشریات تک پہنچ گئی ہے، خلیج کے حکومتی جاری کنندگان اور جنوب مشرقی ایشیا میں اپنے مالیاتی ذرائع میں تنوع لاتے ہوئے۔ ملیشیا کی سیکیورٹیز کمیشن بتاتی ہے کہ ESG سے منسلک صکوک اب نئی نشریات کا 18 فیصد ہیں، اسلامی مالیاتی نظام کے اصول اور پائے دار سرمایہ کاری کے فریم ورک کے درمیان بڑھتے ہوئے ہم آہنگی کی عکاسی کرتے ہوئے۔ تجزیہ کار اس رجحان کے تیز ہونے کی توقع رکھتے ہیں جب یورپی اداراتی سرمایہ کار شریعت سے تطابقی فکس انکم متبادل تلاش کر رہے ہوں۔</p>
+          <div class="tj-byline"><strong>ایڈیٹوریل ڈیسک</strong> &middot; فروری 12، 2026 &middot; 8 منٹ پڑھنا</div>
+        </div>
+        <div class="tj-lead-side">
+          <div class="tj-lead-side-item">
+            <div class="tj-kicker">OIC معیشتیں</div>
+            <h3><a href="#">سینیگال کی معیشت 8.8٪ تک اچھلی جیسے سنگومار آئل فیلڈ پروڈکشن شروع کرے</a></h3>
+            <p>آفشور سنگومار فیلڈ سے پہلا تیل مغربی افریقی معیشت کے لیے ایک تبدیلی کا لمحہ ہے، 2026 میں دنیا کے تیزی سے بڑھتی ہوئی معیشتوں میں سے ایک ہونے کی پیش گوئی کی جا رہی ہے۔</p>
+          </div>
+          <div class="tj-lead-side-item">
+            <div class="tj-kicker">حکمرانی اور پالیسی</div>
+            <h3><a href="#">سعودی عرب نے ویژن 2030 مرحلہ 3 کے تحت $100B غیر تیل سرمایہ کاری فنڈ کا آغاز کیا</a></h3>
+            <p>پبلک انویسٹمنٹ فنڈ اپنی سب سے بڑی غیر تیل تخصیص کا اعلان کرتا ہے جو AI بنیادی ڈھانچہ، سیاحت کی میگا منصوبے، اور علاقائی لاجسٹک ہبوں کو نشانہ بناتا ہے۔</p>
+          </div>
+          <div class="tj-lead-side-item">
+            <div class="tj-kicker">صحیفہ اور معیشت</div>
+            <h3><a href="#">سود کو سمجھنا: سادہ سود سے آگے</a></h3>
+            <p>قرآن میں سود کی حرمت کا گہرا صحیفہ تجزیہ کہ یہ جدید سود کی شرح سے کہیں زیادہ ہے۔</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analysis Section -->
+      <div class="tj-section-header">تجزیہ اور تحقیق</div>
+      <div class="tj-grid">
+        <div class="tj-card">
+          <div class="tj-kicker">تجزیہ</div>
+          <h3><a href="blog/dsge-islamic-finance.html">کیا DSGE ماڈل اسلامی مالیاتیات کو پکڑ سکتے ہیں؟ ایک طریقہ کاری کی جانچ</a></h3>
+          <p>معیاری مکرو اقتصادی ماڈلوں کو منافع کے نقصان میں شراکت، غرر کی حرمت، اور اسلامی معیشتوں میں اثاثہ سے محفوظ مالیات کی ضروریات کے لیے کیسے اپنایا جائے۔</p>
+          <div class="tj-byline">ریسرچ ڈیسک &middot; جنوری 20، 2026</div>
+        </div>
+        <div class="tj-card">
+          <div class="tj-kicker">تجزیہ</div>
+          <h3><a href="#">ایران کی 100٪ اسلامی بینکنگ سسٹم: چار دہائیوں کے بعد سبق اور حدود</a></h3>
+          <p>ایران عالمی سطح پر واحد مکمل طور پر شریعت سے تطابق بینکنگ کا نظام چلاتا ہے، پھر بھی 35 فیصد سے زیادہ دائمی مہنگائی عملی درآمد بمقابلہ اصول کے بارے میں بنیادی سوالات اٹھاتی ہے۔</p>
+          <div class="tj-byline">تجزیہ ڈیسک &middot; فروری 8، 2026</div>
+        </div>
+        <div class="tj-card">
+          <div class="tj-kicker">تجزیہ</div>
+          <h3><a href="blog/zakat-fiscal-policy.html">زکوۃ بطور مالیاتی پالیسی: جدید معیشتیں کیا سیکھ سکتی ہیں</a></h3>
+          <p>معاصر تجزیہ زکوۃ کے 2.5 فیصد دولت کی فرض ادائیگی اور OECD معیشتوں میں ترقی پسند دولت کی ٹیکس کی جدید تجاویز کے درمیان حیرت انگیز مماثلتیں ظاہر کرتا ہے۔</p>
+          <div class="tj-byline">ریسرچ ڈیسک &middot; جنوری 15، 2026</div>
+        </div>
+      </div>
+
+      <!-- Two Column: OIC + Opinion -->
+      <div class="tj-two-col">
+        <div>
+          <div class="tj-section-header">OIC اقتصادی مینار</div>
+          <div class="tj-grid" style="grid-template-columns: 1fr 1fr;">
+            <div class="tj-card">
+              <div class="tj-kicker">خلیج</div>
+              <h3><a href="blog/gcc-gdp-2025.html">خلیج میں GDP نمو: 2025 کا جائزہ</a></h3>
+              <p>ویژن 2030 اور تنوع کی حکمت عملی نتیجہ دکھاتی ہے جیسے غیر تیل شعبے چھے ملکی بلاک میں تیسری مسلسل سال ہائیڈرو کاربن نمو سے آگے بڑھے۔</p>
+              <div class="tj-byline">فروری 5، 2026</div>
+            </div>
+            <div class="tj-card">
+              <div class="tj-kicker">جنوبی ایشیا</div>
+              <h3><a href="blog/indonesia-islamic-finance.html">انڈونیشیا کا اسلامی مالیاتیات انقلاب $42B اثاثوں تک پہنچتا ہے</a></h3>
+              <p>اسلامی بینکنگ میں دوہری شرح نمو جنوب مشرقی ایشیا کو کم سیوا پوپولیشن تک شریعت سے تطابقی مالیات کے پیمانے کے لیے ایک اہم لیبارٹری کے طور پر رکھتی ہے۔</p>
+              <div class="tj-byline">جنوری 10، 2026</div>
+            </div>
+            <div class="tj-card">
+              <div class="tj-kicker">وسط ایشیا</div>
+              <h3><a href="#">قزاخستان کا AIFC پوسٹ سوویت جگہ کے لیے اسلامی مالیاتیات ہب کے طور پر نمایاں</a></h3>
+              <p>اسطنہ انٹرنیشنل فنانشل سینٹر نے وسط ایشیائی سود و صحیح مالیات کی مانگ میں تیزی کے سب 14 اسلامی مالیاتی اداروں کو اپنی طرف متوجہ کیا ہے۔</p>
+              <div class="tj-byline">فروری 2، 2026</div>
+            </div>
+            <div class="tj-card">
+              <div class="tj-kicker">شمالی افریقہ</div>
+              <h3><a href="#">موروکو کی 2030 ورلڈ کپ بوली $12B بنیادی ڈھانچہ ڈرائیو کو متحرک کرتی ہے</a></h3>
+              <p>اسپین اور پرتگال کے ساتھ FIFA ورلڈ کپ کی ہم میزبانی موروکی تاریخ میں سب سے بڑی بنیادی ڈھانچہ سرمایہ کاری چلاتی ہے، نقل و حمل، میزبان، اور ڈیجیٹل نیٹ ورکس کو تبدیل کرتی ہے۔</p>
+              <div class="tj-byline">جنوری 25، 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="tj-section-header">رائے اور تبصرے</div>
+          <div class="tj-opinion-item">
+            <h4><a href="#">OIC کو ایک مشترکہ ادائیگی بنیادی ڈھانچے کی ضرورت کیوں ہے</a></h4>
+            <p class="tj-opinion-author">مہمان شراکت دار</p>
+          </div>
+          <div class="tj-opinion-item">
+            <h4><a href="#">اسلامی سبز مالیاتیات کا اخلاقی معاملہ</a></h4>
+            <p class="tj-opinion-author">ایڈیٹوریل بورڈ</p>
+          </div>
+          <div class="tj-opinion-item">
+            <h4><a href="#">ڈیجیٹل کرینسیز اور Maqasid al-Shariah: تطابقی یا متنازع؟</a></h4>
+            <p class="tj-opinion-author">مہمان شراکت دار</p>
+          </div>
+          <div class="tj-opinion-item">
+            <h4><a href="#">Waqf 2.0: بلاک چین اسلامی Endowments کو کیسے بحال کر سکتا ہے</a></h4>
+            <p class="tj-opinion-author">تجزیہ ڈیسک</p>
+          </div>
+          <div class="tj-opinion-item">
+            <h4><a href="blog/dinar-standard.html">دینار معیار دوبارہ بیان: ابتدائی اسلام سے معاشی سبق</a></h4>
+            <p class="tj-opinion-author">تاریخ ڈیسک</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scripture & Economy Section -->
+      <div class="tj-section-header">صحیفہ اور معیشت</div>
+      <div class="tj-grid">
+        <div class="tj-card">
+          <div class="tj-kicker">قرآن کی تجزیہ</div>
+          <h3><a href="#">سورۃ البقرہ قرض کے بارے میں واقعی کیا کہتے ہیں</a></h3>
+          <p>آیہ 2:282 — قرآن کی سب سے لمبی آیہ — قرض کے معاہدوں کے لیے ایک جامع فریم ورک رکھتی ہے جو چودہ صدیوں سے جدید مالیاتی ضوابط کی پیش گوئی کرتا ہے۔</p>
+          <div class="tj-byline">صحیفہ ڈیسک &middot; فروری 10، 2026</div>
+        </div>
+        <div class="tj-card">
+          <div class="tj-kicker">Hadith معاشیات</div>
+          <h3><a href="#">نبی کریم کے منڈی کے ضوابط: قیمت کنٹرول اور صارف کی حفاظت</a></h3>
+          <p>جب نبی کریم نے مہنگائی کے دوران قیمتوں کو ٹھیک کرنے سے انکار کیا، انہوں نے ایک منڈی فلسفہ بیان کیا جو کھلی تجارت کو متوازن کرتا ہے ذخیرہ کاری اور دھوکہ دہی کی سخت حرمتوں کے ساتھ۔</p>
+          <div class="tj-byline">صحیفہ ڈیسک &middot; فروری 3، 2026</div>
+        </div>
+        <div class="tj-card">
+          <div class="tj-kicker">موازنہ تجزیہ</div>
+          <h3><a href="#">صدقۃ جاریہ اور دائمی Endowments کی معاشیات</a></h3>
+          <p>جاری خیرات کی Hadith وقف کے نظام کو کیسے تشکیل دیتی ہے جو اسلامی دنیا میں اسپتالوں، یونیورسٹیوں، اور عوامی بنیادی ڈھانچے میں مالیات فراہم کرتی تھی۔</p>
+          <div class="tj-byline">صحیفہ ڈیسک &middot; جنوری 18، 2026</div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="tj-newsletter">
+        <h3>التجارۃ کی رکنیت</h3>
+        <p>اسلامی معاشیات، OIC منڈی کے ڈیٹا، اور صحیفاتی بصیرتوں پر ہفتہ وار تجزیہ آپ کے Inbox تک پہنچایا جاتا ہے۔</p>
+        <form class="tj-newsletter-form" onsubmit="event.preventDefault(); this.innerHTML='<p style=\'color:var(--color-primary); font-weight:600;\'>رکنیت کے لیے شکریہ!</p>';">
+          <input type="email" placeholder="آپ کی ای میل" required>
+          <button type="submit">رکنیت</button>
+        </form>
+      </div>
+
+    </div><!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo">اسلامی معاشیات</a>
+            <p class="footer-brand-desc">اسلامی معاشی فکر کی الہٰیاتی بنیادوں، باقاعدہ نظریے، تاریخی ارتقاء اور جدید عمل کی تلاش — مدینہ کی ابتدائی منڈیوں سے لے کر آج کی عالمی اسلامی مالیاتی صنعت تک۔</p>
+            <blockquote class="footer-ayah">
+              <p>"اور ایک دوسرے کا مال ناحق نہ کھاؤ اور نہ حکمرانوں کو رشوت دو تاکہ لوگوں کے مال کا کچھ حصہ ناجائز طور پر کھا سکو۔"</p>
+              <cite>— البقرۃ 2:188</cite>
+            </blockquote>
+          </div>
+          <nav class="footer-nav">
+            <div class="footer-nav-group">
+              <h4 class="footer-heading">علم</h4>
+              <ul class="footer-links">
+                <li><a href="foundations.html">بنیادیں</a></li>
+                <li><a href="scriptures.html">قرآن و حدیث</a></li>
+                <li><a href="theory.html">نظریہ</a></li>
+                <li><a href="history.html">تاریخ</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-group">
+              <h4 class="footer-heading">جدید معیشت</h4>
+              <ul class="footer-links">
+                <li><a href="research.html">تحقیق</a></li>
+                <li><a href="dashboard.html">ڈیش بورڈ</a></li>
+                <li><a href="podcast.html">میڈیا</a></li>
+                <li><a href="blog.html">التجارۃ</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-group">
+              <h4 class="footer-heading">رابطہ</h4>
+              <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+                <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+              </div>
+              <form class="footer-subscribe" data-newsletter-form>
+                <input type="email" placeholder="آپ کی ای میل" class="form-input" required>
+                <button type="submit" class="btn btn-primary btn-sm">سبسکرائب</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 اسلامی معاشیات</p>
+          <a href="about.html" class="footer-bottom-link">تعارف</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" data-back-to-top aria-label="اوپر جائیں">&uarr;</button>
+
+    <script src="../js/main.js"></script>
+    <script>
+    // Dropdown nav toggle
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.closest('.nav-dropdown').classList.toggle('open');
+      });
+    });
+
+    // Set masthead date
+    (function() {
+      const d = new Date();
+      const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('tjDate').textContent = d.toLocaleDateString('ur-PK', opts);
+    })();
+
+    // Section filter
+    document.querySelectorAll('.tj-section-bar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.tj-section-bar a').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        // Filtering logic placeholder — future enhancement
+      });
+    });
+    </script>
+</body>
+</html>

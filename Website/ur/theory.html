@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسلامی معاشیات کی رسمی نظری - اسلامی معاشیات</title>
+    <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+    <script>
+      (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+    <style>
+        /* Chapter Card Styling */
+        .chapter-card {
+            border-left: 5px solid #999;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: #fafafa;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .chapter-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapter-card.available {
+            border-left-color: #10b981;
+        }
+
+        .chapter-card.in-progress {
+            border-left-color: #f59e0b;
+        }
+
+        .chapter-card.coming-soon {
+            border-left-color: #d1d5db;
+        }
+
+        .chapter-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .chapter-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            font-family: 'Georgia', serif;
+            line-height: 1.3;
+        }
+
+        .chapter-description {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .chapter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e5e7eb;
+            color: #374151;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .chapter-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .status-badge.available {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-badge.in-progress {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-badge.coming-soon {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .read-chapter-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .read-chapter-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .read-chapter-link.disabled {
+            color: #9ca3af;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Methodology Section */
+        .methodology-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .methodology-box h3 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+
+        .methodology-list {
+            margin-left: 1.5rem;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .methodology-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Connection Box */
+        .connection-box {
+            background-color: #f5f3ff;
+            border-left: 4px solid #8b5cf6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .connection-box h3 {
+            color: #6d28d9;
+            margin-top: 0;
+        }
+
+        .connection-box p {
+            color: #4c1d95;
+            line-height: 1.8;
+        }
+
+        .connection-box a {
+            color: #7c3aed;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .connection-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Related Sections */
+        .related-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .related-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-color: #d1d5db;
+        }
+
+        .related-card h4 {
+            color: #1f2937;
+            margin-top: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .related-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .related-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .related-card a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Introduction Section Enhancement */
+        .introduction-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        /* Chapter Grid */
+        .chapters-grid {
+            margin: 2rem 0;
+        }
+
+        /* Section divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+            margin: 3rem 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .chapter-card {
+                padding: 1.5rem;
+            }
+
+            .chapter-number {
+                font-size: 2rem;
+            }
+
+            .chapter-title {
+                font-size: 1.4rem;
+            }
+
+            .chapter-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .related-sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">اسلامی معاشیات</a>
+            <button class="nav-toggle" data-nav-toggle aria-label="نیویگیشن ٹوگل">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ہوم</a></li>
+                <li class="nav-dropdown">
+                  <button class="nav-dropdown-toggle active">سیکھیں <span class="nav-dropdown-arrow">&#9662;</span></button>
+                  <ul class="nav-dropdown-menu">
+                    <li><a href="foundations.html">بنیادیں</a></li>
+                    <li><a href="theory.html">نظریہ</a></li>
+                    <li><a href="research.html">تحقیق</a></li>
+                    <li><a href="history.html">تاریخ</a></li>
+                  </ul>
+                </li>
+                <li><a href="scriptures.html" class="nav-link">قرآن و حدیث</a></li>
+                <li><a href="dashboard.html" class="nav-link">ڈیش بورڈ</a></li>
+                <li><a href="podcast.html" class="nav-link">میڈیا</a></li>
+                <li><a href="blog.html" class="nav-link">التجارۃ</a></li>
+                <li><a href="about.html" class="nav-link">تعارف</a></li>
+            </ul>
+            <a href="../theory.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+            <button class="theme-toggle" aria-label="ڈارک موڈ ٹوگل">
+              <span class="icon-moon">&#9790;</span>
+              <span class="icon-sun">&#9788;</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero hero-small">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">ہوم</a> <span>/</span> <span>رسمی نظریہ</span>
+            </nav>
+            <h1 class="hero-title">اسلامی معاشیات کی رسمی نظری</h1>
+            <p class="hero-subtitle">ایک سخت ریاضیاتی ڈھانچہ — ترجیحی اصول سے عمومی توازن تک — اسلامی اصولوں پر مبنی</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section introduction-section">
+        <div class="container">
+            <div class="section-intro fade-in">
+                <h2>مقصد اور دائرہ کار</h2>
+                <p>یہ حصہ معیاری مائکرو معاشی نظریہ کی طریقہ کار کے بعد پہلے اصولوں سے اسلامی معاشیات کی ریاضیاتی بنیادوں کو تطور دیتا ہے (جیسا کہ Mas-Colell, Whinston & Green کے <em>Microeconomic Theory</em> میں دیکھا جاتا ہے) جبکہ منظم طریقے سے معیاری قیود اور اخلاقی اصولوں کو شامل کرتا ہے جو اسلامی الہیات، فقہ، اور فلسفے سے نکالے ہوئے ہیں۔ مقصد ایک مکمل الگ نظام بنانا نہیں ہے، بلکہ یہ ظاہر کرنا ہے کہ اسلامی اصول ریاضیاتی درستگی کے ساتھ معیاری معاشی نظریہ کو کیسے تبدیل، بہتر اور بڑھاتے ہیں۔</p>
+
+                <p>مرکزی بصیرت یہ ہے کہ اسلامی معاشیات کو ایک معطل شدہ اصل کمسری کے مسئلے کے طور پر رسمی کیا جا سکتا ہے جہاں رکاوٹیں اخلاقی طور پر مستحکم ہوں۔ جہاں معیاری میکروکنومکس ترجیحات کو دیے گئے کے طور پر لیتے ہیں اور ان کے نتائج کو سمجھنے کی کوشش کرتے ہیں، اسلامی معاشی نظریہ یہ امتحان کرنے سے شروع ہوتا ہے کہ کون سی ترجیحات اور انتخاب اسلام کے لحاظ سے قابل قبول ہیں پھر ان رکاوٹوں کے تحت اصل کمسری کا تجزیہ کریں۔ <em>رِبا</em> (سود) کی ممانعت بین وقتی انتخاب اور مالیاتی معاہدے کو تبدیل کرتی ہے۔ <em>زکوۃ</em> (لازمی خیرات) ایک قید اور افادیت کے اجزاء کے طور پر کام کرتی ہے۔ <em>غرر</em> (بہت زیادہ غیر یقینی) کی ناممکنیت معاہدوں کے قابل عمل سیٹ کو محدود کرتی ہے۔ <em>مصلحہ</em> (عوامی مصالح) کا تصور اور <em>مقاصد الشریعہ</em> (اسلامی قانون کے مقاصد) استعمال میں لانے والی ڈھانچے کے لیے متبادل سماجی بہبود کی شرح فراہم کرتے ہیں۔ یہ بے دریغ رکاوٹیں نہیں ہیں بلکہ منسجم اخلاقی عالمی نقطہ نظر سے بہتر منظومی ترمیمات ہیں۔</p>
+
+                <p>ہر باب ترتیب وار تعمیر ہوتا ہے، انفرادی انتخاب کے نظریہ کے ذریعے منڈی کے ڈھانچے سے عمومی توازن اور میکروکنومک جمع تک جاتے ہوئے۔ پوری طرح، ہم تین عہدوں کو برقرار رکھتے ہیں: (1) ریاضیاتی سختی اور درستگی، جدید معاشیات کی رسمی حکمت کو برتنا؛ (2) الہیاتی بنیاد، صراحت سے ہر قید کو اسلامی وسائل اور اصولوں سے منسلک کرنا؛ اور (3) معاشی عملیت، یقینی بناتے ہوئے کہ نتیجے والے ماڈلز تجزیاتی طور پر حل کیے جا سکتے ہیں اور تجرباتی طور پر قابل تخمین ہیں۔ نتیجہ ایک ڈھانچہ ہے جو اسلامی علماء اور تربیت یافتہ معاشیدانوں دونوں کے ساتھ روانی سے بات کرتا ہے، اس نظریاتی انجمن کو پل کرتا ہے جو تاریخی طور پر اسلامی فقہ کو معاشی سائنس سے الگ کرتا ہے۔</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connection to Foundations -->
+    <section class="section">
+        <div class="container">
+            <div class="connection-box fade-in">
+                <h3>یہ بنیادوں سے کیسے جڑتا ہے</h3>
+                <p>ان رسمی ماڈلز کے پس پردہ الہیاتی اور فقہی اصول ہماری <a href="foundations.html">بنیادیں حصہ</a> میں جامع طور پر تیار ہیں۔ وہاں ہم بنیادی تصورات کے لیے قرآنی، سنت، اور فقہ کی بنیاد قائم کرتے ہیں: <em>رِبا</em> کی ممانعت اور منافع اور اجرت سے اس کا فرق؛ <em>زکوۃ</em> کی ادارہ اور اس کا میکروکنومک مستحکم کرنے والا کردار؛ <em>وقف</em> اور مستقل سرپرستی کا طریقہ؛ <em>مضاربہ</em> اور <em>مشارکہ</em> جیسی شراکت داری کے ڈھانچے؛ <em>مراابحہ</em>, <em>اجارہ</em>, <em>سلم</em>, اور <em>استصناع</em> سمیت اسلامی مالیاتی آلات؛ اور قانونی منطق میں <em>مصلحہ</em> (عوامی مصالح) کے اصول۔ یہ نظریہ حصہ ان اصولوں کو رسمی ریاضیاتی زبان میں ترجمہ کرتا ہے، ماڈلز تعمیر کرتے ہوئے جہاں اصول اور رکاوٹیں درستی سے متعریف ہوں، ہمیں قابل ٹیسٹ تجاویز حاصل کرنے اور پالیسی تجزیہ اور تجرباتی تحقیق کے لیے قابل حساب ڈھانچے تعمیر کرنے کے لیے۔</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Chapter Listing -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">رسمی باب</h2>
+            <p class="section-subtitle fade-in">انفرادی انتخاب سے میکروکنومک ڈھانچے تک اسلامی معاشی نظریہ کا منظومی سلوک</p>
+
+            <div class="chapters-grid">
+                <!-- Chapter 1 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">I</div>
+                    <h3 class="chapter-title">اسلامی ترجیحات کے اصول</h3>
+                    <p class="chapter-description">کسی بھی معاشی نظام میں صارف کے نظریہ کی بنیاد ترجیح کے رشتے پر قائم ہے۔ یہ باب معیاری میکروکنومک اصولوں کا امتحان کرتا ہے — مکملیت، متناسبیت، تسلسل، یکسوئی، اور محدبیت — اسلامی اخلاقی ڈھانچے میں کیسے ترمیم ہوتی ہے۔ یکسوئی <em>اسراف</em> (بے دریغی اور فضول کی اسلامی ممانعت) سے محدود ہے، جو بقائے حد اقل اور کھپت کی حدود کے وجود کا نتیجہ ہے۔ کھپت کا سیٹ اصل کمسری سے پہلے ہلال/حرام درجہ بندی کے ذریعے محدود ہے، ممکنہ انتخاب کے سیٹ سے ناقابل قبول چیزوں کو مستثنیٰ کرتے ہوئے۔ ہم <em>وسطیہ</em> (اعتدال) کے اصول کو متعریف اور رسمی کرتے ہیں اور ترجیح کی جمع اور نسل در نسل افادیت کے لیے اس کے رسمی نتائج اخذ کرتے ہیں۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">ترجیحات</span>
+                        <span class="tag">افادیت</span>
+                        <span class="tag">حلال قید</span>
+                        <span class="tag">اسراف</span>
+                        <span class="tag">وسطیہ</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter1_axioms_of_islamic_preferences.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">II</div>
+                    <h3 class="chapter-title">افادیت نمائندگی اور اسلامی ایجنٹ</h3>
+                    <p class="chapter-description">ترجیح کے اصولوں پر بنیاد رکھتے ہوئے، ہم اسلامی ترجیحات کے ساتھ مطابقت رکھنے والی افادیت کی نمائندگی حاصل کرتے ہیں۔ اس باب کے مرکز میں ایک دو جزوی افادیت کا ڈھانچہ ہے: ایک عالمی جزو (اس زندگی میں مادی کھپت سے اطمینان سے متعلق، <em>دنیا</em>) اور ایک موخرالادا جزو (بعد میں سے متعلق، <em>آخرہ</em>)۔ اس ڈھانچے میں، <em>زکوۃ</em>, <em>صدقہ</em> (رضاکارانہ خیرات)، اور <em>وقف</em> قائم کرنے جیسے اقدامات جو مادی کھپت کو کم کرتے ہیں آخرہ جزو میں واپسی حاصل کرتے ہیں، خود غرضی یا سماجی ترجیحات کے بغیر رضاکارانہ دولت کی منتقلی کے لیے سختی سے عقل دیتے ہیں۔ ہم اس توسیع شدہ افادیت کی نمائندگی کے لیے وجود اور انفرادیت کے نظریے ثابت کرتے ہیں، شرائط قائم کرتے ہیں جہاں ایسی نمائندگیاں متواصل اور یکسو ہوں، اور کھپت و بچت کے فیصلوں اور طویل مدتی منصوبہ بندی کے لیے نتائج اخذ کرتے ہیں۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">افادیت فنکشن</span>
+                        <span class="tag">دنیا-آخرہ ماڈل</span>
+                        <span class="tag">زکوۃ منطق</span>
+                        <span class="tag">وجود نظریے</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter2_utility_representation.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">III</div>
+                    <h3 class="chapter-title">اسلامی قیود کے تحت صارف کے نظریہ</h3>
+                    <p class="chapter-description">معیاری صارف کی اصل کمسری تین بنیادی اسلامی رکاوٹوں سے ترمیم ہے: (1) حلال کھپت کا سیٹ، جو ناقابل قبول چیزوں کو پہلے سے الگ کرتا ہے؛ (2) <em>زکوۃ</em> کی ذمہ داری، درست متعریف قیمتوں اور چھوٹ کی حدود کے ساتھ لازمی دولت یا آمدنی کے ٹیکس کے طور پر کام کرتے ہوئے؛ اور (3) <em>رِبا</em> کی ممانعت، جو بین وقتی قرض لینے کو محدود کرتی ہے اور روایتی قرض پر مبنی کھپت کو ہموار کرنے کو ختم کرتی ہے۔ یہ باب ان رکاوٹوں کے تحت Marshallian اور Hicksian کے طلب کے فنکشن حاصل کرتا ہے، زکوۃ اور حلال قیود کی موجودگی میں Slutsky کی تقسیم قائم کرتا ہے، اور یقینی بناتا ہے کہ زکوۃ کی ذمہ داری اشیاء اور وقت کی ادوار میں بہترین کھپت کے بنڈل کو کیسے متاثر کرتی ہے۔ ہم قیمتوں، دولت، اور زکوۃ کی شرح کے حوالے سے موازنے والے شماریات کا امتحان کرتے ہیں، طلب کے نظام کے لیے مستحکم ہونے کی شرائط اخذ کرتے ہیں، اور معادل متنوع اور تعویضی متنوع اقدامات کے ذریعے اسلامی قیود بمقابلہ معیاری ڈھانچوں کے صارف کی بہبود کے اثرات کا تجزیہ کرتے ہیں۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">طلب کا نظریہ</span>
+                        <span class="tag">Slutsky مساوات</span>
+                        <span class="tag">زکوۃ قید</span>
+                        <span class="tag">بجٹ سیٹ</span>
+                        <span class="tag">موازنہ شمارات</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter3_consumer_theory.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">IV</div>
+                    <h3 class="chapter-title">پروڈیوسر تھیوری اور اسلامی فرم</h3>
+                    <p class="chapter-description">اسلامی فرم روایتی فرموں کے موازنے میں بنیادی طور پر الگ تمویل اور معاہدے کی رکاوٹوں کے تحت کام کرتا ہے۔ یہ سود پر مبنی قرض (<em>رِبا</em>) کی ممانعت کا سامنا کرتا ہے، <em>مضاربہ</em> (مزدوری سرمایہ کی علیحدگی کے ساتھ منافع کی شراکت داری) اور <em>مشارکہ</em> (شریک سرمایہ، انتظام، اور منافع نقصان کے ساتھ مشترکہ منصوبے) جیسے حقوق نما آلات پر انحصار کی ضرورت ہے۔ <em>غرر</em> کی ممانعت (بہت زیادہ معاہدے کی غیر یقینی) قابل حق معاہدوں کے ڈھانچے کو محدود کرتی ہے۔ یہ باب ان رکاوٹوں کے تحت فرم کے لاگت کو کم کرنے اور منافع کو زیادہ سے زیادہ کرنے کے مسائل کو رسمی کرتا ہے، ترمیم شدہ سپلائی فنکشن اور عامل کی مانگ کے منحنیات حاصل کرتا ہے، اور تجزیہ کرتا ہے کہ منافع نقصان کی شراکت (طے شدہ قرض کی خدمت کے بجائے) پیداواری فیصلوں، خطرے کی تقسیم سرمایہ کاروں کے میں، سرمایے کے ڈھانچے، اور منڈی میں داخلہ کو کیسے متاثر کرتی ہے۔ ہم پیداواری کی کامیابی کے لیے شرائط قائم کرتے ہیں، تمویل کی ساخت اور فعال فیصلوں کے درمیان رشتے کا امتحان کرتے ہیں، اور تالیفی کارکردگی اور متحرک کارکردگی کے لحاظ سے اسلامی فرم کی قیود کو روایتی فرم کے ساتھ موازنہ کرتے ہیں۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">فرم تھیوری</span>
+                        <span class="tag">مضاربہ</span>
+                        <span class="tag">مشارکہ</span>
+                        <span class="tag">غرر</span>
+                        <span class="tag">منافع نقصان کی شراکت</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter4_producer_theory.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 5 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">V</div>
+                    <h3 class="chapter-title">منڈی کی ساخت اور معاہدے کا نظریہ</h3>
+                    <p class="chapter-description">ایک اسلامی معیشت میں منڈیں محدود معاہدے کی جگہ کے اندر کام کرتی ہیں۔ <em>رِبا</em> کی ممانعت قرض پر مبنی آلات کو ختم کرتی ہے؛ <em>غرر</em> کی ممانعت قمار بازی اور نامعریف معاہدوں کو محدود کرتی ہے؛ <em>احتکار</em> (احتکار اور منڈی کی ہیرا پھیری) کی ممانعت منڈی کی طاقت کو محدود کرتی ہے؛ اور معاہدوں میں شفافیت کا تقاضا معلومات کی عدم توازن استحصال کو محدود کرتا ہے۔ یہ باب اسلامی رکاوٹوں کے تحت مقابل ہونے والی توازن، انحصار، اور oligopoly کا تجزیہ کرتا ہے۔ ہم اسلامی مالیاتی آلات کے لیے ایک رسمی معاہدے کی نظری ڈھانچے تیار کرتے ہیں — <em>مراابحہ</em> (لاگت کے علاوہ تمویل)، <em>اجارہ</em> (اسلامی لیزنگ)، <em>سلم</em> (آگے کی فروخت)، اور <em>استصناع</em> (تیاری کا معاہدہ) — ان کی بہتری کی خصوصیات اور موازنہ فوائد کی خصوصیات۔ ہم اس بات کا امتحان کرتے ہیں کہ یہ رکاوٹیں منڈی کی کارکردگی کو کیسے متاثر کرتی ہیں (Pareto کے لحاظ سے)، قیمت کی تشکیل کے میکانزم، منڈی کی طاقت کی زیادتی، اور غیر محدود منڈیوں کے نسبت صارف کے نتائج۔ باب ان رسمی شرائط کو قائم کرنے سے اختتام ہوتا ہے جہاں اسلامی منڈی کی قیود مختص کارکردگی میں بہتری دیتے یا محدود کرتے ہیں۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">منڈی کا توازن</span>
+                        <span class="tag">معاہدے کا نظریہ</span>
+                        <span class="tag">احتکار</span>
+                        <span class="tag">اسلامی آلات</span>
+                        <span class="tag">کارکردگی</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter5_market_structure.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 6 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">VI</div>
+                    <h3 class="chapter-title">عمومی توازن</h3>
+                    <p class="chapter-description">ہم تمام سابقہ اسلامی قیود اور اداروں کو شامل کرتے ہوئے ایک رسمی عمومی توازن کا ڈھانچہ تعمیر کرتے ہیں۔ Arrow-Debreu ڈھانچے پر بنیاد رکھتے ہوئے، ہم معیاری GE ماڈل کو ترمیم کرتے ہیں: (1) riba-based آلات کو مستثنیٰ کرنے کے لیے اثاثے کے جگہ کو محدود کرنا؛ (2) توازن کے اندر لازمی زکوۃ ادارے کو دوبارہ تقسیم کے طریقے کے طور پر شامل کرنا؛ (3) قابل عمل تقسیم کے سیٹ پر حلال اور اسلامی اخلاقیات کی رکاوٹوں کو نافذ کرنا؛ اور (4) دنیا-آخرہ کی افادیت کی ساخت کو عکاس خود میختار ترجیحات کا تعارف دینا۔ مرکزی نظری نتیجہ یہ ہے کہ ان تبدیلیوں کے تحت عمومی توازن کا وجود۔ ہم اس امتحان کرتے ہیں کہ کب Welfare Economics کے بنیادی نظریے قائم رہتے ہیں اور اسلامی قیود اور نوعیت (zakat کے ذریعے) معیاری سرمایہ کار توازن کے نسبت Pareto بہتریوں کی طرف لے جاتے ہیں یا نہیں۔ ہم توازن کی تقسیموں کی سیٹ کی خصوصیات بتاتے ہیں، توازن کی قیمتوں کی انفرادیت کا تجزیہ کرتے ہیں، اور چھوٹی پریشانیوں کے حوالے سے توازن کی مستحکم کی جانچ کرتے ہیں۔ باب اسلامی GE اور متبادل معاشی نظام (سوشلسٹ، نو کلاسیکی سرمایہ کار، اور stakeholder سرمایہ کار ماڈلز) کے درمیان رسمی موازنے سے اختتام ہوتا ہے۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Arrow-Debreu</span>
+                        <span class="tag">صارفی نظریے</span>
+                        <span class="tag">وجود</span>
+                        <span class="tag">Pareto کی کارکردگی</span>
+                        <span class="tag">نوعیت</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter6_general_equilibrium.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 7 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">VII</div>
+                    <h3 class="chapter-title">صارفی معاشیات اور سماجی انتخاب</h3>
+                    <p class="chapter-description">اسلامی صارفی معاشیات <em>مصلحہ</em> (عوامی مصالح اور سماجی صارفیت) کا تصور متعریف کرتی ہے بنیادی سماجی صارفیت کے شماری کے طور پر، Pareto کی کارکردگی کے ساتھ جنبہ اور قابل قبول متعارض کے ساتھ۔ ہم <em>مصلحہ</em> کو سماجی صارفیت کے فنکشن کے طور پر رسمی کرتے ہیں <em>مقاصد الشریعہ</em> (اسلامی قانون کے مقاصد) میں مستحکم: مذہب، زندگی، عقل، نسل (خاندان اور سماجی بندھن)، اور ملکیت کی حفاظت اور پرورش۔ یہ مقاصد استعمال میں لانے والے، égalitarian، اور Rawlsian متبادل سے الگ سماجی انتخاب کے لیے اصول پر مبنی بنیادیں فراہم کرتے ہیں۔ یہ باب اسلامی اصولوں کو مطمئن کرنے والے سماجی صارفیت کے فنکشنوں کو محوری طور پر خصوصیات بتاتا ہے، وجود اور انفرادیت کے نتائج قائم کرتا ہے۔ ہم مصلحہ پر مبنی صارفیت اور معیاری سماجی انتخاب کے شماریے کے درمیان رشتے کا امتحان کرتے ہیں، انفرادی انتخاب (حلال قید، زکوۃ ذمہ داری) پر اسلامی قیود کی طاقت کو کل سماجی صارفیت پر کیسے متاثر کرتی ہے، اور خصوصیات بتاتے ہیں کہ اسلامی سماجی صارفیت کی زیادگی استعمال میں لانے والی optimum سے کب تک معاہدے ہیں۔ باب Rawlsian کی فرق کے اصول کے ساتھ اسلامی حقوق کے تصورات کی موازنہ کرتے ہوئے اور ملکیت کے حقوق، وراثت، اور عطیہ میں منصفانہ تقسیم کو متعین کرنے میں اس کے کردار کو جانچتے ہوئے منصفانہ انصاف کے رسمی تجزیے سے اختتام ہوتا ہے۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">مصلحہ</span>
+                        <span class="tag">مقاصد الشریعہ</span>
+                        <span class="tag">سماجی صارفیت</span>
+                        <span class="tag">سماجی انتخاب</span>
+                        <span class="tag">Rawlsian موازنہ</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter7_welfare_economics.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 8 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">VIII</div>
+                    <h3 class="chapter-title">میکروکنومک بنیادیں</h3>
+                    <p class="chapter-description">Chapters I سے VII میں تیار کیے گئے microeconomic نظری بنیادوں پر بنیاد رکھتے ہوئے، یہ باب ترقی، چکروں، افراط زر، بے روزگاری، اور پالیسی کی تجزیہ کے لیے موزوں میکروکنومک ماڈلز میں جمع ہوتا ہے۔ ہم Chapter II سے دنیا-آخرہ کی ترجیحات اور رکاوٹوں کو شامل کرتے ہوئے ایک نمائندہ اسلامی ایجنٹ کے ماڈل تیار کرتے ہیں، ایک نیا Keynesian Dynamic Stochastic General Equilibrium (DSGE) ڈھانچہ تعمیر کرتے ہیں جہاں معیاری سود کی شرح کی منتقلی کے طریقہ کار اثاثے کی قیمت اور منافع کی شرح پر مبنی مالیاتی پالیسی کے نالوں سے بدل دیے گئے ہیں، اور زکوۃ نوعیت اور waqf-based عوامی سرمایہ کاری کے ذریعے مالی پالیسی متعارف دیتے ہیں۔ باب صراحت سے ماڈل کرتا ہے کہ کیسے riba کی ممانعت مالیاتی منتقلی کو متاثر کرتی ہے، زکوۃ خودکار مستحکم کے طور پر کیسے کام کرتی ہے، اور اسلامی مالیات کی منافع سے متعلقی ڈھانچے کاروبار کے چکر کی متحرکی کو کیسے متاثر کرتی ہے۔ ہم میکروکنومک توازن کے راستوں کی وجود اور مستحکی قائم کرتے ہیں، مالیاتی اور مالی صدمات کے impulse جوابات حاصل کرتے ہیں، اور شرح امتحان کرتے ہیں جہاں اسلامی مالیاتی اور مالی ڈھانچے روایتی متبادل کے نسبت پیداواری اور بے روزگاری کو مستحکم کرنے میں قیمت کی مستحکی برقرار رکھتے ہوئے۔ یہ باب نظری اسلامی معاشیات سے Research حصے میں پالیسی نقل اور پیشن گوئی کے لیے استعمال ہونے والے استعمال میں لانے والی computational ماڈلز تک رابطے کرتا ہے۔</p>
+                    <div class="chapter-tags">
+                        <span class="tag">جمع</span>
+                        <span class="tag">نیا Keynesian</span>
+                        <span class="tag">مالیاتی پالیسی</span>
+                        <span class="tag">مالی پالیسی</span>
+                        <span class="tag">DSGE پل</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">دستیاب</span>
+                        <a href="../theory/chapter8_macro_foundations.html" class="read-chapter-link">باب پڑھیں →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Methodology Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">طریقہ کار اور ریاضیاتی اصطلاحات</h2>
+
+            <div class="methodology-box fade-in">
+                <h3>رسمی معیارات اور پیشکش</h3>
+                <ul class="methodology-list">
+                    <li><strong>ریاضیاتی سختی:</strong> تمام رسمی نتائج ریاضیاتی معاشیات کے معیاری مقررات کی پیروی کرتے ہیں: تعریفیں تصورات کو درستی سے قائم کرتی ہیں؛ lemmas اہم نظریوں کے لیے ضروری معاون نتائج ثابت کرتے ہیں؛ propositions ثانوی اہمیت کے نئے نتائج پیش کرتے ہیں؛ theorems ہر باب کے اہم نتائج بیان کرتے ہیں۔ ہر proposition اور theorem کے ساتھ ایک proof ہے، یا تو باب کے اندر یا وقف appendix میں، تصدیق اور منطقی ڈھانچے کی سمجھ کو یقینی بنانے کے لیے۔</li>
+
+                    <li><strong>نشان اور قابل رسائی:</strong> ہم جدید micro-economics سے معیاری نشان کو لازم کرتے ہیں (جیسا کہ Mas-Colell, Whinston & Green اور Jehle & Reny میں ملتا ہے) تربیت یافتہ معاشیدانوں کے لیے رسائی کو یقینی بنانے اور بین الشعبوں کے رابطے کو زیادہ سے زیادہ کرنے کے لیے۔ کھپت کا سیٹ ℝ<sub>+</sub><sup>L</sup> کے طور پر نشان دہی ہے؛ ترجیحات binary relations ≽, ≻ سے نمائندگی ہے؛ utility functions u(·) کے طور پر نشان دہی ہے؛ قیمتیں p ∈ ℝ<sub>++</sub><sup>L</sup> ہیں؛ اور بجٹ کے سیٹ معیاری ڈھانچے کی پیروی کرتے ہیں۔ جب اسلامی قیود متعارف دیے جاتے ہیں، ہم صراحت سے کھپت کے سیٹ (مثال کے طور پر halal subset H ⊂ ℝ<sub>+</sub><sup>L</sup> تک محدود کرنا) اور مقصدی فنکشن (مثال کے طور پر akhirah منافع کو شامل کرنا) میں ترمیم کرتے ہیں وضاحت رکھنے کے لیے کہ اسلامی اصول معیاری نظریہ کو کہاں ترمیم کرتے ہیں۔</li>
+
+                    <li><strong>واضح الہیاتی بنیاد:</strong> ہر اسلامی axiom، قید، یا ادارہ قرآن، Sunnah، اور روایتی اسلامی jurisprudence (fiqh) میں وسائل کے واضح حوالے سے متعارف ہے۔ ہر قید الہیاتی بنیاد کی نشاندہی کرتے ہوئے label لے جاتی ہے (جیسا کہ "Constraint C.1: Riba Prohibition (قرآن 2:275, 3:130 سے)" یا "Axiom P.2: Wasatiyyah/Moderation (قرآن 2:143 سے)")۔ یہ یقینی بناتا ہے کہ رسمی نتائج الہیاتی بنیادوں پر نقل ہو سکتے ہیں اور اسلامی axioms میں ترمیم کے مسائل واضح طور پر الہیاتی سوالات کے طور پر غور ہو سکتے ہیں، محض ریاضیاتی نہیں۔</li>
+
+                    <li><strong>معاشی عملیت:</strong> جبکہ رسمی سختی اور الہیاتی بنیاد سب سے اہم ہیں، ہم معاشی عملیت کے لیے ایک commitment برقرار رکھتے ہیں۔ ہر ماڈل اس طریقے سے تعمیر ہے کہ تجزیاتی طور پر حل ہو سکے جہاں ممکن ہو (مثلاً demand functions کے بند شکل کی حل حاصل کرتے ہوئے) اور computationally قابل تخمین جہاں تجزیاتی حل مشکل ہو۔ یہ Theory میں تیار کیے گئے ماڈلز کو Research حصے میں غور کیے جانے والے applied research ماڈلز میں استعمال ہو سکنے کو سہل بناتا ہے۔</li>
+
+                    <li><strong>موازنہ تجزیہ:</strong> اس نقطہ نظر کی ایک کلیدی خصوصیت معیاری معاشی نظریہ کے ساتھ منظومی موازنہ ہے۔ جب بھی اسلامی قید معیاری نتیجے میں ترمیم کرتی ہے، ہم نتائج کو صراحت سے موازنہ کرتے ہیں: مثال کے لیے، "معیاری assumptions کے تحت، Consumer Optimization Theorem X.1 مطلب ہے property P؛ Theorem X.2 قائم کرتا ہے کہ zakat کی قید کے تحت، property P' کے بجائے قائم رہتا ہے، درج ذیل مطلبوں کے ساتھ demand elasticities اور welfare کے لیے۔"</li>
+                </ul>
+            </div>
+
+            <div class="connection-box fade-in">
+                <h3>Applied تحقیق سے رابطہ</h3>
+                <p>اس حصے میں تیار کیے گئے رسمی نظری ڈھانچے ہماری <a href="research.html">Research حصے</a> میں تمام applied quantitative کام کی بنیاد فراہم کرتے ہیں۔ Computational ماڈلز، econometric specifications، اور اس حصے میں پالیسی کی نقل نظری نتائج کو چلاتے ہیں۔ مثال کے طور پر، Chapter III میں اخذ کیے ہوئے demand functions جدید panel econometric تکنیکوں استعمال کرتے ہوئے estimated ہوتے ہیں؛ Chapter IV سے فرم optimization کے نتائج firm-level production function ماڈلز تیار کرنے کے لیے استعمال ہوتے ہیں؛ اور Chapter VIII سے macroeconomic ڈھانچہ DSGE ماڈلز کی بنیاد بناتا ہے جو پیشن گوئی اور پالیسی کی نقل کے لیے استعمال ہوتے ہیں۔ Theory سے Research میں جانے والے قارئین ایک جیسے ریاضیاتی ڈھانچے اور اسلامی رکاوٹوں کو تسلیم کریں گے، اب estimated parameters اور تجرباتی تصدیق کے ساتھ۔</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Related Sections -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">اسلامی معاشیات پلیٹ فارم کو تلاش کریں</h2>
+            <p class="section-subtitle fade-in">نظریہ، بنیادوں، اور applied تحقیق کے درمیان رابطوں کو تلاش کریں</p>
+
+            <div class="related-sections">
+                <div class="related-card fade-in">
+                    <h4>بنیادیں</h4>
+                    <p>اسلامی معاشیات کے لیے الہیاتی، juristic، اور فلسفی بنیادوں کو سمجھیں۔ riba، zakat، waqf، mudarabah، musharakah، اور maqasid al-shariah جیسے بنیادی تصورات کو تلاش کریں جو اس حصے میں ریاضیاتی ڈھانچوں کی بنیاد دیتے ہیں۔</p>
+                    <a href="foundations.html">بنیادوں کو تلاش کریں →</a>
+                </div>
+
+                <div class="related-card fade-in">
+                    <h4>تحقیق</h4>
+                    <p>نظریہ کو عملی حال میں دیکھیں۔ یہ حصہ یہاں تیار کیے گئے رسمی ماڈلز کو جدید معاشی سوالات پر لاگو کرتا ہے، تجرباتی شہادت، econometric estimation، اور computational DSGE ماڈلز پیش کرتے ہوئے جو اسلامی معاشی نظریہ کو استعمال میں لاتے ہیں۔</p>
+                    <a href="research.html">تحقیق کو تلاش کریں →</a>
+                </div>
+
+                <div class="related-card fade-in">
+                    <h4>تاریخ</h4>
+                    <p>قرون وسطی کے علماء جیسے Ibn Taimiyah اور Al-Ghazali سے 20ویں صدی میں اسلامی معاشیات کے جدید برطرفی تک اسلامی معاشی سوچ کی تاریخی ترقی کا امتحان کریں۔ دیکھیں کہ کیسے روایتی intuitions جدید رسمی نظریہ کے لیے پیش دریافت کریں۔</p>
+                    <a href="history.html">تاریخ کو تلاش کریں →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">اسلامی معاشیات</a>
+          <p class="footer-brand-desc">اسلامی معاشی فکر کی الہٰیاتی بنیادوں، باقاعدہ نظریے، تاریخی ارتقاء اور جدید عمل کی تلاش — مدینہ کی ابتدائی منڈیوں سے لے کر آج کی عالمی اسلامی مالیاتی صنعت تک۔</p>
+          <blockquote class="footer-ayah">
+            <p>"اور ایک دوسرے کا مال ناحق نہ کھاؤ اور نہ حکمرانوں کو رشوت دو تاکہ لوگوں کے مال کا کچھ حصہ ناجائز طور پر کھا سکو۔"</p>
+            <cite>— البقرۃ 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">علم</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">بنیادیں</a></li>
+              <li><a href="scriptures.html">قرآن و حدیث</a></li>
+              <li><a href="theory.html">نظریہ</a></li>
+              <li><a href="history.html">تاریخ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">جدید معیشت</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">تحقیق</a></li>
+              <li><a href="dashboard.html">ڈیش بورڈ</a></li>
+              <li><a href="podcast.html">میڈیا</a></li>
+              <li><a href="blog.html">التجارۃ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">رابطہ</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="آپ کی ای میل" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">سبسکرائب</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 اسلامی معاشیات</p>
+        <a href="about.html" class="footer-bottom-link">تعارف</a>
+      </div>
+    </div>
+  </footer>
+    <button class="back-to-top" data-back-to-top aria-label="اوپر جائیں">&uarr;</button>
+
+    <script src="../js/main.js"></script>
+    <script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+</script>
+
+    <script>
+    /* Scroll-triggered fade-up animation */
+    (function() {
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if (!fadeEls.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+    </script>
+</body>
+</html>

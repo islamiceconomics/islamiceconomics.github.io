@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media — Islamic Economics</title>
+  <meta name="description" content="Islamic Economics Media — podcasts, videos, and documentaries exploring the principles, history, and modern applications of Islamic economic thought.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+  <script>(function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+  <style>
+    /* ── Media Hub Styles ── */
+
+    /* Media type navigation */
+    .media-nav {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1.5rem 0 0;
+      border-bottom: 1px solid var(--color-border-light);
+      margin-bottom: 2.5rem;
+    }
+    .media-nav-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--font-sans);
+    }
+    .media-nav-btn:hover {
+      color: var(--color-text-primary);
+    }
+    .media-nav-btn.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+    .media-nav-btn .media-nav-count {
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-light);
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      margin-left: 0.4rem;
+    }
+    .media-nav-btn.active .media-nav-count {
+      background: var(--color-primary-subtle);
+      color: var(--color-primary);
+    }
+
+    /* Media sections */
+    .media-tab { display: none; }
+    .media-tab.active { display: block; }
+
+    /* ── Series Card ── */
+    .series-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      transition: all 0.25s;
+    }
+    .series-card:hover {
+      border-color: var(--color-border);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .series-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .series-cover {
+      width: 160px;
+      height: 160px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, #0d3d25 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .series-cover::before {
+      content: '';
+      position: absolute;
+      top: -25px; right: -25px;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.15);
+    }
+    .series-cover::after {
+      content: '';
+      position: absolute;
+      bottom: -15px; left: -15px;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.1);
+    }
+    .series-cover-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+      position: relative;
+      z-index: 1;
+    }
+    .series-cover-title {
+      font-family: var(--font-serif);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.3;
+      padding: 0 0.75rem;
+      position: relative;
+      z-index: 1;
+    }
+    .series-cover-sub {
+      font-size: 0.6rem;
+      opacity: 0.7;
+      margin-top: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+    .series-info {
+      flex: 1;
+    }
+    .series-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.5rem;
+    }
+    .series-title {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+    .series-desc {
+      font-size: 0.92rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+    .series-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--color-text-light);
+    }
+    .series-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ── Episode List (compact) ── */
+    .episode-list {
+      border-top: 1px solid var(--color-border-light);
+    }
+    .episode-row {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--color-border-light);
+      transition: background 0.15s;
+      cursor: default;
+    }
+    .episode-row:last-child {
+      border-bottom: none;
+    }
+    .episode-row:hover {
+      background: var(--color-primary-subtle);
+    }
+    .episode-row-number {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-text-light);
+      min-width: 24px;
+      text-align: center;
+    }
+    .episode-row-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .episode-row-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.2rem;
+      line-height: 1.35;
+    }
+    .episode-row-subtitle {
+      font-size: 0.82rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+    .episode-row-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+    .episode-row-duration {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+    .episode-row-status {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .status-available {
+      background: rgba(26, 92, 58, 0.1);
+      color: var(--color-primary);
+    }
+    .status-coming {
+      background: rgba(184, 150, 46, 0.12);
+      color: var(--color-accent);
+    }
+
+    /* ── Expanded Episode (when clicked) ── */
+    .episode-expanded {
+      display: none;
+      padding: 0 2rem 1.5rem;
+      padding-left: 3.5rem;
+    }
+    .episode-expanded.open {
+      display: block;
+    }
+    .episode-expanded-desc {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .episode-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .topic-tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+    .episode-player {
+      background: var(--color-bg-secondary);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+    }
+    .episode-player audio {
+      width: 100%;
+      height: 36px;
+    }
+
+    /* ── Video / Documentary Cards ── */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .media-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+    .media-card:hover {
+      border-color: var(--color-border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .media-card-thumb {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(135deg, var(--color-secondary) 0%, #0d1f3d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 3rem;
+      position: relative;
+    }
+    .media-card-thumb-label {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .media-card-body {
+      padding: 1.25rem;
+    }
+    .media-card-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+    .media-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.4rem;
+      line-height: 1.35;
+    }
+    .media-card-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+    .media-card-status {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+    }
+
+    /* ── Coming Soon placeholder ── */
+    .coming-soon-block {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: var(--color-bg-secondary);
+      border-radius: 12px;
+      border: 1px dashed var(--color-border);
+    }
+    .coming-soon-block h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .coming-soon-block p {
+      font-size: 0.88rem;
+      color: var(--color-text-light);
+      max-width: 450px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ── Subscribe CTA ── */
+    .subscribe-cta {
+      text-align: center;
+      padding: 3.5rem 1.5rem;
+      background: var(--color-bg-secondary);
+      margin-top: 3rem;
+    }
+    .subscribe-cta h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .subscribe-cta p {
+      color: var(--color-text-secondary);
+      max-width: 500px;
+      margin: 0 auto 1.25rem;
+      line-height: 1.6;
+      font-size: 0.92rem;
+    }
+    .subscribe-form {
+      display: flex;
+      gap: 0.6rem;
+      max-width: 400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .subscribe-form input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      font-size: 0.88rem;
+      background: var(--color-surface);
+      color: var(--color-text-primary);
+    }
+    .subscribe-form input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+    .subscribe-btn {
+      padding: 0.65rem 1.25rem;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .subscribe-btn:hover {
+      background: var(--color-primary-dark);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .series-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.25rem;
+        padding: 1.5rem;
+      }
+      .series-cover { width: 130px; height: 130px; }
+      .series-title { font-size: 1.35rem; }
+      .series-meta { justify-content: center; }
+      .episode-row { padding: 1rem 1.25rem; gap: 0.75rem; }
+      .episode-expanded { padding-left: 1.25rem; }
+      .episode-row-meta { flex-direction: column; align-items: flex-end; gap: 0.3rem; }
+      .media-nav { overflow-x: auto; flex-wrap: nowrap; }
+      .media-nav-btn { white-space: nowrap; padding: 0.6rem 1rem; font-size: 0.82rem; }
+    }
+    @media (max-width: 480px) {
+      .series-cover { width: 110px; height: 110px; }
+      .episode-row-number { display: none; }
+      .media-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Dark mode ── */
+    [data-theme="dark"] .series-card,
+    [data-theme="dark"] .media-card {
+      background: var(--color-surface);
+    }
+    [data-theme="dark"] .episode-player {
+      background: rgba(255,255,255,0.04);
+    }
+    [data-theme="dark"] .topic-tag {
+      background: rgba(255,255,255,0.06);
+    }
+    [data-theme="dark"] .coming-soon-block {
+      background: var(--color-surface);
+      border-color: var(--color-border);
+    }
+    [data-theme="dark"] .subscribe-cta {
+      background: var(--color-surface);
+    }
+    [data-theme="dark"] .subscribe-form input {
+      background: var(--color-bg);
+      border-color: var(--color-border);
+    }
+    [data-theme="dark"] .media-nav {
+      border-bottom-color: var(--color-border);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Islamic Economics</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Learn <span class="nav-dropdown-arrow">&#9662;</span></button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="foundations.html">Foundations</a></li>
+            <li><a href="theory.html">Theory</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </li>
+        <li><a href="scriptures.html" class="nav-link">Scriptures</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="podcast.html" class="nav-link active">Media</a></li>
+        <li><a href="blog.html" class="nav-link">Al-Tijarah</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <a href="ur/podcast.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-moon">&#9790;</span>
+        <span class="icon-sun">&#9788;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-small">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Media</span>
+      </nav>
+      <h1 style="font-family:var(--font-serif);font-size:2.25rem;font-weight:700;color:var(--color-text-primary);margin-bottom:0.75rem;">Media</h1>
+      <p style="color:var(--color-text-secondary);font-size:1.05rem;line-height:1.7;max-width:650px;">Podcasts, videos, and documentaries exploring the principles, history, and modern applications of Islamic economic thought.</p>
+    </div>
+  </section>
+
+  <!-- Media Hub -->
+  <section style="padding:2rem 0 4rem;">
+    <div class="container">
+
+      <!-- Media Type Tabs -->
+      <div class="media-nav">
+        <button class="media-nav-btn active" data-tab="podcasts">Podcasts <span class="media-nav-count">6</span></button>
+        <button class="media-nav-btn" data-tab="videos">Videos <span class="media-nav-count">1</span></button>
+        <button class="media-nav-btn" data-tab="documentaries">Documentaries <span class="media-nav-count">0</span></button>
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- PODCASTS TAB                                -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="media-tab active" id="tab-podcasts">
+
+        <!-- Series: Historical Islamic Economics -->
+        <div class="series-card fade-up">
+          <div class="series-header">
+            <div class="series-cover">
+              <div class="series-cover-icon">&#127897;</div>
+              <div class="series-cover-title">Historical Islamic Economics</div>
+              <div class="series-cover-sub">Podcast Series</div>
+            </div>
+            <div class="series-info">
+              <div class="series-label">Podcast Series</div>
+              <h2 class="series-title">Historical Islamic Economics</h2>
+              <p class="series-desc">A narrative journey through 1,500 years of Islamic economic thought — from the markets of pre-Islamic Mecca through the golden age of scholars and traders to the colonial disruption and modern revival. Engaging, story-driven, and historically rich.</p>
+              <div class="series-meta">
+                <span class="series-meta-item">&#127911; 6 episodes</span>
+                <span class="series-meta-item">&#9201; ~28 min each</span>
+                <span class="series-meta-item">Hosts: Tariq &amp; Amira</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episode List -->
+          <div class="episode-list">
+
+            <!-- Episode 1 -->
+            <div class="episode-row" data-episode="1">
+              <span class="episode-row-number">01</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Forgotten Economists</div>
+                <div class="episode-row-subtitle">A 1,500-year journey through Islamic economic thought — from Mecca to Ibn Khaldun to the modern revival.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">15 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-1">
+              <p class="episode-expanded-desc">
+                Did you know that a 14th-century Muslim scholar described supply and demand, the division of labor, and the labor theory of value — four hundred years before Adam Smith? In this pilot episode, we trace the entire arc of Islamic economic thought: from the bustling markets of pre-Islamic Mecca and the Prophet Muhammad's career as a merchant, through the golden age of scholars like Abu Yusuf, Al-Ghazali, and Ibn Khaldun, to the colonial disruption and the remarkable modern revival of Islamic finance.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Pre-Islamic Trade</span>
+                <span class="topic-tag">Prophet Muhammad (PBUH)</span>
+                <span class="topic-tag">Riba &amp; Zakat</span>
+                <span class="topic-tag">Golden Age Scholars</span>
+                <span class="topic-tag">Ibn Khaldun</span>
+                <span class="topic-tag">Trade Networks</span>
+                <span class="topic-tag">Modern Revival</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/ep01-islamic-economic-history.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- Episode 2 -->
+            <div class="episode-row" data-episode="2">
+              <span class="episode-row-number">02</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Marketplace of Medina</div>
+                <div class="episode-row-subtitle">How the Prophet established the first regulated Islamic marketplace — fair trade, consumer protection, and the hisbah system.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">~27 min</span>
+                <span class="episode-row-status status-coming">Coming Soon</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-2">
+              <p class="episode-expanded-desc">
+                When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was a place where the clever merchant won and ordinary people lost. He transformed it entirely — establishing open access, banning sham bidding and hoarding, and creating the hisbah system of market inspectors. Discover how 7th-century marketplace reforms created the foundation for Islamic commercial law.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Medina Marketplace</span>
+                <span class="topic-tag">Hisbah System</span>
+                <span class="topic-tag">Najash</span>
+                <span class="topic-tag">Fair Weights</span>
+                <span class="topic-tag">Consumer Protection</span>
+                <span class="topic-tag">Khiyar</span>
+              </div>
+            </div>
+
+            <!-- Episode 3 -->
+            <div class="episode-row" data-episode="3">
+              <span class="episode-row-number">03</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The House of Wisdom</div>
+                <div class="episode-row-subtitle">Baghdad's golden age — cheques, bills of exchange, venture capital, and banking without interest.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">~27 min</span>
+                <span class="episode-row-status status-coming">Coming Soon</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-3">
+              <p class="episode-expanded-desc">
+                While Europe was still bartering, 9th-century Baghdad had cheques, bills of exchange, international money transfers, and venture capital — all without interest. Explore how Caliph Harun al-Rashid built the world's first multicultural economic hub, how Abu Yusuf revolutionized tax policy, and how the hawala system moved money across continents on trust alone.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Abbasid Baghdad</span>
+                <span class="topic-tag">Harun al-Rashid</span>
+                <span class="topic-tag">Abu Yusuf</span>
+                <span class="topic-tag">Sakk &amp; Suftaja</span>
+                <span class="topic-tag">Hawala</span>
+                <span class="topic-tag">Mudaraba</span>
+              </div>
+            </div>
+
+            <!-- Episode 4 -->
+            <div class="episode-row" data-episode="4">
+              <span class="episode-row-number">04</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Coins of the Caliphate</div>
+                <div class="episode-row-subtitle">The gold dinar, silver dirham, and the monetary revolution that unified Islamic commerce across continents.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">~27 min</span>
+                <span class="episode-row-status status-coming">Coming Soon</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-4">
+              <p class="episode-expanded-desc">
+                In 696 CE, Caliph Abd al-Malik ibn Marwan made a bold decision: replace the Byzantine and Persian coins circulating in Islamic lands with purely Islamic coinage. The gold dinar and silver dirham became the most trusted currencies of the medieval world. Discover how Al-Ghazali described Gresham's Law 800 years before Gresham, and how Al-Maqrizi conducted one of history's first studies of inflation.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Gold Dinar</span>
+                <span class="topic-tag">Silver Dirham</span>
+                <span class="topic-tag">Abd al-Malik</span>
+                <span class="topic-tag">Al-Ghazali</span>
+                <span class="topic-tag">Ibn Taymiyyah</span>
+                <span class="topic-tag">Inflation</span>
+              </div>
+            </div>
+
+            <!-- Episode 5 -->
+            <div class="episode-row" data-episode="5">
+              <span class="episode-row-number">05</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Caravans to Cathay</div>
+                <div class="episode-row-subtitle">The vast Islamic trade networks — from Andalusia to China — held together by trust, law, and shared faith.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">~27 min</span>
+                <span class="episode-row-status status-coming">Coming Soon</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-5">
+              <p class="episode-expanded-desc">
+                In 1324, Mansa Musa of Mali crossed the Sahara with 60,000 people and so much gold that he crashed the precious metals market in Cairo. His journey was just one moment in a much larger story: the greatest pre-modern trading bloc in history. Journey across the Silk Road, the Indian Ocean dhow routes, and the trans-Saharan gold trade with Ibn Battuta as our guide.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Silk Road</span>
+                <span class="topic-tag">Indian Ocean Trade</span>
+                <span class="topic-tag">Mansa Musa</span>
+                <span class="topic-tag">Ibn Battuta</span>
+                <span class="topic-tag">Trans-Saharan Trade</span>
+                <span class="topic-tag">Amana (Trust)</span>
+              </div>
+            </div>
+
+            <!-- Episode 6 -->
+            <div class="episode-row" data-episode="6">
+              <span class="episode-row-number">06</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Waqf — A Thousand Years of Charity</div>
+                <div class="episode-row-subtitle">How the Islamic endowment system funded hospitals, universities, and cities for centuries — and what happened when colonialism dismantled it.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">~27 min</span>
+                <span class="episode-row-status status-coming">Coming Soon</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-6">
+              <p class="episode-expanded-desc">
+                By the Ottoman peak, an estimated one-third of all productive land was waqf property — irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure. The Süleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle. Then European colonial powers systematically dismantled it. This is the story of institutional memory, loss, and potential recovery.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Waqf Endowments</span>
+                <span class="topic-tag">Al-Azhar University</span>
+                <span class="topic-tag">Süleymaniye Complex</span>
+                <span class="topic-tag">Ottoman Welfare</span>
+                <span class="topic-tag">Colonial Dismantlement</span>
+                <span class="topic-tag">Modern Revival</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Future Series Placeholder -->
+        <div class="coming-soon-block fade-up">
+          <h3>More Series Coming</h3>
+          <p>Future podcast series will explore Islamic finance theory, contemporary policy debates, and country-specific economic analysis.</p>
+        </div>
+
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- VIDEOS TAB                                  -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="media-tab" id="tab-videos">
+
+        <div class="media-grid">
+          <!-- The Golden Economy -->
+          <div class="media-card fade-up">
+            <div class="media-card-thumb">
+              &#9654;
+              <span class="media-card-thumb-label">Short Film</span>
+            </div>
+            <div class="media-card-body">
+              <div class="media-card-label">Documentary Short</div>
+              <h3 class="media-card-title">The Golden Economy</h3>
+              <p class="media-card-desc">A cinematic journey from the desert caravans of 7th-century Arabia to the modern skylines of Islamic finance — tracing 1,400 years of economic history in 90 seconds.</p>
+              <span class="media-card-status">In Production</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-soon-block fade-up">
+          <h3>More Videos Coming</h3>
+          <p>We're producing short-form video content exploring Islamic economic history, principles, and their modern-day relevance.</p>
+        </div>
+
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- DOCUMENTARIES TAB                           -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="media-tab" id="tab-documentaries">
+
+        <div class="coming-soon-block fade-up" style="margin-top:1rem;">
+          <h3>Documentaries Coming Soon</h3>
+          <p>Long-form documentary content exploring the history, institutions, and living legacy of Islamic economic thought across centuries and continents.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Subscribe CTA -->
+  <section class="subscribe-cta">
+    <div class="container">
+      <h2 class="fade-up">Never Miss an Episode</h2>
+      <p>Subscribe to get notified when new episodes and media content drops.</p>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Islamic Economics</a>
+          <p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought — from the earliest markets of Medina to today's global Islamic finance industry.</p>
+          <blockquote class="footer-ayah">
+            <p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
+            <cite>— Al-Baqarah 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Knowledge</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">Foundations</a></li>
+              <li><a href="scriptures.html">Scriptures</a></li>
+              <li><a href="theory.html">Theory</a></li>
+              <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Modern Economy</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">Research</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="podcast.html">Media</a></li>
+              <li><a href="blog.html">Al-Tijarah</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="Your email" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Islamic Economics</p>
+        <a href="about.html" class="footer-bottom-link">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" data-back-to-top aria-label="Back to top">&uarr;</button>
+
+  <script src="js/main.js"></script>
+  <script>
+/* Nav dropdown toggle */
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+
+/* Media tab switching */
+document.querySelectorAll('.media-nav-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Update active tab button
+    document.querySelectorAll('.media-nav-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    // Show corresponding tab content
+    const tabId = 'tab-' + this.dataset.tab;
+    document.querySelectorAll('.media-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+  });
+});
+
+/* Episode row expand/collapse */
+document.querySelectorAll('.episode-row').forEach(row => {
+  row.addEventListener('click', function() {
+    const epNum = this.dataset.episode;
+    const expanded = document.getElementById('ep-' + epNum);
+    if (expanded) {
+      // Close all others first
+      document.querySelectorAll('.episode-expanded.open').forEach(el => {
+        if (el.id !== 'ep-' + epNum) el.classList.remove('open');
+      });
+      expanded.classList.toggle('open');
+    }
+  });
+});
+
+/* Scroll-triggered fade-up animation */
+(function() {
+  var fadeEls = document.querySelectorAll('.fade-up');
+  if (!fadeEls.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  fadeEls.forEach(function(el) { observer.observe(el); });
+})();
+  </script>
+</body>
+</html>

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>میڈیا — اسلامی معاشیات</title>
+  <meta name="description" content="اسلامی معاشیات میڈیا — پوڈ کاسٹ، ویڈیوز، اور ڈاکومنٹریز اسلامی معاشی سوچ کے اصول، تاریخ، اور جدید استعمال کو تلاش کرتے ہوئے۔">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+  <script>(function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+  <style>
+    /* ── Media Hub Styles ── */
+
+    /* Media type navigation */
+    .media-nav {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1.5rem 0 0;
+      border-bottom: 1px solid var(--color-border-light);
+      margin-bottom: 2.5rem;
+    }
+    .media-nav-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--font-sans);
+    }
+    .media-nav-btn:hover {
+      color: var(--color-text-primary);
+    }
+    .media-nav-btn.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+    .media-nav-btn .media-nav-count {
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-light);
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      margin-left: 0.4rem;
+    }
+    .media-nav-btn.active .media-nav-count {
+      background: var(--color-primary-subtle);
+      color: var(--color-primary);
+    }
+
+    /* Media sections */
+    .media-tab { display: none; }
+    .media-tab.active { display: block; }
+
+    /* ── Series Card ── */
+    .series-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      transition: all 0.25s;
+    }
+    .series-card:hover {
+      border-color: var(--color-border);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .series-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .series-cover {
+      width: 160px;
+      height: 160px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, #0d3d25 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .series-cover::before {
+      content: '';
+      position: absolute;
+      top: -25px; right: -25px;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.15);
+    }
+    .series-cover::after {
+      content: '';
+      position: absolute;
+      bottom: -15px; left: -15px;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.1);
+    }
+    .series-cover-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+      position: relative;
+      z-index: 1;
+    }
+    .series-cover-title {
+      font-family: var(--font-serif);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.3;
+      padding: 0 0.75rem;
+      position: relative;
+      z-index: 1;
+    }
+    .series-cover-sub {
+      font-size: 0.6rem;
+      opacity: 0.7;
+      margin-top: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+    .series-info {
+      flex: 1;
+    }
+    .series-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.5rem;
+    }
+    .series-title {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+    .series-desc {
+      font-size: 0.92rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+    .series-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--color-text-light);
+    }
+    .series-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ── Episode List (compact) ── */
+    .episode-list {
+      border-top: 1px solid var(--color-border-light);
+    }
+    .episode-row {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--color-border-light);
+      transition: background 0.15s;
+      cursor: default;
+    }
+    .episode-row:last-child {
+      border-bottom: none;
+    }
+    .episode-row:hover {
+      background: var(--color-primary-subtle);
+    }
+    .episode-row-number {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-text-light);
+      min-width: 24px;
+      text-align: center;
+    }
+    .episode-row-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .episode-row-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.2rem;
+      line-height: 1.35;
+    }
+    .episode-row-subtitle {
+      font-size: 0.82rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+    .episode-row-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+    .episode-row-duration {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+    .episode-row-status {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .status-available {
+      background: rgba(26, 92, 58, 0.1);
+      color: var(--color-primary);
+    }
+    .status-coming {
+      background: rgba(184, 150, 46, 0.12);
+      color: var(--color-accent);
+    }
+
+    /* ── Expanded Episode (when clicked) ── */
+    .episode-expanded {
+      display: none;
+      padding: 0 2rem 1.5rem;
+      padding-left: 3.5rem;
+    }
+    .episode-expanded.open {
+      display: block;
+    }
+    .episode-expanded-desc {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .episode-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .topic-tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+    .episode-player {
+      background: var(--color-bg-secondary);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+    }
+    .episode-player audio {
+      width: 100%;
+      height: 36px;
+    }
+
+    /* ── Video / Documentary Cards ── */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .media-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+    .media-card:hover {
+      border-color: var(--color-border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .media-card-thumb {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(135deg, var(--color-secondary) 0%, #0d1f3d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 3rem;
+      position: relative;
+    }
+    .media-card-thumb-label {
+      position: absolute;
+      bottom: 0.75rem;
+      left: 0.75rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .media-card-body {
+      padding: 1.25rem;
+    }
+    .media-card-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+    .media-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.4rem;
+      line-height: 1.35;
+    }
+    .media-card-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+    .media-card-status {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--color-text-light);
+    }
+
+    /* ── Coming Soon placeholder ── */
+    .coming-soon-block {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: var(--color-bg-secondary);
+      border-radius: 12px;
+      border: 1px dashed var(--color-border);
+    }
+    .coming-soon-block h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .coming-soon-block p {
+      font-size: 0.88rem;
+      color: var(--color-text-light);
+      max-width: 450px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ── Subscribe CTA ── */
+    .subscribe-cta {
+      text-align: center;
+      padding: 3.5rem 1.5rem;
+      background: var(--color-bg-secondary);
+      margin-top: 3rem;
+    }
+    .subscribe-cta h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .subscribe-cta p {
+      color: var(--color-text-secondary);
+      max-width: 500px;
+      margin: 0 auto 1.25rem;
+      line-height: 1.6;
+      font-size: 0.92rem;
+    }
+    .subscribe-form {
+      display: flex;
+      gap: 0.6rem;
+      max-width: 400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .subscribe-form input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      font-size: 0.88rem;
+      background: var(--color-surface);
+      color: var(--color-text-primary);
+    }
+    .subscribe-form input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+    .subscribe-btn {
+      padding: 0.65rem 1.25rem;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .subscribe-btn:hover {
+      background: var(--color-primary-dark);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .series-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.25rem;
+        padding: 1.5rem;
+      }
+      .series-cover { width: 130px; height: 130px; }
+      .series-title { font-size: 1.35rem; }
+      .series-meta { justify-content: center; }
+      .episode-row { padding: 1rem 1.25rem; gap: 0.75rem; }
+      .episode-expanded { padding-left: 1.25rem; }
+      .episode-row-meta { flex-direction: column; align-items: flex-end; gap: 0.3rem; }
+      .media-nav { overflow-x: auto; flex-wrap: nowrap; }
+      .media-nav-btn { white-space: nowrap; padding: 0.6rem 1rem; font-size: 0.82rem; }
+    }
+    @media (max-width: 480px) {
+      .series-cover { width: 110px; height: 110px; }
+      .episode-row-number { display: none; }
+      .media-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Dark mode ── */
+    [data-theme="dark"] .series-card,
+    [data-theme="dark"] .media-card {
+      background: var(--color-surface);
+    }
+    [data-theme="dark"] .episode-player {
+      background: rgba(255,255,255,0.04);
+    }
+    [data-theme="dark"] .topic-tag {
+      background: rgba(255,255,255,0.06);
+    }
+    [data-theme="dark"] .coming-soon-block {
+      background: var(--color-surface);
+      border-color: var(--color-border);
+    }
+    [data-theme="dark"] .subscribe-cta {
+      background: var(--color-surface);
+    }
+    [data-theme="dark"] .subscribe-form input {
+      background: var(--color-bg);
+      border-color: var(--color-border);
+    }
+    [data-theme="dark"] .media-nav {
+      border-bottom-color: var(--color-border);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">اسلامی معاشیات</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="نیویگیشن ٹوگل">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">ہوم</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle">سیکھیں <span class="nav-dropdown-arrow">&#9662;</span></button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="foundations.html">بنیادیں</a></li>
+            <li><a href="theory.html">نظریہ</a></li>
+            <li><a href="research.html">تحقیق</a></li>
+            <li><a href="history.html">تاریخ</a></li>
+          </ul>
+        </li>
+        <li><a href="scriptures.html" class="nav-link">قرآن و حدیث</a></li>
+        <li><a href="dashboard.html" class="nav-link">ڈیش بورڈ</a></li>
+        <li><a href="podcast.html" class="nav-link active">میڈیا</a></li>
+        <li><a href="blog.html" class="nav-link">التجارۃ</a></li>
+        <li><a href="about.html" class="nav-link">تعارف</a></li>
+      </ul>
+      <a href="../podcast.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+      <button class="theme-toggle" aria-label="ڈارک موڈ ٹوگل">
+        <span class="icon-moon">&#9790;</span>
+        <span class="icon-sun">&#9788;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-small">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">ہوم</a> <span>/</span> <span>میڈیا</span>
+      </nav>
+      <h1 style="font-family:var(--font-serif);font-size:2.25rem;font-weight:700;color:var(--color-text-primary);margin-bottom:0.75rem;">میڈیا</h1>
+      <p style="color:var(--color-text-secondary);font-size:1.05rem;line-height:1.7;max-width:650px;">پوڈ کاسٹ، ویڈیوز، اور ڈاکومنٹریز اسلامی معاشی سوچ کے اصول، تاریخ، اور جدید استعمال کو تلاش کرتے ہوئے۔</p>
+    </div>
+  </section>
+
+  <!-- Media Hub -->
+  <section style="padding:2rem 0 4rem;">
+    <div class="container">
+
+      <!-- Media Type Tabs -->
+      <div class="media-nav">
+        <button class="media-nav-btn active" data-tab="podcasts">پوڈ کاسٹ <span class="media-nav-count">6</span></button>
+        <button class="media-nav-btn" data-tab="videos">ویڈیوز <span class="media-nav-count">1</span></button>
+        <button class="media-nav-btn" data-tab="documentaries">ڈاکومنٹریز <span class="media-nav-count">0</span></button>
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- PODCASTS TAB                                -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="media-tab active" id="tab-podcasts">
+
+        <!-- Series: Historical Islamic Economics -->
+        <div class="series-card fade-up">
+          <div class="series-header">
+            <div class="series-cover">
+              <div class="series-cover-icon">&#127897;</div>
+              <div class="series-cover-title">تاریخی اسلامی معاشیات</div>
+              <div class="series-cover-sub">پوڈ کاسٹ سیریز</div>
+            </div>
+            <div class="series-info">
+              <div class="series-label">پوڈ کاسٹ سیریز</div>
+              <h2 class="series-title">تاریخی اسلامی معاشیات</h2>
+              <p class="series-desc">1500 سال کے اسلامی معاشی سوچ کا ایک روایتی سفر — پہلے جاہلیت کی منڈیوں سے لے کر علماء و تجار کے دور زریں تک، اور پھر نوآبادیاتی خلل اور جدید احیاء۔ دلکش، کہانی پر مبنی، اور تاریخی طور پر بھرا ہوا۔</p>
+              <div class="series-meta">
+                <span class="series-meta-item">&#127911; 6 حلقے</span>
+                <span class="series-meta-item">&#9201; ہر ایک تقریباً 28 منٹ</span>
+                <span class="series-meta-item">میزبان: طارق اور امیرہ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episode List -->
+          <div class="episode-list">
+
+            <!-- Episode 1 -->
+            <div class="episode-row" data-episode="1">
+              <span class="episode-row-number">01</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">بھولے ہوئے معاشیات دان</div>
+                <div class="episode-row-subtitle">اسلامی معاشی سوچ کے 1500 سال کا سفر — مکہ سے ابن خلدون تک اور جدید احیاء تک۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">15 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; چلائیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-1">
+              <p class="episode-expanded-desc">
+                کیا آپ جانتے ہیں کہ ایک 14ویں صدی کے مسلمان عالم نے رسد و طلب، تقسیم کار، اور مشقت کا نظریہ بیان کیا — ایڈم سمتھ سے چار سو سال پہلے؟ اس پائلٹ حلقے میں، ہم اسلامی معاشی سوچ کی پوری کہانی بیان کرتے ہیں: پہلے اسلام سے قبل مکہ کی منڈیوں سے اور نبی محمد کے تجارت کے کیریئر سے، علماء جیسے ابو یوسف، الغزالی، اور ابن خلدون کے دور زریں سے، نوآبادیاتی خلل اور اسلامی مالیاتی نظام کے قابلِ غور جدید احیاء تک۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">قبل اسلام تجارت</span>
+                <span class="topic-tag">نبی محمد ﷺ</span>
+                <span class="topic-tag">سود و زکوۃ</span>
+                <span class="topic-tag">دور زریں علماء</span>
+                <span class="topic-tag">ابن خلدون</span>
+                <span class="topic-tag">تجارتی نیٹ ورکس</span>
+                <span class="topic-tag">جدید احیاء</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/ep01-islamic-economic-history.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- Episode 2 -->
+            <div class="episode-row" data-episode="2">
+              <span class="episode-row-number">02</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">مدینہ کی منڈی</div>
+                <div class="episode-row-subtitle">نبی کریم نے پہلی منظم اسلامی منڈی کیسے قائم کی — منصفانہ تجارت، صارف کی حفاظت، اور حسبہ کا نظام۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">تقریباً 27 منٹ</span>
+                <span class="episode-row-status status-coming">جلد آرہی ہے</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-2">
+              <p class="episode-expanded-desc">
+                جب نبی محمد 622 عیسوی میں مدینہ پہنچے، تو منڈی ایک ایسی جگہ تھی جہاں ہوشیار تاجر جیت جاتے تھے اور عام لوگ ہار جاتے تھے۔ انہوں نے اسے بالکل بدل دیا — کھلی رسائی قائم کی، جھوٹی نیلام اور ذخیرہ کاری پر پابندی لگائی، اور منڈی کے نگران کا نظام (حسبہ) بنایا۔ دریافت کریں کہ کیسے 7ویں صدی کی منڈی کی اصلاحات اسلامی تجارتی قانون کی بنیاد رکھی۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">مدینہ کی منڈی</span>
+                <span class="topic-tag">حسبہ کا نظام</span>
+                <span class="topic-tag">نجاش</span>
+                <span class="topic-tag">منصفانہ وزن</span>
+                <span class="topic-tag">صارف کی حفاظت</span>
+                <span class="topic-tag">خیار</span>
+              </div>
+            </div>
+
+            <!-- Episode 3 -->
+            <div class="episode-row" data-episode="3">
+              <span class="episode-row-number">03</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">بیت الحکمہ</div>
+                <div class="episode-row-subtitle">بغداد کا دور زریں — چیک، ہندی خط، سرمایہ کاری، اور سود کے بغیر بینکاری۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">تقریباً 27 منٹ</span>
+                <span class="episode-row-status status-coming">جلد آرہی ہے</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-3">
+              <p class="episode-expanded-desc">
+                جب یورپ ابھی بھی لین دین کر رہا تھا، 9ویں صدی کے بغداد میں چیک، ہندی خط، بین الاقوامی رقوم کی منتقلی، اور سرمایہ کاری — سب کچھ سود کے بغیر تھا۔ دریافت کریں کہ کیسے خلیفہ ہارون الرشید نے دنیا کا پہلا کثیر الثقافتی معاشی مرکز بنایا، ابو یوسف نے ٹیکس کی پالیسی میں انقلاب برپا کیا، اور ہوالہ کا نظام صرف اعتماد کی بنیاد پر براعظموں کے درمیان پیسے منتقل کرتا تھا۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">عباسی بغداد</span>
+                <span class="topic-tag">ہارون الرشید</span>
+                <span class="topic-tag">ابو یوسف</span>
+                <span class="topic-tag">ساکک و سفتجہ</span>
+                <span class="topic-tag">ہوالہ</span>
+                <span class="topic-tag">مضاربہ</span>
+              </div>
+            </div>
+
+            <!-- Episode 4 -->
+            <div class="episode-row" data-episode="4">
+              <span class="episode-row-number">04</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">خلافت کے سکے</div>
+                <div class="episode-row-subtitle">سونے کا دینار، چاندی کا درہم، اور معاشی انقلاب جس نے براعظموں کے پار اسلامی تجارت کو متحد کیا۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">تقریباً 27 منٹ</span>
+                <span class="episode-row-status status-coming">جلد آرہی ہے</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-4">
+              <p class="episode-expanded-desc">
+                696 عیسوی میں، خلیفہ عبد الملک بن مروان نے ایک بہادری کا فیصلہ کیا: بازنطینی اور فارسی سکے جو اسلامی علاقوں میں گردش میں تھے ان کی جگہ خالصتاً اسلامی سکہ سازی لانا۔ سونے کا دینار اور چاندی کا درہم قرون وسطیٰ کی سب سے معتبر شدہ کرنسیاں بن گئیں۔ دریافت کریں کہ کیسے الغزالی نے 800 سال قبل گریشم کے قانون کو بیان کیا، اور المقریزی نے تاریخ کے سب سے پہلے بدہالی کے مطالعہ میں سے کام کیا۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">سونے کا دینار</span>
+                <span class="topic-tag">چاندی کا درہم</span>
+                <span class="topic-tag">عبد الملک</span>
+                <span class="topic-tag">الغزالی</span>
+                <span class="topic-tag">ابن تیمیہ</span>
+                <span class="topic-tag">بدہالی</span>
+              </div>
+            </div>
+
+            <!-- Episode 5 -->
+            <div class="episode-row" data-episode="5">
+              <span class="episode-row-number">05</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">قافلے قتہ کی طرف</div>
+                <div class="episode-row-subtitle">وسیع اسلامی تجارتی نیٹ ورکس — اندلس سے چین تک — جو اعتماد، قانون، اور مشترکہ عقیدہ سے جڑے ہوئے تھے۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">تقریباً 27 منٹ</span>
+                <span class="episode-row-status status-coming">جلد آرہی ہے</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-5">
+              <p class="episode-expanded-desc">
+                1324 میں، منسا موسیٰ نے صحرائے صحارہ کو 60,000 افراد کے ساتھ عبور کیا اور بہت سونا لے گیا کہ اس نے قاہرہ میں قیمتی دھات کی منڈی کو کریش کر دیا۔ ان کا سفر ایک بہت بڑی کہانی کے صرف ایک لمحے تھا: تاریخ کا سب سے بڑا قبل از جدید تجارتی گروپ۔ ابن بطوطہ کی رہنمائی میں ریشم کی سڑک، ہندی سمندری ڈھونے کی سڑکوں، اور صحارہ کے پار سونے کی تجارت کا سفر کریں۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">ریشم کی سڑک</span>
+                <span class="topic-tag">ہند کے سمندری تجارت</span>
+                <span class="topic-tag">منسا موسیٰ</span>
+                <span class="topic-tag">ابن بطوطہ</span>
+                <span class="topic-tag">صحارہ کے پار سونے کی تجارت</span>
+                <span class="topic-tag">امانت (اعتماد)</span>
+              </div>
+            </div>
+
+            <!-- Episode 6 -->
+            <div class="episode-row" data-episode="6">
+              <span class="episode-row-number">06</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">وقف — ہزار سالوں کی خیراتی نمود</div>
+                <div class="episode-row-subtitle">کیسے اسلامی وقف کے نظام نے صدیوں کے لیے اسپتالوں، یونیورسٹیوں، اور شہروں کو مالیاتی معاونت دی — اور جب نوآبادیاتی طاقتوں نے اسے منظم کیا تو کیا ہوا۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">تقریباً 27 منٹ</span>
+                <span class="episode-row-status status-coming">جلد آرہی ہے</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-6">
+              <p class="episode-expanded-desc">
+                عثمانی عروج پر، تمام پیداواری زمین کا تقریباً ایک تہائی وقف کی ملکیت تھی — ناقابلِ واپسی خیراتی وقف جو مفت اسپتالوں، یونیورسٹیوں، سوپ کی دکانوں، اور پانی کی بنیادی ڈھانچے میں رقم فراہم کرتے تھے۔ سلیمانیہ کمپلیکس، الازہر یونیورسٹی، اور بہت سی دوسری یادیں صدیوں تک اس اصول پر کام کرتی رہیں۔ پھر یورپی نوآبادیاتی طاقتوں نے منظم طور پر اسے غیر موثر بنایا۔ یہ علمی حافظہ، نقصان، اور ممکنہ بحالی کی کہانی ہے۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">وقف کے نظام</span>
+                <span class="topic-tag">الازہر یونیورسٹی</span>
+                <span class="topic-tag">سلیمانیہ کمپلیکس</span>
+                <span class="topic-tag">عثمانی فلاح</span>
+                <span class="topic-tag">نوآبادیاتی خاتمہ</span>
+                <span class="topic-tag">جدید احیاء</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Future Series Placeholder -->
+        <div class="coming-soon-block fade-up">
+          <h3>مزید سیریز آرہی ہے</h3>
+          <p>آنے والی پوڈ کاسٹ سیریز اسلامی مالیاتی نظریہ، ملحوظات کے معاشی بحث، اور ملک کی مخصوص تجزیہ کو دریافت کریں گی۔</p>
+        </div>
+
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- VIDEOS TAB                                  -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="media-tab" id="tab-videos">
+
+        <div class="media-grid">
+          <!-- The Golden Economy -->
+          <div class="media-card fade-up">
+            <div class="media-card-thumb">
+              &#9654;
+              <span class="media-card-thumb-label">مختصر فلم</span>
+            </div>
+            <div class="media-card-body">
+              <div class="media-card-label">ڈاکومنٹری مختصر</div>
+              <h3 class="media-card-title">سنہری معیشت</h3>
+              <p class="media-card-desc">7ویں صدی کے عرب کی ریت کے قافلوں سے لے کر اسلامی مالیاتی نظام کے جدید افق تک — 1400 سالوں کی معاشی تاریخ کا سفر 90 سیکنڈ میں۔</p>
+              <span class="media-card-status">پروڈکشن میں</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-soon-block fade-up">
+          <h3>مزید ویڈیوز آرہی ہیں</h3>
+          <p>ہم اسلامی معاشی تاریخ، اصول، اور ان کی جدید صورتوں کو دریافت کرتے ہوئے مختصر فلمیں بناتے جا رہے ہیں۔</p>
+        </div>
+
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- DOCUMENTARIES TAB                           -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="media-tab" id="tab-documentaries">
+
+        <div class="coming-soon-block fade-up" style="margin-top:1rem;">
+          <h3>ڈاکومنٹریز جلد آرہی ہیں</h3>
+          <p>طویل الفلم ڈاکومنٹری مواد اسلامی معاشی سوچ کی تاریخ، اداروں، اور متحرک میراث کو صدیوں اور براعظموں میں دریافت کرتا ہے۔</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Subscribe CTA -->
+  <section class="subscribe-cta">
+    <div class="container">
+      <h2 class="fade-up">کبھی ایک حلقہ مت چھوڑیں</h2>
+      <p>نئے حلقوں اور میڈیا مواد کے لیے اطلاعات حاصل کرنے کے لیے سبسکرائب کریں۔</p>
+      <div class="subscribe-form">
+        <input type="email" placeholder="اپنی ای میل درج کریں" aria-label="ای میل کا پتہ">
+        <button class="subscribe-btn">سبسکرائب</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">اسلامی معاشیات</a>
+          <p class="footer-brand-desc">اسلامی معاشی فکر کی الہٰیاتی بنیادوں، باقاعدہ نظریے، تاریخی ارتقاء اور جدید عمل کی تلاش — مدینہ کی ابتدائی منڈیوں سے لے کر آج کی عالمی اسلامی مالیاتی صنعت تک۔</p>
+          <blockquote class="footer-ayah">
+            <p>"اور ایک دوسرے کا مال ناحق نہ کھاؤ اور نہ حکمرانوں کو رشوت دو تاکہ لوگوں کے مال کا کچھ حصہ ناجائز طور پر کھا سکو۔"</p>
+            <cite>— البقرۃ 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">علم</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">بنیادیں</a></li>
+              <li><a href="scriptures.html">قرآن و حدیث</a></li>
+              <li><a href="theory.html">نظریہ</a></li>
+              <li><a href="history.html">تاریخ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">جدید معیشت</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">تحقیق</a></li>
+              <li><a href="dashboard.html">ڈیش بورڈ</a></li>
+              <li><a href="podcast.html">میڈیا</a></li>
+              <li><a href="blog.html">التجارۃ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">رابطہ</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="آپ کی ای میل" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">سبسکرائب</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 اسلامی معاشیات</p>
+        <a href="about.html" class="footer-bottom-link">تعارف</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" data-back-to-top aria-label="اوپر جائیں">&uarr;</button>
+
+  <script src="../js/main.js"></script>
+  <script>
+/* Nav dropdown toggle */
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+
+/* Media tab switching */
+document.querySelectorAll('.media-nav-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Update active tab button
+    document.querySelectorAll('.media-nav-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    // Show corresponding tab content
+    const tabId = 'tab-' + this.dataset.tab;
+    document.querySelectorAll('.media-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+  });
+});
+
+/* Episode row expand/collapse */
+document.querySelectorAll('.episode-row').forEach(row => {
+  row.addEventListener('click', function() {
+    const epNum = this.dataset.episode;
+    const expanded = document.getElementById('ep-' + epNum);
+    if (expanded) {
+      // Close all others first
+      document.querySelectorAll('.episode-expanded.open').forEach(el => {
+        if (el.id !== 'ep-' + epNum) el.classList.remove('open');
+      });
+      expanded.classList.toggle('open');
+    }
+  });
+});
+
+/* Scroll-triggered fade-up animation */
+(function() {
+  var fadeEls = document.querySelectorAll('.fade-up');
+  if (!fadeEls.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  fadeEls.forEach(function(el) { observer.observe(el); });
+})();
+  </script>
+</body>
+</html>

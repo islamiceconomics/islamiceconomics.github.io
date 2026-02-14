@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Theory of Islamic Economics - Islamic Economics</title>
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+    <style>
+        /* Chapter Card Styling */
+        .chapter-card {
+            border-left: 5px solid #999;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: #fafafa;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .chapter-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapter-card.available {
+            border-left-color: #10b981;
+        }
+
+        .chapter-card.in-progress {
+            border-left-color: #f59e0b;
+        }
+
+        .chapter-card.coming-soon {
+            border-left-color: #d1d5db;
+        }
+
+        .chapter-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .chapter-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            font-family: 'Georgia', serif;
+            line-height: 1.3;
+        }
+
+        .chapter-description {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .chapter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e5e7eb;
+            color: #374151;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .chapter-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .status-badge.available {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-badge.in-progress {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-badge.coming-soon {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .read-chapter-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .read-chapter-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .read-chapter-link.disabled {
+            color: #9ca3af;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Methodology Section */
+        .methodology-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .methodology-box h3 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+
+        .methodology-list {
+            margin-left: 1.5rem;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .methodology-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Connection Box */
+        .connection-box {
+            background-color: #f5f3ff;
+            border-left: 4px solid #8b5cf6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .connection-box h3 {
+            color: #6d28d9;
+            margin-top: 0;
+        }
+
+        .connection-box p {
+            color: #4c1d95;
+            line-height: 1.8;
+        }
+
+        .connection-box a {
+            color: #7c3aed;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .connection-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Related Sections */
+        .related-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .related-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-color: #d1d5db;
+        }
+
+        .related-card h4 {
+            color: #1f2937;
+            margin-top: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .related-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .related-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .related-card a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Introduction Section Enhancement */
+        .introduction-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        /* Chapter Grid */
+        .chapters-grid {
+            margin: 2rem 0;
+        }
+
+        /* Section divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+            margin: 3rem 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .chapter-card {
+                padding: 1.5rem;
+            }
+
+            .chapter-number {
+                font-size: 2rem;
+            }
+
+            .chapter-title {
+                font-size: 1.4rem;
+            }
+
+            .chapter-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .related-sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Islamic Economics</a>
+            <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                  <button class="nav-dropdown-toggle active">Learn <span class="nav-dropdown-arrow">&#9662;</span></button>
+                  <ul class="nav-dropdown-menu">
+                    <li><a href="foundations.html">Foundations</a></li>
+                    <li><a href="theory.html" class="active">Theory</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="history.html">History</a></li>
+                  </ul>
+                </li>
+                <li><a href="scriptures.html" class="nav-link">Scriptures</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="podcast.html" class="nav-link">Media</a></li>
+                <li><a href="blog.html" class="nav-link">Al-Tijarah</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <a href="ur/theory.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+              <span class="icon-moon">&#9790;</span>
+              <span class="icon-sun">&#9788;</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero hero-small">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Formal Theory</span>
+            </nav>
+            <h1 class="hero-title">Formal Theory of Islamic Economics</h1>
+            <p class="hero-subtitle">A rigorous mathematical framework — from preference axioms to general equilibrium — built on Islamic principles</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section introduction-section">
+        <div class="container">
+            <div class="section-intro fade-in">
+                <h2>Purpose and Scope</h2>
+                <p>This section develops the mathematical foundations of Islamic economics from first principles, following the methodology of standard microeconomic theory (as exemplified in Mas-Colell, Whinston & Green's <em>Microeconomic Theory</em>) while systematically incorporating normative constraints and ethical axioms derived from Islamic theology, jurisprudence, and philosophical principles. The goal is not to create an entirely disconnected system, but rather to demonstrate with mathematical precision how Islamic principles modify, refine, and extend standard economic theory in tractable, operationalizable ways.</p>
+
+                <p>The central insight is that Islamic economics can be formalized as a constrained optimization problem where the constraints are ethically grounded. Where standard microeconomics takes preferences as given and seeks to understand their implications, Islamic economic theory begins by examining which preferences and choices are Islamically permissible and then analyzes optimization subject to those constraints. The prohibition of <em>riba</em> (interest) modifies intertemporal choice and financial contracting. The obligation of <em>zakat</em> (obligatory almsgiving) functions as both a constraint and a component of utility. The impermissibility of <em>gharar</em> (excessive uncertainty) restricts the set of feasible contracts. The concept of <em>maslaha</em> (public interest) and the <em>maqasid al-shariah</em> (objectives of Islamic law) provide alternative social welfare criteria to utilitarian frameworks. These are not ad-hoc restrictions but systematic modifications flowing from a coherent ethical worldview.</p>
+
+                <p>Each chapter builds sequentially, moving from individual choice theory through market structures to general equilibrium and macroeconomic aggregation. Throughout, we maintain three commitments: (1) mathematical rigor and precision, employing the formal apparatus of modern economics; (2) theological grounding, explicitly connecting each constraint to Islamic sources and principles; and (3) economic tractability, ensuring that the resulting models are analytically solvable and empirically estimable. The result is a framework that speaks fluently to both Islamic scholars and trained economists, bridging the disciplinary divide that has historically separated Islamic jurisprudence from economic science.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connection to Foundations -->
+    <section class="section">
+        <div class="container">
+            <div class="connection-box fade-in">
+                <h3>How This Connects to Foundations</h3>
+                <p>The theological and juristic principles underlying these formal models are comprehensively developed in our <a href="foundations.html">Foundations section</a>. There we establish the Quranic, Sunnah, and Fiqh basis for core concepts: the prohibition of <em>riba</em> and its distinction from profit and wage; the institution of <em>zakat</em> and its macroeconomic stabilizing role; the mechanism of <em>waqf</em> and perpetual trusts; partnership structures like <em>mudarabah</em> and <em>musharakah</em>; the Islamic finance instruments including <em>murabaha</em>, <em>ijara</em>, <em>salam</em>, and <em>istisna</em>; and the principle of <em>maslaha</em> (public interest) in legal reasoning. This Theory section translates those principles into formal mathematical language, constructing models where the axioms and constraints are precisely defined, enabling us to derive testable propositions and build computable frameworks for policy analysis and empirical research.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Chapter Listing -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Formal Chapters</h2>
+            <p class="section-subtitle fade-in">A systematic treatment of Islamic economic theory, building from individual choice to macroeconomic frameworks</p>
+
+            <div class="chapters-grid">
+                <!-- Chapter 1 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">I</div>
+                    <h3 class="chapter-title">Axioms of Islamic Preferences</h3>
+                    <p class="chapter-description">The foundation of consumer theory in any economic system rests on preference relations. This chapter examines how standard microeconomic axioms — completeness, transitivity, continuity, monotonicity, and convexity — are modified within an Islamic ethical framework. Monotonicity is bounded by the Islamic prohibition of <em>israf</em> (extravagance and waste), which implies the existence of satiation points and consumption ceilings. The consumption set is constrained prior to optimization by halal/haram classifications, excluding impermissible goods from the feasible choice set. We introduce and formalize the axiom of <em>wasatiyyah</em> (moderation) and derive its formal implications for preference aggregation and intergenerational utility.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Preferences</span>
+                        <span class="tag">Utility</span>
+                        <span class="tag">Halal Constraint</span>
+                        <span class="tag">Israf</span>
+                        <span class="tag">Wasatiyyah</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter1_axioms_of_islamic_preferences.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">II</div>
+                    <h3 class="chapter-title">Utility Representation & the Islamic Agent</h3>
+                    <p class="chapter-description">Building on preference axioms, we derive utility representations consistent with Islamic preferences. Central to this chapter is the introduction of a two-component utility framework: a worldly component (relating to satisfaction from material consumption in this life, <em>dunya</em>) and an eschatological component (relating to the hereafter, <em>akhirah</em>). Within this framework, actions like <em>zakat</em>, <em>sadaqah</em> (voluntary charity), and <em>waqf</em> establishment that reduce material consumption yield returns in the akhirah component, providing a rigorous rationality for voluntary wealth transfer without invoking altruism or social preferences. We prove existence and uniqueness theorems for this extended utility representation, establish conditions under which such representations are continuous and monotonic, and derive implications for consumption-savings decisions and long-term planning.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Utility Function</span>
+                        <span class="tag">Dunya-Akhirah Model</span>
+                        <span class="tag">Zakat Rationality</span>
+                        <span class="tag">Existence Theorems</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter2_utility_representation.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">III</div>
+                    <h3 class="chapter-title">Consumer Theory under Islamic Constraints</h3>
+                    <p class="chapter-description">Standard consumer optimization is modified by three primary Islamic constraints: (1) the halal consumption set, which excludes impermissible goods a priori; (2) the <em>zakat</em> obligation, functioning as a mandatory wealth or income tax with precisely defined rates and exemption thresholds; and (3) the <em>riba</em> prohibition, which constrains intertemporal borrowing and eliminates conventional debt-based consumption smoothing. This chapter derives Marshallian and Hicksian demand functions under these constraints, establishes the Slutsky decomposition in the presence of zakat and halal restrictions, and characterizes how the zakat obligation affects optimal consumption bundles across goods and time periods. We examine comparative statics with respect to prices, wealth, and the zakat rate, derive stability conditions for demand systems, and analyze the welfare implications of Islamic constraints versus standard frameworks through equivalent variation and compensating variation measures.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Demand Theory</span>
+                        <span class="tag">Slutsky Equation</span>
+                        <span class="tag">Zakat Constraint</span>
+                        <span class="tag">Budget Sets</span>
+                        <span class="tag">Comparative Statics</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter3_consumer_theory.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">IV</div>
+                    <h3 class="chapter-title">Producer Theory & the Islamic Firm</h3>
+                    <p class="chapter-description">The Islamic firm operates under fundamentally distinct financing and contracting constraints compared to conventional firms. It faces prohibition of interest-based debt (<em>riba</em>), requiring reliance on equity-like instruments such as <em>mudarabah</em> (profit-sharing partnerships with labor-capital distinction) and <em>musharakah</em> (joint ventures with shared capital, management, and profit-loss). The prohibition of <em>gharar</em> (excessive contractual uncertainty) restricts the space of permissible financial contracts. This chapter formalizes the firm's cost minimization and profit maximization problems under these constraints, derives modified supply functions and factor demand curves, and analyzes how profit-loss sharing (as opposed to fixed debt service) affects production decisions, risk allocation among investors, capital structure, and market entry. We establish conditions for production efficiency, examine the relationship between financing structure and operational decisions, and analyze how the Islamic firm's constraints compare to the conventional firm in terms of productive efficiency and dynamic efficiency.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Firm Theory</span>
+                        <span class="tag">Mudarabah</span>
+                        <span class="tag">Musharakah</span>
+                        <span class="tag">Gharar</span>
+                        <span class="tag">Profit-Loss Sharing</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter4_producer_theory.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 5 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">V</div>
+                    <h3 class="chapter-title">Market Structure & Contract Theory</h3>
+                    <p class="chapter-description">Markets in an Islamic economy operate within a restricted contract space. The prohibition of <em>riba</em> eliminates debt-based instruments; the prohibition of <em>gharar</em> restricts speculative and undefined contracts; the prohibition of <em>ihtikar</em> (monopolistic hoarding and market manipulation) constrains market power; and the requirement for transparency in contracts limits information asymmetry exploitation. This chapter analyzes competitive equilibrium, monopoly, and oligopoly under these Islamic constraints. We develop a formal contract theory framework for Islamic financial instruments — <em>murabaha</em> (cost-plus financing), <em>ijara</em> (Islamic leasing), <em>salam</em> (forward sale), and <em>istisna</em> (manufacturing contract) — characterizing their optimality properties and comparative advantages. We examine how these restrictions affect market efficiency (in the Pareto sense), price formation mechanisms, market power abuse, and welfare outcomes relative to unrestricted markets. The chapter concludes by establishing formal conditions under which Islamic market restrictions enhance or diminish allocative efficiency.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Market Equilibrium</span>
+                        <span class="tag">Contract Theory</span>
+                        <span class="tag">Ihtikar</span>
+                        <span class="tag">Islamic Instruments</span>
+                        <span class="tag">Efficiency</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter5_market_structure.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 6 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">VI</div>
+                    <h3 class="chapter-title">General Equilibrium</h3>
+                    <p class="chapter-description">We construct a formal general equilibrium framework incorporating all preceding Islamic constraints and institutions. Building on the Arrow-Debreu framework, we modify the standard GE model by: (1) restricting the asset space to exclude riba-based instruments; (2) including the mandatory zakat institution as a redistributive mechanism within equilibrium; (3) imposing halal and Islamic ethics constraints on feasible allocation sets; and (4) introducing endogenous preferences reflecting the dunya-akhirah utility structure. The central theoretical result is the existence of general equilibrium under these modifications. We establish when the Fundamental Theorems of Welfare Economics hold and examine whether Islamic constraints and redistribution (via zakat) lead to Pareto improvements relative to the standard capitalist equilibrium. We characterize the set of equilibrium allocations, analyze the uniqueness of equilibrium prices, and examine the stability of equilibrium with respect to small perturbations. The chapter concludes with a formal comparison between Islamic GE and alternative economic systems (socialist, neoclassical capitalist, and stakeholder capitalism models).</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Arrow-Debreu</span>
+                        <span class="tag">Welfare Theorems</span>
+                        <span class="tag">Existence</span>
+                        <span class="tag">Pareto Efficiency</span>
+                        <span class="tag">Redistribution</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter6_general_equilibrium.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 7 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">VII</div>
+                    <h3 class="chapter-title">Welfare Economics & Social Choice</h3>
+                    <p class="chapter-description">Islamic welfare economics introduces the concept of <em>maslaha</em> (public interest and social welfare) as a primary social welfare criterion, standing alongside and potentially competing with standard Pareto efficiency. We formally define maslaha as a social welfare function grounded in the <em>maqasid al-shariah</em> (objectives of Islamic law): the preservation and nurturing of religion, life, intellect, lineage (family and social bonds), and property. These objectives provide axiomatic foundations for social choice distinct from utilitarian, egalitarian, and Rawlsian alternatives. This chapter axiomatically characterizes social welfare functions satisfying Islamic principles, establishing existence and uniqueness results. We examine the relationship between maslaha-based welfare and standard social choice criteria, analyze how Islamic constraints on individual choice (halal restriction, zakat obligation) affect aggregate social welfare, and characterize the conditions under which Islamic social welfare maxima diverge from utilitarian optima. The chapter concludes with a formal analysis of distributive justice in Islamic frameworks, comparing Rawlsian difference principles with Islamic equity concepts and examining the role of property rights, inheritance, and endowment in determining just distributions.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Maslaha</span>
+                        <span class="tag">Maqasid al-Shariah</span>
+                        <span class="tag">Social Welfare</span>
+                        <span class="tag">Social Choice</span>
+                        <span class="tag">Rawlsian Comparison</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter7_welfare_economics.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 8 -->
+                <div class="chapter-card available fade-up">
+                    <div class="chapter-number">VIII</div>
+                    <h3 class="chapter-title">Macroeconomic Foundations</h3>
+                    <p class="chapter-description">Building on the microeconomic theoretical foundation developed in Chapters I through VII, this chapter aggregates to macroeconomic models suitable for analysis of growth, cycles, inflation, unemployment, and policy. We develop a representative Islamic agent model incorporating the dunya-akhirah preferences and constraints from Chapter II, construct a New Keynesian Dynamic Stochastic General Equilibrium (DSGE) framework adapted for Islamic economics where the standard interest rate transmission mechanism is replaced with asset-price and profit-rate-based monetary policy channels, and introduce fiscal policy through zakat redistribution and waqf-based public investment. The chapter explicitly models how the prohibition of riba affects monetary transmission, how zakat functions as an automatic stabilizer, and how the profit-sharing structure of Islamic finance affects business cycle dynamics. We establish the existence and stability of macroeconomic equilibrium paths, derive impulse responses to monetary and fiscal shocks, and examine the conditions under which Islamic monetary and fiscal frameworks outperform conventional alternatives in stabilizing output and employment while maintaining price stability. This chapter bridges from formal microeconomic theory to the applied computational models used for policy simulation and forecasting in the Research section.</p>
+                    <div class="chapter-tags">
+                        <span class="tag">Aggregation</span>
+                        <span class="tag">New Keynesian</span>
+                        <span class="tag">Monetary Policy</span>
+                        <span class="tag">Fiscal Policy</span>
+                        <span class="tag">DSGE Bridge</span>
+                    </div>
+                    <div class="chapter-footer">
+                        <span class="status-badge available">Available</span>
+                        <a href="theory/chapter8_macro_foundations.html" class="read-chapter-link">Read Chapter →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Methodology Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Methodology & Mathematical Conventions</h2>
+
+            <div class="methodology-box fade-in">
+                <h3>Formal Standards and Presentation</h3>
+                <ul class="methodology-list">
+                    <li><strong>Mathematical Rigor:</strong> All formal results follow the standard conventions of mathematical economics: definitions establish concepts with precision; lemmas prove auxiliary results needed for main theorems; propositions present new results of secondary importance; theorems state the main results of each chapter. Every proposition and theorem includes a proof, either within the chapter or in a dedicated appendix, to ensure verifiability and understanding of the logical structure.</li>
+
+                    <li><strong>Notation and Accessibility:</strong> We employ standard notation from contemporary microeconomic theory (as found in Mas-Colell, Whinston & Green and Jehle & Reny) to ensure accessibility for trained economists and maximize cross-disciplinary communication. The consumption set is denoted ℝ<sub>+</sub><sup>L</sup>; preferences are represented by binary relations ≽, ≻; utility functions are denoted u(·); prices are p ∈ ℝ<sub>++</sub><sup>L</sup>; and budget sets follow the standard framework. When Islamic constraints are introduced, we explicitly modify the consumption set (e.g., restricting to a halal subset H ⊂ ℝ<sub>+</sub><sup>L</sup>) and the objective function (e.g., incorporating akhirah returns) to maintain clarity about where Islamic principles modify standard theory.</li>
+
+                    <li><strong>Explicit Theological Grounding:</strong> Each Islamic axiom, constraint, or institution is introduced with explicit reference to its sources in the Quran, Sunnah, and classical Islamic jurisprudence (fiqh). Every constraint carries a label indicating its Islamic basis (e.g., "Constraint C.1: Riba Prohibition (from Quran 2:275, 3:130)" or "Axiom P.2: Wasatiyyah/Moderation (from Quran 2:143)"). This ensures that formal results can be traced back to theological foundations and that modifications to Islamic axioms can be explicitly discussed as theological questions, not merely mathematical ones.</li>
+
+                    <li><strong>Economic Tractability:</strong> While formal rigor and theological grounding are paramount, we maintain a commitment to economic tractability. Each model is constructed to be analytically solvable where possible (e.g., deriving closed-form solutions for demand functions) and computationally estimable where analytical solutions are intractable. This enables the models developed in Theory to be operationalized in the applied research models discussed in the Research section.</li>
+
+                    <li><strong>Comparative Analysis:</strong> A key feature of this approach is systematic comparison with standard economic theory. Whenever an Islamic constraint modifies a standard result, we explicitly compare the outcomes: e.g., "Under standard assumptions, Consumer Optimization Theorem X.1 implies property P; Theorem X.2 establishes that under the zakat constraint, property P' holds instead, with the following implications for demand elasticities and welfare."</li>
+                </ul>
+            </div>
+
+            <div class="connection-box fade-in">
+                <h3>Connection to Applied Research</h3>
+                <p>The formal theoretical frameworks developed in this section provide the foundation for all applied quantitative work in our <a href="research.html">Research section</a>. Computational models, econometric specifications, and policy simulations in that section operationalize the theoretical results established here. For example, the demand functions derived in Chapter III are estimated using modern panel econometric techniques; the firm optimization results from Chapter IV are used to construct firm-level production function models; and the macroeconomic framework from Chapter VIII forms the basis for DSGE models used for forecasting and policy simulation. Readers moving from Theory to Research will recognize the same mathematical structure and Islamic constraints, now with estimated parameters and empirical validation.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Related Sections -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Navigate the Islamic Economics Platform</h2>
+            <p class="section-subtitle fade-in">Explore connections between theory, foundations, and applied research</p>
+
+            <div class="related-sections">
+                <div class="related-card fade-in">
+                    <h4>Foundations</h4>
+                    <p>Understand the theological, juristic, and philosophical basis for Islamic economics. Explore core concepts like riba, zakat, waqf, mudarabah, musharakah, and the maqasid al-shariah that ground the mathematical frameworks in this section.</p>
+                    <a href="foundations.html">Explore Foundations →</a>
+                </div>
+
+                <div class="related-card fade-in">
+                    <h4>Research</h4>
+                    <p>See the theory put into practice. This section applies the formal models developed here to contemporary economic questions, presenting empirical evidence, econometric estimation, and computational DSGE models that operationalize Islamic economic theory.</p>
+                    <a href="research.html">Explore Research →</a>
+                </div>
+
+                <div class="related-card fade-in">
+                    <h4>History</h4>
+                    <p>Examine the historical development of Islamic economic thought from medieval scholars like Ibn Taimiyah and Al-Ghazali through the modern revival of Islamic economics in the 20th century. See how classical insights anticipate modern formal theory.</p>
+                    <a href="history.html">Explore History →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Islamic Economics</a>
+          <p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought — from the earliest markets of Medina to today's global Islamic finance industry.</p>
+          <blockquote class="footer-ayah">
+            <p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
+            <cite>— Al-Baqarah 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Knowledge</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">Foundations</a></li>
+              <li><a href="scriptures.html">Scriptures</a></li>
+              <li><a href="theory.html">Theory</a></li>
+              <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Modern Economy</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">Research</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="podcast.html">Media</a></li>
+              <li><a href="blog.html">Al-Tijarah</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="Your email" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Islamic Economics</p>
+        <a href="about.html" class="footer-bottom-link">About</a>
+      </div>
+    </div>
+  </footer>
+    <button class="back-to-top" data-back-to-top aria-label="Back to top">&uarr;</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/scripture-data.js"></script>
+    <script src="js/scripture-widget.js"></script>
+    <script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+</script>
+
+    <script>
+    /* Scroll-triggered fade-up animation */
+    (function() {
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if (!fadeEls.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+    </script>
+</body>
+</html>
