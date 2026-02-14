@@ -36,7 +36,7 @@ Website/data/logs/
 # Private / local-only files (NOT for public repo)
 Code/
 Drafts/
-Images/
+/Images/
 Podcast/
 Videos/
 tools/
