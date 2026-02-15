@@ -897,11 +897,20 @@ p:last-child {
   .home-newsletter-form { width: 100%; justify-content: center; }
 }
 @media (max-width: 640px) {
-  .pillar-tiles { grid-template-columns: repeat(2, 1fr); }
-  .pillar-tiles-4 { grid-template-columns: repeat(2, 1fr); }
-  .pillar-tile { padding: 1rem; }
-  .pillar-tile-title { font-size: 0.95rem; margin-bottom: 0.3rem; }
-  .pillar-tile-desc { font-size: 0.78rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  /* Mobile pillar tiles: clean 2-column grid, title only, no descriptions */
+  .pillar-tiles,
+  .pillar-tiles-4 { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .pillar-tile {
+    padding: 1rem 0.75rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+  }
+  .pillar-tile-title { font-size: 0.85rem; margin-bottom: 0; }
+  .pillar-tile-desc { display: none; }
   .hero-home .hero-title { font-size: 2.25rem; }
   .hero-home { min-height: 340px; padding: 3.5rem 1.25rem; }
   .stats-bar-inner { flex-direction: column; gap: 1rem; }
@@ -3625,6 +3634,55 @@ blockquote cite,
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+/* ---- Mobile scroll stability — prevent horizontal drift ---- */
+@media (max-width: 767px) {
+  /* Use overflow-x: clip (not hidden) — clip doesn't create a scroll container,
+     so iOS Safari can't be tricked into horizontal panning */
+  html {
+    overflow-x: clip;
+  }
+  body {
+    overflow-x: clip;
+    overscroll-behavior-x: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* Disable all translateX/translateY animations on mobile */
+  .fade-up {
+    opacity: 1;
+    transform: none !important;
+    transition: none !important;
+  }
+  .fade-up-delay-1,
+  .fade-up-delay-2,
+  .fade-up-delay-3,
+  .fade-up-delay-4 {
+    transition-delay: 0s;
+  }
+  .animate-slide-left,
+  .animate-slide-right {
+    animation: none !important;
+    transform: none !important;
+  }
+  /* Stabilize navbar — no transitions on scroll */
+  .nav, .navbar {
+    transition: none;
+  }
+  /* Constrain all sections to viewport width */
+  section,
+  .hero,
+  .hero-home,
+  .trending-bar,
+  .stats-bar,
+  .home-section,
+  .featured-banner,
+  .home-quote-section,
+  footer,
+  .footer {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 }
 

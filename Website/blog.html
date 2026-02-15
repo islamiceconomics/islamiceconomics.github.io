@@ -359,6 +359,13 @@
       .tj-masthead-title { font-size: 2rem; }
       .tj-lead-main h2 { font-size: 1.5rem; }
       .tj-newsletter-form { flex-direction: column; }
+      /* Prevent horizontal drift on mobile */
+      .tj-ticker, .tj-section-bar, .tj-masthead, .tj-lead,
+      .tj-grid, .tj-two-col, .tj-newsletter {
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+      .tj-ticker-inner { overflow-x: hidden; }
     }
     </style>
 </head>
