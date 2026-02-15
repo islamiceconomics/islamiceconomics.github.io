@@ -897,19 +897,35 @@ p:last-child {
   .home-newsletter-form { width: 100%; justify-content: center; }
 }
 @media (max-width: 640px) {
-  /* Mobile pillar tiles: clean 2-column grid, title only, no descriptions */
+  /* Mobile pillar tiles: single-column editorial list */
   .pillar-tiles,
-  .pillar-tiles-4 { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
-  .pillar-tile {
-    padding: 1rem 0.75rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 70px;
+  .pillar-tiles-4 {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
   }
-  .pillar-tile-title { font-size: 0.85rem; margin-bottom: 0; }
+  .pillar-tile {
+    padding: 0.95rem 1.2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: auto;
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+  }
+  .pillar-tile::before { display: none; }
+  .pillar-tile::after {
+    content: '\203A';
+    color: var(--color-text-light);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-left: 0.75rem;
+    transition: transform 0.2s;
+  }
+  .pillar-tile:active::after { transform: translateX(3px); }
+  .pillar-tile-title { font-size: 0.92rem; margin-bottom: 0; }
   .pillar-tile-desc { display: none; }
   .hero-home .hero-title { font-size: 2.25rem; }
   .hero-home { min-height: 340px; padding: 3.5rem 1.25rem; }
@@ -4228,6 +4244,21 @@ html[data-theme] .home-newsletter {
 
 [dir="rtl"] .pillar-tile {
   text-align: right;
+}
+
+/* RTL mobile pillar tiles: flip accent border and arrow */
+@media (max-width: 640px) {
+  [dir="rtl"] .pillar-tile {
+    border-left: 1px solid var(--color-border);
+    border-right: 3px solid var(--color-accent);
+    flex-direction: row-reverse;
+  }
+  [dir="rtl"] .pillar-tile::after {
+    content: '\2039';
+    margin-left: 0;
+    margin-right: 0.75rem;
+  }
+  [dir="rtl"] .pillar-tile:active::after { transform: translateX(-3px); }
 }
 
 /* ---- Footer RTL ---- */
