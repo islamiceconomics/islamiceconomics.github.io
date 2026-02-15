@@ -199,6 +199,20 @@
       .kpi-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
       .dash-tab { padding: 0.55rem 0.8rem; font-size: 0.82rem; }
     }
+    @media (max-width: 640px) {
+      .country-grid {
+        grid-template-columns: 1fr;
+        gap: 0.55rem;
+      }
+      .country-card {
+        padding: 0.7rem 0.85rem;
+        gap: 0.6rem;
+      }
+      .country-flag { font-size: 1.5rem; }
+      .country-name { font-size: 0.88rem; }
+      .country-meta { display: none; }
+      .country-gdp { font-size: 0.78rem; }
+    }
   </style>
 </head>
 <body>
