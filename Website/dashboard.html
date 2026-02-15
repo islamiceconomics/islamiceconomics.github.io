@@ -199,6 +199,9 @@
       .kpi-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
       .dash-tab { padding: 0.55rem 0.8rem; font-size: 0.82rem; }
     }
+    /* Structure grid (GDP by Sector + Exports side-by-side) */
+    .structure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
     @media (max-width: 640px) {
       .country-grid {
         grid-template-columns: 1fr;
@@ -212,6 +215,7 @@
       .country-name { font-size: 0.88rem; }
       .country-meta { display: none; }
       .country-gdp { font-size: 0.78rem; }
+      .structure-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -560,7 +564,7 @@ document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
       const sectors = s.gdpBysector;
       const sectorColors = { agriculture: '#10b981', industry: '#2563eb', services: '#8b5cf6' };
       document.getElementById('structureSection').innerHTML = `
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+        <div class="structure-grid">
           <div class="chart-box">
             <h4>GDP by Sector</h4>
             <div class="h-bar-container">
