@@ -4,6 +4,17 @@
  */
 
 // ============================================================================
+// FORMSPREE CONFIGURATION
+// ============================================================================
+// To enable contact form and newsletter:
+// 1. Go to https://formspree.io and create a free account
+// 2. Create a new form → copy the form ID (e.g. 'xrgvblqk')
+// 3. Replace 'YOUR_FORMSPREE_ID' below with your form ID
+// Messages will be forwarded to the email you used to sign up.
+// ============================================================================
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+
+// ============================================================================
 // 1. MOBILE NAVIGATION TOGGLE
 // ============================================================================
 
@@ -137,35 +148,97 @@ const newsletterFormHandler = () => {
   const successMessage = document.createElement('div');
   successMessage.className = 'newsletter-success-message';
   successMessage.setAttribute('role', 'alert');
-  successMessage.innerHTML = '<p>Thank you for subscribing! Please check your email for confirmation.</p>';
+  successMessage.innerHTML = '<p>Thank you for subscribing!</p>';
   successMessage.style.display = 'none';
 
   form.parentElement.appendChild(successMessage);
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const email = emailInput?.value || '';
 
-    // Basic email validation
     if (!email || !isValidEmail(email)) {
       showFormError(form, 'Please enter a valid email address');
       return;
     }
 
-    // Simulate form submission
-    form.style.display = 'none';
-    successMessage.style.display = 'block';
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = '...';
+    submitBtn.disabled = true;
 
-    // Optional: Reset form after delay
-    setTimeout(() => {
-      form.reset();
-      form.style.display = 'block';
-      successMessage.style.display = 'none';
-    }, 3000);
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ email, _formtype: 'newsletter' })
+      });
 
-    // In a real application, you would send the email to a backend service here
-    console.log('Newsletter subscription:', email);
+      if (response.ok) {
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
+        setTimeout(() => {
+          form.reset();
+          form.style.display = 'block';
+          successMessage.style.display = 'none';
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }, 3000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (err) {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      showFormError(form, 'Something went wrong. Please try again.');
+    }
+  });
+};
+
+// ============================================================================
+// 6b. CONTACT FORM HANDLER
+// ============================================================================
+
+const contactFormHandler = () => {
+  const form = document.querySelector('[data-contact-form]');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = form.querySelector('#contact-name')?.value || '';
+    const email = form.querySelector('#contact-email')?.value || '';
+    const subject = form.querySelector('#contact-subject')?.value || '';
+    const message = form.querySelector('#contact-message')?.value || '';
+
+    if (!email || !isValidEmail(email)) {
+      showFormError(form, 'Please enter a valid email address');
+      return;
+    }
+
+    const submitBtn = form.querySelector('.btn-submit');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message, _formtype: 'contact' })
+      });
+
+      if (response.ok) {
+        form.innerHTML = '<div class="form-success" role="alert"><p>Thank you! Your message has been sent successfully.</p></div>';
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (err) {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      showFormError(form, 'Something went wrong. Please try again.');
+    }
   });
 };
 
@@ -436,6 +509,7 @@ const initModules = () => {
   fadeInOnScroll();
   activeNavigation();
   newsletterFormHandler();
+  contactFormHandler();
   counterAnimation();
   searchFilter();
   backToTopButton();

@@ -1833,6 +1833,31 @@ textarea {
   margin-top: var(--space-xs);
 }
 
+.form-success {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--color-primary);
+  font-size: var(--font-size-base);
+}
+
+.form-success p {
+  margin: 0;
+}
+
+.newsletter-success-message {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.contact-description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 input[type='text'].error,
 input[type='email'].error,
 textarea.error {
