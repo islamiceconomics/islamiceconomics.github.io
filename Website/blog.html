@@ -6,8 +6,9 @@
     <title>Al-Tijarah — News, Analysis & Commentary on the Global Islamic Economy</title>
     <meta name="description" content="Al-Tijarah: News, analysis, and commentary on the global Islamic economy — Islamic finance, OIC economies, and faith-based economic thought.">
     <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
     <script>
       (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
     </script>
@@ -94,7 +95,6 @@
       border-bottom: 1px solid var(--color-border);
       margin-bottom: 2rem;
     }
-    .tj-lead-main {}
     .tj-lead-main .tj-kicker {
       font-family: var(--font-sans);
       font-size: 0.72rem;
@@ -112,13 +112,8 @@
       color: var(--color-text-primary);
       margin: 0 0 0.8rem;
     }
-    .tj-lead-main h2 a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .tj-lead-main h2 a:hover {
-      color: var(--color-primary);
-    }
+    .tj-lead-main h2 a { color: inherit; text-decoration: none; }
+    .tj-lead-main h2 a:hover { color: var(--color-primary); }
     .tj-lead-main .tj-lead-excerpt {
       font-family: var(--font-serif);
       font-size: 1.05rem;
@@ -134,17 +129,6 @@
     .tj-lead-main .tj-byline strong {
       color: var(--color-text-secondary);
       font-weight: 600;
-    }
-    .tj-lead-img {
-      background: var(--color-bg-secondary);
-      border-radius: var(--radius-sm);
-      min-height: 280px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 4rem;
-      color: var(--color-primary);
-      border: 1px solid var(--color-border-light);
     }
 
     /* --- Secondary Lead Stack --- */
@@ -204,7 +188,6 @@
       gap: 1.8rem;
       margin-bottom: 2.5rem;
     }
-    .tj-card {}
     .tj-card .tj-kicker {
       font-family: var(--font-sans);
       font-size: 0.68rem;
@@ -347,54 +330,6 @@
     }
     .tj-newsletter-form button:hover { background: var(--color-primary-dark); }
 
-    /* --- Sidebar Widgets --- */
-    .tj-sidebar-widget {
-      margin-bottom: 2rem;
-    }
-    .tj-sidebar-widget h4 {
-      font-family: var(--font-sans);
-      font-size: 0.76rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--color-primary);
-      padding-bottom: 0.4rem;
-      border-bottom: 2px solid var(--color-primary);
-      margin-bottom: 1rem;
-    }
-    .tj-trending-item {
-      display: flex;
-      gap: 0.6rem;
-      align-items: baseline;
-      padding: 0.7rem 0;
-      border-bottom: 1px solid var(--color-border-light);
-    }
-    .tj-trending-item:last-child { border-bottom: none; }
-    .tj-trending-num {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--color-border);
-      line-height: 1;
-      min-width: 1.5rem;
-    }
-    .tj-trending-text a {
-      font-family: var(--font-serif);
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--color-text-primary);
-      text-decoration: none;
-      line-height: 1.3;
-      display: block;
-    }
-    .tj-trending-text a:hover { color: var(--color-primary); }
-    .tj-trending-meta {
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      color: var(--color-text-light);
-      margin-top: 0.15rem;
-    }
-
     /* --- Dark Mode --- */
     [data-theme="dark"] .tj-masthead { border-bottom-color: #4cc882; }
     [data-theme="dark"] .tj-masthead-title { color: #4cc882; }
@@ -404,7 +339,6 @@
     [data-theme="dark"] .tj-section-bar a:hover,
     [data-theme="dark"] .tj-section-bar a.active { color: #4cc882; border-bottom-color: #4cc882; }
     [data-theme="dark"] .tj-lead { border-bottom-color: #334155; }
-    [data-theme="dark"] .tj-lead-img { background: #1a2230; border-color: #334155; color: #4cc882; }
     [data-theme="dark"] .tj-lead-side-item { border-bottom-color: #334155; }
     [data-theme="dark"] .tj-section-header { color: #4cc882; border-bottom-color: #4cc882; }
     [data-theme="dark"] .tj-opinion-item { border-bottom-color: #334155; }
@@ -412,9 +346,6 @@
     [data-theme="dark"] .tj-newsletter { background: #1a2230; border-color: #334155; }
     [data-theme="dark"] .tj-newsletter-form input { background: #0f1923; border-color: #334155; color: #e2e8f0; }
     [data-theme="dark"] .tj-newsletter-form button { background: #4cc882; color: #0f1923; }
-    [data-theme="dark"] .tj-trending-item { border-bottom-color: #334155; }
-    [data-theme="dark"] .tj-trending-num { color: #334155; }
-    [data-theme="dark"] .tj-sidebar-widget h4 { color: #4cc882; border-bottom-color: #4cc882; }
 
     /* --- Responsive --- */
     @media (max-width: 900px) {
@@ -478,15 +409,75 @@
     <div class="tj-ticker">
       <div class="container">
         <div class="tj-ticker-inner">
-          <div class="tj-ticker-item"><span class="tj-ticker-label">Brent Crude</span> <span class="tj-ticker-value">$75.20</span> <span class="tj-ticker-change tj-ticker-down">-0.8%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">Gold</span> <span class="tj-ticker-value">$2,842</span> <span class="tj-ticker-change tj-ticker-up">+0.3%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">SAU GDP Growth</span> <span class="tj-ticker-value">3.2%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">TUR Inflation</span> <span class="tj-ticker-value">41.5%</span> <span class="tj-ticker-change tj-ticker-down">-10.6pp</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">IDN Growth</span> <span class="tj-ticker-value">5.0%</span> <span class="tj-ticker-change tj-ticker-up">+0.2pp</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">Islamic Finance AUM</span> <span class="tj-ticker-value">$4.5T</span> <span class="tj-ticker-change tj-ticker-up">+11.3%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">Global Sukuk</span> <span class="tj-ticker-value">$236B</span> <span class="tj-ticker-change tj-ticker-up">+8.1%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">MYR/USD</span> <span class="tj-ticker-value">4.47</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">PKR/USD</span> <span class="tj-ticker-value">278</span> <span class="tj-ticker-change tj-ticker-up">+2.1%</span></div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">Brent Crude</span>
+            <span class="tj-ticker-value">$75.20</span>
+            
+            <span class="tj-ticker-change tj-ticker-down">-0.8%</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">Gold</span>
+            <span class="tj-ticker-value">$2,842</span>
+            
+            <span class="tj-ticker-change tj-ticker-up">+0.3%</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">SAU GDP Growth</span>
+            <span class="tj-ticker-value">3.2%</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">TUR Inflation</span>
+            <span class="tj-ticker-value">41.5%</span>
+            
+            <span class="tj-ticker-change tj-ticker-down">-10.6pp</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">IDN Growth</span>
+            <span class="tj-ticker-value">5.0%</span>
+            
+            <span class="tj-ticker-change tj-ticker-up">+0.2pp</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">Islamic Finance AUM</span>
+            <span class="tj-ticker-value">$4.5T</span>
+            
+            <span class="tj-ticker-change tj-ticker-up">+11.3%</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">Global Sukuk</span>
+            <span class="tj-ticker-value">$236B</span>
+            
+            <span class="tj-ticker-change tj-ticker-up">+8.1%</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">MYR/USD</span>
+            <span class="tj-ticker-value">4.47</span>
+            
+          </div>
+          
+          <div class="tj-ticker-item">
+            <span class="tj-ticker-label">PKR/USD</span>
+            <span class="tj-ticker-value">278</span>
+            
+            <span class="tj-ticker-change tj-ticker-up">+2.1%</span>
+            
+          </div>
+          
         </div>
       </div>
     </div>
@@ -510,51 +501,59 @@
       <!-- Lead Story Section -->
       <div class="tj-lead">
         <div class="tj-lead-main">
-          <div class="tj-kicker">Markets &amp; Finance</div>
-          <h2><a href="blog/understanding-riba.html">Global Sukuk Issuance Surpasses $236 Billion as Islamic Capital Markets Mature</a></h2>
-          <p class="tj-lead-excerpt">The global sukuk market has reached a landmark $236 billion in annual issuance, driven by sovereign issuers across the GCC and Southeast Asia diversifying their funding sources. Malaysia's Securities Commission reports that ESG-linked sukuk now comprise 18% of new issuance, reflecting growing convergence between Islamic finance principles and sustainable investing frameworks. Analysts expect the trend to accelerate as European institutional investors seek Shariah-compliant fixed-income alternatives.</p>
-          <div class="tj-byline"><strong>Editorial Desk</strong> &middot; Feb 12, 2026 &middot; 8 min read</div>
+          <div class="tj-kicker">Markets & Finance</div>
+          <h2><a href="blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html">Global Sukuk Markets Reach $718 Billion as Sovereign Issuers Drive Islamic Capital Market Renaissance</a></h2>
+          <p class="tj-lead-excerpt">Market Resilience Amid Global Economic HeadwindsThe global sukuk market has demonstrated remarkable resilience in 2024, with outstanding issuances reaching approximately $718 billion despite...</p>
+          <div class="tj-byline"><strong>Editorial Desk</strong> &middot; Feb 15, 2026 &middot; 8 min read</div>
         </div>
         <div class="tj-lead-side">
+          
           <div class="tj-lead-side-item">
-            <div class="tj-kicker">OIC Economies</div>
-            <h3><a href="#">Senegal's Economy Surges 8.8% as Sangomar Oil Field Begins Production</a></h3>
-            <p>First oil from the offshore Sangomar field marks a transformative moment for the West African economy, projected to become one of the world's fastest-growing in 2026.</p>
+            <div class="tj-kicker">Markets & Finance</div>
+            <h3><a href="blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html">Takaful Industry Poised for $50 Billion Milestone as Global Demand for Islamic Insurance Surges</a></h3>
+            <p>Market Expansion Accelerates Across Core and Emerging RegionsThe global takaful industry is experiencing unprecedented...</p>
           </div>
+          
           <div class="tj-lead-side-item">
-            <div class="tj-kicker">Policy &amp; Governance</div>
-            <h3><a href="#">Saudi Arabia Launches $100B Non-Oil Investment Fund Under Vision 2030 Phase 3</a></h3>
-            <p>The Public Investment Fund announces its largest-ever non-oil allocation targeting AI infrastructure, tourism mega-projects, and regional logistics hubs.</p>
+            <div class="tj-kicker">Policy & Governance</div>
+            <h3><a href="blog/2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.html">Digital Riyals and Electronic Dinars: How Central Bank Digital Currencies Are Reshaping Islamic Finance</a></h3>
+            <p>The Digital Currency Revolution Reaches the Muslim WorldAs central banks worldwide race to develop digital currencies,...</p>
           </div>
+          
           <div class="tj-lead-side-item">
-            <div class="tj-kicker">Scripture &amp; Economy</div>
-            <h3><a href="#">Understanding Riba: Beyond Simple Interest</a></h3>
-            <p>A deep scriptural analysis of how the Quranic prohibition on riba encompasses far more than modern interest rates.</p>
+            <div class="tj-kicker">Policy & Governance</div>
+            <h3><a href="blog/2026-02-15-the-divergent-paths-how-global-regulatory-frameworks-shape-i.html">The Divergent Paths: How Global Regulatory Frameworks Shape Islamic Banking's Future</a></h3>
+            <p>A Tale of Two Regulatory PhilosophiesAs Islamic finance assets surpass $3.5 trillion globally, a critical challenge has...</p>
           </div>
+          
         </div>
       </div>
 
       <!-- Analysis Section -->
       <div class="tj-section-header">Analysis &amp; Research</div>
       <div class="tj-grid">
+        
+        <div class="tj-card">
+          <div class="tj-kicker">Markets & Finance</div>
+          <h3><a href="blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html">Global Sukuk Markets Reach $718 Billion as Sovereign Issuers Drive Islamic Capital Market Renaissance</a></h3>
+          <p>Market Resilience Amid Global Economic HeadwindsThe global sukuk market has demonstrated remarkable resilience in 2024,...</p>
+          <div class="tj-byline">Editorial Desk &middot; Feb 15, 2026</div>
+        </div>
+        
+        <div class="tj-card">
+          <div class="tj-kicker">Markets & Finance</div>
+          <h3><a href="blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html">Takaful Industry Poised for $50 Billion Milestone as Global Demand for Islamic Insurance Surges</a></h3>
+          <p>Market Expansion Accelerates Across Core and Emerging RegionsThe global takaful industry is experiencing unprecedented...</p>
+          <div class="tj-byline">Editorial Desk &middot; Feb 15, 2026</div>
+        </div>
+        
         <div class="tj-card">
           <div class="tj-kicker">Analysis</div>
-          <h3><a href="blog/dsge-islamic-finance.html">Can DSGE Models Capture Islamic Finance? A Methodological Assessment</a></h3>
-          <p>How standard macroeconomic models must be adapted to account for profit-loss sharing, gharar prohibition, and asset-backed financing requirements in Islamic economies.</p>
-          <div class="tj-byline">Research Desk &middot; Jan 20, 2026</div>
+          <h3><a href="blog/2026-02-15-the-resilience-paradox-how-islamic-banks-weather-economic-st.html">The Resilience Paradox: How Islamic Banks Weather Economic Storms Better Than Conventional Rivals</a></h3>
+          <p>A Tale of Two Banking Models in CrisisWhen Lehman Brothers collapsed in September 2008, triggering a global financial...</p>
+          <div class="tj-byline">Research Desk &middot; Feb 15, 2026</div>
         </div>
-        <div class="tj-card">
-          <div class="tj-kicker">Analysis</div>
-          <h3><a href="#">Iran's 100% Islamic Banking System: Lessons and Limitations After Four Decades</a></h3>
-          <p>Iran operates the only fully Shariah-compliant banking system globally, yet chronic inflation above 35% raises fundamental questions about implementation versus principle.</p>
-          <div class="tj-byline">Analysis Desk &middot; Feb 8, 2026</div>
-        </div>
-        <div class="tj-card">
-          <div class="tj-kicker">Analysis</div>
-          <h3><a href="blog/zakat-fiscal-policy.html">Zakat as Fiscal Policy: What Modern Economies Can Learn</a></h3>
-          <p>Contemporary analysis reveals surprising parallels between zakat's 2.5% wealth levy and modern proposals for progressive wealth taxation in OECD economies.</p>
-          <div class="tj-byline">Research Desk &middot; Jan 15, 2026</div>
-        </div>
+        
       </div>
 
       <!-- Two Column: OIC + Opinion -->
@@ -562,79 +561,94 @@
         <div>
           <div class="tj-section-header">OIC Economic Monitor</div>
           <div class="tj-grid" style="grid-template-columns: 1fr 1fr;">
+            
             <div class="tj-card">
-              <div class="tj-kicker">GCC</div>
-              <h3><a href="blog/gcc-gdp-2025.html">GDP Growth Across the GCC: 2025 in Review</a></h3>
-              <p>Vision 2030 and diversification strategies show measurable results as non-oil sectors outpace hydrocarbon growth for the third consecutive year across the six-nation bloc.</p>
-              <div class="tj-byline">Feb 5, 2026</div>
+              <div class="tj-kicker">OIC Economies</div>
+              <h3><a href="blog/2026-02-15-saudi-arabias-vision-2030-seven-years-of-economic-transforma.html">Saudi Arabia's Vision 2030: Seven Years of Economic Transformation Reveal Mixed Results</a></h3>
+              <p>A Bold Departure from Oil DependencyWhen Crown Prince Mohammed bin Salman unveiled Vision 2030 in April 2016, Saudi...</p>
+              <div class="tj-byline">Feb 15, 2026</div>
             </div>
+            
             <div class="tj-card">
-              <div class="tj-kicker">South Asia</div>
-              <h3><a href="blog/indonesia-islamic-finance.html">Indonesia's Islamic Finance Revolution Reaches $42B in Assets</a></h3>
-              <p>Double-digit growth in Islamic banking positions Southeast Asia as a crucial laboratory for scaling Shariah-compliant finance to underserved populations.</p>
-              <div class="tj-byline">Jan 10, 2026</div>
+              <div class="tj-kicker">OIC Economies</div>
+              <h3><a href="blog/2026-02-15-indonesias-ascent-how-the-worlds-largest-muslim-nation-is-re.html">Indonesia's Ascent: How the World's Largest Muslim Nation Is Reshaping Global Islamic Finance</a></h3>
+              <p>From Regional Player to Global ContenderIndonesia's Islamic finance sector has entered a transformative phase, with the...</p>
+              <div class="tj-byline">Feb 15, 2026</div>
             </div>
+            
             <div class="tj-card">
-              <div class="tj-kicker">Central Asia</div>
-              <h3><a href="#">Kazakhstan's AIFC Emerges as Islamic Finance Hub for Post-Soviet Space</a></h3>
-              <p>The Astana International Financial Centre has attracted 14 Islamic finance institutions as Central Asian demand for Shariah-compliant products accelerates.</p>
-              <div class="tj-byline">Feb 2, 2026</div>
+              <div class="tj-kicker">Markets & Finance</div>
+              <h3><a href="blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html">Global Sukuk Markets Reach $718 Billion as Sovereign Issuers Drive Islamic Capital Market Renaissance</a></h3>
+              <p>Market Resilience Amid Global Economic HeadwindsThe global sukuk market has demonstrated remarkable resilience in 2024,...</p>
+              <div class="tj-byline">Feb 15, 2026</div>
             </div>
+            
             <div class="tj-card">
-              <div class="tj-kicker">North Africa</div>
-              <h3><a href="#">Morocco's 2030 World Cup Bid Catalyzes $12B Infrastructure Push</a></h3>
-              <p>Co-hosting the FIFA World Cup with Spain and Portugal drives the largest infrastructure investment in Moroccan history, transforming transport, hospitality, and digital networks.</p>
-              <div class="tj-byline">Jan 25, 2026</div>
+              <div class="tj-kicker">Markets & Finance</div>
+              <h3><a href="blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html">Takaful Industry Poised for $50 Billion Milestone as Global Demand for Islamic Insurance Surges</a></h3>
+              <p>Market Expansion Accelerates Across Core and Emerging RegionsThe global takaful industry is experiencing unprecedented...</p>
+              <div class="tj-byline">Feb 15, 2026</div>
             </div>
+            
           </div>
         </div>
 
         <div>
           <div class="tj-section-header">Opinion &amp; Commentary</div>
+          
           <div class="tj-opinion-item">
-            <h4><a href="#">Why the OIC Needs a Common Payments Infrastructure</a></h4>
+            <h4><a href="blog/2026-02-15-islamic-green-finance-where-environmental-stewardship-meets-.html">Islamic Green Finance: Where Environmental Stewardship Meets Ethical Capital</a></h4>
             <p class="tj-opinion-author">Guest Contributor</p>
           </div>
+          
           <div class="tj-opinion-item">
-            <h4><a href="#">The Moral Case for Islamic Green Finance</a></h4>
-            <p class="tj-opinion-author">Editorial Board</p>
-          </div>
-          <div class="tj-opinion-item">
-            <h4><a href="#">Digital Currencies and Maqasid al-Shariah: Compatible or Contradictory?</a></h4>
+            <h4><a href="blog/2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital-.html">Beyond Borders: Why the Muslim World Needs a Unified Digital Payments System</a></h4>
             <p class="tj-opinion-author">Guest Contributor</p>
           </div>
+          
           <div class="tj-opinion-item">
-            <h4><a href="#">Waqf 2.0: How Blockchain Could Revive Islamic Endowments</a></h4>
-            <p class="tj-opinion-author">Analysis Desk</p>
+            <h4><a href="blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html">Global Sukuk Markets Reach $718 Billion as Sovereign Issuers Drive Islamic Capital Market Renaissance</a></h4>
+            <p class="tj-opinion-author">Editorial Desk</p>
           </div>
+          
           <div class="tj-opinion-item">
-            <h4><a href="blog/dinar-standard.html">Revisiting the Dinar Standard: Monetary Lessons from Early Islam</a></h4>
-            <p class="tj-opinion-author">History Desk</p>
+            <h4><a href="blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html">Takaful Industry Poised for $50 Billion Milestone as Global Demand for Islamic Insurance Surges</a></h4>
+            <p class="tj-opinion-author">Editorial Desk</p>
           </div>
+          
+          <div class="tj-opinion-item">
+            <h4><a href="blog/2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.html">Digital Riyals and Electronic Dinars: How Central Bank Digital Currencies Are Reshaping Islamic Finance</a></h4>
+            <p class="tj-opinion-author">Policy Desk</p>
+          </div>
+          
         </div>
       </div>
 
       <!-- Scripture & Economy Section -->
       <div class="tj-section-header">Scripture &amp; Economy</div>
       <div class="tj-grid">
+        
         <div class="tj-card">
-          <div class="tj-kicker">Quranic Analysis</div>
-          <h3><a href="#">What Surah Al-Baqarah Really Says About Debt</a></h3>
-          <p>Verse 2:282 — the longest verse in the Quran — lays out a comprehensive framework for debt contracts that anticipates modern financial regulation by fourteen centuries.</p>
-          <div class="tj-byline">Scripture Desk &middot; Feb 10, 2026</div>
+          <div class="tj-kicker">Scripture & Economy</div>
+          <h3><a href="blog/2026-02-15-the-eternal-economics-of-surah-al-baqarah-how-islams-longest.html">The Eternal Economics of Surah Al-Baqarah: How Islam's Longest Chapter Addresses Modern Financial Crises</a></h3>
+          <p>The Blueprint for Ethical FinanceSurah Al-Baqarah, the Quran's longest chapter with 286 verses, contains the most...</p>
+          <div class="tj-byline">Scripture Desk &middot; Feb 15, 2026</div>
         </div>
+        
         <div class="tj-card">
-          <div class="tj-kicker">Hadith Economics</div>
-          <h3><a href="#">The Prophet's Market Regulations: Price Controls and Consumer Protection</a></h3>
-          <p>When the Prophet refused to fix prices during inflation, he articulated a market philosophy that balances free commerce with strict prohibitions on hoarding and fraud.</p>
-          <div class="tj-byline">Scripture Desk &middot; Feb 3, 2026</div>
+          <div class="tj-kicker">Scripture & Economy</div>
+          <h3><a href="blog/2026-02-15-from-medinas-marketplace-to-modern-consumer-rights-the-proph.html">From Medina's Marketplace to Modern Consumer Rights: The Prophet's Blueprint for Fair Trade</a></h3>
+          <p>The Prophetic Precedent: Establishing Market IntegrityIn the bustling markets of 7th-century Medina, the Prophet...</p>
+          <div class="tj-byline">Scripture Desk &middot; Feb 15, 2026</div>
         </div>
+        
         <div class="tj-card">
-          <div class="tj-kicker">Comparative Analysis</div>
-          <h3><a href="#">Sadaqah Jariyah and the Economics of Perpetual Endowments</a></h3>
-          <p>How the hadith of continuing charity shaped the waqf system that once funded hospitals, universities, and public infrastructure across the Islamic world.</p>
-          <div class="tj-byline">Scripture Desk &middot; Jan 18, 2026</div>
+          <div class="tj-kicker">Scripture & Economy</div>
+          <h3><a href="blog/understanding-riba.html">Understanding Riba: Beyond Simple Interest</a></h3>
+          <p>Examine the Islamic prohibition on riba and its distinction from contemporary interest.</p>
+          <div class="tj-byline">Editorial Desk &middot; Feb 8, 2026</div>
         </div>
+        
       </div>
 
       <!-- Newsletter -->
