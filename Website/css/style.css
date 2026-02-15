@@ -2853,6 +2853,12 @@ blockquote cite,
   grid-template-columns: repeat(4, 1fr);
   margin-top: 0;
 }
+@media (max-width: 1024px) {
+  .pillar-tiles-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .pillar-tiles-4 { grid-template-columns: repeat(2, 1fr); gap: 0.65rem; }
+}
 
 /* ---- Legacy wrapper (kept for other pages that still use it) ---- */
 .main-content-wrapper {
@@ -3356,7 +3362,15 @@ blockquote cite,
   }
 
   .footer-nav {
-    gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 2rem 2.5rem;
+    width: 100%;
+  }
+  .footer-nav-group {
+    min-width: 0;
+  }
+  .footer-subscribe {
+    max-width: 100%;
   }
 
   .footer-bottom {
