@@ -1,9 +1,9 @@
 name: Al-Tijarah Daily Newspaper
 
 on:
-  schedule:
-    # Run daily at 06:00 UTC
-    - cron: '0 6 * * *'
+  # schedule:
+  #   # Run daily at 06:00 UTC — uncomment when ready to go live
+  #   - cron: '0 6 * * *'
   workflow_dispatch:
     # Allow manual trigger for testing
     inputs:
