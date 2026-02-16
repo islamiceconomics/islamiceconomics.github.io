@@ -267,14 +267,23 @@
       font-size: 0.76rem;
       overflow: hidden;
       margin-bottom: 2rem;
+      position: relative;
+    }
+    .tj-ticker-track {
+      display: flex;
+      width: max-content;
+      animation: tickerScroll 45s linear infinite;
+    }
+    .tj-ticker-track:hover { animation-play-state: paused; }
+    @keyframes tickerScroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
     .tj-ticker-inner {
       display: flex;
       gap: 2.5rem;
-      overflow-x: auto;
       white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      padding: 0 1rem;
+      padding: 0 1.25rem;
     }
     .tj-ticker-item {
       display: inline-flex;
@@ -282,11 +291,42 @@
       gap: 0.4rem;
       flex-shrink: 0;
     }
+    .tj-ticker-sep {
+      opacity: 0.3;
+      font-size: 0.6rem;
+      flex-shrink: 0;
+    }
     .tj-ticker-label { opacity: 0.7; }
     .tj-ticker-value { font-weight: 700; }
     .tj-ticker-change { font-weight: 600; }
     .tj-ticker-up { color: #4ade80; }
     .tj-ticker-down { color: #f87171; }
+    .tj-ticker-loading {
+      text-align: center;
+      opacity: 0.6;
+      font-style: italic;
+      padding: 0 1rem;
+    }
+    .tj-ticker-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-right: 0.5rem;
+      font-weight: 700;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .tj-ticker-dot {
+      width: 6px; height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: tickerPulse 1.5s ease-in-out infinite;
+    }
+    @keyframes tickerPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
 
     /* --- Newsletter Banner --- */
     .tj-newsletter {
@@ -351,6 +391,7 @@
     [data-theme="dark"] .tj-section-header { color: #4cc882; border-bottom-color: #4cc882; }
     [data-theme="dark"] .tj-opinion-item { border-bottom-color: #334155; }
     [data-theme="dark"] .tj-ticker { background: #0f1923; }
+    [data-theme="dark"] .tj-ticker-dot { background: #4ade80; }
     [data-theme="dark"] .tj-newsletter { background: #1a2230; border-color: #334155; }
     [data-theme="dark"] .tj-newsletter-form input { background: #0f1923; border-color: #334155; color: #e2e8f0; }
     [data-theme="dark"] .tj-newsletter-form button { background: #4cc882; color: #0f1923; }
@@ -368,12 +409,13 @@
       .tj-lead-main h2 { font-size: 1.5rem; }
       .tj-newsletter-form { flex-direction: column; }
       /* Prevent horizontal drift on mobile */
-      .tj-ticker, .tj-section-bar, .tj-masthead, .tj-lead,
+      .tj-section-bar, .tj-masthead, .tj-lead,
       .tj-grid, .tj-two-col, .tj-newsletter {
         max-width: 100vw;
         overflow-x: hidden;
       }
-      .tj-ticker-inner { overflow-x: hidden; }
+      .tj-ticker { max-width: 100vw; }
+      .tj-ticker-track { animation-duration: 30s; }
     }
     </style>
 </head>
@@ -421,80 +463,11 @@
       </div>
     </header>
 
-    <!-- Data Ticker -->
-    <div class="tj-ticker">
-      <div class="container">
-        <div class="tj-ticker-inner">
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">Brent Crude</span>
-            <span class="tj-ticker-value">$75.20</span>
-            
-            <span class="tj-ticker-change tj-ticker-down">-0.8%</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">Gold</span>
-            <span class="tj-ticker-value">$2,842</span>
-            
-            <span class="tj-ticker-change tj-ticker-up">+0.3%</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">SAU GDP Growth</span>
-            <span class="tj-ticker-value">3.2%</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">TUR Inflation</span>
-            <span class="tj-ticker-value">41.5%</span>
-            
-            <span class="tj-ticker-change tj-ticker-down">-10.6pp</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">IDN Growth</span>
-            <span class="tj-ticker-value">5.0%</span>
-            
-            <span class="tj-ticker-change tj-ticker-up">+0.2pp</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">Islamic Finance AUM</span>
-            <span class="tj-ticker-value">$4.5T</span>
-            
-            <span class="tj-ticker-change tj-ticker-up">+11.3%</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">Global Sukuk</span>
-            <span class="tj-ticker-value">$236B</span>
-            
-            <span class="tj-ticker-change tj-ticker-up">+8.1%</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">MYR/USD</span>
-            <span class="tj-ticker-value">4.47</span>
-            
-          </div>
-          
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">PKR/USD</span>
-            <span class="tj-ticker-value">278</span>
-            
-            <span class="tj-ticker-change tj-ticker-up">+2.1%</span>
-            
-          </div>
-          
-        </div>
+    <!-- Live Data Ticker -->
+    <div class="tj-ticker" id="tjTicker">
+      <div class="container" style="overflow:hidden;">
+        <div class="tj-ticker-loading" id="tjTickerLoading">Loading market data...</div>
+        <div class="tj-ticker-track" id="tjTickerTrack" style="display:none;"></div>
       </div>
     </div>
 
@@ -758,9 +731,190 @@
         e.preventDefault();
         document.querySelectorAll('.tj-section-bar a').forEach(l => l.classList.remove('active'));
         this.classList.add('active');
-        // Filtering logic placeholder — future enhancement
       });
     });
+
+    // ─── Live Ticker ─────────────────────────────────────────
+    (function() {
+      const CACHE_KEY = 'tj_ticker_cache';
+      const CACHE_TTL = 3600000; // 1 hour
+
+      // Static data (annual figures that don't change daily)
+      const staticItems = [
+        { label: 'Islamic Finance AUM', value: '$4.5T', change: '+11.3%', dir: 'up' },
+        { label: 'Global Sukuk', value: '$236B', change: '+8.1%', dir: 'up' },
+        { label: 'SAU GDP Growth', value: '3.2%' },
+        { label: 'TUR Inflation', value: '41.5%', change: '-10.6pp', dir: 'down' },
+        { label: 'IDN Growth', value: '5.0%', change: '+0.2pp', dir: 'up' }
+      ];
+
+      // Fallback values if APIs fail
+      const fallback = {
+        gold: 2842, brent: 75.20,
+        currencies: { MYR: 4.47, PKR: 278, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
+      };
+
+      function getCached() {
+        try {
+          const raw = sessionStorage.getItem(CACHE_KEY);
+          if (!raw) return null;
+          const c = JSON.parse(raw);
+          if (Date.now() - c.ts > CACHE_TTL) return null;
+          return c.data;
+        } catch(e) { return null; }
+      }
+      function setCache(data) {
+        try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data })); }
+        catch(e) {}
+      }
+
+      // Fetch OIC currency rates (tries two free APIs)
+      async function fetchCurrencies() {
+        const symbols = 'MYR,PKR,SAR,TRY,IDR,BDT,EGP';
+        const urls = [
+          'https://api.frankfurter.app/latest?from=USD&to=' + symbols,
+          'https://api.frankfurter.dev/latest?from=USD&to=' + symbols
+        ];
+        for (const url of urls) {
+          try {
+            const resp = await fetch(url, { signal: AbortSignal.timeout(5000) });
+            if (resp.ok) { const d = await resp.json(); return d.rates; }
+          } catch(e) {}
+        }
+        throw new Error('All currency APIs failed');
+      }
+
+      // Fetch yesterday's rates for change calculation
+      async function fetchYesterdayCurrencies() {
+        const symbols = 'MYR,PKR,SAR,TRY,IDR,BDT,EGP';
+        const yd = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+        const urls = [
+          'https://api.frankfurter.app/' + yd + '?from=USD&to=' + symbols,
+          'https://api.frankfurter.dev/' + yd + '?from=USD&to=' + symbols
+        ];
+        for (const url of urls) {
+          try {
+            const resp = await fetch(url, { signal: AbortSignal.timeout(5000) });
+            if (resp.ok) { const d = await resp.json(); return d.rates; }
+          } catch(e) {}
+        }
+        return null;
+      }
+
+      // Fetch gold price (free metals API)
+      async function fetchGold() {
+        try {
+          const resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=toz', { signal: AbortSignal.timeout(5000) });
+          if (!resp.ok) return null;
+          const d = await resp.json();
+          return d.metals && d.metals.gold ? Math.round(d.metals.gold) : null;
+        } catch(e) { return null; }
+      }
+
+      function buildTickerHTML(items) {
+        const inner = items.map(it => {
+          let html = '<div class="tj-ticker-item">';
+          html += '<span class="tj-ticker-label">' + it.label + '</span>';
+          html += '<span class="tj-ticker-value">' + it.value + '</span>';
+          if (it.change) {
+            html += '<span class="tj-ticker-change tj-ticker-' + (it.dir || 'up') + '">' + it.change + '</span>';
+          }
+          html += '</div>';
+          return html;
+        }).join('<span class="tj-ticker-sep">|</span>');
+
+        // Duplicate for seamless scroll loop
+        const liveTag = '<span class="tj-ticker-live"><span class="tj-ticker-dot"></span> LIVE</span>';
+        const set = '<div class="tj-ticker-inner">' + liveTag + inner + '</div>';
+        return set + set;
+      }
+
+      function fmtCurrency(val, dec) {
+        return dec === 0 ? Math.round(val).toLocaleString() : val.toFixed(dec);
+      }
+
+      function pctChange(now, prev) {
+        if (!prev || prev === 0) return null;
+        const pct = ((now - prev) / prev * 100);
+        const sign = pct >= 0 ? '+' : '';
+        return { change: sign + pct.toFixed(1) + '%', dir: pct >= 0 ? 'up' : 'down' };
+      }
+
+      async function loadTicker() {
+        // Check cache first
+        const cached = getCached();
+        if (cached) {
+          renderTicker(cached);
+          return;
+        }
+
+        let liveItems = [];
+        try {
+          // Fetch currencies (and optionally yesterday's for % change)
+          const [rates, ydRates, goldPrice] = await Promise.allSettled([
+            fetchCurrencies(),
+            fetchYesterdayCurrencies(),
+            fetchGold()
+          ]);
+
+          const curr = rates.status === 'fulfilled' ? rates.value : fallback.currencies;
+          const yd = ydRates.status === 'fulfilled' ? ydRates.value : null;
+          const gold = goldPrice.status === 'fulfilled' && goldPrice.value ? goldPrice.value : fallback.gold;
+
+          // Gold
+          const goldItem = { label: 'Gold', value: '$' + gold.toLocaleString() };
+          liveItems.push(goldItem);
+
+          // OIC Currencies
+          const currencyMap = [
+            { code: 'MYR', label: 'MYR/USD', dec: 2 },
+            { code: 'PKR', label: 'PKR/USD', dec: 0 },
+            { code: 'SAR', label: 'SAR/USD', dec: 2 },
+            { code: 'TRY', label: 'TRY/USD', dec: 2 },
+            { code: 'IDR', label: 'IDR/USD', dec: 0 },
+            { code: 'BDT', label: 'BDT/USD', dec: 1 },
+            { code: 'EGP', label: 'EGP/USD', dec: 1 }
+          ];
+
+          currencyMap.forEach(function(c) {
+            if (!curr[c.code]) return;
+            const item = { label: c.label, value: fmtCurrency(curr[c.code], c.dec) };
+            if (yd && yd[c.code]) {
+              const ch = pctChange(curr[c.code], yd[c.code]);
+              if (ch) { item.change = ch.change; item.dir = ch.dir; }
+            }
+            liveItems.push(item);
+          });
+
+          // Add static annual data
+          liveItems = liveItems.concat(staticItems);
+          setCache(liveItems);
+
+        } catch(e) {
+          // Full fallback
+          liveItems = [
+            { label: 'Gold', value: '$' + fallback.gold.toLocaleString() },
+            { label: 'Brent Crude', value: '$' + fallback.brent },
+            { label: 'MYR/USD', value: fallback.currencies.MYR.toFixed(2) },
+            { label: 'PKR/USD', value: String(fallback.currencies.PKR) },
+            { label: 'SAR/USD', value: fallback.currencies.SAR.toFixed(2) },
+            { label: 'TRY/USD', value: fallback.currencies.TRY.toFixed(1) },
+          ].concat(staticItems);
+        }
+
+        renderTicker(liveItems);
+      }
+
+      function renderTicker(items) {
+        var track = document.getElementById('tjTickerTrack');
+        var loading = document.getElementById('tjTickerLoading');
+        track.innerHTML = buildTickerHTML(items);
+        loading.style.display = 'none';
+        track.style.display = 'flex';
+      }
+
+      loadTicker();
+    })();
     </script>
 </body>
 </html>

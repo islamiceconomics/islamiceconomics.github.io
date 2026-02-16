@@ -284,6 +284,18 @@
       font-size: 0.76rem;
       overflow: hidden;
       margin-bottom: 2rem;
+      position: relative;
+    }
+    .tj-ticker-track {
+      display: flex;
+      width: max-content;
+      animation: tickerScroll 45s linear infinite;
+      direction: ltr;
+    }
+    .tj-ticker-track:hover { animation-play-state: paused; }
+    @keyframes tickerScroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
     .tj-ticker-inner {
       display: flex;
@@ -304,6 +316,38 @@
     .tj-ticker-change { font-weight: 600; }
     .tj-ticker-up { color: #4ade80; }
     .tj-ticker-down { color: #f87171; }
+    .tj-ticker-sep {
+      opacity: 0.3;
+      font-size: 0.6rem;
+      flex-shrink: 0;
+    }
+    .tj-ticker-loading {
+      text-align: center;
+      opacity: 0.6;
+      font-style: italic;
+      padding: 0 1rem;
+      direction: rtl;
+    }
+    .tj-ticker-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-right: 0.5rem;
+      font-weight: 700;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .tj-ticker-dot {
+      width: 6px; height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: tickerPulse 1.5s ease-in-out infinite;
+    }
+    @keyframes tickerPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
 
     /* --- Newsletter Banner --- */
     .tj-newsletter {
@@ -417,6 +461,7 @@
     [data-theme="dark"] .tj-section-header { color: #4cc882; border-bottom-color: #4cc882; }
     [data-theme="dark"] .tj-opinion-item { border-bottom-color: #334155; }
     [data-theme="dark"] .tj-ticker { background: #0f1923; }
+    [data-theme="dark"] .tj-ticker-dot { background: #4ade80; }
     [data-theme="dark"] .tj-newsletter { background: #1a2230; border-color: #334155; }
     [data-theme="dark"] .tj-newsletter-form input { background: #0f1923; border-color: #334155; color: #e2e8f0; }
     [data-theme="dark"] .tj-newsletter-form button { background: #4cc882; color: #0f1923; }
@@ -437,12 +482,13 @@
       .tj-lead-main h2 { font-size: 1.5rem; }
       .tj-newsletter-form { flex-direction: column; }
       /* Prevent horizontal drift on mobile */
-      .tj-ticker, .tj-section-bar, .tj-masthead, .tj-lead,
+      .tj-section-bar, .tj-masthead, .tj-lead,
       .tj-grid, .tj-two-col, .tj-newsletter {
         max-width: 100vw;
         overflow-x: hidden;
       }
-      .tj-ticker-inner { overflow-x: hidden; }
+      .tj-ticker { max-width: 100vw; }
+      .tj-ticker-track { animation-duration: 30s; }
     }
     </style>
 </head>
@@ -490,20 +536,11 @@
       </div>
     </header>
 
-    <!-- Data Ticker -->
-    <div class="tj-ticker">
-      <div class="container">
-        <div class="tj-ticker-inner">
-          <div class="tj-ticker-item"><span class="tj-ticker-label">برنٹ کروڈ</span> <span class="tj-ticker-value">$75.20</span> <span class="tj-ticker-change tj-ticker-down">-0.8%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">سونا</span> <span class="tj-ticker-value">$2,842</span> <span class="tj-ticker-change tj-ticker-up">+0.3%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">SAU GDP نمو</span> <span class="tj-ticker-value">3.2%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">TUR مہنگائی</span> <span class="tj-ticker-value">41.5%</span> <span class="tj-ticker-change tj-ticker-down">-10.6pp</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">IDN نمو</span> <span class="tj-ticker-value">5.0%</span> <span class="tj-ticker-change tj-ticker-up">+0.2pp</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">اسلامی مالیاتی AUM</span> <span class="tj-ticker-value">$4.5T</span> <span class="tj-ticker-change tj-ticker-up">+11.3%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">عالمی صکوک</span> <span class="tj-ticker-value">$236B</span> <span class="tj-ticker-change tj-ticker-up">+8.1%</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">MYR/USD</span> <span class="tj-ticker-value">4.47</span></div>
-          <div class="tj-ticker-item"><span class="tj-ticker-label">PKR/USD</span> <span class="tj-ticker-value">278</span> <span class="tj-ticker-change tj-ticker-up">+2.1%</span></div>
-        </div>
+    <!-- Live Data Ticker -->
+    <div class="tj-ticker" id="tjTicker">
+      <div class="container" style="overflow:hidden;">
+        <div class="tj-ticker-loading" id="tjTickerLoading">مارکیٹ ڈیٹا لوڈ ہو رہا ہے...</div>
+        <div class="tj-ticker-track" id="tjTickerTrack" style="display:none;"></div>
       </div>
     </div>
 
@@ -742,9 +779,151 @@
         e.preventDefault();
         document.querySelectorAll('.tj-section-bar a').forEach(l => l.classList.remove('active'));
         this.classList.add('active');
-        // Filtering logic placeholder — future enhancement
       });
     });
+
+    // ─── Live Ticker (Urdu) ──────────────────────────────────
+    (function() {
+      const CACHE_KEY = 'tj_ticker_cache_ur';
+      const CACHE_TTL = 3600000;
+
+      const staticItems = [
+        { label: 'اسلامی مالیاتی AUM', value: '$4.5T', change: '+11.3%', dir: 'up' },
+        { label: 'عالمی صکوک', value: '$236B', change: '+8.1%', dir: 'up' },
+        { label: 'SAU GDP نمو', value: '3.2%' },
+        { label: 'TUR مہنگائی', value: '41.5%', change: '-10.6pp', dir: 'down' },
+        { label: 'IDN نمو', value: '5.0%', change: '+0.2pp', dir: 'up' }
+      ];
+
+      const fallback = {
+        gold: 2842, brent: 75.20,
+        currencies: { MYR: 4.47, PKR: 278, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
+      };
+
+      function getCached() {
+        try {
+          const raw = sessionStorage.getItem(CACHE_KEY);
+          if (!raw) return null;
+          const c = JSON.parse(raw);
+          if (Date.now() - c.ts > CACHE_TTL) return null;
+          return c.data;
+        } catch(e) { return null; }
+      }
+      function setCache(data) {
+        try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data })); }
+        catch(e) {}
+      }
+
+      async function fetchCurrencies() {
+        var symbols = 'MYR,PKR,SAR,TRY,IDR,BDT,EGP';
+        var urls = [
+          'https://api.frankfurter.app/latest?from=USD&to=' + symbols,
+          'https://api.frankfurter.dev/latest?from=USD&to=' + symbols
+        ];
+        for (var i = 0; i < urls.length; i++) {
+          try {
+            var resp = await fetch(urls[i], { signal: AbortSignal.timeout(5000) });
+            if (resp.ok) return (await resp.json()).rates;
+          } catch(e) {}
+        }
+        throw new Error('All currency APIs failed');
+      }
+      async function fetchYesterdayCurrencies() {
+        var symbols = 'MYR,PKR,SAR,TRY,IDR,BDT,EGP';
+        var yd = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+        var urls = [
+          'https://api.frankfurter.app/' + yd + '?from=USD&to=' + symbols,
+          'https://api.frankfurter.dev/' + yd + '?from=USD&to=' + symbols
+        ];
+        for (var i = 0; i < urls.length; i++) {
+          try {
+            var resp = await fetch(urls[i], { signal: AbortSignal.timeout(5000) });
+            if (resp.ok) return (await resp.json()).rates;
+          } catch(e) {}
+        }
+        return null;
+      }
+      async function fetchGold() {
+        try {
+          var resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=toz', { signal: AbortSignal.timeout(5000) });
+          if (!resp.ok) return null;
+          var d = await resp.json();
+          return d.metals && d.metals.gold ? Math.round(d.metals.gold) : null;
+        } catch(e) { return null; }
+      }
+
+      function buildTickerHTML(items) {
+        const inner = items.map(function(it) {
+          var html = '<div class="tj-ticker-item">';
+          html += '<span class="tj-ticker-label">' + it.label + '</span>';
+          html += '<span class="tj-ticker-value">' + it.value + '</span>';
+          if (it.change) html += '<span class="tj-ticker-change tj-ticker-' + (it.dir || 'up') + '">' + it.change + '</span>';
+          html += '</div>';
+          return html;
+        }).join('<span class="tj-ticker-sep">|</span>');
+        var liveTag = '<span class="tj-ticker-live"><span class="tj-ticker-dot"></span> لائیو</span>';
+        var set = '<div class="tj-ticker-inner">' + liveTag + inner + '</div>';
+        return set + set;
+      }
+
+      function fmtCurrency(val, dec) { return dec === 0 ? Math.round(val).toLocaleString() : val.toFixed(dec); }
+      function pctChange(now, prev) {
+        if (!prev || prev === 0) return null;
+        var pct = ((now - prev) / prev * 100);
+        return { change: (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%', dir: pct >= 0 ? 'up' : 'down' };
+      }
+
+      async function loadTicker() {
+        var cached = getCached();
+        if (cached) { renderTicker(cached); return; }
+
+        var liveItems = [];
+        try {
+          var [rates, ydRates, goldPrice] = await Promise.allSettled([fetchCurrencies(), fetchYesterdayCurrencies(), fetchGold()]);
+          var curr = rates.status === 'fulfilled' ? rates.value : fallback.currencies;
+          var yd = ydRates.status === 'fulfilled' ? ydRates.value : null;
+          var gold = goldPrice.status === 'fulfilled' && goldPrice.value ? goldPrice.value : fallback.gold;
+
+          liveItems.push({ label: 'سونا', value: '$' + gold.toLocaleString() });
+
+          var currencyMap = [
+            { code: 'MYR', label: 'ملیشین رنگٹ', dec: 2 },
+            { code: 'PKR', label: 'پاکستانی روپیہ', dec: 0 },
+            { code: 'SAR', label: 'سعودی ریال', dec: 2 },
+            { code: 'TRY', label: 'ترک لیرا', dec: 2 },
+            { code: 'IDR', label: 'انڈونیشی روپیہ', dec: 0 },
+            { code: 'BDT', label: 'بنگلہ ٹکا', dec: 1 },
+            { code: 'EGP', label: 'مصری پاؤنڈ', dec: 1 }
+          ];
+          currencyMap.forEach(function(c) {
+            if (!curr[c.code]) return;
+            var item = { label: c.label, value: fmtCurrency(curr[c.code], c.dec) };
+            if (yd && yd[c.code]) { var ch = pctChange(curr[c.code], yd[c.code]); if (ch) { item.change = ch.change; item.dir = ch.dir; } }
+            liveItems.push(item);
+          });
+          liveItems = liveItems.concat(staticItems);
+          setCache(liveItems);
+        } catch(e) {
+          liveItems = [
+            { label: 'سونا', value: '$' + fallback.gold.toLocaleString() },
+            { label: 'پاکستانی روپیہ', value: String(fallback.currencies.PKR) },
+            { label: 'سعودی ریال', value: fallback.currencies.SAR.toFixed(2) },
+            { label: 'ملیشین رنگٹ', value: fallback.currencies.MYR.toFixed(2) },
+          ].concat(staticItems);
+        }
+        renderTicker(liveItems);
+      }
+
+      function renderTicker(items) {
+        var track = document.getElementById('tjTickerTrack');
+        var loading = document.getElementById('tjTickerLoading');
+        track.innerHTML = buildTickerHTML(items);
+        loading.style.display = 'none';
+        track.style.display = 'flex';
+      }
+
+      loadTicker();
+    })();
     </script>
 </body>
 </html>
