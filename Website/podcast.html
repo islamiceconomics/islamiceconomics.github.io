@@ -287,6 +287,32 @@
       width: 100%;
       height: 36px;
     }
+    .ep-lang-toggle {
+      display: flex;
+      gap: 0.35rem;
+      margin-bottom: 0.6rem;
+    }
+    .ep-lang-btn {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border-light);
+      background: none;
+      color: var(--color-text-light);
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--font-sans);
+    }
+    .ep-lang-btn.active {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+    .ep-lang-btn:hover:not(.active) {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
 
     /* ── Video / Documentary Cards ── */
     .media-grid {
@@ -600,6 +626,10 @@
                 <span class="topic-tag">Modern Revival</span>
               </div>
               <div class="episode-player">
+                <div class="ep-lang-toggle">
+                  <button class="ep-lang-btn active" onclick="switchEpAudio(this,'podcast/audio/ep01-islamic-economic-history.m4a','audio/mp4')">English</button>
+                  <button class="ep-lang-btn" onclick="switchEpAudio(this,'podcast/audio/ep01-islamic-economic-history-urdu.m4a','audio/mp4')">اردو</button>
+                </div>
                 <audio controls preload="metadata">
                   <source src="podcast/audio/ep01-islamic-economic-history.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
@@ -632,6 +662,10 @@
                 <span class="topic-tag">Khiyar</span>
               </div>
               <div class="episode-player">
+                <div class="ep-lang-toggle">
+                  <button class="ep-lang-btn active" onclick="switchEpAudio(this,'podcast/audio/ep02-marketplace-of-medina.m4a','audio/mp4')">English</button>
+                  <button class="ep-lang-btn" onclick="switchEpAudio(this,'podcast/audio/ep02-marketplace-of-medina-urdu.mp3','audio/mpeg')">اردو</button>
+                </div>
                 <audio controls preload="metadata">
                   <source src="podcast/audio/ep02-marketplace-of-medina.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
@@ -664,6 +698,10 @@
                 <span class="topic-tag">Mudaraba</span>
               </div>
               <div class="episode-player">
+                <div class="ep-lang-toggle">
+                  <button class="ep-lang-btn active" onclick="switchEpAudio(this,'podcast/audio/ep03-house-of-wisdom.m4a','audio/mp4')">English</button>
+                  <button class="ep-lang-btn" onclick="switchEpAudio(this,'podcast/audio/ep03-house-of-wisdom-urdu.mp3','audio/mpeg')">اردو</button>
+                </div>
                 <audio controls preload="metadata">
                   <source src="podcast/audio/ep03-house-of-wisdom.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
@@ -696,6 +734,10 @@
                 <span class="topic-tag">Inflation</span>
               </div>
               <div class="episode-player">
+                <div class="ep-lang-toggle">
+                  <button class="ep-lang-btn active" onclick="switchEpAudio(this,'podcast/audio/ep04-coins-of-the-caliphate.m4a','audio/mp4')">English</button>
+                  <button class="ep-lang-btn" onclick="switchEpAudio(this,'podcast/audio/ep04-coins-of-the-caliphate-urdu.mp3','audio/mpeg')">اردو</button>
+                </div>
                 <audio controls preload="metadata">
                   <source src="podcast/audio/ep04-coins-of-the-caliphate.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
@@ -728,6 +770,10 @@
                 <span class="topic-tag">Amana (Trust)</span>
               </div>
               <div class="episode-player">
+                <div class="ep-lang-toggle">
+                  <button class="ep-lang-btn active" onclick="switchEpAudio(this,'podcast/audio/ep05-caravans-to-cathay.m4a','audio/mp4')">English</button>
+                  <button class="ep-lang-btn" onclick="switchEpAudio(this,'podcast/audio/ep05-caravans-to-cathay-urdu.mp3','audio/mpeg')">اردو</button>
+                </div>
                 <audio controls preload="metadata">
                   <source src="podcast/audio/ep05-caravans-to-cathay.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
@@ -760,6 +806,10 @@
                 <span class="topic-tag">Modern Revival</span>
               </div>
               <div class="episode-player">
+                <div class="ep-lang-toggle">
+                  <button class="ep-lang-btn active" onclick="switchEpAudio(this,'podcast/audio/ep06-the-waqf.m4a','audio/mp4')">English</button>
+                  <button class="ep-lang-btn" onclick="switchEpAudio(this,'podcast/audio/ep06-the-waqf-urdu.mp3','audio/mpeg')">اردو</button>
+                </div>
                 <audio controls preload="metadata">
                   <source src="podcast/audio/ep06-the-waqf.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
@@ -940,6 +990,19 @@ document.querySelectorAll('.episode-row').forEach(row => {
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   fadeEls.forEach(function(el) { observer.observe(el); });
 })();
+
+/* Switch episode audio between English / Urdu */
+function switchEpAudio(btn, src, mime) {
+  var toggle = btn.parentElement;
+  toggle.querySelectorAll('.ep-lang-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  var player = toggle.parentElement.querySelector('audio');
+  if (!player) return;
+  var sourceEl = player.querySelector('source');
+  sourceEl.setAttribute('src', src);
+  sourceEl.setAttribute('type', mime);
+  player.load();
+}
   </script>
 </body>
 </html>
