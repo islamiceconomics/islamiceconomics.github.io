@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Tijarah — News, Analysis & Commentary on the Global Islamic Economy</title>
@@ -398,7 +406,7 @@
     <!-- Masthead -->
     <header class="tj-masthead">
       <div class="container">
-        <div class="tj-masthead-date" id="tjDate"></div>
+        <div class="tj-masthead-date" id="tjDate">{{ current_date }}</div>
         <h1 class="tj-masthead-title">Al-Tijarah</h1>
         <p class="tj-masthead-title-ar">التجارة</p>
         <p class="tj-masthead-tagline">News, Analysis &amp; Commentary on the Global Islamic Economy</p>
@@ -409,15 +417,34 @@
     <div class="tj-ticker">
       <div class="container">
         <div class="tj-ticker-inner">
-          {% for item in ticker_items %}
-          <div class="tj-ticker-item">
-            <span class="tj-ticker-label">{{ item.label }}</span>
-            <span class="tj-ticker-value">{{ item.value }}</span>
-            {% if item.change %}
-            <span class="tj-ticker-change {{ 'tj-ticker-up' if item.direction == 'up' else 'tj-ticker-down' }}">{{ item.change }}</span>
-            {% endif %}
-          </div>
-          {% endfor %}
+          {% if ticker_items %}
+            {% for item in ticker_items %}
+              <div class="tj-ticker-item">
+                <span class="tj-ticker-label">{{ item.label }}</span>
+                <span class="tj-ticker-value">{{ item.value }}</span>
+                {% if item.change %}
+                  <span class="tj-ticker-change {% if item.direction == 'up' %}tj-ticker-up{% elif item.direction == 'down' %}tj-ticker-down{% endif %}">{{ item.change }}</span>
+                {% endif %}
+              </div>
+            {% endfor %}
+          {% else %}
+            <!-- Fallback ticker items -->
+            <div class="tj-ticker-item">
+              <span class="tj-ticker-label">Brent Crude</span>
+              <span class="tj-ticker-value">$75.20</span>
+              <span class="tj-ticker-change tj-ticker-down">-0.8%</span>
+            </div>
+            <div class="tj-ticker-item">
+              <span class="tj-ticker-label">Gold</span>
+              <span class="tj-ticker-value">$2,842</span>
+              <span class="tj-ticker-change tj-ticker-up">+0.3%</span>
+            </div>
+            <div class="tj-ticker-item">
+              <span class="tj-ticker-label">Islamic Finance AUM</span>
+              <span class="tj-ticker-value">$4.5T</span>
+              <span class="tj-ticker-change tj-ticker-up">+11.3%</span>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -439,76 +466,90 @@
     <div class="container">
 
       <!-- Lead Story Section -->
-      <div class="tj-lead">
-        <div class="tj-lead-main">
-          <div class="tj-kicker">{{ lead.kicker }}</div>
-          <h2><a href="blog/{{ lead.slug }}.html">{{ lead.title }}</a></h2>
-          <p class="tj-lead-excerpt">{{ lead.excerpt }}</p>
-          <div class="tj-byline"><strong>{{ lead.author }}</strong> &middot; {{ lead.date_short }} &middot; {{ lead.read_time }} min read</div>
-        </div>
-        <div class="tj-lead-side">
-          {% for item in side_leads %}
-          <div class="tj-lead-side-item">
-            <div class="tj-kicker">{{ item.kicker }}</div>
-            <h3><a href="blog/{{ item.slug }}.html">{{ item.title }}</a></h3>
-            <p>{{ item.excerpt_short }}</p>
+      {% if lead_article %}
+        <div class="tj-lead">
+          <div class="tj-lead-main">
+            <div class="tj-kicker">{{ lead_article.category }}</div>
+            <h2><a href="{{ lead_article.url }}">{{ lead_article.title }}</a></h2>
+            <p class="tj-lead-excerpt">{{ lead_article.excerpt }}</p>
+            <div class="tj-byline"><strong>{{ lead_article.author }}</strong> &middot; {{ lead_article.date_formatted }} &middot; {{ lead_article.reading_time }} read</div>
           </div>
-          {% endfor %}
+          <div class="tj-lead-side">
+            {% for article in secondary_leads %}
+              <div class="tj-lead-side-item">
+                <div class="tj-kicker">{{ article.category }}</div>
+                <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                <p>{{ article.excerpt }}</p>
+              </div>
+            {% endfor %}
+          </div>
         </div>
-      </div>
+      {% else %}
+        <div class="tj-lead">
+          <p>No lead articles available.</p>
+        </div>
+      {% endif %}
 
       <!-- Analysis Section -->
-      <div class="tj-section-header">Analysis &amp; Research</div>
-      <div class="tj-grid">
-        {% for article in analysis_articles %}
-        <div class="tj-card">
-          <div class="tj-kicker">{{ article.kicker }}</div>
-          <h3><a href="blog/{{ article.slug }}.html">{{ article.title }}</a></h3>
-          <p>{{ article.excerpt_short }}</p>
-          <div class="tj-byline">{{ article.author }} &middot; {{ article.date_short }}</div>
+      {% if analysis_articles %}
+        <div class="tj-section-header">Analysis &amp; Research</div>
+        <div class="tj-grid">
+          {% for article in analysis_articles[:3] %}
+            <div class="tj-card">
+              <div class="tj-kicker">{{ article.category }}</div>
+              <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+              <p>{{ article.excerpt }}</p>
+              <div class="tj-byline">{{ article.author }} &middot; {{ article.date_formatted }}</div>
+            </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-      </div>
+      {% endif %}
 
       <!-- Two Column: OIC + Opinion -->
       <div class="tj-two-col">
         <div>
-          <div class="tj-section-header">OIC Economic Monitor</div>
-          <div class="tj-grid" style="grid-template-columns: 1fr 1fr;">
-            {% for article in oic_articles %}
-            <div class="tj-card">
-              <div class="tj-kicker">{{ article.kicker }}</div>
-              <h3><a href="blog/{{ article.slug }}.html">{{ article.title }}</a></h3>
-              <p>{{ article.excerpt_short }}</p>
-              <div class="tj-byline">{{ article.date_short }}</div>
+          {% if oic_articles %}
+            <div class="tj-section-header">OIC Economic Monitor</div>
+            <div class="tj-grid" style="grid-template-columns: 1fr 1fr;">
+              {% for article in oic_articles[:4] %}
+                <div class="tj-card">
+                  <div class="tj-kicker">{{ article.category }}</div>
+                  <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                  <p>{{ article.excerpt }}</p>
+                  <div class="tj-byline">{{ article.date_formatted }}</div>
+                </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-          </div>
+          {% endif %}
         </div>
 
         <div>
-          <div class="tj-section-header">Opinion &amp; Commentary</div>
-          {% for article in opinion_articles %}
-          <div class="tj-opinion-item">
-            <h4><a href="blog/{{ article.slug }}.html">{{ article.title }}</a></h4>
-            <p class="tj-opinion-author">{{ article.author }}</p>
-          </div>
-          {% endfor %}
+          {% if opinion_articles %}
+            <div class="tj-section-header">Opinion &amp; Commentary</div>
+            {% for article in opinion_articles[:5] %}
+              <div class="tj-opinion-item">
+                <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+                <p class="tj-opinion-author">{{ article.author }}</p>
+              </div>
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
 
       <!-- Scripture & Economy Section -->
-      <div class="tj-section-header">Scripture &amp; Economy</div>
-      <div class="tj-grid">
-        {% for article in scripture_articles %}
-        <div class="tj-card">
-          <div class="tj-kicker">{{ article.kicker }}</div>
-          <h3><a href="blog/{{ article.slug }}.html">{{ article.title }}</a></h3>
-          <p>{{ article.excerpt_short }}</p>
-          <div class="tj-byline">{{ article.author }} &middot; {{ article.date_short }}</div>
+      {% if scripture_articles %}
+        <div class="tj-section-header">Scripture &amp; Economy</div>
+        <div class="tj-grid">
+          {% for article in scripture_articles[:3] %}
+            <div class="tj-card">
+              <div class="tj-kicker">{{ article.category }}</div>
+              <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+              <p>{{ article.excerpt }}</p>
+              <div class="tj-byline">{{ article.author }} &middot; {{ article.date_formatted }}</div>
+            </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-      </div>
+      {% endif %}
 
       <!-- Newsletter -->
       <div class="tj-newsletter">

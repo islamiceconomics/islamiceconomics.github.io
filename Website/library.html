@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library — Islamic Economics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
+  <script>
+    (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <style>
+    /* ── Library Page Styles ── */
+
+    /* Featured Review Card */
+    .featured-review {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 3rem;
+    }
+    .featured-review-header {
+      display: flex;
+      gap: 2rem;
+      padding: 2.5rem;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .featured-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+    .featured-cover {
+      width: 160px;
+      height: 220px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, #0d3d25 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-cover::before {
+      content: '';
+      position: absolute;
+      top: -30px; right: -30px;
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.15);
+    }
+    .featured-cover::after {
+      content: '';
+      position: absolute;
+      bottom: -20px; left: -20px;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.1);
+    }
+    .featured-cover-icon {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .featured-cover-text {
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.4;
+      position: relative;
+      z-index: 1;
+    }
+    .featured-info {
+      flex: 1;
+    }
+    .featured-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+    .featured-meta {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    .featured-authors {
+      font-size: 0.92rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    /* Review Content Sections */
+    .featured-review-body {
+      padding: 2.5rem;
+    }
+    .review-section {
+      margin-bottom: 2.5rem;
+    }
+    .review-section:last-child {
+      margin-bottom: 0;
+    }
+    .review-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .review-section-subtitle {
+      font-size: 0.95rem;
+      color: var(--color-text-primary);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .review-text:last-child {
+      margin-bottom: 0;
+    }
+
+    /* About Authors Card */
+    .authors-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border-light);
+    }
+    .author-profile {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1.25rem;
+      background: var(--color-bg-secondary);
+      border-radius: 8px;
+    }
+    .author-initial {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--color-primary-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+    .author-info {
+      flex: 1;
+    }
+    .author-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.3rem;
+    }
+    .author-bio {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Essential Reading List */
+    .reading-list-section {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      border-top: 2px solid var(--color-border-light);
+    }
+    .reading-list-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .reading-list-subtitle {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    /* Book Categories */
+    .book-category {
+      margin-bottom: 2.5rem;
+    }
+    .book-category-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--color-primary-subtle);
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .book-item {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: all 0.25s;
+    }
+    .book-item:hover {
+      border-color: var(--color-border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .book-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .book-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.3rem;
+      line-height: 1.35;
+    }
+    .book-author {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+    .book-year {
+      font-size: 0.75rem;
+      color: var(--color-text-light);
+      margin-bottom: 0.75rem;
+    }
+    .book-description {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+    .book-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .book-tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .featured-review-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.75rem;
+      }
+      .featured-title {
+        font-size: 1.5rem;
+      }
+      .featured-cover {
+        width: 140px;
+        height: 200px;
+      }
+      .review-section-title {
+        font-size: 1.1rem;
+      }
+      .books-grid {
+        grid-template-columns: 1fr;
+      }
+      .featured-review-body {
+        padding: 1.5rem;
+      }
+      .reading-list-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .featured-cover {
+        width: 120px;
+        height: 180px;
+      }
+      .featured-cover-icon {
+        font-size: 2.5rem;
+      }
+      .featured-title {
+        font-size: 1.35rem;
+      }
+    }
+
+    /* Dark mode adjustments */
+    [data-theme="dark"] .featured-review,
+    [data-theme="dark"] .book-item {
+      background: var(--color-surface);
+    }
+    [data-theme="dark"] .author-profile {
+      background: rgba(255,255,255,0.04);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Islamic Economics</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle active">Learn <span class="nav-dropdown-arrow">&#9662;</span></button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="foundations.html">Foundations</a></li>
+            <li><a href="theory.html">Theory</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="library.html" class="active">Library</a></li>
+          </ul>
+        </li>
+        <li><a href="scriptures.html" class="nav-link">Scriptures</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="podcast.html" class="nav-link">Media</a></li>
+        <li><a href="blog.html" class="nav-link">Al-Tijarah</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <a href="ur/library.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-moon">&#9790;</span>
+        <span class="icon-sun">&#9788;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero hero-small">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Library</span>
+      </nav>
+      <h1 class="hero-title">Library</h1>
+      <p class="hero-subtitle">Curated book reviews and essential readings in Islamic economics — connecting classical scholarship with contemporary theory and practice</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section" style="padding: 3rem 0 2rem;">
+    <div class="container">
+
+      <!-- Featured Review -->
+      <article class="featured-review fade-up">
+        <div class="featured-review-header">
+          <div class="featured-cover">
+            <div class="featured-cover-icon">📚</div>
+            <div class="featured-cover-text">Introduction to Islamic Economics</div>
+          </div>
+          <div class="featured-info">
+            <span class="featured-badge">Featured Review</span>
+            <h2 class="featured-title">Introduction to Islamic Economics: Theory and Application</h2>
+            <div class="featured-authors">Hossein Askari, Zamir Iqbal, Abbas Mirakhor</div>
+            <div class="featured-meta">
+              <div><strong>Publisher:</strong> Wiley Finance Series, 2015</div>
+              <div><strong>ISBN:</strong> 978-1-118-73296-0</div>
+              <div><strong>Pages:</strong> ~400 pages, 14 chapters</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-review-body">
+
+          <!-- The Complete System Framework -->
+          <div class="review-section">
+            <h3 class="review-section-title">1. The Complete System Framework</h3>
+            <p class="review-text">
+              The most valuable contribution of this seminal text is its presentation of Islamic economics not as an ad hoc collection of financial instruments or prohibitions, but as a coherent and complete economic system — a genuinely alternative paradigm to both free-market capitalism and command economics. The authors systematically develop this framework across 14 tightly integrated chapters, demonstrating that Islamic economics possesses internally consistent answers to the same fundamental questions that drive all economic theory: How should production be organized? What determines distribution? How should markets function? What role should the state play?
+            </p>
+            <p class="review-text">
+              This is fundamentally different from much existing Islamic finance literature, which often presents individual instruments (sukuk, murabaha, musharakah) as standalone innovations. Instead, Askari, Iqbal, and Mirakhor show how these instruments emerge naturally from a unified set of principles about ownership, justice, risk, and human purpose. This approach gives their work unusual intellectual power and makes it essential reading for anyone seeking to understand Islamic economics as a coherent worldview rather than a collection of rules.
+            </p>
+          </div>
+
+          <!-- The Agent-Trustee Paradigm -->
+          <div class="review-section">
+            <h3 class="review-section-title">2. The Agent-Trustee (Khalifah) Paradigm</h3>
+            <p class="review-text">
+              Chapter 2 presents the book's most transformative insight: the reconceptualization of human beings as trustees (khalifah) of God's creation rather than absolute owners of property. This shift is more revolutionary than it might initially appear. Where neoclassical economics is built on the foundation of homo economicus — the self-interested rational actor pursuing wealth maximization — Islamic economics begins with the khalifah: an agent accountable to the Divine for how she manages entrusted resources.
+            </p>
+            <p class="review-text">
+              The practical implications cascade through everything that follows. Property rights become conditional rather than absolute. Your wealth is held in trust; you are responsible for its wise stewardship and prohibited from using it in ways that harm others or violate divine law. This fundamentally reshapes resource allocation, inheritance patterns, intergenerational responsibility, and the relationship between individual ownership and collective welfare. The authors trace how this conceptual foundation generates specific rules about zakat (wealth taxation), usury prohibition, treatment of labor, and limits on economic concentration. It is a masterclass in how a single theological premise unfolds into a complete economic system.
+            </p>
+          </div>
+
+          <!-- Institutional Scaffolding -->
+          <div class="review-section">
+            <h3 class="review-section-title">3. Institutional Scaffolding: Property Rights, Contracts, and Hisbah</h3>
+            <p class="review-text">
+              Chapter 3 of the book demonstrates that Islamic economics is not merely a set of principles but a structured system of institutions. The authors identify the essential institutional "scaffolding": clearly defined property rights, enforceable contracts, functional markets, and the hisbah system of market supervision and regulation. What is particularly impressive here is how the authors anticipate modern institutional economics — specifically the work of Douglass North, who won the Nobel Prize partly for demonstrating that institutions, not just technology and resources, are primary drivers of economic development.
+            </p>
+            <p class="review-text">
+              The book shows that Islamic jurisprudence developed sophisticated frameworks for defining what property is, how contracts bind parties, what constitutes fraud, what information asymmetries are permissible, and how the state should prevent corruption and exploitation. The hisbah — market inspector authority — is presented not as arbitrary regulation but as a rational institutional response to market failures and information problems that economists would not formally model until centuries later. The authors demonstrate that Islamic civilization had already solved, through jurisprudence, many institutional problems that modern economies still grapple with.
+            </p>
+          </div>
+
+          <!-- Risk-Sharing vs. Risk-Shifting -->
+          <div class="review-section">
+            <h3 class="review-section-title">4. Risk-Sharing vs. Risk-Shifting: The Book's Most Powerful Insight</h3>
+            <p class="review-text">
+              Chapters 4 and 8 contain perhaps the book's most practically important insight, which becomes almost prophetic when one considers that this text was published in 2015, only seven years after the global financial crisis. The authors draw a crucial distinction between risk-sharing and risk-shifting in financial systems. Conventional finance, they argue, has increasingly become a system of risk-shifting: instruments designed to allow one party to pass their risk onto another, creating moral hazard and systemic fragility. Debt instruments allow borrowers to shift downside risk to lenders while keeping upside gains. Credit derivatives allow banks to shift risk off their balance sheets while collecting fees. The entire edifice becomes optimized for moving risk around rather than managing it.
+            </p>
+            <p class="review-text">
+              Islamic finance, by contrast, is built on risk-sharing partnerships. In a mudarabah (profit-sharing contract), the entrepreneur and capital provider both share profits and losses proportionally. In musharakah (joint venture), all parties have skin in the game. The authors argue that this fundamental structural difference addresses the core problem that generated the 2008 financial crisis: when financial incentives are misaligned with actual risk, markets generate explosively unstable cycles. Risk-sharing requires all parties to exercise caution because they will suffer losses if investments fail. The authors connect this insight to macroeconomic stability, arguing that interest-free systems with equity-based financing naturally generate less procyclical behavior and more sustainable growth. This section alone justifies reading the entire book.
+            </p>
+          </div>
+
+          <!-- Interest-Free Macroeconomics -->
+          <div class="review-section">
+            <h3 class="review-section-title">5. Interest-Free Macroeconomics: A Complete Model</h3>
+            <p class="review-text">
+              Chapters 7, 10, and 11 tackle what many economists (including critics of Islamic economics) consider the most technically demanding question: How does an entire economy function when the interest rate is not available as a central monetary policy tool? The authors present a fully articulated macroeconomic model that incorporates an interest-free financial system, alternative monetary transmission mechanisms, fiscal policy based on Islamic taxation (zakat, khums, sadaqah), and growth dynamics without reliance on debt expansion.
+            </p>
+            <p class="review-text">
+              What is striking is that their model does not require hand-waving or retreat into vagueness. The authors work through how money supply adjusts, how investment is financed without interest-bearing debt, how monetary authorities manage inflation, how liquidity preferences are satisfied without interest rates, and how fiscal policy can be implemented through Islamic tax instruments. They address technical questions: What happens in a recession? How do nominal and real wages interact? What is the transmission mechanism from monetary policy changes to real output? The mathematics is accessible but rigorous. This section demonstrates convincingly that interest-free macroeconomics is not merely conceptually possible but can be modeled with the same sophistication as any conventional monetary economics textbook.
+            </p>
+          </div>
+
+          <!-- Justice as Central Organizing Principle -->
+          <div class="review-section">
+            <h3 class="review-section-title">6. Justice (Adl) as the Central Organizing Principle</h3>
+            <p class="review-text">
+              Woven throughout the entire book is a principle that Western economic textbooks rarely foreground: justice (adl) as the fundamental organizing criterion for evaluating economic systems. In conventional economics, efficiency is typically the primary criterion. An allocation is efficient if it is impossible to make someone better off without making someone else worse off (Pareto efficiency). Justice, by contrast, is often treated as a constraint on efficiency rather than as a primary objective.
+            </p>
+            <p class="review-text">
+              The authors argue that Islamic economics inverts this hierarchy. Justice is not a luxury to be pursued after efficiency is achieved; it is the foundation. Economic policies are judged first by whether they promote justice — fairness in contracts, prevention of exploitation, equitable distribution of the benefits of cooperation. Efficiency is important, but only within the constraints of justice. This conceptual reorientation has profound implications. It explains, for instance, why interest is prohibited not merely as a rule but as fundamentally unjust (because it shifts risk unfairly and generates income divorced from productive contribution). It explains why speculation is forbidden (unfair extraction of wealth with no corresponding value creation). It explains why zakat is obligatory (justice demands redistribution). The authors demonstrate that when this principle is understood, seemingly disparate rules suddenly form a coherent ethical framework. This chapter alone is a masterclass in how values drive economic systems.
+            </p>
+          </div>
+
+          <!-- Development and Welfare -->
+          <div class="review-section">
+            <h3 class="review-section-title">7. Development, Welfare, and Financial Inclusion</h3>
+            <p class="review-text">
+              Chapters 12 and 13 shift focus to development economics and social welfare. The authors examine how Islamic economics addresses financial inclusion, poverty reduction, and human development — questions that have moved to the center of mainstream development economics through figures like Amartya Sen and his capability approach. What the authors demonstrate is that Islamic economics articulated these concerns centuries before Sen. The emphasis on human dignity (karamah), the prohibition on exploitation, the institution of zakat as a wealth-based safety net, and the emphasis on community welfare rather than mere aggregate growth all suggest an economic system deeply concerned with who benefits from economic activity and whether all members of society have the capacity to flourish.
+            </p>
+            <p class="review-text">
+              The authors present empirical evidence from Muslim-majority countries comparing economic performance, poverty rates, and development indicators where Islamic finance principles have been more or less rigorously implemented. While the data are mixed (as one would expect given the vast differences in governance, natural resources, and history across Muslim-majority nations), the authors argue that the correlation between adherence to Islamic economic principles and better development outcomes is stronger than critics typically acknowledge. This section grounds Islamic economics in real-world measurement and evaluation rather than treating it as pure theory.
+            </p>
+          </div>
+
+          <!-- OIC Economic Reality -->
+          <div class="review-section">
+            <h3 class="review-section-title">8. An Honest Assessment of Reality</h3>
+            <p class="review-text">
+              Chapter 14 is perhaps the book's most intellectually honest section. Rather than concluding on a triumphant note, the authors provide a clear-eyed assessment of how Muslim-majority countries in the Organisation of Islamic Cooperation (OIC) actually perform compared to the ideals of Islamic economic theory. The reality is sobering: high poverty rates in some countries, wealth concentration in others, volatile growth, capital flight, insufficient infrastructure investment, and governance failures. The authors do not hide this gap between theory and practice. Instead, they argue that poor performance is not evidence that Islamic economics is flawed; rather, it reflects the fact that most Muslim-majority countries have never actually implemented Islamic economic systems coherently. They have partial implementations, usually embedded in Western institutional frameworks inherited from colonialism. The gap between Islamic economics as a system and Islamic economics as practiced in a few institutions in otherwise capitalist economies is vast.
+            </p>
+            <p class="review-text">
+              This intellectual humility strengthens rather than weakens the book's argument. The authors are not claiming that simply adopting Islamic financial instruments will automatically solve economic problems. They are claiming that Islamic economics, understood as a complete system addressing property rights, institutions, monetary policy, fiscal policy, and social welfare, offers a coherent alternative framework that could generate different outcomes. Whether it would actually do so depends on implementation depth, quality of governance, and political commitment. This is a much more sophisticated and defensible claim than naive advocacy would suggest.
+            </p>
+          </div>
+
+          <!-- About the Authors -->
+          <div class="authors-section fade-up">
+            <h3 class="review-section-title" style="margin-bottom: 1.5rem;">About the Authors</h3>
+
+            <div class="author-profile">
+              <div class="author-initial">H</div>
+              <div class="author-info">
+                <div class="author-name">Hossein Askari</div>
+                <div class="author-bio">
+                  Professor of International Business at George Washington University. Served as an executive board consultant to the International Monetary Fund (IMF) and held the position of visiting scholar at various institutions. Ph.D. from MIT. Brings technical rigor and international policy experience to the text's macroeconomic modeling.
+                </div>
+              </div>
+            </div>
+
+            <div class="author-profile">
+              <div class="author-initial">Z</div>
+              <div class="author-info">
+                <div class="author-name">Zamir Iqbal</div>
+                <div class="author-bio">
+                  Lead Specialist at the World Bank and headed the Global Center for Islamic Finance Development. Combines deep expertise in Islamic finance with practical development experience across Muslim-majority economies. Brings real-world perspective on implementation challenges and opportunities.
+                </div>
+              </div>
+            </div>
+
+            <div class="author-profile">
+              <div class="author-initial">A</div>
+              <div class="author-info">
+                <div class="author-name">Abbas Mirakhor</div>
+                <div class="author-bio">
+                  First holder of the Chair of Islamic Finance at the International Centre for Education in Islamic Finance (INCEIF) and served on the IMF executive board (1997-2008). Combines scholarly depth with high-level policy experience. A foundational figure in modern Islamic finance.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Essential Reading List -->
+  <section class="section" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="reading-list-section">
+        <h2 class="reading-list-title fade-up">Essential Reading List</h2>
+        <p class="reading-list-subtitle fade-up">Foundational texts, historical analyses, and contemporary scholarship in Islamic economics</p>
+
+        <!-- Foundational Texts -->
+        <div class="book-category fade-up">
+          <h3 class="book-category-title">Foundational Texts</h3>
+          <div class="books-grid">
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Islam and the Economic Challenge</h4>
+              <div class="book-author">M. Umer Chapra</div>
+              <div class="book-year">1992</div>
+              <p class="book-description">A comprehensive examination of how Islamic economics addresses contemporary challenges including poverty, inequality, and financial instability. Chapra emphasizes the systemic nature of Islamic solutions and their potential for sustainable development. Essential for understanding Islamic economics as a response to real-world problems.</p>
+              <div class="book-tags">
+                <span class="book-tag">Islamic Finance</span>
+                <span class="book-tag">Development</span>
+                <span class="book-tag">Systemic Analysis</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Banking Without Interest</h4>
+              <div class="book-author">Muhammad Nejatullah Siddiqi</div>
+              <div class="book-year">1993</div>
+              <p class="book-description">A foundational exploration of interest-free banking and its theoretical justification. Siddiqi addresses how financial intermediation functions without interest, the nature of Islamic contracts (mudarabah, musharakah, murabaha), and the institutional requirements for interest-free systems. Remains the classic text on Islamic banking principles.</p>
+              <div class="book-tags">
+                <span class="book-tag">Islamic Banking</span>
+                <span class="book-tag">Riba</span>
+                <span class="book-tag">Contracts</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Introduction to Islamic Economics: Theory and Application</h4>
+              <div class="book-author">Muhammad Nejatullah Siddiqi</div>
+              <div class="book-year">1999</div>
+              <p class="book-description">The seminal overview of Islamic economic principles establishing foundational frameworks for contemporary scholarship. Siddiqi's work differentiated Islamic economics from conventional systems and provided rigorous theoretical foundations. Essential for understanding how Islamic economic theory developed as a distinct discipline.</p>
+              <div class="book-tags">
+                <span class="book-tag">Theory</span>
+                <span class="book-tag">Foundations</span>
+                <span class="book-tag">Seminal Work</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">The Future of Economics: An Islamic Perspective</h4>
+              <div class="book-author">M. Umer Chapra</div>
+              <div class="book-year">1999</div>
+              <p class="book-description">A forward-looking exploration of how Islamic economic principles address emerging global challenges. Chapra articulates a vision for economic systems that reconcile material development with ethical constraints and spiritual values. Examines environmental sustainability, intergenerational justice, and the role of wealth in human flourishing.</p>
+              <div class="book-tags">
+                <span class="book-tag">Vision</span>
+                <span class="book-tag">Ethics</span>
+                <span class="book-tag">Sustainability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Historical & Civilization -->
+        <div class="book-category fade-up">
+          <h3 class="book-category-title">History & Civilization</h3>
+          <div class="books-grid">
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">History of Islamic Economic Thought</h4>
+              <div class="book-author">Abdul Azim Islahi</div>
+              <div class="book-year">1997</div>
+              <p class="book-description">A comprehensive chronicle of Islamic economic thought from the Prophet Muhammad through the colonial period to modern times. Traces the development of concepts like pricing, monetary policy, taxation, and distribution across centuries of Islamic jurisprudence and scholarship. Reveals the sophistication and continuity of Islamic economic analysis.</p>
+              <div class="book-tags">
+                <span class="book-tag">History</span>
+                <span class="book-tag">Medieval Thought</span>
+                <span class="book-tag">Intellectual Development</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Partnership and Profit in Medieval Islam</h4>
+              <div class="book-author">Abraham Udovitch</div>
+              <div class="book-year">1970</div>
+              <p class="book-description">A detailed historical and legal analysis of medieval Islamic partnerships and profit-sharing arrangements. Udovitch demonstrates how Islamic law developed sophisticated frameworks for risk-sharing, capital formation, and commercial relationships. Pioneering work showing the historical reality of Islamic finance in practice.</p>
+              <div class="book-tags">
+                <span class="book-tag">Medieval Commerce</span>
+                <span class="book-tag">Partnerships</span>
+                <span class="book-tag">Legal History</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Economic Concepts of Ibn Taymiyyah</h4>
+              <div class="book-author">Abdul Azim Islahi</div>
+              <div class="book-year">2005</div>
+              <p class="book-description">A detailed examination of Ibn Taymiyyah's economic thought, including his analysis of money, prices, market mechanisms, and justice in exchange. Reveals the sophistication of 14th-century Islamic economic analysis and its continuing relevance. Shows that medieval Islamic scholars understood principles later attributed to modern economists.</p>
+              <div class="book-tags">
+                <span class="book-tag">Medieval Scholar</span>
+                <span class="book-tag">Pricing Theory</span>
+                <span class="book-tag">Money</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">The Islamic Merchant: Honour, Morality, and Society</h4>
+              <div class="book-author">Cynthia Guthrie</div>
+              <div class="book-year">2000</div>
+              <p class="book-description">An exploration of merchant cultures and commercial ethics in pre-modern Islamic civilization. Examines how trust, honor, reputation, and religious obligation shaped economic behavior and institution-building. Demonstrates that economics and ethics were inseparable in Islamic historical practice.</p>
+              <div class="book-tags">
+                <span class="book-tag">Commerce</span>
+                <span class="book-tag">Ethics</span>
+                <span class="book-tag">Social History</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modern Practice -->
+        <div class="book-category fade-up">
+          <h3 class="book-category-title">Modern Practice & Implementation</h3>
+          <div class="books-grid">
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Islamic Finance: Principles and Practice</h4>
+              <div class="book-author">Hans Visser</div>
+              <div class="book-year">2009</div>
+              <p class="book-description">A comprehensive analysis of Islamic financial instruments and their practical implementation in contemporary markets. Bridges classical jurisprudence with modern finance, addressing sukuk design, Islamic banking operations, regulatory frameworks, and the challenges of Shari'ah compliance in global markets.</p>
+              <div class="book-tags">
+                <span class="book-tag">Islamic Banking</span>
+                <span class="book-tag">Sukuk</span>
+                <span class="book-tag">Modern Finance</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">An Introduction to Islamic Finance</h4>
+              <div class="book-author">Zamir Iqbal & Abbas Mirakhor</div>
+              <div class="book-year">2007</div>
+              <p class="book-description">A practical introduction to Islamic finance covering mudarabah, musharakah, murabaha, ijara, and other instruments. Written by practitioners with policy experience at the World Bank and IMF, combining theoretical rigor with real-world implementation insights. Essential for understanding how Islamic finance operates in contemporary markets.</p>
+              <div class="book-tags">
+                <span class="book-tag">Islamic Instruments</span>
+                <span class="book-tag">Practice</span>
+                <span class="book-tag">Implementation</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Sukuk Markets: A Comprehensive Study</h4>
+              <div class="book-author">Various Contributors</div>
+              <div class="book-year">2015</div>
+              <p class="book-description">An examination of Islamic bond (sukuk) markets, their growth, structure, and role in financing Islamic institutions and development. Covers asset-backed sukuk, sovereign sukuk, and the integration of Islamic capital markets into global finance. Addresses both opportunities and challenges in sukuk standardization.</p>
+              <div class="book-tags">
+                <span class="book-tag">Capital Markets</span>
+                <span class="book-tag">Sukuk</span>
+                <span class="book-tag">Islamic Bonds</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Takaful: Islamic Insurance</h4>
+              <div class="book-author">Muhammad Ayub</div>
+              <div class="book-year">2007</div>
+              <p class="book-description">A comprehensive guide to takaful (Islamic insurance) principles, products, and operations. Covers the philosophical foundations of mutual risk-sharing, the structure of takaful companies, regulatory issues, and the distinction between takaful and conventional insurance. Addresses how Islamic insurance addresses the ethical concerns with conventional insurance.</p>
+              <div class="book-tags">
+                <span class="book-tag">Insurance</span>
+                <span class="book-tag">Takaful</span>
+                <span class="book-tag">Risk-Sharing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & Research -->
+        <div class="book-category fade-up">
+          <h3 class="book-category-title">Academic & Research</h3>
+          <div class="books-grid">
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Islamic Finance: Law, Economics, and Practice</h4>
+              <div class="book-author">Mahmoud A. El-Gamal</div>
+              <div class="book-year">2006</div>
+              <p class="book-description">A rigorous academic treatment of Islamic finance integrating legal analysis, economic theory, and practice. El-Gamal examines how Islamic finance balances Shari'ah compliance with economic efficiency, analyzes principal-agent problems specific to Islamic contracts, and provides critical assessment of current practices. Combines scholarly rigor with practical insight.</p>
+              <div class="book-tags">
+                <span class="book-tag">Academic</span>
+                <span class="book-tag">Law & Economics</span>
+                <span class="book-tag">Critical Analysis</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Islamic Economics in the Modern World</h4>
+              <div class="book-author">Timur Kuran</div>
+              <div class="book-year">2004</div>
+              <p class="book-description">An examination of the history and contemporary state of Islamic economics as a scholarly discipline. Kuran analyzes why Islamic economic systems were not maintained after the colonial period, the revivalist movement of the 20th century, and the current challenges in reconciling Islamic principles with global market integration.</p>
+              <div class="book-tags">
+                <span class="book-tag">Institutional History</span>
+                <span class="book-tag">Modern Challenges</span>
+                <span class="book-tag">Academic Discipline</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Shari'ah Compliance in Islamic Finance</h4>
+              <div class="book-author">Mohsin Khan & Abbas Mirakhor (Editors)</div>
+              <div class="book-year">2007</div>
+              <p class="book-description">A collection of research papers examining how Islamic financial institutions balance Shari'ah principles with market pressures and regulatory requirements. Covers governance issues, compliance frameworks, and the role of Shari'ah scholars in Islamic finance. Provides empirical research on Islamic banking performance.</p>
+              <div class="book-tags">
+                <span class="book-tag">Governance</span>
+                <span class="book-tag">Shari'ah</span>
+                <span class="book-tag">Empirical Research</span>
+              </div>
+            </div>
+
+            <div class="book-item fade-up">
+              <div class="book-icon">📖</div>
+              <h4 class="book-title">Development Economics and Islamic Finance</h4>
+              <div class="book-author">Various Contributors</div>
+              <div class="book-year">2012</div>
+              <p class="book-description">Research examining the role of Islamic finance in poverty reduction, financial inclusion, and sustainable development in Muslim-majority economies. Provides empirical evidence on outcomes, case studies of successful Islamic finance initiatives, and analysis of how Islamic financial principles address development challenges.</p>
+              <div class="book-tags">
+                <span class="book-tag">Development</span>
+                <span class="book-tag">Poverty</span>
+                <span class="book-tag">Inclusion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Islamic Economics</a>
+          <p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought — from the earliest markets of Medina to today's global Islamic finance industry.</p>
+          <blockquote class="footer-ayah">
+            <p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
+            <cite>— Al-Baqarah 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Knowledge</h4>
+            <ul class="footer-links">
+              <li><a href="foundations.html">Foundations</a></li>
+              <li><a href="scriptures.html">Scriptures</a></li>
+              <li><a href="theory.html">Theory</a></li>
+              <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Modern Economy</h4>
+            <ul class="footer-links">
+              <li><a href="research.html">Research</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="podcast.html">Media</a></li>
+              <li><a href="blog.html">Al-Tijarah</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            </div>
+            <form class="footer-subscribe" data-newsletter-form>
+              <input type="email" placeholder="Your email" class="form-input" required>
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Islamic Economics</p>
+        <a href="about.html" class="footer-bottom-link">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" data-back-to-top aria-label="Back to top">&uarr;</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Nav dropdown toggle */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.closest('.nav-dropdown').classList.toggle('open');
+      });
+    });
+
+    /* Scroll-triggered fade-up animation */
+    (function() {
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if (!fadeEls.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+  </script>
+</body>
+</html>

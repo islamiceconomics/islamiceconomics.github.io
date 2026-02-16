@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ excerpt }}">
@@ -35,6 +43,7 @@
                     <li><a href="../theory.html">Theory</a></li>
                     <li><a href="../research.html">Research</a></li>
                     <li><a href="../history.html">History</a></li>
+                    <li><a href="../library.html">Library</a></li>
                   </ul>
                 </li>
                 <li><a href="../scriptures.html" class="nav-link">Scriptures</a></li>
@@ -77,10 +86,10 @@
                                 {{ date_formatted }}
                             </span>
                             <span class="meta-reading-time">
-                                {{ read_time }} min read
+                                {{ reading_time }} min read
                             </span>
                             <span class="meta-category">
-                                <a href="../blog.html?category={{ category }}">{{ category_label }}</a>
+                                <a href="../blog.html?category={{ category|lower|replace(' ', '-') }}">{{ category }}</a>
                             </span>
                         </div>
                     </header>
@@ -112,7 +121,7 @@
                         <div class="author-bio">
                             <div class="author-bio-content">
                                 <h3 class="author-name">{{ author }}</h3>
-                                <p>{{ author_bio }}</p>
+                                <p>The Al-Tijarah Analysis Desk produces in-depth analytical pieces examining economic systems, financial architecture, and the structural foundations of modern finance through Islamic economic perspectives.</p>
                             </div>
                         </div>
                     </footer>
@@ -183,6 +192,7 @@
                 <li><a href="../scriptures.html">Scriptures</a></li>
                 <li><a href="../theory.html">Theory</a></li>
                 <li><a href="../history.html">History</a></li>
+                <li><a href="../library.html">Library</a></li>
               </ul>
             </div>
             <div class="footer-nav-group">

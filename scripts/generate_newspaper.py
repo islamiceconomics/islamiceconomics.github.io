@@ -1,744 +1,656 @@
 #!/usr/bin/env python3
 """
-Al-Tijarah Automated Newspaper Generator
-=========================================
-Fetches Islamic economics news from RSS feeds, generates original articles
-via the Claude API, produces HTML article files, and updates blog.html.
+Islamic Economics Automated Newspaper Generator
 
-Usage:
-    python scripts/generate_newspaper.py              # normal daily run
-    python scripts/generate_newspaper.py --dry-run    # test without writing files
-    python scripts/generate_newspaper.py --seed       # generate initial seed articles
+Fetches news from RSS feeds, filters for Islamic economics relevance,
+generates original articles using Claude API, and publishes to static website.
 """
 
-import json
-import re
+import os
 import sys
-import hashlib
+import json
 import logging
 import argparse
-from datetime import datetime, timedelta, timezone
+import re
+from datetime import datetime, timedelta
 from pathlib import Path
-from difflib import SequenceMatcher
+from typing import List, Dict, Optional, Tuple
+import math
 
-import feedparser
-import requests
-from jinja2 import Environment, FileSystemLoader
+try:
+    import feedparser
+    from jinja2 import Environment, FileSystemLoader
+    import anthropic
+except ImportError as e:
+    print(f"Error: Missing required package. Please install: feedparser, jinja2, anthropic")
+    print(f"Details: {e}")
+    sys.exit(1)
 
-# ── Local imports ────────────────────────────────────────────────────
-sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
-    BASE_DIR, WEBSITE_DIR, BLOG_DIR, DATA_DIR, ARCHIVE_DIR,
-    TEMPLATES_DIR, ARTICLES_JSON,
-    ANTHROPIC_API_KEY, LLM_MODEL, LLM_TEMPERATURE, LLM_MAX_TOKENS,
-    ARTICLES_PER_RUN, MAX_ARTICLES_IN_DB, ARCHIVE_AFTER_DAYS, EXCERPT_LENGTH,
-    CATEGORIES, RSS_FEEDS,
-    SYSTEM_PROMPT, CATEGORY_PROMPTS,
+    RSS_FEEDS, RELEVANCE_KEYWORDS, CATEGORIES, CLAUDE_MODEL, CLAUDE_MAX_TOKENS,
+    CLAUDE_TEMPERATURE, ARTICLES_PER_DAY, MAX_ARTICLE_AGE_DAYS,
+    ARTICLE_WORD_COUNT_TARGET, SYSTEM_PROMPTS, TEMPLATE_DIR
 )
 
-# ── Logging ──────────────────────────────────────────────────────────
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
+    format='%(asctime)s - %(levelname)s - %(message)s'
 )
-log = logging.getLogger("al-tijarah")
+logger = logging.getLogger(__name__)
 
-# ── Jinja2 Environment ──────────────────────────────────────────────
-jinja_env = Environment(
-    loader=FileSystemLoader(str(TEMPLATES_DIR)),
-    autoescape=False,
-)
+def get_project_root() -> Path:
+    """Get the project root directory based on script location."""
+    script_dir = Path(__file__).resolve().parent
+    return script_dir.parent
 
-# ── Author bios ──────────────────────────────────────────────────────
-AUTHOR_BIOS = {
-    "Editorial Desk": "The Al-Tijarah Editorial Desk provides daily coverage of Islamic finance markets, OIC economic developments, and policy analysis.",
-    "Research Desk": "The Al-Tijarah Research Desk produces in-depth analytical pieces connecting Islamic economic theory to modern practice.",
-    "Policy Desk": "The Al-Tijarah Policy Desk covers regulatory developments, central bank actions, and governance across OIC nations.",
-    "Scripture Desk": "The Al-Tijarah Scripture Desk explores the connections between Islamic scriptures and contemporary economic challenges.",
-    "Guest Contributor": "Guest contributors bring diverse perspectives on Islamic economics from academia, industry, and policy circles.",
-    "Analysis Desk": "The Al-Tijarah Analysis Desk provides deep-dive research on Islamic finance instruments, economic models, and comparative studies.",
-    "History Desk": "The Al-Tijarah History Desk covers the rich economic history of Islamic civilizations and their modern relevance.",
-}
+def fetch_rss_feeds() -> List[Dict]:
+    """
+    Fetch articles from configured RSS feeds.
 
-# ── Default ticker data ──────────────────────────────────────────────
-DEFAULT_TICKER = [
-    {"label": "Brent Crude", "value": "$75.20", "change": "-0.8%", "direction": "down"},
-    {"label": "Gold", "value": "$2,842", "change": "+0.3%", "direction": "up"},
-    {"label": "SAU GDP Growth", "value": "3.2%", "change": None, "direction": None},
-    {"label": "TUR Inflation", "value": "41.5%", "change": "-10.6pp", "direction": "down"},
-    {"label": "IDN Growth", "value": "5.0%", "change": "+0.2pp", "direction": "up"},
-    {"label": "Islamic Finance AUM", "value": "$4.5T", "change": "+11.3%", "direction": "up"},
-    {"label": "Global Sukuk", "value": "$236B", "change": "+8.1%", "direction": "up"},
-    {"label": "MYR/USD", "value": "4.47", "change": None, "direction": None},
-    {"label": "PKR/USD", "value": "278", "change": "+2.1%", "direction": "up"},
-]
+    Returns:
+        List of dicts with: title, link, summary, published, source, category
+    """
+    articles = []
+    project_root = get_project_root()
 
+    for category, feed_urls in RSS_FEEDS.items():
+        for feed_url in feed_urls:
+            try:
+                logger.info(f"Fetching RSS feed: {feed_url}")
+                feed = feedparser.parse(feed_url)
 
-# =====================================================================
-# 1. NEWS AGGREGATION
-# =====================================================================
+                if feed.bozo:
+                    logger.warning(f"Feed parsing warning for {feed_url}: {feed.bozo_exception}")
 
-def fetch_rss_feeds():
-    """Fetch articles from all configured RSS feeds."""
-    all_items = []
-    for feed_config in RSS_FEEDS:
-        try:
-            log.info(f"Fetching: {feed_config['name']}")
-            feed = feedparser.parse(
-                feed_config["url"],
-                agent="Al-Tijarah-Newspaper/1.0"
-            )
-            for entry in feed.entries[:15]:  # max 15 per feed
-                item = {
-                    "title": entry.get("title", "").strip(),
-                    "summary": entry.get("summary", entry.get("description", "")).strip(),
-                    "link": entry.get("link", ""),
-                    "published": entry.get("published", ""),
-                    "source": feed_config["name"],
-                }
-                if item["title"] and item["summary"]:
-                    all_items.append(item)
-        except Exception as e:
-            log.warning(f"Failed to fetch {feed_config['name']}: {e}")
-    log.info(f"Fetched {len(all_items)} total items from RSS feeds")
-    return all_items
+                for entry in feed.entries[:10]:
+                    article = {
+                        'title': entry.get('title', 'Untitled'),
+                        'link': entry.get('link', ''),
+                        'summary': entry.get('summary', ''),
+                        'published': entry.get('published', ''),
+                        'source': feed_url,
+                        'category': category
+                    }
+                    articles.append(article)
 
+            except Exception as e:
+                logger.error(f"Error fetching RSS feed {feed_url}: {e}")
+                continue
 
-def score_relevance(item):
-    """Score an RSS item for Islamic economics relevance (0-100)."""
-    text = f"{item['title']} {item['summary']}".lower()
+    logger.info(f"Fetched {len(articles)} articles from RSS feeds")
+    return articles
+
+def _score_article_relevance(title: str, summary: str) -> int:
+    """
+    Score article relevance based on keyword matches.
+
+    Args:
+        title: Article title
+        summary: Article summary
+
+    Returns:
+        Integer score (number of keyword matches)
+    """
+    text = (title + " " + summary).lower()
     score = 0
 
-    # Check against all category keywords
-    for cat_key, cat_config in CATEGORIES.items():
-        for keyword in cat_config["keywords"]:
-            if keyword.lower() in text:
-                score += 5 * cat_config["weight"]
+    for keyword in RELEVANCE_KEYWORDS:
+        if keyword.lower() in text:
+            score += 1
 
-    # Bonus for specific high-value terms
-    high_value = ["islamic finance", "sukuk", "shariah", "zakat", "waqf", "riba",
-                  "OIC", "halal economy", "islamic banking", "takaful"]
-    for term in high_value:
-        if term.lower() in text:
-            score += 10
+    return score
 
-    return min(score, 100)
+def _titles_similar(title1: str, title2: str, threshold: float = 0.85) -> bool:
+    """
+    Check if two titles are similar (simple deduplication).
 
+    Args:
+        title1: First title
+        title2: Second title
+        threshold: Similarity threshold (default 0.85 = 85% words match)
 
-def classify_category(item):
-    """Assign the best category to an RSS item."""
-    text = f"{item['title']} {item['summary']}".lower()
-    best_cat = "analysis"  # default
-    best_score = 0
+    Returns:
+        True if titles are similar, False otherwise
+    """
+    def normalize(text):
+        return set(text.lower().split())
 
-    for cat_key, cat_config in CATEGORIES.items():
-        score = sum(1 for kw in cat_config["keywords"] if kw.lower() in text)
-        weighted = score * cat_config["weight"]
-        if weighted > best_score:
-            best_score = weighted
-            best_cat = cat_key
+    words1 = normalize(title1)
+    words2 = normalize(title2)
 
-    return best_cat
+    if not words1 or not words2:
+        return title1.lower() == title2.lower()
 
+    intersection = len(words1 & words2)
+    union = len(words1 | words2)
+    similarity = intersection / union if union > 0 else 0
 
-def deduplicate(items, threshold=0.65):
-    """Remove items with similar titles."""
-    unique = []
-    for item in items:
-        is_dup = False
-        for existing in unique:
-            sim = SequenceMatcher(None, item["title"].lower(), existing["title"].lower()).ratio()
-            if sim > threshold:
-                is_dup = True
+    return similarity >= threshold
+
+def filter_relevant_articles(articles: List[Dict]) -> List[Dict]:
+    """
+    Filter articles by relevance score and deduplicate by title.
+
+    Args:
+        articles: List of article dicts
+
+    Returns:
+        Filtered list of relevant, unique articles
+    """
+    relevant = []
+
+    for article in articles:
+        score = _score_article_relevance(article['title'], article['summary'])
+        if score >= 2:
+            article['relevance_score'] = score
+            relevant.append(article)
+
+    logger.info(f"Filtered to {len(relevant)} relevant articles (score >= 2)")
+
+    deduped = []
+    for article in relevant:
+        is_duplicate = False
+        for existing in deduped:
+            if _titles_similar(article['title'], existing['title']):
+                is_duplicate = True
                 break
-        if not is_dup:
-            unique.append(item)
-    return unique
 
+        if not is_duplicate:
+            deduped.append(article)
 
-def select_news_items(items, count=5):
-    """Select top N diverse news items for article generation."""
-    # Score and sort
-    for item in items:
-        item["relevance"] = score_relevance(item)
-        item["category"] = classify_category(item)
+    logger.info(f"Deduplicated to {len(deduped)} unique articles")
+    return deduped
 
-    # Filter minimum relevance
-    relevant = [i for i in items if i["relevance"] >= 10]
-    if not relevant:
-        relevant = items[:count]  # fallback: take first N even if low relevance
+def _categorize_article(title: str, summary: str) -> str:
+    """
+    Assign category to article based on keyword matching.
 
-    # Sort by relevance
-    relevant.sort(key=lambda x: x["relevance"], reverse=True)
+    Args:
+        title: Article title
+        summary: Article summary
 
-    # Deduplicate
-    relevant = deduplicate(relevant)
+    Returns:
+        Category name
+    """
+    text = (title + " " + summary).lower()
 
-    # Select diverse categories
+    category_keywords = {
+        'markets': ['sukuk', 'market', 'commodity', 'price', 'trading', 'financial market', 'stock', 'bond'],
+        'policy': ['central bank', 'regulation', 'policy', 'imf', 'world bank', 'government', 'regulatory'],
+        'analysis': ['analysis', 'economic', 'trend', 'outlook', 'forecast', 'research', 'study'],
+        'scripture': ['quranic', 'hadith', 'islamic principle', 'scripture', 'theology', 'shariah principle'],
+        'opinion': ['opinion', 'commentary', 'column', 'perspective', 'view', 'editorial'],
+        'oic': ['oic', 'muslim-majority', 'gulf', 'arab', 'southeast asia', 'south asia', 'regional']
+    }
+
+    scores = {}
+    for category, keywords in category_keywords.items():
+        score = sum(1 for kw in keywords if kw in text)
+        scores[category] = score
+
+    best_category = max(scores, key=scores.get)
+    return best_category if scores[best_category] > 0 else 'analysis'
+
+def select_top_articles(articles: List[Dict], n: int = 3) -> List[Dict]:
+    """
+    Select top N articles spread across different categories.
+
+    Args:
+        articles: List of article dicts
+        n: Number of articles to select
+
+    Returns:
+        List of selected articles with category assignment
+    """
+    for article in articles:
+        article['assigned_category'] = _categorize_article(
+            article['title'],
+            article['summary']
+        )
+
+    sorted_articles = sorted(
+        articles,
+        key=lambda a: (a['assigned_category'], -a.get('relevance_score', 0))
+    )
+
     selected = []
-    used_cats = set()
-    for item in relevant:
-        if len(selected) >= count:
+    categories_used = set()
+
+    for article in sorted_articles:
+        if len(selected) >= n:
             break
-        if item["category"] not in used_cats or len(selected) < 3:
-            selected.append(item)
-            used_cats.add(item["category"])
 
-    log.info(f"Selected {len(selected)} news items for generation")
-    return selected[:count]
+        if article['assigned_category'] not in categories_used or len(selected) < n:
+            selected.append(article)
+            categories_used.add(article['assigned_category'])
 
+    logger.info(f"Selected {len(selected)} top articles for processing")
+    return selected
 
-# =====================================================================
-# 2. ARTICLE GENERATION (Claude API)
-# =====================================================================
+def generate_article(news_item: Dict, category: str) -> Optional[Dict]:
+    """
+    Generate original article using Claude API.
 
-def generate_article_via_claude(news_item, category):
-    """Generate an article using the Claude API."""
-    if not ANTHROPIC_API_KEY:
-        log.error("ANTHROPIC_API_KEY not set — cannot generate articles")
+    Args:
+        news_item: Dict with title, summary, source
+        category: Article category for system prompt
+
+    Returns:
+        Dict with generated article data or None if generation fails
+    """
+    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    if not api_key:
+        logger.error("ANTHROPIC_API_KEY environment variable not set")
         return None
 
-    category_prompt = CATEGORY_PROMPTS.get(category, "")
-    cat_config = CATEGORIES.get(category, {})
+    try:
+        client = anthropic.Anthropic(api_key=api_key)
 
-    user_prompt = f"""Based on the following news context, write an original Al-Tijarah article.
+        system_prompt = SYSTEM_PROMPTS.get(category, SYSTEM_PROMPTS['analysis'])
 
-NEWS CONTEXT:
+        user_message = f"""Based on the following news item, write an original 800-1000 word article:
+
 Title: {news_item['title']}
 Summary: {news_item['summary']}
 Source: {news_item['source']}
 
-CATEGORY: {cat_config.get('label', category)}
-CATEGORY GUIDANCE: {category_prompt}
+Please structure the article as follows:
+1. An engaging headline (different from the source)
+2. 6-8 sections with clear subheadings
+3. Key takeaways (3-5 bullet points at the end)
+4. Professional journalistic tone suitable for educated readers
 
-Please provide your response in this exact JSON format:
+Format your response as JSON with the following structure:
 {{
-  "title": "Your original article title (compelling, newspaper-style)",
-  "content": "<section class=\\"article-section\\">HTML content here with <h2>, <p>, <blockquote class=\\"quranic-verse\\"> tags</section>",
-  "tags": ["tag1", "tag2", "tag3", "tag4"],
-  "read_time": 7
+    "title": "article headline here",
+    "content_html": "the article content in HTML format with <p>, <h2>, <h3>, <ul>, <li> tags",
+    "excerpt": "a 150-200 character excerpt",
+    "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"]
 }}
 
-IMPORTANT:
-- Write 800-1000 words of original content (NOT a summary of the source)
-- Use the news as a STARTING POINT, then provide deeper analysis
-- Structure with 3-5 sections using <section class="article-section"><h2>...</h2><p>...</p></section>
-- Include Islamic economic perspective where natural
-- The title should be different from the source headline
-- Return ONLY valid JSON, no other text"""
+Do not include any markdown formatting, only HTML."""
 
-    try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        logger.info(f"Calling Claude API to generate article for: {news_item['title']}")
 
-        response = client.messages.create(
-            model=LLM_MODEL,
-            max_tokens=LLM_MAX_TOKENS,
-            temperature=LLM_TEMPERATURE,
-            system=SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": user_prompt}],
+        message = client.messages.create(
+            model=CLAUDE_MODEL,
+            max_tokens=CLAUDE_MAX_TOKENS,
+            temperature=CLAUDE_TEMPERATURE,
+            system=system_prompt,
+            messages=[
+                {"role": "user", "content": user_message}
+            ]
         )
 
-        raw = response.content[0].text.strip()
+        response_text = message.content[0].text
 
-        # Extract JSON from response (handle markdown code blocks)
-        json_match = re.search(r'\{[\s\S]*\}', raw)
-        if json_match:
-            result = json.loads(json_match.group())
-            log.info(f"Generated article: {result.get('title', 'untitled')}")
-            return result
-        else:
-            log.error(f"No JSON found in Claude response")
+        json_match = re.search(r'\{[\s\S]*\}', response_text)
+        if not json_match:
+            logger.error("Could not extract JSON from Claude response")
             return None
 
+        article_data = json.loads(json_match.group())
+
+        article_data['author'] = 'Al-Tijarah Analysis Desk'
+        article_data['category'] = CATEGORIES.get(category, category)
+        article_data['date'] = datetime.now().isoformat()
+        article_data['date_formatted'] = datetime.now().strftime('%B %d, %Y')
+        article_data['source'] = news_item['source']
+        article_data['source_title'] = news_item['title']
+
+        word_count = len(article_data.get('content_html', '').split())
+        article_data['reading_time'] = max(1, round(word_count / 200))
+
+        logger.info(f"Generated article: {article_data['title']}")
+        return article_data
+
     except json.JSONDecodeError as e:
-        log.error(f"JSON parse error: {e}")
+        logger.error(f"Failed to parse Claude response as JSON: {e}")
+        return None
+    except anthropic.APIError as e:
+        logger.error(f"Claude API error: {e}")
         return None
     except Exception as e:
-        log.error(f"Claude API error: {e}")
+        logger.error(f"Unexpected error generating article: {e}")
         return None
 
+def generate_slug(title: str, date_prefix: bool = True) -> str:
+    """
+    Create URL-friendly slug from title.
 
-def generate_seed_article(category, topic_num):
-    """Generate a seed article for initial population (no RSS needed)."""
-    if not ANTHROPIC_API_KEY:
-        log.error("ANTHROPIC_API_KEY not set")
-        return None
+    Args:
+        title: Article title
+        date_prefix: Whether to prepend date (default True)
 
-    cat_config = CATEGORIES.get(category, {})
-    category_prompt = CATEGORY_PROMPTS.get(category, "")
+    Returns:
+        URL-friendly slug
+    """
+    slug = re.sub(r'[^a-zA-Z0-9\s-]', '', title)
+    slug = re.sub(r'\s+', '-', slug.strip())
+    slug = slug.lower()
+    slug = slug[:60]
 
-    seed_topics = {
-        "markets": [
-            "The current state of global sukuk markets and Islamic capital market trends",
-            "Growth of takaful (Islamic insurance) industry worldwide",
-            "Islamic fintech: digital platforms transforming Shariah-compliant finance",
-        ],
-        "policy": [
-            "Central bank digital currencies and their implications for Islamic finance",
-            "Regulatory frameworks for Islamic banking across different jurisdictions",
-            "OIC trade integration efforts and economic cooperation initiatives",
-        ],
-        "analysis": [
-            "Comparing Islamic and conventional banking performance during economic downturns",
-            "The role of Islamic finance in achieving UN Sustainable Development Goals",
-            "Wealth inequality in Muslim-majority nations: causes and Islamic remedies",
-        ],
-        "scripture": [
-            "The economics of Surah Al-Baqarah: debt, charity, and trade",
-            "Prophetic traditions on market regulation and consumer protection",
-            "Maqasid al-Shariah and their implications for economic policy",
-        ],
-        "opinion": [
-            "Why Islamic green finance is the future of sustainable investing",
-            "The case for a unified OIC digital payments infrastructure",
-            "Waqf revival: how blockchain could transform Islamic endowments",
-        ],
-        "oic": [
-            "Saudi Vision 2030: economic diversification progress and challenges",
-            "Indonesia's emergence as a global Islamic finance hub",
-            "Turkey's economic challenges: inflation, monetary policy, and structural reform",
-        ],
-    }
+    if date_prefix:
+        date_str = datetime.now().strftime('%Y%m%d')
+        slug = f"{date_str}-{slug}"
 
-    topics = seed_topics.get(category, seed_topics["analysis"])
-    topic = topics[topic_num % len(topics)]
+    return slug
 
-    user_prompt = f"""Write an original Al-Tijarah newspaper article on this topic:
+def write_article_html(article_data: Dict, project_root: Path) -> Optional[str]:
+    """
+    Render article template and write to file.
 
-TOPIC: {topic}
-CATEGORY: {cat_config.get('label', category)}
-CATEGORY GUIDANCE: {category_prompt}
+    Args:
+        article_data: Dict with article metadata and content
+        project_root: Path to project root
 
-Please provide your response in this exact JSON format:
-{{
-  "title": "Your compelling newspaper-style headline",
-  "content": "<section class=\\"article-section\\">HTML content here</section>",
-  "tags": ["tag1", "tag2", "tag3", "tag4"],
-  "read_time": 7
-}}
-
-Write 800-1000 words of substantive, well-researched content.
-Structure with 3-5 sections using <section class="article-section"><h2>...</h2><p>...</p></section>.
-Include specific data, figures, and Islamic economic principles where relevant.
-Return ONLY valid JSON."""
-
+    Returns:
+        Path to written file or None if error
+    """
     try:
-        import anthropic
-        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        template_dir = project_root / TEMPLATE_DIR
+        env = Environment(loader=FileSystemLoader(str(template_dir)))
+        template = env.get_template('article_template.html')
 
-        response = client.messages.create(
-            model=LLM_MODEL,
-            max_tokens=LLM_MAX_TOKENS,
-            temperature=LLM_TEMPERATURE,
-            system=SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": user_prompt}],
-        )
+        article_data['related_articles'] = []
 
-        raw = response.content[0].text.strip()
-        json_match = re.search(r'\{[\s\S]*\}', raw)
-        if json_match:
-            result = json.loads(json_match.group())
-            result["_seed_category"] = category
-            log.info(f"Generated seed article: {result.get('title', 'untitled')}")
-            return result
-        return None
+        html_content = template.render(**article_data)
+
+        blog_dir = project_root / 'Website' / 'blog'
+        blog_dir.mkdir(parents=True, exist_ok=True)
+
+        slug = generate_slug(article_data['title'])
+        article_path = blog_dir / f"{slug}.html"
+
+        with open(article_path, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+
+        article_data['url'] = f"blog/{slug}.html"
+        article_data['slug'] = slug
+
+        logger.info(f"Wrote article to {article_path}")
+        return str(article_path)
 
     except Exception as e:
-        log.error(f"Seed generation error: {e}")
+        logger.error(f"Error writing article HTML: {e}")
         return None
 
+def update_articles_json(new_articles: List[Dict], project_root: Path) -> List[Dict]:
+    """
+    Update articles.json with new articles, trim by age, archive old articles.
 
-# =====================================================================
-# 3. ARTICLE DATABASE
-# =====================================================================
+    Args:
+        new_articles: List of new article dicts
+        project_root: Path to project root
 
-def load_articles():
-    """Load the articles database from JSON."""
-    if ARTICLES_JSON.exists():
+    Returns:
+        Updated list of all articles
+    """
+    data_dir = project_root / 'Website' / 'data'
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    articles_file = data_dir / 'articles.json'
+    archive_dir = data_dir / 'archive'
+    archive_dir.mkdir(parents=True, exist_ok=True)
+
+    if articles_file.exists():
+        with open(articles_file, 'r', encoding='utf-8') as f:
+            all_articles = json.load(f)
+    else:
+        all_articles = []
+
+    all_articles = new_articles + all_articles
+
+    cutoff_date = datetime.now() - timedelta(days=MAX_ARTICLE_AGE_DAYS)
+    current_articles = []
+    archived_articles = []
+
+    for article in all_articles:
+        article_date_str = article.get('date', '')
         try:
-            with open(ARTICLES_JSON, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            return data.get("articles", []), data.get("metadata", {})
-        except (json.JSONDecodeError, KeyError) as e:
-            log.warning(f"Error loading articles.json: {e}")
-    return [], {}
+            article_date = datetime.fromisoformat(article_date_str)
+        except (ValueError, TypeError):
+            article_date = datetime.now()
 
-
-def save_articles(articles, metadata=None):
-    """Save the articles database to JSON."""
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    if metadata is None:
-        metadata = {}
-    metadata["last_updated"] = datetime.now(timezone.utc).isoformat()
-    metadata["total_articles"] = len(articles)
-
-    data = {"articles": articles, "metadata": metadata}
-    with open(ARTICLES_JSON, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    log.info(f"Saved {len(articles)} articles to articles.json")
-
-
-def make_slug(title):
-    """Convert a title to a URL-friendly slug."""
-    slug = title.lower().strip()
-    slug = re.sub(r'[^\w\s-]', '', slug)
-    slug = re.sub(r'[\s_]+', '-', slug)
-    slug = re.sub(r'-+', '-', slug)
-    slug = slug.strip('-')
-    # Add date prefix for uniqueness
-    date_prefix = datetime.now().strftime("%Y-%m-%d")
-    return f"{date_prefix}-{slug[:60]}"
-
-
-def make_excerpt(content, length=200):
-    """Extract a plain-text excerpt from HTML content."""
-    text = re.sub(r'<[^>]+>', '', content)
-    text = re.sub(r'\s+', ' ', text).strip()
-    if len(text) > length:
-        text = text[:length].rsplit(' ', 1)[0] + "..."
-    return text
-
-
-def article_to_db_record(generated, category, source_url=""):
-    """Convert a generated article into a database record."""
-    now = datetime.now(timezone.utc)
-    cat_config = CATEGORIES.get(category, {})
-    title = generated.get("title", "Untitled Article")
-    content = generated.get("content", "")
-    slug = make_slug(title)
-
-    return {
-        "id": hashlib.md5(f"{slug}-{now.isoformat()}".encode()).hexdigest()[:12],
-        "title": title,
-        "slug": slug,
-        "category": category,
-        "kicker": cat_config.get("kicker", category.title()),
-        "author": cat_config.get("author", "Editorial Desk"),
-        "date": now.strftime("%Y-%m-%d"),
-        "date_formatted": now.strftime("%B %d, %Y"),
-        "date_short": now.strftime("%b %d, %Y"),
-        "content": content,
-        "excerpt": make_excerpt(content, EXCERPT_LENGTH),
-        "excerpt_short": make_excerpt(content, 120),
-        "tags": generated.get("tags", []),
-        "read_time": generated.get("read_time", 7),
-        "source_url": source_url,
-        "featured": False,
-    }
-
-
-def archive_old_articles(articles):
-    """Archive articles older than ARCHIVE_AFTER_DAYS."""
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=ARCHIVE_AFTER_DAYS)).strftime("%Y-%m-%d")
-    current = []
-    archived = []
-
-    for article in articles:
-        if article.get("date", "9999") < cutoff:
-            archived.append(article)
+        if article_date >= cutoff_date:
+            current_articles.append(article)
         else:
-            current.append(article)
+            archived_articles.append(article)
 
-    if archived:
-        ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-        month = datetime.now().strftime("%Y-%m")
-        archive_path = ARCHIVE_DIR / f"{month}.json"
+    with open(articles_file, 'w', encoding='utf-8') as f:
+        json.dump(current_articles, f, indent=2, ensure_ascii=False)
+
+    if archived_articles:
+        archive_date = datetime.now().strftime('%Y-%m')
+        archive_file = archive_dir / f"{archive_date}.json"
 
         existing_archive = []
-        if archive_path.exists():
-            try:
-                with open(archive_path, "r", encoding="utf-8") as f:
-                    existing_archive = json.load(f)
-            except json.JSONDecodeError:
-                pass
+        if archive_file.exists():
+            with open(archive_file, 'r', encoding='utf-8') as f:
+                existing_archive = json.load(f)
 
-        existing_archive.extend(archived)
-        with open(archive_path, "w", encoding="utf-8") as f:
-            json.dump(existing_archive, f, indent=2, ensure_ascii=False)
+        all_archived = archived_articles + existing_archive
 
-        log.info(f"Archived {len(archived)} old articles to {archive_path.name}")
+        with open(archive_file, 'w', encoding='utf-8') as f:
+            json.dump(all_archived, f, indent=2, ensure_ascii=False)
 
-    return current
+        logger.info(f"Archived {len(archived_articles)} old articles to {archive_file}")
 
+    logger.info(f"Updated articles.json with {len(current_articles)} current articles")
+    return current_articles
 
-def cap_database(articles):
-    """Cap the database at MAX_ARTICLES_IN_DB."""
-    if len(articles) > MAX_ARTICLES_IN_DB:
-        articles = articles[:MAX_ARTICLES_IN_DB]
-        log.info(f"Capped database to {MAX_ARTICLES_IN_DB} articles")
-    return articles
+def regenerate_blog_html(articles_db: List[Dict], project_root: Path) -> bool:
+    """
+    Regenerate blog.html from articles database.
 
+    Args:
+        articles_db: List of all article dicts
+        project_root: Path to project root
 
-# =====================================================================
-# 4. HTML GENERATION
-# =====================================================================
+    Returns:
+        True if successful, False otherwise
+    """
+    try:
+        template_dir = project_root / TEMPLATE_DIR
+        env = Environment(loader=FileSystemLoader(str(template_dir)))
+        template = env.get_template('blog_template.html')
 
-def generate_article_html(article, all_articles):
-    """Generate an individual article HTML page."""
-    template = jinja_env.get_template("article_template.html")
+        sorted_articles = sorted(
+            articles_db,
+            key=lambda a: a.get('date', ''),
+            reverse=True
+        )
 
-    # Find related articles (same category, different article)
-    related = [
-        a for a in all_articles
-        if a["category"] == article["category"] and a["id"] != article["id"]
-    ][:3]
+        lead_article = None
+        secondary_leads = []
 
-    cat_config = CATEGORIES.get(article["category"], {})
-
-    html = template.render(
-        title=article["title"],
-        excerpt=article["excerpt"],
-        tags=article["tags"],
-        author=article["author"],
-        author_bio=AUTHOR_BIOS.get(article["author"], "Al-Tijarah contributor."),
-        date_formatted=article["date_formatted"],
-        read_time=article["read_time"],
-        category=article["category"],
-        category_label=cat_config.get("label", article["category"].title()),
-        content=article["content"],
-        related_articles=related,
-    )
-
-    # Write HTML file
-    BLOG_DIR.mkdir(parents=True, exist_ok=True)
-    filepath = BLOG_DIR / f"{article['slug']}.html"
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(html)
-    log.info(f"Wrote article HTML: {filepath.name}")
-    return filepath
-
-
-def generate_blog_index(articles):
-    """Regenerate blog.html from template with current articles."""
-    template = jinja_env.get_template("blog_template.html")
-
-    # Sort articles by date descending
-    sorted_articles = sorted(articles, key=lambda a: a.get("date", ""), reverse=True)
-
-    # Lead story: most recent featured or most recent overall
-    featured = [a for a in sorted_articles if a.get("featured")]
-    lead = featured[0] if featured else (sorted_articles[0] if sorted_articles else None)
-
-    # Side leads: next 3 different-category articles
-    side_leads = []
-    used_cats = {lead["category"]} if lead else set()
-    for a in sorted_articles:
-        if lead and a["id"] == lead["id"]:
-            continue
-        if a["category"] not in used_cats or len(side_leads) < 3:
-            side_leads.append(a)
-            used_cats.add(a["category"])
-        if len(side_leads) >= 3:
-            break
-
-    # Section articles
-    analysis_articles = [a for a in sorted_articles if a["category"] in ("analysis", "markets")][:3]
-    oic_articles = [a for a in sorted_articles if a["category"] == "oic"][:4]
-    opinion_articles = [a for a in sorted_articles if a["category"] == "opinion"][:5]
-    scripture_articles = [a for a in sorted_articles if a["category"] == "scripture"][:3]
-
-    # Pad sections if not enough articles
-    if len(analysis_articles) < 3:
-        analysis_articles.extend([a for a in sorted_articles if a not in analysis_articles][:3 - len(analysis_articles)])
-    if len(oic_articles) < 4:
-        oic_articles.extend([a for a in sorted_articles if a not in oic_articles][:4 - len(oic_articles)])
-    if len(opinion_articles) < 5:
-        opinion_articles.extend([a for a in sorted_articles if a not in opinion_articles][:5 - len(opinion_articles)])
-    if len(scripture_articles) < 3:
-        scripture_articles.extend([a for a in sorted_articles if a not in scripture_articles][:3 - len(scripture_articles)])
-
-    html = template.render(
-        lead=lead or _empty_article(),
-        side_leads=side_leads,
-        analysis_articles=analysis_articles,
-        oic_articles=oic_articles,
-        opinion_articles=opinion_articles,
-        scripture_articles=scripture_articles,
-        ticker_items=DEFAULT_TICKER,
-    )
-
-    blog_path = WEBSITE_DIR / "blog.html"
-    with open(blog_path, "w", encoding="utf-8") as f:
-        f.write(html)
-    log.info(f"Regenerated blog.html with {len(articles)} articles")
-
-
-def _empty_article():
-    """Return a placeholder article for empty state."""
-    return {
-        "title": "Welcome to Al-Tijarah",
-        "slug": "welcome",
-        "kicker": "Editorial",
-        "excerpt": "Stay tuned for the latest news and analysis on the global Islamic economy.",
-        "excerpt_short": "Stay tuned for the latest news and analysis.",
-        "author": "Editorial Desk",
-        "date_short": datetime.now().strftime("%b %d, %Y"),
-        "read_time": 3,
-    }
-
-
-# =====================================================================
-# 5. MAIN ORCHESTRATOR
-# =====================================================================
-
-def run_daily(dry_run=False):
-    """Main daily run: fetch → generate → write → update index."""
-    log.info("=" * 60)
-    log.info("Al-Tijarah Daily Newspaper Generation")
-    log.info("=" * 60)
-
-    # Load existing articles
-    articles, metadata = load_articles()
-    log.info(f"Loaded {len(articles)} existing articles")
-
-    # Step 1: Fetch news
-    rss_items = fetch_rss_feeds()
-
-    # Step 2: Select best items
-    if rss_items:
-        selected = select_news_items(rss_items, count=ARTICLES_PER_RUN + 2)
-    else:
-        log.warning("No RSS items fetched — will use seed generation")
-        selected = []
-
-    # Step 3: Generate articles
-    new_articles = []
-    generated_count = 0
-
-    for item in selected:
-        if generated_count >= ARTICLES_PER_RUN:
-            break
-
-        category = item.get("category", "analysis")
-        log.info(f"Generating article for category '{category}': {item['title'][:60]}...")
-
-        if dry_run:
-            log.info("[DRY RUN] Would generate article here")
-            continue
-
-        result = generate_article_via_claude(item, category)
-        if result:
-            record = article_to_db_record(result, category, source_url=item.get("link", ""))
-            new_articles.append(record)
-            generated_count += 1
-        else:
-            log.warning(f"Failed to generate article for: {item['title'][:60]}")
-
-    # If no RSS items or all failed, try seed generation
-    if not new_articles and not dry_run and ANTHROPIC_API_KEY:
-        log.info("Falling back to seed generation...")
-        categories_to_seed = ["markets", "oic", "analysis"]
-        for i, cat in enumerate(categories_to_seed):
-            if len(new_articles) >= ARTICLES_PER_RUN:
+        for article in sorted_articles:
+            if lead_article is None:
+                lead_article = article
+            elif len(secondary_leads) < 3:
+                secondary_leads.append(article)
+            else:
                 break
-            result = generate_seed_article(cat, i)
-            if result:
-                record = article_to_db_record(result, cat)
-                new_articles.append(record)
 
-    if dry_run:
-        log.info("[DRY RUN] Complete — no files written")
-        return
+        analysis_articles = [
+            a for a in sorted_articles
+            if a.get('category', '').lower() in ['analysis', 'economic analysis', 'markets & commodities']
+        ][:3]
 
-    # Step 4: Mark first new article as featured
-    if new_articles:
-        new_articles[0]["featured"] = True
+        oic_articles = [
+            a for a in sorted_articles
+            if a.get('category', '').lower() in ['oic economies', 'oic']
+        ][:4]
 
-    # Step 5: Add to database
-    articles = new_articles + articles
+        opinion_articles = [
+            a for a in sorted_articles
+            if a.get('category', '').lower() in ['opinion & commentary', 'opinion']
+        ][:5]
 
-    # Step 6: Archive old articles
-    articles = archive_old_articles(articles)
+        scripture_articles = [
+            a for a in sorted_articles
+            if a.get('category', '').lower() in ['islamic principles', 'scripture']
+        ][:3]
 
-    # Step 7: Cap database
-    articles = cap_database(articles)
+        ticker_items = [
+            {'label': 'Brent Crude', 'value': '$75.20', 'change': '-0.8%', 'direction': 'down'},
+            {'label': 'Gold', 'value': '$2,842', 'change': '+0.3%', 'direction': 'up'},
+            {'label': 'Islamic Finance AUM', 'value': '$4.5T', 'change': '+11.3%', 'direction': 'up'},
+        ]
 
-    # Step 8: Save database
-    metadata["last_run"] = datetime.now(timezone.utc).isoformat()
-    metadata["articles_generated"] = len(new_articles)
-    save_articles(articles, metadata)
+        context = {
+            'current_date': datetime.now().strftime('%A, %B %d, %Y'),
+            'lead_article': lead_article,
+            'secondary_leads': secondary_leads,
+            'analysis_articles': analysis_articles,
+            'oic_articles': oic_articles,
+            'opinion_articles': opinion_articles,
+            'scripture_articles': scripture_articles,
+            'ticker_items': ticker_items,
+        }
 
-    # Step 9: Generate individual article HTML pages
-    for article in new_articles:
-        generate_article_html(article, articles)
+        html_content = template.render(**context)
 
-    # Step 10: Regenerate blog.html
-    generate_blog_index(articles)
+        blog_file = project_root / 'Website' / 'blog.html'
+        blog_file.parent.mkdir(parents=True, exist_ok=True)
 
-    log.info("=" * 60)
-    log.info(f"DONE: Generated {len(new_articles)} new articles")
-    log.info("=" * 60)
+        with open(blog_file, 'w', encoding='utf-8') as f:
+            f.write(html_content)
 
-    return len(new_articles)
+        logger.info(f"Regenerated blog.html with {len(sorted_articles)} articles")
+        return True
 
-
-def run_seed(count_per_category=2, dry_run=False):
-    """Generate initial seed articles for all categories."""
-    log.info("=" * 60)
-    log.info("Al-Tijarah Seed Article Generation")
-    log.info("=" * 60)
-
-    articles, metadata = load_articles()
-    new_articles = []
-
-    for cat_key in CATEGORIES:
-        for i in range(count_per_category):
-            log.info(f"Generating seed article: {cat_key} #{i+1}")
-
-            if dry_run:
-                log.info("[DRY RUN] Would generate seed article here")
-                continue
-
-            result = generate_seed_article(cat_key, i)
-            if result:
-                record = article_to_db_record(result, cat_key)
-                new_articles.append(record)
-
-    if dry_run:
-        log.info(f"[DRY RUN] Would have generated {len(CATEGORIES) * count_per_category} seed articles")
-        return
-
-    # Mark first of each category as featured
-    seen_cats = set()
-    for article in new_articles:
-        if article["category"] not in seen_cats:
-            article["featured"] = True
-            seen_cats.add(article["category"])
-
-    articles = new_articles + articles
-    articles = cap_database(articles)
-
-    metadata["last_seed"] = datetime.now(timezone.utc).isoformat()
-    metadata["seed_articles"] = len(new_articles)
-    save_articles(articles, metadata)
-
-    for article in new_articles:
-        generate_article_html(article, articles)
-
-    generate_blog_index(articles)
-
-    log.info(f"SEED DONE: Generated {len(new_articles)} seed articles")
-    return len(new_articles)
-
-
-# =====================================================================
-# 6. CLI ENTRY POINT
-# =====================================================================
+    except Exception as e:
+        logger.error(f"Error regenerating blog.html: {e}")
+        return False
 
 def main():
-    parser = argparse.ArgumentParser(description="Al-Tijarah Newspaper Generator")
-    parser.add_argument("--dry-run", action="store_true", help="Test without writing files or calling API")
-    parser.add_argument("--seed", action="store_true", help="Generate initial seed articles for all categories")
-    parser.add_argument("--seed-count", type=int, default=2, help="Articles per category for seeding (default: 2)")
+    """Main orchestration function."""
+    parser = argparse.ArgumentParser(
+        description='Generate Islamic Economics newspaper from RSS feeds'
+    )
+    parser.add_argument(
+        '--dry-run',
+        action='store_true',
+        help='Skip API calls and file writes'
+    )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Regenerate blog.html from existing articles.json without fetching new content'
+    )
+
     args = parser.parse_args()
+    project_root = get_project_root()
 
-    if args.seed:
-        run_seed(count_per_category=args.seed_count, dry_run=args.dry_run)
-    else:
-        run_daily(dry_run=args.dry_run)
+    logger.info("Starting Islamic Economics newspaper generation")
 
+    if args.force:
+        logger.info("Using --force flag: regenerating from existing articles")
+        articles_file = project_root / 'Website' / 'data' / 'articles.json'
 
-if __name__ == "__main__":
-    main()
+        if articles_file.exists():
+            with open(articles_file, 'r', encoding='utf-8') as f:
+                articles_db = json.load(f)
+
+            if regenerate_blog_html(articles_db, project_root):
+                logger.info("Successfully regenerated blog.html")
+                return 0
+            else:
+                logger.error("Failed to regenerate blog.html")
+                return 1
+        else:
+            logger.error(f"Articles file not found: {articles_file}")
+            return 1
+
+    try:
+        logger.info("Tier 1: Fetching RSS feeds and generating articles...")
+
+        rss_articles = fetch_rss_feeds()
+        if not rss_articles:
+            raise Exception("No articles fetched from RSS feeds")
+
+        relevant_articles = filter_relevant_articles(rss_articles)
+        if not relevant_articles:
+            raise Exception("No relevant articles after filtering")
+
+        selected_articles = select_top_articles(relevant_articles, n=ARTICLES_PER_DAY)
+        if not selected_articles:
+            raise Exception("No articles selected for generation")
+
+        generated_articles = []
+        for article in selected_articles:
+            category = article.get('assigned_category', 'analysis')
+
+            if args.dry_run:
+                logger.info(f"[DRY RUN] Would generate article from: {article['title']}")
+                generated_articles.append({
+                    'title': f"Generated: {article['title'][:50]}",
+                    'content_html': '<p>Placeholder content</p>',
+                    'excerpt': article['summary'][:200],
+                    'tags': [category],
+                    'author': 'Al-Tijarah Analysis Desk',
+                    'category': CATEGORIES.get(category, category),
+                    'date': datetime.now().isoformat(),
+                    'date_formatted': datetime.now().strftime('%B %d, %Y'),
+                    'source': article['source'],
+                    'source_title': article['title'],
+                    'url': f"blog/placeholder-{len(generated_articles)}.html",
+                    'slug': f"placeholder-{len(generated_articles)}",
+                    'reading_time': 5,
+                })
+            else:
+                generated = generate_article(article, category)
+                if generated:
+                    write_article_html(generated, project_root)
+                    generated_articles.append(generated)
+
+        if not generated_articles:
+            raise Exception("No articles were successfully generated")
+
+        logger.info(f"Generated {len(generated_articles)} articles")
+
+        if not args.dry_run:
+            articles_db = update_articles_json(generated_articles, project_root)
+        else:
+            articles_file = project_root / 'Website' / 'data' / 'articles.json'
+            if articles_file.exists():
+                with open(articles_file, 'r', encoding='utf-8') as f:
+                    articles_db = json.load(f)
+            else:
+                articles_db = generated_articles
+
+        if regenerate_blog_html(articles_db, project_root):
+            logger.info("Successfully regenerated blog.html")
+            logger.info(f"Tier 1 complete: Generated {len(generated_articles)} fresh articles")
+            return 0
+        else:
+            raise Exception("Failed to regenerate blog.html")
+
+    except Exception as e:
+        logger.error(f"Tier 1 failed: {e}")
+        logger.info("Tier 2: Attempting to regenerate blog from existing articles...")
+
+        try:
+            articles_file = project_root / 'Website' / 'data' / 'articles.json'
+
+            if articles_file.exists():
+                with open(articles_file, 'r', encoding='utf-8') as f:
+                    articles_db = json.load(f)
+
+                if regenerate_blog_html(articles_db, project_root):
+                    logger.info("Tier 2 complete: Regenerated blog.html from existing articles")
+                    return 1
+                else:
+                    raise Exception("Failed to regenerate blog.html in Tier 2")
+            else:
+                raise Exception("No articles.json found for Tier 2 fallback")
+
+        except Exception as e2:
+            logger.error(f"Tier 2 failed: {e2}")
+            logger.info("Tier 3: Keeping existing blog.html unchanged")
+            logger.error("Newspaper generation failed at all tiers")
+            return 2
+
+if __name__ == '__main__':
+    sys.exit(main())
