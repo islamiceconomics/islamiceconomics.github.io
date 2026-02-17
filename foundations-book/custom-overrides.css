@@ -13,15 +13,64 @@
   display: none !important;
 }
 
-/* Sidebar font sizes — compact chapter listing */
-#quarto-sidebar .sidebar-item-text {
-  font-size: 13px !important;
+/* ============================================================================
+   FORCE SIDEBAR ALWAYS VISIBLE (docked) on desktop
+   Quarto book uses Bootstrap offcanvas which collapses the sidebar.
+   These rules override that behavior on screens wider than 992px.
+   ============================================================================ */
+
+@media (min-width: 992px) {
+
+  /* Make the offcanvas sidebar always visible */
+  #quarto-sidebar.offcanvas,
+  #quarto-sidebar.offcanvas-start {
+    visibility: visible !important;
+    transform: none !important;
+    position: relative !important;
+    background-color: #f7f5f1 !important;
+    border-right: 1px solid #e5e0d8 !important;
+    width: 250px !important;
+    z-index: auto !important;
+  }
+
+  /* Remove the backdrop that appears with offcanvas */
+  .offcanvas-backdrop {
+    display: none !important;
+  }
+
+  /* Ensure the main content shifts right to make room for sidebar */
+  #quarto-content {
+    display: flex !important;
+  }
+
+  /* Hide the sidebar toggle button since sidebar is always showing */
+  .navbar-toggler,
+  [data-bs-toggle="offcanvas"] {
+    display: none !important;
+  }
 }
 
+/* ============================================================================
+   SIDEBAR FONT SIZES — compact chapter listing
+   ============================================================================ */
+
+#quarto-sidebar .sidebar-item-text {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+/* Part headings (Part I, Part II, etc.) */
 #quarto-sidebar .sidebar-item-section > .sidebar-item-toggle .sidebar-item-text {
   font-size: 11px !important;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 600;
   color: #888880;
+}
+
+/* Sidebar title */
+#quarto-sidebar .sidebar-title {
+  font-size: 14px !important;
+  font-weight: 700;
+  color: #1a5c3a;
 }
