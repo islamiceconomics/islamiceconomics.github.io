@@ -4,23 +4,14 @@ project:
 
 book:
   title: "Principles of Islamic Economics"
-  subtitle: "An Introduction to Economic Thought in the Islamic Tradition"
   author: "Islamic Economics Project"
   date: last-modified
-  date-format: "MMMM YYYY"
-
-  reader-mode: false
   search: true
-  repo-url: https://github.com/IslamicEconomics/IslamicEconomics.github.io
-  repo-actions: [issue]
+  reader-mode: false
 
   sidebar:
     style: docked
     background: light
-    tools:
-      - icon: house
-        href: ../index.html
-        text: "Back to Main Site"
 
   page-navigation: true
 
@@ -66,34 +57,11 @@ book:
 
 format:
   html:
-    theme:
-      light: [cosmo, custom-theme.scss]
-      dark: [darkly, custom-theme-dark.scss]
-    css: custom-overrides.css
+    theme: cosmo
     toc: true
-    toc-depth: 3
     number-sections: true
-    number-depth: 2
-    code-fold: true
     code-tools: false
-    smooth-scroll: true
-    link-external-newwindow: true
-    mermaid:
-      theme: default
     mermaid-format: js
-    include-after-body:
-      - _includes/site-footer.html
-      - _includes/theme-sync.html
-
-    mainfont: Inter, system-ui, -apple-system, sans-serif
-    monofont: "JetBrains Mono, Fira Code, monospace"
-
-    grid:
-      sidebar-width: 250px
-      body-width: 750px
-      margin-width: 150px
-
-    callout-appearance: simple
 
 execute:
   freeze: auto
