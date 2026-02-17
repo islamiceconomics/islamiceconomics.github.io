@@ -290,6 +290,10 @@
       overflow: hidden;
       margin-bottom: 2rem;
       position: relative;
+      display: none;
+    }
+    .tj-ticker.tj-ticker-visible {
+      display: block;
     }
     .tj-ticker-track {
       display: flex;
@@ -920,12 +924,30 @@
       function renderTicker(items) {
         var track = document.getElementById('tjTickerTrack');
         var loading = document.getElementById('tjTickerLoading');
+        var ticker = document.getElementById('tjTicker');
         track.innerHTML = buildTickerHTML(items);
         loading.style.display = 'none';
         track.style.display = 'flex';
+        ticker.classList.add('tj-ticker-visible');
       }
 
-      loadTicker();
+      function hideTicker() {
+        var ticker = document.getElementById('tjTicker');
+        ticker.style.display = 'none';
+      }
+
+      var tickerTimeout = setTimeout(hideTicker, 5000);
+
+      async function loadTickerWithTimeout() {
+        try {
+          await loadTicker();
+          clearTimeout(tickerTimeout);
+        } catch(e) {
+          hideTicker();
+        }
+      }
+
+      loadTickerWithTimeout();
     })();
     </script>
 </body>

@@ -7902,7 +7902,7 @@ a.anchor-link {
 <span class="kn">import</span> <span class="nn">os</span>
 
 <span class="c1"># Add utilities to path</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'/sessions/upbeat-determined-shannon/mnt/IslamicEconomics/Code'</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'mnt/IslamicEconomics/Code'</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">utils.dsge_utilities</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">BaseIslamicNKModel</span><span class="p">,</span>
@@ -7920,7 +7920,7 @@ a.anchor-link {
 <span class="p">)</span>
 
 <span class="c1"># Setup figure directory</span>
-<span class="n">figure_dir</span> <span class="o">=</span> <span class="n">setup_figure_dir</span><span class="p">(</span><span class="s1">'/sessions/upbeat-determined-shannon/mnt/IslamicEconomics/Website/theory'</span><span class="p">)</span>
+<span class="n">figure_dir</span> <span class="o">=</span> <span class="n">setup_figure_dir</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Figure output directory: </span><span class="si">{</span><span class="n">figure_dir</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">apply_style</span><span class="p">()</span>
 </pre></div>
@@ -7935,7 +7935,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Figure output directory: /sessions/upbeat-determined-shannon/mnt/IslamicEconomics/Website/theory
+<pre>Figure output directory: 
 </pre>
 </div>
 </div>
@@ -8994,7 +8994,7 @@ Inflation response (phi_pi)              1.200                   1.500
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   Recovery quarters:          ~</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">bc_pakistan</span><span class="p">[</span><span class="s1">'output'</span><span class="p">][</span><span class="mi">40</span><span class="p">:]</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">bc_pakistan</span><span class="p">[</span><span class="s1">'output'</span><span class="p">][</span><span class="mi">40</span><span class="p">:]</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="mi">20</span><span class="si">}</span><span class="s2"> quarters"</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="s2">"="</span><span class="o">*</span><span class="mi">80</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"All figures saved to: /sessions/upbeat-determined-shannon/mnt/IslamicEconomics/Website/theory/"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"All figures saved to: "</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"="</span><span class="o">*</span><span class="mi">80</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -9037,7 +9037,7 @@ SHOCK AMPLIFICATION IN PAKISTAN: QUANTITATIVE FINDINGS
    Recovery quarters:          ~31 quarters
 
 ================================================================================
-All figures saved to: /sessions/upbeat-determined-shannon/mnt/IslamicEconomics/Website/theory/
+All figures saved to: 
 ================================================================================
 </pre>
 </div>
