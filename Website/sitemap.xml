@@ -1,326 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- English Homepage -->
-  <url>
-    <loc>https://islamiceconomics.github.io/index.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- English Main Pages -->
-  <url>
-    <loc>https://islamiceconomics.github.io/foundations.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/scriptures.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/history.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/podcast.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/research.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/dashboard.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/library.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/about.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Blog Articles -->
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/understanding-riba.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital-.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-from-medinas-marketplace-to-modern-consumer-rights-the-proph.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-indonesias-ascent-how-the-worlds-largest-muslim-nation-is-re.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-islamic-finance-as-a-vehicle-for-sustainable-development-ali.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-islamic-green-finance-where-environmental-stewardship-meets-.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-risk-sharing-vs-risk-shifting-what-islamic-finance-gets-right.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-saudi-arabias-vision-2030-seven-years-of-economic-transforma.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-the-divergent-paths-how-global-regulatory-frameworks-shape-i.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-the-eternal-economics-of-surah-al-baqarah-how-islams-longest.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/blog/2026-02-15-the-resilience-paradox-how-islamic-banks-weather-economic-st.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Theory Chapters -->
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter1_axioms_of_islamic_preferences.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter2_utility_representation.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter3_consumer_theory.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter4_producer_theory.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter5_market_structure.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter6_general_equilibrium.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter7_welfare_economics.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/chapter8_macro_foundations.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- DSGE Models -->
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_egypt.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_indonesia.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_malaysia.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_nigeria.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_pakistan.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_saudi_arabia.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_turkey.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/theory/dsge_uae.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Urdu Pages -->
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/index.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/foundations.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/scriptures.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/theory.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/history.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/research.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/dashboard.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/blog.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/podcast.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/about.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://islamiceconomics.github.io/ur/library.html</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url><loc>https://islamiceconomics.github.io/index.html</loc><lastmod>2026-02-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://islamiceconomics.github.io/foundations.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://islamiceconomics.github.io/scriptures.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://islamiceconomics.github.io/history.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog.html</loc><lastmod>2026-02-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://islamiceconomics.github.io/podcast.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://islamiceconomics.github.io/research.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/dashboard.html</loc><lastmod>2026-02-17</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/library.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/about.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/understanding-riba.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital-.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-from-medinas-marketplace-to-modern-consumer-rights-the-proph.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-indonesias-ascent-how-the-worlds-largest-muslim-nation-is-re.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-islamic-finance-as-a-vehicle-for-sustainable-development-ali.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-islamic-green-finance-where-environmental-stewardship-meets-.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-risk-sharing-vs-risk-shifting-what-islamic-finance-gets-right.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-saudi-arabias-vision-2030-seven-years-of-economic-transforma.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-the-divergent-paths-how-global-regulatory-frameworks-shape-i.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-the-eternal-economics-of-surah-al-baqarah-how-islams-longest.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/blog/2026-02-15-the-resilience-paradox-how-islamic-banks-weather-economic-st.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter1_axioms_of_islamic_preferences.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter2_utility_representation.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter3_consumer_theory.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter4_producer_theory.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter5_market_structure.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter6_general_equilibrium.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter7_welfare_economics.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/chapter8_macro_foundations.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_egypt.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_indonesia.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_malaysia.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_nigeria.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_pakistan.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_saudi_arabia.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_turkey.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/theory/dsge_uae.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/index.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/foundations.html</loc><lastmod>2026-02-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/scriptures.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/theory.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/history.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/research.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/dashboard.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/blog.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/podcast.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/about.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://islamiceconomics.github.io/ur/library.html</loc><lastmod>2026-02-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

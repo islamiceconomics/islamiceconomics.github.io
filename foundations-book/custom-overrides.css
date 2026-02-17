@@ -1,8 +1,9 @@
 /* ============================================================================
-   CUSTOM OVERRIDES
+   CUSTOM OVERRIDES — Minimal, only cosmetic
+   Do NOT touch sidebar layout/visibility — let Quarto handle it
    ============================================================================ */
 
-/* Style Quarto's native navbar to match our site design */
+/* Style Quarto's native navbar to match site design */
 .navbar {
   background: #faf9f7 !important;
   border-bottom: 1px solid #e5e0d8 !important;
@@ -31,45 +32,8 @@
   margin-top: 3rem;
 }
 
-/* ============================================================================
-   SIDEBAR TEXT — target only text elements, not buttons/icons
-   ============================================================================ */
-
-/* Sidebar text items — 13px */
-#quarto-sidebar .sidebar-item-text,
-#quarto-sidebar .sidebar-item a,
-#quarto-sidebar .sidebar-item span:not(.bi),
-#quarto-sidebar li a {
-  font-size: 13px !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-  line-height: 1.4 !important;
-}
-
-/* Book title at top — slightly larger */
-#quarto-sidebar .sidebar-title,
-.sidebar-title {
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  font-family: 'Playfair Display', Georgia, serif !important;
-}
-
-/* Active chapter — green */
-#quarto-sidebar a.active,
-#quarto-sidebar a.active .sidebar-item-text {
-  color: #1a5c3a !important;
-  font-weight: 600 !important;
-}
-
-/* ============================================================================
-   HIDE UNWANTED QUARTO UI
-   ============================================================================ */
-
-/* Remove code tools button */
-.code-tools-button {
-  display: none !important;
-}
-
-/* Hide reader mode toggle */
+/* Remove code tools and reader mode buttons */
+.code-tools-button,
 #quarto-reader-toggle {
   display: none !important;
 }
