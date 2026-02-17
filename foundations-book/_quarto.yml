@@ -12,6 +12,10 @@ book:
   sidebar:
     style: docked
     background: light
+    tools:
+      - icon: house
+        href: ../index.html
+        text: "Main Site"
 
   page-navigation: true
 
