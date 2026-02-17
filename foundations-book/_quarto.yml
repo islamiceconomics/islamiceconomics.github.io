@@ -81,6 +81,8 @@ format:
     mermaid:
       theme: default
     mermaid-format: js
+    include-before-body:
+      - _includes/book-header.html
     include-after-body:
       - _includes/site-footer.html
       - _includes/theme-sync.html
