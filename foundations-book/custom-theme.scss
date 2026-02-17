@@ -84,45 +84,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // ============================================================================
-// SIDEBAR
+// SIDEBAR — colors only, font sizes handled in custom-overrides.css
 // ============================================================================
 
 .sidebar-title {
   font-family: $headings-font-family;
-  font-weight: 700;
   color: $primary;
-  font-size: 1rem;
-}
-
-.sidebar-item-text {
-  font-size: 0.88rem;
-  line-height: 1.5;
 }
 
 .sidebar nav[role=doc-toc] > ul li a.active {
   border-left-color: $primary;
   color: $primary;
-  font-weight: 600;
-}
-
-// Part headings in sidebar — only the direct toggle, not nested chapter links
-.sidebar-item-section > .sidebar-item-toggle .sidebar-item-text {
-  font-weight: 600;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: $text-light;
-  margin-top: 0.75rem;
-}
-
-// Chapter links inside sidebar sections — normal weight, no uppercase
-.sidebar-item-section .sidebar-item-container .sidebar-item-text {
-  font-family: $font-family-sans-serif;
-  font-weight: 400;
-  font-size: 0.85rem;
-  text-transform: none;
-  letter-spacing: normal;
-  color: $body-color;
 }
 
 // ============================================================================
@@ -303,13 +275,6 @@ dl {
     font-family: $headings-font-family;
     font-weight: 600;
   }
-}
-
-// Back to site link
-.navbar .navbar-brand {
-  font-family: $headings-font-family;
-  font-weight: 700;
-  color: $primary;
 }
 
 // Mermaid diagram overrides

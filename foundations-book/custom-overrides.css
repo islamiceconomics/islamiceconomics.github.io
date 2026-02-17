@@ -1,31 +1,6 @@
 /* ============================================================================
-   CUSTOM OVERRIDES — Minimal, only cosmetic
-   Do NOT touch sidebar layout/visibility — let Quarto handle it
+   CUSTOM OVERRIDES — Book styling
    ============================================================================ */
-
-/* Style Quarto's native navbar to match site design */
-.navbar {
-  background: #faf9f7 !important;
-  border-bottom: 1px solid #e5e0d8 !important;
-}
-
-.navbar .navbar-brand,
-.navbar .navbar-title {
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-weight: 700 !important;
-  color: #1a5c3a !important;
-  font-size: 1.1rem !important;
-}
-
-.navbar .nav-link {
-  font-family: 'Inter', system-ui, sans-serif !important;
-  font-size: 0.88rem !important;
-  color: #555550 !important;
-}
-
-.navbar .nav-link:hover {
-  color: #1a5c3a !important;
-}
 
 /* Footer integration */
 #site-footer-inject {
@@ -36,4 +11,17 @@
 .code-tools-button,
 #quarto-reader-toggle {
   display: none !important;
+}
+
+/* Sidebar font sizes — compact chapter listing */
+#quarto-sidebar .sidebar-item-text {
+  font-size: 13px !important;
+}
+
+#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle .sidebar-item-text {
+  font-size: 11px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: #888880;
 }
