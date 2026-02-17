@@ -1,36 +1,34 @@
 /* ============================================================================
    CUSTOM OVERRIDES
-   Styles that must override Quarto defaults (pure CSS, no SCSS needed)
    ============================================================================ */
 
-/* Hide Quarto's default navbar visually — but keep it in the DOM
-   so it doesn't break sidebar toggle functionality */
-.navbar.navbar-expand-lg {
-  height: 0 !important;
-  min-height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-  border: none !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
+/* Style Quarto's native navbar to match our site design */
+.navbar {
+  background: #faf9f7 !important;
+  border-bottom: 1px solid #e5e0d8 !important;
 }
 
-/* Site navbar integration — ensure it shows above Quarto content */
-#site-navbar-inject {
-  position: sticky;
-  top: 0;
-  z-index: 1050;
+.navbar .navbar-brand,
+.navbar .navbar-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 700 !important;
+  color: #1a5c3a !important;
+  font-size: 1.1rem !important;
+}
+
+.navbar .nav-link {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 0.88rem !important;
+  color: #555550 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #1a5c3a !important;
 }
 
 /* Footer integration */
 #site-footer-inject {
   margin-top: 3rem;
-}
-
-/* Smooth transitions for theme switching */
-body, .sidebar, #quarto-content {
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ============================================================================

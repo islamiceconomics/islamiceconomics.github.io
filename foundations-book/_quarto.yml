@@ -14,10 +14,27 @@ book:
   repo-url: https://github.com/IslamicEconomics/IslamicEconomics.github.io
   repo-actions: [issue]
 
+  # Use Quarto's native navbar with links back to main site
+  navbar:
+    title: "Islamic Economics"
+    logo: images/logo-book.svg
+    left:
+      - text: "Home"
+        href: ../index.html
+      - text: "Foundations"
+        href: ../foundations.html
+      - text: "Theory"
+        href: ../theory.html
+      - text: "Scriptures"
+        href: ../scriptures.html
+      - text: "Al-Tijarah"
+        href: ../blog.html
+      - text: "About"
+        href: ../about.html
+
   sidebar:
     style: docked
     background: light
-    logo: images/logo-book.svg
     collapse-level: 1
     pinned: true
 
@@ -77,7 +94,6 @@ format:
     code-tools: false
     smooth-scroll: true
     link-external-newwindow: true
-    include-before-body: _includes/site-navbar.html
     include-after-body:
       - _includes/site-footer.html
       - _includes/theme-sync.html
