@@ -9,13 +9,15 @@ book:
   search: true
   reader-mode: false
 
+  navbar:
+    title: "Islamic Economics"
+    left:
+      - text: "← Main Site"
+        href: ../index.html
+
   sidebar:
     style: docked
     background: light
-    tools:
-      - icon: house
-        href: ../index.html
-        text: "Main Site"
 
   page-navigation: true
 
