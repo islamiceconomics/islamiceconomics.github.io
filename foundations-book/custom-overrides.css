@@ -3,9 +3,17 @@
    Styles that must override Quarto defaults (pure CSS, no SCSS needed)
    ============================================================================ */
 
-/* Hide Quarto's default navbar — we inject the main site nav instead */
+/* Hide Quarto's default navbar visually — but keep it in the DOM
+   so it doesn't break sidebar toggle functionality */
 .navbar.navbar-expand-lg {
-  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 /* Site navbar integration — ensure it shows above Quarto content */
@@ -23,69 +31,6 @@
 /* Smooth transitions for theme switching */
 body, .sidebar, #quarto-content {
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* ============================================================================
-   SIDEBAR — ALWAYS VISIBLE, docked on left
-   Override Quarto's Bootstrap offcanvas collapse behavior
-   ============================================================================ */
-
-/* Force the sidebar container to always be visible as a fixed left column */
-#quarto-sidebar,
-#quarto-sidebar.offcanvas-start,
-#quarto-sidebar.offcanvas,
-#quarto-sidebar.collapse,
-#quarto-sidebar.collapsing {
-  display: flex !important;
-  flex-direction: column !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  transform: none !important;
-  position: fixed !important;
-  top: 56px !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  width: 280px !important;
-  z-index: 1040 !important;
-  overflow-y: auto !important;
-  background: #f7f5f1 !important;
-  border-right: 1px solid #e5e0d8 !important;
-  padding: 1rem 0.75rem !important;
-}
-
-/* Remove offcanvas backdrop that Quarto might add */
-.offcanvas-backdrop {
-  display: none !important;
-}
-
-/* Push the main content to the right to make room for sidebar */
-#quarto-content {
-  margin-left: 280px !important;
-}
-
-/* Push the site navbar inject full width but above sidebar */
-#site-navbar-inject {
-  z-index: 1050 !important;
-  position: sticky !important;
-  top: 0 !important;
-}
-
-/* Hide ALL sidebar toggle/hamburger buttons */
-button.sidebar-toggle,
-.sidebar-toggle,
-#quarto-sidebar-toggle,
-.hamburger,
-.navbar-toggler,
-[data-bs-toggle="offcanvas"],
-button[aria-controls="quarto-sidebar"] {
-  display: none !important;
-}
-
-/* Hide the offcanvas header/close button inside sidebar */
-.offcanvas-header,
-#quarto-sidebar .btn-close,
-#quarto-sidebar .offcanvas-header {
-  display: none !important;
 }
 
 /* ============================================================================
@@ -174,32 +119,4 @@ button[aria-controls="quarto-sidebar"] {
 /* Hide reader mode toggle */
 #quarto-reader-toggle {
   display: none !important;
-}
-
-/* ============================================================================
-   RESPONSIVE — Keep sidebar on desktop, allow collapse on mobile
-   ============================================================================ */
-@media (max-width: 768px) {
-  #quarto-sidebar,
-  #quarto-sidebar.offcanvas-start,
-  #quarto-sidebar.offcanvas {
-    position: fixed !important;
-    transform: translateX(-100%) !important;
-    width: 260px !important;
-  }
-
-  #quarto-sidebar.show {
-    transform: translateX(0) !important;
-  }
-
-  #quarto-content {
-    margin-left: 0 !important;
-  }
-
-  /* Show hamburger on mobile only */
-  button.sidebar-toggle,
-  .sidebar-toggle,
-  button[aria-controls="quarto-sidebar"] {
-    display: block !important;
-  }
 }

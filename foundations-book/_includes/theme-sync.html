@@ -1,4 +1,55 @@
 <script>
+// Force sidebar to always be visible (docked mode)
+// Quarto uses Bootstrap offcanvas which hides sidebar behind a toggle.
+// We override by clicking the toggle on load and preventing it from closing.
+(function() {
+  function forceSidebarOpen() {
+    var sidebar = document.getElementById('quarto-sidebar');
+    if (!sidebar) return;
+
+    // Method 1: If it's an offcanvas, force it to show
+    if (sidebar.classList.contains('offcanvas')) {
+      sidebar.classList.add('show');
+      sidebar.style.visibility = 'visible';
+      sidebar.style.transform = 'none';
+      // Remove the offcanvas behavior so it acts like a normal docked sidebar
+      sidebar.classList.remove('offcanvas', 'offcanvas-start');
+      sidebar.removeAttribute('data-bs-scroll');
+      sidebar.removeAttribute('data-bs-backdrop');
+      sidebar.removeAttribute('tabindex');
+      sidebar.style.position = '';
+      sidebar.style.zIndex = '';
+    }
+
+    // Method 2: Set body layout classes that Quarto uses for docked sidebar
+    document.body.classList.add('docked', 'slimcontent', 'sidebar-visible');
+    document.body.classList.remove('sidebar-hidden', 'sidebar-collapsed');
+
+    // Method 3: Try clicking the sidebar toggle button if sidebar is still hidden
+    var rect = sidebar.getBoundingClientRect();
+    if (rect.width < 50 || rect.left < -100) {
+      var toggleBtn = document.querySelector('.sidebar-toggle, [data-bs-toggle="offcanvas"][data-bs-target="#quarto-sidebar"], button[aria-controls="quarto-sidebar"]');
+      if (toggleBtn) toggleBtn.click();
+    }
+
+    // Remove any backdrop
+    var backdrop = document.querySelector('.offcanvas-backdrop');
+    if (backdrop) backdrop.remove();
+  }
+
+  // Run immediately, after DOM ready, and after a delay (for Quarto's JS)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', forceSidebarOpen);
+  } else {
+    forceSidebarOpen();
+  }
+  setTimeout(forceSidebarOpen, 100);
+  setTimeout(forceSidebarOpen, 500);
+  setTimeout(forceSidebarOpen, 1500);
+})();
+</script>
+
+<script>
 // Theme sync — matches the main site's dark mode behavior
 (function() {
   var key = 'ie-theme';
