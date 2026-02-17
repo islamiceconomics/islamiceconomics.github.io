@@ -34,43 +34,56 @@ body, .sidebar, #quarto-content {
    SIDEBAR FIXES — Clean chapter list styling
    ============================================================================ */
 
-/* Part headings: small, muted, uppercase */
-#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle > .sidebar-item-text {
-  font-size: 0.76rem !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.04em !important;
-  color: #888880 !important;
-  font-family: 'Inter', system-ui, sans-serif !important;
+/* Global: force ALL sidebar text small */
+#quarto-sidebar,
+#quarto-sidebar * {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
 }
 
-/* Chapter links: normal text */
-#quarto-sidebar .sidebar-item a .sidebar-item-text,
-#quarto-sidebar .sidebar-item-container .sidebar-item-text {
-  font-size: 0.84rem !important;
+/* Every sidebar item text — small, clean */
+#quarto-sidebar .sidebar-item-text {
+  font-size: 0.82rem !important;
   font-weight: 400 !important;
   text-transform: none !important;
   letter-spacing: normal !important;
-  color: #1a1a1a !important;
-  font-family: 'Inter', system-ui, sans-serif !important;
   line-height: 1.45 !important;
 }
 
+/* Part headings (Part I, Part II, etc.) — smaller, muted, uppercase */
+.sidebar-item-section > .sidebar-item-toggle .sidebar-item-text,
+.sidebar-item-section > a > .sidebar-item-text[data-bs-toggle],
+#quarto-sidebar .chapter-number ~ .sidebar-item-text,
+#quarto-sidebar .sidebar-section .sidebar-item-text:first-child {
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #888880 !important;
+}
+
 /* Active chapter link */
-#quarto-sidebar .sidebar-item a.active .sidebar-item-text {
+#quarto-sidebar a.active .sidebar-item-text,
+#quarto-sidebar .active > .sidebar-item-text {
   color: #1a5c3a !important;
   font-weight: 600 !important;
 }
 
-/* Tighten spacing between chapters */
+/* Sidebar links — tighten vertical spacing */
 #quarto-sidebar .sidebar-item {
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
+  padding-top: 0.12rem;
+  padding-bottom: 0.12rem;
 }
 
-/* Remove Quarto's code tools button when not needed */
+/* Sidebar title (book title at top) */
+#quarto-sidebar .sidebar-title {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+}
+
+/* Remove Quarto's code tools button */
 #quarto-code-tools-menu,
-#quarto-code-tools-source {
+#quarto-code-tools-source,
+.code-tools-button {
   display: none !important;
 }
 
