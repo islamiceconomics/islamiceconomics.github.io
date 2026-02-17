@@ -35,8 +35,6 @@ book:
   sidebar:
     style: docked
     background: light
-    collapse-level: 1
-    pinned: true
 
   page-navigation: true
 

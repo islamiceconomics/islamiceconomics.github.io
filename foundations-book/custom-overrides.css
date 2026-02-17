@@ -32,14 +32,14 @@
 }
 
 /* ============================================================================
-   SIDEBAR TEXT — Small, compact 13px font
+   SIDEBAR TEXT — target only text elements, not buttons/icons
    ============================================================================ */
 
-/* Everything in sidebar: 13px */
-#quarto-sidebar,
-#quarto-sidebar *,
-.sidebar-navigation,
-.sidebar-navigation * {
+/* Sidebar text items — 13px */
+#quarto-sidebar .sidebar-item-text,
+#quarto-sidebar .sidebar-item a,
+#quarto-sidebar .sidebar-item span:not(.bi),
+#quarto-sidebar li a {
   font-size: 13px !important;
   font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
   line-height: 1.4 !important;
@@ -47,60 +47,17 @@
 
 /* Book title at top — slightly larger */
 #quarto-sidebar .sidebar-title,
-.sidebar-title,
-#quarto-sidebar .sidebar-logo + div,
-#quarto-sidebar h1,
-#quarto-sidebar h2 {
+.sidebar-title {
   font-size: 15px !important;
   font-weight: 700 !important;
-}
-
-/* Part headings (Part I, Part II) — smaller, muted, uppercase */
-#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle,
-#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle *,
-#quarto-sidebar .sidebar-item-section > button,
-#quarto-sidebar .sidebar-item-section > button * {
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  color: #888880 !important;
-}
-
-/* Chapter links */
-#quarto-sidebar .sidebar-item a,
-#quarto-sidebar .sidebar-item a *,
-#quarto-sidebar li a,
-#quarto-sidebar li a * {
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  text-transform: none !important;
-  letter-spacing: normal !important;
-  color: #333 !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
 }
 
 /* Active chapter — green */
 #quarto-sidebar a.active,
-#quarto-sidebar a.active *,
-#quarto-sidebar .active a,
-#quarto-sidebar .active a * {
+#quarto-sidebar a.active .sidebar-item-text {
   color: #1a5c3a !important;
   font-weight: 600 !important;
-}
-
-/* Tight spacing */
-#quarto-sidebar li,
-#quarto-sidebar .sidebar-item {
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* Part section spacing */
-#quarto-sidebar .sidebar-item-section {
-  margin-top: 0.6rem !important;
-  margin-bottom: 0.2rem !important;
 }
 
 /* ============================================================================
@@ -108,8 +65,6 @@
    ============================================================================ */
 
 /* Remove code tools button */
-#quarto-code-tools-menu,
-#quarto-code-tools-source,
 .code-tools-button {
   display: none !important;
 }
