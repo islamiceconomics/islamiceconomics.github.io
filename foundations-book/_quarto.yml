@@ -18,6 +18,8 @@ book:
     style: docked
     background: light
     logo: images/logo-book.svg
+    collapse-level: 1
+    pinned: true
 
   page-navigation: true
 

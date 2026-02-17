@@ -31,50 +31,92 @@ body, .sidebar, #quarto-content {
 }
 
 /* ============================================================================
-   SIDEBAR FIXES — Force small, clean font for ALL sidebar text
+   SIDEBAR — Always visible, small compact font
    ============================================================================ */
 
-/* Nuclear: every possible text element inside the sidebar */
-#quarto-sidebar a,
-#quarto-sidebar span,
-#quarto-sidebar li,
-#quarto-sidebar ul,
-#quarto-sidebar div,
-#quarto-sidebar p,
-#quarto-sidebar button,
-#quarto-sidebar label,
-#quarto-sidebar nav,
-#quarto-sidebar .sidebar-item-text,
-#quarto-sidebar .sidebar-item-container,
-#quarto-sidebar .sidebar-item,
-.sidebar-navigation a,
-.sidebar-navigation span,
-.sidebar-navigation div {
-  font-size: 0.82rem !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-  line-height: 1.45 !important;
+/* Force sidebar to always show (never collapse to hamburger) */
+#quarto-sidebar {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  position: sticky !important;
 }
 
-/* Book title in sidebar — slightly larger */
+/* Hide the sidebar toggle/hamburger button */
+button.sidebar-toggle,
+.sidebar-toggle,
+#quarto-sidebar-toggle,
+.hamburger {
+  display: none !important;
+}
+
+/* ---- FONT SIZE: 13px (0.8125rem) for everything in sidebar ---- */
+#quarto-sidebar,
+#quarto-sidebar *,
+.sidebar-navigation,
+.sidebar-navigation * {
+  font-size: 13px !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  line-height: 1.4 !important;
+}
+
+/* Book title at top of sidebar — slightly larger */
 #quarto-sidebar .sidebar-title,
-.sidebar-title {
-  font-size: 0.95rem !important;
+.sidebar-title,
+#quarto-sidebar .sidebar-logo + div,
+#quarto-sidebar h1,
+#quarto-sidebar h2 {
+  font-size: 15px !important;
   font-weight: 700 !important;
 }
 
-/* Active chapter — green highlight */
+/* Part headings (Part I, Part II) — even smaller, muted */
+#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle,
+#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle *,
+#quarto-sidebar .sidebar-item-section > button,
+#quarto-sidebar .sidebar-item-section > button * {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #888880 !important;
+}
+
+/* Chapter links inside parts */
+#quarto-sidebar .sidebar-item a,
+#quarto-sidebar .sidebar-item a *,
+#quarto-sidebar li a,
+#quarto-sidebar li a * {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: #333 !important;
+}
+
+/* Active / current chapter — green */
 #quarto-sidebar a.active,
-#quarto-sidebar a.active span,
-#quarto-sidebar .active .sidebar-item-text {
+#quarto-sidebar a.active *,
+#quarto-sidebar .active a,
+#quarto-sidebar .active a * {
   color: #1a5c3a !important;
   font-weight: 600 !important;
 }
 
-/* Tighten vertical spacing */
+/* Tighten vertical spacing between items */
 #quarto-sidebar li,
 #quarto-sidebar .sidebar-item {
-  padding-top: 0.1rem !important;
-  padding-bottom: 0.1rem !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Section spacing (between parts) */
+#quarto-sidebar .sidebar-item-section {
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 /* Remove Quarto's code tools button */
