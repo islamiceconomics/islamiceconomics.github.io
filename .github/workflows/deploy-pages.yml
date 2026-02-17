@@ -29,20 +29,11 @@ jobs:
         with:
           version: "1.6.42"
 
-      - name: Install Chromium for Mermaid
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser
-        env:
-          DEBIAN_FRONTEND: noninteractive
-
       - name: Render Quarto Book
         continue-on-error: true
         run: |
           cd foundations-book
-          quarto render --log-level warning
-        env:
-          QUARTO_CHROMIUM: /usr/bin/chromium-browser
+          quarto render
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

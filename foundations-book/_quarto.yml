@@ -80,6 +80,7 @@ format:
     link-external-newwindow: true
     mermaid:
       theme: default
+    mermaid-format: js
     include-after-body:
       - _includes/site-footer.html
       - _includes/theme-sync.html
