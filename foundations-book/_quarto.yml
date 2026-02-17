@@ -78,6 +78,8 @@ format:
     code-tools: false
     smooth-scroll: true
     link-external-newwindow: true
+    mermaid:
+      theme: default
     include-after-body:
       - _includes/site-footer.html
       - _includes/theme-sync.html
@@ -94,5 +96,6 @@ format:
 
 execute:
   freeze: auto
+  echo: false
 
 bibliography: references.bib

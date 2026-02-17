@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba($accent, 0.04);
 
   .callout-title {
-    color: darken($accent, 12%);
+    color: #9a7a1e;
   }
 }
 
@@ -257,7 +257,7 @@ table {
 
   td {
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid lighten($border-color, 4%);
+    border-bottom: 1px solid #ebe7e0;
     vertical-align: top;
   }
 
@@ -281,7 +281,7 @@ dl {
   dd {
     margin-left: 0;
     padding-left: 1.25rem;
-    border-left: 2px solid lighten($primary, 40%);
+    border-left: 2px solid #7dc4a0;
     font-size: 0.92rem;
     line-height: 1.7;
     color: $text-secondary;
