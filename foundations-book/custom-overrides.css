@@ -31,53 +31,50 @@ body, .sidebar, #quarto-content {
 }
 
 /* ============================================================================
-   SIDEBAR FIXES — Clean chapter list styling
+   SIDEBAR FIXES — Force small, clean font for ALL sidebar text
    ============================================================================ */
 
-/* Global: force ALL sidebar text small */
-#quarto-sidebar,
-#quarto-sidebar * {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-}
-
-/* Every sidebar item text — small, clean */
-#quarto-sidebar .sidebar-item-text {
+/* Nuclear: every possible text element inside the sidebar */
+#quarto-sidebar a,
+#quarto-sidebar span,
+#quarto-sidebar li,
+#quarto-sidebar ul,
+#quarto-sidebar div,
+#quarto-sidebar p,
+#quarto-sidebar button,
+#quarto-sidebar label,
+#quarto-sidebar nav,
+#quarto-sidebar .sidebar-item-text,
+#quarto-sidebar .sidebar-item-container,
+#quarto-sidebar .sidebar-item,
+.sidebar-navigation a,
+.sidebar-navigation span,
+.sidebar-navigation div {
   font-size: 0.82rem !important;
-  font-weight: 400 !important;
-  text-transform: none !important;
-  letter-spacing: normal !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
   line-height: 1.45 !important;
 }
 
-/* Part headings (Part I, Part II, etc.) — smaller, muted, uppercase */
-.sidebar-item-section > .sidebar-item-toggle .sidebar-item-text,
-.sidebar-item-section > a > .sidebar-item-text[data-bs-toggle],
-#quarto-sidebar .chapter-number ~ .sidebar-item-text,
-#quarto-sidebar .sidebar-section .sidebar-item-text:first-child {
-  font-size: 0.72rem !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  color: #888880 !important;
+/* Book title in sidebar — slightly larger */
+#quarto-sidebar .sidebar-title,
+.sidebar-title {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
 }
 
-/* Active chapter link */
-#quarto-sidebar a.active .sidebar-item-text,
-#quarto-sidebar .active > .sidebar-item-text {
+/* Active chapter — green highlight */
+#quarto-sidebar a.active,
+#quarto-sidebar a.active span,
+#quarto-sidebar .active .sidebar-item-text {
   color: #1a5c3a !important;
   font-weight: 600 !important;
 }
 
-/* Sidebar links — tighten vertical spacing */
+/* Tighten vertical spacing */
+#quarto-sidebar li,
 #quarto-sidebar .sidebar-item {
-  padding-top: 0.12rem;
-  padding-bottom: 0.12rem;
-}
-
-/* Sidebar title (book title at top) */
-#quarto-sidebar .sidebar-title {
-  font-size: 0.95rem !important;
-  font-weight: 700 !important;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
 }
 
 /* Remove Quarto's code tools button */
