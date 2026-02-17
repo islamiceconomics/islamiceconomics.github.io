@@ -11,9 +11,20 @@ book:
 
   navbar:
     title: "Islamic Economics"
+    background: light
     left:
-      - text: "← Main Site"
+      - text: "Home"
         href: ../index.html
+      - text: "Foundations"
+        href: ../foundations.html
+      - text: "Theory"
+        href: ../theory.html
+      - text: "Scriptures"
+        href: ../scriptures.html
+      - text: "Al-Tijarah"
+        href: ../blog.html
+      - text: "About"
+        href: ../about.html
 
   sidebar:
     style: docked
