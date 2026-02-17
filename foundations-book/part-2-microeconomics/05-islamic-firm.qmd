@@ -1,0 +1,34 @@
+---
+title: "The Islamic Firm"
+subtitle: "Production, Labor, and Ethical Enterprise"
+abstract: |
+  This chapter examines the structure and theory of the firm under Islamic principles. We explore profit-sharing arrangements, worker rights and dignity, environmental stewardship, ethical production standards, and the prohibition of harmful goods. The Islamic firm is positioned as an entity with broader social responsibilities beyond profit maximization.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Production theory in Islamic economics and factor productivity
+- Profit-sharing models and mudarabah/musharakah arrangements
+- Worker rights, dignity, and fair compensation
+- Environmental stewardship and sustainable production
+- Ethical constraints on production: prohibition of harmful goods
+- Quality control and consumer protection in production
+- Corporate social responsibility in Islamic framework
+- The role of the firm in achieving social objectives
+
+::: {.callout-tip title="Key Concept"}
+The Islamic firm is not merely a profit-maximizing entity but a social institution responsible for the welfare of its workers, the quality of its products, the environment, and broader social well-being—with profit-sharing arrangements aligning the interests of capital and labor.
+:::
+
+## Chapter Outline
+
+1. Production Function and Factor Productivity in Islamic Economics
+2. Ownership Models: Sole Proprietorship, Partnership, and Cooperative Forms
+3. Mudarabah and Musharakah: Profit-Sharing Arrangements
+4. Labor Rights and Fair Compensation
+5. Environmental Stewardship and Sustainable Production
+6. Prohibition of Harmful Goods and Ethical Production Standards

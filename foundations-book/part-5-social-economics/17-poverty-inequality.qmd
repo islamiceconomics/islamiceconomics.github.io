@@ -1,0 +1,36 @@
+---
+title: "Poverty, Inequality & Social Justice"
+subtitle: "Islamic Frameworks for Equity and Human Dignity"
+abstract: |
+  This chapter examines Islamic approaches to poverty reduction and inequality, emphasizing social justice and human dignity as core economic principles. We explore the Islamic anti-poverty framework, redistribution mechanisms, the concept of equality of opportunity, and how Islamic economics differs from conventional approaches to inequality.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Islamic conception of poverty and its root causes
+- Social justice (adl) as a central Islamic economic principle
+- Human dignity and the right to subsistence
+- Redistribution mechanisms: zakat, sadaqah, and other obligations
+- Prohibition of exploitation and labor rights
+- Equality of opportunity versus equality of outcome
+- Wealth concentration and limits on inequality
+- Inter-generational equity and social mobility
+- Gender equality in Islamic economic framework
+- Measuring and monitoring inequality in Islamic economies
+
+::: {.callout-tip title="Key Concept"}
+Islamic economics addresses poverty and inequality not merely through charitable redistribution but through a comprehensive framework emphasizing human dignity, social justice, and equal opportunity, where systematic wealth redistribution through zakat and prohibition of exploitative practices form the foundation for a more equitable economic order.
+:::
+
+## Chapter Outline
+
+1. Poverty in Islamic Economics: Definition and Causes
+2. Social Justice (Adl) and Human Dignity
+3. The Right to Subsistence and Basic Needs
+4. Redistribution Mechanisms and Their Effectiveness
+5. Limiting Inequality: Islamic Principles and Mechanisms
+6. Measuring Social Justice and Distributional Equity

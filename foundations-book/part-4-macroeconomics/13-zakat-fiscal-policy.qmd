@@ -1,0 +1,35 @@
+---
+title: "Zakat & Fiscal Policy"
+subtitle: "Islamic Approaches to Public Finance and Redistribution"
+abstract: |
+  This chapter examines zakat as a fiscal mechanism, exploring its role in wealth redistribution, poverty reduction, and funding public goods. We analyze Islamic principles of government spending, the philosophy of taxation in Islam, and how zakat-based fiscal systems differ fundamentally from conventional approaches to public finance.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- The nature and purpose of zakat as a religious and economic obligation
+- Zakat calculation and the nisab (minimum threshold) requirement
+- Categories of zakat recipients and distribution priorities
+- Zakat as a tool for poverty reduction and wealth redistribution
+- Integration of zakat with government fiscal policy
+- Islamic principles of taxation and government revenue sources
+- Public spending priorities in Islamic economics
+- Macroeconomic effects of zakat-based fiscal systems
+- Contemporary implementation and challenges
+
+::: {.callout-tip title="Key Concept"}
+Zakat functions as both a religious obligation and an economic mechanism that systematically redistributes wealth from the wealthy to the poor, serving as the foundation of Islamic fiscal policy and providing an alternative to conventional progressive taxation that emphasizes moral obligation alongside legal requirement.
+:::
+
+## Chapter Outline
+
+1. Zakat: Definition, Foundation, and Economic Purpose
+2. Calculation and Categories of Zakat-Eligible Assets
+3. Distribution Categories and Anti-Poverty Mechanisms
+4. Government Revenue and the Role of Zakat
+5. Islamic Taxation Principles and Public Spending
+6. Macroeconomic Stabilization through Zakat

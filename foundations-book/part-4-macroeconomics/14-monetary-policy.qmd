@@ -1,0 +1,36 @@
+---
+title: "Islamic Monetary Policy"
+subtitle: "Interest-Free Money Management and Central Banking"
+abstract: |
+  This chapter explores how Islamic economics approaches monetary policy without relying on interest-rate mechanisms. We examine central banking in Islamic frameworks, money supply control without riba, inflation management, and the theoretical foundations for monetary policy that serves real economic activity rather than speculation.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Limitations of conventional interest-based monetary policy
+- Islamic monetary theory and the transmission of monetary policy
+- Money supply management without interest rates
+- The role of the Islamic central bank
+- Reserve requirements and liquidity management
+- Open market operations using Shari'ah-compliant instruments
+- Inflation and deflation in Islamic economies
+- Financing the government budget without riba
+- Macroeconomic stability and cyclical management
+- Real versus nominal dimensions of monetary policy
+
+::: {.callout-tip title="Key Concept"}
+Islamic monetary policy must manage the money supply and price level without relying on interest rates, instead using reserve requirements, open market operations with asset-based instruments, and fiscal-monetary coordination to achieve price stability while ensuring monetary expansion finances productive economic activity rather than speculation.
+:::
+
+## Chapter Outline
+
+1. Conventional Monetary Policy and Its Limitations
+2. Islamic Monetary Theory and Transmission Mechanisms
+3. Money Supply Management Without Interest Rates
+4. The Islamic Central Bank: Functions and Operations
+5. Inflation and Deflation in Islamic Economies
+6. Monetary-Fiscal Coordination in Islamic Policy

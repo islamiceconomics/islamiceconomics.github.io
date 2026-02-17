@@ -1,0 +1,50 @@
+/*-- scss:defaults --*/
+
+// ============================================================================
+// PRINCIPLES OF ISLAMIC ECONOMICS — DARK THEME
+// ============================================================================
+
+$body-bg:       #1a1a2e;
+$body-color:    #e0ddd5;
+
+$primary:       #4caf7c;
+$link-color:    #4caf7c;
+
+$sidebar-bg:    #16162a;
+$sidebar-fg:    #c8c5bc;
+
+$border-color:  #2a2a44;
+
+$code-bg:       #222240;
+
+/*-- scss:rules --*/
+
+// Dark mode callout overrides
+.callout-note {
+  background: rgba(184, 150, 46, 0.08);
+}
+
+.callout-tip {
+  background: rgba(76, 175, 124, 0.06);
+}
+
+.callout-important {
+  background: rgba(100, 160, 210, 0.06);
+}
+
+.callout-warning {
+  background: rgba(184, 122, 26, 0.08);
+}
+
+blockquote {
+  background: rgba(184, 150, 46, 0.06);
+  color: $body-color;
+}
+
+table th {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+table tr:hover td {
+  background: rgba(76, 175, 124, 0.04);
+}

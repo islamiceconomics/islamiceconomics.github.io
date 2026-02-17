@@ -1,0 +1,35 @@
+---
+title: "Riba — The Prohibition & Its Logic"
+subtitle: "Interest, Debt, and Equity in Islam"
+abstract: |
+  This chapter provides a comprehensive examination of riba (usury/interest), one of the most significant prohibitions in Islamic economics. We explore the types of riba, the economic rationale for its prohibition, the distinction between debt-based and equity-based financing, and the Islamic critique of the modern interest-based banking system.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Definition and etymological origins of riba
+- Riba al-fadl (excess) and riba al-nasi'ah (time-based interest)
+- Quranic and hadith evidence for the prohibition of riba
+- Economic rationale: why interest is forbidden in Islamic law
+- The problem of debt dynamics and intergenerational injustice
+- Comparison between debt and equity financing
+- Critique of the modern banking system from an Islamic perspective
+- Alternative financing mechanisms that avoid riba
+- Contemporary debates about the definition and scope of riba
+
+::: {.callout-tip title="Key Concept"}
+Riba is prohibited not merely as a legal restriction but because it creates fundamental economic injustice: debt-based financing transfers risk to the debtor while guaranteeing returns to the creditor regardless of actual outcomes, whereas Islamic economics prefers equity-based arrangements where risk and reward are shared.
+:::
+
+## Chapter Outline
+
+1. Definition of Riba and Its Types
+2. Historical Development and Jurisprudential Interpretations
+3. Quranic Evidence and Textual Analysis
+4. Economic Rationale for the Prohibition
+5. Debt Dynamics and Wealth Concentration
+6. Alternatives: Equity-Based Financing and Profit-Sharing Models

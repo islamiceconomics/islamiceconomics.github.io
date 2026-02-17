@@ -1,0 +1,35 @@
+---
+title: "Measuring the Islamic Economy"
+subtitle: "Beyond GDP and Material Growth"
+abstract: |
+  This chapter critiques GDP as a measure of economic performance and explores alternative metrics for assessing Islamic economic development. We examine Islamic development indices, measures of well-being and quality of life, social indicators, and how Islamic economics conceptualizes progress beyond purely material metrics.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Limitations of GDP as a measure of economic performance
+- Social welfare and happiness economics
+- Islamic development indices and frameworks
+- Measuring poverty and well-being in Islamic context
+- Environmental sustainability metrics
+- The role of social justice in measuring development
+- Human development and social capital metrics
+- Institutional quality and governance indicators
+- Case studies of alternative measurement frameworks
+
+::: {.callout-tip title="Key Concept"}
+Islamic economics proposes that economic success should be measured not merely by aggregate output but by broader indicators of human well-being, social justice, environmental sustainability, and spiritual fulfillment, recognizing that material prosperity divorced from social equity is not true development.
+:::
+
+## Chapter Outline
+
+1. Critiques of GDP and Conventional Growth Metrics
+2. Alternative Measures of Economic Development
+3. Islamic Principles of Sustainable Development
+4. Social Welfare and Quality of Life Indicators
+5. Environmental and Ecological Sustainability
+6. Building Islamic Economic Indices and Dashboards

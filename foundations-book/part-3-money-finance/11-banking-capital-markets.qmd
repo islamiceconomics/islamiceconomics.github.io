@@ -1,0 +1,35 @@
+---
+title: "Islamic Banking & Capital Markets"
+subtitle: "Structure, Operations, and Growth"
+abstract: |
+  This chapter examines the institutional structure of Islamic banking and capital markets. We analyze how Islamic banks operate differently from conventional banks, explore the development of Islamic capital markets and sukuk issuance, discuss regulatory frameworks across different countries, and assess the industry's growth and challenges.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- The business model of Islamic banking and deposit/financing mechanisms
+- Profit-and-loss sharing (PLS) accounts and their practical implementation
+- Asset-liability management in Islamic banks
+- The role of Shari'ah boards and Shari'ah-compliant oversight
+- Sukuk market structure and international development
+- Islamic stock markets and equity trading
+- Regulatory frameworks in major Islamic finance hubs
+- Financial stability and risk management in Islamic institutions
+- Challenges of form versus substance in Islamic finance practice
+
+::: {.callout-tip title="Key Concept"}
+Islamic banking fundamentally restructures the relationship between banks and customers: banks function as profit-sharing partners rather than creditors, replacing depositor interest with profit-sharing arrangements that align incentives and distribute both risk and return more equitably.
+:::
+
+## Chapter Outline
+
+1. The Islamic Bank: Structure and Operations
+2. Deposit Products and Profit-Sharing Mechanisms
+3. Financing Products and Asset-Based Transactions
+4. Asset-Liability Management in Islamic Banking
+5. Capital Markets and Sukuk Issuance
+6. Regulatory Frameworks and Shari'ah Supervision

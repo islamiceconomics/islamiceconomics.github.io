@@ -1,0 +1,34 @@
+---
+title: "Market Failures & Islamic Solutions"
+subtitle: "Externalities, Public Goods, and Information Asymmetry"
+abstract: |
+  This chapter examines market failures—including externalities, public goods, information asymmetry, and gharar—through both conventional and Islamic economic lenses. We analyze how Islamic principles address these market imperfections and compare Islamic solutions with conventional regulatory and market-based approaches.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Definition and types of market failures in economic theory
+- Externalities (positive and negative) and their Islamic treatment
+- Public goods provision in Islamic economics and the role of waqf
+- Information asymmetry and the Islamic prohibition of gharar
+- The concept of gharar: uncertainty, ambiguity, and prohibited transactions
+- Environmental externalities and Islamic stewardship
+- Community welfare and the prevention of harm (maslaha)
+- Islamic regulatory approaches versus conventional interventions
+
+::: {.callout-tip title="Key Concept"}
+Islamic economics addresses market failures through a combination of ethical constraints (prohibition of gharar, emphasis on transparency), institutional mechanisms (waqf for public goods, hisbah for market supervision), and community-based solutions rooted in the principle of preventing harm (maslaha) to society.
+:::
+
+## Chapter Outline
+
+1. Market Failures: Conventional Economic Definition
+2. Externalities and Environmental Economics in Islam
+3. Public Goods and the Waqf Institution
+4. Information Asymmetry and Gharar (Uncertainty and Ambiguity)
+5. Islamic Prohibition of Harmful Transactions
+6. Comparing Islamic and Conventional Solutions to Market Failures

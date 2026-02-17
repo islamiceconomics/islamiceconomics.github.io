@@ -1,0 +1,37 @@
+---
+title: "Islamic Finance Today"
+subtitle: "Industry Growth, Markets, and Challenges"
+abstract: |
+  This chapter surveys the contemporary Islamic finance industry, examining its size and growth trajectory, key geographic markets, fintech innovations, green sukuk development, and the ongoing tension between the form and substance of Islamic financial compliance. We assess where Islamic finance stands today and future growth prospects.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Global Islamic finance industry size and growth rates
+- Key markets: Middle East, Southeast Asia, Africa
+- Islamic banking assets and market penetration
+- Sukuk market development and issuance trends
+- Islamic investment funds and asset management
+- Takaful market expansion
+- Fintech and digital Islamic finance innovations
+- Green sukuk and Islamic sustainable finance
+- Form versus substance: the compliance challenge
+- Regulatory developments and harmonization efforts
+- Future growth prospects and market opportunities
+
+::: {.callout-tip title="Key Concept"}
+Islamic finance has emerged as a major global industry exceeding $2 trillion in assets, yet it faces the critical challenge of ensuring that products align with Islamic economic principles in substance, not merely form—requiring ongoing reform to ensure institutions genuinely embody values of equity, risk-sharing, and social responsibility rather than simply mimicking conventional finance with Islamic labels.
+:::
+
+## Chapter Outline
+
+1. The Islamic Finance Industry: Size and Growth
+2. Geographic Markets and Regional Developments
+3. Islamic Banking: Assets, Products, and Market Share
+4. Capital Markets: Sukuk and Islamic Equity
+5. Fintech, Innovation, and Digital Islamic Finance
+6. Sustainability and Green Islamic Finance

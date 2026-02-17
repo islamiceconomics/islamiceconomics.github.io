@@ -1,0 +1,46 @@
+# Preface {.unnumbered}
+
+Welcome to *Principles of Islamic Economics*, an open-access textbook designed for undergraduate students, curious professionals, and anyone seeking a structured introduction to economic thought in the Islamic tradition.
+
+## Why This Book?
+
+Economics textbooks typically begin with scarcity and rational self-interest, then build an entire discipline on those foundations. But what if we started from different premises — stewardship rather than ownership, justice rather than efficiency, community welfare rather than individual utility maximization? That is the intellectual project of Islamic economics.
+
+This book presents Islamic economics as a **coherent alternative framework** for understanding how societies organize production, distribution, and exchange. It is not a defense of Islamic finance products or a guide to Sharia-compliant investing. Rather, it asks: *What does an economy look like when its foundational axioms are drawn from the Quran and Sunnah?*
+
+## Who Is This For?
+
+- **Undergraduate students** encountering Islamic economics for the first time
+- **Economics students** who want to see how conventional tools (supply and demand, market structure, monetary policy) look through an Islamic lens
+- **Professionals in Islamic finance** seeking deeper theoretical grounding
+- **Anyone curious** about how Islamic principles address contemporary economic challenges
+
+## How to Use This Book
+
+The book follows a deliberate structure. **Part I** establishes the worldview and methodology. **Parts II–IV** mirror a standard economics curriculum (micro, money & finance, macro) but rebuild each topic from Islamic foundations. **Part V** covers the distinctive social institutions of Islamic economics. **Part VI** examines the contemporary landscape.
+
+Each chapter includes:
+
+- **Key Concepts** highlighted in green callout boxes
+- **Quranic Foundations** in gold callout boxes with relevant verses
+- **Hadith References** in blue callout boxes
+- **Diagrams and figures** illustrating economic relationships
+- **Cross-references** to the [formal Theory section](../theory.html) for advanced mathematical treatment
+
+::: {.callout-tip title="Key Concept"}
+You don't need any prior background in Islamic studies *or* economics to follow this book. Each concept is built from first principles.
+:::
+
+## Companion Resources
+
+This textbook is part of the larger [Islamic Economics](../index.html) platform, which includes:
+
+- **[Formal Theory](../theory.html)** — PhD-level mathematical models (for readers who want the rigorous treatment)
+- **[Scriptures Database](../scriptures.html)** — Searchable collection of Quranic verses and hadith on economic topics
+- **[Historical Timeline](../history.html)** — The evolution of Islamic economic institutions from 7th century Medina to today
+- **[Research Hub](../research.html)** — Contemporary academic papers and data
+- **[Podcast](../podcast.html)** — Audio discussions of key topics (available in English and Urdu)
+
+---
+
+*This is a living textbook. Content is regularly updated and expanded. Corrections and suggestions are welcome via [GitHub](https://github.com/IslamicEconomics/IslamicEconomics.github.io/issues).*

@@ -1,0 +1,34 @@
+---
+title: "Money in Islam"
+subtitle: "Nature, Function, and Prohibitions"
+abstract: |
+  This chapter explores the Islamic conception of money, examining its nature as a medium of exchange rather than a commodity. We discuss the distinction between fiat and commodity money in Islamic jurisprudence, the rationale for prohibiting money-trading (riba), and how Islamic economics positions money within a broader ethical framework of economic activity.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- The nature and functions of money in economic theory
+- Commodity money versus fiat money in Islamic jurisprudence
+- Money as a medium of exchange, not a store of value or commodity
+- The historical development of monetary systems in Islamic civilization
+- The prohibition of riba and its connection to the nature of money
+- Ribawi goods and the requirements for equal exchange
+- The concept of thaman (monetary value) and its economic implications
+- Cryptocurrency and digital currencies from an Islamic perspective
+
+::: {.callout-tip title="Key Concept"}
+In Islamic economics, money functions as a neutral medium of exchange and unit of account, not as a commodity with inherent value that can be traded for profit. This conception forms the foundation for prohibiting riba and shapes Islamic approaches to monetary policy and finance.
+:::
+
+## Chapter Outline
+
+1. Defining Money: Functions and Nature
+2. Commodity Money versus Fiat Money in Islamic Law
+3. Historical Development of Monetary Systems in Islam
+4. Money as Medium, Not Commodity
+5. Ribawi Goods and the Shari'ah Conditions for Exchange
+6. Modern Monetary Systems and Islamic Compatibility

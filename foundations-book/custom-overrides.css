@@ -1,0 +1,31 @@
+/* ============================================================================
+   CUSTOM OVERRIDES
+   Styles that must override Quarto defaults (pure CSS, no SCSS needed)
+   ============================================================================ */
+
+/* Hide Quarto's default navbar — we inject the main site nav instead */
+.navbar.navbar-expand-lg {
+  display: none !important;
+}
+
+/* Site navbar integration — ensure it shows above Quarto content */
+#site-navbar-inject {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+/* Adjust sidebar top when site navbar is present */
+#quarto-sidebar {
+  top: 72px;
+}
+
+/* Footer integration */
+#site-footer-inject {
+  margin-top: 3rem;
+}
+
+/* Smooth transitions for theme switching */
+body, .sidebar, #quarto-content {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

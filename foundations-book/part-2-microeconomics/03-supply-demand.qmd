@@ -1,0 +1,32 @@
+---
+title: "Supply, Demand & Markets in Islam"
+subtitle: "Price Theory and Market Supervision"
+abstract: |
+  This chapter examines how Islamic economics approaches market dynamics through the lens of supply and demand theory. We explore the concept of hisbah (market supervision), price controls in Islamic law, the prohibition of hoarding (ihtikar), and the ethical foundations of market operations in an Islamic framework.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Islamic price theory and how it relates to supply and demand
+- The concept of hisbah (market supervision) and the role of the market regulator
+- Price controls and fair pricing in Islamic jurisprudence
+- The prohibition of ihtikar (hoarding) and artificial scarcity
+- Market ethics and the notion of fair trade
+- Comparison between Islamic and neoclassical approaches to market equilibrium
+
+::: {.callout-tip title="Key Concept"}
+Islamic economics recognizes the importance of market mechanisms for price discovery while imposing ethical constraints through hisbah — a system of market supervision aimed at preventing exploitation, ensuring transparency, and maintaining fairness in commercial transactions.
+:::
+
+## Chapter Outline
+
+1. Supply, Demand, and Equilibrium in Islamic Economics
+2. Hisbah: The Market Regulator and Its Principles
+3. Price Controls and Fair Pricing in Islamic Law
+4. Ihtikar (Hoarding): Definition, Rationale, and Application
+5. Market Ethics and Consumer Protection
+6. Integration of Price Theory with Islamic Values

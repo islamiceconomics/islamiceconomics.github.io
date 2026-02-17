@@ -1,0 +1,51 @@
+<script>
+// Theme sync — matches the main site's dark mode behavior
+(function() {
+  var key = 'ie-theme';
+  var theme = localStorage.getItem(key);
+
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-bs-theme', t === 'dark' ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', t || 'light');
+    // Update navbar colors for dark mode
+    var nav = document.getElementById('site-navbar-inject');
+    if (nav) {
+      var navEl = nav.querySelector('.site-nav');
+      if (navEl) {
+        navEl.style.background = t === 'dark' ? '#1a1a2e' : '#faf9f7';
+        navEl.style.borderBottomColor = t === 'dark' ? '#2a2a44' : '#e5e0d8';
+      }
+      nav.querySelectorAll('a').forEach(function(a) {
+        if (!a.style.fontWeight || a.style.fontWeight !== '700') {
+          if (a.style.color === 'rgb(85, 85, 80)' || a.style.color === '#555550') {
+            a.style.color = t === 'dark' ? '#c8c5bc' : '#555550';
+          }
+        }
+      });
+    }
+    var toggleBtn = document.getElementById('site-theme-toggle');
+    if (toggleBtn) {
+      toggleBtn.textContent = t === 'dark' ? '☀' : '☽';
+      toggleBtn.style.color = t === 'dark' ? '#c8c5bc' : '#555550';
+      toggleBtn.style.borderColor = t === 'dark' ? '#2a2a44' : '#e5e0d8';
+    }
+  }
+
+  // Apply saved theme immediately
+  if (theme) applyTheme(theme);
+
+  // Global toggle function
+  window.toggleSiteTheme = function() {
+    var current = localStorage.getItem(key);
+    var next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(key, next);
+    applyTheme(next);
+  };
+
+  // Re-apply after DOM fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    var t = localStorage.getItem(key);
+    if (t) applyTheme(t);
+  });
+})();
+</script>

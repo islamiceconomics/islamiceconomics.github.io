@@ -24,6 +24,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.6.42"
+
+      - name: Render Quarto Book
+        run: |
+          cd foundations-book
+          quarto render
+        # Output goes to ../Website/foundations/ per _quarto.yml
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

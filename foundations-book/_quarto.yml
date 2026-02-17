@@ -1,0 +1,96 @@
+project:
+  type: book
+  output-dir: ../Website/foundations
+
+book:
+  title: "Principles of Islamic Economics"
+  subtitle: "An Introduction to Economic Thought in the Islamic Tradition"
+  author: "Islamic Economics Project"
+  date: last-modified
+  date-format: "MMMM YYYY"
+
+  reader-mode: true
+  search: true
+  repo-url: https://github.com/IslamicEconomics/IslamicEconomics.github.io
+  repo-actions: [issue]
+
+  sidebar:
+    style: docked
+    background: light
+    logo: images/logo-book.svg
+
+  page-navigation: true
+
+  chapters:
+    - index.qmd
+    - part: "Part I: Introduction"
+      chapters:
+        - part-1-introduction/01-what-is-islamic-economics.qmd
+        - part-1-introduction/02-thinking-like-economist.qmd
+    - part: "Part II: Microeconomics"
+      chapters:
+        - part-2-microeconomics/03-supply-demand.qmd
+        - part-2-microeconomics/04-islamic-consumer.qmd
+        - part-2-microeconomics/05-islamic-firm.qmd
+        - part-2-microeconomics/06-market-structure.qmd
+        - part-2-microeconomics/07-market-failures.qmd
+    - part: "Part III: Money & Finance"
+      chapters:
+        - part-3-money-finance/08-money-in-islam.qmd
+        - part-3-money-finance/09-riba.qmd
+        - part-3-money-finance/10-financial-instruments.qmd
+        - part-3-money-finance/11-banking-capital-markets.qmd
+    - part: "Part IV: Macroeconomics"
+      chapters:
+        - part-4-macroeconomics/12-measuring-economy.qmd
+        - part-4-macroeconomics/13-zakat-fiscal-policy.qmd
+        - part-4-macroeconomics/14-monetary-policy.qmd
+        - part-4-macroeconomics/15-growth-trade.qmd
+    - part: "Part V: Social Economics & Redistribution"
+      chapters:
+        - part-5-social-economics/16-waqf.qmd
+        - part-5-social-economics/17-poverty-inequality.qmd
+        - part-5-social-economics/18-takaful.qmd
+    - part: "Part VI: The Modern Landscape"
+      chapters:
+        - part-6-modern-landscape/19-islamic-finance-today.qmd
+        - part-6-modern-landscape/20-critiques-debates.qmd
+
+  appendices:
+    - appendices/glossary.qmd
+    - appendices/quranic-references.qmd
+    - appendices/reading-list.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, custom-theme.scss]
+      dark: [darkly, custom-theme-dark.scss]
+    css: custom-overrides.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 2
+    code-fold: true
+    code-tools: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-before-body: _includes/site-navbar.html
+    include-after-body:
+      - _includes/site-footer.html
+      - _includes/theme-sync.html
+
+    mainfont: Inter, system-ui, -apple-system, sans-serif
+    monofont: "JetBrains Mono, Fira Code, monospace"
+
+    grid:
+      sidebar-width: 280px
+      body-width: 800px
+      margin-width: 200px
+
+    callout-appearance: simple
+
+execute:
+  freeze: auto
+
+bibliography: references.bib

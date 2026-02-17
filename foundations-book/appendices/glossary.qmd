@@ -1,0 +1,86 @@
+---
+title: "Glossary of Key Terms"
+subtitle: "Essential Islamic Economics Terminology"
+---
+
+# Glossary of Key Terms {.unnumbered}
+
+This glossary provides definitions of key terms and concepts in Islamic economics, with both Arabic and English terminology.
+
+## Terms
+
+**Adl** (عدل)
+: Justice and equity; a fundamental principle in Islamic economics emphasizing fair treatment, equitable distribution, and the protection of human dignity in all economic transactions and relations.
+
+**Gharar** (غرار)
+: Excessive uncertainty or ambiguity in a contract; prohibited in Islamic law because it undermines informed consent and creates opportunities for exploitation. Covers uncertainty about subject matter, price, or delivery terms.
+
+**Hisbah** (حسبة)
+: Market supervision and regulation; the Islamic institution responsible for ensuring fair dealing in markets, preventing fraud, ensuring product quality, and protecting consumers from exploitation.
+
+**Ihtikar** (احتكار)
+: Hoarding or artificial monopoly; the prohibition against accumulating goods to create artificial scarcity and inflate prices, designed to prevent exploitation of consumers and maintain market stability.
+
+**Ijara** (إجارة)
+: Islamic leasing; a contract where the lessor retains ownership of an asset while the lessee uses it in return for periodic payments, providing an alternative to interest-based financing.
+
+**Israf** (إسراف)
+: Extravagance and waste; prohibited in Islamic economics as both morally and economically harmful, encompassing excessive consumption, wasteful spending, and depletion of resources.
+
+**Istisna** (استصناع)
+: Manufacturing contract; a financing instrument where a bank agrees to manufacture or construct an asset for a customer at a specified price payable in installments or at delivery.
+
+**Maslaha** (مصلحة)
+: Public interest or welfare; a principle in Islamic jurisprudence that prioritizes the well-being of society and the prevention of harm, used to justify regulations protecting public welfare.
+
+**Mudarabah** (مضاربة)
+: Profit-sharing partnership; an Islamic financing arrangement where one party (investor) provides capital while another party (entrepreneur) provides labor and management, with profits shared according to agreed proportions.
+
+**Murabaha** (مرابحة)
+: Cost-plus sale; an Islamic financing technique where the bank purchases goods and resells them to a client at cost plus a disclosed profit margin, typically with deferred payment.
+
+**Musharakah** (مشاركة)
+: Partnership or equity participation; an Islamic financing arrangement where two or more parties contribute capital and management to a business venture and share profits and losses according to agreed proportions.
+
+**Nisab** (نصاب)
+: Minimum threshold; the minimum amount of wealth that triggers the obligation to pay zakat, below which no zakat is due. The nisab is calculated for various types of assets.
+
+**Riba** (ربا)
+: Usury or interest; the increase in amount when exchanging one thing for another of the same kind, or the time-based charge on loans. Prohibited in Islamic law due to its exploitation and injustice.
+
+**Salam** (السلم)
+: Forward sale; a contract where a buyer pays in advance for goods that will be delivered at a future date, commonly used for agricultural products and providing working capital to producers.
+
+**Sadaqah** (صدقة)
+: Voluntary charity; any voluntary act of giving to those in need, distinct from zakat as an obligation. Includes regular charitable giving and forms of social welfare beyond the zakat obligation.
+
+**Shari'ah** (الشريعة)
+: Islamic law; the body of Islamic jurisprudence derived from the Quran, Sunnah (Prophet's traditions), ijma (consensus), and qiyas (analogical reasoning), governing all aspects of Muslim life including economic conduct.
+
+**Sukuk** (صكوك)
+: Islamic bonds; financial instruments representing ownership shares in real assets or project revenues, providing an alternative to interest-bearing bonds and ensuring creditors share in both risks and returns.
+
+**Tabarru** (تبرع)
+: Donation or voluntary contribution; a gratuitous transfer of wealth or benefit; foundational to takaful where participants donate to a mutual fund to cover mutual losses.
+
+**Takaful** (تكافل)
+: Mutual aid or cooperation; Islamic insurance based on mutual cooperation and shared responsibility, where participants pool resources to cover losses rather than transferring risk to an insurer.
+
+**Tawhid** (التوحيد)
+: Divine unity; the Islamic principle of monotheism emphasizing that all economic activity is ultimately oriented toward serving God's purpose and maintaining social harmony.
+
+**Thaman** (ثمن)
+: Price or monetary value; in Islamic jurisprudence, the measure of value used in transactions, particularly important in regulations about money and ribawi goods.
+
+**Wakala** (الوكالة)
+: Agency; a contract where one party (wakil) acts on behalf of another party (muwakkil) for agreed compensation, used in various Islamic financial instruments for management and administration.
+
+**Waqf** (وقف)
+: Endowment; a permanent, irrevocable dedication of property for charitable or religious purposes, with returns used to benefit specified beneficiaries. A key institution for long-term social investment.
+
+**Wasatiyyah** (الوسطية)
+: Moderation or balance; the Islamic principle of maintaining equilibrium and avoiding extremes in consumption, spending, and economic behavior—a cornerstone of Islamic economic ethics.
+
+**Zakat** (الزكاة)
+: Obligatory alms or wealth tax; a mandatory transfer of wealth to specified categories of poor and needy persons, calculated as a small percentage of eligible assets held above the nisab threshold.
+

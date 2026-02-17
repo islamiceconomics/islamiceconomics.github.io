@@ -1,0 +1,36 @@
+---
+title: "Waqf & Social Infrastructure"
+subtitle: "Islamic Endowments and Community Development"
+abstract: |
+  This chapter explores waqf (Islamic endowment), a unique institution for long-term social investment and poverty alleviation. We examine the history of waqf, its various types, contemporary challenges and revival efforts, and how waqf-based models can fund education, healthcare, social services, and community infrastructure.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Definition and historical development of waqf
+- Types of waqf: charitable, family, mixed, and hybrid models
+- Legal structure and management of waqf institutions
+- Waqf as a solution to market failures in public goods provision
+- Education, healthcare, and social service funding through waqf
+- Waqf and poverty reduction
+- Contemporary revival of waqf in Muslim-majority countries
+- Global waqf initiatives and cross-border endowments
+- Challenges: modernization, management, and governance
+- Case studies of successful contemporary waqf models
+
+::: {.callout-tip title="Key Concept"}
+Waqf represents an innovative institutional mechanism for decentralized, sustainable social investment where wealth is permanently committed to public benefit, generating ongoing returns that fund education, healthcare, and social services without creating perpetual debt or dependence on government budgets.
+:::
+
+## Chapter Outline
+
+1. Waqf: Definition, Foundation, and Historical Development
+2. Types of Waqf and Their Structures
+3. Legal and Economic Principles of Waqf Management
+4. Waqf as a Solution to Public Goods Provision
+5. Modern Applications and Contemporary Revival
+6. Governance, Sustainability, and Challenges

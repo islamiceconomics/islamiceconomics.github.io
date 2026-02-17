@@ -1,0 +1,36 @@
+---
+title: "Takaful & Cooperative Risk Management"
+subtitle: "Islamic Insurance and Mutual Aid"
+abstract: |
+  This chapter explores takaful, the Islamic approach to insurance based on mutual cooperation and shared risk. We examine how takaful differs from conventional insurance, analyze its economic foundations in the concept of tabarru (donation), and explore how cooperative risk management serves broader social solidarity objectives while providing financial protection.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Historical development of takaful and mutual insurance in Islamic tradition
+- The concept of tabarru (donation/contribution) as a foundation
+- Takaful versus conventional insurance: key differences
+- Mudarabah and wakalah models in takaful operations
+- Surplus distribution and profit-sharing in takaful
+- Types of takaful: health, property, life, and specialty
+- Reinsurance and international takaful operations
+- Risk management and underwriting in takaful
+- Shari'ah compliance and supervisory frameworks
+- Social solidarity and community welfare dimensions
+
+::: {.callout-tip title="Key Concept"}
+Takaful transforms insurance from a profit-maximizing transfer of risk to a cooperative arrangement where participants contribute to a mutual fund, share both risks and returns, and embody the Islamic principle of social solidarity (takaful) where the community collectively bears members' losses.
+:::
+
+## Chapter Outline
+
+1. Takaful: Definition and Historical Foundations
+2. The Tabarru Model and Cooperation Principles
+3. Operational Models: Mudarabah and Wakalah
+4. Surplus Management and Profit-Sharing
+5. Types of Takaful Products and Markets
+6. Shari'ah Compliance and Regulatory Frameworks

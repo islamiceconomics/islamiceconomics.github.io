@@ -1,0 +1,111 @@
+---
+title: "Recommended Reading"
+subtitle: "Essential Works in Islamic Economics"
+---
+
+# Recommended Reading {.unnumbered}
+
+This reading list provides curated selections of foundational, contemporary, and specialized works in Islamic economics, organized by topic for easy reference.
+
+## Foundational Works in Islamic Economics
+
+1. **Chapra, Muhammad Umer.** *The Islamic Welfare State and Its Role in the Economy*. Leicester: Islamic Foundation, 1992.
+   - Comprehensive exploration of the Islamic state's role in economic management and social welfare.
+
+2. **Khan, Muhammad Akram.** *Islamic Economics and Finance: A Glossary*. London: Routledge, 2nd edition, 2003.
+   - Accessible reference work defining key concepts and terminology in Islamic economics.
+
+3. **Kahf, Monzer.** *Islamic Economics: Notes on Definition and Methodology*. Journal of Research in Islamic Economics, 1989.
+   - Methodological foundation for understanding Islamic economics as a distinct discipline.
+
+4. **Maududi, Abu A'la.** *Economic System of Islam*. Lahore: Islamic Publications, 1984.
+   - Classic exposition of Islamic economic principles from a prominent Islamic scholar.
+
+5. **Naqvi, Syed Nawab Haider.** *Ethics and Economics: An Islamic Synthesis*. Leicester: Islamic Foundation, 1981.
+   - Integration of ethical principles with economic analysis.
+
+## Microeconomics and Consumer Theory
+
+6. **Ahmad, Khurshid (ed.).** *Contemporary Practices of Islamic Financing Techniques*. Jeddah: IRTI-IDB, 2002.
+   - Overview of modern Islamic financial instruments and their applications.
+
+7. **El-Gamal, Mahmoud A.** *Islamic Finance: Law, Economics, and Practice*. Cambridge: Cambridge University Press, 2006.
+   - Rigorous economic and legal analysis of Islamic finance mechanisms.
+
+8. **Iqbal, Zamir & Mirakhor, Abbas.** *An Introduction to Islamic Finance: Theory and Practice*. Singapore: Wiley, 2011.
+   - Comprehensive textbook on Islamic financial instruments and markets.
+
+9. **Siddiqui, Muhammad Nejatullah.** *Islamic Economic Thought*. Lahore: Islamic Book Foundation, 1988.
+   - Systematic presentation of Islamic economic theory and concepts.
+
+## Money, Banking, and Finance
+
+10. **Ariff, Muhammad (ed.).** *Islamic Banking and Finance: New Perspectives on Profit-Sharing and Risk*. Cheltenham: Edward Elgar, 2011.
+    - Advanced analysis of profit-sharing mechanisms and risk management in Islamic finance.
+
+11. **Iqbal, Zamir.** *Zakah, Moderation and Aggregate Demand*. IMF Staff Papers, Vol. 44, No. 4, 1997.
+    - Macroeconomic analysis of zakat's role in stabilization.
+
+12. **Jouaber-Snoussi, Karim & Abdelsalam, Omneya (eds.).** *Islamic Banking and Finance: New Challenges and Opportunities*. London: Routledge, 2015.
+    - Contemporary issues and future developments in Islamic banking.
+
+13. **Mirakhor, Abbas.** *Towards an Islamic Macroeconomic Model for Muslim Economies*. The American Journal of Islamic Social Sciences, Vol. 8, 1991.
+    - Framework for macroeconomic analysis in Islamic context.
+
+## Waqf and Social Economics
+
+14. **Benthall, Jonathan & Bellion-Jourdan, Jérôme.** *The Charitable Crescent: A History of the World's Muslimlands and Their Voluntary Sector*. London: I.B. Tauris, 2003.
+    - Historical perspective on Islamic charitable institutions and civil society.
+
+15. **Cizakca, Murat.** *A History of Philanthropic Foundations: The Islamic World from the Seventh Century to the Present*. Istanbul: Boğaziçi University Press, 2000.
+    - Comprehensive history of waqf and endowment institutions in Islamic civilization.
+
+16. **Kahf, Monzer.** *The Role of Waqf in Improving the Ummah*. Paper presented to the International Seminar on Waqf as an Instrument of Social Development, 2003.
+    - Analysis of waqf's potential in contemporary Muslim societies.
+
+17. **Kuran, Timur.** *The Long Divergence: How Islamic Law Held Back the Middle East*. Princeton: Princeton University Press, 2011.
+    - Critical perspective on institutional development and economic stagnation.
+
+## Development and Sustainability
+
+18. **Asutay, Mehmet.** *Conceptualising and Operationalising Social Maslaha for Islamic Finance*. ISRA International Journal of Islamic Finance, Vol. 4, No. 1, 2012.
+    - Social welfare in Islamic finance framework.
+
+19. **Khan, Muhammad Akram & Mirakhor, Abbas (eds.).** *Islamic Economics and Finance*. New York: Routledge, 2016.
+    - Contemporary perspectives on Islamic economics and development.
+
+20. **Siddiqi, Muhammad Nejatullah.** *Muslim Economic Thinking: A Survey of Contemporary Literature*. Leicester: Islamic Foundation, 1981.
+    - Survey of contemporary Islamic economic thought and debates.
+
+21. **UNDP.** *Islamic Finance and Human Development Report*. New York: United Nations Development Programme, various years.
+    - Analysis of Islamic finance's role in sustainable development and human progress.
+
+## Critiques and Comparative Analysis
+
+22. **Askari, Hossein; Iqbal, Zamir; & Mirakhor, Abbas.** *New Issues in Islamic Finance and Economics: Progress and Challenges*. Singapore: Wiley, 2015.
+    - Critical examination of contemporary challenges and debates in Islamic finance.
+
+23. **Chapra, Muhammad Umer.** *Islam and the Economic Challenge*. Leicester: Islamic Foundation, 1992.
+    - Analysis of economic challenges facing Islamic societies and potential solutions.
+
+24. **Henry, Clement M. & Wilson, Rodney (eds.).** *The Politics of Islamic Finance*. Edinburgh: Edinburgh University Press, 2004.
+    - Political economy perspectives on Islamic finance development and regulation.
+
+## Key Journal Articles and Working Papers
+
+25. **Islamic Economics, Banking & Finance** (academic journal collection)
+    - Regular publications in: *Journal of Islamic Economics, Banking and Finance*, *Islamic Finance Review*, *ISRA International Journal of Islamic Finance*, *Nuance*, *Review of Islamic Economics*.
+
+26. **Islamic Research and Training Institute (IRTI).** *Working Papers and Policy Briefs Series*.
+    - Accessible research from Islamic Development Bank's research arm covering current topics.
+
+27. **Centre for Islamic Economics and Finance (CIEF).** *Research Papers and Discussion Notes*.
+    - University of Cambridge and other institutions' publications on Islamic economics.
+
+## Digital Resources
+
+- **Islamic Finance.com**: Comprehensive news, research, and industry information
+- **Thomson Reuters Islamic Finance Directory**: Global database of Islamic finance institutions and products
+- **AAOIFI Standards**: International Shari'ah standards for Islamic financial institutions
+- **IDB Group**: Publications and research from the Islamic Development Bank
+

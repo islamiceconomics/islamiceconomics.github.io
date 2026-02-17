@@ -1,0 +1,33 @@
+---
+title: "The Islamic Consumer"
+subtitle: "Halal Consumption and Moderation"
+abstract: |
+  This chapter explores the theory of consumption in Islamic economics, centering on the concepts of halal (permissible) consumption, the prohibition of israf (extravagance and waste), and the hierarchy of needs versus wants. We examine how Islamic principles reshape consumer behavior and utility theory around the concepts of moderation and ethical consumption.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- The concept of halal consumption and what it means beyond food
+- Israf (waste and extravagance) as an economic and moral problem
+- The hierarchy of needs in Islam versus Maslow's hierarchy
+- Utility theory in Islamic economics: dual utility (material and spiritual)
+- Moderation (wasatiyyah) as a principle of Islamic consumption
+- Consumer rights and protection in Islamic law
+- The role of tawhid (divine unity) in shaping consumption patterns
+
+::: {.callout-tip title="Key Concept"}
+Islamic consumption theory moves beyond purely materialistic utility maximization to incorporate spiritual and moral dimensions, where the consumer's choices reflect both personal well-being and broader social responsibility through the principle of moderation.
+:::
+
+## Chapter Outline
+
+1. Halal Consumption: Definition and Scope
+2. The Prohibition of Israf (Waste) and Its Economic Implications
+3. Needs versus Wants: The Islamic Framework
+4. Dual Utility: Material and Spiritual Dimensions of Consumption
+5. Moderation (Wasatiyyah) as an Economic Principle
+6. Consumer Protection and Ethical Obligations

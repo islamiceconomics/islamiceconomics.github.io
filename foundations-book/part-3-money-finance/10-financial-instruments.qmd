@@ -1,0 +1,35 @@
+---
+title: "Islamic Financial Instruments"
+subtitle: "Murabaha, Ijara, Salam, Istisna, Sukuk, and Equity Funds"
+abstract: |
+  This chapter surveys the major financial instruments developed within the Islamic finance industry. We examine murabaha (cost-plus sale), ijara (leasing), salam (forward purchase), istisna (manufacturing contract), sukuk (Islamic bonds), and equity-based funds, analyzing their structures, legal foundations, and economic implications.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Murabaha: structure, application, and debates about its use
+- Ijara: operating and financial leasing in Islamic law
+- Salam and istisna: forward and manufacturing contracts
+- Sukuk: Islamic bonds, structures, and market development
+- Equity funds and Islamic investment products
+- Wakala (agency) and mudawala (circulation) concepts
+- Comparison of instruments with conventional alternatives
+- Shari'ah compliance and supervisory standards
+- Growth and development of Islamic financial markets
+
+::: {.callout-tip title="Key Concept"}
+Islamic financial instruments are designed to replace interest-based debt with asset-backed transactions, profit-sharing arrangements, and lease-based structures that ensure creditors share in both risks and returns, thereby promoting justice and stability in financial relationships.
+:::
+
+## Chapter Outline
+
+1. Murabaha: The Most Common Islamic Financing Tool
+2. Ijara: Islamic Leasing and Its Applications
+3. Salam and Istisna: Forward and Manufacturing Contracts
+4. Sukuk: Islamic Bonds and Capital Market Instruments
+5. Investment Funds and Equity-Based Instruments
+6. Comparative Analysis and Market Development

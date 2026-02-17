@@ -1,0 +1,328 @@
+/*-- scss:defaults --*/
+
+// ============================================================================
+// PRINCIPLES OF ISLAMIC ECONOMICS — LIGHT THEME
+// Matches the main site design tokens
+// ============================================================================
+
+// Colors — Primary (rich forest green)
+$primary:       #1a5c3a;
+$primary-dark:  #0d3d25;
+$primary-light: #2d7a4f;
+
+// Colors — Accent (warm Islamic gold)
+$accent:        #b8962e;
+$accent-light:  #d4b76a;
+
+// Colors — Secondary (deep navy)
+$secondary:     #1a2744;
+
+// Colors — Backgrounds
+$body-bg:       #faf9f7;
+$body-bg-alt:   #f2efe9;
+
+// Colors — Text
+$body-color:    #1a1a1a;
+$text-secondary: #555550;
+$text-light:    #888880;
+
+// Colors — Borders
+$border-color:  #e5e0d8;
+
+// Fonts
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, sans-serif;
+$headings-font-family:   'Playfair Display', 'Georgia', serif;
+
+// Quarto framework variables
+$link-color: $primary;
+$link-hover-color: $primary-dark;
+
+$toc-color: $text-secondary;
+$toc-active-border: $primary;
+
+$sidebar-bg: #f7f5f1;
+$sidebar-fg: $body-color;
+
+$callout-border-width: 4px;
+
+$code-bg: $body-bg-alt;
+$code-color: $primary-dark;
+
+/*-- scss:rules --*/
+
+// ============================================================================
+// TYPOGRAPHY
+// ============================================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  color: $body-color;
+}
+
+.chapter-title, .title {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+  font-family: $font-family-sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: $text-secondary;
+  line-height: 1.6;
+}
+
+// ============================================================================
+// SIDEBAR
+// ============================================================================
+
+.sidebar-title {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  color: $primary;
+  font-size: 1rem;
+}
+
+.sidebar-item-text {
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.sidebar nav[role=doc-toc] > ul li a.active {
+  border-left-color: $primary;
+  color: $primary;
+  font-weight: 600;
+}
+
+// Part headings in sidebar
+.sidebar-item-section .sidebar-item-text {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $text-light;
+}
+
+// ============================================================================
+// CALLOUT BOXES — Custom Islamic Styles
+// ============================================================================
+
+// Quranic Foundation — gold border
+.callout-note {
+  border-left-color: $accent !important;
+  background: rgba($accent, 0.04);
+
+  .callout-title {
+    color: darken($accent, 12%);
+  }
+}
+
+// Key Concept — green border
+.callout-tip {
+  border-left-color: $primary !important;
+  background: rgba($primary, 0.03);
+
+  .callout-title {
+    color: $primary;
+  }
+}
+
+// Hadith Reference — blue border
+.callout-important {
+  border-left-color: #1a5c8a !important;
+  background: rgba(26, 92, 138, 0.03);
+
+  .callout-title {
+    color: #1a5c8a;
+  }
+}
+
+// Common Misconception — warm amber
+.callout-warning {
+  border-left-color: #b87a1a !important;
+  background: rgba(184, 122, 26, 0.04);
+
+  .callout-title {
+    color: #b87a1a;
+  }
+}
+
+// General callout styling
+.callout {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+
+  .callout-body {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .callout-title {
+    font-family: $headings-font-family;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Blockquote styling for Quranic verses
+blockquote {
+  border-left: 3px solid $accent;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: rgba($accent, 0.03);
+  border-radius: 0 8px 8px 0;
+  font-family: 'Amiri', serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: $body-color;
+
+  footer, cite {
+    display: block;
+    font-family: $font-family-sans-serif;
+    font-size: 0.82rem;
+    color: $text-light;
+    margin-top: 0.75rem;
+    font-style: normal;
+  }
+}
+
+// ============================================================================
+// CONTENT STYLING
+// ============================================================================
+
+// Chapter body text
+#quarto-content main {
+  p {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: $body-color;
+    margin-bottom: 1.1rem;
+  }
+}
+
+// Figures and diagrams
+.quarto-figure {
+  margin: 2rem 0;
+  text-align: center;
+
+  figcaption {
+    font-size: 0.82rem;
+    color: $text-light;
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+}
+
+// Tables
+table {
+  font-size: 0.88rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+
+  th {
+    background: $body-bg-alt;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid $border-color;
+    color: $text-secondary;
+  }
+
+  td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid lighten($border-color, 4%);
+    vertical-align: top;
+  }
+
+  tr:hover td {
+    background: rgba($primary, 0.02);
+  }
+}
+
+// Definition lists (for key terms)
+dl {
+  margin: 1.5rem 0;
+
+  dt {
+    font-family: $headings-font-family;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $primary;
+    margin-top: 1rem;
+  }
+
+  dd {
+    margin-left: 0;
+    padding-left: 1.25rem;
+    border-left: 2px solid lighten($primary, 40%);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: $text-secondary;
+    margin-bottom: 0.75rem;
+  }
+}
+
+// ============================================================================
+// NAVIGATION & LAYOUT
+// ============================================================================
+
+// Page navigation (prev/next)
+.page-navigation {
+  border-top: 1px solid $border-color;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+
+  .nav-page-text {
+    font-family: $headings-font-family;
+    font-weight: 600;
+  }
+}
+
+// Back to site link
+.navbar .navbar-brand {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  color: $primary;
+}
+
+// Mermaid diagram overrides
+.mermaid {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+// ============================================================================
+// RESPONSIVE
+// ============================================================================
+
+@media (max-width: 768px) {
+  .chapter-title, .title {
+    font-size: 1.8rem;
+  }
+
+  .callout {
+    padding: 1rem;
+  }
+
+  blockquote {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+}

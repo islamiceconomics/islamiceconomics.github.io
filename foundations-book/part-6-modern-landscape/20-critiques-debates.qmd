@@ -1,0 +1,37 @@
+---
+title: "Critiques, Debates & Future Directions"
+subtitle: "Challenges and the Path Forward"
+abstract: |
+  This chapter examines major criticisms and internal debates within Islamic economics, including questions about its feasibility, internal consistency, and relevance to contemporary challenges. We explore reform proposals, the future direction of the discipline, and how Islamic economics can better serve global development objectives while maintaining its core values.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- External criticisms: feasibility and relevance challenges
+- Internal inconsistencies and theoretical debates
+- Form versus substance in Islamic finance practice
+- Debates about the scope and flexibility of Islamic law
+- Modernization versus traditionalism in Islamic economics
+- The role of Islamic economics in development
+- Gender equity and inclusion debates
+- Environmental economics and Islamic stewardship
+- Cryptocurrency and fintech regulatory questions
+- Proposals for institutional and theoretical reform
+- The future of Islamic economics as an alternative paradigm
+
+::: {.callout-tip title="Key Concept"}
+Islamic economics faces both external skepticism about its viability and internal debates about its proper interpretation and application, yet its core challenge remains translating principles into practice—ensuring that real-world institutions and policies embody Islamic values rather than merely paying lip service to them while operating according to conventional logic.
+:::
+
+## Chapter Outline
+
+1. Major External Critiques of Islamic Economics
+2. Internal Theoretical Debates and Disagreements
+3. Form versus Substance in Islamic Finance Implementation
+4. Modernization, Interpretation, and Application
+5. Institutional Reform Proposals
+6. The Future of Islamic Economics as a Global Framework

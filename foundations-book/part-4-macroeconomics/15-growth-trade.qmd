@@ -1,0 +1,36 @@
+---
+title: "Growth, Development & International Trade"
+subtitle: "Sustainable Development and Ethical Trade Relations"
+abstract: |
+  This chapter examines economic growth and development from an Islamic perspective, emphasizing sustainable development that respects environmental limits and social equity. We analyze Islamic approaches to international trade, trade ethics, fair exchange, and how Islamic economics views economic interdependence among nations.
+---
+
+# Introduction {.unnumbered}
+
+*This chapter is under development. Check back soon for the full content.*
+
+## What This Chapter Will Cover
+
+- Economic growth versus economic development in Islamic context
+- Sustainable development and environmental stewardship
+- Limits to growth and resource constraints
+- Technology transfer and human capital development
+- Trade theory and comparative advantage
+- Trade ethics and fair exchange in international commerce
+- Islamic prohibitions affecting trade (gharar, riba, prohibited goods)
+- Aid and development finance from Islamic perspective
+- Development partnerships and cooperation frameworks
+- Globalization and Islamic economic values
+
+::: {.callout-tip title="Key Concept"}
+Islamic economics supports international trade as a means of mutual benefit and cooperation but insists that trade must be conducted ethically, respecting environmental limits, avoiding exploitation, and contributing to genuine development that improves well-being and reduces inequality rather than merely increasing GDP.
+:::
+
+## Chapter Outline
+
+1. Economic Growth and Development: Concepts and Measures
+2. Sustainable Development in Islamic Framework
+3. Trade Theory and Comparative Advantage
+4. Ethics of International Trade and Fair Exchange
+5. Islamic Restrictions on Trade (Gharar, Riba, Prohibited Goods)
+6. Development Aid and Cooperation Mechanisms
