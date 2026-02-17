@@ -9,7 +9,7 @@ book:
   date: last-modified
   date-format: "MMMM YYYY"
 
-  reader-mode: true
+  reader-mode: false
   search: true
   repo-url: https://github.com/IslamicEconomics/IslamicEconomics.github.io
   repo-actions: [issue]
@@ -72,7 +72,7 @@ format:
     number-sections: true
     number-depth: 2
     code-fold: true
-    code-tools: true
+    code-tools: false
     smooth-scroll: true
     link-external-newwindow: true
     include-before-body: _includes/site-navbar.html

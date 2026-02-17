@@ -105,14 +105,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-// Part headings in sidebar
-.sidebar-item-section .sidebar-item-text {
-  font-family: $headings-font-family;
+// Part headings in sidebar — only the direct toggle, not nested chapter links
+.sidebar-item-section > .sidebar-item-toggle .sidebar-item-text {
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: $text-light;
+  margin-top: 0.75rem;
+}
+
+// Chapter links inside sidebar sections — normal weight, no uppercase
+.sidebar-item-section .sidebar-item-container .sidebar-item-text {
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color: $body-color;
 }
 
 // ============================================================================

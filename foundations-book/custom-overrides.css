@@ -29,3 +29,52 @@
 body, .sidebar, #quarto-content {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* ============================================================================
+   SIDEBAR FIXES — Clean chapter list styling
+   ============================================================================ */
+
+/* Part headings: small, muted, uppercase */
+#quarto-sidebar .sidebar-item-section > .sidebar-item-toggle > .sidebar-item-text {
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  color: #888880 !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+/* Chapter links: normal text */
+#quarto-sidebar .sidebar-item a .sidebar-item-text,
+#quarto-sidebar .sidebar-item-container .sidebar-item-text {
+  font-size: 0.84rem !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: #1a1a1a !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  line-height: 1.45 !important;
+}
+
+/* Active chapter link */
+#quarto-sidebar .sidebar-item a.active .sidebar-item-text {
+  color: #1a5c3a !important;
+  font-weight: 600 !important;
+}
+
+/* Tighten spacing between chapters */
+#quarto-sidebar .sidebar-item {
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+/* Remove Quarto's code tools button when not needed */
+#quarto-code-tools-menu,
+#quarto-code-tools-source {
+  display: none !important;
+}
+
+/* Hide reader mode toggle */
+#quarto-reader-toggle {
+  display: none !important;
+}
