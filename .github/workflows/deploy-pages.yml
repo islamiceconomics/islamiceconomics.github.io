@@ -30,10 +30,12 @@ jobs:
           version: "1.6.42"
 
       - name: Render Quarto Book
+        continue-on-error: true
         run: |
           cd foundations-book
           quarto render
         # Output goes to ../Website/foundations/ per _quarto.yml
+        # continue-on-error: if Quarto fails, rest of site still deploys
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
