@@ -287,6 +287,52 @@ dl {
 // RESPONSIVE
 // ============================================================================
 
+// ============================================================================
+// MOBILE OVERFLOW FIX — prevent horizontal jiggle
+// ============================================================================
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+// Prevent any element from breaking out of viewport
+#quarto-content,
+#quarto-sidebar,
+.page-columns,
+.column-body,
+main.content,
+.sidebar-navigation {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// Tables can overflow — wrap them in a scrollable container
+table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// MathJax / KaTeX equations can be wide
+.math, .MathJax, .katex-display {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+// Mermaid diagrams
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+// Code blocks
+pre, code {
+  max-width: 100%;
+  overflow-x: auto;
+  word-wrap: break-word;
+}
+
 @media (max-width: 768px) {
   .chapter-title, .title {
     font-size: 1.8rem;
@@ -299,5 +345,21 @@ dl {
   blockquote {
     padding: 0.75rem 1rem;
     font-size: 0.95rem;
+  }
+
+  // Extra mobile tightening
+  .page-columns {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #quarto-content main {
+    padding: 0 1rem;
+  }
+
+  // Prevent Quarto grid from overflowing
+  .column-body, .column-page, .column-screen {
+    max-width: 100vw !important;
+    width: 100% !important;
   }
 }

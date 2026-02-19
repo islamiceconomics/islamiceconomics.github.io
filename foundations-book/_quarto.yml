@@ -74,7 +74,10 @@ book:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - custom-theme.scss
+    css: custom-overrides.css
     toc: true
     number-sections: true
     code-tools: false
