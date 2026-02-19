@@ -3051,6 +3051,16 @@ blockquote cite,
   color: var(--color-primary-dark);
 }
 
+.article-coming-soon {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  width: fit-content;
+}
+
 /* ── Podcast Highlight (Homepage) ── */
 .podcast-episodes-preview {
   display: grid;
