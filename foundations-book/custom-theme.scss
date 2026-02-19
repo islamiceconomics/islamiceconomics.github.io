@@ -289,25 +289,10 @@ dl {
 
 // ============================================================================
 // MOBILE OVERFLOW FIX — prevent horizontal jiggle
+// Only target content elements, NOT layout containers that Quarto manages
 // ============================================================================
 
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
-}
-
-// Prevent any element from breaking out of viewport
-#quarto-content,
-#quarto-sidebar,
-.page-columns,
-.column-body,
-main.content,
-.sidebar-navigation {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-// Tables can overflow — wrap them in a scrollable container
+// Tables can overflow — make them scrollable
 table {
   display: block;
   overflow-x: auto;
@@ -345,21 +330,5 @@ pre, code {
   blockquote {
     padding: 0.75rem 1rem;
     font-size: 0.95rem;
-  }
-
-  // Extra mobile tightening
-  .page-columns {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  #quarto-content main {
-    padding: 0 1rem;
-  }
-
-  // Prevent Quarto grid from overflowing
-  .column-body, .column-page, .column-screen {
-    max-width: 100vw !important;
-    width: 100% !important;
   }
 }

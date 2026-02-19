@@ -14,40 +14,29 @@
 }
 
 /* ============================================================================
-   FORCE SIDEBAR ALWAYS VISIBLE (docked) on desktop
-   Quarto book uses Bootstrap offcanvas which collapses the sidebar.
-   These rules override that behavior on screens wider than 992px.
+   SIDEBAR STYLING
+   Quarto already handles docked sidebar layout via _quarto.yml
+   (sidebar: style: docked). We only customize appearance here,
+   NOT position/display/width which Quarto manages natively.
    ============================================================================ */
 
 @media (min-width: 992px) {
-
-  /* Make the offcanvas sidebar always visible */
-  #quarto-sidebar.offcanvas,
-  #quarto-sidebar.offcanvas-start {
-    visibility: visible !important;
-    transform: none !important;
-    position: relative !important;
-    background-color: #f7f5f1 !important;
-    border-right: 1px solid #e5e0d8 !important;
-    width: 250px !important;
-    z-index: auto !important;
-  }
-
   /* Remove the backdrop that appears with offcanvas */
   .offcanvas-backdrop {
     display: none !important;
   }
 
-  /* Ensure the main content shifts right to make room for sidebar */
-  #quarto-content {
-    display: flex !important;
-  }
-
-  /* Hide the sidebar toggle button since sidebar is always showing */
-  .navbar-toggler,
-  [data-bs-toggle="offcanvas"] {
+  /* Hide the sidebar toggle button since sidebar is docked */
+  .navbar-toggler[data-bs-target="#quarto-sidebar"],
+  [data-bs-toggle="offcanvas"][data-bs-target="#quarto-sidebar"] {
     display: none !important;
   }
+}
+
+/* Sidebar background color */
+#quarto-sidebar {
+  background-color: #f7f5f1 !important;
+  border-right: 1px solid #e5e0d8 !important;
 }
 
 /* ============================================================================
