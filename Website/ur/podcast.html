@@ -71,6 +71,39 @@
     .media-tab { display: none; }
     .media-tab.active { display: block; }
 
+    /* ── Curriculum Part Headers ── */
+    .curriculum-part {
+      margin: 2.5rem 0 1.5rem;
+      padding: 0;
+    }
+    .curriculum-part:first-child {
+      margin-top: 0.5rem;
+    }
+    .curriculum-part-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-accent);
+      margin-bottom: 0.35rem;
+    }
+    .curriculum-part-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.3rem;
+    }
+    .curriculum-part-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .curriculum-part + .series-card {
+      margin-top: 0;
+    }
+
     /* ── Series Card ── */
     .series-card {
       background: var(--color-surface);
@@ -572,7 +605,7 @@
 
       <!-- Media Type Tabs -->
       <div class="media-nav">
-        <button class="media-nav-btn active" data-tab="podcasts">پوڈ کاسٹ <span class="media-nav-count">18</span></button>
+        <button class="media-nav-btn active" data-tab="podcasts">پوڈ کاسٹ <span class="media-nav-count">30</span></button>
         <button class="media-nav-btn" data-tab="videos">ویڈیوز <span class="media-nav-count">1</span></button>
         <button class="media-nav-btn" data-tab="documentaries">ڈاکومنٹریز <span class="media-nav-count">0</span></button>
       </div>
@@ -581,6 +614,13 @@
       <!-- PODCASTS TAB                                -->
       <!-- ═══════════════════════════════════════════ -->
       <div class="media-tab active" id="tab-podcasts">
+
+        <!-- ═══ حصہ اول: بنیادیں ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">حصہ اول</div>
+          <div class="curriculum-part-title">بنیادیں</div>
+          <div class="curriculum-part-desc">بڑی تصویر: اسلامی معاشی فکر کے 1,500 سال ایک بیانیے میں۔</div>
+        </div>
 
         <!-- Series: Historical Islamic Economics -->
         <div class="series-card fade-up">
@@ -822,6 +862,13 @@
             </div>
 
           </div>
+        </div>
+
+        <!-- ═══ حصہ دوم: اصول ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">حصہ دوم</div>
+          <div class="curriculum-part-title">اصول</div>
+          <div class="curriculum-part-desc">اسلامی معاشی فکر کے بنیادی ستون: تجارت، خطرہ، قرض، اور مزید۔</div>
         </div>
 
         <!-- Series: Written in Trade -->
@@ -1258,10 +1305,477 @@
           </div>
         </div>
 
-        <!-- Future Series Placeholder -->
+        <!-- Series: The Weight of Debt / قرض کا بوجھ -->
+        <div class="series-card fade-up" style="margin-top:1.5rem;">
+          <div class="series-header">
+            <div class="series-cover" style="background:linear-gradient(135deg, #1a3a5c 0%, #0d1f33 100%);">
+              <div class="series-cover-icon">&#9878;</div>
+              <div class="series-cover-title">قرض کا بوجھ</div>
+              <div class="series-cover-sub">پوڈ کاسٹ سیریز</div>
+            </div>
+            <div class="series-info">
+              <div class="series-label">نئی سیریز</div>
+              <h2 class="series-title">قرض کا بوجھ</h2>
+              <p class="series-desc">قبل از اسلام عرب میں قرض کی غلامی سے لے کر ٹریلین ڈالر کی صکوک مارکیٹ تک، دیکھیں کہ اسلامی تہذیب نے انسانی تاریخ کے سب سے خطرناک مالیاتی آلے کو کیسے تبدیل کیا۔</p>
+              <div class="series-meta">
+                <span class="series-meta-item">&#127911; 6 اقساط</span>
+                <span class="series-meta-item">&#9201; ~18 منٹ فی قسط</span>
+                <span class="series-meta-item">میزبان: طارق اور عمیرہ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episode List -->
+          <div class="episode-list">
+
+            <!-- WD Episode 1 -->
+            <div class="episode-row" data-episode="wd-1">
+              <span class="episode-row-number">01</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">وحی سے پہلے</div>
+                <div class="episode-row-subtitle">قبل از اسلام عرب میں قرض کی غلامی اور قرآن نے قرض دار اور قرض خواہ کے رشتے کو ہمیشہ کے لیے کیسے بدلا۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-1">
+              <p class="episode-expanded-desc">
+                قبل از اسلام عرب میں قرض ایک ہتھیار تھا۔ جو شخص واپس نہ کر سکتا اسے غلام بنایا جا سکتا تھا، اس کے خاندان کو ضمانت کے طور پر لیا جاتا، اور ہر چوکی ادائیگی پر قرض دگنا ہو جاتا۔ ربا الجاہلیت کا یہ مطلب تھا کہ ایک ادھار اونٹ دو بن سکتا تھا، پھر چار، پھر آٹھ۔ جب قرآن نازل ہوا تو اس نے صرف سود کو حرام نہیں کیا بلکہ مالی ظلم کے پورے نظام کے خلاف جنگ کا اعلان کیا۔ یہ قسط قبل از اسلام عرب کے قرض کے طریقوں، قرآن و سنت کی انقلابی تبدیلیوں، اور نبی کریمﷺ کی قرض معافی کی تعلیمات کا جائزہ لیتی ہے۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">ربا الجاہلیت</span>
+                <span class="topic-tag">قرض کی غلامی</span>
+                <span class="topic-tag">قبل از اسلام عرب</span>
+                <span class="topic-tag">قرآنی اصلاحات</span>
+                <span class="topic-tag">قرض معافی</span>
+                <span class="topic-tag">سماجی انصاف</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/wd-ep01-before-the-revelation.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 2 -->
+            <div class="episode-row" data-episode="wd-2">
+              <span class="episode-row-number">02</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">سب سے لمبی آیت</div>
+                <div class="episode-row-subtitle">آیت الدین: قرآن کی سب سے تفصیلی آیت قرض کے بارے میں ہے۔ اس سے ہمیں کیا پتا چلتا ہے؟</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-2">
+              <p class="episode-expanded-desc">
+                قرآن کی آیت نمبر 2:282، جسے آیت الدین کہا جاتا ہے، پوری کتاب کی سب سے لمبی آیت ہے۔ نماز، حج، یا روزے کے بارے میں نہیں بلکہ قرض کا معاہدہ کیسے لکھا جائے اس بارے میں۔ یہ تحریری دستاویزات، گواہوں، اور قرض دار اور قرض خواہ دونوں کے تحفظ کا حکم دیتی ہے۔ علماء صدیوں سے حیران ہیں: خدا اپنی آخری وحی کی سب سے تفصیلی آیت تجارتی معاملات کے لیے کیوں وقف کرے گا؟ یہ قسط آیت الدین کا لفظ بہ لفظ تجزیہ کرتی ہے اور دکھاتی ہے کہ اسلام مالی انصاف کو ایمان کا حاشیہ نہیں بلکہ اس کی بنیاد سمجھتا ہے۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">آیت الدین</span>
+                <span class="topic-tag">قرض کے معاہدے</span>
+                <span class="topic-tag">تحریری دستاویز</span>
+                <span class="topic-tag">الجصاص</span>
+                <span class="topic-tag">القرطبی</span>
+                <span class="topic-tag">مالی انصاف</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/wd-ep02-the-longest-verse.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 3 -->
+            <div class="episode-row" data-episode="wd-3">
+              <span class="episode-row-number">03</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">علماء کی لکیر</div>
+                <div class="episode-row-subtitle">چار مذاہب نے جائز ادھار فروخت اور ممنوع ربا کے درمیان حد کیسے کھینچی۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">19 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-3">
+              <p class="episode-expanded-desc">
+                قرآن ربا کو حرام کرتا ہے۔ لیکن ربا ہے کیا بالکل؟ کیا ادھار فروخت پر اضافی قیمت لگانا قرض پر سود وصول کرنے جیسا ہے؟ حنفی مکتب نے بیع بثمن آجل کی اجازت دی، یعنی ادھار پر زیادہ قیمت پر سامان بیچنا، لیکن پیسے کے بدلے پیسے پر منافع کے خلاف واضح لکیر کھینچی۔ حنبلی سخت تھے، ہر وقت کے پریمیم پر ربا کا شبہ کرتے تھے۔ شافعی حدیث میں مذکور چھ اشیاء پر مرکوز رہے۔ اور مالکیوں نے سد الذرائع کا تصور تیار کیا۔ یہ قسط کلاسیکی مباحثوں سے گزرتی ہے جو آج بھی اسلامی بینکاری کی تعریف کرتے ہیں۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">چار مذاہب</span>
+                <span class="topic-tag">ربا الفضل</span>
+                <span class="topic-tag">ربا النسیئہ</span>
+                <span class="topic-tag">بیع بثمن آجل</span>
+                <span class="topic-tag">سد الذرائع</span>
+                <span class="topic-tag">کلاسیکی فقہ</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/wd-ep03-the-scholars-line.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 4 -->
+            <div class="episode-row" data-episode="wd-4">
+              <span class="episode-row-number">04</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">عثمانی تجربہ</div>
+                <div class="episode-row-subtitle">نقد وقف، ریاستی قرض، اور یورپی قرض نے عثمانی سلطنت کو اندر سے کیسے نوآبادیاتی بنایا۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-4">
+              <p class="episode-expanded-desc">
+                صدیوں تک عثمانی سلطنت نے خود کو بغیر خودمختار قرض کے مالی طور پر چلایا۔ نقد وقف تاجروں کو منظم شرحوں پر رقم دیتے تھے، ریاست جنگوں کو ٹیکس اور فتوحات سے مالی امداد دیتی تھی۔ پھر جنگ کریمیا آئی۔ 1854 میں عثمانیوں نے یورپی بینکوں سے اپنا پہلا غیر ملکی قرض جاری کیا۔ دو دہائیوں کے اندر قرض کی ادائیگیاں ریاست کی آمدنی کا آدھے سے زیادہ حصہ کھا رہی تھیں۔ 1881 تک یورپی قرض خواہوں نے عثمانی عوامی قرض انتظامیہ قائم کر دی تھی۔ یہ قسط بتاتی ہے کہ اسلامی مالیاتی اصولوں سے یورپی طرز کے خودمختار قرض کی طرف منتقلی نے آخری عظیم اسلامی سلطنت کے زوال میں کیسے کردار ادا کیا۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">نقد وقف</span>
+                <span class="topic-tag">عثمانی مالیات</span>
+                <span class="topic-tag">خودمختار قرض</span>
+                <span class="topic-tag">جنگ کریمیا</span>
+                <span class="topic-tag">قرض انتظامیہ</span>
+                <span class="topic-tag">معاشی نوآبادیات</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/wd-ep04-the-ottoman-experiment.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 5 -->
+            <div class="episode-row" data-episode="wd-5">
+              <span class="episode-row-number">05</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">بھیس بدلا سود</div>
+                <div class="episode-row-subtitle">تورق، حیل، اور بے چین سوال: کیا اسلامی بینک واقعی ربا سے بچتے ہیں؟</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">19 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-5">
+              <p class="episode-expanded-desc">
+                ایک گاہک اسلامی بینک میں قرض کے لیے آتا ہے۔ بینک لندن ایکسچینج سے دھات خریدتا ہے، اسے گاہک کو اضافی قیمت پر بیچتا ہے، گاہک فوری طور پر دھات کو واپس بازار میں نقصان پر بیچ دیتا ہے، اور نقد لے کر نکل جاتا ہے۔ دھات کبھی ہلی نہیں۔ کسی کو دھات نہیں چاہیے تھی۔ یہ تورق ہے، اور یہ عالمی سطح پر اسلامی بینکاری کے لین دین کا ایک بڑا حصہ ہے۔ یہ قسط جدید اسلامی مالیات کی سب سے بے چین بحث کا سامنا کرتی ہے: جب قانونی حیلے ربا کی معاشی حقیقت کو نقل کریں تو کیا ہم نے ممانعت کی روح کا احترام کیا ہے یا محض اس کے الفاظ کا؟
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">تورق</span>
+                <span class="topic-tag">حیل</span>
+                <span class="topic-tag">مرابحہ</span>
+                <span class="topic-tag">مفتی تقی عثمانی</span>
+                <span class="topic-tag">شکل بمقابلہ جوہر</span>
+                <span class="topic-tag">اسلامی بینکاری تنقید</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/wd-ep05-interest-in-disguise.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 6 -->
+            <div class="episode-row" data-episode="wd-6">
+              <span class="episode-row-number">06</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">زنجیروں کے بغیر قرض</div>
+                <div class="episode-row-subtitle">صکوک، قرض حسنہ، اور اکیسویں صدی میں قرض کی نئی تصویر۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-6">
+              <p class="episode-expanded-desc">
+                اگر قرض ایک جال نہ ہو تو؟ قرض حسنہ، خوبصورت قرض، بغیر کسی منافع کی توقع کے صرف اصل رقم واپس لے کر دینا، اسلام میں سب سے نیک اعمال میں سے ایک سمجھا جاتا ہے۔ صکوک قرض کو حقیقی اثاثوں کی مشترکہ ملکیت میں بدل دیتے ہیں۔ گھٹتی مشارکہ گھر خریدنے والوں کو قرض دار کے بجائے شریک مالک کی حیثیت سے بینک سے بتدریج اپنا گھر خریدنے دیتی ہے۔ یہ آخری قسط متبادل راستوں کا جائزہ لیتی ہے اور پوچھتی ہے کہ کیا اسلامی اصول عالمی قرض کے بحران سے نکلنے کا راستہ پیش کر سکتے ہیں۔ 300 ٹریلین ڈالر سے زائد عالمی قرض کے ساتھ، ساتویں صدی کی یہ بصیرت کہ قرض لوگوں کی خدمت کرے نہ کہ انہیں غلام بنائے، شاید جدید دنیا کا سب سے انقلابی مالیاتی خیال ہے۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">صکوک</span>
+                <span class="topic-tag">قرض حسنہ</span>
+                <span class="topic-tag">گھٹتی مشارکہ</span>
+                <span class="topic-tag">اسلامی مائیکرو فائنانس</span>
+                <span class="topic-tag">عالمی قرض بحران</span>
+                <span class="topic-tag">مالی آزادی</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/wd-ep06-debt-without-chains.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ═══ حصہ سوم: نظام ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">حصہ سوم</div>
+          <div class="curriculum-part-title">نظام</div>
+          <div class="curriculum-part-desc">بڑے پیمانے پر: خودمختار مالیات، مالیاتی پالیسی، اور اسلامی نقطہ نظر سے میکرو اکنامکس۔</div>
+        </div>
+
+        <!-- Series: The Borrowed Empire / ادھار کی سلطنت -->
+        <div class="series-card fade-up" style="margin-top:1.5rem;">
+          <div class="series-header">
+            <div class="series-cover" style="background:linear-gradient(135deg, #4a1942 0%, #1a0a1a 100%);">
+              <div class="series-cover-icon">&#127970;</div>
+              <div class="series-cover-title">ادھار کی سلطنت</div>
+              <div class="series-cover-sub">پوڈ کاسٹ سیریز</div>
+            </div>
+            <div class="series-info">
+              <div class="series-label">نئی سیریز</div>
+              <h2 class="series-title">ادھار کی سلطنت</h2>
+              <p class="series-desc">خودمختار قرض، آئی ایم ایف کی شرائط، پیٹرو ڈالرز، اور متبادل کی تلاش۔ قومیں کیسے قرض لیتی ہیں، کس کو فائدہ ہوتا ہے، اور کیا اسلامی معاشیات ایک مختلف راستہ پیش کر سکتی ہے؟</p>
+              <div class="series-meta">
+                <span class="series-meta-item">&#127911; 6 اقساط</span>
+                <span class="series-meta-item">&#9201; ~18 منٹ فی قسط</span>
+                <span class="series-meta-item">میزبان: طارق اور عمیرہ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episode List -->
+          <div class="episode-list">
+
+            <!-- BE Episode 1 -->
+            <div class="episode-row" data-episode="be-1">
+              <span class="episode-row-number">01</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">جب قومیں قرض لیتی ہیں</div>
+                <div class="episode-row-subtitle">خودمختار قرض کیسے کام کرتا ہے، ممالک کیوں قرض لیتے ہیں، اور ریاستی سطح کے قرض کے بارے میں اسلامی فقہ کیا کہتی ہے۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-1">
+              <p class="episode-expanded-desc">
+                دنیا کا ہر ملک قرض لیتا ہے۔ امریکہ پر 34 ٹریلین ڈالر سے زیادہ قرض ہے۔ جاپان کا قرض سے جی ڈی پی کا تناسب 260 فیصد سے تجاوز کرتا ہے۔ لیکن کیا خودمختار قرض بنیادی طور پر ذاتی قرض سے مختلف ہے؟ کلاسیکی اسلامی فقہاء نے بحث کی کہ آیا خلیفہ امت کی طرف سے قرض لے سکتا ہے، اور کن شرائط کے تحت۔ ابو یوسف نے دلیل دی کہ بیت المال کا انتظام انہی اصولوں سے ہونا چاہیے جو انفرادی مالیات کو کنٹرول کرتے ہیں: نہ ربا، نہ غرر، نہ آنے والی نسلوں پر ایسے بوجھ ڈالنا جن کی انہوں نے اجازت نہیں دی۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">خودمختار قرض</span>
+                <span class="topic-tag">بیت المال</span>
+                <span class="topic-tag">ابو یوسف</span>
+                <span class="topic-tag">ٹریژری بانڈز</span>
+                <span class="topic-tag">قومی قرض</span>
+                <span class="topic-tag">بین نسلی انصاف</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/be-ep01-when-nations-borrow.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 2 -->
+            <div class="episode-row" data-episode="be-2">
+              <span class="episode-row-number">02</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">قرض کا جال</div>
+                <div class="episode-row-subtitle">عثمانی مراعات سے آئی ایم ایف کی ساختی ایڈجسٹمنٹ تک: قرض دینا کیسے سلطنت بنتا ہے۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">19 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-2">
+              <p class="episode-expanded-desc">
+                1881 میں یورپی قرض خواہوں نے عثمانی مالیات پر قبضہ کر لیا۔ ایک صدی بعد، آئی ایم ایف نے درجنوں مسلم اکثریتی ممالک پر ساختی ایڈجسٹمنٹ پروگرام لاگو کیے: ریاستی اثاثے نجکاری کرو، سبسڈیز کم کرو، بازار غیر ملکی سرمائے کے لیے کھولو۔ مصر، پاکستان، انڈونیشیا، اور نائیجیریا سب نے ایسے ادوار کا تجربہ کیا جہاں ہنگامی قرضوں کے ساتھ ایسی شرائط آئیں جنہوں نے انحصار کو گہرا کیا۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">آئی ایم ایف ساختی ایڈجسٹمنٹ</span>
+                <span class="topic-tag">قرض سفارتکاری</span>
+                <span class="topic-tag">عثمانی قرض انتظامیہ</span>
+                <span class="topic-tag">مشروط قرض</span>
+                <span class="topic-tag">اقتصادی خودمختاری</span>
+                <span class="topic-tag">نو نوآبادیات</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/be-ep02-the-debt-trap.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 3 -->
+            <div class="episode-row" data-episode="be-3">
+              <span class="episode-row-number">03</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">پیٹرو ڈالرز اور تضاد</div>
+                <div class="episode-row-subtitle">تیل سے مالامال مسلم ممالک مغربی قرض بازاروں میں دولت لگاتے ہیں جبکہ ان کی اپنی آبادی زندہ رہنے کے لیے قرض لیتی ہے۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-3">
+              <p class="episode-expanded-desc">
+                1973 کی تیل کی پابندی کے بعد خلیجی ریاستوں نے بے مثال دولت جمع کی۔ لیکن آزاد مالیاتی نظام بنانے کے بجائے، زیادہ تر دولت امریکی ٹریژری بانڈز اور مغربی بینکوں میں لگائی گئی، وہی سود پر مبنی آلات جو اسلامی قانون حرام قرار دیتا ہے۔ دریں اثنا، غیر تیل والے مسلم اکثریتی ممالک نے انہی مغربی بینکوں سے تجارتی شرحوں پر قرض لیا۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">پیٹرو ڈالر نظام</span>
+                <span class="topic-tag">سوورن ویلتھ فنڈز</span>
+                <span class="topic-tag">خلیجی معیشتیں</span>
+                <span class="topic-tag">تیل کی پابندی 1973</span>
+                <span class="topic-tag">سرمایہ ری سائیکلنگ</span>
+                <span class="topic-tag">مسلم سرمایہ بازار</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/be-ep03-petrodollars-and-paradox.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 4 -->
+            <div class="episode-row" data-episode="be-4">
+              <span class="episode-row-number">04</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">زکوٰۃ کا متبادل</div>
+                <div class="episode-row-subtitle">کیا ایک فعال زکوٰۃ نظام خودمختار قرض کو کم کر سکتا ہے اور مالیاتی پالیسی کو تبدیل کر سکتا ہے؟</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-4">
+              <p class="episode-expanded-desc">
+                زکوٰۃ اسلام کا تیسرا ستون ہے: کم از کم حد سے زیادہ اثاثوں پر سالانہ 2.5 فیصد لازمی ٹیکس۔ عمر بن عبدالعزیز کی خلافت میں زکوٰۃ کی وصولی اتنی مؤثر تھی کہ سلطنت کے بعض حصوں میں مستحقین ہی نہیں بچے۔ جدید اندازوں کے مطابق اگر عالم اسلام میں زکوٰۃ صحیح طریقے سے جمع کی جائے تو سالانہ 200 سے 600 ارب ڈالر پیدا ہو سکتے ہیں، جو غیر ملکی قرض کے بغیر شدید غربت ختم کرنے کے لیے کافی ہے۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">زکوٰۃ وصولی</span>
+                <span class="topic-tag">مالیاتی پالیسی</span>
+                <span class="topic-tag">عمر بن عبدالعزیز</span>
+                <span class="topic-tag">دولت کی تقسیم</span>
+                <span class="topic-tag">غربت کا خاتمہ</span>
+                <span class="topic-tag">قرض کا متبادل</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/be-ep04-the-zakat-alternative.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 5 -->
+            <div class="episode-row" data-episode="be-5">
+              <span class="episode-row-number">05</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">خودمختار صکوک</div>
+                <div class="episode-row-subtitle">ملائیشیا، برطانیہ، اور ہانگ کانگ اسلامی خودمختار بانڈز کے ساتھ کیسے تجربات کر رہے ہیں۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-5">
+              <p class="episode-expanded-desc">
+                2014 میں برطانیہ پہلا مغربی ملک بنا جس نے خودمختار صکوک جاری کیے، سرکاری جائیداد کی پشت پناہی سے 200 ملین پاؤنڈ اکٹھے کیے۔ ملائیشیا نے دنیا کا سب سے بڑا صکوک بازار بنایا ہے جس میں 200 ارب ڈالر سے زیادہ کے بقایا جاری ہیں۔ خودمختار صکوک روایتی بانڈز کا حقیقی متبادل ہیں: سود پر رقم ادھار دینے کے بجائے سرمایہ کار حقیقی سرکاری اثاستوں میں حصہ خریدتے ہیں۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">خودمختار صکوک</span>
+                <span class="topic-tag">ملائیشیا صکوک بازار</span>
+                <span class="topic-tag">برطانوی صکوک</span>
+                <span class="topic-tag">اثاستہ پشت مالیات</span>
+                <span class="topic-tag">بانڈ متبادل</span>
+                <span class="topic-tag">اسلامی سرمایہ بازار</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/be-ep05-sukuk-for-sovereigns.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 6 -->
+            <div class="episode-row" data-episode="be-6">
+              <span class="episode-row-number">06</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">ڈیفالٹ کے بعد</div>
+                <div class="episode-row-subtitle">قرض معافی، ناجائز قرض، اور کیا اسلامی اصول زیادہ مقروض ممالک کو نئی شروعات دے سکتے ہیں۔</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 منٹ</span>
+                <span class="episode-row-status status-available">&#9654; سنیں</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-6">
+              <p class="episode-expanded-desc">
+                جب کوئی ملک واقعی ادائیگی نہیں کر سکتا تو کیا ہوتا ہے؟ ارجنٹائن نو بار ڈیفالٹ کر چکا ہے۔ لبنان کا قرض سے جی ڈی پی تناسب معیشت کے گرنے سے پہلے 150 فیصد تک پہنچ گیا۔ جدید نظام میں چند ہی راستے ہیں: کفایت شعاری، تنظیم نو، یا تباہی۔ لیکن اسلامی روایت میں ایک مختلف تصور ہے۔ قرآن واضح طور پر قرض خواہوں کو حوصلہ افزائی کرتا ہے کہ جب قرض دار مشکل میں ہوں تو قرض معاف کریں۔ ناجائز قرض کا تصور، کہ آبادیوں کو آمروں کے لیے گئے قرضے نہیں چکانے چاہییں، اسلامی انصاف کے اصولوں سے گہری مطابقت رکھتا ہے۔
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">خودمختار ڈیفالٹ</span>
+                <span class="topic-tag">قرض معافی</span>
+                <span class="topic-tag">ناجائز قرض</span>
+                <span class="topic-tag">قرض منسوخی</span>
+                <span class="topic-tag">قرآنی قرض معافی</span>
+                <span class="topic-tag">اقتصادی انصاف</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="../podcast/audio/be-ep06-after-the-default.m4a" type="audio/mp4">
+                  آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
+                </audio>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Part III: Coming Soon placeholder -->
         <div class="coming-soon-block fade-up">
-          <h3>مزید سیریز آرہی ہے</h3>
-          <p>آنے والی پوڈ کاسٹ سیریز اسلامی مالیاتی نظریہ، ملحوظات کے معاشی بحث، اور ملک کی مخصوص تجزیہ کو دریافت کریں گی۔</p>
+          <h3>حصہ سوم میں مزید</h3>
+          <p>اس حصے میں آنے والی سیریز مالیاتی پالیسی، وقف بطور ادارہ جاتی معاشیات، اور تہذیبوں کے تقابلی معاشی نظام کا جائزہ لیں گی۔</p>
+        </div>
+
+        <!-- ═══ حصہ چہارم: عصری بحث ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">حصہ چہارم</div>
+          <div class="curriculum-part-title">عصری بحث</div>
+          <div class="curriculum-part-desc">آج ہم کہاں ہیں: اسلامی بینکاری، فنٹیک، جغرافیائی سیاست، جنگی معیشتیں، ماحولیاتی معاشیات، اور مسلم اکثریتی ممالک میں ترقی کے چیلنجز۔</div>
+        </div>
+
+        <div class="coming-soon-block fade-up">
+          <h3>جلد آرہا ہے</h3>
+          <p>منصوبہ بند سیریز: آج کی اسلامی بینکاری اور شکل بمقابلہ جوہر کی بحث؛ جغرافیائی سیاست، تنازعات، اور جنگ کے دوران معیشتیں کیسے کام کرتی ہیں؛ ماحولیاتی معاشیات اور اسلامی نقطہ نظر سے زمین کی خلافت؛ فنٹیک، کرپٹو، اور ڈیجیٹل کرنسیاں؛ اور مسلم اکثریتی ممالک میں اقتصادی ترقی۔</p>
+        </div>
+
+        <!-- ═══ حصہ پنجم: نقشہ راہ ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">حصہ پنجم</div>
+          <div class="curriculum-part-title">نقشہ راہ</div>
+          <div class="curriculum-part-desc">ہم کہاں جا رہے ہیں: ایک متحد اسلامی معاشی نظام کا مستقبل کا وژن، تاریخی حکمت، جدید شراکت، اور مستقبل کے لیے عملی منصوبہ۔</div>
+        </div>
+
+        <div class="coming-soon-block fade-up">
+          <h3>جلد آرہا ہے</h3>
+          <p>پورے نصاب کا اختتام۔ حصہ اول سے چہارم تک ہر اصول، تاریخی سبق، اور عصری تجربے کی بنیاد پر، یہ حصہ دریافت کرے گا کہ ایک مربوط، متحد اسلامی معاشی نظام کیسا ہو سکتا ہے، اور اسے تعمیر کرنے کے عملی اقدامات۔</p>
         </div>
 
       </div>

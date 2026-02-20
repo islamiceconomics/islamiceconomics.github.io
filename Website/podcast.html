@@ -71,6 +71,40 @@
       "@type": "Organization",
       "name": "Islamic Economics"
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "The Weight of Debt",
+    "url": "https://islamiceconomics.github.io/podcast.html",
+    "description": "From debt slavery in pre-Islamic Arabia to trillion-dollar sukuk markets, trace how Islamic civilization transformed the most dangerous financial instrument in human history.",
+    "inLanguage": "en",
+    "webFeed": "https://islamiceconomics.github.io/podcast.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Islamic Economics"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Islamic Economics"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "The Borrowed Empire",
+    "url": "https://islamiceconomics.github.io/podcast.html",
+    "description": "Sovereign debt, IMF conditionality, petrodollars, and the search for alternatives. How do nations borrow, who benefits, and can Islamic economics offer a different path?",
+    "inLanguage": "en",
+    "webFeed": "https://islamiceconomics.github.io/podcast.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Islamic Economics"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Islamic Economics"
+    }
   }
 ]
   </script>
@@ -121,6 +155,39 @@
     /* Media sections */
     .media-tab { display: none; }
     .media-tab.active { display: block; }
+
+    /* ── Curriculum Part Headers ── */
+    .curriculum-part {
+      margin: 2.5rem 0 1.5rem;
+      padding: 0;
+    }
+    .curriculum-part:first-child {
+      margin-top: 0.5rem;
+    }
+    .curriculum-part-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-accent);
+      margin-bottom: 0.35rem;
+    }
+    .curriculum-part-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.3rem;
+    }
+    .curriculum-part-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .curriculum-part + .series-card {
+      margin-top: 0;
+    }
 
     /* ── Series Card ── */
     .series-card {
@@ -623,7 +690,7 @@
 
       <!-- Media Type Tabs -->
       <div class="media-nav">
-        <button class="media-nav-btn active" data-tab="podcasts">Podcasts <span class="media-nav-count">18</span></button>
+        <button class="media-nav-btn active" data-tab="podcasts">Podcasts <span class="media-nav-count">30</span></button>
         <button class="media-nav-btn" data-tab="videos">Videos <span class="media-nav-count">1</span></button>
         <button class="media-nav-btn" data-tab="documentaries">Documentaries <span class="media-nav-count">0</span></button>
       </div>
@@ -632,6 +699,13 @@
       <!-- PODCASTS TAB                                -->
       <!-- ═══════════════════════════════════════════ -->
       <div class="media-tab active" id="tab-podcasts">
+
+        <!-- ═══ PART I: FOUNDATIONS ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">Part I</div>
+          <div class="curriculum-part-title">Foundations</div>
+          <div class="curriculum-part-desc">The big picture: 1,500 years of Islamic economic thought in a single narrative arc.</div>
+        </div>
 
         <!-- Series: Historical Islamic Economics -->
         <div class="series-card fade-up">
@@ -874,6 +948,13 @@
             </div>
 
           </div>
+        </div>
+
+        <!-- ═══ PART II: THE PRINCIPLES ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">Part II</div>
+          <div class="curriculum-part-title">The Principles</div>
+          <div class="curriculum-part-desc">Deep dives into the building blocks of Islamic economic thought: trade, risk, debt, and more.</div>
         </div>
 
         <!-- Series: Written in Trade -->
@@ -1312,10 +1393,477 @@
           </div>
         </div>
 
-        <!-- Future Series Placeholder -->
+        <!-- Series: The Weight of Debt -->
+        <div class="series-card fade-up" style="margin-top:1.5rem;">
+          <div class="series-header">
+            <div class="series-cover" style="background:linear-gradient(135deg, #1a3a5c 0%, #0d1f33 100%);">
+              <div class="series-cover-icon">&#9878;</div>
+              <div class="series-cover-title">The Weight of Debt</div>
+              <div class="series-cover-sub">Podcast Series</div>
+            </div>
+            <div class="series-info">
+              <div class="series-label">New Series</div>
+              <h2 class="series-title">The Weight of Debt</h2>
+              <p class="series-desc">From debt slavery in pre-Islamic Arabia to trillion-dollar sukuk markets, trace how Islamic civilization transformed the most dangerous financial instrument in human history.</p>
+              <div class="series-meta">
+                <span class="series-meta-item">&#127911; 6 episodes</span>
+                <span class="series-meta-item">&#9201; ~18 min each</span>
+                <span class="series-meta-item">Hosts: Tariq &amp; Amira</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episode List -->
+          <div class="episode-list">
+
+            <!-- WD Episode 1 -->
+            <div class="episode-row" data-episode="wd-1">
+              <span class="episode-row-number">01</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Before the Revelation</div>
+                <div class="episode-row-subtitle">Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-1">
+              <p class="episode-expanded-desc">
+                In pre-Islamic Arabia, debt was a weapon. A man who couldn't repay could be enslaved, his family taken as collateral, his debt doubled at every missed payment. The practice of riba al-jahiliyyah, literally "the usury of the Age of Ignorance," meant that a borrowed camel could become two, then four, then eight, compounding until the borrower lost everything. When the Quran was revealed, it didn't just ban interest; it declared war on an entire system of financial oppression. This episode traces the debt practices of pre-Islamic Arabia, the revolutionary changes introduced by the Quran and Sunnah, and how the Prophet Muhammad personally forgave debts and taught that relieving a debtor's burden was among the noblest acts a Muslim could perform.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Riba al-Jahiliyyah</span>
+                <span class="topic-tag">Debt Slavery</span>
+                <span class="topic-tag">Pre-Islamic Arabia</span>
+                <span class="topic-tag">Quranic Reform</span>
+                <span class="topic-tag">Debt Forgiveness</span>
+                <span class="topic-tag">Social Justice</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/wd-ep01-before-the-revelation.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 2 -->
+            <div class="episode-row" data-episode="wd-2">
+              <span class="episode-row-number">02</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Longest Verse</div>
+                <div class="episode-row-subtitle">Ayat al-Dayn: the Quran's most detailed verse is about debt. What does that tell us?</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-2">
+              <p class="episode-expanded-desc">
+                Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse in the entire scripture. Not a verse about prayer, pilgrimage, or fasting, but about how to write a debt contract. It mandates written documentation, witnesses, and the protection of both creditor and debtor. Scholars have marveled at this for centuries: why would God dedicate the most detailed verse in His final revelation to commercial transactions? This episode unpacks Ayat al-Dayn word by word, explores what classical scholars like al-Jassas and al-Qurtubi said about its implications, and argues that Islam treats financial justice not as a footnote to faith but as its foundation.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Ayat al-Dayn (2:282)</span>
+                <span class="topic-tag">Debt Contracts</span>
+                <span class="topic-tag">Written Documentation</span>
+                <span class="topic-tag">Al-Jassas</span>
+                <span class="topic-tag">Al-Qurtubi</span>
+                <span class="topic-tag">Financial Justice</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/wd-ep02-the-longest-verse.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 3 -->
+            <div class="episode-row" data-episode="wd-3">
+              <span class="episode-row-number">03</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Scholars' Line</div>
+                <div class="episode-row-subtitle">How the four madhabs drew the boundary between permissible credit sales and forbidden riba.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">19 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-3">
+              <p class="episode-expanded-desc">
+                The Quran bans riba. But what exactly is riba? Is a markup on a deferred sale the same as charging interest on a loan? The Hanafi school allowed bay' bi-thaman ajil, selling goods on credit at a higher price, while drawing a sharp line against lending money for a return. The Hanbalis were stricter, suspecting any time-value premium of concealing riba. The Shafi'is focused on the six commodities mentioned in the hadith. And the Malikis developed the concept of sadd al-dhara'i, blocking the means to forbidden ends. This episode walks through the classical debates on where legitimate commerce ends and prohibited interest begins, showing how these 8th-century discussions still define Islamic banking today.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Four Madhabs</span>
+                <span class="topic-tag">Riba al-Fadl</span>
+                <span class="topic-tag">Riba al-Nasiah</span>
+                <span class="topic-tag">Bay' bi-Thaman Ajil</span>
+                <span class="topic-tag">Sadd al-Dhara'i</span>
+                <span class="topic-tag">Classical Fiqh</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/wd-ep03-the-scholars-line.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 4 -->
+            <div class="episode-row" data-episode="wd-4">
+              <span class="episode-row-number">04</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Ottoman Experiment</div>
+                <div class="episode-row-subtitle">Cash waqfs, state borrowing, and how European debt colonized the Ottoman Empire from within.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-4">
+              <p class="episode-expanded-desc">
+                For centuries, the Ottoman Empire financed itself without sovereign debt. Cash waqfs lent money to merchants at regulated rates, the state funded wars through taxation and conquest, and the empire functioned as the world's largest economy without a bond market. Then came the Crimean War. In 1854, the Ottomans issued their first foreign loan from European banks. Within two decades, debt payments consumed over half the state's revenue. By 1881, European creditors had established the Ottoman Public Debt Administration, effectively controlling the empire's finances. This episode traces how the transition from Islamic financial principles to European-style sovereign debt contributed to the collapse of the last great Islamic empire.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Cash Waqfs</span>
+                <span class="topic-tag">Ottoman Finance</span>
+                <span class="topic-tag">Sovereign Debt</span>
+                <span class="topic-tag">Crimean War</span>
+                <span class="topic-tag">Debt Administration</span>
+                <span class="topic-tag">Economic Colonization</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/wd-ep04-the-ottoman-experiment.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 5 -->
+            <div class="episode-row" data-episode="wd-5">
+              <span class="episode-row-number">05</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Interest in Disguise</div>
+                <div class="episode-row-subtitle">Tawarruq, hiyal, and the uncomfortable question: do Islamic banks truly avoid riba?</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">19 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-5">
+              <p class="episode-expanded-desc">
+                A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer immediately sells the metal back to the market at a loss, and walks out with cash. The metal never moved. No one wanted the metal. The entire transaction existed to disguise what was, economically, an interest-bearing loan. This is tawarruq, and it accounts for a significant portion of Islamic banking transactions globally. This episode confronts the most uncomfortable debate in modern Islamic finance: when legal tricks (hiyal) replicate the economic substance of riba, have we honored the spirit of the prohibition or merely its letter? Scholars like Mufti Taqi Usmani have called organized tawarruq impermissible, yet the practice continues to grow.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Tawarruq</span>
+                <span class="topic-tag">Hiyal (Legal Tricks)</span>
+                <span class="topic-tag">Murabaha</span>
+                <span class="topic-tag">Mufti Taqi Usmani</span>
+                <span class="topic-tag">Form vs. Substance</span>
+                <span class="topic-tag">Islamic Banking Critique</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/wd-ep05-interest-in-disguise.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- WD Episode 6 -->
+            <div class="episode-row" data-episode="wd-6">
+              <span class="episode-row-number">06</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Debt Without Chains</div>
+                <div class="episode-row-subtitle">Sukuk, qard hasan, and reimagining what debt could look like in the 21st century.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-wd-6">
+              <p class="episode-expanded-desc">
+                What if debt didn't have to be a trap? Qard hasan, the beautiful loan, is lending with no expectation of return beyond the principal, considered one of the most virtuous acts in Islam. Sukuk transform debt into shared ownership of real assets. Diminishing musharakah lets homebuyers gradually purchase their house from the bank as co-owner rather than as debtor. This final episode looks at the alternatives, from microfinance experiments in Bangladesh to sovereign sukuk issued by the UK and Hong Kong, and asks whether Islamic principles can offer a way out of the global debt crisis. With worldwide debt exceeding $300 trillion, the question isn't academic. The 7th-century insight that debt should serve people rather than enslave them may be the most radical financial idea the modern world needs.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Sukuk</span>
+                <span class="topic-tag">Qard Hasan</span>
+                <span class="topic-tag">Diminishing Musharakah</span>
+                <span class="topic-tag">Islamic Microfinance</span>
+                <span class="topic-tag">Global Debt Crisis</span>
+                <span class="topic-tag">Financial Liberation</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/wd-ep06-debt-without-chains.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ═══ PART III: THE SYSTEMS ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">Part III</div>
+          <div class="curriculum-part-title">The Systems</div>
+          <div class="curriculum-part-desc">Scaling up: sovereign finance, monetary policy, and macroeconomics through an Islamic lens.</div>
+        </div>
+
+        <!-- Series: The Borrowed Empire -->
+        <div class="series-card fade-up" style="margin-top:1.5rem;">
+          <div class="series-header">
+            <div class="series-cover" style="background:linear-gradient(135deg, #4a1942 0%, #1a0a1a 100%);">
+              <div class="series-cover-icon">&#127970;</div>
+              <div class="series-cover-title">The Borrowed Empire</div>
+              <div class="series-cover-sub">Podcast Series</div>
+            </div>
+            <div class="series-info">
+              <div class="series-label">New Series</div>
+              <h2 class="series-title">The Borrowed Empire</h2>
+              <p class="series-desc">Sovereign debt, IMF conditionality, petrodollars, and the search for alternatives. How do nations borrow, who benefits, and can Islamic economics offer a different path?</p>
+              <div class="series-meta">
+                <span class="series-meta-item">&#127911; 6 episodes</span>
+                <span class="series-meta-item">&#9201; ~18 min each</span>
+                <span class="series-meta-item">Hosts: Tariq &amp; Amira</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Episode List -->
+          <div class="episode-list">
+
+            <!-- BE Episode 1 -->
+            <div class="episode-row" data-episode="be-1">
+              <span class="episode-row-number">01</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">When Nations Borrow</div>
+                <div class="episode-row-subtitle">How sovereign debt works, why countries borrow, and what Islamic jurisprudence says about state-level indebtedness.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-1">
+              <p class="episode-expanded-desc">
+                Every nation on earth borrows money. The United States owes over $34 trillion. Japan's debt-to-GDP ratio exceeds 260%. But is sovereign debt fundamentally different from personal debt? Classical Islamic jurists debated whether a caliph could borrow on behalf of the ummah, and under what conditions. Abu Yusuf argued that the state treasury (bayt al-mal) should be managed with the same principles that govern individual finances: no riba, no gharar, no burdening future generations with obligations they didn't consent to. This episode explains how sovereign debt works in the modern system, from treasury bonds to central bank operations, and then examines what the earliest Islamic economists would say about a world where every nation is a debtor.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Sovereign Debt</span>
+                <span class="topic-tag">Bayt al-Mal</span>
+                <span class="topic-tag">Abu Yusuf</span>
+                <span class="topic-tag">Treasury Bonds</span>
+                <span class="topic-tag">National Borrowing</span>
+                <span class="topic-tag">Intergenerational Justice</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/be-ep01-when-nations-borrow.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 2 -->
+            <div class="episode-row" data-episode="be-2">
+              <span class="episode-row-number">02</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Debt Trap</div>
+                <div class="episode-row-subtitle">From Ottoman concessions to IMF structural adjustment: how lending becomes empire.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">19 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-2">
+              <p class="episode-expanded-desc">
+                In 1881, European creditors took control of Ottoman finances. A century later, the IMF imposed structural adjustment programs on dozens of Muslim-majority nations: privatize state assets, cut subsidies, open markets to foreign capital. The pattern is strikingly similar. Egypt, Pakistan, Indonesia, and Nigeria have all experienced cycles where emergency loans came with conditions that deepened dependency. This episode traces the lineage from colonial debt diplomacy to modern conditionality lending, examines specific case studies of how structural adjustment reshaped Muslim-majority economies, and asks whether the concept of riba extends beyond interest rates to encompass the coercive power dynamics embedded in sovereign lending.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">IMF Structural Adjustment</span>
+                <span class="topic-tag">Debt Diplomacy</span>
+                <span class="topic-tag">Ottoman Debt Administration</span>
+                <span class="topic-tag">Conditionality Lending</span>
+                <span class="topic-tag">Economic Sovereignty</span>
+                <span class="topic-tag">Neo-colonialism</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/be-ep02-the-debt-trap.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 3 -->
+            <div class="episode-row" data-episode="be-3">
+              <span class="episode-row-number">03</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Petrodollars and Paradox</div>
+                <div class="episode-row-subtitle">Oil-rich Muslim nations recycling wealth through Western debt markets while their own populations borrow to survive.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-3">
+              <p class="episode-expanded-desc">
+                After the 1973 oil embargo, Gulf states accumulated unprecedented wealth. But instead of building independent financial systems, much of that wealth was recycled into US Treasury bonds and Western banks, the same interest-bearing instruments that Islamic law prohibits. Meanwhile, non-oil Muslim-majority countries borrowed from those same Western banks at commercial rates, creating a paradox: Muslim capital funding the interest-based system that indebted other Muslim nations. This episode follows the petrodollar cycle from Riyadh to Wall Street and back, examines the sovereign wealth funds of the Gulf, and asks why the world's largest pools of Muslim capital remain overwhelmingly invested in conventional, interest-based instruments.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Petrodollar System</span>
+                <span class="topic-tag">Sovereign Wealth Funds</span>
+                <span class="topic-tag">Gulf Economies</span>
+                <span class="topic-tag">Oil Embargo 1973</span>
+                <span class="topic-tag">Capital Recycling</span>
+                <span class="topic-tag">Muslim Capital Markets</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/be-ep03-petrodollars-and-paradox.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 4 -->
+            <div class="episode-row" data-episode="be-4">
+              <span class="episode-row-number">04</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">The Zakat Alternative</div>
+                <div class="episode-row-subtitle">Could a functioning zakat system reduce sovereign borrowing and transform fiscal policy?</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-4">
+              <p class="episode-expanded-desc">
+                Zakat is the third pillar of Islam: a mandatory 2.5% annual wealth tax on assets above a minimum threshold. During the caliphate of Umar ibn Abd al-Aziz, zakat collection was so effective that there were reportedly no eligible recipients left in parts of the empire. Modern estimates suggest that if zakat were properly collected across the Muslim world, it could generate $200-600 billion annually, enough to eliminate extreme poverty in Muslim-majority countries without a single dollar of foreign debt. This episode examines zakat as macroeconomic policy: how it functions as an automatic stabilizer, redistributive mechanism, and potential alternative to deficit spending. It compares historical zakat systems with modern experiments in Malaysia, Saudi Arabia, and Pakistan, and asks why this powerful fiscal tool remains largely underutilized.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Zakat Collection</span>
+                <span class="topic-tag">Fiscal Policy</span>
+                <span class="topic-tag">Umar ibn Abd al-Aziz</span>
+                <span class="topic-tag">Wealth Redistribution</span>
+                <span class="topic-tag">Poverty Elimination</span>
+                <span class="topic-tag">Alternative to Borrowing</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/be-ep04-the-zakat-alternative.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 5 -->
+            <div class="episode-row" data-episode="be-5">
+              <span class="episode-row-number">05</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">Sukuk for Sovereigns</div>
+                <div class="episode-row-subtitle">How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">18 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-5">
+              <p class="episode-expanded-desc">
+                In 2014, the United Kingdom became the first Western nation to issue a sovereign sukuk, raising 200 million pounds backed by government property. Malaysia has built the world's largest sukuk market, with over $200 billion in outstanding issuances. Hong Kong, Luxembourg, and South Africa have followed. Sovereign sukuk represent a genuine alternative to conventional bonds: instead of lending money at interest, investors buy a share in real government assets and receive returns from the revenue those assets generate. This episode examines how sovereign sukuk work in practice, where they've succeeded and where they've fallen short, the debate over whether they truly differ from conventional bonds in economic substance, and what a fully sukuk-based sovereign debt market might look like.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Sovereign Sukuk</span>
+                <span class="topic-tag">Malaysia Sukuk Market</span>
+                <span class="topic-tag">UK Sovereign Sukuk</span>
+                <span class="topic-tag">Asset-Backed Finance</span>
+                <span class="topic-tag">Bond Alternatives</span>
+                <span class="topic-tag">Islamic Capital Markets</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/be-ep05-sukuk-for-sovereigns.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <!-- BE Episode 6 -->
+            <div class="episode-row" data-episode="be-6">
+              <span class="episode-row-number">06</span>
+              <div class="episode-row-content">
+                <div class="episode-row-title">After the Default</div>
+                <div class="episode-row-subtitle">Debt jubilees, odious debt, and whether Islamic principles offer a reset for over-indebted nations.</div>
+              </div>
+              <div class="episode-row-meta">
+                <span class="episode-row-duration">17 min</span>
+                <span class="episode-row-status status-available">&#9654; Play</span>
+              </div>
+            </div>
+            <div class="episode-expanded" id="ep-be-6">
+              <p class="episode-expanded-desc">
+                What happens when a nation simply cannot pay? Argentina has defaulted nine times. Lebanon's debt-to-GDP hit 150% before its economy collapsed. Sri Lanka defaulted in 2022 after running out of foreign reserves. The modern system offers few options: austerity, restructuring, or collapse. But Islamic tradition has a different concept. The Quran explicitly encourages creditors to forgive debts when debtors face hardship. The concept of odious debt, that populations shouldn't repay loans taken by dictators against their interests, resonates deeply with Islamic principles of justice. This final episode examines historical and modern debt crises, the growing movement for debt jubilees and cancellation, and proposes an Islamic framework for sovereign debt resolution that prioritizes human welfare over creditor returns.
+              </p>
+              <div class="episode-topics">
+                <span class="topic-tag">Sovereign Default</span>
+                <span class="topic-tag">Debt Jubilee</span>
+                <span class="topic-tag">Odious Debt</span>
+                <span class="topic-tag">Debt Cancellation</span>
+                <span class="topic-tag">Quranic Debt Forgiveness</span>
+                <span class="topic-tag">Economic Justice</span>
+              </div>
+              <div class="episode-player">
+                <audio controls preload="metadata">
+                  <source src="podcast/audio/be-ep06-after-the-default.m4a" type="audio/mp4">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Part III: Coming Soon placeholder -->
         <div class="coming-soon-block fade-up">
-          <h3>More Series Coming</h3>
-          <p>Future podcast series will explore Islamic finance theory, contemporary policy debates, and country-specific economic analysis.</p>
+          <h3>More in Part III</h3>
+          <p>Future series in this section will explore monetary policy, waqf as institutional economics, and comparative economic systems across civilizations.</p>
+        </div>
+
+        <!-- ═══ PART IV: THE CONTEMPORARY DEBATE ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">Part IV</div>
+          <div class="curriculum-part-title">The Contemporary Debate</div>
+          <div class="curriculum-part-desc">Where we are now: Islamic banking, fintech, geopolitics, war economies, environmental economics, and development challenges in Muslim-majority countries.</div>
+        </div>
+
+        <div class="coming-soon-block fade-up">
+          <h3>Coming Soon</h3>
+          <p>Planned series include: Islamic banking today and the form-versus-substance debate; geopolitics, conflict, and how economies function during war; environmental economics and stewardship of the earth (khalifah) through an Islamic lens; fintech, crypto, and digital currencies; and economic development in Muslim-majority countries.</p>
+        </div>
+
+        <!-- ═══ PART V: THE BLUEPRINT ═══ -->
+        <div class="curriculum-part fade-up">
+          <div class="curriculum-part-label">Part V</div>
+          <div class="curriculum-part-title">The Blueprint</div>
+          <div class="curriculum-part-desc">Where we are going: a forward-looking vision for a unified Islamic economic model, synthesizing historical wisdom, modern contributions, and a transition roadmap for the future.</div>
+        </div>
+
+        <div class="coming-soon-block fade-up">
+          <h3>Coming Soon</h3>
+          <p>The culmination of the entire curriculum. Drawing on every principle, historical lesson, and contemporary experiment covered in Parts I through IV, this section will explore what a coherent, unified Islamic economic system could look like, and the practical steps to build it.</p>
         </div>
 
       </div>
