@@ -152,11 +152,24 @@
       color: var(--color-primary);
     }
 
-    /* Media sections */
-    .media-tab { display: none; }
-    .media-tab.active { display: block; }
+    /* Media sections — all visible, scroll-based navigation */
+    .media-tab { display: block; }
+    .media-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--color-bg-primary, #fff);
+      padding-top: 0.5rem;
+      padding-bottom: 0;
+      border-bottom: 1px solid var(--color-border, #e5e5e5);
+    }
 
     /* ── Curriculum Part Headers ── */
+    .media-tab + .media-tab {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--color-border, #e5e5e5);
+    }
     .curriculum-part {
       margin: 2.5rem 0 1.5rem;
       padding: 0;
@@ -2024,18 +2037,45 @@ document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
   });
 });
 
-/* Media tab switching */
+/* Media nav: smooth scroll to section on click */
 document.querySelectorAll('.media-nav-btn').forEach(btn => {
   btn.addEventListener('click', function() {
-    // Update active tab button
-    document.querySelectorAll('.media-nav-btn').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-    // Show corresponding tab content
     const tabId = 'tab-' + this.dataset.tab;
-    document.querySelectorAll('.media-tab').forEach(t => t.classList.remove('active'));
-    document.getElementById(tabId).classList.add('active');
+    const target = document.getElementById(tabId);
+    if (target) {
+      const navHeight = document.querySelector('.media-nav').offsetHeight;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   });
 });
+
+/* Scroll spy: highlight active nav button based on scroll position */
+(function() {
+  var ticking = false;
+  var tabs = Array.from(document.querySelectorAll('.media-tab'));
+  var btns = Array.from(document.querySelectorAll('.media-nav-btn'));
+  var nav = document.querySelector('.media-nav');
+  function updateActiveBtn() {
+    var navH = nav ? nav.offsetHeight + 20 : 80;
+    var current = '';
+    for (var i = tabs.length - 1; i >= 0; i--) {
+      if (tabs[i].getBoundingClientRect().top <= navH + 10) {
+        current = tabs[i].id.replace('tab-', '');
+        break;
+      }
+    }
+    if (current) {
+      btns.forEach(function(b) {
+        b.classList.toggle('active', b.dataset.tab === current);
+      });
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(updateActiveBtn); ticking = true; }
+  });
+})();
 
 /* Episode row expand/collapse */
 document.querySelectorAll('.episode-row').forEach(row => {
