@@ -12,7 +12,7 @@
 // 3. Replace 'YOUR_FORMSPREE_ID' below with your form ID
 // Messages will be forwarded to the email you used to sign up.
 // ============================================================================
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjbonlp';
 
 // ============================================================================
 // 1. MOBILE NAVIGATION TOGGLE
