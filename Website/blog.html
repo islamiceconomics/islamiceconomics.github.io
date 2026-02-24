@@ -769,9 +769,9 @@
         { label: 'IDN Growth', value: '5.0%', change: '+0.2pp', dir: 'up' }
       ];
 
-      // Fallback values if APIs fail
+      // Fallback values if APIs fail (updated Feb 2026)
       const fallback = {
-        gold: 2842, brent: 75.20,
+        gold: 5150, brent: 71.00,
         currencies: { MYR: 4.47, PKR: 278, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
       };
 
@@ -822,14 +822,40 @@
         return null;
       }
 
-      // Fetch gold price (free metals API)
+      // Fetch gold price (tries multiple free APIs)
       async function fetchGold() {
+        // Try metals.dev first
         try {
           const resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=toz', { signal: AbortSignal.timeout(5000) });
-          if (!resp.ok) return null;
-          const d = await resp.json();
-          return d.metals && d.metals.gold ? Math.round(d.metals.gold) : null;
-        } catch(e) { return null; }
+          if (resp.ok) {
+            const d = await resp.json();
+            if (d.metals && d.metals.gold && d.metals.gold > 3000) return Math.round(d.metals.gold);
+          }
+        } catch(e) {}
+        // Try goldapi.io public endpoint
+        try {
+          const resp = await fetch('https://www.goldapi.io/api/XAU/USD', {
+            headers: { 'x-access-token': 'goldapi-demo' },
+            signal: AbortSignal.timeout(5000)
+          });
+          if (resp.ok) {
+            const d = await resp.json();
+            if (d.price && d.price > 3000) return Math.round(d.price);
+          }
+        } catch(e) {}
+        return null;
+      }
+
+      // Fetch Brent crude oil price
+      async function fetchOil() {
+        try {
+          const resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=bbl', { signal: AbortSignal.timeout(5000) });
+          if (resp.ok) {
+            const d = await resp.json();
+            if (d.metals && d.metals.brent) return parseFloat(d.metals.brent.toFixed(2));
+          }
+        } catch(e) {}
+        return null;
       }
 
       function buildTickerHTML(items) {
@@ -872,19 +898,25 @@
         let liveItems = [];
         try {
           // Fetch currencies (and optionally yesterday's for % change)
-          const [rates, ydRates, goldPrice] = await Promise.allSettled([
+          const [rates, ydRates, goldPrice, oilPrice] = await Promise.allSettled([
             fetchCurrencies(),
             fetchYesterdayCurrencies(),
-            fetchGold()
+            fetchGold(),
+            fetchOil()
           ]);
 
           const curr = rates.status === 'fulfilled' ? rates.value : fallback.currencies;
           const yd = ydRates.status === 'fulfilled' ? ydRates.value : null;
           const gold = goldPrice.status === 'fulfilled' && goldPrice.value ? goldPrice.value : fallback.gold;
+          const oil = oilPrice.status === 'fulfilled' && oilPrice.value ? oilPrice.value : fallback.brent;
 
           // Gold
           const goldItem = { label: 'Gold', value: '$' + gold.toLocaleString() };
           liveItems.push(goldItem);
+
+          // Brent Crude Oil
+          const oilItem = { label: 'Brent Crude', value: '$' + oil.toFixed(2) };
+          liveItems.push(oilItem);
 
           // OIC Currencies
           const currencyMap = [

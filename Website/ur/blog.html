@@ -803,7 +803,7 @@
       ];
 
       const fallback = {
-        gold: 2842, brent: 75.20,
+        gold: 5150, brent: 71.00,
         currencies: { MYR: 4.47, PKR: 278, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
       };
 
@@ -853,10 +853,32 @@
       async function fetchGold() {
         try {
           var resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=toz', { signal: AbortSignal.timeout(5000) });
-          if (!resp.ok) return null;
-          var d = await resp.json();
-          return d.metals && d.metals.gold ? Math.round(d.metals.gold) : null;
-        } catch(e) { return null; }
+          if (resp.ok) {
+            var d = await resp.json();
+            if (d.metals && d.metals.gold && d.metals.gold > 3000) return Math.round(d.metals.gold);
+          }
+        } catch(e) {}
+        try {
+          var resp = await fetch('https://www.goldapi.io/api/XAU/USD', {
+            headers: { 'x-access-token': 'goldapi-demo' },
+            signal: AbortSignal.timeout(5000)
+          });
+          if (resp.ok) {
+            var d = await resp.json();
+            if (d.price && d.price > 3000) return Math.round(d.price);
+          }
+        } catch(e) {}
+        return null;
+      }
+      async function fetchOil() {
+        try {
+          var resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=bbl', { signal: AbortSignal.timeout(5000) });
+          if (resp.ok) {
+            var d = await resp.json();
+            if (d.metals && d.metals.brent) return parseFloat(d.metals.brent.toFixed(2));
+          }
+        } catch(e) {}
+        return null;
       }
 
       function buildTickerHTML(items) {
@@ -886,12 +908,14 @@
 
         var liveItems = [];
         try {
-          var [rates, ydRates, goldPrice] = await Promise.allSettled([fetchCurrencies(), fetchYesterdayCurrencies(), fetchGold()]);
+          var [rates, ydRates, goldPrice, oilPrice] = await Promise.allSettled([fetchCurrencies(), fetchYesterdayCurrencies(), fetchGold(), fetchOil()]);
           var curr = rates.status === 'fulfilled' ? rates.value : fallback.currencies;
           var yd = ydRates.status === 'fulfilled' ? ydRates.value : null;
           var gold = goldPrice.status === 'fulfilled' && goldPrice.value ? goldPrice.value : fallback.gold;
+          var oil = oilPrice.status === 'fulfilled' && oilPrice.value ? oilPrice.value : fallback.brent;
 
           liveItems.push({ label: 'سونا', value: '$' + gold.toLocaleString() });
+          liveItems.push({ label: 'خام تیل', value: '$' + oil.toFixed(2) });
 
           var currencyMap = [
             { code: 'MYR', label: 'ملیشین رنگٹ', dec: 2 },
