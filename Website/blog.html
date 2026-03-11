@@ -512,25 +512,25 @@
       <!-- Lead Story Section -->
       <div class="tj-lead">
         <div class="tj-lead-main">
-          <div class="tj-kicker">Markets & Finance</div>
-          <h2><a href="blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html">Global Sukuk Markets Reach $718 Billion as Sovereign Issuers Drive Islamic Capital Market Renaissance</a></h2>
-          <p class="tj-lead-excerpt">Market Resilience Amid Global Economic HeadwindsThe global sukuk market has demonstrated remarkable resilience in 2024, with outstanding issuances reaching approximately $718 billion despite...</p>
-          <div class="tj-byline"><strong>Editorial Desk</strong> &middot; Feb 15, 2026 &middot; 8 min read</div>
+          <div class="tj-kicker">Analysis</div>
+          <h2><a href="blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html">The Economic Cost of the Iran War: An Islamic Economics Perspective</a></h2>
+          <p class="tj-lead-excerpt">The February 2026 US-Israeli strikes on Iran triggered the most severe economic disruption in the Middle East since the 1973 oil crisis. Oil surged past $120 a barrel, the Strait of Hormuz was disrupted, and Iran's already battered economy entered free fall. What does Islamic economics say about the economics of war?</p>
+          <div class="tj-byline"><strong>Editorial Desk</strong> &middot; Mar 11, 2026 &middot; 10 min read</div>
         </div>
         <div class="tj-lead-side">
-          
+
+          <div class="tj-lead-side-item">
+            <div class="tj-kicker">Markets & Finance</div>
+            <h3><a href="blog/2026-02-15-global-sukuk-markets-reach-718-billion-as-sovereign-issuers-.html">Global Sukuk Markets Reach $718 Billion as Sovereign Issuers Drive Islamic Capital Market Renaissance</a></h3>
+            <p>The global sukuk market has demonstrated remarkable resilience in 2024, with outstanding issuances reaching approximately $718 billion despite global headwinds.</p>
+          </div>
+
           <div class="tj-lead-side-item">
             <div class="tj-kicker">Markets & Finance</div>
             <h3><a href="blog/2026-02-15-takaful-industry-poised-for-50-billion-milestone-as-global-d.html">Takaful Industry Poised for $50 Billion Milestone as Global Demand for Islamic Insurance Surges</a></h3>
             <p>Market Expansion Accelerates Across Core and Emerging RegionsThe global takaful industry is experiencing unprecedented...</p>
           </div>
-          
-          <div class="tj-lead-side-item">
-            <div class="tj-kicker">Policy & Governance</div>
-            <h3><a href="blog/2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.html">Digital Riyals and Electronic Dinars: How Central Bank Digital Currencies Are Reshaping Islamic Finance</a></h3>
-            <p>The Digital Currency Revolution Reaches the Muslim WorldAs central banks worldwide race to develop digital currencies,...</p>
-          </div>
-          
+
           <div class="tj-lead-side-item">
             <div class="tj-kicker">Analysis</div>
             <h3><a href="blog/2026-02-15-risk-sharing-vs-risk-shifting-what-islamic-finance-gets-right.html">Risk-Sharing vs. Risk-Shifting: What the 2008 Crisis Revealed About Islamic Finance</a></h3>
@@ -764,15 +764,16 @@
       const staticItems = [
         { label: 'Islamic Finance AUM', value: '$4.5T', change: '+11.3%', dir: 'up' },
         { label: 'Global Sukuk', value: '$236B', change: '+8.1%', dir: 'up' },
-        { label: 'SAU GDP Growth', value: '3.2%' },
-        { label: 'TUR Inflation', value: '41.5%', change: '-10.6pp', dir: 'down' },
+        { label: 'IEA Reserve Release', value: '400M bbl', change: 'Historic', dir: 'down' },
+        { label: 'IRN Inflation', value: '48.6%', change: '+6.4pp', dir: 'up' },
+        { label: 'Hormuz Disruption', value: '~20%', change: 'of global oil' },
         { label: 'IDN Growth', value: '5.0%', change: '+0.2pp', dir: 'up' }
       ];
 
       // Fallback values if APIs fail (updated Feb 2026)
       const fallback = {
-        gold: 5150, brent: 71.00,
-        currencies: { MYR: 4.47, PKR: 278, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
+        gold: 5200, brent: 91.00,
+        currencies: { MYR: 4.47, PKR: 279, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
       };
 
       function getCached() {
