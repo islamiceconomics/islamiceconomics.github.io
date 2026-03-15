@@ -42,6 +42,26 @@
           "generated_at": "2026-03-15T04:53:26.358644+00:00",
           "json_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.json",
           "markdown_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.md"
+        },
+        {
+          "buffer": {
+            "instagram": {
+              "reason": "missing BUFFER_PROFILE_ID_INSTAGRAM",
+              "status": "skipped"
+            },
+            "linkedin": {
+              "reason": "missing BUFFER_PROFILE_ID_LINKEDIN",
+              "status": "skipped"
+            },
+            "x": {
+              "buffer_update_id": "69b63f121f4c2933f7bd881a",
+              "status": "queued"
+            }
+          },
+          "campaign_id": "2026-03-15-podcast-ie-s1-ep06-waqf-charity",
+          "generated_at": "2026-03-15T05:09:38.369020+00:00",
+          "json_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.json",
+          "markdown_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.md"
         }
       ]
     }
