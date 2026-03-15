@@ -46,8 +46,7 @@ logger = logging.getLogger(__name__)
 BASE_URL = "https://islamiceconomics.github.io"
 DEFAULT_IMAGE_URL = f"{BASE_URL}/images/islamiceconomy.jpeg"
 PODCAST_COVER_URL = f"{BASE_URL}/podcast/cover-art-series1.jpg"
-BUFFER_CREATE_ENDPOINT = "https://api.bufferapp.com/1/updates/create.json"
-BUFFER_PROFILES_ENDPOINT = "https://api.bufferapp.com/1/profiles.json"
+BUFFER_GRAPHQL_ENDPOINT = "https://api.buffer.com"
 DEFAULT_RECYCLE_AFTER_DAYS = 45
 X_POST_LIMIT = 250
 X_THREAD_LIMIT = 260
@@ -58,6 +57,7 @@ SHORT_VIDEO_WORD_LIMIT = 110
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5-mini")
 OPENAI_MAX_OUTPUT_TOKENS = 2200
 OPENAI_REASONING_EFFORT = os.environ.get("OPENAI_REASONING_EFFORT", "low")
+BUFFER_SCHEDULE_DELAY_MINUTES = max(1, int(os.environ.get("BUFFER_SCHEDULE_DELAY_MINUTES", "5")))
 
 
 @dataclass
@@ -1078,9 +1078,167 @@ def render_markdown(campaign: Dict[str, Any]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
+def buffer_graphql_request(query: str) -> Dict[str, Any]:
     access_token = os.environ.get("BUFFER_ACCESS_TOKEN")
     if not access_token:
+        raise RuntimeError("BUFFER_ACCESS_TOKEN is required for Buffer API access.")
+
+    response = requests.post(
+        BUFFER_GRAPHQL_ENDPOINT,
+        headers={
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json",
+        },
+        json={"query": query},
+        timeout=30,
+    )
+
+    if not response.ok:
+        body = truncate_text(response.text, 400)
+        raise RuntimeError(f"Buffer API error {response.status_code}: {body}")
+
+    payload = response.json()
+    errors = payload.get("errors") or []
+    if errors:
+        message = truncate_text("; ".join(str(error.get("message", error)) for error in errors), 400)
+        raise RuntimeError(f"Buffer GraphQL error: {message}")
+
+    return payload.get("data") or {}
+
+
+def load_buffer_channels() -> List[Dict[str, Any]]:
+    organizations_query = """
+    query GetOrganizations {
+      account {
+        organizations {
+          id
+          name
+        }
+      }
+    }
+    """.strip()
+
+    data = buffer_graphql_request(organizations_query)
+    organizations = data.get("account", {}).get("organizations", [])
+    channels: List[Dict[str, Any]] = []
+
+    for organization in organizations:
+        organization_id = normalize_whitespace(organization.get("id", ""))
+        if not organization_id:
+            continue
+
+        channels_query = f"""
+        query GetChannels {{
+          channels(input: {{
+            organizationId: {json.dumps(organization_id)}
+          }}) {{
+            id
+            name
+            displayName
+            service
+            avatar
+            isQueuePaused
+          }}
+        }}
+        """.strip()
+
+        channel_data = buffer_graphql_request(channels_query)
+        organization_channels = channel_data.get("channels", [])
+        for channel in organization_channels:
+            channels.append(
+                {
+                    "id": normalize_whitespace(channel.get("id", "")),
+                    "name": normalize_whitespace(channel.get("name", "")),
+                    "display_name": normalize_whitespace(channel.get("displayName", "")),
+                    "organization_id": organization_id,
+                    "organization_name": normalize_whitespace(organization.get("name", "")),
+                    "service": normalize_whitespace(channel.get("service", "")).lower(),
+                    "avatar": normalize_whitespace(channel.get("avatar", "")),
+                    "is_queue_paused": bool(channel.get("isQueuePaused")),
+                }
+            )
+
+    return channels
+
+
+def recommended_buffer_secret(service: str) -> Optional[str]:
+    normalized = normalize_whitespace(service).lower()
+    mapping = {
+        "twitter": "BUFFER_PROFILE_ID_X",
+        "x": "BUFFER_PROFILE_ID_X",
+        "linkedin": "BUFFER_PROFILE_ID_LINKEDIN",
+        "instagram": "BUFFER_PROFILE_ID_INSTAGRAM",
+    }
+    return mapping.get(normalized)
+
+
+def next_buffer_due_at() -> str:
+    due_at = datetime.now(timezone.utc) + timedelta(minutes=BUFFER_SCHEDULE_DELAY_MINUTES)
+    return due_at.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "") -> str:
+    base_fields = [
+        f"channelId: {json.dumps(channel_id)}",
+        f"text: {json.dumps(text)}",
+        "schedulingType: automatic",
+        "mode: customSchedule",
+        f"dueAt: {json.dumps(next_buffer_due_at())}",
+    ]
+
+    normalized_asset_url = normalize_whitespace(asset_url)
+    if normalized_asset_url:
+        base_fields.append(
+            "assets: { images: ["
+            + "{ url: "
+            + json.dumps(normalized_asset_url)
+            + " }"
+            + "] }"
+        )
+
+    input_block = "\n          ".join(base_fields)
+    return f"""
+    mutation CreatePost {{
+      createPost(input: {{
+          {input_block}
+      }}) {{
+        __typename
+        ... on PostActionSuccess {{
+          post {{
+            id
+            text
+          }}
+        }}
+        ... on MutationError {{
+          message
+        }}
+      }}
+    }}
+    """.strip()
+
+
+def create_buffer_post(channel_id: str, text: str, asset_url: str = "") -> Dict[str, Any]:
+    mutation = build_buffer_post_mutation(channel_id=channel_id, text=text, asset_url=asset_url)
+    data = buffer_graphql_request(mutation)
+    result = data.get("createPost") or {}
+    typename = result.get("__typename")
+
+    if typename == "PostActionSuccess":
+        post = result.get("post") or {}
+        return {
+            "status": "queued",
+            "buffer_update_id": post.get("id"),
+        }
+
+    message = truncate_text(result.get("message", "Unknown Buffer mutation failure."), 240)
+    return {
+        "status": "error",
+        "body": message,
+    }
+
+
+def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
+    if not os.environ.get("BUFFER_ACCESS_TOKEN"):
         logger.info("BUFFER_ACCESS_TOKEN not set. Skipping Buffer queue.")
         return {"status": "skipped", "reason": "missing BUFFER_ACCESS_TOKEN"}
 
@@ -1108,38 +1266,13 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
             else channels["instagram"]["caption"]
         )
 
-        payload: Dict[str, Any] = {
-            "access_token": access_token,
-            "text": text,
-            "shorten": "false",
-            "top": "false",
-            "now": "false",
-            "profile_ids[]": [profile_id],
-        }
-
-        if channel_name == "instagram":
-            payload["media[photo]"] = source.get("asset_url") or DEFAULT_IMAGE_URL
-        else:
-            payload["media[link]"] = source["url"]
-            payload["media[title]"] = source["title"]
-            payload["media[description]"] = source["summary"]
-            payload["media[photo]"] = source.get("asset_url") or DEFAULT_IMAGE_URL
-
         try:
-            response = requests.post(BUFFER_CREATE_ENDPOINT, data=payload, timeout=30)
-            if response.ok:
-                body = response.json()
-                results[channel_name] = {
-                    "status": "queued",
-                    "buffer_update_id": body.get("updates", [{}])[0].get("id"),
-                }
-            else:
-                results[channel_name] = {
-                    "status": "error",
-                    "status_code": response.status_code,
-                    "body": truncate_text(response.text, 240),
-                }
-        except requests.RequestException as exc:
+            results[channel_name] = create_buffer_post(
+                channel_id=profile_id,
+                text=text,
+                asset_url=source.get("asset_url") or DEFAULT_IMAGE_URL,
+            )
+        except RuntimeError as exc:
             results[channel_name] = {
                 "status": "error",
                 "body": str(exc),
@@ -1149,27 +1282,23 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def list_buffer_profiles() -> None:
-    access_token = os.environ.get("BUFFER_ACCESS_TOKEN")
-    if not access_token:
+    if not os.environ.get("BUFFER_ACCESS_TOKEN"):
         raise SystemExit("BUFFER_ACCESS_TOKEN is required to list Buffer profiles.")
 
-    response = requests.get(
-        BUFFER_PROFILES_ENDPOINT,
-        params={"access_token": access_token},
-        timeout=30,
-    )
-    response.raise_for_status()
-
-    profiles = response.json()
-    output = [
-        {
-            "id": profile.get("id"),
-            "service": profile.get("service"),
-            "service_username": profile.get("service_username"),
-            "formatted_service": profile.get("formatted_service"),
-        }
-        for profile in profiles
-    ]
+    channels = load_buffer_channels()
+    output = []
+    for channel in channels:
+        output.append(
+            {
+                "id": channel.get("id"),
+                "name": channel.get("name"),
+                "display_name": channel.get("display_name"),
+                "service": channel.get("service"),
+                "is_queue_paused": channel.get("is_queue_paused"),
+                "organization_name": channel.get("organization_name"),
+                "recommended_secret": recommended_buffer_secret(channel.get("service", "")),
+            }
+        )
     print(json.dumps(output, indent=2))
 
 
@@ -1247,7 +1376,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--list-buffer-profiles",
         action="store_true",
-        help="Print Buffer profile ids for account setup, then exit.",
+        help="Print Buffer channel ids for account setup, then exit.",
     )
     return parser.parse_args()
 
@@ -1276,18 +1405,25 @@ def main() -> int:
         logger.info("No eligible items found. Nothing to generate.")
         return 0
 
+    publish_failed = False
+
     for item in selected_items:
         logger.info("Generating campaign for %s", item.content_id)
         campaign = build_campaign(item, use_ai=not args.no_ai)
         buffer_result = queue_to_buffer(campaign) if args.publish_buffer else None
         if buffer_result:
             campaign["buffer"] = buffer_result
+            if any(result.get("status") == "error" for result in buffer_result.values()):
+                publish_failed = True
 
         json_path, markdown_path = write_campaign_files(project_root, campaign)
         record_campaign(state, item, campaign, json_path, markdown_path, buffer_result)
         logger.info("Wrote %s and %s", json_path, markdown_path)
 
     save_state(state_path, state)
+    if publish_failed:
+        logger.error("Campaign generation completed, but at least one Buffer publish attempt failed.")
+        return 1
     return 0
 
 

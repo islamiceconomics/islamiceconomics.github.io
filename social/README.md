@@ -29,11 +29,13 @@ Generate a specific piece:
 python3 scripts/generate_social_campaign.py --content-id blog-understanding-riba
 ```
 
-List Buffer profile ids after adding `BUFFER_ACCESS_TOKEN`:
+List Buffer channel ids after adding `BUFFER_ACCESS_TOKEN`:
 
 ```bash
 python3 scripts/generate_social_campaign.py --list-buffer-profiles
 ```
+
+The output will include `service`, `display_name`, and `recommended_secret` so you can map the right Buffer channel id to `BUFFER_PROFILE_ID_X`.
 
 Queue generated text/image posts to Buffer:
 
@@ -65,9 +67,9 @@ By default it:
 
 - `OPENAI_API_KEY`
 - `BUFFER_ACCESS_TOKEN`
-- `BUFFER_PROFILE_ID_X`
-- `BUFFER_PROFILE_ID_LINKEDIN`
-- `BUFFER_PROFILE_ID_INSTAGRAM`
+- `BUFFER_PROFILE_ID_X` (Buffer channel id for your X account)
+- `BUFFER_PROFILE_ID_LINKEDIN` (Buffer channel id for your LinkedIn account)
+- `BUFFER_PROFILE_ID_INSTAGRAM` (Buffer channel id for your Instagram account)
 
 ## Recommended Model
 
