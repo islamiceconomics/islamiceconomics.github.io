@@ -53,7 +53,7 @@ jobs:
       SOCIAL_SOURCE: ${{ github.event.inputs.source || 'auto' }}
       SOCIAL_CONTENT_ID: ${{ github.event.inputs.content_id || '' }}
       SOCIAL_LIMIT: ${{ github.event.inputs.limit || '1' }}
-      SOCIAL_PUBLISH_BUFFER: ${{ github.event.inputs.publish_buffer || 'false' }}
+      SOCIAL_PUBLISH_BUFFER: ${{ github.event_name == 'schedule' && 'true' || github.event.inputs.publish_buffer || 'false' }}
       SOCIAL_RENDER_SHORTS: ${{ github.event.inputs.render_shorts || 'true' }}
       SOCIAL_FORCE: ${{ github.event.inputs.force || 'false' }}
       SOCIAL_RECYCLE_AFTER_DAYS: ${{ github.event.inputs.recycle_after_days || '45' }}
