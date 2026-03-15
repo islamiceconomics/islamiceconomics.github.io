@@ -87,7 +87,6 @@ jobs:
 
       - name: Generate social campaign packs
         id: generate
-        continue-on-error: true
         run: |
           cmd=(python scripts/generate_social_campaign.py \
             --source "$SOCIAL_SOURCE" \
@@ -107,6 +106,24 @@ jobs:
           fi
 
           "${cmd[@]}"
+
+      - name: Show latest campaign buffer result
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          campaigns = sorted(Path("social/campaigns").glob("*.json"), key=lambda path: path.stat().st_mtime)
+          if not campaigns:
+              print("No campaign JSON files found.")
+              raise SystemExit(0)
+
+          latest = campaigns[-1]
+          payload = json.loads(latest.read_text(encoding="utf-8"))
+          print(f"Latest campaign file: {latest}")
+          print(json.dumps(payload.get("buffer", {}), indent=2))
+          PY
 
       - name: Upload social campaign artifact
         if: always()
