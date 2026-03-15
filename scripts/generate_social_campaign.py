@@ -116,6 +116,18 @@ def truncate_words(value: str, max_words: int) -> str:
     return " ".join(words[:max_words]).rstrip(" ,;:-") + "…"
 
 
+def truncate_text_preserve_paragraphs(value: str, max_chars: int) -> str:
+    paragraphs = [normalize_whitespace(part) for part in re.split(r"\n\s*\n", value or "")]
+    paragraphs = [part for part in paragraphs if part]
+    normalized = "\n\n".join(paragraphs).strip()
+    if len(normalized) <= max_chars:
+        return normalized
+
+    cutoff = max(0, max_chars - 1)
+    truncated = normalized[:cutoff].rsplit(" ", 1)[0]
+    return (truncated or normalized[:cutoff]).rstrip(" ,;:-") + "…"
+
+
 def combine_with_tail(head: str, tail: str, limit: int) -> str:
     head = normalize_whitespace(head)
     tail = normalize_whitespace(tail)
@@ -555,17 +567,19 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         f"{item.url} {' '.join(hashtags)}",
         INSTAGRAM_CAPTION_LIMIT,
     )
-    upscrolled_post = combine_with_tail(
+    topic_source = item.category or (item.tags[0] if item.tags else "Islamic economics")
+    topic_suggestion = truncate_words(topic_source, 4)
+    reflective_point = points[1] if len(points) > 1 else points[0]
+    upscrolled_post = truncate_text_preserve_paragraphs(
         (
             f"{item.title}\n\n"
             f"{truncate_text(first_sentence(item.summary), 180)}\n\n"
-            f"One point worth sitting with: {truncate_text(points[0], 110)}"
+            f"What I keep coming back to is this: {truncate_text(reflective_point, 130)}"
         ),
-        f"Full source: {item.url}",
         UPSCROLLED_POST_LIMIT,
     )
     upscrolled_prompt = truncate_text(
-        f"What part of Islamic economics should I unpack next: {truncate_words(item.title, 8)} or another topic?",
+        f"How would you apply this idea in a modern economic institution or community setting?",
         120,
     )
 
@@ -631,6 +645,7 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         "upscrolled": {
             "post": upscrolled_post,
             "discussion_prompt": upscrolled_prompt,
+            "topic_suggestion": topic_suggestion,
         },
         "short_video": {
             "title": truncate_text(f"{item.title} in 45 seconds", 90),
@@ -722,8 +737,9 @@ def social_campaign_schema() -> Dict[str, Any]:
                     "properties": {
                         "post": {"type": "string"},
                         "discussion_prompt": {"type": "string"},
+                        "topic_suggestion": {"type": "string"},
                     },
-                    "required": ["post", "discussion_prompt"],
+                    "required": ["post", "discussion_prompt", "topic_suggestion"],
                 },
                 "short_video": {
                     "type": "object",
@@ -798,7 +814,9 @@ Rules:
 - LinkedIn post must be <= 1400 characters.
 - Instagram caption must be <= 1800 characters.
 - Instagram carousel must contain exactly 5 short slides.
-- UpScrolled post should feel conversational and manually publishable, ideally <= 450 characters.
+- UpScrolled post should feel native to a discussion app: reflective, conversational, and manually publishable, ideally <= 450 characters.
+- UpScrolled post should use 2-3 short paragraphs, avoid sounding promotional, and should not include the raw URL in the body text.
+- UpScrolled should also include one discussion prompt and one short topic suggestion for manual posting.
 - Short-video voiceover should target 35-45 seconds and stay under 110 words.
 - Keep hashtags relevant and capped at 5.
 - Include direct calls to read/listen at the source URL.
@@ -823,7 +841,8 @@ Return this JSON shape:
   }},
   "upscrolled": {{
     "post": "string",
-    "discussion_prompt": "string"
+    "discussion_prompt": "string",
+    "topic_suggestion": "string"
   }},
   "short_video": {{
     "title": "string",
@@ -978,7 +997,7 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
                 "image_url": item.asset_url or DEFAULT_IMAGE_URL,
             },
             "upscrolled": {
-                "post": truncate_text(
+                "post": truncate_text_preserve_paragraphs(
                     upscrolled_payload.get("post") or fallback_channels["upscrolled"]["post"],
                     UPSCROLLED_POST_LIMIT,
                 ),
@@ -987,6 +1006,12 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
                     or fallback_channels["upscrolled"]["discussion_prompt"],
                     120,
                 ),
+                "topic_suggestion": truncate_text(
+                    upscrolled_payload.get("topic_suggestion")
+                    or fallback_channels["upscrolled"]["topic_suggestion"],
+                    40,
+                ),
+                "source_link": item.url,
             },
             "short_video": {
                 "title": truncate_text(
@@ -1094,6 +1119,10 @@ def render_markdown(campaign: Dict[str, Any]) -> str:
             channels["upscrolled"]["post"],
             "",
             f"Discussion prompt: {channels['upscrolled']['discussion_prompt']}",
+            "",
+            f"Suggested topic: {channels['upscrolled']['topic_suggestion']}",
+            "",
+            f"Optional source link: {channels['upscrolled']['source_link']}",
             "",
             "## Short Video",
             "",
