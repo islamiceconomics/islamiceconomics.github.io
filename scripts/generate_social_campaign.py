@@ -1182,7 +1182,7 @@ def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "") 
         f"channelId: {json.dumps(channel_id)}",
         f"text: {json.dumps(text)}",
         "schedulingType: automatic",
-        "mode: customSchedule",
+        "mode: customScheduled",
         f"dueAt: {json.dumps(next_buffer_due_at())}",
     ]
 
