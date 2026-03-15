@@ -3,7 +3,7 @@
 Islamic Economics Automated Newspaper Generator
 
 Fetches news from RSS feeds, filters for Islamic economics relevance,
-generates original articles using Claude API, and publishes to static website.
+generates original articles using the OpenAI API, and publishes to static website.
 """
 
 import os
@@ -20,15 +20,15 @@ import math
 try:
     import feedparser
     from jinja2 import Environment, FileSystemLoader
-    import anthropic
+    from openai import OpenAI
 except ImportError as e:
-    print(f"Error: Missing required package. Please install: feedparser, jinja2, anthropic")
+    print(f"Error: Missing required package. Please install: feedparser, jinja2, openai")
     print(f"Details: {e}")
     sys.exit(1)
 
 from config import (
-    RSS_FEEDS, RELEVANCE_KEYWORDS, CATEGORIES, CLAUDE_MODEL, CLAUDE_MAX_TOKENS,
-    CLAUDE_TEMPERATURE, ARTICLES_PER_DAY, MAX_ARTICLE_AGE_DAYS,
+    RSS_FEEDS, RELEVANCE_KEYWORDS, CATEGORIES, OPENAI_MODEL, OPENAI_MAX_OUTPUT_TOKENS,
+    OPENAI_REASONING_EFFORT, ARTICLES_PER_DAY, MAX_ARTICLE_AGE_DAYS,
     ARTICLE_WORD_COUNT_TARGET, SYSTEM_PROMPTS, TEMPLATE_DIR
 )
 
@@ -37,6 +37,29 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+
+def article_schema() -> Dict:
+    return {
+        "name": "newspaper_article",
+        "schema": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "title": {"type": "string"},
+                "content_html": {"type": "string"},
+                "excerpt": {"type": "string"},
+                "tags": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "minItems": 3,
+                    "maxItems": 7,
+                },
+            },
+            "required": ["title", "content_html", "excerpt", "tags"],
+        },
+        "strict": True,
+    }
 
 def get_project_root() -> Path:
     """Get the project root directory based on script location."""
@@ -229,7 +252,7 @@ def select_top_articles(articles: List[Dict], n: int = 3) -> List[Dict]:
 
 def generate_article(news_item: Dict, category: str) -> Optional[Dict]:
     """
-    Generate original article using Claude API.
+    Generate original article using OpenAI.
 
     Args:
         news_item: Dict with title, summary, source
@@ -238,13 +261,13 @@ def generate_article(news_item: Dict, category: str) -> Optional[Dict]:
     Returns:
         Dict with generated article data or None if generation fails
     """
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    api_key = os.environ.get('OPENAI_API_KEY')
     if not api_key:
-        logger.error("ANTHROPIC_API_KEY environment variable not set")
+        logger.error("OPENAI_API_KEY environment variable not set")
         return None
 
     try:
-        client = anthropic.Anthropic(api_key=api_key)
+        client = OpenAI(api_key=api_key)
 
         system_prompt = SYSTEM_PROMPTS.get(category, SYSTEM_PROMPTS['analysis'])
 
@@ -270,26 +293,31 @@ Format your response as JSON with the following structure:
 
 Do not include any markdown formatting, only HTML."""
 
-        logger.info(f"Calling Claude API to generate article for: {news_item['title']}")
+        logger.info(f"Calling OpenAI API to generate article for: {news_item['title']}")
 
-        message = client.messages.create(
-            model=CLAUDE_MODEL,
-            max_tokens=CLAUDE_MAX_TOKENS,
-            temperature=CLAUDE_TEMPERATURE,
-            system=system_prompt,
-            messages=[
-                {"role": "user", "content": user_message}
-            ]
+        response = client.responses.create(
+            model=os.environ.get('OPENAI_MODEL', OPENAI_MODEL),
+            reasoning={"effort": os.environ.get('OPENAI_REASONING_EFFORT', OPENAI_REASONING_EFFORT)},
+            max_output_tokens=OPENAI_MAX_OUTPUT_TOKENS,
+            input=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_message},
+            ],
+            text={
+                "format": {
+                    "type": "json_schema",
+                    "name": article_schema()["name"],
+                    "schema": article_schema()["schema"],
+                    "strict": True,
+                }
+            },
         )
-
-        response_text = message.content[0].text
-
-        json_match = re.search(r'\{[\s\S]*\}', response_text)
-        if not json_match:
-            logger.error("Could not extract JSON from Claude response")
+        response_text = getattr(response, 'output_text', '') or ''
+        if not response_text:
+            logger.error("Could not extract JSON from OpenAI response")
             return None
 
-        article_data = json.loads(json_match.group())
+        article_data = json.loads(response_text)
 
         article_data['author'] = 'Al-Tijarah Analysis Desk'
         article_data['category'] = CATEGORIES.get(category, category)
@@ -305,10 +333,7 @@ Do not include any markdown formatting, only HTML."""
         return article_data
 
     except json.JSONDecodeError as e:
-        logger.error(f"Failed to parse Claude response as JSON: {e}")
-        return None
-    except anthropic.APIError as e:
-        logger.error(f"Claude API error: {e}")
+        logger.error(f"Failed to parse OpenAI response as JSON: {e}")
         return None
     except Exception as e:
         logger.error(f"Unexpected error generating article: {e}")

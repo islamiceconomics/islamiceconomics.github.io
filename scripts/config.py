@@ -65,10 +65,10 @@ RELEVANCE_KEYWORDS = [
     'Islamic fintech'
 ]
 
-# Claude API Configuration
-CLAUDE_MODEL = 'claude-sonnet-4-5-20250929'
-CLAUDE_MAX_TOKENS = 4000
-CLAUDE_TEMPERATURE = 0.7
+# OpenAI API Configuration
+OPENAI_MODEL = 'gpt-5-mini'
+OPENAI_MAX_OUTPUT_TOKENS = 4000
+OPENAI_REASONING_EFFORT = 'low'
 
 # Article Configuration
 ARTICLES_PER_DAY = 3
@@ -83,7 +83,7 @@ DATA_DIR = 'data'
 BLOG_DIR = 'blog'
 TEMPLATE_DIR = 'templates'
 
-# Category-specific System Prompts for Claude API
+# Category-specific System Prompts for article generation
 SYSTEM_PROMPTS = {
     'markets': """You are an expert Islamic Finance journalist writing for a professional audience.
 Focus on data-driven analysis of Islamic financial markets, including sukuk issuance trends,
