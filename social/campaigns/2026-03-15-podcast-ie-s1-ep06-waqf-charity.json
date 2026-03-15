@@ -1,6 +1,6 @@
 {
   "campaign_id": "2026-03-15-podcast-ie-s1-ep06-waqf-charity",
-  "generated_at": "2026-03-15T04:35:55.622173+00:00",
+  "generated_at": "2026-03-15T04:53:26.358644+00:00",
   "source": {
     "content_id": "podcast-ie-s1-ep06-waqf-charity",
     "kind": "podcast",
@@ -19,70 +19,72 @@
   },
   "channels": {
     "x": {
-      "single_post": "The Waqf: A Thousand Years of Charity: By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals\u2026 https://islamiceconomics.github.io/podcast.html#ep-6",
+      "single_post": "New podcast: \u201cThe Waqf: A Thousand Years of Charity.\u201d How waqf endowments supported hospitals, universities and water systems \u2014 and how colonial dismantling changed that. Listen: https://islamiceconomics.github.io/podcast.html#ep-6 #Waqf\u2026",
       "thread": [
-        "The Waqf: A Thousand Years of Charity in one thread:",
-        "By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments\u2026",
-        "The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle.",
-        "Why it matters: Then European colonial powers systematically dismantled it. Read/listen here: https://islamiceconomics.github.io/podcast.html#ep-6"
+        "Episode 6: \u201cThe Waqf: A Thousand Years of Charity.\u201d This podcast traces how irrevocable endowments funded public goods across centuries. Listen: https://islamiceconomics.github.io/podcast.html#ep-6",
+        "At the Ottoman peak, an estimated one-third of productive land was waqf property, sustaining hospitals, universities, soup kitchens, and water infrastructure for communities.",
+        "The episode discusses major institutions\u2014such as Al-Azhar and Ottoman k\u00fclliyes\u2014and the systematic dismantling of waqf by colonial administrations.",
+        "Measured history and ideas for recovery are explored. Read and listen at the source: https://islamiceconomics.github.io/podcast.html#ep-6 #Waqf #Ottoman"
       ],
       "hashtags": [
+        "#Waqf",
         "#IslamicEconomics",
-        "#IslamicHistory"
+        "#Ottoman"
       ]
     },
     "linkedin": {
-      "post": "The Waqf: A Thousand Years of Charity By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure. Three takeaways: \u2022 By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments\u2026 \u2022 The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle. \u2022 Then European colonial powers systematically dismantled it. Full piece: https://islamiceconomics.github.io/podcast.html#ep-6",
-      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+      "post": "Podcast: \u201cThe Waqf: A Thousand Years of Charity\u201d (Episode 6, Historical Islamic Economics series). The episode examines how waqf endowments\u2014irrevocable charitable trusts\u2014supported public goods: hospitals, universities such as Al-Azhar, soup kitchens, and water infrastructure. At the Ottoman peak, an estimated one-third of productive land was waqf property. The podcast also covers the dismantling of waqf institutions under colonial administrations and considers implications for institutional memory and possible recovery. Read and listen at the source: https://islamiceconomics.github.io/podcast.html#ep-6",
+      "comment_prompt": "What lessons about long-term charitable institutions and public goods provision are most relevant today? Share a brief\u2026"
     },
     "instagram": {
-      "caption": "The Waqf: A Thousand Years of Charity By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure. Swipe through for the core ideas, then go deeper here: https://islamiceconomics.github.io/podcast.html#ep-6 #IslamicEconomics #IslamicHistory",
+      "caption": "New episode: \u201cThe Waqf: A Thousand Years of Charity.\u201d This podcast episode traces how waqf endowments financed hospitals, universities, soup kitchens, and water works \u2014 and how colonial dismantling altered those arrangements. Listen and read at the source: https://islamiceconomics.github.io/podcast.html#ep-6 Measured history and ideas for institutional recovery. #Waqf #IslamicEconomics #Ottoman #Endowments",
       "carousel_slides": [
-        "The Waqf: A Thousand Years of\u2026",
-        "By the Ottoman peak, an estimated one-third of all productive land was waqf property\u2026",
-        "The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle.",
-        "Then European colonial powers systematically dismantled it.",
-        "Read more at IslamicEconomics.org"
+        "Title: The Waqf: A Thousand Years of Charity \u2014 Episode 6",
+        "Fact: At the Ottoman peak, ~1/3 of productive land was waqf property",
+        "Impact: Waqfs funded hospitals, universities (e.g., Al-Azhar), soup kitchens, water\u2026",
+        "Change: Colonial administrations systematically dismantled many waqf structures",
+        "Listen: Read and hear the episode at islamiceconomics.github.io/podcast.html#ep-6"
       ],
-      "reel_caption": "The Waqf: A Thousand Years of Charity in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-6 #IslamicEconomics #IslamicHistory",
-      "cover_text": "The Waqf: A Thousand Years of\u2026",
+      "reel_caption": "How did waqf endowments support public goods for centuries \u2014 and what was lost under colonial rule? Listen: https://islamiceconomics.github.io/podcast.html#ep-6 #Waqf #IslamicEconomics",
+      "cover_text": "The Waqf: A Thousand Years of Charity",
       "image_url": "https://islamiceconomics.github.io/images/yt-thumb-ep06.png"
     },
     "short_video": {
-      "title": "The Waqf: A Thousand Years of Charity in 45 seconds",
-      "hook": "By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable\u2026",
-      "voiceover": "The Waqf: A Thousand Years of Charity. By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure. Here are the key points: By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments\u2026 The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle. Then European colonial powers systematically dismantled it. Read or listen in full at IslamicEconomics.org.",
+      "title": "The Waqf: A Thousand Years of Charity",
+      "hook": "How did one institution fund hospitals, universities, and water systems for centuries?",
+      "voiceover": "Waqf were irrevocable endowments that funded public goods across the Islamic world. At the Ottoman peak, about one\u2011third of productive land was waqf, supporting hospitals, universities like Al\u2011Azhar, soup kitchens and waterworks. Colonial policies later dismantled many waqf structures. Listen to the full episode and read more at islamiceconomics.github.io/podcast.html#ep-6",
       "shot_list": [
         {
-          "time": "0-5s",
-          "visual": "Bold title card with the episode/article headline.",
+          "time": "0:00-0:06",
+          "visual": "Title card with episode name and thumbnail image",
           "on_screen_text": "The Waqf: A Thousand Years of Charity"
         },
         {
-          "time": "5-12s",
-          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
-          "on_screen_text": "By the Ottoman peak, an estimated one-third of all productive\u2026"
+          "time": "0:06-0:15",
+          "visual": "Archival-style image of an Ottoman k\u00fclliye or historic university courtyard",
+          "on_screen_text": "Waqf funded hospitals, universities, waterworks"
         },
         {
-          "time": "12-22s",
-          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
-          "on_screen_text": "The Suleymaniye Complex, Al-Azhar University, and countless others operated for\u2026"
+          "time": "0:15-0:25",
+          "visual": "Illustration or map indicating land held as waqf in the Ottoman period",
+          "on_screen_text": "At peak, ~1/3 of productive land was waqf"
         },
         {
-          "time": "22-34s",
-          "visual": "Highlight why it matters now with contemporary economic visuals.",
-          "on_screen_text": "Then European colonial powers systematically dismantled it."
+          "time": "0:25-0:35",
+          "visual": "Monochrome photo suggesting colonial administration or legal documents",
+          "on_screen_text": "Colonial dismantling changed institutions"
         },
         {
-          "time": "34-45s",
-          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
-          "on_screen_text": "Read more at IslamicEconomics.org"
+          "time": "0:35-0:42",
+          "visual": "End card with podcast URL and call to listen",
+          "on_screen_text": "Listen and read: islamiceconomics.github.io/podcast.html#ep-6"
         }
       ],
-      "caption": "The Waqf: A Thousand Years of Charity. Full source: https://islamiceconomics.github.io/podcast.html#ep-6 #IslamicEconomics #IslamicHistory",
+      "caption": "Episode 6: The Waqf \u2014 listen and read at https://islamiceconomics.github.io/podcast.html#ep-6 #Waqf #IslamicEconomics #Endowments",
       "hashtags": [
+        "#Waqf",
         "#IslamicEconomics",
-        "#IslamicHistory"
+        "#Endowments"
       ],
       "source_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP06-The-Waqf-A-Thousand-Years-of-Charity.mp4"
     }
@@ -90,8 +92,7 @@
   "buffer": {
     "x": {
       "status": "error",
-      "status_code": 500,
-      "body": ""
+      "body": "Buffer API error 400: {\"errors\":[{\"message\":\"Value \\\"customSchedule\\\" does not exist in \\\"ShareMode\\\" enum. Did you mean the enum value \\\"customScheduled\\\"?\",\"locations\":[{\"line\":6,\"column\":17}],\"extensions\":{\"code\":\"GRAPHQL_VALIDATION_FAILED\"}}]}"
     },
     "linkedin": {
       "status": "skipped",

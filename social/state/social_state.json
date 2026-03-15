@@ -22,6 +22,26 @@
           "generated_at": "2026-03-15T04:35:55.622173+00:00",
           "json_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.json",
           "markdown_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.md"
+        },
+        {
+          "buffer": {
+            "instagram": {
+              "reason": "missing BUFFER_PROFILE_ID_INSTAGRAM",
+              "status": "skipped"
+            },
+            "linkedin": {
+              "reason": "missing BUFFER_PROFILE_ID_LINKEDIN",
+              "status": "skipped"
+            },
+            "x": {
+              "body": "Buffer API error 400: {\"errors\":[{\"message\":\"Value \\\"customSchedule\\\" does not exist in \\\"ShareMode\\\" enum. Did you mean the enum value \\\"customScheduled\\\"?\",\"locations\":[{\"line\":6,\"column\":17}],\"extensions\":{\"code\":\"GRAPHQL_VALIDATION_FAILED\"}}]}",
+              "status": "error"
+            }
+          },
+          "campaign_id": "2026-03-15-podcast-ie-s1-ep06-waqf-charity",
+          "generated_at": "2026-03-15T04:53:26.358644+00:00",
+          "json_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.json",
+          "markdown_path": "social/campaigns/2026-03-15-podcast-ie-s1-ep06-waqf-charity.md"
         }
       ]
     }
