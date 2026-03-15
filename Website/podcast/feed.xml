@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel>
+    <title>Islamic Economics Podcast</title>
+    <link>https://islamiceconomics.github.io/</link>
+    <language>en</language>
+    <description>A structured audio curriculum in Islamic economics exploring 1,500 years of economic thought, from the markets of Medina to modern bond markets. Hosted by Tariq and Amira.</description>
+    <copyright>&#xA9; 2025 Islamic Economics</copyright>
+    <managingEditor>islamiceconinfo@gmail.com (Islamic Economics)</managingEditor>
+    <atom:link href="https://islamiceconomics.github.io/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <itunes:author>Islamic Economics</itunes:author>
+    <itunes:owner>
+      <itunes:name>Islamic Economics</itunes:name>
+      <itunes:email>islamiceconinfo@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://islamiceconomics.github.io/images/islamiceconomy.jpeg"/>
+    <itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+    </itunes:category>
+    <itunes:category text="Society &amp; Culture"/>
+    <itunes:category text="History"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:locked>no</podcast:locked>
+
+    <!-- ══════════════════════════════════════ -->
+    <!-- Series 1: Historical Islamic Economics -->
+    <!-- ══════════════════════════════════════ -->
+
+    <item>
+      <title>1. The Forgotten Economists</title>
+      <itunes:title>The Forgotten Economists</itunes:title>
+      <itunes:subtitle>A 1,500-year journey through Islamic economic thought: from Mecca to Ibn Khaldun to the modern revival.</itunes:subtitle>
+      <description>Did you know that a 14th-century Muslim scholar described supply and demand, the division of labor, and the labor theory of value, four hundred years before Adam Smith? In this pilot episode, we trace the entire arc of Islamic economic thought: from the bustling markets of pre-Islamic Mecca and the Prophet Muhammad's career as a merchant, through the golden age of scholars like Abu Yusuf, Al-Ghazali, and Ibn Khaldun, to the colonial disruption and the remarkable modern revival of Islamic finance.</description>
+      <content:encoded><![CDATA[<p>Did you know that a 14th-century Muslim scholar described supply and demand, the division of labor, and the labor theory of value, four hundred years before Adam Smith?</p><p>In this pilot episode, we trace the entire arc of Islamic economic thought: from the bustling markets of pre-Islamic Mecca and the Prophet Muhammad's career as a merchant, through the golden age of scholars like Abu Yusuf, Al-Ghazali, and Ibn Khaldun, to the colonial disruption and the remarkable modern revival of Islamic finance.</p><p><strong>Topics:</strong> Pre-Islamic Trade, Prophet Muhammad (PBUH), Riba &amp; Zakat, Golden Age Scholars, Ibn Khaldun, Trade Networks, Modern Revival</p><p><strong>Series:</strong> Historical Islamic Economics (Part I) &bull; Episode 1 of 6</p>]]></content:encoded>
+      <enclosure url="https://islamiceconomics.github.io/podcast/audio/ep01-islamic-economic-history.m4a" length="21538622" type="audio/mp4"/>
+      <guid isPermaLink="false">ie-s1-ep01-forgotten-economists</guid>
+      <pubDate>Mon, 06 Jan 2025 08:00:00 +0000</pubDate>
+      <itunes:duration>860</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:keywords>islamic economics, ibn khaldun, al-ghazali, abu yusuf, economic history, riba, zakat</itunes:keywords>
+    </item>
+
+    <item>
+      <title>2. The Marketplace of Medina</title>
+      <itunes:title>The Marketplace of Medina</itunes:title>
+      <itunes:subtitle>How the Prophet established the first regulated Islamic marketplace: fair trade, consumer protection, and the hisbah system.</itunes:subtitle>
+      <description>When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was a place where the clever merchant won and ordinary people lost. He transformed it entirely by establishing open access, banning sham bidding and hoarding, and creating the hisbah system of market inspectors. Discover how 7th-century marketplace reforms created the foundation for Islamic commercial law.</description>
+      <content:encoded><![CDATA[<p>When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was a place where the clever merchant won and ordinary people lost. He transformed it entirely by establishing open access, banning sham bidding and hoarding, and creating the hisbah system of market inspectors.</p><p>Discover how 7th-century marketplace reforms created the foundation for Islamic commercial law.</p><p><strong>Topics:</strong> Medina Marketplace, Hisbah System, Najash, Fair Weights, Consumer Protection, Khiyar</p><p><strong>Series:</strong> Historical Islamic Economics (Part I) &bull; Episode 2 of 6</p>]]></content:encoded>
+      <enclosure url="https://islamiceconomics.github.io/podcast/audio/ep02-marketplace-of-medina.m4a" length="25067899" type="audio/mp4"/>
+      <guid isPermaLink="false">ie-s1-ep02-marketplace-medina</guid>
+      <pubDate>Mon, 13 Jan 2025 08:00:00 +0000</pubDate>
+      <itunes:duration>998</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:keywords>medina, marketplace, hisbah, prophet muhammad, consumer protection, islamic commerce</itunes:keywords>
+    </item>
+
+    <item>
+      <title>3. The House of Wisdom</title>
+      <itunes:title>The House of Wisdom</itunes:title>
+      <itunes:subtitle>Baghdad's golden age: cheques, bills of exchange, venture capital, and banking without interest.</itunes:subtitle>
+      <description>In the 9th century, Baghdad had cheques, bills of exchange, international money transfers, and venture capital, all without interest. Explore how Caliph Harun al-Rashid built the world's first multicultural economic hub, how Abu Yusuf revolutionized tax policy, and how the hawala system moved money across continents on trust alone.</description>
+      <content:encoded><![CDATA[<p>In the 9th century, Baghdad had cheques, bills of exchange, international money transfers, and venture capital, all without interest.</p><p>Explore how Caliph Harun al-Rashid built the world's first multicultural economic hub, how Abu Yusuf revolutionized tax policy, and how the hawala system moved money across continents on trust alone.</p><p><strong>Topics:</strong> Abbasid Baghdad, Harun al-Rashid, Abu Yusuf, Sakk &amp; Suftaja, Hawala, Mudaraba</p><p><strong>Series:</strong> Historical Islamic Economics (Part I) &bull; Episode 3 of 6</p>]]></content:encoded>
+      <enclosure url="https://islamiceconomics.github.io/podcast/audio/ep03-house-of-wisdom.m4a" length="21733478" type="audio/mp4"/>
+      <guid isPermaLink="false">ie-s1-ep03-house-of-wisdom</guid>
+      <pubDate>Mon, 20 Jan 2025 08:00:00 +0000</pubDate>
+      <itunes:duration>867</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:keywords>baghdad, abbasid, hawala, mudaraba, sakk, cheque, islamic banking history</itunes:keywords>
+    </item>
+
+    <item>
+      <title>4. Coins of the Caliphate</title>
+      <itunes:title>Coins of the Caliphate</itunes:title>
+      <itunes:subtitle>The gold dinar, silver dirham, and the monetary revolution that unified Islamic commerce across continents.</itunes:subtitle>
+      <description>In 696 CE, Caliph Abd al-Malik ibn Marwan made a bold decision: replace the Byzantine and Persian coins circulating in Islamic lands with purely Islamic coinage. The gold dinar and silver dirham became the most trusted currencies of the medieval world. Discover how Al-Ghazali articulated the principle later known as Gresham's Law, and how Al-Maqrizi conducted one of history's first studies of inflation.</description>
+      <content:encoded><![CDATA[<p>In 696 CE, Caliph Abd al-Malik ibn Marwan made a bold decision: replace the Byzantine and Persian coins circulating in Islamic lands with purely Islamic coinage. The gold dinar and silver dirham became the most trusted currencies of the medieval world.</p><p>Discover how Al-Ghazali articulated the principle later known as Gresham's Law, and how Al-Maqrizi conducted one of history's first studies of inflation.</p><p><strong>Topics:</strong> Gold Dinar, Silver Dirham, Abd al-Malik, Al-Ghazali, Ibn Taymiyyah, Inflation</p><p><strong>Series:</strong> Historical Islamic Economics (Part I) &bull; Episode 4 of 6</p>]]></content:encoded>
+      <enclosure url="https://islamiceconomics.github.io/podcast/audio/ep04-coins-of-the-caliphate.m4a" length="29954576" type="audio/mp4"/>
+      <guid isPermaLink="false">ie-s1-ep04-coins-caliphate</guid>
+      <pubDate>Mon, 27 Jan 2025 08:00:00 +0000</pubDate>
+      <itunes:duration>1197</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:keywords>gold dinar, silver dirham, islamic currency, al-ghazali, monetary policy, inflation</itunes:keywords>
+    </item>
+
+    <item>
+      <title>5. Caravans to Cathay</title>
+      <itunes:title>Caravans to Cathay</itunes:title>
+      <itunes:subtitle>The vast Islamic trade networks, from Andalusia to China, held together by trust, law, and shared faith.</itunes:subtitle>
+      <description>In 1324, Mansa Musa of Mali crossed the Sahara with 60,000 people and so much gold that he crashed the precious metals market in Cairo. His journey was just one moment in a much larger story: the greatest pre-modern trading bloc in history. Journey across the Silk Road, the Indian Ocean dhow routes, and the trans-Saharan gold trade with Ibn Battuta as our guide.</description>
+      <content:encoded><![CDATA[<p>In 1324, Mansa Musa of Mali crossed the Sahara with 60,000 people and so much gold that he crashed the precious metals market in Cairo. His journey was just one moment in a much larger story: the greatest pre-modern trading bloc in history.</p><p>Journey across the Silk Road, the Indian Ocean dhow routes, and the trans-Saharan gold trade with Ibn Battuta as our guide.</p><p><strong>Topics:</strong> Silk Road, Indian Ocean Trade, Mansa Musa, Ibn Battuta, Trans-Saharan Trade, Amana (Trust)</p><p><strong>Series:</strong> Historical Islamic Economics (Part I) &bull; Episode 5 of 6</p>]]></content:encoded>
+      <enclosure url="https://islamiceconomics.github.io/podcast/audio/ep05-caravans-to-cathay.m4a" length="23285678" type="audio/mp4"/>
+      <guid isPermaLink="false">ie-s1-ep05-caravans-cathay</guid>
+      <pubDate>Mon, 03 Feb 2025 08:00:00 +0000</pubDate>
+      <itunes:duration>931</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:keywords>silk road, indian ocean, mansa musa, ibn battuta, trade networks, islamic commerce</itunes:keywords>
+    </item>
+
+    <item>
+      <title>6. The Waqf: A Thousand Years of Charity</title>
+      <itunes:title>The Waqf: A Thousand Years of Charity</itunes:title>
+      <itunes:subtitle>How the Islamic endowment system funded hospitals, universities, and cities for centuries, and what happened when colonialism dismantled it.</itunes:subtitle>
+      <description>By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure. The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle. Then European colonial powers systematically dismantled it. This is the story of institutional memory, loss, and potential recovery.</description>
+      <content:encoded><![CDATA[<p>By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure.</p><p>The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle. Then European colonial powers systematically dismantled it. This is the story of institutional memory, loss, and potential recovery.</p><p><strong>Topics:</strong> Waqf Endowments, Al-Azhar University, Ottoman Empire, Colonial Dismantling, Cash Waqf Revival</p><p><strong>Series:</strong> Historical Islamic Economics (Part I) &bull; Episode 6 of 6</p>]]></content:encoded>
+      <enclosure url="https://islamiceconomics.github.io/podcast/audio/ep06-the-waqf.m4a" length="32036450" type="audio/mp4"/>
+      <guid isPermaLink="false">ie-s1-ep06-waqf-charity</guid>
+      <pubDate>Mon, 10 Feb 2025 08:00:00 +0000</pubDate>
+      <itunes:duration>1279</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:keywords>waqf, endowment, charity, ottoman, al-azhar, colonialism, islamic institutions</itunes:keywords>
+    </item>
+
+  </channel>
+</rss>
