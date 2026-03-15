@@ -1,6 +1,6 @@
 # Social Automation
 
-This folder stores generated campaign packs and state for `X`, `LinkedIn`, `Instagram`, and `short-video`.
+This folder stores generated campaign packs and state for `X`, `LinkedIn`, `Instagram`, `UpScrolled`, and `short-video`.
 
 ## What The Pipeline Does
 
@@ -9,10 +9,12 @@ This folder stores generated campaign packs and state for `X`, `LinkedIn`, `Inst
   - `X`: single post plus 4-post thread
   - `LinkedIn`: one long-form post
   - `Instagram`: caption, carousel slide copy, and reel caption
+  - `UpScrolled`: manual-publish draft plus a discussion prompt
   - `short-video`: title, hook, voiceover, shot list, caption, and a renderable teaser package
 - Uses OpenAI if `OPENAI_API_KEY` is available.
 - Falls back to deterministic templates if no AI key is configured.
 - Optionally queues `X`, `LinkedIn`, and `Instagram` posts to Buffer.
+- Generates `UpScrolled` drafts for manual copy/paste publishing.
 - Renders vertical `1080x1920` short-video teasers from local podcast video files when available, with an image-based fallback for non-video content.
 
 ## Local Usage
@@ -86,4 +88,4 @@ You can override it by setting `OPENAI_MODEL` in the workflow environment.
 
 ## Current Limitation
 
-Short-video clips are rendered automatically, but they are not auto-posted yet.
+`UpScrolled` is draft-only and is not auto-posted. Short-video clips are rendered automatically, but they are not auto-posted yet.

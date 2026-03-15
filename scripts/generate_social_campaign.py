@@ -52,6 +52,7 @@ X_POST_LIMIT = 250
 X_THREAD_LIMIT = 260
 LINKEDIN_POST_LIMIT = 1400
 INSTAGRAM_CAPTION_LIMIT = 1800
+UPSCROLLED_POST_LIMIT = 450
 SHORT_VIDEO_CAPTION_LIMIT = 1000
 SHORT_VIDEO_WORD_LIMIT = 110
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5-mini")
@@ -554,6 +555,19 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         f"{item.url} {' '.join(hashtags)}",
         INSTAGRAM_CAPTION_LIMIT,
     )
+    upscrolled_post = combine_with_tail(
+        (
+            f"{item.title}\n\n"
+            f"{truncate_text(first_sentence(item.summary), 180)}\n\n"
+            f"One point worth sitting with: {truncate_text(points[0], 110)}"
+        ),
+        f"Full source: {item.url}",
+        UPSCROLLED_POST_LIMIT,
+    )
+    upscrolled_prompt = truncate_text(
+        f"What part of Islamic economics should I unpack next: {truncate_words(item.title, 8)} or another topic?",
+        120,
+    )
 
     short_video_voiceover = truncate_words(
         (
@@ -613,6 +627,10 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
                 INSTAGRAM_CAPTION_LIMIT,
             ),
             "cover_text": cover_text,
+        },
+        "upscrolled": {
+            "post": upscrolled_post,
+            "discussion_prompt": upscrolled_prompt,
         },
         "short_video": {
             "title": truncate_text(f"{item.title} in 45 seconds", 90),
@@ -698,6 +716,15 @@ def social_campaign_schema() -> Dict[str, Any]:
                     },
                     "required": ["caption", "carousel_slides", "reel_caption", "cover_text"],
                 },
+                "upscrolled": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "post": {"type": "string"},
+                        "discussion_prompt": {"type": "string"},
+                    },
+                    "required": ["post", "discussion_prompt"],
+                },
                 "short_video": {
                     "type": "object",
                     "additionalProperties": False,
@@ -731,7 +758,7 @@ def social_campaign_schema() -> Dict[str, Any]:
                     "required": ["title", "hook", "voiceover", "shot_list", "caption", "hashtags"],
                 },
             },
-            "required": ["x", "linkedin", "instagram", "short_video"],
+            "required": ["x", "linkedin", "instagram", "upscrolled", "short_video"],
         },
         "strict": True,
     }
@@ -771,6 +798,7 @@ Rules:
 - LinkedIn post must be <= 1400 characters.
 - Instagram caption must be <= 1800 characters.
 - Instagram carousel must contain exactly 5 short slides.
+- UpScrolled post should feel conversational and manually publishable, ideally <= 450 characters.
 - Short-video voiceover should target 35-45 seconds and stay under 110 words.
 - Keep hashtags relevant and capped at 5.
 - Include direct calls to read/listen at the source URL.
@@ -792,6 +820,10 @@ Return this JSON shape:
     "carousel_slides": ["string", "string", "string", "string", "string"],
     "reel_caption": "string",
     "cover_text": "string"
+  }},
+  "upscrolled": {{
+    "post": "string",
+    "discussion_prompt": "string"
   }},
   "short_video": {{
     "title": "string",
@@ -885,6 +917,7 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
     x_payload = generated_channels.get("x", {}) if generated_channels else {}
     linkedin_payload = generated_channels.get("linkedin", {}) if generated_channels else {}
     instagram_payload = generated_channels.get("instagram", {}) if generated_channels else {}
+    upscrolled_payload = generated_channels.get("upscrolled", {}) if generated_channels else {}
     short_payload = generated_channels.get("short_video", {}) if generated_channels else {}
 
     campaign_id = f"{datetime.now(timezone.utc).strftime('%Y-%m-%d')}-{item.content_id}"
@@ -943,6 +976,17 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
                     50,
                 ),
                 "image_url": item.asset_url or DEFAULT_IMAGE_URL,
+            },
+            "upscrolled": {
+                "post": truncate_text(
+                    upscrolled_payload.get("post") or fallback_channels["upscrolled"]["post"],
+                    UPSCROLLED_POST_LIMIT,
+                ),
+                "discussion_prompt": truncate_text(
+                    upscrolled_payload.get("discussion_prompt")
+                    or fallback_channels["upscrolled"]["discussion_prompt"],
+                    120,
+                ),
             },
             "short_video": {
                 "title": truncate_text(
@@ -1044,6 +1088,12 @@ def render_markdown(campaign: Dict[str, Any]) -> str:
             "### Reel Caption",
             "",
             channels["instagram"]["reel_caption"],
+            "",
+            "## UpScrolled",
+            "",
+            channels["upscrolled"]["post"],
+            "",
+            f"Discussion prompt: {channels['upscrolled']['discussion_prompt']}",
             "",
             "## Short Video",
             "",
