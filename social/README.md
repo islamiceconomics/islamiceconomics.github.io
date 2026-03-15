@@ -10,7 +10,7 @@ This folder stores generated campaign packs and state for `X`, `LinkedIn`, `Inst
   - `LinkedIn`: one long-form post
   - `Instagram`: caption, carousel slide copy, and reel caption
   - `short-video`: title, hook, voiceover, shot list, caption, and a renderable teaser package
-- Uses Claude if `ANTHROPIC_API_KEY` is available.
+- Uses OpenAI if `OPENAI_API_KEY` is available.
 - Falls back to deterministic templates if no AI key is configured.
 - Optionally queues `X`, `LinkedIn`, and `Instagram` posts to Buffer.
 - Renders vertical `1080x1920` short-video teasers from local podcast video files when available, with an image-based fallback for non-video content.
@@ -63,11 +63,16 @@ By default it:
 
 ## Required GitHub Secrets
 
-- `ANTHROPIC_API_KEY`
+- `OPENAI_API_KEY`
 - `BUFFER_ACCESS_TOKEN`
 - `BUFFER_PROFILE_ID_X`
 - `BUFFER_PROFILE_ID_LINKEDIN`
 - `BUFFER_PROFILE_ID_INSTAGRAM`
+
+## Recommended Model
+
+The workflow defaults to `gpt-5-mini` for the best cost/quality balance on social copy generation.
+You can override it by setting `OPENAI_MODEL` in the workflow environment.
 
 ## Output
 

@@ -21,9 +21,9 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 try:
-    import anthropic
+    from openai import OpenAI
 except ImportError:
-    anthropic = None
+    OpenAI = None
 
 try:
     import feedparser
@@ -35,9 +35,6 @@ except ImportError as exc:
         f"Details: {exc}"
     )
     sys.exit(1)
-
-from config import CLAUDE_MAX_TOKENS, CLAUDE_MODEL
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -58,6 +55,9 @@ LINKEDIN_POST_LIMIT = 1400
 INSTAGRAM_CAPTION_LIMIT = 1800
 SHORT_VIDEO_CAPTION_LIMIT = 1000
 SHORT_VIDEO_WORD_LIMIT = 110
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5-mini")
+OPENAI_MAX_OUTPUT_TOKENS = 2200
+OPENAI_REASONING_EFFORT = os.environ.get("OPENAI_REASONING_EFFORT", "low")
 
 
 @dataclass
@@ -646,9 +646,100 @@ def extract_json_object(raw_text: str) -> Optional[Dict[str, Any]]:
     return None
 
 
-def generate_channels_with_claude(item: ContentItem) -> Optional[Dict[str, Any]]:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key or anthropic is None:
+def social_campaign_schema() -> Dict[str, Any]:
+    return {
+        "name": "social_campaign",
+        "schema": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "x": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "single_post": {"type": "string"},
+                        "thread": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 4,
+                            "maxItems": 4,
+                        },
+                        "hashtags": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 1,
+                            "maxItems": 5,
+                        },
+                    },
+                    "required": ["single_post", "thread", "hashtags"],
+                },
+                "linkedin": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "post": {"type": "string"},
+                        "comment_prompt": {"type": "string"},
+                    },
+                    "required": ["post", "comment_prompt"],
+                },
+                "instagram": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "caption": {"type": "string"},
+                        "carousel_slides": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 5,
+                            "maxItems": 5,
+                        },
+                        "reel_caption": {"type": "string"},
+                        "cover_text": {"type": "string"},
+                    },
+                    "required": ["caption", "carousel_slides", "reel_caption", "cover_text"],
+                },
+                "short_video": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "title": {"type": "string"},
+                        "hook": {"type": "string"},
+                        "voiceover": {"type": "string"},
+                        "shot_list": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": False,
+                                "properties": {
+                                    "time": {"type": "string"},
+                                    "visual": {"type": "string"},
+                                    "on_screen_text": {"type": "string"},
+                                },
+                                "required": ["time", "visual", "on_screen_text"],
+                            },
+                            "minItems": 4,
+                            "maxItems": 5,
+                        },
+                        "caption": {"type": "string"},
+                        "hashtags": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 1,
+                            "maxItems": 5,
+                        },
+                    },
+                    "required": ["title", "hook", "voiceover", "shot_list", "caption", "hashtags"],
+                },
+            },
+            "required": ["x", "linkedin", "instagram", "short_video"],
+        },
+        "strict": True,
+    }
+
+
+def generate_channels_with_openai(item: ContentItem) -> Optional[Dict[str, Any]]:
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key or OpenAI is None:
         return None
 
     prompt_item = {
@@ -719,21 +810,28 @@ Content item:
 """.strip()
 
     try:
-        client = anthropic.Anthropic(api_key=api_key)
-        message = client.messages.create(
-            model=CLAUDE_MODEL,
-            max_tokens=min(CLAUDE_MAX_TOKENS, 2200),
-            temperature=0.4,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_prompt}],
+        client = OpenAI(api_key=api_key)
+        response = client.responses.create(
+            model=OPENAI_MODEL,
+            reasoning={"effort": OPENAI_REASONING_EFFORT},
+            max_output_tokens=OPENAI_MAX_OUTPUT_TOKENS,
+            input=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            text={
+                "format": {
+                    "type": "json_schema",
+                    "name": social_campaign_schema()["name"],
+                    "schema": social_campaign_schema()["schema"],
+                    "strict": True,
+                }
+            },
         )
-
-        response_text = "".join(
-            block.text for block in message.content if hasattr(block, "text")
-        )
-        return extract_json_object(response_text)
+        response_text = getattr(response, "output_text", "") or ""
+        return json.loads(response_text) if response_text else None
     except Exception as exc:
-        logger.warning("Claude generation failed for %s: %s", item.content_id, exc)
+        logger.warning("OpenAI generation failed for %s: %s", item.content_id, exc)
         return None
 
 
@@ -782,7 +880,7 @@ def sanitize_shot_list(values: Any, fallback: List[Dict[str, str]]) -> List[Dict
 
 def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
     fallback_channels = build_fallback_channels(item)
-    generated_channels = generate_channels_with_claude(item) if use_ai else None
+    generated_channels = generate_channels_with_openai(item) if use_ai else None
 
     x_payload = generated_channels.get("x", {}) if generated_channels else {}
     linkedin_payload = generated_channels.get("linkedin", {}) if generated_channels else {}
@@ -1144,7 +1242,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--no-ai",
         action="store_true",
-        help="Use deterministic templates instead of Claude generation.",
+        help="Use deterministic templates instead of OpenAI generation.",
     )
     parser.add_argument(
         "--list-buffer-profiles",
