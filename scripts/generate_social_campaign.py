@@ -516,13 +516,21 @@ def supporting_points(item: ContentItem, count: int = 3) -> List[str]:
     return points[:count]
 
 
+def source_cta(item: ContentItem, style: str = "title") -> str:
+    if item.kind == "podcast":
+        return "Listen" if style == "title" else "listen"
+    return "Read" if style == "title" else "read"
+
+
 def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
     points = supporting_points(item, count=3)
     hashtags = candidate_hashtags(item)
+    cta_title = source_cta(item, style="title")
+    cta_lower = source_cta(item, style="lower")
 
     x_single = combine_with_tail(
         f"{item.title}: {first_sentence(item.summary)}",
-        item.url,
+        f"{cta_title}: {item.url}",
         X_POST_LIMIT,
     )
     x_thread = [
@@ -530,7 +538,7 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         truncate_text(points[0], X_THREAD_LIMIT),
         truncate_text(points[1], X_THREAD_LIMIT),
         combine_with_tail(
-            f"Why it matters: {points[2]} Read/listen here:",
+            f"Why it matters: {points[2]} {cta_title} here:",
             item.url,
             X_THREAD_LIMIT,
         ),
@@ -546,7 +554,7 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         f"• {points[1]}",
         f"• {points[2]}",
         "",
-        f"Full piece: {item.url}",
+        f"{cta_title} at the source: {item.url}",
     ]
     linkedin_post = combine_with_tail("\n".join(linkedin_lines[:-1]), linkedin_lines[-1], LINKEDIN_POST_LIMIT)
 
@@ -562,7 +570,7 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         (
             f"{item.title}\n\n"
             f"{truncate_text(item.summary, 400)}\n\n"
-            "Swipe through for the core ideas, then go deeper here:"
+            f"Swipe through for the core ideas, then go deeper and {cta_lower} here:"
         ),
         f"{item.url} {' '.join(hashtags)}",
         INSTAGRAM_CAPTION_LIMIT,
@@ -587,7 +595,7 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
         (
             f"{item.title}. {first_sentence(item.summary)} "
             f"Here are the key points: {points[0]} {points[1]} {points[2]} "
-            f"Read or listen in full at IslamicEconomics.org."
+            f"{cta_title} in full at IslamicEconomics.org."
         ),
         SHORT_VIDEO_WORD_LIMIT,
     )
@@ -653,7 +661,7 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
             "voiceover": short_video_voiceover,
             "shot_list": short_video_shots,
             "caption": combine_with_tail(
-                f"{item.title}. Full source:",
+                f"{item.title}. {cta_title} at the source:",
                 f"{item.url} {' '.join(hashtags)}",
                 SHORT_VIDEO_CAPTION_LIMIT,
             ),
@@ -820,6 +828,7 @@ Rules:
 - Short-video voiceover should target 35-45 seconds and stay under 110 words.
 - Keep hashtags relevant and capped at 5.
 - Include direct calls to read/listen at the source URL.
+- Use a content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
 - If the content is scholarly or sensitive, keep the tone measured and factual.
 
 Return this JSON shape:
@@ -1346,10 +1355,11 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
         )
 
         try:
+            asset_url = source.get("asset_url") or DEFAULT_IMAGE_URL if channel_name == "instagram" else ""
             results[channel_name] = create_buffer_post(
                 channel_id=profile_id,
                 text=text,
-                asset_url=source.get("asset_url") or DEFAULT_IMAGE_URL,
+                asset_url=asset_url,
             )
         except RuntimeError as exc:
             results[channel_name] = {
