@@ -11,12 +11,12 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Economic History of the Islamic World - Islamic Economics</title>
-  <meta name="description" content="History of Islamic economics — from the markets of pre-Islamic Arabia through the golden age of trade to colonial disruption and the modern revival.">
+  <title>Comparative Religious Economics - Islamic Economics</title>
+  <meta name="description" content="How the world's major religions approach economic life: comparing teachings on usury, charity, wealth, labour, and justice across Islam, Christianity, Judaism, and beyond.">
 
-  <link rel="canonical" href="https://islamiceconomics.github.io/history.html">
-  <link rel="alternate" hreflang="en" href="https://islamiceconomics.github.io/history.html">
-  <link rel="alternate" hreflang="ur" href="https://islamiceconomics.github.io/ur/history.html">
+  <link rel="canonical" href="https://islamiceconomics.github.io/comparative.html">
+  <link rel="alternate" hreflang="en" href="https://islamiceconomics.github.io/comparative.html">
+  <link rel="alternate" hreflang="ur" href="https://islamiceconomics.github.io/ur/comparative.html">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,42 @@
   <script>
     (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
   </script>
+  <style>
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin: 3rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .themes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .theme-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+
+    .theme-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--color-text);
+    }
+
+    .theme-card-description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      opacity: 0.8;
+      color: var(--color-text);
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -41,7 +77,8 @@
             <li><a href="foundations.html">Foundations</a></li>
             <li><a href="theory.html">Theory</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="history.html" class="active">History</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="comparative.html" class="active">Comparative</a></li>
           </ul>
         </li>
         <li><a href="scriptures.html" class="nav-link">Scriptures</a></li>
@@ -50,7 +87,7 @@
         <li><a href="blog.html" class="nav-link">Al-Tijarah</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
       </ul>
-      <a href="ur/history.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
+      <a href="ur/comparative.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
       <button class="theme-toggle" aria-label="Toggle dark mode">
         <span class="icon-moon">&#9790;</span>
         <span class="icon-sun">&#9788;</span>
@@ -62,20 +99,52 @@
   <section class="hero hero-small">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> <span>/</span> <span>History</span>
+        <a href="index.html">Home</a> <span>/</span> <span>Comparative</span>
       </nav>
-      <h1 class="hero-title">Economic History of the Islamic World</h1>
-      <p class="hero-subtitle">Monetary systems, trade networks, and economic institutions across fourteen centuries of Islamic civilization</p>
+      <h1 class="hero-title">Comparative Religious Economics</h1>
+      <p class="hero-subtitle">How the world's great faiths approach economic life: usury, charity, wealth, labour, and justice across traditions</p>
     </div>
   </section>
 
-  <!-- Coming Soon Section -->
-  <section class="section" style="padding: 6rem 0; text-align: center;">
+  <!-- Themes Section -->
+  <section class="section" style="padding: 4rem 0;">
     <div class="container">
-      <div class="fade-in" style="max-width: 640px; margin: 0 auto;">
-        <h2 style="margin-bottom: 1rem;">Coming Soon</h2>
-        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.85;">This section will explore the economic history of the Islamic world across fourteen centuries, covering monetary systems, trade networks, and institutional innovations from the early markets of Medina through the Abbasid golden age, Ottoman empire, and Mughal India to the colonial period and modern revival.</p>
-        <p style="margin-top: 1.5rem; opacity: 0.6; font-size: 0.95rem;">We are currently preparing this content. Check back soon.</p>
+      <div class="fade-up">
+        <div class="themes-grid">
+          <div class="theme-card">
+            <h3 class="theme-card-title">Usury and Interest</h3>
+            <p class="theme-card-description">From absolute prohibition to gradual acceptance: how Islam, Christianity, and Judaism have navigated the ethics of lending at interest across centuries.</p>
+          </div>
+
+          <div class="theme-card">
+            <h3 class="theme-card-title">Charity and Obligation</h3>
+            <p class="theme-card-description">Zakat, tithing, tzedakah: the spectrum from voluntary giving to mandatory redistribution, and what each tradition demands of the wealthy.</p>
+          </div>
+
+          <div class="theme-card">
+            <h3 class="theme-card-title">Wealth and Poverty</h3>
+            <p class="theme-card-description">The camel through the eye of the needle versus 'the upper hand is better than the lower hand': fundamentally different theologies of prosperity.</p>
+          </div>
+
+          <div class="theme-card">
+            <h3 class="theme-card-title">Just Price and Fair Trade</h3>
+            <p class="theme-card-description">Aquinas and the Scholastics, Islamic market ethics, and Talmudic commercial law: three traditions wrestling with what makes a price just.</p>
+          </div>
+
+          <div class="theme-card">
+            <h3 class="theme-card-title">Labour and Wages</h3>
+            <p class="theme-card-description">The dignity of work, the right to fair compensation, and the obligation of employers: comparative teachings on economic justice in the workplace.</p>
+          </div>
+
+          <div class="theme-card">
+            <h3 class="theme-card-title">Property and Ownership</h3>
+            <p class="theme-card-description">Stewardship versus dominion: how different faiths understand the relationship between people, possessions, and the divine.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 1.5rem; background: var(--color-surface); border-left: 4px solid var(--color-primary); border-radius: var(--radius-md);">
+          <p style="opacity: 0.85; font-size: 0.95rem; line-height: 1.7;">Content is being developed. Each theme will feature detailed analysis with primary source references from the Quran, Bible, Torah, and scholarly traditions.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -97,45 +166,36 @@
             <ul class="footer-links">
               <li><a href="foundations.html">Foundations</a></li>
               <li><a href="scriptures.html">Scriptures</a></li>
+              <li><a href="comparative.html">Comparative</a></li>
               <li><a href="theory.html">Theory</a></li>
               <li><a href="history.html">History</a></li>
-                    <li><a href="comparative.html">Comparative</a></li>
+              <li><a href="research.html">Research</a></li>
             </ul>
           </div>
           <div class="footer-nav-group">
-            <h4 class="footer-heading">Modern Economy</h4>
+            <h4 class="footer-heading">Explore</h4>
             <ul class="footer-links">
-              <li><a href="research.html">Research</a></li>
               <li><a href="dashboard.html">Dashboard</a></li>
               <li><a href="podcast.html">Media</a></li>
               <li><a href="blog.html">Al-Tijarah</a></li>
             </ul>
           </div>
           <div class="footer-nav-group">
-            <h4 class="footer-heading">Connect</h4>
-            <div class="social-links">
-              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
-              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
-              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
-            </div>
-            <form class="footer-subscribe" data-newsletter-form>
-              <input type="email" placeholder="Your email" class="form-input" required>
-              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
-            </form>
+            <h4 class="footer-heading">About</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+            </ul>
           </div>
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Islamic Economics</p>
-        <a href="about.html" class="footer-bottom-link">About</a>
+        <span>&copy; 2025 Islamic Economics. All rights reserved.</span>
       </div>
     </div>
   </footer>
   <button class="back-to-top" data-back-to-top aria-label="Back to top">&uarr;</button>
 
   <script src="js/main.js"></script>
-  <script src="js/scripture-data.js"></script>
-  <script src="js/scripture-widget.js"></script>
   <script>
 document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
   btn.addEventListener('click', function(e) {
