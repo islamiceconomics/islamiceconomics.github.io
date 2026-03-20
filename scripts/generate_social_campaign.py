@@ -663,6 +663,7 @@ def ensure_thread_has_source_url(posts: List[str], item: ContentItem) -> List[st
     return sanitized
 
 
+<<<<<<< HEAD
 def strip_ai_isms(text: str) -> str:
     """Remove common AI-sounding openers and filler phrases."""
     patterns = [
@@ -707,11 +708,25 @@ def sanitize_x_single_post(text: str, fallback: str, item: ContentItem) -> str:
 
 
 def build_fallback_channels(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+=======
+def sanitize_x_single_post(text: str, fallback: str, item: ContentItem) -> str:
+    candidate = strip_hashtags(strip_urls(text))
+    candidate = strip_dangling_source_prompt(candidate)
+    candidate = re.sub(r"^(new\s+(article|post|episode)\s*:?\s*)", "", candidate, flags=re.IGNORECASE).strip()
+    candidate = candidate.rstrip(" ,;:-")
+    if len(candidate) < 30:
+        candidate = strip_dangling_source_prompt(strip_hashtags(strip_urls(fallback)))
+    return truncate_text(candidate, X_POST_LIMIT)
+
+
+def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
+>>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
     points = supporting_points(item, count=3)
     hashtags = candidate_hashtags(item)
     cta_title = source_cta(item, style="title")
     cta_lower = source_cta(item, style="lower")
 
+<<<<<<< HEAD
     pattern_name = (voice_pattern or {}).get("name", "observation")
 
     # Build X single post based on voice pattern
@@ -741,6 +756,12 @@ def build_fallback_channels(item: ContentItem, voice_pattern: Optional[Dict[str,
     else:  # observation (default)
         x_single = truncate_text(fact, X_POST_LIMIT)
 
+=======
+    x_single = truncate_text(
+        f"One thing worth sitting with: {first_sentence(item.summary)}",
+        X_POST_LIMIT,
+    )
+>>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
     x_thread = [
         truncate_text(f"{item.title} — a thread:", X_THREAD_LIMIT),
         truncate_text(points[0], X_THREAD_LIMIT),
@@ -1075,7 +1096,17 @@ Critical X rules:
 - Short-video voiceover: target 35-45 seconds, under 110 words.
 - Keep hashtags relevant and capped at 5.
 - For LinkedIn, Instagram, and short-video, include direct calls to read/listen at the source URL.
+<<<<<<< HEAD
 - Use content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
+=======
+- Use a content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
+- If the content is scholarly or sensitive, keep the tone measured and factual.
+- X single post should sound like an informed person sharing a thought, question, or observation.
+- Avoid promotional framing like `new article`, `new episode`, `read here`, `read the full argument`, or `link below`.
+- Do not include the raw URL in the X single post.
+- Do not use hashtags in the X single post.
+- If the X thread includes a source URL, include it only in the final post.
+>>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
 
 Return this JSON shape:
 {{
@@ -1216,8 +1247,16 @@ def build_campaign(item: ContentItem, use_ai: bool, voice_pattern: Optional[Dict
         "source": asdict(item),
         "channels": {
             "x": {
+<<<<<<< HEAD
                 "single_post": x_single_final,
                 "voice_pattern": pattern_name,
+=======
+                "single_post": sanitize_x_single_post(
+                    x_payload.get("single_post") or fallback_channels["x"]["single_post"],
+                    fallback_channels["x"]["single_post"],
+                    item,
+                ),
+>>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
                 "thread": ensure_thread_has_source_url(
                     sanitize_string_list(
                         x_payload.get("thread"),
