@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"/Users/hamzazahid/Library/CloudStorage/GoogleDrive-88hzahid@gmail.com/My Drive/IslamicEconomics/Website/js\"/*.js)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(afinfo '/Users/hamzazahid/Library/CloudStorage/GoogleDrive-88hzahid@gmail.com/My Drive/IslamicEconomics/Website/podcast/audio/tt-ep01-the-word-tariff.m4a')",
+      "Bash(find . -name \"*.html\" -exec sed -i '' 's|href=\"\"#\"\" class=\"\"social-icon\"\" aria-label=\"\"Twitter/X\"\"|href=\"\"https://x.com/theislamicecon\"\" class=\"\"social-icon\"\" aria-label=\"\"Twitter/X\"\"|g' {} +)"
+    ]
+  }
+}
