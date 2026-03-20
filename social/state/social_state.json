@@ -1,5 +1,29 @@
 {
   "items": {
+    "blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital-": {
+      "history": [
+        {
+          "buffer": {
+            "instagram": {
+              "reason": "missing BUFFER_PROFILE_ID_INSTAGRAM",
+              "status": "skipped"
+            },
+            "linkedin": {
+              "reason": "missing BUFFER_PROFILE_ID_LINKEDIN",
+              "status": "skipped"
+            },
+            "x": {
+              "buffer_update_id": "69bd5ca47368098e8861571e",
+              "status": "queued"
+            }
+          },
+          "campaign_id": "2026-03-20-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital-",
+          "generated_at": "2026-03-20T14:41:40.295953+00:00",
+          "json_path": "social/campaigns/2026-03-20-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital.json",
+          "markdown_path": "social/campaigns/2026-03-20-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital.md"
+        }
+      ]
+    },
     "blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective": {
       "history": [
         {
