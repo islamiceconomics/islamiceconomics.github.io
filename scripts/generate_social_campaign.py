@@ -522,6 +522,36 @@ def source_cta(item: ContentItem, style: str = "title") -> str:
     return "Read" if style == "title" else "read"
 
 
+def strip_dangling_source_prompt(text: str) -> str:
+    text = normalize_whitespace(text)
+    patterns = [
+        r"(?:read|listen)(?:/listen)?(?:\s+the\s+(?:full\s+)?(?:piece|post|argument|analysis|article|thread|episode))?[.:…!?\-]*$",
+        r"(?:read|listen)(?:\s+more)?[.:…!?\-]*$",
+        r"(?:at\s+the\s+source|here)[.:…!?\-]*$",
+    ]
+    for pattern in patterns:
+        text = re.sub(pattern, "", text, flags=re.IGNORECASE).strip()
+    return text.rstrip(" ,;:-")
+
+
+def ensure_post_has_source_url(text: str, item: ContentItem, limit: int) -> str:
+    text = normalize_whitespace(text)
+    if item.url in text:
+        return truncate_text(text, limit)
+
+    tail = f"{source_cta(item, style='title')}: {item.url}"
+    cleaned = strip_dangling_source_prompt(text)
+    return combine_with_tail(cleaned or item.title, tail, limit)
+
+
+def ensure_thread_has_source_url(posts: List[str], item: ContentItem) -> List[str]:
+    sanitized = posts[:4]
+    if not sanitized:
+        return sanitized
+    sanitized[-1] = ensure_post_has_source_url(sanitized[-1], item, X_THREAD_LIMIT)
+    return sanitized
+
+
 def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
     points = supporting_points(item, count=3)
     hashtags = candidate_hashtags(item)
@@ -956,15 +986,19 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
         "source": asdict(item),
         "channels": {
             "x": {
-                "single_post": truncate_text(
+                "single_post": ensure_post_has_source_url(
                     x_payload.get("single_post") or fallback_channels["x"]["single_post"],
+                    item,
                     X_POST_LIMIT,
                 ),
-                "thread": sanitize_string_list(
-                    x_payload.get("thread"),
-                    fallback_channels["x"]["thread"],
-                    max_items=4,
-                    max_chars=X_THREAD_LIMIT,
+                "thread": ensure_thread_has_source_url(
+                    sanitize_string_list(
+                        x_payload.get("thread"),
+                        fallback_channels["x"]["thread"],
+                        max_items=4,
+                        max_chars=X_THREAD_LIMIT,
+                    ),
+                    item,
                 ),
                 "hashtags": sanitize_hashtags(
                     x_payload.get("hashtags"),
