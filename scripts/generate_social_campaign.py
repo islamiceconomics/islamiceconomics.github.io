@@ -9,9 +9,11 @@ available.
 """
 
 import argparse
+import hashlib
 import json
 import logging
 import os
+import random
 import re
 import sys
 from dataclasses import asdict, dataclass, field
@@ -58,7 +60,108 @@ SHORT_VIDEO_WORD_LIMIT = 110
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5-mini")
 OPENAI_MAX_OUTPUT_TOKENS = 2200
 OPENAI_REASONING_EFFORT = os.environ.get("OPENAI_REASONING_EFFORT", "low")
+
+# ---------------------------------------------------------------------------
+# X voice patterns — weighted selection for natural variety
+# ---------------------------------------------------------------------------
 BUFFER_SCHEDULE_DELAY_MINUTES = max(1, int(os.environ.get("BUFFER_SCHEDULE_DELAY_MINUTES", "5")))
+
+# Stagger posts across the day instead of dumping them all at once.
+# The workflow runs at 14:00 UTC. We spread posts across a window so they
+# appear at natural-looking intervals (morning, midday, afternoon, evening).
+# Each call to next_staggered_due_at() returns the next slot.
+_STAGGER_SLOTS_UTC_HOURS = [9, 12, 15, 18, 20, 22]  # 6 slots for up to 6 posts
+_stagger_index = 0
+
+# ---------------------------------------------------------------------------
+# X voice patterns — weighted selection for natural variety
+# ---------------------------------------------------------------------------
+X_VOICE_PATTERNS: List[Dict[str, Any]] = [
+    {
+        "name": "observation",
+        "weight": 30,
+        "include_link": False,
+        "instruction": (
+            "Take one fact or idea from the source and state what it reveals about "
+            "a larger truth. Use reframing: show what something actually is versus "
+            "what people assume it is. 1-2 sentences. End with a period."
+        ),
+    },
+    {
+        "name": "question",
+        "weight": 15,
+        "include_link": False,
+        "instruction": (
+            "State a fact or situation from the content, then ask one genuine question "
+            "it raised. The question should feel like thinking out loud. Not rhetorical. "
+            "Not engagement bait. Something you would actually sit with."
+        ),
+    },
+    {
+        "name": "historical_fact",
+        "weight": 20,
+        "include_link": False,
+        "instruction": (
+            "State one surprising historical detail or number from the source. "
+            "Just the fact, plainly. Let it sit. If the number is dramatic, "
+            "repeat it once for weight. Nothing else needed. End with a period."
+        ),
+    },
+    {
+        "name": "reframing",
+        "weight": 15,
+        "include_link": False,
+        "instruction": (
+            "Take a common assumption about the topic and reveal what is actually true. "
+            "Structure: 'Most people think X is about Y. It is actually about Z.' "
+            "Or: 'The purpose of X isn't Y, it's Z.' "
+            "Calm and direct. State it as something you arrived at, not as an argument."
+        ),
+    },
+    {
+        "name": "connection",
+        "weight": 10,
+        "include_link": False,
+        "instruction": (
+            "Connect the topic to something from a different field or time period. "
+            "State both things plainly and let the reader see the parallel. "
+            "Do not explain the connection. Trust the reader. End with a period."
+        ),
+    },
+    {
+        "name": "content_share",
+        "weight": 10,
+        "include_link": True,
+        "instruction": (
+            "This post will include a link (appended automatically — do not write the URL). "
+            "State the most interesting thing you found in the content, as if telling "
+            "someone what you spent time reading about. One or two sentences. "
+            "No promotional language. No 'new article', 'check out', 'read here'."
+        ),
+    },
+]
+
+
+def pick_x_voice_pattern(item_id: str, state: Dict[str, Any]) -> Dict[str, Any]:
+    """Pick a voice pattern using weighted random selection, avoiding recent repeats."""
+    recent_patterns: List[str] = []
+    for item_data in (state.get("items") or {}).values():
+        for entry in (item_data.get("history") or []):
+            pattern_name = entry.get("x_voice_pattern", "")
+            if pattern_name:
+                recent_patterns.append(pattern_name)
+    recent_patterns = recent_patterns[-4:]
+
+    pool: List[Dict[str, Any]] = []
+    for pattern in X_VOICE_PATTERNS:
+        weight = pattern["weight"]
+        if pattern["name"] in recent_patterns:
+            weight = max(1, weight // 3)
+        pool.extend([pattern] * weight)
+
+    seed = hashlib.md5(f"{item_id}-{datetime.now(timezone.utc).date()}".encode()).hexdigest()
+    rng = random.Random(seed)
+    return rng.choice(pool)
 
 
 @dataclass
@@ -560,28 +663,86 @@ def ensure_thread_has_source_url(posts: List[str], item: ContentItem) -> List[st
     return sanitized
 
 
+def strip_ai_isms(text: str) -> str:
+    """Remove common AI-sounding openers and filler phrases."""
+    patterns = [
+        r"^(new\s+(article|post|episode)\s*:?\s*)",
+        r"^(check\s+out\s*:?\s*)",
+        r"^(we\s+(just\s+)?published\s*:?\s*)",
+        r"^(just\s+dropped\s*:?\s*)",
+        r"^(we\s+examine\s+)",
+        r"^(this\s+piece\s+)",
+        r"^(here'?s\s+(the\s+thing|why)\s*:?\s*)",
+        r"^(let'?s\s+talk\s+about\s*:?\s*)",
+        r"^(unpopular\s+opinion\s*:?\s*)",
+        r"^(hot\s+take\s*:?\s*)",
+        r"^(did\s+you\s+know\s*[?:]\s*)",
+        r"^(genuine\s+question\s*:?\s*[—–-]?\s*)",
+        r"^(spoiler\s+alert\s*:?\s*)",
+        r"^(buckle\s+up\s*[.:,]?\s*)",
+        r"^(it\s+turns\s+out\s*[,:]\s*)",
+        r"^(okay\s+)?so\s+",
+        r"^(thread\s*:?\s*)",
+    ]
+    result = text
+    for pattern in patterns:
+        result = re.sub(pattern, "", result, flags=re.IGNORECASE).strip()
+    # Strip emoji
+    result = re.sub(
+        r"[\U0001F300-\U0001F9FF\U00002600-\U000027BF\U0001FA00-\U0001FA6F\U0001FA70-\U0001FAFF]",
+        "",
+        result,
+    ).strip()
+    return result
+
+
 def sanitize_x_single_post(text: str, fallback: str, item: ContentItem) -> str:
     candidate = strip_hashtags(strip_urls(text))
     candidate = strip_dangling_source_prompt(candidate)
-    candidate = re.sub(r"^(new\s+(article|post|episode)\s*:?\s*)", "", candidate, flags=re.IGNORECASE).strip()
+    candidate = strip_ai_isms(candidate)
     candidate = candidate.rstrip(" ,;:-")
     if len(candidate) < 30:
-        candidate = strip_dangling_source_prompt(strip_hashtags(strip_urls(fallback)))
+        candidate = strip_ai_isms(strip_dangling_source_prompt(strip_hashtags(strip_urls(fallback))))
     return truncate_text(candidate, X_POST_LIMIT)
 
 
-def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
+def build_fallback_channels(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     points = supporting_points(item, count=3)
     hashtags = candidate_hashtags(item)
     cta_title = source_cta(item, style="title")
     cta_lower = source_cta(item, style="lower")
 
-    x_single = truncate_text(
-        f"One thing worth sitting with: {first_sentence(item.summary)}",
-        X_POST_LIMIT,
-    )
+    pattern_name = (voice_pattern or {}).get("name", "observation")
+
+    # Build X single post based on voice pattern
+    fact = first_sentence(item.summary)
+    if pattern_name == "question":
+        x_single = truncate_text(
+            f"{fact} Why isn't this discussed more?",
+            X_POST_LIMIT,
+        )
+    elif pattern_name == "historical_fact":
+        x_single = truncate_text(fact, X_POST_LIMIT)
+    elif pattern_name == "reframing":
+        x_single = truncate_text(
+            f"{fact} The conventional framing misses the point.",
+            X_POST_LIMIT,
+        )
+    elif pattern_name == "connection":
+        x_single = truncate_text(
+            f"{fact} The parallels to today are hard to ignore.",
+            X_POST_LIMIT,
+        )
+    elif pattern_name == "content_share":
+        x_single = truncate_text(
+            f"Spent some time on this. {fact}",
+            X_POST_LIMIT,
+        )
+    else:  # observation (default)
+        x_single = truncate_text(fact, X_POST_LIMIT)
+
     x_thread = [
-        truncate_text(f"{item.title} in one thread:", X_THREAD_LIMIT),
+        truncate_text(f"{item.title} — a thread:", X_THREAD_LIMIT),
         truncate_text(points[0], X_THREAD_LIMIT),
         truncate_text(points[1], X_THREAD_LIMIT),
         combine_with_tail(
@@ -835,10 +996,14 @@ def social_campaign_schema() -> Dict[str, Any]:
     }
 
 
-def generate_channels_with_openai(item: ContentItem) -> Optional[Dict[str, Any]]:
+def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key or OpenAI is None:
         return None
+
+    pattern = voice_pattern or X_VOICE_PATTERNS[0]
+    pattern_name = pattern["name"]
+    pattern_instruction = pattern["instruction"]
 
     prompt_item = {
         "kind": item.kind,
@@ -855,33 +1020,62 @@ def generate_channels_with_openai(item: ContentItem) -> Optional[Dict[str, Any]]
     }
 
     system_prompt = (
-        "You are a senior social editor for an Islamic economics publication. "
-        "Use only the supplied facts. Do not invent scripture references, numbers, "
-        "historical claims, or platform-specific features. Write clearly and avoid hype."
+        "You write X posts for someone who thinks deeply about Islamic economics. "
+        "The voice is calm, wise, and slightly melancholic — like someone writing in a journal "
+        "that happens to be public. "
+        "State things as quiet truths you have observed, not as opinions or arguments. "
+        "Use 'you' naturally when addressing the reader. "
+        "Use reframing: take something familiar and reveal what it actually is. "
+        "Use parallel structure when it fits: 'X is Y. Z is A.' "
+        "No hedging. No 'I think' or 'perhaps' or 'arguably'. Just state it. "
+        "1-3 sentences. Complete thoughts. Standalone posts end with a period. "
+        "Use only the supplied facts. Do not invent scripture references, numbers, or historical claims. "
+        "Never use emoji, hashtags, or semicolons. "
+        "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
+        "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
+        "The post should read like a truth someone arrived at after years of studying, "
+        "stated simply enough that anyone can understand it."
     )
     user_prompt = f"""
 Create a cross-platform campaign for the content item below.
 
-Rules:
-- Return JSON only.
+=== X SINGLE POST (most important — get this right) ===
+Voice pattern for this post: **{pattern_name}**
+{pattern_instruction}
+
+Critical X rules:
 - X single post must be <= 250 characters.
-- X thread must contain 4 posts, each <= 260 characters.
-- LinkedIn post must be <= 1400 characters.
-- Instagram caption must be <= 1800 characters.
+- Do NOT summarize the article. Do NOT write a headline. Do NOT write a teaser.
+- The post should read like a personal thought or conclusion, not a content preview.
+- Write short declarative sentences. State things plainly. Let the reader draw implications.
+- Do NOT use these phrases: "new article", "new episode", "check out", "read here",
+  "read the full argument", "link below", "read more", "we examine", "this piece",
+  "here's why", "here's the thing", "let's talk about", "a thread", "unpopular opinion",
+  "hot take", "did you know", "spoiler alert", "buckle up", "it turns out".
+- Do NOT start with "So", "Okay so", "I think", "In my opinion", or "Honestly".
+- Do NOT include the raw URL in the X single post.
+- Do NOT use hashtags or emoji in the X single post.
+- No corporate "we". First person is fine but use it sparingly.
+- If the content is about conflict or hardship, stay measured and factual.
+- Standalone single posts always end with a period. Not a colon, not an ellipsis, not a dash.
+
+=== X THREAD ===
+- 4 posts, each <= 260 characters.
+- Build a quiet argument or tell a short story across the posts.
+- First post states the most interesting thing. No "Thread:" label.
+- Each post should make sense on its own.
+- Last post may include the source URL.
+
+=== OTHER CHANNELS ===
+- LinkedIn post must be <= 1400 characters. Professional but not dry. Include source URL.
+- Instagram caption must be <= 1800 characters. Include source URL and up to 5 hashtags.
 - Instagram carousel must contain exactly 5 short slides.
-- UpScrolled post should feel native to a discussion app: reflective, conversational, and manually publishable, ideally <= 450 characters.
-- UpScrolled post should use 2-3 short paragraphs, avoid sounding promotional, and should not include the raw URL in the body text.
-- UpScrolled should also include one discussion prompt and one short topic suggestion for manual posting.
-- Short-video voiceover should target 35-45 seconds and stay under 110 words.
+- UpScrolled post: reflective, conversational, <= 450 characters. 2-3 short paragraphs. No raw URL in body.
+- UpScrolled: include one discussion prompt and one short topic suggestion.
+- Short-video voiceover: target 35-45 seconds, under 110 words.
 - Keep hashtags relevant and capped at 5.
 - For LinkedIn, Instagram, and short-video, include direct calls to read/listen at the source URL.
-- Use a content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
-- If the content is scholarly or sensitive, keep the tone measured and factual.
-- X single post should sound like an informed person sharing a thought, question, or observation.
-- Avoid promotional framing like `new article`, `new episode`, `read here`, `read the full argument`, or `link below`.
-- Do not include the raw URL in the X single post.
-- Do not use hashtags in the X single post.
-- If the X thread includes a source URL, include it only in the final post.
+- Use content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
 
 Return this JSON shape:
 {{
@@ -990,9 +1184,9 @@ def sanitize_shot_list(values: Any, fallback: List[Dict[str, str]]) -> List[Dict
     return shots or fallback
 
 
-def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
-    fallback_channels = build_fallback_channels(item)
-    generated_channels = generate_channels_with_openai(item) if use_ai else None
+def build_campaign(item: ContentItem, use_ai: bool, voice_pattern: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    fallback_channels = build_fallback_channels(item, voice_pattern=voice_pattern)
+    generated_channels = generate_channels_with_openai(item, voice_pattern=voice_pattern) if use_ai else None
 
     x_payload = generated_channels.get("x", {}) if generated_channels else {}
     linkedin_payload = generated_channels.get("linkedin", {}) if generated_channels else {}
@@ -1001,18 +1195,29 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
     short_payload = generated_channels.get("short_video", {}) if generated_channels else {}
 
     campaign_id = f"{datetime.now(timezone.utc).strftime('%Y-%m-%d')}-{item.content_id}"
+    pattern_name = (voice_pattern or {}).get("name", "observation")
+    pattern_includes_link = (voice_pattern or {}).get("include_link", False)
+
+    x_single_raw = sanitize_x_single_post(
+        x_payload.get("single_post") or fallback_channels["x"]["single_post"],
+        fallback_channels["x"]["single_post"],
+        item,
+    )
+    # For content_share pattern, append URL; for others, no link
+    if pattern_includes_link:
+        x_single_final = combine_with_tail(x_single_raw, item.url, X_POST_LIMIT + len(item.url) + 25)
+    else:
+        x_single_final = x_single_raw
 
     return {
         "campaign_id": campaign_id,
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "x_voice_pattern": pattern_name,
         "source": asdict(item),
         "channels": {
             "x": {
-                "single_post": sanitize_x_single_post(
-                    x_payload.get("single_post") or fallback_channels["x"]["single_post"],
-                    fallback_channels["x"]["single_post"],
-                    item,
-                ),
+                "single_post": x_single_final,
+                "voice_pattern": pattern_name,
                 "thread": ensure_thread_has_source_url(
                     sanitize_string_list(
                         x_payload.get("thread"),
@@ -1127,6 +1332,8 @@ def render_markdown(campaign: Dict[str, Any]) -> str:
     if source.get("local_video_path"):
         lines.append(f"- Local video source: `{source['local_video_path']}`")
 
+    voice_pattern = campaign.get("x_voice_pattern", "unknown")
+
     lines.extend(
         [
             "",
@@ -1135,6 +1342,8 @@ def render_markdown(campaign: Dict[str, Any]) -> str:
             source["summary"],
             "",
             "## X",
+            "",
+            f"**Voice pattern**: `{voice_pattern}`",
             "",
             "### Single Post",
             "",
@@ -1320,7 +1529,33 @@ def recommended_buffer_secret(service: str) -> Optional[str]:
 
 
 def next_buffer_due_at() -> str:
-    due_at = datetime.now(timezone.utc) + timedelta(minutes=BUFFER_SCHEDULE_DELAY_MINUTES)
+    """Return the next staggered posting time.
+
+    Posts are spread across the day at natural intervals.  If the current
+    UTC time is already past a slot, that slot is pushed to today + a
+    small jitter so Buffer accepts it (it rejects past timestamps).
+    Falls back to the old delay-based logic if all slots are exhausted.
+    """
+    global _stagger_index  # noqa: PLW0603
+    now = datetime.now(timezone.utc)
+
+    if _stagger_index < len(_STAGGER_SLOTS_UTC_HOURS):
+        target_hour = _STAGGER_SLOTS_UTC_HOURS[_stagger_index]
+        _stagger_index += 1
+
+        # Add 0-15 min jitter so posts don't land exactly on the hour
+        jitter_minutes = hash(now.isoformat()) % 16
+        candidate = now.replace(hour=target_hour, minute=jitter_minutes, second=0, microsecond=0)
+
+        # If the slot is in the past, schedule for tomorrow
+        if candidate <= now:
+            candidate += timedelta(days=1)
+
+        return candidate.isoformat().replace("+00:00", "Z")
+
+    # Fallback: more posts than slots — just space them out from now
+    due_at = now + timedelta(minutes=BUFFER_SCHEDULE_DELAY_MINUTES * (_stagger_index + 1))
+    _stagger_index += 1
     return due_at.replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
@@ -1405,13 +1640,12 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
             results[channel_name] = {"status": "skipped", "reason": f"missing {env_key}"}
             continue
 
-        text = (
-            channels["x"]["single_post"]
-            if channel_name == "x"
-            else channels["linkedin"]["post"]
-            if channel_name == "linkedin"
-            else channels["instagram"]["caption"]
-        )
+        if channel_name == "x":
+            text = channels["x"]["single_post"]
+        elif channel_name == "linkedin":
+            text = channels["linkedin"]["post"]
+        else:
+            text = channels["instagram"]["caption"]
 
         try:
             asset_url = source.get("asset_url") or DEFAULT_IMAGE_URL if channel_name == "instagram" else ""
@@ -1479,6 +1713,7 @@ def record_campaign(
         {
             "generated_at": campaign["generated_at"],
             "campaign_id": campaign["campaign_id"],
+            "x_voice_pattern": campaign.get("x_voice_pattern", ""),
             "json_path": str(json_path.relative_to(get_project_root())),
             "markdown_path": str(markdown_path.relative_to(get_project_root())),
             "buffer": buffer_result or {},
@@ -1530,6 +1765,9 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    global _stagger_index  # noqa: PLW0603
+    _stagger_index = 0  # Reset stagger for each run
+
     args = parse_args()
     if args.list_buffer_profiles:
         list_buffer_profiles()
@@ -1556,8 +1794,9 @@ def main() -> int:
     publish_failed = False
 
     for item in selected_items:
-        logger.info("Generating campaign for %s", item.content_id)
-        campaign = build_campaign(item, use_ai=not args.no_ai)
+        voice_pattern = pick_x_voice_pattern(item.content_id, state)
+        logger.info("Generating campaign for %s (X voice: %s)", item.content_id, voice_pattern["name"])
+        campaign = build_campaign(item, use_ai=not args.no_ai, voice_pattern=voice_pattern)
         buffer_result = queue_to_buffer(campaign) if args.publish_buffer else None
         if buffer_result:
             campaign["buffer"] = buffer_result

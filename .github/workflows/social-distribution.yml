@@ -2,7 +2,7 @@ name: Social Distribution
 
 on:
   schedule:
-    - cron: '0 14 * * 1,3,5'
+    - cron: '0 14 * * *'
   workflow_dispatch:
     inputs:
       source:
@@ -52,7 +52,7 @@ jobs:
       BUFFER_PROFILE_ID_INSTAGRAM: ${{ secrets.BUFFER_PROFILE_ID_INSTAGRAM }}
       SOCIAL_SOURCE: ${{ github.event.inputs.source || 'auto' }}
       SOCIAL_CONTENT_ID: ${{ github.event.inputs.content_id || '' }}
-      SOCIAL_LIMIT: ${{ github.event.inputs.limit || '1' }}
+      SOCIAL_LIMIT_INPUT: ${{ github.event.inputs.limit || '' }}
       SOCIAL_PUBLISH_BUFFER: ${{ github.event_name == 'schedule' && 'true' || github.event.inputs.publish_buffer || 'false' }}
       SOCIAL_RENDER_SHORTS: ${{ github.event.inputs.render_shorts || 'true' }}
       SOCIAL_FORCE: ${{ github.event.inputs.force || 'false' }}
@@ -85,8 +85,21 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg
 
+      - name: Pick daily post count
+        id: pick_limit
+        run: |
+          if [ -n "$SOCIAL_LIMIT_INPUT" ]; then
+            echo "limit=$SOCIAL_LIMIT_INPUT" >> "$GITHUB_OUTPUT"
+          else
+            limit=$(( RANDOM % 5 + 2 ))
+            echo "Today's random post count: $limit"
+            echo "limit=$limit" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Generate social campaign packs
         id: generate
+        env:
+          SOCIAL_LIMIT: ${{ steps.pick_limit.outputs.limit }}
         run: |
           cmd=(python scripts/generate_social_campaign.py \
             --source "$SOCIAL_SOURCE" \
@@ -139,6 +152,8 @@ jobs:
         id: render
         if: steps.generate.outcome == 'success' && env.SOCIAL_RENDER_SHORTS == 'true'
         continue-on-error: true
+        env:
+          SOCIAL_LIMIT: ${{ steps.pick_limit.outputs.limit }}
         run: |
           cmd=(python scripts/render_social_clips.py \
             --limit "$SOCIAL_LIMIT")

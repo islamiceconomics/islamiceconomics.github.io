@@ -55,12 +55,12 @@ python3 scripts/render_social_clips.py --limit 1
 
 The GitHub Actions workflow at `.github/workflows/social-distribution.yml` runs:
 
-- On a schedule: `Monday`, `Wednesday`, and `Friday` at `14:00 UTC`
+- On a schedule: **daily** at `14:00 UTC`
 - On demand through `workflow_dispatch`
 
 By default it:
 
-- generates `1` campaign pack
+- generates a **random number of campaign packs between 2 and 6** (manual runs can override)
 - uses `auto` discovery
 - recycles evergreen content after `45` days
 - renders short-video teasers after campaign generation

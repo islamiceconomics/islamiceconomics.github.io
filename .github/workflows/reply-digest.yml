@@ -1,0 +1,61 @@
+name: Reply Digest
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover-replies:
+    runs-on: ubuntu-latest
+
+    env:
+      X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      X_OWN_HANDLE: theislamicecon
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-5-mini
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Discover reply opportunities
+        run: python scripts/discover_replies.py
+
+      - name: Upload reply digest
+        uses: actions/upload-artifact@v4
+        with:
+          name: reply-digest
+          path: social/reply-digests
+          if-no-files-found: warn
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "Reply Digest Bot"
+          git config user.email "bot@islamiceconomics.local"
+          git add social/reply-digests
+          git commit -m "Reply digest - $(date -u +'%Y-%m-%d')"
+          git push
