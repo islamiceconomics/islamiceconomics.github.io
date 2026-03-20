@@ -522,6 +522,14 @@ def source_cta(item: ContentItem, style: str = "title") -> str:
     return "Read" if style == "title" else "read"
 
 
+def strip_urls(text: str) -> str:
+    return normalize_whitespace(re.sub(r"https?://\S+", " ", text or ""))
+
+
+def strip_hashtags(text: str) -> str:
+    return normalize_whitespace(re.sub(r"(^|\s)#[A-Za-z0-9_]+", " ", text or ""))
+
+
 def strip_dangling_source_prompt(text: str) -> str:
     text = normalize_whitespace(text)
     patterns = [
@@ -552,15 +560,24 @@ def ensure_thread_has_source_url(posts: List[str], item: ContentItem) -> List[st
     return sanitized
 
 
+def sanitize_x_single_post(text: str, fallback: str, item: ContentItem) -> str:
+    candidate = strip_hashtags(strip_urls(text))
+    candidate = strip_dangling_source_prompt(candidate)
+    candidate = re.sub(r"^(new\s+(article|post|episode)\s*:?\s*)", "", candidate, flags=re.IGNORECASE).strip()
+    candidate = candidate.rstrip(" ,;:-")
+    if len(candidate) < 30:
+        candidate = strip_dangling_source_prompt(strip_hashtags(strip_urls(fallback)))
+    return truncate_text(candidate, X_POST_LIMIT)
+
+
 def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
     points = supporting_points(item, count=3)
     hashtags = candidate_hashtags(item)
     cta_title = source_cta(item, style="title")
     cta_lower = source_cta(item, style="lower")
 
-    x_single = combine_with_tail(
-        f"{item.title}: {first_sentence(item.summary)}",
-        f"{cta_title}: {item.url}",
+    x_single = truncate_text(
+        f"One thing worth sitting with: {first_sentence(item.summary)}",
         X_POST_LIMIT,
     )
     x_thread = [
@@ -857,9 +874,14 @@ Rules:
 - UpScrolled should also include one discussion prompt and one short topic suggestion for manual posting.
 - Short-video voiceover should target 35-45 seconds and stay under 110 words.
 - Keep hashtags relevant and capped at 5.
-- Include direct calls to read/listen at the source URL.
+- For LinkedIn, Instagram, and short-video, include direct calls to read/listen at the source URL.
 - Use a content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
 - If the content is scholarly or sensitive, keep the tone measured and factual.
+- X single post should sound like an informed person sharing a thought, question, or observation.
+- Avoid promotional framing like `new article`, `new episode`, `read here`, `read the full argument`, or `link below`.
+- Do not include the raw URL in the X single post.
+- Do not use hashtags in the X single post.
+- If the X thread includes a source URL, include it only in the final post.
 
 Return this JSON shape:
 {{
@@ -986,10 +1008,10 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
         "source": asdict(item),
         "channels": {
             "x": {
-                "single_post": ensure_post_has_source_url(
+                "single_post": sanitize_x_single_post(
                     x_payload.get("single_post") or fallback_channels["x"]["single_post"],
+                    fallback_channels["x"]["single_post"],
                     item,
-                    X_POST_LIMIT,
                 ),
                 "thread": ensure_thread_has_source_url(
                     sanitize_string_list(
@@ -1005,6 +1027,7 @@ def build_campaign(item: ContentItem, use_ai: bool) -> Dict[str, Any]:
                     fallback_channels["x"]["hashtags"],
                     max_items=3,
                 ),
+                "source_note": item.url,
             },
             "linkedin": {
                 "post": truncate_text(
@@ -1116,6 +1139,8 @@ def render_markdown(campaign: Dict[str, Any]) -> str:
             "### Single Post",
             "",
             channels["x"]["single_post"],
+            "",
+            f"Optional source note: {channels['x']['source_note']}",
             "",
             "### Thread",
             "",
