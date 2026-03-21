@@ -123,7 +123,10 @@ jobs:
         run: |
           git config user.name "Social Distribution Bot"
           git config user.email "bot@islamiceconomics.local"
-          git add -f Website/social/cards/ social/cards/ social/state/ social/campaigns/
+          mkdir -p Website/social/cards
+          cp -f social/cards/*.png Website/social/cards/ 2>/dev/null || true
+          git add -f social/cards/ social/state/ social/campaigns/
+          git add -f Website/social/cards/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no_card_changes=true" >> "$GITHUB_OUTPUT"
           else
@@ -243,7 +246,8 @@ jobs:
         run: |
           git config user.name "Social Distribution Bot"
           git config user.email "bot@islamiceconomics.local"
-          git add social/README.md social/state social/campaigns social/cards Website/social/cards social/shorts/.gitignore social/shorts/.gitkeep social/shorts/rendered/.gitkeep
+          git add social/README.md social/state social/campaigns social/cards social/shorts/.gitignore social/shorts/.gitkeep social/shorts/rendered/.gitkeep
+          git add Website/social/cards/ 2>/dev/null || true
           git commit -m "Social campaign update - $(date -u +'%Y-%m-%d')"
           git push
 
