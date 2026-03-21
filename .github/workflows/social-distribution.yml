@@ -43,9 +43,12 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      ANTHROPIC_MODEL: claude-sonnet-4-20250514
+      AI_PROVIDER: anthropic
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_MODEL: gpt-5-mini
-      OPENAI_REASONING_EFFORT: low
+      OPENAI_REASONING_EFFORT: medium
       BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
       BUFFER_PROFILE_ID_X: ${{ secrets.BUFFER_PROFILE_ID_X }}
       BUFFER_PROFILE_ID_LINKEDIN: ${{ secrets.BUFFER_PROFILE_ID_LINKEDIN }}

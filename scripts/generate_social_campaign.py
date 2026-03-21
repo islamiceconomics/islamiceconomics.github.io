@@ -28,6 +28,11 @@ except ImportError:
     OpenAI = None
 
 try:
+    import anthropic as anthropic_sdk
+except ImportError:
+    anthropic_sdk = None
+
+try:
     import feedparser
     import requests
     from lxml import html as lxml_html
@@ -60,7 +65,11 @@ SHORT_VIDEO_CAPTION_LIMIT = 1000
 SHORT_VIDEO_WORD_LIMIT = 110
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5-mini")
 OPENAI_MAX_OUTPUT_TOKENS = 2200
-OPENAI_REASONING_EFFORT = os.environ.get("OPENAI_REASONING_EFFORT", "low")
+OPENAI_REASONING_EFFORT = os.environ.get("OPENAI_REASONING_EFFORT", "medium")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-20250514")
+ANTHROPIC_MAX_OUTPUT_TOKENS = 2200
+AI_PROVIDER = os.environ.get("AI_PROVIDER", "auto")  # auto, anthropic, openai, none
+BODY_EXCERPT_MAX_CHARS = 800  # Truncate body text sent to AI to force synthesis
 
 # ---------------------------------------------------------------------------
 # X voice patterns — weighted selection for natural variety
@@ -684,6 +693,10 @@ def strip_ai_isms(text: str) -> str:
         r"^(it\s+turns\s+out\s*[,:]\s*)",
         r"^(okay\s+)?so\s+",
         r"^(thread\s*:?\s*)",
+        r"^(spent\s+some\s+time\s+on\s+this\s*[.:,]?\s*)",
+        r"^(been\s+reading\s+about\s+this\s*[.:,]?\s*)",
+        r"^(reading\s+about\s+)",
+        r"^(contrarian\s+take\s*:?\s*)",
     ]
     result = text
     for pattern in patterns:
@@ -736,7 +749,7 @@ def build_fallback_channels(item: ContentItem, voice_pattern: Optional[Dict[str,
         )
     elif pattern_name == "content_share":
         x_single = truncate_text(
-            f"Spent some time on this. {fact}",
+            f"Been reading about this. {fact}",
             X_POST_LIMIT,
         )
     else:  # observation (default)
@@ -997,6 +1010,33 @@ def social_campaign_schema() -> Dict[str, Any]:
     }
 
 
+def _looks_like_excerpt(post: str, item: ContentItem) -> bool:
+    """Return True if the X post appears to be a copy-pasted excerpt from the source."""
+    if not post or not item.body_text:
+        return False
+    post_lower = post.lower()
+    body_lower = item.body_text.lower()
+    title_lower = item.title.lower()
+    # Check if the post contains the article title verbatim
+    if title_lower in post_lower and len(title_lower) > 20:
+        return True
+    # Check if a long substring of the post appears in the body
+    # Split post into 8-word windows and see how many match
+    words = post_lower.split()
+    if len(words) < 8:
+        return False
+    match_count = 0
+    total_windows = 0
+    for i in range(len(words) - 7):
+        window = " ".join(words[i : i + 8])
+        total_windows += 1
+        if window in body_lower:
+            match_count += 1
+    if total_windows > 0 and match_count / total_windows > 0.3:
+        return True
+    return False
+
+
 def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key or OpenAI is None:
@@ -1006,6 +1046,8 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
     pattern_name = pattern["name"]
     pattern_instruction = pattern["instruction"]
 
+    # Truncate body text so the AI must synthesize rather than copy-paste
+    body_excerpt = item.body_text[:BODY_EXCERPT_MAX_CHARS].rsplit(" ", 1)[0] if item.body_text else ""
     prompt_item = {
         "kind": item.kind,
         "title": item.title,
@@ -1015,7 +1057,7 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
         "author": item.author,
         "category": item.category,
         "tags": item.tags,
-        "body_excerpt": item.body_text,
+        "body_excerpt": body_excerpt,
         "asset_url": item.asset_url,
         "local_video_available": bool(item.local_video_path),
     }
@@ -1024,16 +1066,20 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
         "You write X posts for someone who thinks deeply about Islamic economics. "
         "The voice is calm, wise, and slightly melancholic — like someone writing in a journal "
         "that happens to be public. "
+        "CRITICAL: Never copy or paraphrase sentences from the source material. "
+        "Write an entirely original thought INSPIRED by the content. "
+        "The X post must sound like a person's conclusion after reading, not a summary of what they read. "
         "State things as quiet truths you have observed, not as opinions or arguments. "
         "Use 'you' naturally when addressing the reader. "
         "Use reframing: take something familiar and reveal what it actually is. "
         "Use parallel structure when it fits: 'X is Y. Z is A.' "
         "No hedging. No 'I think' or 'perhaps' or 'arguably'. Just state it. "
-        "1-3 sentences. Complete thoughts. Standalone posts end with a period. "
+        "1-3 sentences max for X. Complete thoughts. Standalone posts end with a period. "
         "Use only the supplied facts. Do not invent scripture references, numbers, or historical claims. "
         "Never use emoji, hashtags, or semicolons. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
+        "Never include article titles or subheadings in the X post. "
         "The post should read like a truth someone arrived at after years of studying, "
         "stated simply enough that anyone can understand it."
     )
@@ -1142,10 +1188,191 @@ Content item:
             },
         )
         response_text = getattr(response, "output_text", "") or ""
-        return json.loads(response_text) if response_text else None
+        result = json.loads(response_text) if response_text else None
+        if result:
+            # Quality gate: reject X posts that look like raw article excerpts
+            x_post = (result.get("x") or {}).get("single_post", "")
+            if _looks_like_excerpt(x_post, item):
+                logger.warning("AI X post looks like raw excerpt, discarding: %s", x_post[:80])
+                result["x"]["single_post"] = ""  # Force fallback
+        return result
     except Exception as exc:
         logger.warning("OpenAI generation failed for %s: %s", item.content_id, exc)
         return None
+
+
+def generate_channels_with_anthropic(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
+    """Generate social campaign channels using Anthropic Claude API."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key or anthropic_sdk is None:
+        return None
+
+    pattern = voice_pattern or X_VOICE_PATTERNS[0]
+    pattern_name = pattern["name"]
+    pattern_instruction = pattern["instruction"]
+
+    body_excerpt = item.body_text[:BODY_EXCERPT_MAX_CHARS].rsplit(" ", 1)[0] if item.body_text else ""
+    prompt_item = {
+        "kind": item.kind,
+        "title": item.title,
+        "summary": item.summary,
+        "url": item.url,
+        "published_at": item.published_at,
+        "author": item.author,
+        "category": item.category,
+        "tags": item.tags,
+        "body_excerpt": body_excerpt,
+        "asset_url": item.asset_url,
+        "local_video_available": bool(item.local_video_path),
+    }
+
+    system_prompt = (
+        "You write X posts for someone who thinks deeply about Islamic economics. "
+        "The voice is calm, wise, and slightly melancholic — like someone writing in a journal "
+        "that happens to be public. "
+        "CRITICAL: Never copy or paraphrase sentences from the source material. "
+        "Write an entirely original thought INSPIRED by the content. "
+        "The X post must sound like a person's conclusion after reading, not a summary of what they read. "
+        "State things as quiet truths you have observed, not as opinions or arguments. "
+        "Use 'you' naturally when addressing the reader. "
+        "Use reframing: take something familiar and reveal what it actually is. "
+        "Use parallel structure when it fits: 'X is Y. Z is A.' "
+        "No hedging. No 'I think' or 'perhaps' or 'arguably'. Just state it. "
+        "1-3 sentences max for X. Complete thoughts. Standalone posts end with a period. "
+        "Use only the supplied facts. Do not invent scripture references, numbers, or historical claims. "
+        "Never use emoji, hashtags, or semicolons. "
+        "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
+        "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
+        "Never include article titles or subheadings in the X post. "
+        "The post should read like a truth someone arrived at after years of studying, "
+        "stated simply enough that anyone can understand it."
+    )
+
+    # Reuse the same user prompt structure as OpenAI
+    user_prompt = f"""
+Create a cross-platform campaign for the content item below.
+
+=== X SINGLE POST (most important — get this right) ===
+Voice pattern for this post: **{pattern_name}**
+{pattern_instruction}
+
+Critical X rules:
+- X single post must be <= 250 characters.
+- Do NOT summarize the article. Do NOT write a headline. Do NOT write a teaser.
+- The post should read like a personal thought or conclusion, not a content preview.
+- Write short declarative sentences. State things plainly. Let the reader draw implications.
+- Do NOT use these phrases: "new article", "new episode", "check out", "read here",
+  "read the full argument", "link below", "read more", "we examine", "this piece",
+  "here's why", "here's the thing", "let's talk about", "a thread", "unpopular opinion",
+  "hot take", "did you know", "spoiler alert", "buckle up", "it turns out".
+- Do NOT start with "So", "Okay so", "I think", "In my opinion", or "Honestly".
+- Do NOT include the raw URL in the X single post.
+- Do NOT use hashtags or emoji in the X single post.
+- No corporate "we". First person is fine but use it sparingly.
+- If the content is about conflict or hardship, stay measured and factual.
+- Standalone single posts always end with a period. Not a colon, not an ellipsis, not a dash.
+
+=== X THREAD ===
+- 4 posts, each <= 260 characters.
+- Build a quiet argument or tell a short story across the posts.
+- First post states the most interesting thing. No "Thread:" label.
+- Each post should make sense on its own.
+- Last post may include the source URL.
+
+=== OTHER CHANNELS ===
+- LinkedIn post must be <= 1400 characters. Professional but not dry. Include source URL.
+- Instagram caption must be <= 1800 characters. Include source URL and up to 5 hashtags.
+- Instagram carousel must contain exactly 5 short slides.
+- UpScrolled post: reflective, conversational, <= 450 characters. 2-3 short paragraphs. No raw URL in body.
+- UpScrolled: include one discussion prompt and one short topic suggestion.
+- Short-video voiceover: target 35-45 seconds, under 110 words.
+- Keep hashtags relevant and capped at 5.
+- For LinkedIn, Instagram, and short-video, include direct calls to read/listen at the source URL.
+- Use content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
+- If the content is scholarly or sensitive, keep the tone measured and factual.
+- X single post should sound like an informed person sharing a thought, question, or observation.
+- Avoid promotional framing like `new article`, `new episode`, `read here`, `read the full argument`, or `link below`.
+- Do not include the raw URL in the X single post.
+- Do not use hashtags in the X single post.
+- If the X thread includes a source URL, include it only in the final post.
+
+Return ONLY valid JSON with this exact shape (no markdown fences, no extra text):
+{{
+  "x": {{
+    "single_post": "string",
+    "thread": ["string", "string", "string", "string"],
+    "hashtags": ["string"]
+  }},
+  "linkedin": {{
+    "post": "string",
+    "comment_prompt": "string"
+  }},
+  "instagram": {{
+    "caption": "string",
+    "carousel_slides": ["string", "string", "string", "string", "string"],
+    "reel_caption": "string",
+    "cover_text": "string"
+  }},
+  "upscrolled": {{
+    "post": "string",
+    "discussion_prompt": "string",
+    "topic_suggestion": "string"
+  }},
+  "short_video": {{
+    "title": "string",
+    "hook": "string",
+    "voiceover": "string",
+    "shot_list": [
+      {{"time": "string", "visual": "string", "on_screen_text": "string"}}
+    ],
+    "caption": "string",
+    "hashtags": ["string"]
+  }}
+}}
+
+Content item:
+{json.dumps(prompt_item, ensure_ascii=True, indent=2)}
+""".strip()
+
+    try:
+        client = anthropic_sdk.Anthropic(api_key=api_key)
+        response = client.messages.create(
+            model=ANTHROPIC_MODEL,
+            max_tokens=ANTHROPIC_MAX_OUTPUT_TOKENS,
+            system=system_prompt,
+            messages=[{"role": "user", "content": user_prompt}],
+        )
+        response_text = response.content[0].text if response.content else ""
+        # Strip markdown fences if present
+        if response_text.startswith("```"):
+            response_text = re.sub(r"^```(?:json)?\s*", "", response_text)
+            response_text = re.sub(r"\s*```\s*$", "", response_text)
+        result = json.loads(response_text) if response_text else None
+        if result:
+            x_post = (result.get("x") or {}).get("single_post", "")
+            if _looks_like_excerpt(x_post, item):
+                logger.warning("Claude X post looks like raw excerpt, discarding: %s", x_post[:80])
+                result["x"]["single_post"] = ""
+        return result
+    except Exception as exc:
+        logger.warning("Anthropic generation failed for %s: %s", item.content_id, exc)
+        return None
+
+
+def generate_channels_ai(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
+    """Route to the best available AI provider."""
+    provider = AI_PROVIDER.lower()
+    if provider == "none":
+        return None
+    if provider == "anthropic":
+        return generate_channels_with_anthropic(item, voice_pattern)
+    if provider == "openai":
+        return generate_channels_with_openai(item, voice_pattern)
+    # auto — try Anthropic first (better quality), fall back to OpenAI
+    result = generate_channels_with_anthropic(item, voice_pattern)
+    if result is not None:
+        return result
+    return generate_channels_with_openai(item, voice_pattern)
 
 
 def sanitize_hashtags(values: Any, fallback: List[str], max_items: int = 5) -> List[str]:
@@ -1193,7 +1420,7 @@ def sanitize_shot_list(values: Any, fallback: List[Dict[str, str]]) -> List[Dict
 
 def build_campaign(item: ContentItem, use_ai: bool, voice_pattern: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     fallback_channels = build_fallback_channels(item, voice_pattern=voice_pattern)
-    generated_channels = generate_channels_with_openai(item, voice_pattern=voice_pattern) if use_ai else None
+    generated_channels = generate_channels_ai(item, voice_pattern=voice_pattern) if use_ai else None
 
     x_payload = generated_channels.get("x", {}) if generated_channels else {}
     linkedin_payload = generated_channels.get("linkedin", {}) if generated_channels else {}
