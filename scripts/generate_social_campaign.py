@@ -71,6 +71,33 @@ ANTHROPIC_MAX_OUTPUT_TOKENS = 2200
 AI_PROVIDER = os.environ.get("AI_PROVIDER", "auto")  # auto, anthropic, openai, none
 BODY_EXCERPT_MAX_CHARS = 800  # Truncate body text sent to AI to force synthesis
 
+# Episodes/series excluded from social automation (war/conflict content that
+# could be misread in the context of active geopolitical events).
+SOCIAL_BLACKLIST_KEYWORDS = [
+    # Entire "Price of Power" series (war economics)
+    "economics of war in islam",
+    "sanctions the modern siege",
+    "the arms economy",
+    "the global arms economy",
+    "war and energy",
+    "the destruction economy",
+    "war in real time",
+    # Paper Promises EP07 (geopolitical framing)
+    "the bond market battlefield",
+]
+
+# Additional keyword triggers — if a podcast title contains any of these,
+# route to manual review instead of auto-posting.
+SENSITIVE_TITLE_WORDS = [
+    "war", "siege", "sanctions", "destruction", "arms", "conflict",
+    "military", "invasion", "bombing", "occupation",
+]
+
+# Blog posts to exclude from social automation
+SOCIAL_BLACKLIST_BLOG_SLUGS = [
+    "the-economic-cost-of-the-iran-war",
+]
+
 # ---------------------------------------------------------------------------
 # X voice patterns — weighted selection for natural variety
 # ---------------------------------------------------------------------------
@@ -432,13 +459,26 @@ def parse_blog_article(path: Path) -> ContentItem:
     )
 
 
+def _is_blog_blacklisted(path: Path) -> bool:
+    """Check if a blog post matches blacklisted slugs or sensitive keywords."""
+    name_lower = path.stem.lower()
+    if any(slug in name_lower for slug in SOCIAL_BLACKLIST_BLOG_SLUGS):
+        return True
+    if any(word in name_lower for word in SENSITIVE_TITLE_WORDS):
+        return True
+    return False
+
+
 def discover_blog_items(project_root: Path) -> List[ContentItem]:
     blog_dir = project_root / "Website" / "blog"
-    items = [
-        parse_blog_article(path)
-        for path in sorted(blog_dir.glob("*.html"))
-        if not path.name.startswith(".")
-    ]
+    items = []
+    for path in sorted(blog_dir.glob("*.html")):
+        if path.name.startswith("."):
+            continue
+        if _is_blog_blacklisted(path):
+            logger.info("Skipping blacklisted blog: %s", path.name)
+            continue
+        items.append(parse_blog_article(path))
     return sorted(items, key=sort_key_for_item, reverse=True)
 
 
@@ -485,6 +525,17 @@ def discover_podcast_items(project_root: Path) -> List[ContentItem]:
     for entry in feed.entries:
         episode_number = detect_episode_number(entry)
         title = normalize_whitespace(entry.get("itunes_title") or strip_html(entry.get("title", "")))
+
+        # --- Conflict/sensitivity filter ---
+        title_lower = title.lower()
+        if any(kw in title_lower for kw in SOCIAL_BLACKLIST_KEYWORDS):
+            logger.info("Skipping blacklisted episode: %s", title)
+            continue
+        if any(word in title_lower for word in SENSITIVE_TITLE_WORDS):
+            logger.info("Skipping sensitive episode: %s", title)
+            continue
+        # --- End filter ---
+
         description = strip_html(entry.get("description", ""))
         subtitle = strip_html(entry.get("itunes_subtitle", ""))
         summary = subtitle or first_sentence(description)
