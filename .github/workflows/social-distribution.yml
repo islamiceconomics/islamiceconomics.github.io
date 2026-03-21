@@ -50,6 +50,7 @@ jobs:
       BUFFER_PROFILE_ID_X: ${{ secrets.BUFFER_PROFILE_ID_X }}
       BUFFER_PROFILE_ID_LINKEDIN: ${{ secrets.BUFFER_PROFILE_ID_LINKEDIN }}
       BUFFER_PROFILE_ID_INSTAGRAM: ${{ secrets.BUFFER_PROFILE_ID_INSTAGRAM }}
+      BUFFER_PROFILE_ID_THREADS: ${{ secrets.BUFFER_PROFILE_ID_THREADS }}
       SOCIAL_SOURCE: ${{ github.event.inputs.source || 'auto' }}
       SOCIAL_CONTENT_ID: ${{ github.event.inputs.content_id || '' }}
       SOCIAL_LIMIT_INPUT: ${{ github.event.inputs.limit || '' }}
@@ -96,7 +97,7 @@ jobs:
             echo "limit=$limit" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Generate social campaign packs
+      - name: Generate social campaign packs (without Buffer)
         id: generate
         env:
           SOCIAL_LIMIT: ${{ steps.pick_limit.outputs.limit }}
@@ -110,15 +111,66 @@ jobs:
             cmd+=(--content-id "$SOCIAL_CONTENT_ID")
           fi
 
-          if [ "$SOCIAL_PUBLISH_BUFFER" = "true" ]; then
-            cmd+=(--publish-buffer)
-          fi
-
           if [ "$SOCIAL_FORCE" = "true" ]; then
             cmd+=(--force)
           fi
 
           "${cmd[@]}"
+
+      - name: Commit quote cards and state (pre-Buffer)
+        id: commit_cards
+        if: steps.generate.outcome == 'success'
+        run: |
+          git config user.name "Social Distribution Bot"
+          git config user.email "bot@islamiceconomics.local"
+          git add -f Website/social/cards/ social/cards/ social/state/ social/campaigns/
+          if git diff --cached --quiet; then
+            echo "no_card_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Add quote cards and campaigns - $(date -u +'%Y-%m-%d')"
+            git push
+            echo "no_card_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Wait for GitHub Pages deployment
+        if: steps.commit_cards.outputs.no_card_changes != 'true' && env.SOCIAL_PUBLISH_BUFFER == 'true'
+        run: |
+          echo "Waiting 60s for GitHub Pages to deploy quote cards..."
+          sleep 60
+
+      - name: Publish to Buffer
+        id: buffer_publish
+        if: steps.generate.outcome == 'success' && env.SOCIAL_PUBLISH_BUFFER == 'true'
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+
+          sys.path.insert(0, "scripts")
+          from generate_social_campaign import queue_to_buffer, load_state, save_state
+
+          campaigns_dir = Path("social/campaigns")
+          today = __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("%Y-%m-%d")
+          campaign_files = sorted(campaigns_dir.glob(f"{today}*.json"))
+
+          if not campaign_files:
+              print("No campaign files found for today.")
+              sys.exit(0)
+
+          any_failed = False
+          for cf in campaign_files:
+              campaign = json.loads(cf.read_text())
+              print(f"Publishing: {cf.name}")
+              result = queue_to_buffer(campaign)
+              campaign["buffer"] = result
+              cf.write_text(json.dumps(campaign, indent=2, ensure_ascii=False))
+              print(json.dumps(result, indent=2))
+              if any(r.get("status") == "error" for r in result.values()):
+                  any_failed = True
+
+          if any_failed:
+              sys.exit(1)
+          PY
 
       - name: Show latest campaign buffer result
         if: always()
@@ -146,6 +198,7 @@ jobs:
           path: |
             social/campaigns
             social/state
+            social/cards
           if-no-files-found: warn
 
       - name: Render short-video clips
@@ -185,12 +238,12 @@ jobs:
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit and push changes
+      - name: Commit and push remaining changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "Social Distribution Bot"
           git config user.email "bot@islamiceconomics.local"
-          git add social/README.md social/state social/campaigns social/shorts/.gitignore social/shorts/.gitkeep social/shorts/rendered/.gitkeep
+          git add social/README.md social/state social/campaigns social/cards Website/social/cards social/shorts/.gitignore social/shorts/.gitkeep social/shorts/rendered/.gitkeep
           git commit -m "Social campaign update - $(date -u +'%Y-%m-%d')"
           git push
 

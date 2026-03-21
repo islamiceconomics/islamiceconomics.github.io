@@ -45,10 +45,14 @@ This repo includes a social automation pipeline for the Islamic Economics site.
 - `BUFFER_PROFILE_ID_X`
 - `X_BEARER_TOKEN` (for reply discovery — apply at https://developer.x.com)
 
+Active channels:
+
+- `BUFFER_PROFILE_ID_INSTAGRAM` — quote card images auto-generated and hosted via GitHub Pages
+- `BUFFER_PROFILE_ID_THREADS` — same text as X, posted via Buffer (linked to Instagram account @islamicecon)
+
 Optional later:
 
 - `BUFFER_PROFILE_ID_LINKEDIN`
-- `BUFFER_PROFILE_ID_INSTAGRAM`
 
 ## What The Pipeline Produces
 

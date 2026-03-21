@@ -54,6 +54,7 @@ X_POST_LIMIT = 250
 X_THREAD_LIMIT = 260
 LINKEDIN_POST_LIMIT = 1400
 INSTAGRAM_CAPTION_LIMIT = 1800
+THREADS_POST_LIMIT = 500
 UPSCROLLED_POST_LIMIT = 450
 SHORT_VIDEO_CAPTION_LIMIT = 1000
 SHORT_VIDEO_WORD_LIMIT = 110
@@ -663,7 +664,6 @@ def ensure_thread_has_source_url(posts: List[str], item: ContentItem) -> List[st
     return sanitized
 
 
-<<<<<<< HEAD
 def strip_ai_isms(text: str) -> str:
     """Remove common AI-sounding openers and filler phrases."""
     patterns = [
@@ -708,25 +708,11 @@ def sanitize_x_single_post(text: str, fallback: str, item: ContentItem) -> str:
 
 
 def build_fallback_channels(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-=======
-def sanitize_x_single_post(text: str, fallback: str, item: ContentItem) -> str:
-    candidate = strip_hashtags(strip_urls(text))
-    candidate = strip_dangling_source_prompt(candidate)
-    candidate = re.sub(r"^(new\s+(article|post|episode)\s*:?\s*)", "", candidate, flags=re.IGNORECASE).strip()
-    candidate = candidate.rstrip(" ,;:-")
-    if len(candidate) < 30:
-        candidate = strip_dangling_source_prompt(strip_hashtags(strip_urls(fallback)))
-    return truncate_text(candidate, X_POST_LIMIT)
-
-
-def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
->>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
     points = supporting_points(item, count=3)
     hashtags = candidate_hashtags(item)
     cta_title = source_cta(item, style="title")
     cta_lower = source_cta(item, style="lower")
 
-<<<<<<< HEAD
     pattern_name = (voice_pattern or {}).get("name", "observation")
 
     # Build X single post based on voice pattern
@@ -756,12 +742,6 @@ def build_fallback_channels(item: ContentItem) -> Dict[str, Any]:
     else:  # observation (default)
         x_single = truncate_text(fact, X_POST_LIMIT)
 
-=======
-    x_single = truncate_text(
-        f"One thing worth sitting with: {first_sentence(item.summary)}",
-        X_POST_LIMIT,
-    )
->>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
     x_thread = [
         truncate_text(f"{item.title} — a thread:", X_THREAD_LIMIT),
         truncate_text(points[0], X_THREAD_LIMIT),
@@ -1096,17 +1076,13 @@ Critical X rules:
 - Short-video voiceover: target 35-45 seconds, under 110 words.
 - Keep hashtags relevant and capped at 5.
 - For LinkedIn, Instagram, and short-video, include direct calls to read/listen at the source URL.
-<<<<<<< HEAD
 - Use content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
-=======
-- Use a content-type-appropriate CTA: `Listen` for podcast episodes and `Read` for articles.
 - If the content is scholarly or sensitive, keep the tone measured and factual.
 - X single post should sound like an informed person sharing a thought, question, or observation.
 - Avoid promotional framing like `new article`, `new episode`, `read here`, `read the full argument`, or `link below`.
 - Do not include the raw URL in the X single post.
 - Do not use hashtags in the X single post.
 - If the X thread includes a source URL, include it only in the final post.
->>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
 
 Return this JSON shape:
 {{
@@ -1247,16 +1223,8 @@ def build_campaign(item: ContentItem, use_ai: bool, voice_pattern: Optional[Dict
         "source": asdict(item),
         "channels": {
             "x": {
-<<<<<<< HEAD
                 "single_post": x_single_final,
                 "voice_pattern": pattern_name,
-=======
-                "single_post": sanitize_x_single_post(
-                    x_payload.get("single_post") or fallback_channels["x"]["single_post"],
-                    fallback_channels["x"]["single_post"],
-                    item,
-                ),
->>>>>>> b3881afbe21ccba4d81b02ad7f7af06a8bc56887
                 "thread": ensure_thread_has_source_url(
                     sanitize_string_list(
                         x_payload.get("thread"),
@@ -1563,6 +1531,7 @@ def recommended_buffer_secret(service: str) -> Optional[str]:
         "x": "BUFFER_PROFILE_ID_X",
         "linkedin": "BUFFER_PROFILE_ID_LINKEDIN",
         "instagram": "BUFFER_PROFILE_ID_INSTAGRAM",
+        "threads": "BUFFER_PROFILE_ID_THREADS",
     }
     return mapping.get(normalized)
 
@@ -1658,6 +1627,43 @@ def create_buffer_post(channel_id: str, text: str, asset_url: str = "") -> Dict[
     }
 
 
+def generate_instagram_card(campaign: Dict[str, Any]) -> Optional[Dict[str, str]]:
+    """Generate a quote card for Instagram and return path + public URL.
+
+    Returns dict with 'path' and 'url' keys, or None if generation fails.
+    """
+    try:
+        import importlib.util
+        card_script = Path(__file__).resolve().parent / "generate_quote_card.py"
+        if not card_script.exists():
+            logger.warning("generate_quote_card.py not found. Skipping card generation.")
+            return None
+        spec = importlib.util.spec_from_file_location("generate_quote_card", str(card_script))
+        if spec is None or spec.loader is None:
+            return None
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+    except Exception as exc:
+        logger.warning("Could not load quote card module: %s", exc)
+        return None
+
+    channels = campaign.get("channels", {})
+    # Use X single post text for the card (same voice, no hashtags, no URLs)
+    text = channels.get("x", {}).get("single_post", "")
+    if not text:
+        text = channels.get("instagram", {}).get("caption", "")
+    if not text:
+        return None
+
+    try:
+        card_path, card_url = mod.generate_card_with_url(text)
+        logger.info("Generated Instagram quote card: %s → %s", card_path, card_url)
+        return {"path": str(card_path), "url": card_url}
+    except Exception as exc:
+        logger.warning("Quote card generation failed: %s", exc)
+        return None
+
+
 def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
     if not os.environ.get("BUFFER_ACCESS_TOKEN"):
         logger.info("BUFFER_ACCESS_TOKEN not set. Skipping Buffer queue.")
@@ -1669,7 +1675,16 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
         "x": "BUFFER_PROFILE_ID_X",
         "linkedin": "BUFFER_PROFILE_ID_LINKEDIN",
         "instagram": "BUFFER_PROFILE_ID_INSTAGRAM",
+        "threads": "BUFFER_PROFILE_ID_THREADS",
     }
+
+    # Pre-generate Instagram quote card if Instagram profile is configured
+    ig_card: Optional[Dict[str, str]] = None
+    if os.environ.get("BUFFER_PROFILE_ID_INSTAGRAM"):
+        ig_card = generate_instagram_card(campaign)
+        if ig_card:
+            campaign["instagram_card_path"] = ig_card["path"]
+            campaign["instagram_card_url"] = ig_card["url"]
 
     results: Dict[str, Any] = {}
 
@@ -1681,13 +1696,23 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
 
         if channel_name == "x":
             text = channels["x"]["single_post"]
+        elif channel_name == "threads":
+            # Threads gets the same text as X — text-first platform, same voice
+            text = channels["x"]["single_post"]
         elif channel_name == "linkedin":
             text = channels["linkedin"]["post"]
         else:
             text = channels["instagram"]["caption"]
 
         try:
-            asset_url = source.get("asset_url") or DEFAULT_IMAGE_URL if channel_name == "instagram" else ""
+            if channel_name == "instagram" and ig_card:
+                # Use the GitHub Pages-hosted quote card URL
+                asset_url = ig_card["url"]
+            elif channel_name == "instagram":
+                asset_url = source.get("asset_url") or DEFAULT_IMAGE_URL
+            else:
+                asset_url = ""
+
             results[channel_name] = create_buffer_post(
                 channel_id=profile_id,
                 text=text,
