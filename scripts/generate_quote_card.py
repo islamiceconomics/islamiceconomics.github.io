@@ -49,10 +49,10 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 FONTS_DIR = PROJECT_ROOT / "assets" / "fonts"
 OUTPUT_DIR = PROJECT_ROOT / "social" / "cards"
-# Cards also saved here so GitHub Pages auto-hosts them at
-# https://islamiceconomics.github.io/social/cards/<filename>.png
+# Cards also saved to Website dir for GitHub Pages, but we use
+# raw.githubusercontent.com for immediate availability (no deploy wait).
 WEBSITE_CARDS_DIR = PROJECT_ROOT / "Website" / "social" / "cards"
-CARDS_BASE_URL = "https://islamiceconomics.github.io/social/cards"
+CARDS_BASE_URL = "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards"
 
 HANDLE = "@theislamicecon"
 BRAND = "Islamic Economics"
