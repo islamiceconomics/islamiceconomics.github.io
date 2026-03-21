@@ -1,0 +1,101 @@
+{
+  "campaign_id": "2026-03-21-podcast-ie-s1-ep02-marketplace-medina",
+  "generated_at": "2026-03-21T14:25:58.069721+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-ie-s1-ep02-marketplace-medina",
+    "kind": "podcast",
+    "title": "The Marketplace of Medina",
+    "summary": "When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was a place where the clever merchant won and ordinary people lost.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-2",
+    "published_at": "2025-01-13T08:00:00+00:00",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was a place where the clever merchant won and ordinary people lost. He transformed it entirely by establishing open access, banning sham bidding and hoarding, and creating the hisbah system of market inspectors. Discover how 7th-century marketplace reforms created the foundation for Islamic commercial law. Topics: Medina Marketplace, Hisbah System, Najash, Fair Weights, Consumer Protection, Khiyar Series: Historical Islamic Economics (Part I) &bull; Episode 2 of 6",
+    "asset_url": "https://islamiceconomics.github.io/images/yt-thumb-ep02.png",
+    "local_asset_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/images/yt-thumb-ep02.png",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/feed.xml",
+    "local_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP02-The-Marketplace-of-Medina.mp4"
+  },
+  "channels": {
+    "x": {
+      "single_post": "When the Prophet arrived in Medina, the marketplace was rigged in favor of clever merchants. Consumer protection is actually just making markets fair.",
+      "voice_pattern": "observation",
+      "thread": [
+        "When the Prophet arrived in Medina, the marketplace was rigged in favor of clever merchants. Consumer protection is actually just making markets fair.",
+        "He banned sham bidding and hoarding. He created market inspectors called the hisbah system. Open access replaced insider advantages.",
+        "The reforms weren't about limiting commerce. They were about ensuring ordinary people could participate without being deceived or manipulated.",
+        "What we call modern consumer protection laws are echoes of 7th-century marketplace reforms that made trade honest. https://islamiceconomics.github.io/podcast.html#ep-2"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-2"
+    },
+    "linkedin": {
+      "post": "When Prophet Muhammad arrived in Medina in 622 CE, he found a marketplace designed for clever merchants to exploit ordinary people. His response wasn't to restrict trade\u2014it was to make it fair. He established open access, banned sham bidding and hoarding, and created the hisbah system of market inspectors. These weren't regulatory burdens. They were the foundation that allowed honest commerce to flourish. The reforms protected consumers not by limiting markets, but by ensuring everyone could participate without deception or manipulation. What we today call consumer protection laws are actually echoes of principles established in 7th-century Medina\u2014the idea that markets work best when they're accessible to all and rigged for none. Listen: https://islamiceconomics.github.io/podcast.html#ep-2",
+      "comment_prompt": "How do you see the balance between market freedom and consumer protection in modern economies?"
+    },
+    "instagram": {
+      "caption": "When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was a place where clever merchants won and ordinary people lost. His transformation was profound: open access replaced insider advantages, sham bidding was banned, hoarding was prohibited, and the hisbah system of market inspectors ensured fairness. These weren't restrictions on commerce\u2014they were the foundations that allowed honest trade to flourish. The principle was simple: markets work best when they're accessible to everyone and rigged for no one. What we call modern consumer protection laws are echoes of reforms made in 7th-century Medina, proving that fair markets aren't a new invention\u2014they're a restoration of an ancient ideal. Listen to the full episode to discover how these marketplace reforms created the foundation for Islamic commercial law. https://islamiceconomics.github.io/podcast.html#ep-2 #IslamicEconomics #MedinaMarketplace #ConsumerProtection #EthicalTrade #EconomicHistory",
+      "carousel_slides": [
+        "When Prophet Muhammad arrived in Medina in 622 CE, the marketplace favored clever\u2026",
+        "He transformed it by establishing open access and banning deceptive practices like sham\u2026",
+        "The hisbah system created market inspectors to ensure fairness for all participants",
+        "These weren't restrictions on commerce\u2014they were foundations for honest trade to flourish",
+        "Modern consumer protection laws echo 7th-century marketplace reforms from Medina"
+      ],
+      "reel_caption": "The marketplace transformation that changed commerce forever\u2014from 7th-century Medina to modern consumer protection laws. Listen: https://islamiceconomics.github.io/podcast.html#ep-2 #IslamicEconomics #MedinaMarketplace #ConsumerProtection #EthicalTrade #EconomicHistory",
+      "cover_text": "The Medina Marketplace Revolution",
+      "image_url": "https://islamiceconomics.github.io/images/yt-thumb-ep02.png"
+    },
+    "upscrolled": {
+      "post": "When Prophet Muhammad arrived in Medina, he found a marketplace rigged for clever merchants against ordinary people.\n\nHis response wasn't to restrict trade but to make it fair. Open access, banned sham bidding, prohibited hoarding, market inspectors.\n\nConsumer protection is actually just making markets work for everyone instead of the few.",
+      "discussion_prompt": "What does fair competition actually look like in practice?",
+      "topic_suggestion": "Ancient marketplace reforms",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-2"
+    },
+    "short_video": {
+      "title": "How 7th Century Medina Created Modern Consumer Protection",
+      "hook": "When Prophet Muhammad arrived in Medina, the marketplace was rigged against ordinary people",
+      "voiceover": "When Prophet Muhammad arrived in Medina in 622 CE, the marketplace was designed for clever merchants to exploit ordinary people. His response transformed commerce forever. He established open access, banned sham bidding and hoarding, and created the hisbah system of market inspectors. These weren't restrictions on trade\u2014they were the foundations that allowed honest commerce to flourish. What we call modern consumer protection laws are actually echoes of principles established in seventh-century Medina. Fair markets aren't a new invention\u2014they're a restoration of an ancient ideal.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ancient Middle Eastern marketplace scene",
+          "on_screen_text": "Medina, 622 CE"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Merchants haggling, deceptive practices",
+          "on_screen_text": "Marketplace favored clever merchants"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Market inspector checking weights and measures",
+          "on_screen_text": "Hisbah system created"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Fair trading, diverse participants",
+          "on_screen_text": "Open access established"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Modern consumer protection symbols",
+          "on_screen_text": "Ancient principles, modern laws"
+        }
+      ],
+      "caption": "The marketplace transformation that created the foundation for modern consumer protection\u2014from 7th-century Medina to today. Listen: https://islamiceconomics.github.io/podcast.html#ep-2",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#MedinaMarketplace",
+        "#ConsumerProtection",
+        "#EthicalTrade",
+        "#EconomicHistory"
+      ],
+      "source_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP02-The-Marketplace-of-Medina.mp4"
+    }
+  }
+}

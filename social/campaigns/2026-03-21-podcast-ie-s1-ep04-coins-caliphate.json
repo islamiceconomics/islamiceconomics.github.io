@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-21-podcast-ie-s1-ep04-coins-caliphate",
+  "generated_at": "2026-03-21T14:25:08.533750+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-ie-s1-ep04-coins-caliphate",
+    "kind": "podcast",
+    "title": "Coins of the Caliphate",
+    "summary": "In 696 CE, Caliph Abd al-Malik ibn Marwan made a bold decision: replace the Byzantine and Persian coins circulating in Islamic lands with purely Islamic coinage.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-4",
+    "published_at": "2025-01-27T08:00:00+00:00",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In 696 CE, Caliph Abd al-Malik ibn Marwan made a bold decision: replace the Byzantine and Persian coins circulating in Islamic lands with purely Islamic coinage. The gold dinar and silver dirham became the most trusted currencies of the medieval world. Discover how Al-Ghazali articulated the principle later known as Gresham's Law, and how Al-Maqrizi conducted one of history's first studies of inflation. Topics: Gold Dinar, Silver Dirham, Abd al-Malik, Al-Ghazali, Ibn Taymiyyah, Inflation Series: Historical Islamic Economics (Part I) &bull; Episode 4 of 6",
+    "asset_url": "https://islamiceconomics.github.io/images/yt-thumb-ep04.png",
+    "local_asset_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/images/yt-thumb-ep04.png",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/feed.xml",
+    "local_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP04-Coins-of-the-Caliphate.mp4"
+  },
+  "channels": {
+    "x": {
+      "single_post": "In 696 CE, the Islamic world stopped using Byzantine and Persian coins. The gold dinar and silver dirham they created became the most trusted currencies of the medieval world.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "In 696 CE, Caliph Abd al-Malik made a decision that would reshape global trade. He replaced all Byzantine and Persian coins in Islamic lands with purely Islamic currency.",
+        "The gold dinar and silver dirham became the most trusted currencies of the medieval world. Merchants from Europe to Asia preferred them over their own local coins.",
+        "Al-Ghazali understood what we now call Gresham's Law centuries before Gresham. Bad money drives out good money when both circulate at fixed rates.",
+        "Al-Maqrizi conducted one of history's first systematic studies of inflation. These weren't just coins. They were instruments of economic sovereignty. https://islamiceconomics.github.io/podcast.html#ep-4"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#MonetaryHistory",
+        "#Caliphate"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-4"
+    },
+    "linkedin": {
+      "post": "The most trusted currency of the medieval world wasn't minted in Constantinople or Rome. In 696 CE, Caliph Abd al-Malik ibn Marwan made a decision that would reshape global commerce for centuries. He replaced all the Byzantine and Persian coins circulating in Islamic lands with purely Islamic currency\u2014the gold dinar and silver dirham. These coins became so trusted that merchants from Europe to Asia preferred them over their own local currencies. The Islamic monetary system demonstrated principles that modern economists would later codify: Al-Ghazali articulated what we now know as Gresham's Law, while Al-Maqrizi conducted one of history's first systematic studies of inflation. This wasn't just currency reform\u2014it was a declaration of economic sovereignty that established trust through consistent weight, purity, and Islamic principles. How Islamic scholars understood monetary economics centuries before the West is explored in detail: https://islamiceconomics.github.io/podcast.html#ep-4",
+      "comment_prompt": "What modern lessons can we draw from the Islamic world's approach to creating trusted currency?"
+    },
+    "instagram": {
+      "caption": "The most trusted currency of the medieval world came from the Islamic Caliphate. In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: replace all Byzantine and Persian coins in Islamic lands with purely Islamic currency. The gold dinar and silver dirham became so reliable that merchants across Europe, Asia, and Africa preferred them over their own local coins. What made these coins special? Consistent weight, guaranteed purity, and Islamic principles embedded in their design. Islamic scholars like Al-Ghazali understood monetary principles that wouldn't be \"discovered\" in the West for centuries. This was economic sovereignty in action\u2014creating trust through principled design. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-4 #IslamicEconomics #MonetaryHistory #Caliphate #MedievalTrade #CurrencyDesign",
+      "carousel_slides": [
+        "696 CE: The Islamic world stops using foreign coins",
+        "Caliph Abd al-Malik creates the gold dinar and silver dirham",
+        "These become the most trusted currencies of the medieval world",
+        "Al-Ghazali understood Gresham's Law centuries before Gresham",
+        "Economic sovereignty through principled currency design"
+      ],
+      "reel_caption": "The medieval world's most trusted currency wasn't European \ud83e\ude99 In 696 CE, the Islamic Caliphate created the gold dinar and silver dirham\u2014coins so reliable that merchants everywhere preferred them over local currency. This was economic sovereignty through principled design. #IslamicEconomics #MonetaryHistory #MedievalTrade",
+      "cover_text": "The Most Trusted Medieval Currency",
+      "image_url": "https://islamiceconomics.github.io/images/yt-thumb-ep04.png"
+    },
+    "upscrolled": {
+      "post": "In 696 CE, something remarkable happened in the Islamic world. Caliph Abd al-Malik decided to stop using Byzantine and Persian coins entirely.\n\nThe gold dinar and silver dirham that replaced them became the most trusted currencies of the medieval world. Merchants from Europe to Asia preferred Islamic coins over their own.\n\nThis wasn't just currency reform. It was a lesson in building trust through consistent principles\u2014something we're still\u2026",
+      "discussion_prompt": "How does currency design reflect a civilization's values and priorities?",
+      "topic_suggestion": "Medieval Islamic monetary systems",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-4"
+    },
+    "short_video": {
+      "title": "The Medieval World's Most Trusted Currency",
+      "hook": "The most trusted currency of the medieval world wasn't European",
+      "voiceover": "In 696 CE, Caliph Abd al-Malik made a bold decision. He replaced all Byzantine and Persian coins in Islamic lands with purely Islamic currency. The gold dinar and silver dirham became so trusted that merchants from Europe to Asia preferred them over their own local coins. Al-Ghazali understood monetary principles centuries before they were rediscovered in the West. This wasn't just currency reform\u2014it was economic sovereignty through principled design. The Islamic world created trust through consistency, purity, and embedded values.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ancient Islamic coins rotating slowly",
+          "on_screen_text": "696 CE"
+        },
+        {
+          "time": "5-10s",
+          "visual": "Map showing Islamic territories",
+          "on_screen_text": "Caliph Abd al-Malik"
+        },
+        {
+          "time": "10-20s",
+          "visual": "Gold dinar close-up with Arabic script",
+          "on_screen_text": "Gold Dinar"
+        },
+        {
+          "time": "20-30s",
+          "visual": "Medieval marketplace scene",
+          "on_screen_text": "Most Trusted Currency"
+        },
+        {
+          "time": "30-40s",
+          "visual": "Comparison of various medieval coins",
+          "on_screen_text": "Preferred by All Merchants"
+        }
+      ],
+      "caption": "The Islamic Caliphate created the medieval world's most trusted currency through principled design. Listen to the full story.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#MonetaryHistory",
+        "#MedievalTrade",
+        "#Caliphate",
+        "#CurrencyDesign"
+      ],
+      "source_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP04-Coins-of-the-Caliphate.mp4"
+    }
+  }
+}
