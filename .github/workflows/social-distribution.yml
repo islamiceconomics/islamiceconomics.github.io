@@ -54,7 +54,7 @@ jobs:
       BUFFER_PROFILE_ID_LINKEDIN: ${{ secrets.BUFFER_PROFILE_ID_LINKEDIN }}
       BUFFER_PROFILE_ID_INSTAGRAM: ${{ secrets.BUFFER_PROFILE_ID_INSTAGRAM }}
       BUFFER_PROFILE_ID_THREADS: ${{ secrets.BUFFER_PROFILE_ID_THREADS }}
-      SOCIAL_SOURCE: ${{ github.event.inputs.source || 'auto' }}
+      SOCIAL_SOURCE: ${{ github.event.inputs.source || 'podcast' }}
       SOCIAL_CONTENT_ID: ${{ github.event.inputs.content_id || '' }}
       SOCIAL_LIMIT_INPUT: ${{ github.event.inputs.limit || '' }}
       SOCIAL_PUBLISH_BUFFER: ${{ github.event_name == 'schedule' && 'true' || github.event.inputs.publish_buffer || 'false' }}
