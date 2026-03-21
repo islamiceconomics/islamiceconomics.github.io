@@ -1832,7 +1832,7 @@ def next_buffer_due_at() -> str:
     return due_at.replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
-def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "") -> str:
+def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "", post_type: str = "") -> str:
     base_fields = [
         f"channelId: {json.dumps(channel_id)}",
         f"text: {json.dumps(text)}",
@@ -1840,6 +1840,9 @@ def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "") 
         "mode: customScheduled",
         f"dueAt: {json.dumps(next_buffer_due_at())}",
     ]
+    # Instagram requires a subType (post, story, or reel)
+    if post_type:
+        base_fields.append(f"subType: {json.dumps(post_type)}")
 
     normalized_asset_url = normalize_whitespace(asset_url)
     if normalized_asset_url:
@@ -1872,8 +1875,8 @@ def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "") 
     """.strip()
 
 
-def create_buffer_post(channel_id: str, text: str, asset_url: str = "") -> Dict[str, Any]:
-    mutation = build_buffer_post_mutation(channel_id=channel_id, text=text, asset_url=asset_url)
+def create_buffer_post(channel_id: str, text: str, asset_url: str = "", post_type: str = "") -> Dict[str, Any]:
+    mutation = build_buffer_post_mutation(channel_id=channel_id, text=text, asset_url=asset_url, post_type=post_type)
     data = buffer_graphql_request(mutation)
     result = data.get("createPost") or {}
     typename = result.get("__typename")
@@ -1982,6 +1985,7 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
                 channel_id=profile_id,
                 text=text,
                 asset_url=asset_url,
+                post_type="post" if channel_name == "instagram" else "",
             )
         except RuntimeError as exc:
             results[channel_name] = {
