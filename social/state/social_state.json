@@ -378,6 +378,14 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-21-podcast-ie-s1-ep06-waqf-charity",
+          "generated_at": "2026-03-21T14:41:17.363339+00:00",
+          "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.json",
+          "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     }
