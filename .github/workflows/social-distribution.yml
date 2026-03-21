@@ -166,6 +166,15 @@ jobs:
           any_failed = False
           for cf in campaign_files:
               campaign = json.loads(cf.read_text())
+              # Skip campaigns already published or without card URLs
+              if campaign.get("buffer") and any(
+                  r.get("status") == "queued" for r in campaign["buffer"].values()
+              ):
+                  print(f"Skipping (already published): {cf.name}")
+                  continue
+              if not campaign.get("instagram_card_url"):
+                  print(f"Skipping (no card URL): {cf.name}")
+                  continue
               print(f"Publishing: {cf.name}")
               result = queue_to_buffer(campaign)
               campaign["buffer"] = result

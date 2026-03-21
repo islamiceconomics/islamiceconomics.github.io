@@ -1999,16 +1999,14 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
         "threads": "BUFFER_PROFILE_ID_THREADS",
     }
 
-    # Use existing card URL if already set (from pre-commit generation),
-    # otherwise generate a new one.
+    # Use existing card URL if already set (from pre-commit generation).
+    # Do NOT regenerate here — the new file won't be in the repo yet,
+    # so Buffer would get a 404 trying to fetch it.
     ig_card: Optional[Dict[str, str]] = None
     if campaign.get("instagram_card_url"):
         ig_card = {"path": campaign.get("instagram_card_path", ""), "url": campaign["instagram_card_url"]}
-    elif os.environ.get("BUFFER_PROFILE_ID_INSTAGRAM"):
-        ig_card = generate_instagram_card(campaign)
-        if ig_card:
-            campaign["instagram_card_path"] = ig_card["path"]
-            campaign["instagram_card_url"] = ig_card["url"]
+    else:
+        logger.info("No pre-generated Instagram card URL found. Skipping Instagram.")
 
     results: Dict[str, Any] = {}
 
