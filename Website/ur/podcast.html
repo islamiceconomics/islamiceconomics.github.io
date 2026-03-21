@@ -365,6 +365,40 @@
       color: var(--color-primary);
     }
 
+    /* ── Episode Video Links ── */
+    .episode-video-links {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .episode-video-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border-light);
+      color: var(--color-text-light);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .episode-video-link:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background: rgba(26, 92, 58, 0.05);
+    }
+    .episode-video-link .evl-icon {
+      font-size: 0.85rem;
+    }
+    [data-theme="dark"] .episode-video-link:hover {
+      background: rgba(197, 160, 68, 0.1);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+
     /* ── Video / Documentary Cards ── */
     .media-grid {
       display: grid;
@@ -694,6 +728,10 @@
                   <source src="../podcast/audio/ep01-islamic-economic-history-urdu.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -730,6 +768,10 @@
                   <source src="../podcast/audio/ep02-marketplace-of-medina-urdu.mp3" type="audio/mpeg">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -766,6 +808,10 @@
                   <source src="../podcast/audio/ep03-house-of-wisdom-urdu.mp3" type="audio/mpeg">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -802,6 +848,10 @@
                   <source src="../podcast/audio/ep04-coins-of-the-caliphate-urdu.mp3" type="audio/mpeg">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -838,6 +888,10 @@
                   <source src="../podcast/audio/ep05-caravans-to-cathay-urdu.mp3" type="audio/mpeg">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -874,6 +928,10 @@
                   <source src="../podcast/audio/ep06-the-waqf-urdu.mp3" type="audio/mpeg">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -949,6 +1007,10 @@
                   <source src="../podcast/audio/tt-ep01-urdu-the-word-tariff.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -985,6 +1047,10 @@
                   <source src="../podcast/audio/tt-ep02-urdu-the-sakk.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1021,6 +1087,10 @@
                   <source src="../podcast/audio/tt-ep03-urdu-the-admirals-sea.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1057,6 +1127,10 @@
                   <source src="../podcast/audio/tt-ep04-urdu-the-funduk.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1093,6 +1167,10 @@
                   <source src="../podcast/audio/tt-ep05-urdu-risk-and-rizq.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1129,6 +1207,10 @@
                   <source src="../podcast/audio/tt-ep06-urdu-the-tariff-trail-today.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1186,6 +1268,10 @@
                   <source src="../podcast/audio/pu-ep01-the-forbidden-throw.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1218,6 +1304,10 @@
                   <source src="../podcast/audio/pu-ep02-ghazalis-warning.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1250,6 +1340,10 @@
                   <source src="../podcast/audio/pu-ep03-ships-and-storms.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1282,6 +1376,10 @@
                   <source src="../podcast/audio/pu-ep04-selling-the-wind.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1314,6 +1412,10 @@
                   <source src="../podcast/audio/pu-ep05-when-uncertainty-collapsed.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1346,6 +1448,10 @@
                   <source src="../podcast/audio/pu-ep06-building-on-solid-ground.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1404,6 +1510,10 @@
                   <source src="../podcast/audio/wd-ep01-before-the-revelation.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1436,6 +1546,10 @@
                   <source src="../podcast/audio/wd-ep02-the-longest-verse.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1468,6 +1582,10 @@
                   <source src="../podcast/audio/wd-ep03-the-scholars-line.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1500,6 +1618,10 @@
                   <source src="../podcast/audio/wd-ep04-the-ottoman-experiment.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1532,6 +1654,10 @@
                   <source src="../podcast/audio/wd-ep05-interest-in-disguise.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1564,6 +1690,10 @@
                   <source src="../podcast/audio/wd-ep06-debt-without-chains.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1636,6 +1766,10 @@
                   <source src="../podcast/audio/be-ep01-when-nations-borrow.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1668,6 +1802,10 @@
                   <source src="../podcast/audio/be-ep02-the-debt-trap-v3.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1830,6 +1968,10 @@
                   <source src="../podcast/audio/mm-ep01-what-money-was.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1862,6 +2004,10 @@
                   <source src="../podcast/audio/mm-ep02-central-bank.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1894,6 +2040,10 @@
                   <source src="../podcast/audio/mm-ep03-dollars-world.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1926,6 +2076,10 @@
                   <source src="../podcast/audio/mm-ep04-currencies-break.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1958,6 +2112,10 @@
                   <source src="../podcast/audio/mm-ep05-new-contenders.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -1990,6 +2148,10 @@
                   <source src="../podcast/audio/mm-ep06-building-system.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2048,6 +2210,10 @@
                   <source src="../podcast/audio/tt-ep01-urdu-why-governments-tax.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2080,6 +2246,10 @@
                   <source src="../podcast/audio/tt-ep02-urdu-who-pays.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2112,6 +2282,10 @@
                   <source src="../podcast/audio/tt-ep03-urdu-what-state-owes.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2144,6 +2318,10 @@
                   <source src="../podcast/audio/tt-ep04-urdu-what-lies-beneath.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2176,6 +2354,10 @@
                   <source src="../podcast/audio/tt-ep05-urdu-borrowers-bargain.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2208,6 +2390,10 @@
                   <source src="../podcast/audio/tt-ep06-urdu-building-treasury.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2266,6 +2452,10 @@
                   <source src="../podcast/audio/re-ep01-urdu-what-makes-countries-rich.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2298,6 +2488,10 @@
                   <source src="../podcast/audio/re-ep02-urdu-the-growth-engine.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2330,6 +2524,10 @@
                   <source src="../podcast/audio/re-ep03-urdu-who-saves-and-why.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2362,6 +2560,10 @@
                   <source src="../podcast/audio/re-ep04-urdu-where-investment-goes.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2394,6 +2596,10 @@
                   <source src="../podcast/audio/re-ep05-urdu-work-wages-and-worth.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2426,6 +2632,10 @@
                   <source src="../podcast/audio/re-ep06-urdu-alternative-growth-path.m4a" type="audio/mp4">
                   آپ کے براؤزر نے آڈیو عنصر کی سپورٹ نہیں کی۔
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2499,6 +2709,10 @@
                   <source src="../podcast/audio/pp-ep01-economics-of-war-in-islam-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2527,6 +2741,10 @@
                   <source src="../podcast/audio/pp-ep02-sanctions-the-modern-siege-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2555,6 +2773,10 @@
                   <source src="../podcast/audio/pp-ep03-the-arms-economy-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2583,6 +2805,10 @@
                   <source src="../podcast/audio/pp-ep04-war-and-energy-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2611,6 +2837,10 @@
                   <source src="../podcast/audio/pp-ep05-the-destruction-economy-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2639,6 +2869,10 @@
                   <source src="../podcast/audio/pp-ep06-war-in-real-time-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2693,6 +2927,10 @@
                   <source src="../podcast/audio/pp-ep01-the-architecture-of-debt-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2722,6 +2960,10 @@
                   <source src="../podcast/audio/pp-ep02-the-bonds-you-dont-see-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2751,6 +2993,10 @@
                   <source src="../podcast/audio/pp-ep03-the-central-bank-trap-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2780,6 +3026,10 @@
                   <source src="../podcast/audio/pp-ep04-the-bond-market-battlefield-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2809,6 +3059,10 @@
                   <source src="../podcast/audio/pp-ep05-the-islamic-alternative-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2838,6 +3092,10 @@
                   <source src="../podcast/audio/pp-ep06-built-on-borrowed-time-v3.m4a" type="audio/mp4">
                   Your browser does not support the audio element.
                 </audio>
+                <div class="episode-video-links">
+                  <a href="#" class="episode-video-link" data-video-type="explainer" style="display:none"><span class="evl-icon">&#9654;</span> Watch Explainer</a>
+                  <a href="#" class="episode-video-link" data-video-type="short" style="display:none"><span class="evl-icon">&#9889;</span> Watch Short</a>
+                </div>
               </div>
             </div>
 
@@ -2948,7 +3206,7 @@
             <div class="social-links">
               <a href="https://x.com/theislamicecon" class="social-icon" aria-label="Twitter/X">X</a>
               <a href="https://instagram.com/islamicecon" class="social-icon" aria-label="Instagram">IG</a>
-              <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+              <a href="https://www.youtube.com/@theislamicecon" class="social-icon" aria-label="YouTube">YT</a>
             </div>
             <form class="footer-subscribe" data-newsletter-form>
               <input type="email" placeholder="آپ کی ای میل" class="form-input" required>
@@ -3059,6 +3317,13 @@ function switchEpAudio(btn, src, mime) {
   sourceEl.setAttribute('type', mime);
   player.load();
 }
+
+/* Show video links that have real URLs (not #) */
+document.querySelectorAll('.episode-video-link').forEach(function(link) {
+  if (link.href && !link.href.endsWith('#')) {
+    link.style.display = '';
+  }
+});
   </script>
 </body>
 </html>
