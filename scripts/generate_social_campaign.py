@@ -1999,9 +1999,12 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
         "threads": "BUFFER_PROFILE_ID_THREADS",
     }
 
-    # Pre-generate Instagram quote card if Instagram profile is configured
+    # Use existing card URL if already set (from pre-commit generation),
+    # otherwise generate a new one.
     ig_card: Optional[Dict[str, str]] = None
-    if os.environ.get("BUFFER_PROFILE_ID_INSTAGRAM"):
+    if campaign.get("instagram_card_url"):
+        ig_card = {"path": campaign.get("instagram_card_path", ""), "url": campaign["instagram_card_url"]}
+    elif os.environ.get("BUFFER_PROFILE_ID_INSTAGRAM"):
         ig_card = generate_instagram_card(campaign)
         if ig_card:
             campaign["instagram_card_path"] = ig_card["path"]
@@ -2183,6 +2186,14 @@ def main() -> int:
         voice_pattern = pick_x_voice_pattern(item.content_id, state)
         logger.info("Generating campaign for %s (X voice: %s)", item.content_id, voice_pattern["name"])
         campaign = build_campaign(item, use_ai=not args.no_ai, voice_pattern=voice_pattern)
+
+        # Always generate Instagram quote card (even without --publish-buffer)
+        # so the card is committed to the repo before Buffer tries to fetch it.
+        ig_card = generate_instagram_card(campaign)
+        if ig_card:
+            campaign["instagram_card_path"] = ig_card["path"]
+            campaign["instagram_card_url"] = ig_card["url"]
+
         buffer_result = queue_to_buffer(campaign) if args.publish_buffer else None
         if buffer_result:
             campaign["buffer"] = buffer_result
