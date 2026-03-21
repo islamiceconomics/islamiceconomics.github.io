@@ -37,6 +37,14 @@
           "json_path": "social/campaigns/2026-03-20-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital.json",
           "markdown_path": "social/campaigns/2026-03-20-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-21-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital-",
+          "generated_at": "2026-03-21T02:39:01.174214+00:00",
+          "json_path": "social/campaigns/2026-03-21-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital.json",
+          "markdown_path": "social/campaigns/2026-03-21-blog-2026-02-15-beyond-borders-why-the-muslim-world-needs-a-unified-digital.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -56,6 +64,14 @@
           "generated_at": "2026-03-20T22:16:01.066313+00:00",
           "json_path": "social/campaigns/2026-03-20-blog-2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.json",
           "markdown_path": "social/campaigns/2026-03-20-blog-2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.md",
+          "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-21-blog-2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita",
+          "generated_at": "2026-03-21T02:39:25.682145+00:00",
+          "json_path": "social/campaigns/2026-03-21-blog-2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.json",
+          "markdown_path": "social/campaigns/2026-03-21-blog-2026-02-15-digital-riyals-and-electronic-dinars-how-central-bank-digita.md",
           "x_voice_pattern": "observation"
         }
       ]
@@ -129,6 +145,14 @@
           "json_path": "social/campaigns/2026-03-20-blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.json",
           "markdown_path": "social/campaigns/2026-03-20-blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-21-blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective",
+          "generated_at": "2026-03-21T02:38:33.842583+00:00",
+          "json_path": "social/campaigns/2026-03-21-blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.json",
+          "markdown_path": "social/campaigns/2026-03-21-blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
