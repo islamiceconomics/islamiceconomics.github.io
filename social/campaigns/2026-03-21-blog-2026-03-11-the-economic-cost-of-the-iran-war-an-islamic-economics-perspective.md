@@ -1,7 +1,7 @@
 # Social Campaign: The Economic Cost of the Iran War: An Islamic Economics Perspective
 
 - Campaign ID: `2026-03-21-blog-2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective`
-- Generated: `2026-03-21T02:38:33.842583+00:00`
+- Generated: `2026-03-21T02:47:06.276685+00:00`
 - Source type: `blog`
 - Source URL: https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
 - Published: `2026-03-11T00:00:00+00:00`
@@ -17,78 +17,78 @@ The February 2026 escalation between the US, Israel, and Iran has triggered a ca
 
 ### Single Post
 
-Wars are measured in strategic victories, but their true cost appears in the villages of Bangladesh where rice prices have doubled. The strongest militaries create the weakest economies.
+When war breaks out, the markets reveal who bears the real cost. Oil spikes, currencies collapse, and somehow it's always the poorest Muslim nations that pay for conflicts they didn't start.
 
 Optional source note: https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
 
 ### Thread
 
-1. Wars are measured in strategic victories, but their true cost appears in the villages of Bangladesh where rice prices have doubled.
-2. Iran's oil disappeared from global markets overnight. Indonesia's currency collapsed. Pakistan's wheat imports became unaffordable. Military precision creates economic chaos.
-3. The doctrine of collective responsibility in Islamic law anticipated this: when one part of the community suffers, the economic pain spreads to all.
-4. Operation Epic Fury achieved every military objective. It also proved that in a connected world, every war becomes an economic… Read: https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
+1. When war breaks out, the markets reveal who bears the real cost. Oil spikes, currencies collapse, and somehow it's always the poorest Muslim nations that pay for conflicts they didn't start.
+2. The February strikes on Iran sent shockwaves far beyond Tehran. Pakistan's rupee crashed. Turkey's inflation soared. Bangladesh faced energy shortages. The economic web connects us all.
+3. Islamic economics speaks of collective responsibility. When one part of the ummah suffers, the whole body feels pain. The markets are just making this ancient truth visible in real time.
+4. War may be politics by other means, but economics reveals its true casualties. https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
 
 ## LinkedIn
 
-The February 2026 escalation between the US, Israel, and Iran has created ripple effects far beyond the battlefield. While Operation Epic Fury achieved its military objectives with surgical precision, the economic consequences reveal something profound about interconnected global markets. Muslim-majority economies from Bangladesh to Indonesia are experiencing severe disruptions - not from direct military action, but from the cascading effects of Iran's removal from oil markets and the broader economic uncertainty. From an Islamic economics perspective, this crisis illustrates the principle of collective responsibility - when one part of the ummah suffers economically, the effects spread throughout the community. The strongest military capabilities can inadvertently create the weakest economic outcomes for those least able to absorb the shock. Read the full analysis: https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
+The February 2026 strikes on Iran revealed something profound about global economic interconnectedness. While the military operation achieved its tactical objectives, the economic aftermath spread far beyond Iran's borders. Oil prices spiked immediately. Currencies in Muslim-majority nations collapsed. Supply chains that had taken decades to build unraveled in days. Pakistan, Turkey, Bangladesh—countries thousands of miles from the conflict zone—suddenly found themselves grappling with energy shortages and inflation. From an Islamic economics perspective, this crisis illustrates the concept of collective responsibility within the ummah. When one part of the economic body suffers, the pain reverberates through the whole system. The interconnectedness that modern markets have created mirrors the spiritual interconnectedness that Islamic thought has always recognized. The real question isn't just about the immediate costs of war, but about how economic systems can be restructured to prevent such cascading failures. How do we build resilience when conflict seems inevitable? Read the full analysis: https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
 
-Comment prompt: How do you see regional conflicts affecting global economic stability in your industry or region?
+Comment prompt: How do you think economic interconnectedness affects regional stability? What role should Islamic economic principles…
 
 ## Instagram
 
 ### Caption
 
-The most precise military strikes can create the most unpredictable economic chaos. Operation Epic Fury in February 2026 achieved every strategic military objective against Iran. But villages in Bangladesh are now paying double for rice. Indonesia's currency has collapsed. Pakistan struggles to afford wheat imports. This isn't collateral damage - it's how modern economic warfare actually works. When Iran's oil disappeared from global markets overnight, the shock waves traveled to every Muslim-majority economy. Islamic economics teaches us about collective responsibility - when one part of the community suffers, we all feel the effects. The strongest militaries often create the weakest economies for those who had nothing to do with the conflict. Read our full analysis of how regional conflicts become global economic crises. https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html #IslamicEconomics #GlobalEconomy #EconomicJustice #CollectiveResponsibility #MiddleEast
+The February strikes on Iran weren't just a military operation—they were an economic earthquake that shook Muslim-majority nations worldwide. Oil prices spiked. Currencies crashed in Pakistan, Turkey, Bangladesh. Supply chains built over decades crumbled in days. Countries thousands of miles from Iran suddenly faced energy shortages and soaring inflation. This is what Islamic economics calls the principle of collective responsibility made visible. When one part of the ummah suffers, the whole body feels pain. The markets just make this ancient wisdom brutally clear. The interconnectedness of modern economies mirrors the spiritual interconnectedness that Islamic thought has always recognized. But it also reveals our vulnerabilities—how conflicts we didn't start can devastate communities we're meant to protect. The question isn't just about war's immediate costs. It's about building economic systems that don't collapse when the powerful decide to flex their muscles. Read the full analysis at the link in bio. #IslamicEconomics #EconomicJustice #Ummah #GlobalEconomy #RegionalStability
 
 ### Carousel Slides
 
-1. Wars are measured in strategic victories, but their true cost appears in village markets…
-2. Operation Epic Fury achieved every military objective. Iran's leadership was eliminated…
-3. But precision in targeting doesn't prevent economic devastation. Iran's oil vanished…
-4. Muslim-majority economies from Bangladesh to Indonesia now face currency collapse and…
-5. Islamic economics teaches collective responsibility: when one part suffers, the economic…
+1. When war breaks out, the markets reveal who really pays the price.
+2. February 2026: Strikes on Iran trigger economic crisis across Muslim nations
+3. Oil spikes, currencies collapse, supply chains shatter—all in days
+4. Islamic principle: When one part of the ummah suffers, all feel pain
+5. The question: How do we build economies that don't crumble when the powerful fight?
 
-Cover text: Military Precision ≠ Economic Precision
+Cover text: The Real Cost of War
 
 ### Reel Caption
 
-The hidden cost of 'surgical strikes' - how military precision creates economic chaos for the innocent. The strongest armies often create the weakest economies. #IslamicEconomics #GlobalEconomy #EconomicJustice
+The hidden cost of war: how the February strikes on Iran crashed economies across the Muslim world. Sometimes the markets reveal truths that headlines miss. #IslamicEconomics #GlobalEconomy #EconomicJustice
 
 ## UpScrolled
 
-Military strategists measure success in objectives achieved. Economists count the cost in markets disrupted thousands of miles away.
+The February strikes on Iran killed more than Iran's supreme leader—they killed the illusion that distant conflicts stay distant.
 
-Operation Epic Fury eliminated Iran's leadership with surgical precision. But that same precision couldn't prevent rice prices from doubling in Bangladesh or Indonesia's currency from collapsing.
+Pakistan's rupee crashed. Turkey's inflation soared. Bangladesh faced energy shortages. Countries that had nothing to do with the conflict suddenly found themselves paying its price. The economic web connects us all, whether we acknowledge it or not.
 
-The doctrine of collective responsibility in Islamic law anticipated this reality: economic pain travels faster than…
+Islamic economics has a term for this: collective responsibility…
 
-Discussion prompt: How do regional conflicts affect your local economy in ways that aren't immediately obvious?
+Discussion prompt: How do we build economic systems that don't collapse when the powerful decide to fight?
 
-Suggested topic: Economic interconnectedness in conflict
+Suggested topic: Economic interconnectedness in the…
 
 Optional source link: https://islamiceconomics.github.io/blog/2026-03-11-the-economic-cost-of-the-iran-war-an-islamic-economics-perspective.html
 
 ## Short Video
 
-Title: The Hidden Economic Cost of Military Precision
+Title: The Hidden Economic Cost of the Iran War
 
-Hook: The most precise military strikes create the most unpredictable economic chaos
+Hook: When the strikes hit Iran, something unexpected happened thousands of miles away
 
 ### Voiceover
 
-Operation Epic Fury achieved every military objective against Iran in February 2026. Surgical strikes. Strategic precision. Mission accomplished. But while military planners celebrated, rice prices doubled in Bangladesh. Indonesia's currency collapsed. Pakistan struggled to afford wheat imports. Iran's oil disappeared from global markets overnight, and the shock waves traveled to every Muslim-majority economy. Islamic economics teaches collective responsibility - when one part of the community suffers economically, we all feel the effects. The strongest militaries often create the weakest economies for those who had nothing to do with the conflict. Military precision doesn't equal economic precision.
+February 2026. Strikes rain down on Iran. Within hours, Pakistan's currency crashes. Turkey's inflation soars. Bangladesh faces energy shortages. Countries that had nothing to do with the conflict suddenly pay its price. This is what Islamic economics calls collective responsibility. When one part of the ummah suffers, the whole body feels pain. The markets just make this ancient truth brutally visible. War may target military sites, but economics reveals the real casualties.
 
 ### Shot List
 
-- 0-5s | Military precision graphics/targeting | Text: Operation Epic Fury: Military Success
-- 6-15s | Market scenes/price changes | Text: Rice prices doubled in Bangladesh
-- 16-25s | Currency/economic indicators | Text: Indonesia's currency collapsed
-- 26-35s | Oil markets/global trade | Text: Iran's oil vanished overnight
-- 36-45s | Connected network graphics | Text: Economic pain spreads globally
+- 0-3s | Map highlighting Iran | Text: February 2026: Iran Under Attack
+- 3-8s | Currency charts crashing | Text: Pakistan's Rupee Collapses
+- 8-13s | Inflation graphs spiking | Text: Turkey's Inflation Soars
+- 13-18s | Energy shortage footage | Text: Bangladesh Energy Crisis
+- 18-25s | Connected network visualization | Text: Economic Interconnectedness
 
 ### Caption
 
-Military precision ≠ Economic precision. How the strongest armies create the weakest economies for the innocent. Read the full analysis at the link in bio.
+The February strikes on Iran triggered an economic crisis that spread far beyond Iran's borders. Islamic economics explains why. #IslamicEconomics #GlobalEconomy #EconomicJustice #Ummah #RegionalStability
 
-Short-video hashtags: #IslamicEconomics #GlobalEconomy #EconomicJustice #MiddleEast #EconomicWarfare
+Short-video hashtags: #IslamicEconomics #GlobalEconomy #EconomicJustice #Ummah #RegionalStability
 
