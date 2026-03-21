@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-21-podcast-ie-s1-ep06-waqf-charity",
+  "generated_at": "2026-03-21T14:30:14.516450+00:00",
+  "x_voice_pattern": "question",
+  "source": {
+    "content_id": "podcast-ie-s1-ep06-waqf-charity",
+    "kind": "podcast",
+    "title": "The Waqf: A Thousand Years of Charity",
+    "summary": "By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-6",
+    "published_at": "2025-02-10T08:00:00+00:00",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "By the Ottoman peak, an estimated one-third of all productive land was waqf property: irrevocable charitable endowments funding free hospitals, universities, soup kitchens, and water infrastructure. The Suleymaniye Complex, Al-Azhar University, and countless others operated for centuries on this principle. Then European colonial powers systematically dismantled it. This is the story of institutional memory, loss, and potential recovery. Topics: Waqf Endowments, Al-Azhar University, Ottoman Empire, Colonial Dismantling, Cash Waqf Revival Series: Historical Islamic Economics (Part I) &bull; Episode 6 of 6",
+    "asset_url": "https://islamiceconomics.github.io/images/yt-thumb-ep06.png",
+    "local_asset_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/images/yt-thumb-ep06.png",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/feed.xml",
+    "local_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP06-The-Waqf-A-Thousand-Years-of-Charity.mp4"
+  },
+  "channels": {
+    "x": {
+      "single_post": "By the Ottoman peak, one-third of all productive land was waqf property\u2014charitable endowments funding hospitals, universities, soup kitchens. What would our cities look like if a third of their resources still flowed this way?",
+      "voice_pattern": "question",
+      "thread": [
+        "By the Ottoman peak, one-third of all productive land was waqf property. Irrevocable charitable endowments that funded hospitals, universities, soup kitchens for centuries.",
+        "The Suleymaniye Complex. Al-Azhar University. Infrastructure that operated on a simple principle: dedicate assets to serve the community in perpetuity.",
+        "European colonial powers systematically dismantled this system. A thousand years of institutional memory, redirected toward extraction rather than endowment.",
+        "The principle remains sound. What we lost was not just property, but a way of thinking about wealth's purpose. https://islamiceconomics.github.io/podcast.html#ep-6"
+      ],
+      "hashtags": [
+        "#waqf",
+        "#islamiceconomics",
+        "#ottomanhistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-6"
+    },
+    "linkedin": {
+      "post": "By the Ottoman peak, an estimated one-third of all productive land was waqf property\u2014irrevocable charitable endowments that funded free hospitals, universities, soup kitchens, and water infrastructure for centuries. The Suleymaniye Complex. Al-Azhar University. Countless institutions that operated on a principle we've largely forgotten: dedicate productive assets to serve the community in perpetuity. Then European colonial powers systematically dismantled this system. What we lost wasn't just property\u2014it was institutional memory about wealth's purpose. Today, as we grapple with funding education, healthcare, and infrastructure, the waqf model offers lessons about sustainable endowments and community-centered economics. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-6",
+      "comment_prompt": "How do you think modern endowment models compare to historical waqf systems?"
+    },
+    "instagram": {
+      "caption": "By the Ottoman peak, one-third of all productive land was waqf property. Irrevocable charitable endowments that funded hospitals, universities, soup kitchens, and infrastructure for centuries. The Suleymaniye Complex operated this way. Al-Azhar University too. Assets dedicated permanently to serve the community. Then colonial powers systematically dismantled these systems. We lost more than property\u2014we lost institutional memory about how wealth can serve generations. The principle remains: dedicate productive assets to fund what communities need most. Education. Healthcare. Infrastructure. What would our cities look like if a third of their resources still flowed this way? Listen to the full story at the link in bio. #waqf #islamiceconomics #ottomanhistory #charity #endowments",
+      "carousel_slides": [
+        "By the Ottoman peak, 1/3 of all productive land was waqf property",
+        "Waqf = irrevocable charitable endowments funding hospitals, universities, soup kitchens",
+        "Al-Azhar University, Suleymaniye Complex operated on this principle for centuries",
+        "Colonial powers systematically dismantled these systems",
+        "We lost institutional memory about wealth's purpose"
+      ],
+      "reel_caption": "One-third of Ottoman land was dedicated to charity. Here's what we lost when colonial powers dismantled the waqf system. Listen to the full story at the link in bio. #waqf #islamiceconomics #ottomanhistory #charity #endowments",
+      "cover_text": "1/3 of Ottoman Land Was Charity",
+      "image_url": "https://islamiceconomics.github.io/images/yt-thumb-ep06.png"
+    },
+    "upscrolled": {
+      "post": "By the Ottoman peak, one-third of all productive land was waqf property\u2014charitable endowments funding hospitals, universities, soup kitchens for centuries.\n\nThe Suleymaniye Complex. Al-Azhar University. Infrastructure that operated on the principle of dedicating assets permanently to serve communities.\n\nColonial powers systematically dismantled this. We lost institutional memory about wealth's purpose.",
+      "discussion_prompt": "How do you think modern endowment models compare to historical waqf systems in terms of community benefit?",
+      "topic_suggestion": "The role of charitable endowments in\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-6"
+    },
+    "short_video": {
+      "title": "When 1/3 of Land Was Charity",
+      "hook": "By the Ottoman peak, one-third of all productive land served charity.",
+      "voiceover": "By the Ottoman peak, one-third of all productive land was waqf property. Irrevocable charitable endowments that funded hospitals, universities, soup kitchens for centuries. Al-Azhar University operated this way. The Suleymaniye Complex too. Then European colonial powers systematically dismantled these systems. We lost more than property. We lost institutional memory about how wealth can serve generations. The principle remains sound: dedicate productive assets to fund what communities need most.",
+      "shot_list": [
+        {
+          "time": "0-8s",
+          "visual": "Historic Ottoman architecture",
+          "on_screen_text": "1/3 of Ottoman land was waqf"
+        },
+        {
+          "time": "8-16s",
+          "visual": "Al-Azhar University courtyard",
+          "on_screen_text": "Funded hospitals, universities, soup kitchens"
+        },
+        {
+          "time": "16-24s",
+          "visual": "Colonial-era documents/maps",
+          "on_screen_text": "Colonial powers dismantled this"
+        },
+        {
+          "time": "24-32s",
+          "visual": "Modern city skyline",
+          "on_screen_text": "We lost institutional memory"
+        },
+        {
+          "time": "32-40s",
+          "visual": "Community center/hospital",
+          "on_screen_text": "The principle remains sound"
+        }
+      ],
+      "caption": "One-third of Ottoman land was dedicated to charity through waqf endowments. Colonial powers systematically dismantled this system. What institutional memory did we lose? Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-6",
+      "hashtags": [
+        "#waqf",
+        "#islamiceconomics",
+        "#ottomanhistory",
+        "#charity",
+        "#endowments"
+      ],
+      "source_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP06-The-Waqf-A-Thousand-Years-of-Charity.mp4"
+    }
+  }
+}
