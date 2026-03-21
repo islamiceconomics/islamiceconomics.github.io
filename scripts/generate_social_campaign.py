@@ -604,6 +604,7 @@ def choose_items(
         return items[:limit]
 
     now = datetime.now(timezone.utc)
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     unpublished: List[ContentItem] = []
     recyclable: List[Tuple[datetime, ContentItem]] = []
 
@@ -613,10 +614,15 @@ def choose_items(
             unpublished.append(item)
             continue
 
+        # Skip items already generated TODAY (prevents cross-run duplicates)
+        last_generated = parse_datetime(history[-1].get("generated_at", ""))
+        if last_generated and last_generated >= today_start:
+            logger.info("Skipping %s — already generated today.", item.content_id)
+            continue
+
         if recycle_after_days < 0:
             continue
 
-        last_generated = parse_datetime(history[-1].get("generated_at", ""))
         if not last_generated:
             unpublished.append(item)
             continue
