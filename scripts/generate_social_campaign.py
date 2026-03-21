@@ -1891,8 +1891,11 @@ def build_buffer_post_mutation(channel_id: str, text: str, asset_url: str = "", 
         "mode: customScheduled",
         f"dueAt: {json.dumps(next_buffer_due_at())}",
     ]
-    # Note: Buffer's CreatePostInput does not accept subType.
-    # Instagram post type is inferred automatically by Buffer.
+    # Instagram requires metadata.instagram.type and shouldShareToFeed
+    if post_type:
+        base_fields.append(
+            f"metadata: {{ instagram: {{ type: {post_type}, shouldShareToFeed: true }} }}"
+        )
 
     normalized_asset_url = normalize_whitespace(asset_url)
     if normalized_asset_url:
@@ -2035,6 +2038,7 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
                 channel_id=profile_id,
                 text=text,
                 asset_url=asset_url,
+                post_type="post" if channel_name == "instagram" else "",
             )
         except RuntimeError as exc:
             results[channel_name] = {
