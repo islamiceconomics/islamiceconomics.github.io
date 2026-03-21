@@ -1168,7 +1168,15 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
         "Never include article titles or subheadings in the X post. "
         "The post should read like a truth someone arrived at after years of studying, "
-        "stated simply enough that anyone can understand it."
+        "stated simply enough that anyone can understand it. "
+        "LANDING RULE: Every post must end on something CONCRETE — a specific fact, date, "
+        "number, person's name, place, or thing that happened. Never end on an abstract concept "
+        "like 'trust', 'fairness', 'risk', or 'justice'. If the last word could be a chapter "
+        "title in a philosophy textbook, rewrite the ending with a specific detail. "
+        "BAD: 'Ancient trade was about moving trust across impossible distances.' "
+        "GOOD: 'A merchant in Baghdad could cash a cheque in Canton — 4,000 miles away — on reputation alone.' "
+        "BAD: 'Consumer protection is actually just making markets fair.' "
+        "GOOD: 'The Prophet appointed a market inspector in Medina. We reinvented the idea 1,300 years later and called it consumer protection.'"
     )
     user_prompt = f"""
 Create a cross-platform campaign for the content item below.
@@ -1182,6 +1190,9 @@ Critical X rules:
 - Do NOT summarize the article. Do NOT write a headline. Do NOT write a teaser.
 - The post should read like a personal thought or conclusion, not a content preview.
 - Write short declarative sentences. State things plainly. Let the reader draw implications.
+- Every post must LAND on a concrete detail — a fact, date, name, number, or specific event.
+  Never end on an abstract concept. If the post ends on words like "trust", "fairness",
+  "risk", or "justice" without a specific anchoring detail, rewrite it.
 - Do NOT use these phrases: "new article", "new episode", "check out", "read here",
   "read the full argument", "link below", "read more", "we examine", "this piece",
   "here's why", "here's the thing", "let's talk about", "a thread", "unpopular opinion",
@@ -1337,7 +1348,15 @@ def generate_channels_with_anthropic(item: ContentItem, voice_pattern: Optional[
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
         "Never include article titles or subheadings in the X post. "
         "The post should read like a truth someone arrived at after years of studying, "
-        "stated simply enough that anyone can understand it."
+        "stated simply enough that anyone can understand it. "
+        "LANDING RULE: Every post must end on something CONCRETE — a specific fact, date, "
+        "number, person's name, place, or thing that happened. Never end on an abstract concept "
+        "like 'trust', 'fairness', 'risk', or 'justice'. If the last word could be a chapter "
+        "title in a philosophy textbook, rewrite the ending with a specific detail. "
+        "BAD: 'Ancient trade was about moving trust across impossible distances.' "
+        "GOOD: 'A merchant in Baghdad could cash a cheque in Canton — 4,000 miles away — on reputation alone.' "
+        "BAD: 'Consumer protection is actually just making markets fair.' "
+        "GOOD: 'The Prophet appointed a market inspector in Medina. We reinvented the idea 1,300 years later and called it consumer protection.'"
     )
 
     # Reuse the same user prompt structure as OpenAI
@@ -1353,6 +1372,9 @@ Critical X rules:
 - Do NOT summarize the article. Do NOT write a headline. Do NOT write a teaser.
 - The post should read like a personal thought or conclusion, not a content preview.
 - Write short declarative sentences. State things plainly. Let the reader draw implications.
+- Every post must LAND on a concrete detail — a fact, date, name, number, or specific event.
+  Never end on an abstract concept. If the post ends on words like "trust", "fairness",
+  "risk", or "justice" without a specific anchoring detail, rewrite it.
 - Do NOT use these phrases: "new article", "new episode", "check out", "read here",
   "read the full argument", "link below", "read more", "we examine", "this piece",
   "here's why", "here's the thing", "let's talk about", "a thread", "unpopular opinion",
