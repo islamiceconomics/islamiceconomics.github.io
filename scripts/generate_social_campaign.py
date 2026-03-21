@@ -1010,6 +1010,34 @@ def social_campaign_schema() -> Dict[str, Any]:
     }
 
 
+def _contains_fabricated_specifics(post: str, item: ContentItem) -> bool:
+    """Return True if the post contains specific named entities not found in the source."""
+    if not post or not item.body_text:
+        return False
+    source_lower = (item.body_text + " " + item.title + " " + item.summary).lower()
+    # Extract country/place names and specific numbers from the post
+    # Check if specific dollar amounts, percentages, or country names in the post exist in source
+    import re as _re
+    # Find specific numbers like "$718 billion", "7%", etc.
+    numbers_in_post = _re.findall(r'\$[\d,.]+\s*(?:billion|million|trillion)?|\d+(?:\.\d+)?%', post.lower())
+    for num in numbers_in_post:
+        if num not in source_lower:
+            logger.warning("Fabricated number detected: %s not in source", num)
+            return True
+    # Find country names that might be fabricated
+    countries = [
+        "bangladesh", "pakistan", "indonesia", "malaysia", "saudi", "turkey",
+        "egypt", "iran", "iraq", "syria", "jordan", "morocco", "tunisia",
+        "nigeria", "somalia", "yemen", "afghanistan", "qatar", "kuwait",
+        "bahrain", "oman", "libya", "sudan", "algeria",
+    ]
+    for country in countries:
+        if country in post.lower() and country not in source_lower:
+            logger.warning("Fabricated country reference detected: %s not in source", country)
+            return True
+    return False
+
+
 def _looks_like_excerpt(post: str, item: ContentItem) -> bool:
     """Return True if the X post appears to be a copy-pasted excerpt from the source."""
     if not post or not item.body_text:
@@ -1075,7 +1103,9 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
         "Use parallel structure when it fits: 'X is Y. Z is A.' "
         "No hedging. No 'I think' or 'perhaps' or 'arguably'. Just state it. "
         "1-3 sentences max for X. Complete thoughts. Standalone posts end with a period. "
-        "Use only the supplied facts. Do not invent scripture references, numbers, or historical claims. "
+        "STRICT FACTUAL RULE: Use ONLY facts, numbers, countries, and claims that appear verbatim in the source material below. "
+        "Do not invent, extrapolate, or embellish ANY specific details — no countries, prices, percentages, or events not in the source. "
+        "If the source doesn't mention a specific country or statistic, do not add one. "
         "Never use emoji, hashtags, or semicolons. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
@@ -1190,10 +1220,13 @@ Content item:
         response_text = getattr(response, "output_text", "") or ""
         result = json.loads(response_text) if response_text else None
         if result:
-            # Quality gate: reject X posts that look like raw article excerpts
+            # Quality gate: reject X posts that look like raw excerpts or contain fabrications
             x_post = (result.get("x") or {}).get("single_post", "")
             if _looks_like_excerpt(x_post, item):
                 logger.warning("AI X post looks like raw excerpt, discarding: %s", x_post[:80])
+                result["x"]["single_post"] = ""  # Force fallback
+            elif _contains_fabricated_specifics(x_post, item):
+                logger.warning("AI X post contains fabricated details, discarding: %s", x_post[:80])
                 result["x"]["single_post"] = ""  # Force fallback
         return result
     except Exception as exc:
@@ -1239,7 +1272,9 @@ def generate_channels_with_anthropic(item: ContentItem, voice_pattern: Optional[
         "Use parallel structure when it fits: 'X is Y. Z is A.' "
         "No hedging. No 'I think' or 'perhaps' or 'arguably'. Just state it. "
         "1-3 sentences max for X. Complete thoughts. Standalone posts end with a period. "
-        "Use only the supplied facts. Do not invent scripture references, numbers, or historical claims. "
+        "STRICT FACTUAL RULE: Use ONLY facts, numbers, countries, and claims that appear verbatim in the source material below. "
+        "Do not invent, extrapolate, or embellish ANY specific details — no countries, prices, percentages, or events not in the source. "
+        "If the source doesn't mention a specific country or statistic, do not add one. "
         "Never use emoji, hashtags, or semicolons. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
@@ -1352,6 +1387,9 @@ Content item:
             x_post = (result.get("x") or {}).get("single_post", "")
             if _looks_like_excerpt(x_post, item):
                 logger.warning("Claude X post looks like raw excerpt, discarding: %s", x_post[:80])
+                result["x"]["single_post"] = ""
+            elif _contains_fabricated_specifics(x_post, item):
+                logger.warning("Claude X post contains fabricated details, discarding: %s", x_post[:80])
                 result["x"]["single_post"] = ""
         return result
     except Exception as exc:
