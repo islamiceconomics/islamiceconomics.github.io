@@ -281,7 +281,7 @@ const ECON_DATA = {
         unemployment: 5.3,    // %
         currentAccount: -0.5,  // % of GDP
         fiscalBalance: -6.5,  // % of GDP
-        policyRate: 13.25,      // %
+        policyRate: 10.5,       // % (Dec 2025, down from 22% peak Jun 2023)
         fdi: 0.5,             // % of GDP
         reserves: 14.2,        // billion USD
         exchangeRate: 278.0    // per USD
@@ -302,7 +302,11 @@ const ECON_DATA = {
         tradeOpenness: 28.5,
         topExports: ["Textiles", "Rice", "Knitwear", "Leather", "Cotton fabrics"],
         topPartners: ["USA", "China", "Germany", "UK", "UAE"],
-        islamicFinanceShare: 18.7  // % of banking assets
+        islamicFinanceShare: 21.6,  // % of banking assets (Sep 2025, SBP)
+        islamicFinancingShare: 31.1, // % of total financing (Sep 2025)
+        islamicDepositShare: 26.5,   // % of total deposits (Sep 2025)
+        islamicBranches: 6395,       // Jun 2025
+        sukukShareGovtDebt: 14.5     // % of domestic securities (Dec 2025)
       },
 
       outlook: {
@@ -310,9 +314,9 @@ const ECON_DATA = {
         gdpForecast2026: 2.8,
         gdpForecast2027: 3.5,
         inflationForecast2026: 5.2,
-        keyRisks: ["High external debt burden", "Inflation persistence", "Political instability", "Climate vulnerabilities (floods, drought)"],
-        keyDrivers: ["IMF program conditionality compliance", "Energy sector reforms", "Textile export growth", "Agricultural productivity"],
-        summary: "Pakistan's economy is stabilizing following two years of severe crisis, with inflation moderating and external reserves recovering under the IMF Extended Fund Facility. However, elevated debt at 71.5% and large fiscal deficits limit policy space, requiring sustained structural reforms. Growth is projected to gradually improve to 3.5% by 2027 as macro-stabilization gains traction."
+        keyRisks: ["Jan 2028 riba elimination deadline feasibility", "High external debt burden", "Islamic banking transition institutional gaps", "Climate vulnerabilities (floods, drought)"],
+        keyDrivers: ["IMF EFF compliance and reform momentum", "Islamic banking growth (21.6% → 50% target)", "Sukuk market development", "Agricultural productivity"],
+        summary: "Pakistan's economy is stabilizing under a $7B IMF EFF (Sep 2024), with the policy rate cut from a peak of 22% to 10.5%. Islamic banking has reached 21.6% of assets and 31.1% of financing. The 26th Constitutional Amendment (Oct 2024) mandates elimination of riba by January 1, 2028, creating a historically unprecedented transition challenge. Sukuk issuance hit a record Rs2 trillion in 2025 with the government targeting 20% Shariah-compliant debt by FY28."
       },
 
       dsge: {
@@ -321,7 +325,13 @@ const ECON_DATA = {
         keyFeatures: ["IMF program interaction", "Fiscal dominance in monetary policy", "External borrowing constraints", "Agricultural sector dynamics"],
         calibrationDate: "2025-Q4",
         shocks: ["External financing shock", "Agricultural shock", "Political shock", "Monetary policy shock"],
-        linkPath: "theory/dsge_pakistan.html"
+        linkPath: "theory/dsge_pakistan.html",
+        transitionAnalysis: {
+          status: "available",
+          title: "Pakistan's Islamic Economic Transition: An Empirical and Analytical Framework",
+          scenarios: ["Gradual (15-year)", "Accelerated (7-year)", "Shock (3-year)"],
+          linkPath: "theory/pakistan_transition.html"
+        }
       }
     },
 

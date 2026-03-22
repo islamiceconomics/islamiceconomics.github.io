@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "collected": "2026-03-22",
+    "sources": [
+      "SBP Islamic Banking Bulletin June 2025",
+      "KPMG Banking Perspective 2024",
+      "IMF Article IV 2024",
+      "Pakistan Ministry of Finance Debt Chapter FY25",
+      "Federal Shariat Court Riba Ruling 2022",
+      "26th Constitutional Amendment 2024"
+    ]
+  },
+  "islamic_banking": {
+    "asset_share_pct": {"2015": 11.4, "2018": 13.5, "2020": 16.0, "2021": 19.0, "2022_jun": 19.5, "2022_sep": 20.0, "2023": 20.0, "2025_mar": 21.1, "2025_sep": 21.6},
+    "deposit_share_pct": {"2015": 13.4, "2018": 15.5, "2020": 17.3, "2025_mar": 25.4, "2025_sep": 26.5},
+    "financing_share_pct": {"2025_sep": 31.1},
+    "branches": {"2025_jun": 6395, "islamic_windows": 2735, "districts": 132},
+    "institutions": {"full_islamic_banks": 5, "total_ibis": 21},
+    "npl": {"islamic_pct": 3.0, "conventional_pct": 6.3, "meezan_pct": 1.8},
+    "meezan_bank": {
+      "2024": {"pat_rs_bn": 101.5, "pbt_rs_bn": 222.1, "assets_rs_tn": 3.9, "deposits_rs_tn": 2.58, "casa_pct": 93, "car_pct": 20.35},
+      "2025": {"pat_rs_bn": 89.0, "roe_pct": 34, "deposits_rs_tn": 3.3, "npf_pct": 1.8}
+    }
+  },
+  "legal_framework": {
+    "fsc_ruling": "April 2022 — riba declared repugnant, deadline Dec 31, 2027",
+    "sc_disposition": "Appeals withdrawn, FSC verdict stands",
+    "26th_amendment": "October 2024 — constitutional deadline January 1, 2028",
+    "committee": "Committee for Transformation of Conventional Banking into Islamic (established)"
+  },
+  "macro": {
+    "sbp_policy_rate": {"2020_jun": 7.0, "2021_late": 9.75, "2022_mid": 15.0, "2023_jun": 22.0, "2025_dec": 10.5, "2026_jan": 10.5},
+    "public_debt": {
+      "total_rs_bn": 76007,
+      "domestic_rs_bn": 51518,
+      "external_rs_bn": 24489,
+      "domestic_pct": 68,
+      "external_pct": 32
+    },
+    "fiscal_deficit_pct_gdp": {"fy22": 8.0, "fy23": 7.7, "fy24": 6.8, "fy25_target": 5.5},
+    "imf": {
+      "program": "37-month EFF",
+      "approved": "September 2024",
+      "size_usd_bn": 7.0,
+      "first_review": "May 2025",
+      "second_review": "December 2025"
+    },
+    "sukuk": {
+      "2025_issuance_rs_tn": 2.0,
+      "2025_issuance_usd_bn": 7.0,
+      "share_of_govt_securities_pct": {"2025_jun": 12.6, "2025_dec": 14.5},
+      "target_pct": 20.0,
+      "target_year": "FY2027-28",
+      "green_sukuk_oversubscription": "5.4-10x"
+    }
+  },
+  "comparative": {
+    "iran": {
+      "law_year": 1983,
+      "assessment": "Cosmetic conversion — rates renamed but functionally identical to interest",
+      "key_finding": "Depositors never experienced losses; no genuine risk-sharing"
+    },
+    "malaysia": {
+      "islamic_financing_share_2023_pct": 45.6,
+      "target_pct": 50,
+      "framework": "Islamic Financial Services Act 2013 (IFSA)",
+      "approach": "Market-driven dual system over 40+ years",
+      "key_finding": "Nearly 50% share without forced conversion, but Islamic rates shadow conventional"
+    }
+  }
+}
