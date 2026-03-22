@@ -252,6 +252,18 @@
         }
       ]
     },
+    "podcast-ie-s1-ep01-forgotten-economists": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-22-podcast-ie-s1-ep01-forgotten-economists",
+          "generated_at": "2026-03-22T14:25:30.738063+00:00",
+          "json_path": "social/campaigns/2026-03-22-podcast-ie-s1-ep01-forgotten-economists.json",
+          "markdown_path": "social/campaigns/2026-03-22-podcast-ie-s1-ep01-forgotten-economists.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
     "podcast-ie-s1-ep02-marketplace-medina": {
       "history": [
         {
