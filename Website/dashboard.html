@@ -658,6 +658,11 @@ document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
             <a href="${dsgeLink}" style="display:inline-block; padding:0.6rem 1.5rem; background:var(--color-primary); color:#fff; border-radius:var(--radius-full); font-size:0.88rem; font-weight:600; text-decoration:none;">View ${c.name} DSGE Model &rarr;</a>
             <a href="theory/chapter8_macro_foundations.html" style="display:inline-block; margin-left:0.75rem; padding:0.6rem 1.5rem; background:transparent; color:var(--color-primary); border:1.5px solid var(--color-primary); border-radius:var(--radius-full); font-size:0.88rem; font-weight:600; text-decoration:none;">Base Framework &rarr;</a>
           </div>`;
+          if (d.transitionAnalysis && d.transitionAnalysis.status === 'available') {
+            dsgeHtml += `<div style="margin-top:1rem; text-align:center;">
+              <a href="${d.transitionAnalysis.linkPath}" style="display:inline-block; padding:0.6rem 1.5rem; background:#c5a044; color:#fff; border-radius:var(--radius-full); font-size:0.88rem; font-weight:600; text-decoration:none;">&#128203; ${d.transitionAnalysis.title || 'Transition Analysis'} &rarr;</a>
+            </div>`;
+          }
         }
       } else {
         dsgeHtml += `<div class="dsge-placeholder">
