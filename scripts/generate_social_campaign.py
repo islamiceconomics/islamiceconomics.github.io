@@ -906,11 +906,20 @@ def build_fallback_channels(item: ContentItem, voice_pattern: Optional[Dict[str,
         },
     ]
 
+    # Threads gets a slightly longer version of the X post
+    threads_post = truncate_text(
+        f"{x_single} {first_sentence(item.summary)}",
+        THREADS_POST_LIMIT,
+    )
+
     return {
         "x": {
             "single_post": x_single,
             "thread": x_thread,
             "hashtags": hashtags[:3],
+        },
+        "threads": {
+            "post": threads_post,
         },
         "linkedin": {
             "post": linkedin_post,
@@ -1164,6 +1173,7 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
         "Do not invent, extrapolate, or embellish ANY specific details — no countries, prices, percentages, or events not in the source. "
         "If the source doesn't mention a specific country or statistic, do not add one. "
         "Never use emoji, hashtags, or semicolons. "
+        "Use em dashes sparingly — only when a parenthetical aside truly needs one. Prefer periods and commas. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
         "Never include article titles or subheadings in the X post. "
@@ -1211,6 +1221,15 @@ Critical X rules:
 - Each post should make sense on its own.
 - Last post may include the source URL.
 
+=== THREADS POST ===
+- Threads allows up to 500 characters. Same voice as X but with room to FINISH the thought.
+- Take the X single post and extend it: add the concrete payoff, the specific detail,
+  the "so what" that the X post had to cut for space.
+- Same tone: calm, declarative, no hashtags, no emoji.
+- The Threads post should feel like the X post's slightly longer journal entry.
+- Use em dashes only when truly necessary for a parenthetical aside. Prefer periods and commas.
+- Must end on a concrete detail (fact, date, name, number), never an abstract concept.
+
 === OTHER CHANNELS ===
 - LinkedIn post must be <= 1400 characters. Professional but not dry. Include source URL.
 - Instagram caption must be <= 1800 characters. Include source URL and up to 5 hashtags.
@@ -1234,6 +1253,9 @@ Return this JSON shape:
     "single_post": "string",
     "thread": ["string", "string", "string", "string"],
     "hashtags": ["string"]
+  }},
+  "threads": {{
+    "post": "string"
   }},
   "linkedin": {{
     "post": "string",
@@ -1344,6 +1366,7 @@ def generate_channels_with_anthropic(item: ContentItem, voice_pattern: Optional[
         "Do not invent, extrapolate, or embellish ANY specific details — no countries, prices, percentages, or events not in the source. "
         "If the source doesn't mention a specific country or statistic, do not add one. "
         "Never use emoji, hashtags, or semicolons. "
+        "Use em dashes sparingly — only when a parenthetical aside truly needs one. Prefer periods and commas. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
         "Never include article titles or subheadings in the X post. "
@@ -1393,6 +1416,15 @@ Critical X rules:
 - Each post should make sense on its own.
 - Last post may include the source URL.
 
+=== THREADS POST ===
+- Threads allows up to 500 characters. Same voice as X but with room to FINISH the thought.
+- Take the X single post and extend it: add the concrete payoff, the specific detail,
+  the "so what" that the X post had to cut for space.
+- Same tone: calm, declarative, no hashtags, no emoji.
+- The Threads post should feel like the X post's slightly longer journal entry.
+- Use em dashes only when truly necessary for a parenthetical aside. Prefer periods and commas.
+- Must end on a concrete detail (fact, date, name, number), never an abstract concept.
+
 === OTHER CHANNELS ===
 - LinkedIn post must be <= 1400 characters. Professional but not dry. Include source URL.
 - Instagram caption must be <= 1800 characters. Include source URL and up to 5 hashtags.
@@ -1416,6 +1448,9 @@ Return ONLY valid JSON with this exact shape (no markdown fences, no extra text)
     "single_post": "string",
     "thread": ["string", "string", "string", "string"],
     "hashtags": ["string"]
+  }},
+  "threads": {{
+    "post": "string"
   }},
   "linkedin": {{
     "post": "string",
@@ -2047,8 +2082,9 @@ def queue_to_buffer(campaign: Dict[str, Any]) -> Dict[str, Any]:
         if channel_name == "x":
             text = channels["x"]["single_post"]
         elif channel_name == "threads":
-            # Threads gets the same text as X — text-first platform, same voice
-            text = channels["x"]["single_post"]
+            # Threads gets its own longer version; fall back to X if not available
+            threads_data = channels.get("threads", {})
+            text = threads_data.get("post") or channels["x"]["single_post"]
         elif channel_name == "linkedin":
             text = channels["linkedin"]["post"]
         else:
