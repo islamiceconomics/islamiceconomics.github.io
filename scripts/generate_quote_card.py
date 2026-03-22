@@ -33,15 +33,69 @@ SIZE = 1080
 PADDING = 120
 TEXT_AREA_WIDTH = SIZE - (PADDING * 2)
 
-# ── Colors (from website CSS) ──────────────────────────────────────────
-BG_COLOR = (13, 61, 37)          # #0d3d25 primary dark
-BG_GRADIENT_TOP = (13, 61, 37)   # #0d3d25
-BG_GRADIENT_BOT = (26, 39, 68)   # #1a2744 secondary navy
-TEXT_COLOR = (250, 249, 247)      # #faf9f7 warm off-white
-TEXT_SECONDARY = (212, 183, 106)  # #d4b76a accent light gold
-GOLD = (184, 150, 46)            # #b8962e accent gold
-GOLD_LIGHT = (212, 183, 106)     # #d4b76a
-GOLD_DIM = (184, 150, 46, 40)    # Low opacity gold for patterns
+# ── Color Palettes ─────────────────────────────────────────────────────
+# Rotate through these for visual variety on the Instagram grid.
+# Each palette: (gradient_top, gradient_bot, text, text_secondary, accent, accent_light)
+PALETTES = [
+    {   # 0: Forest & Gold (original brand)
+        "gradient_top": (13, 61, 37),       # #0d3d25
+        "gradient_bot": (26, 39, 68),       # #1a2744
+        "text": (250, 249, 247),            # warm off-white
+        "text_secondary": (212, 183, 106),  # gold
+        "accent": (184, 150, 46),           # #b8962e
+        "accent_light": (212, 183, 106),    # #d4b76a
+    },
+    {   # 1: Deep Navy & Silver
+        "gradient_top": (18, 32, 58),       # midnight navy
+        "gradient_bot": (38, 22, 48),       # deep plum
+        "text": (235, 235, 240),            # cool white
+        "text_secondary": (170, 190, 210),  # silver blue
+        "accent": (140, 165, 195),          # steel blue
+        "accent_light": (170, 190, 210),    # light silver
+    },
+    {   # 2: Warm Terracotta & Cream
+        "gradient_top": (82, 42, 30),       # burnt sienna
+        "gradient_bot": (52, 32, 45),       # dark mauve
+        "text": (252, 245, 235),            # warm cream
+        "text_secondary": (218, 175, 130),  # warm sand
+        "accent": (195, 145, 90),           # terracotta gold
+        "accent_light": (218, 175, 130),    # sand
+    },
+    {   # 3: Teal & Copper
+        "gradient_top": (15, 55, 60),       # deep teal
+        "gradient_bot": (20, 35, 45),       # dark slate
+        "text": (240, 248, 245),            # mint white
+        "text_secondary": (200, 160, 120),  # copper
+        "accent": (175, 130, 85),           # aged copper
+        "accent_light": (200, 160, 120),    # light copper
+    },
+    {   # 4: Charcoal & Amber
+        "gradient_top": (35, 35, 38),       # warm charcoal
+        "gradient_bot": (25, 22, 30),       # near black
+        "text": (248, 244, 236),            # parchment
+        "text_secondary": (225, 180, 85),   # amber
+        "accent": (200, 155, 60),           # dark amber
+        "accent_light": (225, 180, 85),     # amber
+    },
+    {   # 5: Indigo & Rose Gold
+        "gradient_top": (30, 25, 65),       # deep indigo
+        "gradient_bot": (45, 20, 35),       # wine
+        "text": (245, 240, 248),            # lavender white
+        "text_secondary": (210, 170, 160),  # rose gold
+        "accent": (185, 140, 130),          # muted rose
+        "accent_light": (210, 170, 160),    # rose gold
+    },
+]
+
+# Default palette (index 0) for backwards compatibility
+BG_COLOR = PALETTES[0]["gradient_top"]
+BG_GRADIENT_TOP = PALETTES[0]["gradient_top"]
+BG_GRADIENT_BOT = PALETTES[0]["gradient_bot"]
+TEXT_COLOR = PALETTES[0]["text"]
+TEXT_SECONDARY = PALETTES[0]["text_secondary"]
+GOLD = PALETTES[0]["accent"]
+GOLD_LIGHT = PALETTES[0]["accent_light"]
+GOLD_DIM = (184, 150, 46, 40)
 BORDER_COLOR = (184, 150, 46, 80)
 
 # ── Paths ───────────────────────────────────────────────────────────────
@@ -186,12 +240,24 @@ def choose_font_size(text: str, max_width: int, max_height: int) -> Tuple[ImageF
     return font, lines
 
 
-def generate_card(text: str, output_path: Optional[str] = None) -> Path:
+def _pick_palette(text: str, palette_index: Optional[int] = None) -> dict:
+    """Pick a color palette. Uses palette_index if given, otherwise hashes the text."""
+    if palette_index is not None:
+        return PALETTES[palette_index % len(PALETTES)]
+    # Deterministic but varied: hash the text to pick a palette
+    import hashlib
+    h = int(hashlib.md5(text.encode()).hexdigest()[:8], 16)
+    return PALETTES[h % len(PALETTES)]
+
+
+def generate_card(text: str, output_path: Optional[str] = None,
+                  palette_index: Optional[int] = None) -> Path:
     """Generate a single quote card image.
 
     Args:
         text: The quote/insight text.
         output_path: Optional output file path. Auto-generated if not provided.
+        palette_index: Optional palette index (0-5). Auto-selected from text hash if None.
 
     Returns:
         Path to the generated image.
@@ -201,40 +267,85 @@ def generate_card(text: str, output_path: Optional[str] = None) -> Path:
     if output_path:
         out = Path(output_path)
     else:
-        # Auto-name based on content hash
         import hashlib
         h = hashlib.md5(text.encode()).hexdigest()[:8]
         out = OUTPUT_DIR / f"card_{h}.png"
 
-    # ── Create base image with gradient ─────────────────────────────
-    img = Image.new("RGBA", (SIZE, SIZE), BG_COLOR + (255,))
-    draw_gradient_bg(img)
+    # ── Pick color palette ──────────────────────────────────────────
+    pal = _pick_palette(text, palette_index)
+    p_grad_top = pal["gradient_top"]
+    p_grad_bot = pal["gradient_bot"]
+    p_text = pal["text"]
+    p_text_sec = pal["text_secondary"]
+    p_accent = pal["accent"]
+    p_accent_lt = pal["accent_light"]
 
-    # ── Geometric pattern overlay ───────────────────────────────────
+    # ── Create base image with gradient ─────────────────────────────
+    img = Image.new("RGBA", (SIZE, SIZE), p_grad_top + (255,))
+    # Inline gradient using this palette's colors
+    grad_draw = ImageDraw.Draw(img)
+    for y in range(SIZE):
+        ratio = y / SIZE
+        r = int(p_grad_top[0] + (p_grad_bot[0] - p_grad_top[0]) * ratio)
+        g = int(p_grad_top[1] + (p_grad_bot[1] - p_grad_top[1]) * ratio)
+        b = int(p_grad_top[2] + (p_grad_bot[2] - p_grad_top[2]) * ratio)
+        grad_draw.line([(0, y), (SIZE - 1, y)], fill=(r, g, b))
+
+    # ── Geometric pattern overlay (using palette accent) ────────────
     pattern_overlay = Image.new("RGBA", (SIZE, SIZE), (0, 0, 0, 0))
-    draw_geometric_pattern(pattern_overlay)
+    pat_draw = ImageDraw.Draw(pattern_overlay)
+    tile = 80
+    alpha = 12
+    for x in range(0, SIZE, tile):
+        for y in range(0, SIZE, tile):
+            cx, cy = x + tile // 2, y + tile // 2
+            r = tile // 3
+            pts = [(cx, cy - r), (cx + r, cy), (cx, cy + r), (cx - r, cy)]
+            pat_draw.polygon(pts, outline=(*p_accent[:3], alpha))
+            pat_draw.ellipse(
+                [cx - r // 2, cy - r // 2, cx + r // 2, cy + r // 2],
+                outline=(*p_accent[:3], alpha),
+            )
     img = Image.alpha_composite(img, pattern_overlay)
 
     draw = ImageDraw.Draw(img)
 
-    # ── Border frame ────────────────────────────────────────────────
-    draw_geometric_border(draw)
+    # ── Border frame (using palette accent) ─────────────────────────
+    margin = 40
+    inner_margin = 56
+    corner_size = 24
+    draw.rectangle(
+        [margin, margin, SIZE - margin - 1, SIZE - margin - 1],
+        outline=p_accent + (60,), width=1,
+    )
+    draw.rectangle(
+        [inner_margin, inner_margin, SIZE - inner_margin - 1, SIZE - inner_margin - 1],
+        outline=p_accent + (40,), width=1,
+    )
+    corners = [
+        (margin, margin), (SIZE - margin, margin),
+        (SIZE - margin, SIZE - margin), (margin, SIZE - margin),
+    ]
+    for cx, cy in corners:
+        d = corner_size // 2
+        diamond = [(cx, cy - d), (cx + d, cy), (cx, cy + d), (cx - d, cy)]
+        draw.polygon(diamond, fill=p_accent_lt + (70,))
 
     # ── Top ornament (8-pointed star) ───────────────────────────────
-    draw_eight_pointed_star(draw, SIZE // 2, 90, 12, GOLD_LIGHT)
+    draw_eight_pointed_star(draw, SIZE // 2, 90, 12, p_accent_lt)
 
     # ── Decorative line under star ──────────────────────────────────
     line_y = 112
     line_half = 80
     draw.line(
         [(SIZE // 2 - line_half, line_y), (SIZE // 2 + line_half, line_y)],
-        fill=(*GOLD_LIGHT, 100),
+        fill=(*p_accent_lt, 100),
         width=1,
     )
 
     # ── Quote text ──────────────────────────────────────────────────
     text_top = 160
-    text_bottom = SIZE - 220  # Leave room for attribution
+    text_bottom = SIZE - 220
     max_text_height = text_bottom - text_top
 
     font, lines = choose_font_size(text, TEXT_AREA_WIDTH, max_text_height)
@@ -242,7 +353,6 @@ def generate_card(text: str, output_path: Optional[str] = None) -> Path:
     line_height = int(font_size * 1.5)
     total_text_height = len(lines) * line_height
 
-    # Center text block vertically in the available area
     y_start = text_top + (max_text_height - total_text_height) // 2
 
     for i, line in enumerate(lines):
@@ -250,18 +360,18 @@ def generate_card(text: str, output_path: Optional[str] = None) -> Path:
         line_width = bbox[2] - bbox[0]
         x = (SIZE - line_width) // 2
         y = y_start + i * line_height
-        draw.text((x, y), line, font=font, fill=TEXT_COLOR)
+        draw.text((x, y), line, font=font, fill=p_text)
 
     # ── Bottom decorative line ──────────────────────────────────────
     bottom_line_y = SIZE - 200
     draw.line(
         [(SIZE // 2 - line_half, bottom_line_y), (SIZE // 2 + line_half, bottom_line_y)],
-        fill=(*GOLD_LIGHT, 100),
+        fill=(*p_accent_lt, 100),
         width=1,
     )
 
     # ── Bottom star ─────────────────────────────────────────────────
-    draw_eight_pointed_star(draw, SIZE // 2, bottom_line_y + 22, 8, GOLD_LIGHT)
+    draw_eight_pointed_star(draw, SIZE // 2, bottom_line_y + 22, 8, p_accent_lt)
 
     # ── Handle / Attribution ────────────────────────────────────────
     handle_font = get_font("inter", 22)
@@ -271,7 +381,7 @@ def generate_card(text: str, output_path: Optional[str] = None) -> Path:
         ((SIZE - handle_width) // 2, SIZE - 160),
         HANDLE,
         font=handle_font,
-        fill=TEXT_SECONDARY,
+        fill=p_text_sec,
     )
 
     brand_font = get_font("inter", 16)
@@ -281,7 +391,7 @@ def generate_card(text: str, output_path: Optional[str] = None) -> Path:
         ((SIZE - brand_width) // 2, SIZE - 130),
         BRAND,
         font=brand_font,
-        fill=(*TEXT_SECONDARY[:3], 150) if len(TEXT_SECONDARY) >= 3 else TEXT_SECONDARY,
+        fill=(*p_text_sec[:3], 150),
     )
 
     # ── Save ────────────────────────────────────────────────────────
