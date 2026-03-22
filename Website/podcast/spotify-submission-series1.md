@@ -12,7 +12,7 @@
 | **Category (Secondary)** | Education > Self-Improvement |
 | **Explicit Content** | No |
 | **Website** | https://islamiceconomics.github.io/podcast.html |
-| **Email** | 88hzahid@gmail.com |
+| **Email** | *(redacted)* |
 | **Cover Art** | `cover-art-series1.jpg` (3000×3000px, JPEG) |
 
 ### Show Description
