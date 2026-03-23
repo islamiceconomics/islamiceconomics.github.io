@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5: The Prohibition of Interest - Comparative Religious Economics</title>
+  <meta name="description" content="A comparative analysis of how Islam, Christianity, and Judaism have addressed the prohibition of lending at interest: from shared origins through divergent paths to modern convergence.">
+
+  <link rel="canonical" href="https://islamiceconomics.github.io/comparative/ch5-prohibition-of-interest.html">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+    (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <style>
+    /* ===== PAGE-LEVEL VARIABLES ===== */
+    :root {
+      --islam-bg: #e8f5e9;
+      --islam-text: #2e7d32;
+      --islam-border: #4caf50;
+      --christianity-bg: #e3f2fd;
+      --christianity-text: #1565c0;
+      --christianity-border: #42a5f5;
+      --judaism-bg: #fff3e0;
+      --judaism-text: #e65100;
+      --judaism-border: #ff9800;
+    }
+    [data-theme="dark"] {
+      --islam-bg: #1b5e20;
+      --islam-text: #a5d6a7;
+      --islam-border: #66bb6a;
+      --christianity-bg: #0d47a1;
+      --christianity-text: #90caf9;
+      --christianity-border: #64b5f6;
+      --judaism-bg: #bf360c;
+      --judaism-text: #ffcc80;
+      --judaism-border: #ffa726;
+    }
+
+    /* ===== HERO ===== */
+    .ch5-hero-subtitle {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ===== SECTION HEADERS ===== */
+    .ix-section {
+      padding: 4rem 0;
+    }
+    .ix-section:nth-child(even) {
+      background: var(--color-bg-secondary);
+    }
+    .ix-section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .ix-section-header h2 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .ix-section-header p {
+      color: var(--color-text-secondary);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===== TRADITION LABELS (inline) ===== */
+    .tradition-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-sm, 4px);
+      vertical-align: middle;
+    }
+    .tradition-label.islam { background: var(--islam-bg); color: var(--islam-text); }
+    .tradition-label.christianity { background: var(--christianity-bg); color: var(--christianity-text); }
+    .tradition-label.judaism { background: var(--judaism-bg); color: var(--judaism-text); }
+
+    /* ===== INTERACTIVE TIMELINE ===== */
+    .timeline-wrapper {
+      position: relative;
+      overflow-x: auto;
+      overflow-y: visible;
+      -webkit-overflow-scrolling: touch;
+      padding: 2rem 0 3rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-border) transparent;
+    }
+    .timeline-wrapper::-webkit-scrollbar { height: 6px; }
+    .timeline-wrapper::-webkit-scrollbar-track { background: transparent; }
+    .timeline-wrapper::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+
+    .timeline-track {
+      position: relative;
+      min-width: 1200px;
+      height: 280px;
+      padding: 0 40px;
+    }
+
+    /* The three tradition lines */
+    .timeline-line {
+      position: absolute;
+      height: 3px;
+      border-radius: 2px;
+      transition: opacity 0.3s;
+    }
+    .timeline-line.islam {
+      background: var(--islam-border);
+      top: 80px;
+    }
+    .timeline-line.christianity {
+      background: var(--christianity-border);
+      top: 140px;
+    }
+    .timeline-line.judaism {
+      background: var(--judaism-border);
+      top: 200px;
+    }
+
+    /* Shared origin line segment */
+    .timeline-shared {
+      position: absolute;
+      left: 40px;
+      width: 120px;
+      top: 140px;
+      height: 3px;
+      background: var(--color-text-light);
+    }
+
+    /* Timeline event dots */
+    .tl-event {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      border: 3px solid var(--color-surface);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s, box-shadow 0.2s;
+      z-index: 2;
+    }
+    .tl-event:hover, .tl-event.active {
+      transform: translate(-50%, -50%) scale(1.35);
+      box-shadow: var(--shadow-lg);
+    }
+    .tl-event.shared { background: var(--color-text-light); }
+    .tl-event.islam { background: var(--islam-border); }
+    .tl-event.christianity { background: var(--christianity-border); }
+    .tl-event.judaism { background: var(--judaism-border); }
+
+    .tl-event-label {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.68rem;
+      font-weight: 600;
+      white-space: nowrap;
+      color: var(--color-text-secondary);
+      pointer-events: none;
+    }
+    .tl-event-year {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--color-text-light);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Timeline legend */
+    .timeline-legend {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .timeline-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+    }
+    .timeline-legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    /* Timeline detail card */
+    .tl-detail {
+      max-width: 700px;
+      margin: 1rem auto 0;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s;
+      min-height: 80px;
+    }
+    .tl-detail.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .tl-detail h3 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-text-primary);
+    }
+    .tl-detail p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+    }
+    .tl-scroll-hint {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+      margin-top: 0.5rem;
+    }
+
+    /* ===== SCRIPTURE COMPARISON ===== */
+    .scripture-topics {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .scripture-topic-btn {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: 0.45rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--font-sans);
+    }
+    .scripture-topic-btn:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+    .scripture-topic-btn.active {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+
+    .scripture-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .scripture-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+    .scripture-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .scripture-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+    .scripture-card-header {
+      padding: 0.75rem 1rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .scripture-card-header.islam {
+      background: var(--islam-bg);
+      color: var(--islam-text);
+    }
+    .scripture-card-header.christianity {
+      background: var(--christianity-bg);
+      color: var(--christianity-text);
+    }
+    .scripture-card-header.judaism {
+      background: var(--judaism-bg);
+      color: var(--judaism-text);
+    }
+    .scripture-card-body {
+      padding: 1.25rem;
+    }
+    .scripture-card-body blockquote {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--color-text-primary);
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+    .scripture-card-body cite {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-style: normal;
+      color: var(--color-text-light);
+    }
+    .scripture-card-body .sc-note {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--color-border-light);
+      line-height: 1.6;
+    }
+
+    /* ===== TABBED ANALYSIS CARDS ===== */
+    .analysis-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      .analysis-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .analysis-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s;
+    }
+    .analysis-card:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    .analysis-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 1rem 1.25rem 0.75rem;
+      color: var(--color-text-primary);
+    }
+    .ac-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .ac-tab {
+      flex: 1;
+      padding: 0.6rem 0.5rem;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--color-text-light);
+      transition: all 0.2s;
+      font-family: var(--font-sans);
+    }
+    .ac-tab:hover {
+      color: var(--color-text-primary);
+      background: var(--color-bg-secondary);
+    }
+    .ac-tab.active.islam {
+      border-bottom-color: var(--islam-border);
+      color: var(--islam-text);
+      background: var(--islam-bg);
+    }
+    .ac-tab.active.christianity {
+      border-bottom-color: var(--christianity-border);
+      color: var(--christianity-text);
+      background: var(--christianity-bg);
+    }
+    .ac-tab.active.judaism {
+      border-bottom-color: var(--judaism-border);
+      color: var(--judaism-text);
+      background: var(--judaism-bg);
+    }
+    .ac-panel {
+      display: none;
+      padding: 1.25rem;
+    }
+    .ac-panel.active {
+      display: block;
+      animation: acFadeIn 0.3s ease;
+    }
+    @keyframes acFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .ac-panel p {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.75rem;
+    }
+    .ac-panel p:last-child {
+      margin-bottom: 0;
+    }
+    .ac-panel ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .ac-panel li {
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.4rem;
+    }
+
+    /* ===== ARGUMENTS ACCORDION ===== */
+    .arguments-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .arguments-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .arg-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .arg-card-header {
+      padding: 1rem 1.25rem;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: background 0.2s;
+    }
+    .arg-card-header:hover {
+      background: var(--color-bg-secondary);
+    }
+    .arg-card-header .arg-icon {
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+      color: var(--color-text-light);
+    }
+    .arg-card.open .arg-icon {
+      transform: rotate(45deg);
+    }
+    .arg-card-header.for-args {
+      color: var(--color-success);
+      border-left: 4px solid var(--color-success);
+    }
+    .arg-card-header.against-args {
+      color: var(--color-error);
+      border-left: 4px solid var(--color-error);
+    }
+    .arg-card-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .arg-card.open .arg-card-body {
+      max-height: 600px;
+    }
+    .arg-card-body-inner {
+      padding: 0 1.25rem 1.25rem;
+    }
+    .arg-card-body-inner ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .arg-card-body-inner li {
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.6rem;
+    }
+
+    /* ===== STRUCTURAL COMPARISON GRAPHIC ===== */
+    .divergence-bars {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .div-bar-row {
+      margin-bottom: 1.25rem;
+    }
+    .div-bar-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: 0.35rem;
+    }
+    .div-bar-track {
+      display: flex;
+      gap: 3px;
+      height: 28px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .div-bar-seg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: flex 0.5s ease;
+    }
+    .div-bar-seg.islam { background: var(--islam-bg); color: var(--islam-text); }
+    .div-bar-seg.christianity { background: var(--christianity-bg); color: var(--christianity-text); }
+    .div-bar-seg.judaism { background: var(--judaism-bg); color: var(--judaism-text); }
+
+    /* ===== CONVERGENCE SECTION ===== */
+    .convergence-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .convergence-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+    .conv-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .conv-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+    .conv-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .conv-card p {
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+    }
+    .conv-card.islam h3 { color: var(--islam-text); }
+    .conv-card.christianity h3 { color: var(--christianity-text); }
+    .conv-card.judaism h3 { color: var(--judaism-text); }
+    .conv-card.islam { border-top: 3px solid var(--islam-border); }
+    .conv-card.christianity { border-top: 3px solid var(--christianity-border); }
+    .conv-card.judaism { border-top: 3px solid var(--judaism-border); }
+
+    /* ===== SOURCES ===== */
+    .sources-section {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .sources-section h3 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .sources-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sources-section li {
+      padding: 0.35rem 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+    }
+
+    /* ===== CHAPTER NAV ===== */
+    .chapter-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 780px;
+      margin: 2rem auto 0;
+      padding: 1.5rem 1rem 0;
+      border-top: 1px solid var(--color-border);
+      gap: 1rem;
+    }
+    .chapter-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      transition: background 0.2s;
+    }
+    .chapter-nav a:hover {
+      background: var(--color-surface);
+    }
+
+    /* ===== KEY INSIGHT CALLOUT ===== */
+    .insight-callout {
+      max-width: 700px;
+      margin: 1.5rem auto 0;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-primary);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--color-text-secondary);
+    }
+    .insight-callout strong {
+      color: var(--color-text-primary);
+    }
+
+    /* ===== ISLAMIC ALTERNATIVES MINI-CARDS ===== */
+    .alt-instruments {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 700px;
+      margin: 1.5rem auto 0;
+    }
+    @media (max-width: 600px) {
+      .alt-instruments { grid-template-columns: 1fr; }
+    }
+    .alt-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      border-left: 3px solid var(--islam-border);
+      transition: box-shadow 0.2s;
+    }
+    .alt-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .alt-card h4 {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--islam-text);
+      margin-bottom: 0.3rem;
+    }
+    .alt-card p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-logo">Islamic Economics</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle active">Learn <span class="nav-dropdown-arrow">&#9662;</span></button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="../foundations.html">Foundations</a></li>
+            <li><a href="../theory.html">Theory</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../history.html">History</a></li>
+            <li><a href="../comparative.html" class="active">Comparative</a></li>
+          </ul>
+        </li>
+        <li><a href="../scriptures.html" class="nav-link">Scriptures</a></li>
+        <li><a href="../dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="../podcast.html" class="nav-link">Media</a></li>
+        <li><a href="../blog.html" class="nav-link">Al-Tijarah</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-moon">&#9790;</span>
+        <span class="icon-sun">&#9788;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-small">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <a href="../comparative.html">Comparative Religious Economics</a> <span>/</span> <span>Chapter 5</span>
+      </nav>
+      <h1 class="hero-title">The Prohibition of Interest</h1>
+      <p class="hero-subtitle ch5-hero-subtitle">Three traditions began with the same prohibition. They arrived at three different destinations. Explore how and why.</p>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 1: INTERACTIVE TIMELINE -->
+  <!-- ============================== -->
+  <section class="ix-section" id="timeline-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>The Divergence</h2>
+        <p>From a shared ancient prohibition to three distinct paths. Click any point to explore.</p>
+      </div>
+
+      <div class="timeline-legend">
+        <div class="timeline-legend-item">
+          <span class="timeline-legend-dot" style="background:var(--color-text-light)"></span> Shared
+        </div>
+        <div class="timeline-legend-item">
+          <span class="timeline-legend-dot" style="background:var(--islam-border)"></span> Islam
+        </div>
+        <div class="timeline-legend-item">
+          <span class="timeline-legend-dot" style="background:var(--christianity-border)"></span> Christianity
+        </div>
+        <div class="timeline-legend-item">
+          <span class="timeline-legend-dot" style="background:var(--judaism-border)"></span> Judaism
+        </div>
+      </div>
+
+      <div class="timeline-wrapper" id="timelineWrapper">
+        <div class="timeline-track" id="timelineTrack">
+          <!-- Lines drawn by JS -->
+        </div>
+      </div>
+      <p class="tl-scroll-hint">Scroll horizontally to explore the full timeline</p>
+
+      <div class="tl-detail" id="tlDetail">
+        <h3 id="tlDetailTitle">Select a point on the timeline</h3>
+        <p id="tlDetailText">Click any event above to see how each tradition handled the prohibition of interest at that moment in history.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 2: SCRIPTURE COMPARISON -->
+  <!-- ============================== -->
+  <section class="ix-section" id="scripture-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>Scripture Side by Side</h2>
+        <p>What each tradition's foundational texts say about lending, interest, and the poor.</p>
+      </div>
+
+      <div class="scripture-topics" id="scriptureTopics">
+        <button class="scripture-topic-btn active" data-topic="poor">On Lending to the Poor</button>
+        <button class="scripture-topic-btn" data-topic="foreigners">On Interest from Foreigners</button>
+        <button class="scripture-topic-btn" data-topic="generosity">On Radical Generosity</button>
+        <button class="scripture-topic-btn" data-topic="parables">Parables about Money</button>
+      </div>
+
+      <div class="scripture-columns" id="scriptureColumns">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 3: TABBED ANALYSIS CARDS -->
+  <!-- ============================== -->
+  <section class="ix-section" id="analysis-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>Comparative Analysis</h2>
+        <p>Six key themes, three perspectives each. Select a tradition tab to compare positions.</p>
+      </div>
+
+      <div class="analysis-cards-grid" id="analysisGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 4: ARGUMENTS FOR/AGAINST -->
+  <!-- ============================== -->
+  <section class="ix-section" id="arguments-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>The Contested Question</h2>
+        <p>Did the New Testament parables endorse interest, or were they spiritual metaphors? A genuinely contested scholarly debate.</p>
+      </div>
+
+      <div class="arguments-grid">
+        <div class="arg-card open" id="argFor">
+          <div class="arg-card-header for-args" onclick="toggleArg('argFor')">
+            <span>Arguments FOR Reading the Parables as Endorsing Interest</span>
+            <span class="arg-icon">+</span>
+          </div>
+          <div class="arg-card-body">
+            <div class="arg-card-body-inner">
+              <ul>
+                <li>Jesus does not condemn the practice of banking or interest within the parable. He treats depositing money for interest as the obvious rational alternative to doing nothing.</li>
+                <li>The master in the parable is traditionally read as representing God. If so, God is presented as expecting returns on investment, not merely the preservation of capital.</li>
+                <li>The New Testament shifts emphasis from legal prohibition to inner disposition. What matters is not the letter of the law but the spirit of love and generosity. Under this reading, the specific prohibition of interest is superseded by a higher ethic.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="arg-card open" id="argAgainst">
+          <div class="arg-card-header against-args" onclick="toggleArg('argAgainst')">
+            <span>Arguments AGAINST</span>
+            <span class="arg-icon">+</span>
+          </div>
+          <div class="arg-card-body">
+            <div class="arg-card-body-inner">
+              <ul>
+                <li>Parables use familiar scenarios to illustrate spiritual points. The reference to interest is incidental to the meaning, not prescriptive.</li>
+                <li>Luke 6:35 explicitly says "lend expecting nothing back." Direct teachings should take interpretive precedence over incidental details in allegorical stories.</li>
+                <li>The master in Luke 19 is described as harsh and feared. Some scholars read this figure as representing worldly power, not divine authority.</li>
+                <li>Early Church Fathers, including Ambrose, Jerome, and Clement of Alexandria, overwhelmingly interpreted the tradition as prohibiting interest, suggesting the parabolic "endorsement" reading is a later development.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-callout">
+        <strong>Why the ambiguity matters:</strong> The parables gave later Christian thinkers textual room to manoeuvre. A tradition with only Luke 6:35 and no Parable of the Talents would have had a much harder time justifying interest. Whatever their original intent, the parables provided the interpretive material from which accommodation could be constructed.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 5: ISLAMIC ALTERNATIVES -->
+  <!-- ============================== -->
+  <section class="ix-section" id="alternatives-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>Islamic Financial Instruments</h2>
+        <p>Rather than merely prohibiting interest, Islamic jurisprudence developed an alternative architecture. The common principle: the provider of capital must bear some risk.</p>
+      </div>
+
+      <div class="alt-instruments">
+        <div class="alt-card">
+          <h4>Mudarabah</h4>
+          <p>Profit-sharing. One party provides capital, the other provides labour and management. Profits shared by agreed ratio; losses fall on the capital provider.</p>
+        </div>
+        <div class="alt-card">
+          <h4>Musharakah</h4>
+          <p>Joint venture. Both parties contribute capital and share profits and losses proportionally.</p>
+        </div>
+        <div class="alt-card">
+          <h4>Murabaha</h4>
+          <p>Cost-plus sale. The financier purchases an asset and sells it to the buyer at a disclosed markup. A sale, not a loan.</p>
+        </div>
+        <div class="alt-card">
+          <h4>Ijara</h4>
+          <p>Leasing. The financier purchases an asset and leases it to the client. Ownership and its risks remain with the financier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 6: STRUCTURAL COMPARISON -->
+  <!-- ============================== -->
+  <section class="ix-section" id="structure-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>Why They Diverged</h2>
+        <p>Four variables that explain how three traditions with the same starting point arrived at different destinations.</p>
+      </div>
+
+      <div class="divergence-bars">
+        <div class="div-bar-row">
+          <div class="div-bar-label">Textual Ambiguity</div>
+          <div class="div-bar-track">
+            <div class="div-bar-seg christianity" style="flex:3">Christianity: High</div>
+            <div class="div-bar-seg judaism" style="flex:2">Judaism: Moderate</div>
+            <div class="div-bar-seg islam" style="flex:1">Islam: Low</div>
+          </div>
+        </div>
+        <div class="div-bar-row">
+          <div class="div-bar-label">Insider/Outsider Distinction</div>
+          <div class="div-bar-track">
+            <div class="div-bar-seg judaism" style="flex:3">Judaism: Yes</div>
+            <div class="div-bar-seg christianity" style="flex:2">Christianity: Inherited</div>
+            <div class="div-bar-seg islam" style="flex:1">Islam: Absent</div>
+          </div>
+        </div>
+        <div class="div-bar-row">
+          <div class="div-bar-label">Interpretive Flexibility</div>
+          <div class="div-bar-track">
+            <div class="div-bar-seg christianity" style="flex:3">Christianity: High</div>
+            <div class="div-bar-seg judaism" style="flex:2">Judaism: Moderate</div>
+            <div class="div-bar-seg islam" style="flex:1">Islam: Low</div>
+          </div>
+        </div>
+        <div class="div-bar-row">
+          <div class="div-bar-label">Institutional Unity</div>
+          <div class="div-bar-track">
+            <div class="div-bar-seg islam" style="flex:3">Islam: Maintained</div>
+            <div class="div-bar-seg judaism" style="flex:2">Judaism: Communal</div>
+            <div class="div-bar-seg christianity" style="flex:1">Christianity: Fragmented</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SECTION 7: MODERN CONVERGENCE -->
+  <!-- ============================== -->
+  <section class="ix-section" id="convergence-section">
+    <div class="container">
+      <div class="ix-section-header">
+        <h2>The Modern Irony</h2>
+        <p>Secular economics, which for centuries treated interest as natural and necessary, is now questioning whether interest-based finance is optimal. The three traditions are arguably converging.</p>
+      </div>
+
+      <div class="convergence-cards">
+        <div class="conv-card christianity">
+          <h3>Christianity</h3>
+          <p>Gained economic flexibility by reinterpreting the prohibition over centuries. Catholic social teaching, particularly since <em>Rerum Novarum</em> (1891), has increasingly criticised predatory lending. The tradition critiques financial excess while working within the existing financial system.</p>
+        </div>
+        <div class="conv-card judaism">
+          <h3>Judaism</h3>
+          <p>Preserved the protective core of the prohibition (do not exploit the needy) while accommodating commercial reality. The ethical investing movement applies traditional values of justice and communal responsibility to modern portfolio management. Instruments like the heter iska preserve risk-sharing.</p>
+        </div>
+        <div class="conv-card islam">
+          <h3>Islam</h3>
+          <p>Maintained both the prohibition and an alternative system. Islamic finance, now a multi-trillion-dollar industry, offers structural alternatives that attract interest from non-Muslim economists. The ongoing challenge: ensuring Islamic instruments are substantively different from conventional ones, not merely formally compliant.</p>
+        </div>
+      </div>
+
+      <div class="insight-callout" style="margin-top:2rem">
+        <strong>The productive question</strong> is no longer simply "was the prohibition right?" Each tradition's path offers something the others lack. A genuinely comparative approach does not rank them but asks what can be learned from each.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SOURCES & NAV -->
+  <!-- ============================== -->
+  <section class="ix-section" id="sources-section">
+    <div class="container">
+      <div class="sources-section">
+        <div class="ix-section-header">
+          <h2>Sources</h2>
+        </div>
+        <h3>Primary Texts</h3>
+        <ul>
+          <li><span class="tradition-label judaism">Judaism</span> Torah: Exodus 22:25; Leviticus 25:35-37; Deuteronomy 23:20-21</li>
+          <li><span class="tradition-label christianity">Christianity</span> New Testament: Luke 6:34-35; Matthew 25:14-30; Luke 19:12-27</li>
+          <li><span class="tradition-label islam">Islam</span> Quran: Al-Baqarah 2:275-280; Ali 'Imran 3:130; An-Nisa 4:161; Ar-Rum 30:39</li>
+        </ul>
+
+        <h3>Scholarly Works</h3>
+        <ul>
+          <li>Thomas Aquinas, <em>Summa Theologica</em>, II-II, Q. 78 ("Of the Sin of Usury")</li>
+          <li>John Calvin, <em>Letter on Usury</em> (1545)</li>
+          <li>John T. Noonan Jr., <em>The Scholastic Analysis of Usury</em> (Cambridge, MA: Harvard University Press, 1957)</li>
+          <li>Benjamin Nelson, <em>The Idea of Usury: From Tribal Brotherhood to Universal Otherhood</em> (Princeton: Princeton University Press, 1949)</li>
+          <li>S.M. Yusuf, <em>Economic Justice in Islam</em> (Lahore: Sh. Muhammad Ashraf, 1971)</li>
+          <li>Muhammad Nejatullah Siddiqi, <em>Riba, Bank Interest, and the Rationale of Its Prohibition</em> (Jeddah: Islamic Research and Training Institute, 2004)</li>
+          <li>Timur Kuran, <em>Islam and Mammon: The Economic Predicaments of Islamism</em> (Princeton: Princeton University Press, 2004)</li>
+          <li>Haim Cohn, <em>Human Rights in Jewish Law</em> (New York: Ktav, 1984)</li>
+          <li>Joseph Shatzmiller, <em>Shylock Reconsidered: Jews, Moneylending, and Medieval Society</em> (Berkeley: University of California Press, 1990)</li>
+          <li>Mahmoud A. El-Gamal, <em>Islamic Finance: Law, Economics, and Practice</em> (Cambridge: Cambridge University Press, 2006)</li>
+        </ul>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="#">&larr; Ch. 4: Exchange &amp; Contract Theory</a>
+        <a href="#">Ch. 6: Labour, Firms &amp; Production &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">Islamic Economics</a>
+          <p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought, from the earliest markets of Medina to today's global Islamic finance industry.</p>
+          <blockquote class="footer-ayah">
+            <p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
+            <cite>-- Al-Baqarah 2:188</cite>
+          </blockquote>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Knowledge</h4>
+            <ul class="footer-links">
+              <li><a href="../foundations.html">Foundations</a></li>
+              <li><a href="../scriptures.html">Scriptures</a></li>
+              <li><a href="../comparative.html">Comparative</a></li>
+              <li><a href="../theory.html">Theory</a></li>
+              <li><a href="../history.html">History</a></li>
+              <li><a href="../research.html">Research</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">Explore</h4>
+            <ul class="footer-links">
+              <li><a href="../dashboard.html">Dashboard</a></li>
+              <li><a href="../podcast.html">Media</a></li>
+              <li><a href="../blog.html">Al-Tijarah</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-heading">About</h4>
+            <ul class="footer-links">
+              <li><a href="../about.html">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Islamic Economics. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" data-back-to-top aria-label="Back to top">&uarr;</button>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Nav dropdown
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.closest('.nav-dropdown').classList.toggle('open');
+      });
+    });
+
+    // ==========================================
+    // TIMELINE DATA & RENDERING
+    // ==========================================
+    var tlEvents = [
+      {
+        id: 'ancient',
+        year: '~2000 BCE',
+        label: 'Shared Origin',
+        x: 60, tradition: 'shared',
+        yOffset: 140,
+        title: 'The Universal Prohibition',
+        text: 'All three Abrahamic traditions originally prohibited lending at interest. This reflected a shared conviction that money should not generate money without productive activity. The prohibition rested on two pillars: concern for the poor, and a theological claim that money is a medium of exchange, not a commodity to be rented out for profit.'
+      },
+      {
+        id: 'exodus',
+        year: '~1200 BCE',
+        label: 'Exodus 22:25',
+        x: 160, tradition: 'judaism',
+        yOffset: 200,
+        title: 'The Torah: Initial Prohibition',
+        text: 'Exodus specifically protects the poor: "If you lend money to my people, to the poor among you, you shall not deal with them as a creditor; you shall not exact interest from them." The concern is protective. The poor are vulnerable, and charging them interest on subsistence loans compounds their suffering.'
+      },
+      {
+        id: 'deut',
+        year: '~600 BCE',
+        label: 'Deuteronomy',
+        x: 260, tradition: 'judaism',
+        yOffset: 200,
+        title: 'The Stranger Exemption',
+        text: 'Deuteronomy 23:20-21 introduces the insider/outsider distinction: interest is prohibited within the community but permitted on loans to foreigners. This likely referred to wealthy foreign merchants, but the distinction created a theological fault line. It meant the prohibition was communal, not universal. That single boundary would have enormous consequences for the history of finance.'
+      },
+      {
+        id: 'nt',
+        year: '~60 CE',
+        label: 'New Testament',
+        x: 380, tradition: 'christianity',
+        yOffset: 140,
+        title: 'Two Voices in the New Testament',
+        text: 'Luke 6:35 teaches radical generosity: "Lend expecting nothing back." But the Parable of the Talents (Matthew 25) presents a master who expects returns on invested money. This textual tension gave later thinkers room to reinterpret the prohibition. Direct teaching vs. parabolic detail remains a genuinely contested scholarly debate.'
+      },
+      {
+        id: 'quran',
+        year: '610-632',
+        label: 'Quranic Revelation',
+        x: 480, tradition: 'islam',
+        yOffset: 80,
+        title: 'The Absolute Prohibition',
+        text: 'The Quran addresses interest (riba) with escalating severity across multiple passages. Notable features: no insider/outsider distinction (the prohibition is universal), no parabolic ambiguity, and an explicit distinction between trade and interest. Culminates in a declaration of "war from God and His Messenger" against those who persist (2:279).'
+      },
+      {
+        id: 'councils',
+        year: '325-1179',
+        label: 'Church Councils',
+        x: 580, tradition: 'christianity',
+        yOffset: 140,
+        title: 'Eight Centuries of Enforcement',
+        text: 'From the Council of Nicaea (325) to the Third Lateran Council (1179), the Church enforced the prohibition through successive councils. Nicaea prohibited clergy from charging interest; Lateran III extended penalties to laypeople and denied Christian burial to unrepentant usurers. The prohibition remained absolute in principle even as commercial pressures grew.'
+      },
+      {
+        id: 'aquinas',
+        year: '1270s',
+        label: 'Aquinas',
+        x: 720, tradition: 'christianity',
+        yOffset: 140,
+        title: 'Aquinas Upholds the Ban',
+        text: 'Thomas Aquinas upholds the prohibition on Aristotelian grounds: money is "consumed" in its use, so charging for the use of money charges for something that does not exist separately from the thing itself. You cannot sell wine and also charge rent on the cup. A philosophical argument, not merely a biblical one.'
+      },
+      {
+        id: 'franciscan',
+        year: '~1300s',
+        label: 'Franciscan Exceptions',
+        x: 840, tradition: 'christianity',
+        yOffset: 120,
+        title: 'The Franciscan Innovation',
+        text: 'The Franciscan school introduces lucrum cessans (foregone profit) and damnum emergens (actual loss suffered). A lender could be compensated for profit they would have earned had they invested elsewhere, or for losses incurred because the money was lent. Not interest by name, but functionally indistinguishable from it.'
+      },
+      {
+        id: 'heter',
+        year: '~1500s',
+        label: 'Heter Iska',
+        x: 920, tradition: 'judaism',
+        yOffset: 200,
+        title: 'The Heter Iska',
+        text: 'Jewish law develops the heter iska ("permission to do business"), restructuring a loan as a profit-sharing partnership. The "lender" becomes a silent partner entitled to a share of profits, but who must also share in losses. The resemblance to the Islamic mudarabah is striking and probably not coincidental, given centuries of intellectual exchange between Jewish and Muslim scholars.'
+      },
+      {
+        id: 'calvin',
+        year: '1545',
+        label: 'Calvin\'s Letter',
+        x: 980, tradition: 'christianity',
+        yOffset: 120,
+        title: 'Calvin Breaks with Consensus',
+        text: 'John Calvin argues the Old Testament prohibition was specific to ancient Israel\'s agrarian economy and does not bind Christians in a commercial economy. Moderate interest in commercial contexts is not condemned by Scripture. He retains limits (not to the poor, moderate rates), but the fundamental shift is clear: interest is no longer inherently sinful.'
+      },
+      {
+        id: 'reformation',
+        year: '1500s-1600s',
+        label: 'Reformation Era',
+        x: 1100, tradition: 'christianity',
+        yOffset: 140,
+        title: 'The Definitional Shift',
+        text: '"Usury" is redefined from "any interest" to "excessive interest." This allows the prohibition to be formally maintained while substantively reinterpreted. Protestant nations broadly accept interest; Catholic nations follow more slowly. The fragmentation of Christian authority means any denomination prohibiting interest faces competitive disadvantage.'
+      },
+      {
+        id: 'modern',
+        year: '18th C+',
+        label: 'Modern Era',
+        x: 1120, tradition: 'shared',
+        yOffset: 140,
+        title: 'Convergence and Irony',
+        text: 'The 2008 financial crisis exposed vulnerabilities in interest-based finance. Secular economics now questions whether guaranteed returns are optimal. Catholic social teaching criticises predatory lending. Jewish ethical investing applies traditional values. Islamic finance offers structural alternatives. The three traditions are arguably converging from very different directions.'
+      }
+    ];
+
+    function buildTimeline() {
+      var track = document.getElementById('timelineTrack');
+      track.innerHTML = '';
+
+      // Draw tradition lines
+      // Islam line: from Quran event onward, at y=80
+      var islamLine = document.createElement('div');
+      islamLine.className = 'timeline-line islam';
+      islamLine.style.left = '480px';
+      islamLine.style.width = '680px';
+      islamLine.style.top = '80px';
+      track.appendChild(islamLine);
+
+      // Christianity line: from Luke onward, at varying y but we show at 140
+      var christLine = document.createElement('div');
+      christLine.className = 'timeline-line christianity';
+      christLine.style.left = '360px';
+      christLine.style.width = '800px';
+      christLine.style.top = '140px';
+      track.appendChild(christLine);
+
+      // Judaism line: from Exodus onward, at 200
+      var judLine = document.createElement('div');
+      judLine.className = 'timeline-line judaism';
+      judLine.style.left = '160px';
+      judLine.style.width = '1000px';
+      judLine.style.top = '200px';
+      track.appendChild(judLine);
+
+      // Shared origin segment
+      var shared = document.createElement('div');
+      shared.className = 'timeline-shared';
+      shared.style.left = '40px';
+      shared.style.width = '140px';
+      shared.style.top = '140px';
+      track.appendChild(shared);
+
+      // Draw events
+      tlEvents.forEach(function(ev) {
+        var dot = document.createElement('button');
+        dot.className = 'tl-event ' + ev.tradition;
+        dot.style.left = ev.x + 'px';
+        dot.style.top = ev.yOffset + 'px';
+        dot.setAttribute('aria-label', ev.label + ' (' + ev.year + ')');
+        dot.setAttribute('data-id', ev.id);
+
+        var lbl = document.createElement('span');
+        lbl.className = 'tl-event-label';
+        lbl.textContent = ev.label;
+        dot.appendChild(lbl);
+
+        var yr = document.createElement('span');
+        yr.className = 'tl-event-year';
+        yr.textContent = ev.year;
+        dot.appendChild(yr);
+
+        dot.addEventListener('click', function() {
+          showTlDetail(ev);
+          document.querySelectorAll('.tl-event').forEach(function(d) { d.classList.remove('active'); });
+          dot.classList.add('active');
+        });
+
+        track.appendChild(dot);
+      });
+    }
+
+    function showTlDetail(ev) {
+      var detail = document.getElementById('tlDetail');
+      var title = document.getElementById('tlDetailTitle');
+      var text = document.getElementById('tlDetailText');
+      detail.classList.remove('visible');
+      setTimeout(function() {
+        title.textContent = ev.title;
+        text.textContent = ev.text;
+        detail.classList.add('visible');
+      }, 150);
+    }
+
+    buildTimeline();
+
+    // ==========================================
+    // SCRIPTURE COMPARISON DATA
+    // ==========================================
+    var scriptureData = {
+      poor: {
+        islam: {
+          quote: '"Those who consume interest cannot stand except as one stands who is being beaten by Satan into insanity. That is because they say, \'Trade is just like interest.\' But God has permitted trade and has forbidden interest."',
+          cite: 'Al-Baqarah 2:275',
+          note: 'The Quran makes no distinction between lending to the poor or to the wealthy. The prohibition is universal. Interest is condemned because it separates return from risk, not merely because it harms the vulnerable.'
+        },
+        christianity: {
+          quote: '"If you lend to those from whom you expect repayment, what credit is that to you? Even sinners lend to sinners, expecting to be repaid in full. But love your enemies, do good to them, and lend to them without expecting to get anything back."',
+          cite: 'Luke 6:34-35',
+          note: 'Jesus goes beyond prohibiting interest. He calls for lending without expecting even the principal back. The standard is radical generosity, not fair lending.'
+        },
+        judaism: {
+          quote: '"If you lend money to my people, to the poor among you, you shall not deal with them as a creditor; you shall not exact interest from them."',
+          cite: 'Exodus 22:25',
+          note: 'The Torah specifically targets loans to the poor within the community. The concern is protective: the poor are vulnerable, and charging them interest on subsistence loans compounds their suffering.'
+        }
+      },
+      foreigners: {
+        islam: {
+          quote: '"O you who believe, do not consume interest, doubled and multiplied, but fear God that you may be successful."',
+          cite: "Ali 'Imran 3:130",
+          note: 'No insider/outsider distinction exists in Islamic scripture. The prohibition applies to all people, regardless of community membership. This universality left no textual space for accommodation.'
+        },
+        christianity: {
+          quote: 'The New Testament inherits the Old Testament framework but does not explicitly address the foreigner question. The shift from a tribal to a universal religion effectively dissolved the insider/outsider boundary.',
+          cite: 'No direct NT passage',
+          note: 'Christianity inherited the distinction but progressively de-emphasised it as the faith expanded beyond its Jewish origins to encompass all nations.'
+        },
+        judaism: {
+          quote: '"On loans to a foreigner you may charge interest, but on loans to another Israelite you may not charge interest, so that the Lord your God may bless you in all your undertakings."',
+          cite: 'Deuteronomy 23:20-21',
+          note: 'This passage created a theological fault line. It meant the prohibition was communal rather than universal. That single boundary had enormous consequences for the subsequent history of finance.'
+        }
+      },
+      generosity: {
+        islam: {
+          quote: '"If the debtor is in difficulty, grant him time till it is easy for him to repay. But if you remit it by way of charity, that is best for you if you only knew."',
+          cite: 'Al-Baqarah 2:280',
+          note: 'The Quran not only prohibits interest but actively encourages forgiving debts entirely as an act of charity. The ideal is not merely fair lending but generous release from obligation.'
+        },
+        christianity: {
+          quote: '"Lend to them without expecting to get anything back. Then your reward will be great, and you will be children of the Most High, because he is kind to the ungrateful and wicked."',
+          cite: 'Luke 6:35',
+          note: 'This is the direct, non-parabolic teaching of Jesus on lending. The standard is radical generosity that extends even to enemies and the ungrateful.'
+        },
+        judaism: {
+          quote: '"If any of your kin fall into difficulty and become dependent on you, you shall support them. Do not take interest in advance or otherwise make a profit from them, but fear your God; let them live with you."',
+          cite: 'Leviticus 25:35-37',
+          note: 'Leviticus broadens protection beyond the desperately poor to any community member who falls into difficulty. The theological grounding shifts from compassion to covenant: caring for kin is a matter of fearing God.'
+        }
+      },
+      parables: {
+        islam: {
+          quote: '"God destroys interest and gives increase for charities. And God does not like every sinning disbeliever."',
+          cite: 'Al-Baqarah 2:276',
+          note: 'The Quran contains no parabolic material that could be read as endorsing interest. Instead, it explicitly contrasts interest (which God destroys) with charity (which God increases). This left no interpretive ambiguity.'
+        },
+        christianity: {
+          quote: 'In the Parable of the Talents, a master rebukes a servant who buried his money: "You should have put my money on deposit with the bankers, so that when I returned I would have received it back with interest."',
+          cite: 'Matthew 25:27 (paraphrased)',
+          note: 'Whether this parable endorses interest or merely uses banking as a metaphor for spiritual accountability remains genuinely contested. The parable provided later thinkers with textual material for accommodation.'
+        },
+        judaism: {
+          quote: '"Whoever increases wealth by taking interest or profit from the poor amasses it for another, who will be kind to the poor."',
+          cite: 'Proverbs 28:8',
+          note: 'The Wisdom literature reinforces the Torah\'s prohibition with a providential warning: wealth gained through interest will ultimately be redistributed to those who show kindness to the poor.'
+        }
+      }
+    };
+
+    function renderScripture(topic) {
+      var cols = document.getElementById('scriptureColumns');
+      var data = scriptureData[topic];
+      var traditions = ['islam', 'christianity', 'judaism'];
+      var labels = { islam: 'Islam', christianity: 'Christianity', judaism: 'Judaism' };
+      var html = '';
+      traditions.forEach(function(t) {
+        var d = data[t];
+        html += '<div class="scripture-card">';
+        html += '<div class="scripture-card-header ' + t + '">' + labels[t] + '</div>';
+        html += '<div class="scripture-card-body">';
+        html += '<blockquote>' + d.quote + '</blockquote>';
+        html += '<cite>' + d.cite + '</cite>';
+        html += '<div class="sc-note">' + d.note + '</div>';
+        html += '</div></div>';
+      });
+      cols.innerHTML = html;
+    }
+
+    // Topic button handling
+    document.getElementById('scriptureTopics').addEventListener('click', function(e) {
+      var btn = e.target.closest('.scripture-topic-btn');
+      if (!btn) return;
+      document.querySelectorAll('.scripture-topic-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      renderScripture(btn.getAttribute('data-topic'));
+    });
+
+    // Initial render
+    renderScripture('poor');
+
+    // ==========================================
+    // TABBED ANALYSIS CARDS DATA
+    // ==========================================
+    var analysisTopics = [
+      {
+        title: 'Shared Origins',
+        islam: 'All three traditions originally prohibited lending at interest, reflecting a shared conviction that money should not generate money without productive activity. Islam received this through the Quranic revelation, which confirmed and strengthened the prohibition with absolute, unambiguous language. The Quran treats interest as fundamentally unjust because it separates return from risk.',
+        christianity: 'The early Christian community inherited the prohibition from Judaism and reinforced it with Jesus\'s teaching to "lend expecting nothing back" (Luke 6:35). For the first millennium of Christian history, the prohibition was absolute and enforced by church councils. It was considered a matter of both biblical authority and natural law.',
+        judaism: 'The Torah established the prohibition in three progressively expanding passages (Exodus, Leviticus, Deuteronomy). The original concern was protective: interest-bearing loans concentrate wealth and create cycles of debt that impoverish the borrower. The prohibition was grounded in communal solidarity and covenant obligation.'
+      },
+      {
+        title: 'Textual Foundations',
+        islam: 'The Quran addresses riba across multiple surahs with escalating severity, culminating in a declaration of "war from God and His Messenger" (2:279). Notable features: no insider/outsider distinction, no parabolic ambiguity, and an explicit rejection of the argument that interest is just a form of trade (2:275).',
+        christianity: 'The New Testament contains both a direct teaching prohibiting interest (Luke 6:34-35) and two parables that reference banking with interest (Matthew 25, Luke 19). This internal tension gave later interpreters textual room to manoeuvre. The ambiguity proved decisive for the tradition\'s trajectory.',
+        judaism: 'The Torah\'s three key passages progressively expand the prohibition but introduce one critical distinction: Deuteronomy 23:20-21 permits charging interest to foreigners while prohibiting it within the community. This meant the prohibition was communal rather than universal, creating an interpretive opening with enormous historical consequences.'
+      },
+      {
+        title: 'The Path of Accommodation',
+        islam: 'Islam did not accommodate interest. Instead, the tradition of independent reasoning (ijtihad) operated within the prohibition, channelling innovation into creating interest-free financial instruments rather than justifying interest. The scholarly consensus (ijma) across all major schools made reversal extremely difficult.',
+        christianity: 'The accommodation unfolded over centuries: Franciscan exceptions (lucrum cessans, damnum emergens) in the 13th century, Calvin\'s 1545 letter legitimising moderate commercial interest, and the definitive semantic shift redefining "usury" from "any interest" to "excessive interest." By the 18th century, the prohibition was effectively dead.',
+        judaism: 'Jewish law navigated around the prohibition through legal ingenuity rather than setting it aside. The heter iska ("permission to do business") restructured loans as profit-sharing partnerships, preserving the letter of the law while enabling commerce. The tradition distinguished between personal lending (still prohibited) and commercial arrangements.'
+      },
+      {
+        title: 'The Heter Iska and Mudarabah',
+        islam: 'The mudarabah (profit-sharing) is a foundational Islamic financial instrument: one party provides capital, the other provides labour and management. Profits are shared by agreed ratio; losses fall on the capital provider. The provider of capital must bear genuine risk. A guaranteed return on money lent is precisely what the prohibition targets.',
+        christianity: 'Christianity did not develop a comparable alternative instrument. Instead, the tradition moved toward accepting interest itself. The Franciscan concepts of lucrum cessans and damnum emergens were compensatory mechanisms, not structural alternatives. They were interest by another name rather than a genuinely different approach to finance.',
+        judaism: 'The heter iska restructures a loan as a silent partnership. The "lender" invests in the "borrower\'s" business and is entitled to a share of profits, but must also share in losses. The resemblance to the Islamic mudarabah is striking and probably not coincidental, given centuries of intellectual exchange between Jewish and Muslim scholars in the medieval Islamic world.'
+      },
+      {
+        title: 'Why the Prohibition Survived (or Didn\'t)',
+        islam: 'Textual clarity (the Quran is considered the literal word of God), no exceptions in the text, firm scholarly consensus across all schools and centuries, and innovation channelled within the prohibition rather than around it. These four factors combined to maintain the prohibition where other traditions reinterpreted it.',
+        christianity: 'Textual ambiguity (the parables), institutional fragmentation after the Reformation (no single authority could enforce the prohibition), economic pressure from commercial expansion, and the theological emphasis on inner disposition over legal rules all contributed to the gradual reinterpretation of the prohibition.',
+        judaism: 'The Deuteronomic stranger exemption established that the prohibition was conditional rather than absolute. Combined with the extraordinary legal creativity of the responsa tradition, this allowed navigation within the law rather than departure from it. The tradition preserved the protective core while accommodating commercial reality.'
+      },
+      {
+        title: 'The Honest Assessment',
+        islam: 'Islam maintained both the prohibition and an alternative system, but faces the ongoing challenge of ensuring that Islamic financial instruments are substantively different from conventional ones, rather than merely formally compliant. The gap between theory and practice remains a live issue within the tradition.',
+        christianity: 'Christianity gained economic flexibility through reinterpretation. The result is a tradition that can critique financial excess (as in Catholic social teaching) while working within the existing financial system. The prohibition evolved from an absolute rule into a principle against excess.',
+        judaism: 'Judaism preserved the protective core of the prohibition (do not exploit the needy) while accommodating commercial practice. The cost was the loss of a distinctive financial architecture, though instruments like the heter iska preserve the principle of risk-sharing in practice. Contemporary Jewish law generally distinguishes between personal and commercial lending.'
+      }
+    ];
+
+    function buildAnalysisCards() {
+      var grid = document.getElementById('analysisGrid');
+      var html = '';
+      analysisTopics.forEach(function(topic, idx) {
+        var traditions = ['islam', 'christianity', 'judaism'];
+        var labels = { islam: 'Islam', christianity: 'Christianity', judaism: 'Judaism' };
+        html += '<div class="analysis-card">';
+        html += '<div class="analysis-card-title">' + topic.title + '</div>';
+        html += '<div class="ac-tabs">';
+        traditions.forEach(function(t, ti) {
+          html += '<button class="ac-tab ' + t + (ti === 0 ? ' active' : '') + '" data-card="' + idx + '" data-tradition="' + t + '">' + labels[t] + '</button>';
+        });
+        html += '</div>';
+        traditions.forEach(function(t, ti) {
+          html += '<div class="ac-panel' + (ti === 0 ? ' active' : '') + '" data-card="' + idx + '" data-tradition="' + t + '">';
+          html += '<p>' + topic[t] + '</p>';
+          html += '</div>';
+        });
+        html += '</div>';
+      });
+      grid.innerHTML = html;
+
+      // Tab click handler
+      grid.addEventListener('click', function(e) {
+        var tab = e.target.closest('.ac-tab');
+        if (!tab) return;
+        var cardIdx = tab.getAttribute('data-card');
+        var tradition = tab.getAttribute('data-tradition');
+        // Deactivate siblings
+        grid.querySelectorAll('.ac-tab[data-card="' + cardIdx + '"]').forEach(function(t) { t.classList.remove('active'); });
+        grid.querySelectorAll('.ac-panel[data-card="' + cardIdx + '"]').forEach(function(p) { p.classList.remove('active'); });
+        tab.classList.add('active');
+        grid.querySelector('.ac-panel[data-card="' + cardIdx + '"][data-tradition="' + tradition + '"]').classList.add('active');
+      });
+    }
+
+    buildAnalysisCards();
+
+    // ==========================================
+    // ARGUMENTS ACCORDION
+    // ==========================================
+    function toggleArg(id) {
+      document.getElementById(id).classList.toggle('open');
+    }
+
+    // ==========================================
+    // INTERSECTION OBSERVER FOR ANIMATIONS
+    // ==========================================
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.scripture-card, .analysis-card, .conv-card, .alt-card, .arg-card').forEach(function(el) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s';
+        observer.observe(el);
+      });
+    }
+  </script>
+</body>
+</html>
