@@ -110,7 +110,7 @@
 
     .timeline-track {
       position: relative;
-      min-width: 1200px;
+      min-width: 1500px;
       height: 280px;
       padding: 0 40px;
     }
@@ -172,7 +172,7 @@
       bottom: calc(100% + 8px);
       left: 50%;
       transform: translateX(-50%);
-      font-size: 0.68rem;
+      font-size: 0.6rem;
       font-weight: 600;
       white-space: nowrap;
       color: var(--color-text-secondary);
@@ -183,7 +183,7 @@
       top: calc(100% + 6px);
       left: 50%;
       transform: translateX(-50%);
-      font-size: 0.65rem;
+      font-size: 0.55rem;
       font-weight: 700;
       color: var(--color-text-light);
       white-space: nowrap;
@@ -1095,7 +1095,7 @@
         id: 'exodus',
         year: '~1200 BCE',
         label: 'Exodus 22:25',
-        x: 160, tradition: 'judaism',
+        x: 180, tradition: 'judaism',
         yOffset: 200,
         title: 'The Torah: Initial Prohibition',
         text: 'Exodus specifically protects the poor: "If you lend money to my people, to the poor among you, you shall not deal with them as a creditor; you shall not exact interest from them." The concern is protective. The poor are vulnerable, and charging them interest on subsistence loans compounds their suffering.'
@@ -1104,43 +1104,61 @@
         id: 'deut',
         year: '~600 BCE',
         label: 'Deuteronomy',
-        x: 260, tradition: 'judaism',
+        x: 320, tradition: 'judaism',
         yOffset: 200,
         title: 'The Stranger Exemption',
         text: 'Deuteronomy 23:20-21 introduces the insider/outsider distinction: interest is prohibited within the community but permitted on loans to foreigners. This likely referred to wealthy foreign merchants, but the distinction created a theological fault line. It meant the prohibition was communal, not universal. That single boundary would have enormous consequences for the history of finance.'
       },
       {
-        id: 'nt',
+        id: 'luke',
         year: '~60 CE',
-        label: 'New Testament',
-        x: 380, tradition: 'christianity',
+        label: 'Luke 6:35',
+        x: 440, tradition: 'christianity',
         yOffset: 140,
-        title: 'Two Voices in the New Testament',
-        text: 'Luke 6:35 teaches radical generosity: "Lend expecting nothing back." But the Parable of the Talents (Matthew 25) presents a master who expects returns on invested money. This textual tension gave later thinkers room to reinterpret the prohibition. Direct teaching vs. parabolic detail remains a genuinely contested scholarly debate.'
+        title: 'Radical Generosity',
+        text: 'Jesus teaches: "Lend to them without expecting to get anything back." This goes beyond the Old Testament prohibition. It does not merely say "do not charge interest." It says lend expecting nothing back, not even the principal. The standard is not fair lending but radical generosity.'
+      },
+      {
+        id: 'parables',
+        year: '~60 CE',
+        label: 'The Parables',
+        x: 510, tradition: 'christianity',
+        yOffset: 115,
+        title: 'The Parable of the Talents',
+        text: 'The Parable of the Talents (Matthew 25) and the Ten Gold Coins (Luke 19) present masters who expect returns on invested money. Whether these endorse interest or are spiritual metaphors about accountability is a genuinely contested scholarly debate that would shape Christianity\'s trajectory on this question.'
       },
       {
         id: 'quran',
         year: '610-632',
         label: 'Quranic Revelation',
-        x: 480, tradition: 'islam',
+        x: 590, tradition: 'islam',
         yOffset: 80,
         title: 'The Absolute Prohibition',
         text: 'The Quran addresses interest (riba) with escalating severity across multiple passages. Notable features: no insider/outsider distinction (the prohibition is universal), no parabolic ambiguity, and an explicit distinction between trade and interest. Culminates in a declaration of "war from God and His Messenger" against those who persist (2:279).'
       },
       {
-        id: 'councils',
-        year: '325-1179',
-        label: 'Church Councils',
-        x: 580, tradition: 'christianity',
+        id: 'nicaea',
+        year: '325',
+        label: 'Nicaea',
+        x: 680, tradition: 'christianity',
         yOffset: 140,
-        title: 'Eight Centuries of Enforcement',
-        text: 'From the Council of Nicaea (325) to the Third Lateran Council (1179), the Church enforced the prohibition through successive councils. Nicaea prohibited clergy from charging interest; Lateran III extended penalties to laypeople and denied Christian burial to unrepentant usurers. The prohibition remained absolute in principle even as commercial pressures grew.'
+        title: 'Church Enforces Prohibition',
+        text: 'The Council of Nicaea formally prohibits clergy from charging interest. From the 4th through 12th centuries, absolute prohibition is enforced by successive church councils. The prohibition applies to all Christians, though enforcement varies.'
+      },
+      {
+        id: 'lateran',
+        year: '1179',
+        label: 'Lateran III',
+        x: 780, tradition: 'christianity',
+        yOffset: 115,
+        title: 'Third Lateran Council',
+        text: 'The Third Lateran Council reaffirms the ban on usury and extends penalties to laypeople who practise it. Usurers who do not repent are denied Christian burial. The prohibition remains absolute in principle even as commercial pressures grow.'
       },
       {
         id: 'aquinas',
         year: '1270s',
         label: 'Aquinas',
-        x: 720, tradition: 'christianity',
+        x: 880, tradition: 'christianity',
         yOffset: 140,
         title: 'Aquinas Upholds the Ban',
         text: 'Thomas Aquinas upholds the prohibition on Aristotelian grounds: money is "consumed" in its use, so charging for the use of money charges for something that does not exist separately from the thing itself. You cannot sell wine and also charge rent on the cup. A philosophical argument, not merely a biblical one.'
@@ -1149,7 +1167,7 @@
         id: 'franciscan',
         year: '~1300s',
         label: 'Franciscan Exceptions',
-        x: 840, tradition: 'christianity',
+        x: 1000, tradition: 'christianity',
         yOffset: 120,
         title: 'The Franciscan Innovation',
         text: 'The Franciscan school introduces lucrum cessans (foregone profit) and damnum emergens (actual loss suffered). A lender could be compensated for profit they would have earned had they invested elsewhere, or for losses incurred because the money was lent. Not interest by name, but functionally indistinguishable from it.'
@@ -1158,7 +1176,7 @@
         id: 'heter',
         year: '~1500s',
         label: 'Heter Iska',
-        x: 920, tradition: 'judaism',
+        x: 1360, tradition: 'judaism',
         yOffset: 200,
         title: 'The Heter Iska',
         text: 'Jewish law develops the heter iska ("permission to do business"), restructuring a loan as a profit-sharing partnership. The "lender" becomes a silent partner entitled to a share of profits, but who must also share in losses. The resemblance to the Islamic mudarabah is striking and probably not coincidental, given centuries of intellectual exchange between Jewish and Muslim scholars.'
@@ -1167,7 +1185,7 @@
         id: 'calvin',
         year: '1545',
         label: 'Calvin\'s Letter',
-        x: 980, tradition: 'christianity',
+        x: 1200, tradition: 'christianity',
         yOffset: 120,
         title: 'Calvin Breaks with Consensus',
         text: 'John Calvin argues the Old Testament prohibition was specific to ancient Israel\'s agrarian economy and does not bind Christians in a commercial economy. Moderate interest in commercial contexts is not condemned by Scripture. He retains limits (not to the poor, moderate rates), but the fundamental shift is clear: interest is no longer inherently sinful.'
@@ -1176,7 +1194,7 @@
         id: 'reformation',
         year: '1500s-1600s',
         label: 'Reformation Era',
-        x: 1100, tradition: 'christianity',
+        x: 1360, tradition: 'christianity',
         yOffset: 140,
         title: 'The Definitional Shift',
         text: '"Usury" is redefined from "any interest" to "excessive interest." This allows the prohibition to be formally maintained while substantively reinterpreted. Protestant nations broadly accept interest; Catholic nations follow more slowly. The fragmentation of Christian authority means any denomination prohibiting interest faces competitive disadvantage.'
