@@ -758,9 +758,6 @@
 
       <div class="timeline-legend">
         <div class="timeline-legend-item">
-          <span class="timeline-legend-dot" style="background:var(--color-text-light)"></span> Shared
-        </div>
-        <div class="timeline-legend-item">
           <span class="timeline-legend-dot" style="background:var(--islam-border)"></span> Islam
         </div>
         <div class="timeline-legend-item">
@@ -1083,15 +1080,6 @@
     // ==========================================
     var tlEvents = [
       {
-        id: 'ancient',
-        year: '~2000 BCE',
-        label: 'Shared Origin',
-        x: 60, tradition: 'shared',
-        yOffset: 40,
-        title: 'The Universal Prohibition',
-        text: 'All three Abrahamic traditions originally prohibited lending at interest. This reflected a shared conviction that money should not generate money without productive activity. The prohibition rested on two pillars: concern for the poor, and a theological claim that money is a medium of exchange, not a commodity to be rented out for profit.'
-      },
-      {
         id: 'exodus',
         year: '~1200 BCE',
         label: 'Exodus 22:25',
@@ -1176,7 +1164,7 @@
         id: 'ottoman',
         year: '~1600-1800s',
         label: 'Ottoman Debates',
-        x: 1240, tradition: 'islam',
+        x: 1320, tradition: 'islam',
         yOffset: 80,
         title: 'The Closest Islam Came to Wavering',
         text: 'Ottoman courts occasionally permitted certain transactions under istihsan (juristic preference) and darura (necessity). Some scholars debated whether state bonds and institutional lending constituted riba. The Shaykh al-Islam issued fatwas navigating between commercial reality and prohibition. Unlike the Christian trajectory, these debates did not produce a fundamental reinterpretation. The prohibition held, but the edges were tested.'
@@ -1243,15 +1231,6 @@
         yOffset: 140,
         title: 'The Definitional Shift',
         text: '"Usury" is redefined from "any interest" to "excessive interest." This allows the prohibition to be formally maintained while substantively reinterpreted. Protestant nations broadly accept interest; Catholic nations follow more slowly. The fragmentation of Christian authority means any denomination prohibiting interest faces competitive disadvantage.'
-      },
-      {
-        id: 'modern',
-        year: '18th C+',
-        label: 'Modern Era',
-        x: 1420, tradition: 'shared',
-        yOffset: 40,
-        title: 'Convergence and Irony',
-        text: 'The 2008 financial crisis exposed vulnerabilities in interest-based finance. Secular economics now questions whether guaranteed returns are optimal. Catholic social teaching criticises predatory lending. Jewish ethical investing applies traditional values. Islamic finance offers structural alternatives. The three traditions are arguably converging from very different directions.'
       }
     ];
 
@@ -1283,14 +1262,6 @@
       judLine.style.width = '980px';
       judLine.style.top = '200px';
       track.appendChild(judLine);
-
-      // Shared grey line spanning full timeline at top
-      var shared = document.createElement('div');
-      shared.className = 'timeline-shared';
-      shared.style.left = '40px';
-      shared.style.width = '1420px';
-      shared.style.top = '40px';
-      track.appendChild(shared);
 
       // Draw events
       tlEvents.forEach(function(ev) {
