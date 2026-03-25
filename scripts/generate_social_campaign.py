@@ -517,7 +517,79 @@ def resolve_podcast_video_path(project_root: Path, episode_number: Optional[int]
     return str(matches[0].resolve())
 
 
+def discover_podcast_items_from_html(project_root: Path) -> List[ContentItem]:
+    """Discover all podcast episodes by parsing the podcast HTML page.
+
+    This catches episodes from ALL series, not just the ones in the RSS feed.
+    """
+    podcast_html = project_root / "Website" / "podcast.html"
+    if not podcast_html.exists():
+        return []
+
+    tree = lxml_html.parse(str(podcast_html))
+    items: List[ContentItem] = []
+    seen_ids: set = set()
+
+    # Find all episode rows and their expanded descriptions
+    rows = tree.xpath('//div[contains(@class, "episode-row")]')
+    for row in rows:
+        data_ep = row.get("data-episode", "")
+        if not data_ep:
+            continue
+
+        title_el = row.xpath('.//div[contains(@class, "episode-row-title")]')
+        subtitle_el = row.xpath('.//div[contains(@class, "episode-row-subtitle")]')
+        title = title_el[0].text_content().strip() if title_el else ""
+        subtitle = subtitle_el[0].text_content().strip() if subtitle_el else ""
+
+        if not title:
+            continue
+
+        # Get the expanded description if available
+        expanded = tree.xpath(f'//div[@id="ep-{data_ep}"]//p[contains(@class, "episode-expanded-desc")]')
+        body_text = expanded[0].text_content().strip() if expanded else subtitle
+
+        # Build content_id from the data-episode attribute
+        content_id = f"podcast-{slugify(data_ep)}-{slugify(title)}"
+        if content_id in seen_ids:
+            continue
+        seen_ids.add(content_id)
+
+        title_lower = title.lower()
+        if any(kw in title_lower for kw in SOCIAL_BLACKLIST_KEYWORDS):
+            logger.info("Skipping blacklisted episode: %s", title)
+            continue
+        if any(word in title_lower for word in SENSITIVE_TITLE_WORDS):
+            logger.info("Skipping sensitive episode: %s", title)
+            continue
+
+        episode_anchor = f"#ep-{data_ep}" if data_ep else ""
+        entry_url = f"{BASE_URL}/podcast.html{episode_anchor}"
+
+        items.append(
+            ContentItem(
+                content_id=content_id,
+                kind="podcast",
+                title=title,
+                summary=subtitle or first_sentence(body_text),
+                url=entry_url,
+                published_at="",
+                author="Islamic Economics",
+                category="Podcast",
+                tags=[],
+                body_text=truncate_text(body_text, 2200),
+                asset_url=PODCAST_COVER_URL,
+                local_asset_path="",
+                local_path=str(podcast_html.resolve()),
+                local_video_path="",
+            )
+        )
+
+    return items
+
+
 def discover_podcast_items(project_root: Path) -> List[ContentItem]:
+    # First get RSS feed items (these have richer metadata)
     feed_path = project_root / "Website" / "podcast" / "feed.xml"
     feed = feedparser.parse(str(feed_path))
 
@@ -573,6 +645,15 @@ def discover_podcast_items(project_root: Path) -> List[ContentItem]:
             )
         )
 
+    # Also discover episodes from the HTML page (catches all series)
+    feed_ids = {item.content_id for item in items}
+    html_items = discover_podcast_items_from_html(project_root)
+    for hi in html_items:
+        if hi.content_id not in feed_ids:
+            items.append(hi)
+            feed_ids.add(hi.content_id)
+
+    logger.info("Discovered %d podcast episodes total.", len(items))
     return sorted(items, key=sort_key_for_item, reverse=True)
 
 
