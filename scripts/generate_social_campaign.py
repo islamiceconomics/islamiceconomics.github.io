@@ -647,11 +647,16 @@ def discover_podcast_items(project_root: Path) -> List[ContentItem]:
 
     # Also discover episodes from the HTML page (catches all series)
     feed_ids = {item.content_id for item in items}
+    feed_titles = {item.title.lower().strip() for item in items}
     html_items = discover_podcast_items_from_html(project_root)
     for hi in html_items:
-        if hi.content_id not in feed_ids:
-            items.append(hi)
-            feed_ids.add(hi.content_id)
+        # Skip if same content_id OR same title (avoids duplicates from
+        # feed.xml episodes that have different IDs in the HTML version)
+        if hi.content_id in feed_ids or hi.title.lower().strip() in feed_titles:
+            continue
+        items.append(hi)
+        feed_ids.add(hi.content_id)
+        feed_titles.add(hi.title.lower().strip())
 
     logger.info("Discovered %d podcast episodes total.", len(items))
     return sorted(items, key=sort_key_for_item, reverse=True)
@@ -1254,6 +1259,8 @@ def generate_channels_with_openai(item: ContentItem, voice_pattern: Optional[Dic
         "Do not invent, extrapolate, or embellish ANY specific details — no countries, prices, percentages, or events not in the source. "
         "If the source doesn't mention a specific country or statistic, do not add one. "
         "Never use emoji, hashtags, or semicolons. "
+        "Use em dashes (—) very sparingly — only when truly necessary for a parenthetical aside. "
+        "Prefer periods to split sentences instead of em dashes. "
         "Use em dashes sparingly — only when a parenthetical aside truly needs one. Prefer periods and commas. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
@@ -1447,6 +1454,8 @@ def generate_channels_with_anthropic(item: ContentItem, voice_pattern: Optional[
         "Do not invent, extrapolate, or embellish ANY specific details — no countries, prices, percentages, or events not in the source. "
         "If the source doesn't mention a specific country or statistic, do not add one. "
         "Never use emoji, hashtags, or semicolons. "
+        "Use em dashes (—) very sparingly — only when truly necessary for a parenthetical aside. "
+        "Prefer periods to split sentences instead of em dashes. "
         "Use em dashes sparingly — only when a parenthetical aside truly needs one. Prefer periods and commas. "
         "Never start with 'So', 'Here's the thing', 'Let's talk about', 'Unpopular opinion', "
         "'Hot take', 'Thread', 'Did you know', 'TIL', 'Buckle up', or 'It turns out'. "
