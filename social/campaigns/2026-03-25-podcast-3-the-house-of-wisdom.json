@@ -1,0 +1,105 @@
+{
+  "campaign_id": "2026-03-25-podcast-3-the-house-of-wisdom",
+  "generated_at": "2026-03-25T01:34:23.678930+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-3-the-house-of-wisdom",
+    "kind": "podcast",
+    "title": "The House of Wisdom",
+    "summary": "Baghdad's golden age: cheques, bills of exchange, venture capital, and banking without interest.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In the 9th century, Baghdad had cheques, bills of exchange, international money transfers, and venture capital, all without interest. Explore how Caliph Harun al-Rashid built the world's first multicultural economic hub, how Abu Yusuf revolutionized tax policy, and how the hawala system moved money across continents on trust alone.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "In 9th century Baghdad, a merchant could cash a cheque 4,000 miles away in Canton. The hawala system moved money across continents on handshakes \u2014 no banks required.",
+      "voice_pattern": "observation",
+      "thread": [
+        "In 9th century Baghdad, a merchant could cash a cheque 4,000 miles away in Canton. The hawala system moved money across continents on handshakes \u2014 no banks required.",
+        "Caliph Harun al-Rashid built the world's first multicultural economic hub. Jews, Christians, Muslims, and Zoroastrians traded side by side in Baghdad's markets.",
+        "Abu Yusuf wrote the first systematic treatise on tax policy. He argued that governments should tax wealth, not poverty \u2014 revolutionary thinking in the 9th century.",
+        "They had venture capital, international transfers, and bills of exchange. All without charging interest. Baghdad proved commerce could flourish on different principles. https://islamiceconomics.github.io/podcast.html#ep-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Baghdad",
+        "#History"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-3"
+    },
+    "linkedin": {
+      "post": "In the 9th century, Baghdad operated the world's most sophisticated financial system \u2014 all without charging interest. Merchants could cash cheques 4,000 miles away through the hawala system, built entirely on trust and reputation. Caliph Harun al-Rashid created the first truly multicultural economic hub where people of all faiths traded together. Abu Yusuf wrote the first systematic treatise on tax policy, arguing governments should tax wealth, not poverty \u2014 revolutionary thinking for the 9th century. They had venture capital, international money transfers, and bills of exchange. Commerce flourished on principles we're only now rediscovering in our search for ethical finance. The House of Wisdom explores how Baghdad's golden age offers lessons for today's economy. https://islamiceconomics.github.io/podcast.html#ep-3",
+      "comment_prompt": "What parallels do you see between 9th century Baghdad's financial innovations and today's fintech developments?"
+    },
+    "instagram": {
+      "caption": "In 9th century Baghdad, a merchant could cash a cheque 4,000 miles away in Canton \ud83c\udfdb\ufe0f The hawala system moved money across continents on trust alone \u2014 no banks required. Caliph Harun al-Rashid built the world's first multicultural economic hub where people of all faiths traded together. Abu Yusuf revolutionized tax policy, arguing governments should tax wealth, not poverty. They had venture capital, international transfers, and bills of exchange \u2014 all without charging interest. Baghdad proved commerce could flourish on different principles. Principles we're rediscovering today in ethical finance. Listen to The House of Wisdom episode: https://islamiceconomics.github.io/podcast.html#ep-3 #IslamicEconomics #Baghdad #History #EthicalFinance #Trade",
+      "carousel_slides": [
+        "9th century Baghdad had cheques, bills of exchange, and venture capital",
+        "The hawala system: Money moved 4,000 miles on trust alone",
+        "Harun al-Rashid built the world's first multicultural trading hub",
+        "Abu Yusuf: Tax wealth, not poverty \u2014 revolutionary 9th century thinking",
+        "All without interest. Commerce flourished on different principles."
+      ],
+      "reel_caption": "Baghdad's 9th century financial system was more advanced than most realize \u2728 The hawala system moved money across continents on trust. They had venture capital and international banking \u2014 all without charging interest. #IslamicEconomics #Baghdad #History #EthicalFinance #Trade",
+      "cover_text": "Baghdad's Lost Financial Empire",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "In 9th century Baghdad, merchants could cash cheques 4,000 miles away through the hawala system \u2014 built entirely on trust, no banks required.\n\nCaliph Harun al-Rashid created the world's first multicultural economic hub. Abu Yusuf revolutionized tax policy, arguing governments should tax wealth, not poverty.\n\nThey had venture capital, international transfers, and bills of exchange. All without charging interest. Baghdad proved commerce could\u2026",
+      "discussion_prompt": "How might modern fintech learn from Baghdad's trust-based hawala system?",
+      "topic_suggestion": "Medieval Islamic Banking Innovations",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-3"
+    },
+    "short_video": {
+      "title": "Baghdad's Lost Financial Empire",
+      "hook": "9th century Baghdad had a more advanced financial system than most modern cities",
+      "voiceover": "In 9th century Baghdad, a merchant could cash a cheque four thousand miles away in Canton. The hawala system moved money across continents on handshakes alone. Caliph Harun al-Rashid built the world's first multicultural trading hub. Abu Yusuf wrote revolutionary tax policy \u2014 tax wealth, not poverty. They had venture capital, international banking, bills of exchange. All without charging interest. Baghdad proved commerce could flourish on completely different principles than we use today.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ancient Baghdad cityscape illustration",
+          "on_screen_text": "9th Century Baghdad"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Map showing trade routes from Baghdad to Canton",
+          "on_screen_text": "Cheques cashed 4,000 miles away"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Diverse merchants trading in marketplace",
+          "on_screen_text": "First multicultural economic hub"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Ancient Arabic texts and scrolls",
+          "on_screen_text": "Revolutionary tax policy"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Golden age Baghdad with traders",
+          "on_screen_text": "Commerce without interest"
+        }
+      ],
+      "caption": "Baghdad's 9th century financial innovations were centuries ahead of their time. The hawala system, venture capital, and international banking \u2014 all without interest. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-3",
+      "hashtags": [
+        "#Baghdad",
+        "#IslamicEconomics",
+        "#History",
+        "#Finance",
+        "#Trade"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_3745ee81.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_3745ee81.png"
+}

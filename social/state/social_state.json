@@ -252,6 +252,42 @@
         }
       ]
     },
+    "podcast-1-the-forgotten-economists": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-25-podcast-1-the-forgotten-economists",
+          "generated_at": "2026-03-25T01:33:32.585835+00:00",
+          "json_path": "social/campaigns/2026-03-25-podcast-1-the-forgotten-economists.json",
+          "markdown_path": "social/campaigns/2026-03-25-podcast-1-the-forgotten-economists.md",
+          "x_voice_pattern": "question"
+        }
+      ]
+    },
+    "podcast-2-the-marketplace-of-medina": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-25-podcast-2-the-marketplace-of-medina",
+          "generated_at": "2026-03-25T01:33:58.027627+00:00",
+          "json_path": "social/campaigns/2026-03-25-podcast-2-the-marketplace-of-medina.json",
+          "markdown_path": "social/campaigns/2026-03-25-podcast-2-the-marketplace-of-medina.md",
+          "x_voice_pattern": "reframing"
+        }
+      ]
+    },
+    "podcast-3-the-house-of-wisdom": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-25-podcast-3-the-house-of-wisdom",
+          "generated_at": "2026-03-25T01:34:23.678930+00:00",
+          "json_path": "social/campaigns/2026-03-25-podcast-3-the-house-of-wisdom.json",
+          "markdown_path": "social/campaigns/2026-03-25-podcast-3-the-house-of-wisdom.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
     "podcast-ie-s1-ep01-forgotten-economists": {
       "history": [
         {
