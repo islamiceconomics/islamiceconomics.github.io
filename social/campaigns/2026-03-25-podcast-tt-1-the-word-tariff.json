@@ -1,0 +1,105 @@
+{
+  "campaign_id": "2026-03-25-podcast-tt-1-the-word-tariff",
+  "generated_at": "2026-03-25T14:56:54.539145+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-tt-1-the-word-tariff",
+    "kind": "podcast",
+    "title": "The Word Tariff",
+    "summary": "How the Arabic ta'rif, meaning \"to make known,\" became the most debated word in modern trade policy.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In February 2025, the word \"tariff\" appeared in 847 news headlines in a single week. But where did this word come from? Travel back to 10th-century Alexandria, where transparent customs schedules called ta'rif revolutionized Mediterranean trade. Meet the Karimi merchants who built multinational trade networks, and discover how a word born from trade freedom became the vocabulary of trade protection.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The word everyone argues about in trade policy started as an Arabic term for making things clear. Ta'rif meant transparent customs schedules in 10th-century Alexandria.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The word everyone argues about in trade policy started as an Arabic term for making things clear. Ta'rif meant transparent customs schedules in 10th-century Alexandria.",
+        "Karimi merchants built multinational trade networks across the Mediterranean using these transparent schedules. Everyone knew the costs upfront.",
+        "What began as a tool for trade freedom became the vocabulary of trade restriction. The same word that once meant clarity now fuels confusion.",
+        "In February 2025, \"tariff\" appeared in 847 news headlines in a single week. https://islamiceconomics.github.io/podcast.html#ep-tt-1"
+      ],
+      "hashtags": [
+        "#TradeHistory",
+        "#Economics",
+        "#Arabic"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-1"
+    },
+    "linkedin": {
+      "post": "The etymology of economic terms often reveals forgotten truths about commerce. The word \"tariff\" \u2014 which dominated 847 news headlines in a single week this February \u2014 traces back to the Arabic \"ta'rif,\" meaning \"to make known.\" In 10th-century Alexandria, these were transparent customs schedules that revolutionized Mediterranean trade. The Karimi merchants used these clear pricing structures to build multinational trade networks. Everyone knew the costs upfront. Transparency enabled commerce. What began as a tool for trade freedom became the vocabulary of trade restriction. The same word that once meant clarity now fuels endless policy debates. Language carries the memory of economic history, even when we forget the lessons. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-1",
+      "comment_prompt": "What other economic terms have surprising historical origins that might inform today's debates?"
+    },
+    "instagram": {
+      "caption": "The word dominating trade headlines started as something completely different. \"Tariff\" comes from the Arabic \"ta'rif\" \u2014 meaning \"to make known.\" In 10th-century Alexandria, these were transparent customs schedules that revolutionized Mediterranean commerce. Karimi merchants built multinational trade networks using these clear pricing structures. Everyone knew the costs upfront. Transparency enabled trade freedom. What began as a tool for openness became the vocabulary of restriction. The same word that once meant clarity now fuels policy confusion. In February 2025 alone, \"tariff\" appeared in 847 news headlines in a single week. Language carries the memory of economic history, even when we forget the original lessons. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-1 #TradeHistory #Economics #Arabic #Commerce #Policy",
+      "carousel_slides": [
+        "The word \"tariff\" appeared in 847 news headlines in February 2025",
+        "But it started as the Arabic \"ta'rif\" meaning \"to make known\"",
+        "10th-century Alexandria used transparent customs schedules called ta'rif",
+        "Karimi merchants built trade networks using these clear pricing structures",
+        "What began as trade freedom became the vocabulary of trade restriction"
+      ],
+      "reel_caption": "The surprising origin of the word \"tariff\" \u2014 from Arabic transparency to modern trade wars. Listen to the full story at the link in bio. #TradeHistory #Economics #Arabic",
+      "cover_text": "The Word Everyone Argues About Started as Arabic\u2026",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The word dominating trade headlines has forgotten its own history.\n\n\"Tariff\" comes from the Arabic \"ta'rif\" \u2014 meaning \"to make known.\" In 10th-century Alexandria, these were transparent customs schedules that enabled Mediterranean commerce.\n\nWhat began as a tool for trade freedom became the vocabulary of trade restriction. Language carries economic memory, even when we forget the lessons.",
+      "discussion_prompt": "What other economic terms have origins that contradict their modern usage?",
+      "topic_suggestion": "Etymology of Trade",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-1"
+    },
+    "short_video": {
+      "title": "The Arabic Origin of \"Tariff\"",
+      "hook": "The word everyone argues about in trade policy has a surprising origin",
+      "voiceover": "In February 2025, the word tariff appeared in 847 news headlines in just one week. But where did this word come from? It started as the Arabic ta'rif, meaning to make known. In 10th-century Alexandria, these were transparent customs schedules that revolutionized Mediterranean trade. Karimi merchants built multinational networks using these clear pricing structures. Everyone knew the costs upfront. What began as a tool for trade freedom became the vocabulary of trade restriction. The same word that once meant clarity now fuels endless confusion. Language carries the memory of economic history, even when we forget the lessons.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "News headlines scrolling with \"TARIFF\" highlighted",
+          "on_screen_text": "847 headlines in one week"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Ancient Alexandria port with ships and merchants",
+          "on_screen_text": "Ta'rif = \"to make known\""
+        },
+        {
+          "time": "15-25s",
+          "visual": "Medieval trade documents and schedules",
+          "on_screen_text": "Transparent customs schedules"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Trade routes map across Mediterranean",
+          "on_screen_text": "Karimi merchant networks"
+        },
+        {
+          "time": "35-40s",
+          "visual": "Modern trade policy meeting/debate",
+          "on_screen_text": "From clarity to confusion"
+        }
+      ],
+      "caption": "The word \"tariff\" comes from Arabic \"ta'rif\" meaning \"to make known\" \u2014 transparent customs schedules from 10th-century Alexandria. What began as trade freedom became trade restriction vocabulary.",
+      "hashtags": [
+        "#TradeHistory",
+        "#Economics",
+        "#Arabic",
+        "#Etymology",
+        "#Commerce"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_91490fe1.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_91490fe1.png"
+}
