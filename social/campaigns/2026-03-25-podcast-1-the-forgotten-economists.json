@@ -38,7 +38,7 @@
       "comment_prompt": "What economic insights from pre-modern Islamic scholars do you think would be most relevant today?"
     },
     "instagram": {
-      "caption": "Ibn Khaldun described supply and demand, division of labor, and the labor theory of value in the 14th century \u2014 400 years before Adam Smith. This 1,500-year journey through Islamic economic thought reveals a forgotten tradition: from the Prophet Muhammad's merchant background in pre-Islamic Mecca, through the golden age of Abu Yusuf and Al-Ghazali, to Ibn Khaldun's sophisticated analysis that predated many \"modern\" economic concepts. Then came colonial disruption. The tradition went underground. Today there's a remarkable revival happening. The forgotten economists are being remembered, their insights more relevant than ever. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-1 #IslamicEconomics #EconomicHistory #IbnKhaldun #AdamSmith #Economics",
+      "caption": "Ibn Khaldun described supply and demand, division of labor, and the labor theory of value in the 14th century — 400 years before Adam Smith. This 1,500-year journey through Islamic economic thought reveals a forgotten tradition: from the Prophet Muhammad's merchant background in pre-Islamic Mecca, through the golden age of Abu Yusuf and Al-Ghazali, to Ibn Khaldun's sophisticated analysis that predated many \"modern\" economic concepts. Then came colonial disruption. The tradition went underground. Today there's a remarkable revival happening. The forgotten economists are being remembered, their insights more relevant than ever. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-1 #IslamicEconomics #EconomicHistory #IbnKhaldun #AdamSmith #Economics",
       "carousel_slides": [
         "Ibn Khaldun described supply and demand 400 years before Adam Smith",
         "The Prophet Muhammad worked as a merchant in pre-Islamic Mecca",
@@ -46,7 +46,7 @@
         "Colonial disruption sent this tradition underground",
         "Today there's a remarkable revival of Islamic economic thought"
       ],
-      "reel_caption": "The forgotten economists who came 400 years before Adam Smith \ud83d\udcda Full story in our podcast: https://islamiceconomics.github.io/podcast.html#ep-1 #IslamicEconomics #EconomicHistory #IbnKhaldun",
+      "reel_caption": "The forgotten economists who came 400 years before Adam Smith 📚 Full story in our podcast: https://islamiceconomics.github.io/podcast.html#ep-1 #IslamicEconomics #EconomicHistory #IbnKhaldun",
       "cover_text": "The Forgotten Economists",
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
@@ -79,7 +79,7 @@
         {
           "time": "20-30s",
           "visual": "Islamic scholars writing",
-          "on_screen_text": "Abu Yusuf \u2022 Al-Ghazali \u2022 Ibn Khaldun"
+          "on_screen_text": "Abu Yusuf • Al-Ghazali • Ibn Khaldun"
         },
         {
           "time": "30-40s",
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_cd533765.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_cd533765.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_cd533765.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c33bde50cd25c19e0cd9f8"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c33bdf3ee727d44eb0469a"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c33bdf3ee727d44eb046cc"
+    }
+  }
 }
