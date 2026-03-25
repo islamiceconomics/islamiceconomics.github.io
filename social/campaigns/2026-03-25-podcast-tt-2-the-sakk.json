@@ -36,17 +36,17 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-2"
     },
     "linkedin": {
-      "post": "In the 9th century, Baghdad's jahbadh bankers solved a problem that still challenges global finance today: how to move wealth across vast distances safely and efficiently. Their solution was the sakk, a bill of exchange that enabled merchants to trade from Spain to China without carrying gold coins. But the real innovation wasn't the paper\u2014it was the hawala trust networks and mudaraba profit-sharing partnerships that made it work. A merchant in Damascus could write a sakk, and his partner in Delhi would honor it months later, sight unseen. This required something more valuable than gold: reputation that could travel 4,000 miles. This medieval Islamic financial system became the foundation for modern banking. The English word 'cheque' comes directly from sakk. Yet we've somehow forgotten the trust networks that made the whole system possible. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-2",
+      "post": "In the 9th century, Baghdad's jahbadh bankers solved a problem that still challenges global finance today: how to move wealth across vast distances safely and efficiently. Their solution was the sakk, a bill of exchange that enabled merchants to trade from Spain to China without carrying gold coins. But the real innovation wasn't the paper—it was the hawala trust networks and mudaraba profit-sharing partnerships that made it work. A merchant in Damascus could write a sakk, and his partner in Delhi would honor it months later, sight unseen. This required something more valuable than gold: reputation that could travel 4,000 miles. This medieval Islamic financial system became the foundation for modern banking. The English word 'cheque' comes directly from sakk. Yet we've somehow forgotten the trust networks that made the whole system possible. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-2",
       "comment_prompt": "What modern financial innovations could learn from medieval trust networks?"
     },
     "instagram": {
-      "caption": "Baghdad's 9th century bankers created something revolutionary: paper that could move wealth across continents without a single gold coin traveling. The sakk wasn't just a promissory note\u2014it was the foundation of hawala trust networks spanning from Cordoba to Canton. A merchant in Damascus could write a note, and his partner in Delhi would honor it months later based on reputation alone. This medieval Islamic innovation became the English word 'cheque'. But the trust networks that made it possible? Those vanished long before the paper did. Sometimes the most sophisticated technology is the simplest: a piece of paper backed by unshakeable trust. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-2 #IslamicFinance #MedievalHistory #Trust #Banking #Innovation",
+      "caption": "Baghdad's 9th century bankers created something revolutionary: paper that could move wealth across continents without a single gold coin traveling. The sakk wasn't just a promissory note—it was the foundation of hawala trust networks spanning from Cordoba to Canton. A merchant in Damascus could write a note, and his partner in Delhi would honor it months later based on reputation alone. This medieval Islamic innovation became the English word 'cheque'. But the trust networks that made it possible? Those vanished long before the paper did. Sometimes the most sophisticated technology is the simplest: a piece of paper backed by unshakeable trust. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-2 #IslamicFinance #MedievalHistory #Trust #Banking #Innovation",
       "carousel_slides": [
         "Baghdad, 9th century: Bankers create paper that moves wealth across continents",
         "The sakk: A bill of exchange that required no gold coins to travel",
         "Trust networks spanning from Spain to China made it possible",
         "A Damascus merchant writes a note. A Delhi partner honors it months later.",
-        "This became the English word 'cheque'\u2014but we forgot the trust networks behind it"
+        "This became the English word 'cheque'—but we forgot the trust networks behind it"
       ],
       "reel_caption": "How medieval Baghdad invented the cheque (and we forgot the best part) #IslamicFinance #MedievalHistory #Trust #Banking #Innovation",
       "cover_text": "Medieval Baghdad Invented the Cheque",
@@ -81,12 +81,12 @@
         {
           "time": "15-25s",
           "visual": "Merchant scenes across different cities",
-          "on_screen_text": "Damascus \u2192 Delhi"
+          "on_screen_text": "Damascus → Delhi"
         },
         {
           "time": "25-35s",
           "visual": "Modern cheque transforming",
-          "on_screen_text": "Sakk \u2192 Cheque"
+          "on_screen_text": "Sakk → Cheque"
         }
       ],
       "caption": "How medieval Baghdad invented the cheque (and we forgot the most important part) Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-2",
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_46d1551f.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_46d1551f.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_46d1551f.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c3f83c303531e46cc6f9b2"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c3f83d122c58f79190d185"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c3f83e303531e46cc6f9d8"
+    }
+  }
 }

@@ -25,7 +25,7 @@
       "thread": [
         "Every navy commander from Norfolk to Shanghai holds a title born in Arabic. Admiral comes from amir al-bahr, meaning commander of the sea.",
         "The Fatimid navy once commanded 600 ships across the Mediterranean. Islamic dhows carried trade from Zanzibar to Canton for centuries.",
-        "Zheng He's treasure fleets\u2014seven massive expeditions that reached Africa\u2014were commanded by a Muslim admiral named Wang Jinghong.",
+        "Zheng He's treasure fleets—seven massive expeditions that reached Africa—were commanded by a Muslim admiral named Wang Jinghong.",
         "The irony cuts deep: Islamic maritime knowledge enabled the very European voyages that would reshape global trade routes forever. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-3"
       ],
       "hashtags": [
@@ -36,11 +36,11 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-3"
     },
     "linkedin": {
-      "post": "Every naval commander from Norfolk to Shanghai uses a title born in Arabic: admiral, from amir al-bahr, meaning \"commander of the sea.\" The reach of Islamic maritime power runs deeper than most realize. The Fatimid navy commanded 600 ships across the Mediterranean. Islamic dhows carried trade from Zanzibar to Canton for centuries. Even Zheng He's legendary treasure fleets\u2014seven massive expeditions that reached Africa\u2014were commanded by a Muslim admiral named Wang Jinghong. The irony cuts deep: Islamic maritime knowledge enabled the very European voyages that would reshape global trade routes forever. Listen to the full exploration of how Islamic naval power shaped the language of maritime command: https://islamiceconomics.github.io/podcast.html#ep-tt-3",
+      "post": "Every naval commander from Norfolk to Shanghai uses a title born in Arabic: admiral, from amir al-bahr, meaning \"commander of the sea.\" The reach of Islamic maritime power runs deeper than most realize. The Fatimid navy commanded 600 ships across the Mediterranean. Islamic dhows carried trade from Zanzibar to Canton for centuries. Even Zheng He's legendary treasure fleets—seven massive expeditions that reached Africa—were commanded by a Muslim admiral named Wang Jinghong. The irony cuts deep: Islamic maritime knowledge enabled the very European voyages that would reshape global trade routes forever. Listen to the full exploration of how Islamic naval power shaped the language of maritime command: https://islamiceconomics.github.io/podcast.html#ep-tt-3",
       "comment_prompt": "What other words or concepts in modern business trace back to Islamic origins?"
     },
     "instagram": {
-      "caption": "Every navy commander from Norfolk to Shanghai holds a title born in Arabic: admiral, from amir al-bahr, meaning \"commander of the sea.\" The reach of Islamic maritime power runs deeper than most realize. The Fatimid navy once commanded 600 ships across the Mediterranean. Islamic dhows carried trade from Zanzibar to Canton for centuries. Even Zheng He's legendary treasure fleets\u2014seven massive expeditions that reached Africa\u2014were commanded by a Muslim admiral named Wang Jinghong. The irony cuts deep: Islamic maritime knowledge enabled the very European voyages that would reshape global trade routes forever. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-3 #IslamicHistory #Maritime #Etymology #Trade #History",
+      "caption": "Every navy commander from Norfolk to Shanghai holds a title born in Arabic: admiral, from amir al-bahr, meaning \"commander of the sea.\" The reach of Islamic maritime power runs deeper than most realize. The Fatimid navy once commanded 600 ships across the Mediterranean. Islamic dhows carried trade from Zanzibar to Canton for centuries. Even Zheng He's legendary treasure fleets—seven massive expeditions that reached Africa—were commanded by a Muslim admiral named Wang Jinghong. The irony cuts deep: Islamic maritime knowledge enabled the very European voyages that would reshape global trade routes forever. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-3 #IslamicHistory #Maritime #Etymology #Trade #History",
       "carousel_slides": [
         "Every navy commander uses a title born in Arabic",
         "Admiral = amir al-bahr (commander of the sea)",
@@ -86,7 +86,7 @@
         {
           "time": "36-45s",
           "visual": "European exploration ships",
-          "on_screen_text": "Islamic knowledge \u2192 European exploration"
+          "on_screen_text": "Islamic knowledge → European exploration"
         }
       ],
       "caption": "The Arabic roots of naval command run deeper than you think. Listen to the full story about Islamic maritime power.",
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_f860887c.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f860887c.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f860887c.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c3f83e122c58f79190d1ab"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c3f83f303531e46cc6f9fe"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c3f83f122c58f79190d1d1"
+    }
+  }
 }
