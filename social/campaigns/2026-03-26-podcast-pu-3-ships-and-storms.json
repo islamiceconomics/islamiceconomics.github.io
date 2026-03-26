@@ -38,7 +38,7 @@
       "comment_prompt": "How do you think ancient risk-sharing principles could apply to modern business partnerships?"
     },
     "instagram": {
-      "caption": "A dhow loaded with pepper and silk leaves Aden for Gujarat. The voyage takes weeks. Pirates, storms, and shipwrecks threaten every cargo. Insurance is forbidden. Charging interest is sin. How do you finance dangerous journeys? Islamic merchants solved this through mudaraba: one partner provides the capital, the other provides labor and expertise. They share profit or loss equally. It was venture capital a thousand years before Silicon Valley existed. The prohibition on gharar didn't stop commerce\u2014it created more equitable ways to share risk across the Indian Ocean trade routes. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-3 #IslamicFinance #TradeHistory #RiskManagement #Mudaraba #IndianOcean",
+      "caption": "A dhow loaded with pepper and silk leaves Aden for Gujarat. The voyage takes weeks. Pirates, storms, and shipwrecks threaten every cargo. Insurance is forbidden. Charging interest is sin. How do you finance dangerous journeys? Islamic merchants solved this through mudaraba: one partner provides the capital, the other provides labor and expertise. They share profit or loss equally. It was venture capital a thousand years before Silicon Valley existed. The prohibition on gharar didn't stop commerce—it created more equitable ways to share risk across the Indian Ocean trade routes. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-3 #IslamicFinance #TradeHistory #RiskManagement #Mudaraba #IndianOcean",
       "carousel_slides": [
         "A dhow leaves Aden for Gujarat. Pepper and silk fill the cargo hold.",
         "Pirates and storms threaten every voyage. Insurance is forbidden. Interest is sin.",
@@ -59,7 +59,7 @@
     "short_video": {
       "title": "How Islamic Merchants Managed Risk Without Insurance",
       "hook": "A ship leaves port carrying precious cargo. Pirates and storms threaten the journey.",
-      "voiceover": "A dhow loaded with pepper and silk leaves Aden for Gujarat. Pirates and storms threaten every voyage. Insurance is forbidden, charging interest is sin. How do you finance dangerous journeys? Islamic merchants created mudaraba: one partner provides capital, another provides labor and expertise. They share profit or loss equally. It was venture capital a thousand years before Silicon Valley. The prohibition on gharar didn't stop Indian Ocean commerce\u2014it created more equitable ways to share risk.",
+      "voiceover": "A dhow loaded with pepper and silk leaves Aden for Gujarat. Pirates and storms threaten every voyage. Insurance is forbidden, charging interest is sin. How do you finance dangerous journeys? Islamic merchants created mudaraba: one partner provides capital, another provides labor and expertise. They share profit or loss equally. It was venture capital a thousand years before Silicon Valley. The prohibition on gharar didn't stop Indian Ocean commerce—it created more equitable ways to share risk.",
       "shot_list": [
         {
           "time": "0-5s",
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c0f562bd.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c0f562bd.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c0f562bd.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c54add2ba6d7620d14085d"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c54adece812eeb8451293c"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c54adece812eeb84512989"
+    }
+  }
 }

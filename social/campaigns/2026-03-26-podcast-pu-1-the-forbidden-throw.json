@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_cece503c.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_cece503c.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_cece503c.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c54adb2ba6d7620d1407eb"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c54adc2ba6d7620d140811"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c54adc2ba6d7620d140837"
+    }
+  }
 }

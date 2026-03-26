@@ -25,7 +25,7 @@
       "thread": [
         "The word \"hazard\" comes from al-zahr, Arabic for dice.",
         "Islamic merchants created the vocabulary of uncertainty that still shapes how we talk about risk. They needed precise language for what could and couldn't be bought and sold.",
-        "The concept of gharar \u2014 excessive uncertainty that corrupts contracts \u2014 gave birth to entire industries built on managing what we cannot know.",
+        "The concept of gharar — excessive uncertainty that corrupts contracts — gave birth to entire industries built on managing what we cannot know.",
         "Modern takaful insurance is now a $50 billion industry, all rooted in ancient debates about divine provision and human responsibility. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-5"
       ],
       "hashtags": [
@@ -34,13 +34,13 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-5"
     },
     "linkedin": {
-      "post": "The word \"hazard\" comes from al-zahr, Arabic for dice \u2014 a reminder that Islamic civilization gave us not just goods and gold, but the very language of uncertainty. Medieval Muslim merchants faced a fundamental question: how do you build trust across vast distances when you're trading in things you cannot fully predict or control? Their answer shaped concepts we still use today: risk, hazard, and the ethics of uncertainty in contracts. The Islamic principle of gharar \u2014 excessive uncertainty that corrupts agreements \u2014 wasn't just legal theory. It was practical wisdom that helped merchants distinguish between acceptable business risk and speculative gambling. From mudaraba partnerships to modern takaful insurance (now a $50 billion industry), these frameworks continue to offer insights for contemporary finance. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-5",
+      "post": "The word \"hazard\" comes from al-zahr, Arabic for dice — a reminder that Islamic civilization gave us not just goods and gold, but the very language of uncertainty. Medieval Muslim merchants faced a fundamental question: how do you build trust across vast distances when you're trading in things you cannot fully predict or control? Their answer shaped concepts we still use today: risk, hazard, and the ethics of uncertainty in contracts. The Islamic principle of gharar — excessive uncertainty that corrupts agreements — wasn't just legal theory. It was practical wisdom that helped merchants distinguish between acceptable business risk and speculative gambling. From mudaraba partnerships to modern takaful insurance (now a $50 billion industry), these frameworks continue to offer insights for contemporary finance. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-5",
       "comment_prompt": "What other everyday words do you think might have Arabic origins that shaped how we think about business?"
     },
     "instagram": {
-      "caption": "The word \"hazard\" comes from al-zahr, Arabic for dice. \ud83c\udfb2 Islamic merchants didn't just move goods across continents \u2014 they created the vocabulary of uncertainty itself. Every time you assess risk or calculate hazards, you're using concepts refined in medieval marketplaces. The prohibition of gharar (excessive uncertainty) wasn't just religious law \u2014 it was practical wisdom that helped distinguish between legitimate business risk and harmful speculation. Modern takaful insurance, now worth $50 billion globally, traces back to these ancient debates about providence, responsibility, and what we can ethically promise each other in an uncertain world. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-5 #IslamicEconomics #History #Etymology #BusinessEthics #Finance",
+      "caption": "The word \"hazard\" comes from al-zahr, Arabic for dice. 🎲 Islamic merchants didn't just move goods across continents — they created the vocabulary of uncertainty itself. Every time you assess risk or calculate hazards, you're using concepts refined in medieval marketplaces. The prohibition of gharar (excessive uncertainty) wasn't just religious law — it was practical wisdom that helped distinguish between legitimate business risk and harmful speculation. Modern takaful insurance, now worth $50 billion globally, traces back to these ancient debates about providence, responsibility, and what we can ethically promise each other in an uncertain world. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-5 #IslamicEconomics #History #Etymology #BusinessEthics #Finance",
       "carousel_slides": [
-        "The word \"hazard\" comes from al-zahr \u2014 Arabic for dice",
+        "The word \"hazard\" comes from al-zahr — Arabic for dice",
         "Islamic merchants created our vocabulary of uncertainty and risk",
         "Gharar: the concept of excessive uncertainty that corrupts contracts",
         "From medieval partnerships to $50 billion takaful insurance industry",
@@ -51,7 +51,7 @@
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
-      "post": "The word \"hazard\" comes from al-zahr, Arabic for dice. Islamic merchants didn't just trade across continents \u2014 they created the vocabulary of uncertainty itself.\n\nWhen medieval Muslim scholars debated gharar, excessive uncertainty that corrupts contracts, they were solving practical problems that modern finance still grapples with. How much unknown is acceptable in a deal?\n\nToday's $50 billion takaful insurance industry traces directly back to\u2026",
+      "post": "The word \"hazard\" comes from al-zahr, Arabic for dice. Islamic merchants didn't just trade across continents — they created the vocabulary of uncertainty itself.\n\nWhen medieval Muslim scholars debated gharar, excessive uncertainty that corrupts contracts, they were solving practical problems that modern finance still grapples with. How much unknown is acceptable in a deal?\n\nToday's $50 billion takaful insurance industry traces directly back to…",
       "discussion_prompt": "How do you think Islamic concepts of risk management could apply to modern business decisions?",
       "topic_suggestion": "Etymology of business terms",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-5"
@@ -59,7 +59,7 @@
     "short_video": {
       "title": "Why \"Hazard\" Comes From Arabic Dice",
       "hook": "The word hazard has a surprising origin",
-      "voiceover": "The word \"hazard\" comes from al-zahr, Arabic for dice. Islamic merchants created our entire vocabulary of uncertainty and risk. They faced a fundamental problem: how do you trade across vast distances while managing what you cannot predict? Their concept of gharar \u2014 excessive uncertainty that corrupts contracts \u2014 helped distinguish between legitimate business risk and harmful speculation. Today's fifty billion dollar takaful insurance industry traces directly back to these medieval debates about providence and responsibility.",
+      "voiceover": "The word \"hazard\" comes from al-zahr, Arabic for dice. Islamic merchants created our entire vocabulary of uncertainty and risk. They faced a fundamental problem: how do you trade across vast distances while managing what you cannot predict? Their concept of gharar — excessive uncertainty that corrupts contracts — helped distinguish between legitimate business risk and harmful speculation. Today's fifty billion dollar takaful insurance industry traces directly back to these medieval debates about providence and responsibility.",
       "shot_list": [
         {
           "time": "0-5s",
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_dc041e8e.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_dc041e8e.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_dc041e8e.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c54ade2ba6d7620d140883"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c54adf2ba6d7620d1408a9"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c54adfce812eeb845129b8"
+    }
+  }
 }

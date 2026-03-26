@@ -40,7 +40,7 @@
       "comment_prompt": "Which lesson from medieval trade feels most relevant to today's economic challenges?"
     },
     "instagram": {
-      "caption": "A medieval merchant could cash a cheque 4,000 miles away using nothing but Arabic words and reputation. The Karimi merchants built the first global economy without banks or governments backing them. They had something more powerful: a shared vocabulary of trade. Five Arabic words. Five lessons for our trade wars: \u2022 Tariff meant 'notification' - transparency, not barriers \u2022 Cheque meant trust across impossible distances \u2022 Magazine meant shared storage infrastructure \u2022 Admiral meant protecting sea lanes for everyone \u2022 Risk meant partnerships, not isolation Those principles are still whispering in the words we use every day. Are we listening? Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-6 #IslamicEconomics #TradeHistory #GlobalCommerce #MedievalTrade #Economics",
+      "caption": "A medieval merchant could cash a cheque 4,000 miles away using nothing but Arabic words and reputation. The Karimi merchants built the first global economy without banks or governments backing them. They had something more powerful: a shared vocabulary of trade. Five Arabic words. Five lessons for our trade wars: • Tariff meant 'notification' - transparency, not barriers • Cheque meant trust across impossible distances • Magazine meant shared storage infrastructure • Admiral meant protecting sea lanes for everyone • Risk meant partnerships, not isolation Those principles are still whispering in the words we use every day. Are we listening? Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-6 #IslamicEconomics #TradeHistory #GlobalCommerce #MedievalTrade #Economics",
       "carousel_slides": [
         "Five Arabic words built the first global economy",
         "TARIFF originally meant 'notification' - informing traders, not stopping them",
@@ -53,7 +53,7 @@
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
-      "post": "A medieval merchant in Baghdad could write a cheque that a trader in Canton would honor, 4,000 miles away. No central bank. No government backing. Just reputation and Arabic words that encoded trust.\n\nThe Karimi merchants built the first global economy using five principles we've forgotten: transparency works better than barriers, credit flows where trust exists, maritime freedom benefits everyone, infrastructure serves the common good, and\u2026",
+      "post": "A medieval merchant in Baghdad could write a cheque that a trader in Canton would honor, 4,000 miles away. No central bank. No government backing. Just reputation and Arabic words that encoded trust.\n\nThe Karimi merchants built the first global economy using five principles we've forgotten: transparency works better than barriers, credit flows where trust exists, maritime freedom benefits everyone, infrastructure serves the common good, and…",
       "discussion_prompt": "Which medieval trade principle feels most relevant to today's economic challenges?",
       "topic_suggestion": "How medieval merchants built trust",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-6"
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_bc9646ae.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_bc9646ae.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_bc9646ae.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c54ae0ce812eeb845129de"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c54ae02ba6d7620d1408cf"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c54ae12ba6d7620d1408f5"
+    }
+  }
 }
