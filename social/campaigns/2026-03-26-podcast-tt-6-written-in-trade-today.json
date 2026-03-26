@@ -1,0 +1,105 @@
+{
+  "campaign_id": "2026-03-26-podcast-tt-6-written-in-trade-today",
+  "generated_at": "2026-03-26T15:02:07.755076+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-tt-6-written-in-trade-today",
+    "kind": "podcast",
+    "title": "Written in Trade Today",
+    "summary": "Series finale: five Arabic words, five centuries, five lessons for the trade wars of 2025.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In this series finale, we return to the present moment. As tariff walls rise and supply chains fragment, what would a medieval Karimi merchant say about the trade wars of 2025? Five words. Five lessons: transparency works, credit needs trust, maritime freedom benefits all, infrastructure is a public good, and risk should be shared. The principles hidden in our vocabulary are whispering. Are we listening?",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "A medieval merchant could cash a cheque in Canton using paper written in Baghdad. Modern trade wars forget what those Arabic words knew: credit flows where trust exists.",
+      "voice_pattern": "observation",
+      "thread": [
+        "A medieval merchant could cash a cheque in Canton using paper written in Baghdad. Modern trade wars forget what those Arabic words knew: credit flows where trust exists.",
+        "The Karimi merchants moved goods from Alexandria to Delhi without banks or governments backing them. They had something better: a shared language of commerce that crossed every border.",
+        "Tariff means 'notification' in Arabic. It was meant to inform traders, not stop them. We turned transparency into a weapon.",
+        "Five Arabic words built global trade. Five lessons for 2025: transparency works, credit needs trust, maritime freedom benefits all, infrastructure serves everyone, risk gets shared. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-6"
+      ],
+      "hashtags": [
+        "#trade",
+        "#history",
+        "#economics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-6"
+    },
+    "linkedin": {
+      "post": "Medieval merchants could cash a cheque in Canton using paper from Baghdad. No central banks. No government guarantees. Just trust encoded in Arabic words that built global trade. The Karimi merchants moved goods from Alexandria to Delhi on reputation alone. They created a vocabulary of commerce that crossed every border: tariff (notification), cheque (written order), magazine (storehouse), admiral (commander of waters). As supply chains fragment in 2025, those five Arabic words whisper five lessons: transparency works better than walls, credit needs trust more than regulation, maritime freedom benefits everyone, infrastructure serves the common good, and risk works best when shared. The principles are still there, written in the words we use every day. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-6",
+      "comment_prompt": "Which lesson from medieval trade feels most relevant to today's economic challenges?"
+    },
+    "instagram": {
+      "caption": "A medieval merchant could cash a cheque 4,000 miles away using nothing but Arabic words and reputation. The Karimi merchants built the first global economy without banks or governments backing them. They had something more powerful: a shared vocabulary of trade. Five Arabic words. Five lessons for our trade wars: \u2022 Tariff meant 'notification' - transparency, not barriers \u2022 Cheque meant trust across impossible distances \u2022 Magazine meant shared storage infrastructure \u2022 Admiral meant protecting sea lanes for everyone \u2022 Risk meant partnerships, not isolation Those principles are still whispering in the words we use every day. Are we listening? Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-6 #IslamicEconomics #TradeHistory #GlobalCommerce #MedievalTrade #Economics",
+      "carousel_slides": [
+        "Five Arabic words built the first global economy",
+        "TARIFF originally meant 'notification' - informing traders, not stopping them",
+        "CHEQUE enabled trust across 4,000 miles without banks",
+        "MAGAZINE meant shared warehouses - infrastructure as a public good",
+        "ADMIRAL protected sea lanes for all merchants, not just one nation"
+      ],
+      "reel_caption": "Medieval merchants could wire money faster than Western Union. Here's how they did it with just five Arabic words. #TradeHistory #IslamicEconomics #GlobalCommerce #MedievalTrade #Economics",
+      "cover_text": "5 Arabic Words That Built Global Trade",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "A medieval merchant in Baghdad could write a cheque that a trader in Canton would honor, 4,000 miles away. No central bank. No government backing. Just reputation and Arabic words that encoded trust.\n\nThe Karimi merchants built the first global economy using five principles we've forgotten: transparency works better than barriers, credit flows where trust exists, maritime freedom benefits everyone, infrastructure serves the common good, and\u2026",
+      "discussion_prompt": "Which medieval trade principle feels most relevant to today's economic challenges?",
+      "topic_suggestion": "How medieval merchants built trust",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-6"
+    },
+    "short_video": {
+      "title": "5 Arabic Words That Built Global Trade",
+      "hook": "A medieval merchant could wire money faster than Western Union",
+      "voiceover": "A merchant in Baghdad writes a cheque. A trader in Canton, four thousand miles away, cashes it immediately. No banks. No government backing. Just five Arabic words that built the first global economy. Tariff meant notification, not barrier. Cheque meant trust across impossible distances. Magazine meant shared infrastructure. Admiral meant protecting trade routes for everyone. Risk meant partnership, not isolation. These principles are still whispering in our vocabulary. As trade wars rise in twenty twenty-five, maybe it's time we listened to what medieval merchants knew about moving goods across borders.",
+      "shot_list": [
+        {
+          "time": "0-3s",
+          "visual": "Medieval map with trade routes",
+          "on_screen_text": "4,000 miles apart"
+        },
+        {
+          "time": "3-8s",
+          "visual": "Arabic calligraphy on parchment",
+          "on_screen_text": "No banks. No government."
+        },
+        {
+          "time": "8-15s",
+          "visual": "Split screen: Baghdad/Canton markets",
+          "on_screen_text": "5 Arabic words"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Text overlay of each word with definition",
+          "on_screen_text": "TARIFF = notification"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Medieval ships on trade routes",
+          "on_screen_text": "Built global economy"
+        }
+      ],
+      "caption": "Medieval merchants built the first global economy with just five Arabic words. Here's what they knew about trade that we've forgotten. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-6",
+      "hashtags": [
+        "#TradeHistory",
+        "#IslamicEconomics",
+        "#GlobalCommerce",
+        "#MedievalTrade",
+        "#Economics"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_bc9646ae.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_bc9646ae.png"
+}

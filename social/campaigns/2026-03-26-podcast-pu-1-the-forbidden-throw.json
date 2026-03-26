@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-26-podcast-pu-1-the-forbidden-throw",
+  "generated_at": "2026-03-26T15:02:32.418196+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-pu-1-the-forbidden-throw",
+    "kind": "podcast",
+    "title": "The Forbidden Throw",
+    "summary": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But in Islamic law, the concept goes far deeper than gambling. The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't know what they're really buying. This episode traces the origins of this prohibition in the Quran and Hadith, explains why early Islamic jurists considered it as fundamental as the ban on riba, and shows how 7th-century contract law was already solving problems that would crash modern financial markets fourteen centuries later.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The English word \"hazard\" comes from al-zahr, Arabic for dice. The Prophet banned transactions where you don't know what you're buying. Wall Street discovered this problem 1,400 years later.",
+      "voice_pattern": "connection",
+      "thread": [
+        "The English word \"hazard\" comes from al-zahr, Arabic for dice. The Prophet banned transactions where you don't know what you're buying. Wall Street discovered this problem 1,400 years later.",
+        "Bay' al-gharar wasn't just about gambling. It banned any contract with excessive uncertainty. You couldn't sell what you didn't own, or promise what you couldn't deliver.",
+        "Early Islamic jurists treated this prohibition as seriously as the ban on interest. They understood that uncertainty in contracts destroys trust between strangers.",
+        "The 2008 financial crisis happened because banks sold mortgages they didn't understand to buyers who couldn't evaluate them. The Prophet saw this coming in the 7th century. https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+    },
+    "linkedin": {
+      "post": "The English word \"hazard\" traces back to al-zahr, Arabic for dice. But the Islamic prohibition went far beyond gambling. The Prophet Muhammad banned bay' al-gharar: transactions built on excessive uncertainty where one party doesn't know what they're really buying. Early Islamic jurists treated this as fundamental as the ban on interest. This wasn't theoretical. 7th-century contract law was already solving problems that would crash modern financial markets. The 2008 crisis happened because banks sold mortgages they didn't understand to buyers who couldn't evaluate them. Sometimes ancient wisdom looks remarkably like modern risk management. https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+      "comment_prompt": "What parallels do you see between ancient contract principles and modern financial regulation?"
+    },
+    "instagram": {
+      "caption": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But the Islamic prohibition went far deeper than gambling. The Prophet Muhammad banned bay' al-gharar: transactions built on excessive uncertainty where one party doesn't know what they're really buying. You couldn't sell what you didn't own, promise what you couldn't deliver, or trade in things that might not exist. Early Islamic jurists treated this prohibition as seriously as the ban on interest. They understood that uncertainty in contracts destroys the trust that makes commerce between strangers possible. The 2008 financial crisis happened because banks sold mortgages they didn't understand to buyers who couldn't evaluate them. The Prophet saw this problem coming in the 7th century. Sometimes the most ancient wisdom sounds like the most modern risk management. Listen to the full episode at the link in bio. #IslamicEconomics #Finance #History #Ethics #Risk",
+      "carousel_slides": [
+        "The English word \"hazard\" comes from al-zahr, Arabic for dice",
+        "The Prophet banned bay' al-gharar: transactions where you don't know what you're buying",
+        "You couldn't sell what you didn't own, or promise what you couldn't deliver",
+        "Early jurists treated this as seriously as the ban on interest",
+        "Wall Street discovered this problem 1,400 years later"
+      ],
+      "reel_caption": "From Arabic dice to Wall Street crashes: How 7th-century contract law predicted modern financial crises. Listen to the full story at the link in bio. #IslamicEconomics #Finance #History #Risk #WallStreet",
+      "cover_text": "Ancient Wisdom, Modern Crashes",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The English word \"hazard\" comes from al-zahr, Arabic for dice. The Prophet banned transactions where you don't know what you're buying.\n\nWall Street discovered this problem 1,400 years later. The 2008 crisis happened because banks sold mortgages to buyers who couldn't evaluate them.\n\nSometimes ancient contract law looks remarkably like modern risk management.",
+      "discussion_prompt": "What ancient principles do you think could solve modern financial problems?",
+      "topic_suggestion": "Islamic finance and risk management",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+    },
+    "short_video": {
+      "title": "Why \"Hazard\" Comes from Arabic Dice",
+      "hook": "The English word \"hazard\" has a surprising Islamic origin",
+      "voiceover": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But the Prophet Muhammad didn't just ban gambling. He banned bay' al-gharar: any transaction where you don't know what you're really buying. You couldn't sell what you didn't own or promise what you couldn't deliver. Early Islamic jurists treated this as seriously as banning interest. The 2008 financial crisis happened because banks sold mortgages to buyers who couldn't evaluate them. The Prophet saw this problem coming in the 7th century. Sometimes ancient wisdom looks like modern risk management.",
+      "shot_list": [
+        {
+          "time": "0-3s",
+          "visual": "Dice rolling on table",
+          "on_screen_text": "\"Hazard\" = al-zahr (Arabic for dice)"
+        },
+        {
+          "time": "4-8s",
+          "visual": "Ancient Arabic text",
+          "on_screen_text": "Prophet banned bay' al-gharar"
+        },
+        {
+          "time": "9-15s",
+          "visual": "Contract being signed",
+          "on_screen_text": "No selling what you don't own"
+        },
+        {
+          "time": "16-22s",
+          "visual": "Classical Islamic scholars",
+          "on_screen_text": "As serious as banning interest"
+        },
+        {
+          "time": "23-30s",
+          "visual": "2008 financial crisis headlines",
+          "on_screen_text": "Banks sold unknown mortgages"
+        }
+      ],
+      "caption": "From Arabic dice to Wall Street crashes: How 7th-century Islamic law predicted modern financial crises. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Finance",
+        "#History",
+        "#Risk",
+        "#WallStreet"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_cece503c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_cece503c.png"
+}

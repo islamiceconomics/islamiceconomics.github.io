@@ -453,6 +453,30 @@
         }
       ]
     },
+    "podcast-pu-1-the-forbidden-throw": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-26-podcast-pu-1-the-forbidden-throw",
+          "generated_at": "2026-03-26T15:02:32.418196+00:00",
+          "json_path": "social/campaigns/2026-03-26-podcast-pu-1-the-forbidden-throw.json",
+          "markdown_path": "social/campaigns/2026-03-26-podcast-pu-1-the-forbidden-throw.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-pu-3-ships-and-storms": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-26-podcast-pu-3-ships-and-storms",
+          "generated_at": "2026-03-26T15:02:52.484641+00:00",
+          "json_path": "social/campaigns/2026-03-26-podcast-pu-3-ships-and-storms.json",
+          "markdown_path": "social/campaigns/2026-03-26-podcast-pu-3-ships-and-storms.md",
+          "x_voice_pattern": "question"
+        }
+      ]
+    },
     "podcast-tt-1-the-word-tariff": {
       "history": [
         {
@@ -498,6 +522,30 @@
           "json_path": "social/campaigns/2026-03-25-podcast-tt-4-the-funduk.json",
           "markdown_path": "social/campaigns/2026-03-25-podcast-tt-4-the-funduk.md",
           "x_voice_pattern": "reframing"
+        }
+      ]
+    },
+    "podcast-tt-5-risk-and-rizq": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-26-podcast-tt-5-risk-and-rizq",
+          "generated_at": "2026-03-26T15:01:37.869867+00:00",
+          "json_path": "social/campaigns/2026-03-26-podcast-tt-5-risk-and-rizq.json",
+          "markdown_path": "social/campaigns/2026-03-26-podcast-tt-5-risk-and-rizq.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-tt-6-written-in-trade-today": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-26-podcast-tt-6-written-in-trade-today",
+          "generated_at": "2026-03-26T15:02:07.755076+00:00",
+          "json_path": "social/campaigns/2026-03-26-podcast-tt-6-written-in-trade-today.json",
+          "markdown_path": "social/campaigns/2026-03-26-podcast-tt-6-written-in-trade-today.md",
+          "x_voice_pattern": "observation"
         }
       ]
     }
