@@ -23,7 +23,7 @@
       "single_post": "How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen. The parallels to today are hard to ignore.",
       "voice_pattern": "connection",
       "thread": [
-        "Building on Solid Ground \u2014 a thread:",
+        "Building on Solid Ground — a thread:",
         "How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen.",
         "Takaful: mutual insurance where policyholders share risk collectively.",
         "Why it matters: Sukuk: bonds backed by real assets rather than abstract debt. Listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-6"
@@ -35,14 +35,14 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-6"
     },
     "linkedin": {
-      "post": "Building on Solid Ground How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen. Three takeaways: \u2022 How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen. \u2022 Takaful: mutual insurance where policyholders share risk collectively. \u2022 Sukuk: bonds backed by real assets rather than abstract debt. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-6",
+      "post": "Building on Solid Ground How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen. Three takeaways: • How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen. • Takaful: mutual insurance where policyholders share risk collectively. • Sukuk: bonds backed by real assets rather than abstract debt. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-6",
       "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
     },
     "instagram": {
       "caption": "Building on Solid Ground How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-6 #IslamicEconomics #IslamicHistory",
       "carousel_slides": [
         "Building on Solid Ground",
-        "How Islamic finance tames uncertainty today, and why the rest of the world is\u2026",
+        "How Islamic finance tames uncertainty today, and why the rest of the world is…",
         "Takaful: mutual insurance where policyholders share risk collectively.",
         "Sukuk: bonds backed by real assets rather than abstract debt.",
         "Read more at IslamicEconomics.org"
@@ -70,7 +70,7 @@
         {
           "time": "5-12s",
           "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
-          "on_screen_text": "How Islamic finance tames uncertainty today, and why the rest\u2026"
+          "on_screen_text": "How Islamic finance tames uncertainty today, and why the rest…"
         },
         {
           "time": "12-22s",
@@ -97,5 +97,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_01ba2c3d.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_01ba2c3d.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_01ba2c3d.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c698cbdd5003d0a6ec35ef"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c698cc748a2255830f7158"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c698cc748a2255830f717e"
+    }
+  }
 }

@@ -23,7 +23,7 @@
       "single_post": "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
       "voice_pattern": "historical_fact",
       "thread": [
-        "The Scholars' Line \u2014 a thread:",
+        "The Scholars' Line — a thread:",
         "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
         "But what exactly is riba?",
         "Why it matters: Is a markup on a deferred sale the same as charging interest on a loan? Listen here: https://islamiceconomics.github.io/podcast.html#ep-wd-3"
@@ -35,7 +35,7 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-3"
     },
     "linkedin": {
-      "post": "The Scholars' Line How the four madhabs drew the boundary between permissible credit sales and forbidden riba. Three takeaways: \u2022 How the four madhabs drew the boundary between permissible credit sales and forbidden riba. \u2022 But what exactly is riba? \u2022 Is a markup on a deferred sale the same as charging interest on a loan? Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-3",
+      "post": "The Scholars' Line How the four madhabs drew the boundary between permissible credit sales and forbidden riba. Three takeaways: • How the four madhabs drew the boundary between permissible credit sales and forbidden riba. • But what exactly is riba? • Is a markup on a deferred sale the same as charging interest on a loan? Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-3",
       "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
     },
     "instagram": {
@@ -44,7 +44,7 @@
         "The Scholars' Line",
         "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
         "But what exactly is riba?",
-        "Is a markup on a deferred sale the same as charging interest on a\u2026",
+        "Is a markup on a deferred sale the same as charging interest on a…",
         "Read more at IslamicEconomics.org"
       ],
       "reel_caption": "The Scholars' Line in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-wd-3 #IslamicEconomics #IslamicHistory",
@@ -70,7 +70,7 @@
         {
           "time": "5-12s",
           "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
-          "on_screen_text": "How the four madhabs drew the boundary between permissible credit\u2026"
+          "on_screen_text": "How the four madhabs drew the boundary between permissible credit…"
         },
         {
           "time": "12-22s",
@@ -80,7 +80,7 @@
         {
           "time": "22-34s",
           "visual": "Highlight why it matters now with contemporary economic visuals.",
-          "on_screen_text": "Is a markup on a deferred sale the same as\u2026"
+          "on_screen_text": "Is a markup on a deferred sale the same as…"
         },
         {
           "time": "34-45s",
@@ -97,5 +97,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_9f0db902.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_9f0db902.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_9f0db902.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c698cf748a2255830f721e"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c698cfdd5003d0a6ec368c"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c698cf748a2255830f7244"
+    }
+  }
 }

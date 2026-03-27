@@ -23,7 +23,7 @@
       "single_post": "Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever. Why isn't this discussed more?",
       "voice_pattern": "question",
       "thread": [
-        "Before the Revelation \u2014 a thread:",
+        "Before the Revelation — a thread:",
         "Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever.",
         "In pre-Islamic Arabia, debt was a weapon.",
         "Why it matters: A man who couldn't repay could be enslaved, his family taken as collateral, his debt doubled at every missed payment. Listen here: https://islamiceconomics.github.io/podcast.html#ep-wd-1"
@@ -35,7 +35,7 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-1"
     },
     "linkedin": {
-      "post": "Before the Revelation Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever. Three takeaways: \u2022 Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever. \u2022 In pre-Islamic Arabia, debt was a weapon. \u2022 A man who couldn't repay could be enslaved, his family taken as collateral, his debt doubled at every missed payment. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-1",
+      "post": "Before the Revelation Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever. Three takeaways: • Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever. • In pre-Islamic Arabia, debt was a weapon. • A man who couldn't repay could be enslaved, his family taken as collateral, his debt doubled at every missed payment. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-1",
       "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
     },
     "instagram": {
@@ -44,7 +44,7 @@
         "Before the Revelation",
         "Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever.",
         "In pre-Islamic Arabia, debt was a weapon.",
-        "A man who couldn't repay could be enslaved, his family taken as collateral, his\u2026",
+        "A man who couldn't repay could be enslaved, his family taken as collateral, his…",
         "Read more at IslamicEconomics.org"
       ],
       "reel_caption": "Before the Revelation in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-wd-1 #IslamicEconomics #IslamicHistory",
@@ -70,7 +70,7 @@
         {
           "time": "5-12s",
           "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
-          "on_screen_text": "Debt slavery in pre-Islamic Arabia and how the Quran transformed\u2026"
+          "on_screen_text": "Debt slavery in pre-Islamic Arabia and how the Quran transformed…"
         },
         {
           "time": "12-22s",
@@ -80,7 +80,7 @@
         {
           "time": "22-34s",
           "visual": "Highlight why it matters now with contemporary economic visuals.",
-          "on_screen_text": "A man who couldn't repay could be enslaved, his family\u2026"
+          "on_screen_text": "A man who couldn't repay could be enslaved, his family…"
         },
         {
           "time": "34-45s",
@@ -97,5 +97,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_9b37c349.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_9b37c349.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_9b37c349.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c698ccdd5003d0a6ec3615"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c698cddd5003d0a6ec363b"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c698cd748a2255830f71a4"
+    }
+  }
 }

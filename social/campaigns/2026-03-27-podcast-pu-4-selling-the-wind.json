@@ -23,7 +23,7 @@
       "single_post": "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist.",
       "voice_pattern": "historical_fact",
       "thread": [
-        "Selling the Wind \u2014 a thread:",
+        "Selling the Wind — a thread:",
         "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist.",
         "Bay' al-ma'dum: the sale of what does not exist.",
         "Why it matters: Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. Listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-4"
@@ -35,16 +35,16 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-4"
     },
     "linkedin": {
-      "post": "Selling the Wind Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Three takeaways: \u2022 Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. \u2022 Bay' al-ma'dum: the sale of what does not exist. \u2022 Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-4",
+      "post": "Selling the Wind Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Three takeaways: • Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. • Bay' al-ma'dum: the sale of what does not exist. • Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-4",
       "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
     },
     "instagram": {
       "caption": "Selling the Wind Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-4 #IslamicEconomics #IslamicHistory",
       "carousel_slides": [
         "Selling the Wind",
-        "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what\u2026",
+        "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what…",
         "Bay' al-ma'dum: the sale of what does not exist.",
-        "Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and\u2026",
+        "Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and…",
         "Read more at IslamicEconomics.org"
       ],
       "reel_caption": "Selling the Wind in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-pu-4 #IslamicEconomics #IslamicHistory",
@@ -70,7 +70,7 @@
         {
           "time": "5-12s",
           "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
-          "on_screen_text": "Short-selling, futures, and the tulip mania: what medieval jurists already\u2026"
+          "on_screen_text": "Short-selling, futures, and the tulip mania: what medieval jurists already…"
         },
         {
           "time": "12-22s",
@@ -80,7 +80,7 @@
         {
           "time": "22-34s",
           "visual": "Highlight why it matters now with contemporary economic visuals.",
-          "on_screen_text": "Islamic jurists prohibited selling fish still in the sea, crops\u2026"
+          "on_screen_text": "Islamic jurists prohibited selling fish still in the sea, crops…"
         },
         {
           "time": "34-45s",
@@ -97,5 +97,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_a75ae854.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a75ae854.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a75ae854.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c698c9748a2255830f70e6"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c698c9dd5003d0a6ec357d"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c698cadd5003d0a6ec35a3"
+    }
+  }
 }

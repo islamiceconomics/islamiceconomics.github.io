@@ -23,7 +23,7 @@
       "single_post": "Ayat al-Dayn: the Quran's most detailed verse is about debt. The parallels to today are hard to ignore.",
       "voice_pattern": "connection",
       "thread": [
-        "The Longest Verse \u2014 a thread:",
+        "The Longest Verse — a thread:",
         "Ayat al-Dayn: the Quran's most detailed verse is about debt.",
         "Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse in the entire scripture.",
         "Why it matters: Not a verse about prayer, pilgrimage, or fasting, but about how to write a debt contract. Listen here: https://islamiceconomics.github.io/podcast.html#ep-wd-2"
@@ -35,7 +35,7 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-2"
     },
     "linkedin": {
-      "post": "The Longest Verse Ayat al-Dayn: the Quran's most detailed verse is about debt. What does that tell us? Three takeaways: \u2022 Ayat al-Dayn: the Quran's most detailed verse is about debt. \u2022 Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse in the entire scripture. \u2022 Not a verse about prayer, pilgrimage, or fasting, but about how to write a debt contract. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-2",
+      "post": "The Longest Verse Ayat al-Dayn: the Quran's most detailed verse is about debt. What does that tell us? Three takeaways: • Ayat al-Dayn: the Quran's most detailed verse is about debt. • Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse in the entire scripture. • Not a verse about prayer, pilgrimage, or fasting, but about how to write a debt contract. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-2",
       "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
     },
     "instagram": {
@@ -43,8 +43,8 @@
       "carousel_slides": [
         "The Longest Verse",
         "Ayat al-Dayn: the Quran's most detailed verse is about debt.",
-        "Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse\u2026",
-        "Not a verse about prayer, pilgrimage, or fasting, but about how to write a\u2026",
+        "Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse…",
+        "Not a verse about prayer, pilgrimage, or fasting, but about how to write a…",
         "Read more at IslamicEconomics.org"
       ],
       "reel_caption": "The Longest Verse in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-wd-2 #IslamicEconomics #IslamicHistory",
@@ -75,12 +75,12 @@
         {
           "time": "12-22s",
           "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
-          "on_screen_text": "Verse 2:282 of the Quran, known as Ayat al-Dayn, is\u2026"
+          "on_screen_text": "Verse 2:282 of the Quran, known as Ayat al-Dayn, is…"
         },
         {
           "time": "22-34s",
           "visual": "Highlight why it matters now with contemporary economic visuals.",
-          "on_screen_text": "Not a verse about prayer, pilgrimage, or fasting, but about\u2026"
+          "on_screen_text": "Not a verse about prayer, pilgrimage, or fasting, but about…"
         },
         {
           "time": "34-45s",
@@ -97,5 +97,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_8c8a461c.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_8c8a461c.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_8c8a461c.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c698cd748a2255830f71ca"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c698cedd5003d0a6ec3661"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c698ce748a2255830f71f0"
+    }
+  }
 }
