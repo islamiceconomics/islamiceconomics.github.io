@@ -1,0 +1,101 @@
+{
+  "campaign_id": "2026-03-27-podcast-wd-3-the-scholars-line",
+  "generated_at": "2026-03-27T14:47:38.928752+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-wd-3-the-scholars-line",
+    "kind": "podcast",
+    "title": "The Scholars' Line",
+    "summary": "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Quran bans riba. But what exactly is riba? Is a markup on a deferred sale the same as charging interest on a loan? The Hanafi school allowed bay' bi-thaman ajil, selling goods on credit at a higher price, while drawing a sharp line against lending money for a return. The Hanbalis were stricter, suspecting any time-value premium of concealing riba. The Shafi'is focused on the six commodities mentioned in the hadith. And the Malikis developed the concept of sadd al-dhara'i, blocking the means to forbidden ends. This episode walks through the classical debates on where legitimate commerce ends and prohibited interest begins, showing how these 8th-century discussions still define Islamic banking today.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "The Scholars' Line \u2014 a thread:",
+        "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
+        "But what exactly is riba?",
+        "Why it matters: Is a markup on a deferred sale the same as charging interest on a loan? Listen here: https://islamiceconomics.github.io/podcast.html#ep-wd-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-3"
+    },
+    "linkedin": {
+      "post": "The Scholars' Line How the four madhabs drew the boundary between permissible credit sales and forbidden riba. Three takeaways: \u2022 How the four madhabs drew the boundary between permissible credit sales and forbidden riba. \u2022 But what exactly is riba? \u2022 Is a markup on a deferred sale the same as charging interest on a loan? Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-3",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Scholars' Line How the four madhabs drew the boundary between permissible credit sales and forbidden riba. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-wd-3 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Scholars' Line",
+        "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
+        "But what exactly is riba?",
+        "Is a markup on a deferred sale the same as charging interest on a\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Scholars' Line in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-wd-3 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Scholars' Line",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Scholars' Line\n\nHow the four madhabs drew the boundary between permissible credit sales and forbidden riba.\n\nWhat I keep coming back to is this: But what exactly is riba?",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-3"
+    },
+    "short_video": {
+      "title": "The Scholars' Line in 45 seconds",
+      "hook": "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
+      "voiceover": "The Scholars' Line. How the four madhabs drew the boundary between permissible credit sales and forbidden riba. Here are the key points: How the four madhabs drew the boundary between permissible credit sales and forbidden riba. But what exactly is riba? Is a markup on a deferred sale the same as charging interest on a loan? Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Scholars' Line"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How the four madhabs drew the boundary between permissible credit\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "But what exactly is riba?"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Is a markup on a deferred sale the same as\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Scholars' Line. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-wd-3 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_9f0db902.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_9f0db902.png"
+}

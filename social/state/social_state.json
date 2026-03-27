@@ -477,6 +477,42 @@
         }
       ]
     },
+    "podcast-pu-4-selling-the-wind": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-27-podcast-pu-4-selling-the-wind",
+          "generated_at": "2026-03-27T14:47:23.658089+00:00",
+          "json_path": "social/campaigns/2026-03-27-podcast-pu-4-selling-the-wind.json",
+          "markdown_path": "social/campaigns/2026-03-27-podcast-pu-4-selling-the-wind.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-pu-5-when-uncertainty-collapsed": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-27-podcast-pu-5-when-uncertainty-collapsed",
+          "generated_at": "2026-03-27T14:47:27.016814+00:00",
+          "json_path": "social/campaigns/2026-03-27-podcast-pu-5-when-uncertainty-collapsed.json",
+          "markdown_path": "social/campaigns/2026-03-27-podcast-pu-5-when-uncertainty-collapsed.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-pu-6-building-on-solid-ground": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-27-podcast-pu-6-building-on-solid-ground",
+          "generated_at": "2026-03-27T14:47:30.292842+00:00",
+          "json_path": "social/campaigns/2026-03-27-podcast-pu-6-building-on-solid-ground.json",
+          "markdown_path": "social/campaigns/2026-03-27-podcast-pu-6-building-on-solid-ground.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
     "podcast-tt-1-the-word-tariff": {
       "history": [
         {
@@ -546,6 +582,42 @@
           "json_path": "social/campaigns/2026-03-26-podcast-tt-6-written-in-trade-today.json",
           "markdown_path": "social/campaigns/2026-03-26-podcast-tt-6-written-in-trade-today.md",
           "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-wd-1-before-the-revelation": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-27-podcast-wd-1-before-the-revelation",
+          "generated_at": "2026-03-27T14:47:33.028771+00:00",
+          "json_path": "social/campaigns/2026-03-27-podcast-wd-1-before-the-revelation.json",
+          "markdown_path": "social/campaigns/2026-03-27-podcast-wd-1-before-the-revelation.md",
+          "x_voice_pattern": "question"
+        }
+      ]
+    },
+    "podcast-wd-2-the-longest-verse": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-27-podcast-wd-2-the-longest-verse",
+          "generated_at": "2026-03-27T14:47:36.131689+00:00",
+          "json_path": "social/campaigns/2026-03-27-podcast-wd-2-the-longest-verse.json",
+          "markdown_path": "social/campaigns/2026-03-27-podcast-wd-2-the-longest-verse.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-wd-3-the-scholars-line": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-27-podcast-wd-3-the-scholars-line",
+          "generated_at": "2026-03-27T14:47:38.928752+00:00",
+          "json_path": "social/campaigns/2026-03-27-podcast-wd-3-the-scholars-line.json",
+          "markdown_path": "social/campaigns/2026-03-27-podcast-wd-3-the-scholars-line.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     }
