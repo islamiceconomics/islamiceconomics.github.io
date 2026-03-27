@@ -1574,7 +1574,7 @@ Content item:
 """.strip()
 
     try:
-        client = anthropic_sdk.Anthropic(api_key=api_key)
+        client = anthropic_sdk.Anthropic(api_key=api_key, max_retries=5)
         response = client.messages.create(
             model=ANTHROPIC_MODEL,
             max_tokens=ANTHROPIC_MAX_OUTPUT_TOKENS,
@@ -1602,19 +1602,27 @@ Content item:
 
 
 def generate_channels_ai(item: ContentItem, voice_pattern: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
-    """Route to the best available AI provider."""
+    """Route to the best available AI provider.
+
+    Always falls back to OpenAI if the primary provider fails (e.g. 529
+    Overloaded from Anthropic).  This ensures posts are never raw templates.
+    """
     provider = AI_PROVIDER.lower()
     if provider == "none":
         return None
-    if provider == "anthropic":
-        return generate_channels_with_anthropic(item, voice_pattern)
-    if provider == "openai":
-        return generate_channels_with_openai(item, voice_pattern)
-    # auto — try Anthropic first (better quality), fall back to OpenAI
-    result = generate_channels_with_anthropic(item, voice_pattern)
+
+    # Try primary provider first
+    result = None
+    if provider in ("anthropic", "auto"):
+        result = generate_channels_with_anthropic(item, voice_pattern)
     if result is not None:
         return result
-    return generate_channels_with_openai(item, voice_pattern)
+
+    if provider in ("openai", "auto", "anthropic"):
+        # Fall back to OpenAI whenever Anthropic fails (including 529 overload)
+        logger.info("Falling back to OpenAI for %s", item.content_id)
+        result = generate_channels_with_openai(item, voice_pattern)
+    return result
 
 
 def sanitize_hashtags(values: Any, fallback: List[str], max_items: int = 5) -> List[str]:
