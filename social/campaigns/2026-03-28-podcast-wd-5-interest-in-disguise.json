@@ -52,8 +52,8 @@
     },
     "upscrolled": {
       "post": "A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer sells it back at a loss. Metal never moved.\n\nThis is tawarruq - a transaction that exists purely to disguise an interest-bearing loan. It accounts for a significant portion of Islamic banking globally.\n\nMufti Taqi Usmani calls it impermissible, yet banks continue the practice.",
-      "discussion_prompt": "When legal structures replicate the economic substance of prohibited transactions, do we honor the spirit or just the\u2026",
-      "topic_suggestion": "The gap between Islamic banking theory\u2026",
+      "discussion_prompt": "When legal structures replicate the economic substance of prohibited transactions, do we honor the spirit or just the…",
+      "topic_suggestion": "The gap between Islamic banking theory…",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-5"
     },
     "short_video": {
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_27e3bd2d.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_27e3bd2d.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_27e3bd2d.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c7e64da194ba15037bc50c"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c7e64efeab3741070fdb10"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c7e64efeab3741070fdb36"
+    }
+  }
 }

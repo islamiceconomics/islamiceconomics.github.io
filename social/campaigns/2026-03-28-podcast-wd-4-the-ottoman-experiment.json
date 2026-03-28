@@ -46,7 +46,7 @@
         "Cash waqfs provided regulated lending. Wars funded through taxation, not borrowing.",
         "1854: First foreign loan from European banks during the Crimean War",
         "Within 20 years: Debt payments consumed over half the state's revenue",
-        "1881: Europeans established the Ottoman Public Debt Administration, seizing financial\u2026"
+        "1881: Europeans established the Ottoman Public Debt Administration, seizing financial…"
       ],
       "reel_caption": "From financial independence to debt colonialism in 27 years. The Ottoman Empire's tragic transformation from the world's largest economy to European control through sovereign debt. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-4 #OttomanEmpire #IslamicFinance #EconomicHistory #DebtColonialism #Sovereignty",
       "cover_text": "How Debt Destroyed the Ottoman Empire",
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c524cb12.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c524cb12.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c524cb12.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c7e64cfeab3741070fdac4"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c7e64da194ba15037bc4e6"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c7e64dfeab3741070fdaea"
+    }
+  }
 }
