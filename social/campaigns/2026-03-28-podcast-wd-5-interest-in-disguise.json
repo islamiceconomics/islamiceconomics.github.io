@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-28-podcast-wd-5-interest-in-disguise",
+  "generated_at": "2026-03-28T14:30:37.201030+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-wd-5-interest-in-disguise",
+    "kind": "podcast",
+    "title": "Interest in Disguise",
+    "summary": "Tawarruq, hiyal, and the uncomfortable question: do Islamic banks truly avoid riba?",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer immediately sells the metal back to the market at a loss, and walks out with cash. The metal never moved. No one wanted the metal. The entire transaction existed to disguise what was, economically, an interest-bearing loan. This is tawarruq, and it accounts for a significant portion of Islamic banking transactions globally. This episode confronts the most uncomfortable debate in modern Islamic finance: when legal tricks (hiyal) replicate the economic substance of riba, have we honored the spirit of the prohibition or merely its letter? Scholars like Mufti Taqi Usmani have called organized tawarruq impermissible, yet the practice continues to grow.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Tawarruq, hiyal, and the uncomfortable question: do Islamic banks truly avoid riba?",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "A customer walks into an Islamic bank for a loan. The bank buys metal on the London exchange, sells it to the customer at markup, customer sells it back at a loss. Metal never moved.",
+        "This is tawarruq. The entire transaction existed to disguise what was, economically, an interest-bearing loan. It accounts for a significant portion of Islamic banking globally.",
+        "Mufti Taqi Usmani has called organized tawarruq impermissible. Yet the practice continues across Islamic banks worldwide.",
+        "The uncomfortable question remains: when legal tricks replicate riba's economic substance, do we honor the prohibition's spirit or merely its letter? https://islamiceconomics.github.io/podcast.html#ep-wd-5"
+      ],
+      "hashtags": [
+        "#IslamicBanking"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-5"
+    },
+    "linkedin": {
+      "post": "A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer immediately sells the metal back to the market at a loss, and walks out with cash. The metal never moved. No one wanted the metal. This is tawarruq, and it accounts for a significant portion of Islamic banking transactions globally. The entire transaction exists to disguise what is, economically, an interest-bearing loan. Scholars like Mufti Taqi Usmani have called organized tawarruq impermissible, yet the practice continues across Islamic banks worldwide. When legal tricks replicate the economic substance of riba, do we honor the spirit of the prohibition or merely its letter? Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-5",
+      "comment_prompt": "What's your view on tawarruq and similar practices in Islamic finance?"
+    },
+    "instagram": {
+      "caption": "A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer immediately sells the metal back to the market at a loss, and walks out with cash. The metal never moved. No one wanted the metal. This is tawarruq, and it accounts for a significant portion of Islamic banking transactions globally. The entire transaction exists to disguise what is, economically, an interest-bearing loan. Scholars like Mufti Taqi Usmani have called organized tawarruq impermissible, yet the practice continues. When legal tricks replicate the economic substance of riba, do we honor the spirit of the prohibition or merely its letter? Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-wd-5 #IslamicBanking #IslamicFinance #Tawarruq #Riba #IslamicEconomics",
+      "carousel_slides": [
+        "A customer walks into an Islamic bank wanting a loan",
+        "The bank buys metal on the London exchange, sells it to customer at markup",
+        "Customer immediately sells metal back to market at a loss, walks out with cash",
+        "The metal never moved. No one wanted the metal.",
+        "This is tawarruq - interest in disguise"
+      ],
+      "reel_caption": "When Islamic banks use legal tricks that replicate interest-bearing loans, are we honoring the spirit of the riba prohibition or just its letter? The uncomfortable truth about tawarruq. #IslamicBanking #IslamicFinance #Tawarruq",
+      "cover_text": "Interest in Disguise",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer sells it back at a loss. Metal never moved.\n\nThis is tawarruq - a transaction that exists purely to disguise an interest-bearing loan. It accounts for a significant portion of Islamic banking globally.\n\nMufti Taqi Usmani calls it impermissible, yet banks continue the practice.",
+      "discussion_prompt": "When legal structures replicate the economic substance of prohibited transactions, do we honor the spirit or just the\u2026",
+      "topic_suggestion": "The gap between Islamic banking theory\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-5"
+    },
+    "short_video": {
+      "title": "Interest in Disguise",
+      "hook": "A customer walks into an Islamic bank for a loan",
+      "voiceover": "A customer walks into an Islamic bank wanting a loan. The bank buys metal on the London exchange, sells it to the customer at a markup, the customer immediately sells it back at a loss. The metal never moved. No one wanted the metal. This is tawarruq, and it accounts for a significant portion of Islamic banking globally. The entire transaction exists to disguise an interest-bearing loan. Scholars like Mufti Taqi Usmani call it impermissible, yet banks continue. When legal tricks replicate riba's substance, do we honor the prohibition's spirit or just its letter?",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Person entering bank",
+          "on_screen_text": "Customer wants a loan"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Trading screen showing metal prices",
+          "on_screen_text": "Bank buys metal, sells at markup"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Customer with cash",
+          "on_screen_text": "Customer sells back at loss"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Empty warehouse",
+          "on_screen_text": "Metal never moved"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Islamic banking text",
+          "on_screen_text": "This is tawarruq"
+        }
+      ],
+      "caption": "The uncomfortable truth about tawarruq in Islamic banking. When legal structures disguise interest, do we honor the spirit of Islamic law or just its letter?",
+      "hashtags": [
+        "#IslamicBanking",
+        "#IslamicFinance",
+        "#Tawarruq",
+        "#Riba",
+        "#IslamicEconomics"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_27e3bd2d.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_27e3bd2d.png"
+}

@@ -620,6 +620,30 @@
           "x_voice_pattern": "historical_fact"
         }
       ]
+    },
+    "podcast-wd-4-the-ottoman-experiment": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-28-podcast-wd-4-the-ottoman-experiment",
+          "generated_at": "2026-03-28T14:30:16.828896+00:00",
+          "json_path": "social/campaigns/2026-03-28-podcast-wd-4-the-ottoman-experiment.json",
+          "markdown_path": "social/campaigns/2026-03-28-podcast-wd-4-the-ottoman-experiment.md",
+          "x_voice_pattern": "content_share"
+        }
+      ]
+    },
+    "podcast-wd-5-interest-in-disguise": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-28-podcast-wd-5-interest-in-disguise",
+          "generated_at": "2026-03-28T14:30:37.201030+00:00",
+          "json_path": "social/campaigns/2026-03-28-podcast-wd-5-interest-in-disguise.json",
+          "markdown_path": "social/campaigns/2026-03-28-podcast-wd-5-interest-in-disguise.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
     }
   }
 }
