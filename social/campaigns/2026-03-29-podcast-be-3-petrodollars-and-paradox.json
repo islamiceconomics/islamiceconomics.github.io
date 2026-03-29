@@ -40,13 +40,13 @@
       "comment_prompt": "How do you think Muslim-majority countries should balance Islamic principles with global financial integration?"
     },
     "instagram": {
-      "caption": "The petrodollar paradox reveals something fascinating about sovereign wealth. After 1973, Gulf states accumulated unprecedented oil wealth. But where do you put billions when your principles conflict with available markets? They chose both paths: \u2022 Parked petrodollars in US Treasury bonds \u2022 Funded $150+ billion through Islamic Development Bank \u2022 Built infrastructure across the Muslim world \u2022 Integrated into Western financial systems This wasn't betrayal - it was pragmatism at impossible scale. The full story explores how sovereign wealth funds actually invest and why Muslim capital ended up in interest-based markets. Listen at https://islamiceconomics.github.io/podcast.html#ep-be-3 #petrodollars #islamicfinance #economics #sovereignwealth #oilembargo",
+      "caption": "The petrodollar paradox reveals something fascinating about sovereign wealth. After 1973, Gulf states accumulated unprecedented oil wealth. But where do you put billions when your principles conflict with available markets? They chose both paths: • Parked petrodollars in US Treasury bonds • Funded $150+ billion through Islamic Development Bank • Built infrastructure across the Muslim world • Integrated into Western financial systems This wasn't betrayal - it was pragmatism at impossible scale. The full story explores how sovereign wealth funds actually invest and why Muslim capital ended up in interest-based markets. Listen at https://islamiceconomics.github.io/podcast.html#ep-be-3 #petrodollars #islamicfinance #economics #sovereignwealth #oilembargo",
       "carousel_slides": [
         "The Petrodollar Paradox: Where do you put billions when principles conflict with markets?",
-        "1973 oil embargo creates unprecedented Gulf wealth. Problem: nowhere Islamic to invest\u2026",
-        "Solution 1: US Treasury bonds. Interest-bearing but liquid at massive scale.\u2026",
-        "Solution 2: $150+ billion through Islamic Development Bank, Kuwait Fund, Saudi\u2026",
-        "Result: Infrastructure across Muslim world + integration into global finance. Pragmatism\u2026"
+        "1973 oil embargo creates unprecedented Gulf wealth. Problem: nowhere Islamic to invest…",
+        "Solution 1: US Treasury bonds. Interest-bearing but liquid at massive scale.…",
+        "Solution 2: $150+ billion through Islamic Development Bank, Kuwait Fund, Saudi…",
+        "Result: Infrastructure across Muslim world + integration into global finance. Pragmatism…"
       ],
       "reel_caption": "The petrodollar paradox: Gulf states funded $150+ billion in Islamic development while parking money in US Treasury bonds. Sometimes pragmatism wins over principles when you're managing unprecedented wealth. #petrodollars #islamicfinance #economics",
       "cover_text": "The Petrodollar Paradox",
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_d85408dd.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_d85408dd.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_d85408dd.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c938aea194ba150382fc1b"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c938aea194ba150382fc41"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c938affeab374107173174"
+    }
+  }
 }

@@ -36,26 +36,26 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-6"
     },
     "linkedin": {
-      "post": "Global debt has surpassed $300 trillion, yet alternative models exist that challenge our assumptions about lending and borrowing. Qard hasan, the \"beautiful loan\" in Islamic finance, expects no interest\u2014only the return of principal. Sukuk instruments transform traditional debt into shared ownership of tangible assets. Diminishing musharakah allows homebuyers to gradually purchase their property from the bank as a partner rather than as a debtor. From microfinance experiments in Bangladesh to sovereign sukuk issued by the UK and Hong Kong, these principles are already being tested globally. The 7th-century insight that debt should serve people rather than enslave them offers a compelling framework for addressing our current debt crisis. As we grapple with unprecedented global debt levels, perhaps it's time to seriously consider financial systems designed around human flourishing rather than extraction. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-6",
+      "post": "Global debt has surpassed $300 trillion, yet alternative models exist that challenge our assumptions about lending and borrowing. Qard hasan, the \"beautiful loan\" in Islamic finance, expects no interest—only the return of principal. Sukuk instruments transform traditional debt into shared ownership of tangible assets. Diminishing musharakah allows homebuyers to gradually purchase their property from the bank as a partner rather than as a debtor. From microfinance experiments in Bangladesh to sovereign sukuk issued by the UK and Hong Kong, these principles are already being tested globally. The 7th-century insight that debt should serve people rather than enslave them offers a compelling framework for addressing our current debt crisis. As we grapple with unprecedented global debt levels, perhaps it's time to seriously consider financial systems designed around human flourishing rather than extraction. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-6",
       "comment_prompt": "What role could alternative lending models play in addressing global debt challenges?"
     },
     "instagram": {
-      "caption": "What if debt didn't have to be a trap? With global debt exceeding $300 trillion, we're living in a world where borrowing money often means signing up for compound interest cycles that can last decades. But there's another way. Qard hasan, the \"beautiful loan,\" expects no interest\u2014just the return of principal. Sukuk transform debt into shared ownership of real assets. Diminishing musharakah lets you gradually buy your home from the bank as a partner, not a debtor. These aren't theoretical concepts. The UK and Hong Kong have issued sovereign sukuk. Bangladesh runs microfinance experiments based on these principles. The 7th-century insight that debt should serve people rather than enslave them might be exactly what our modern world needs. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-wd-6 #IslamicFinance #EthicalBanking #DebtFree #Sukuk #AlternativeFinance",
+      "caption": "What if debt didn't have to be a trap? With global debt exceeding $300 trillion, we're living in a world where borrowing money often means signing up for compound interest cycles that can last decades. But there's another way. Qard hasan, the \"beautiful loan,\" expects no interest—just the return of principal. Sukuk transform debt into shared ownership of real assets. Diminishing musharakah lets you gradually buy your home from the bank as a partner, not a debtor. These aren't theoretical concepts. The UK and Hong Kong have issued sovereign sukuk. Bangladesh runs microfinance experiments based on these principles. The 7th-century insight that debt should serve people rather than enslave them might be exactly what our modern world needs. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-wd-6 #IslamicFinance #EthicalBanking #DebtFree #Sukuk #AlternativeFinance",
       "carousel_slides": [
-        "Global debt: $300+ trillion We built systems that trap borrowers in compound interest\u2026",
-        "Qard Hasan \"The Beautiful Loan\" Lend money. Expect only the principal back. No interest.\u2026",
+        "Global debt: $300+ trillion We built systems that trap borrowers in compound interest…",
+        "Qard Hasan \"The Beautiful Loan\" Lend money. Expect only the principal back. No interest.…",
         "Sukuk Transform debt into shared ownership of real, tangible assets instead of IOUs.",
-        "Diminishing Musharakah Buy your house gradually from the bank as a partner, not as a\u2026",
+        "Diminishing Musharakah Buy your house gradually from the bank as a partner, not as a…",
         "The 7th-century insight: Debt should serve people, not enslave them."
       ],
-      "reel_caption": "What if we redesigned debt to serve humanity instead of trapping it? \ud83e\udd14 The beautiful loan concept might hold answers to our $300 trillion debt crisis. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-6 #IslamicFinance #DebtFree #EthicalBanking #Sukuk #AlternativeFinance",
+      "reel_caption": "What if we redesigned debt to serve humanity instead of trapping it? 🤔 The beautiful loan concept might hold answers to our $300 trillion debt crisis. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-6 #IslamicFinance #DebtFree #EthicalBanking #Sukuk #AlternativeFinance",
       "cover_text": "Debt Without Chains",
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
-      "post": "Global debt exceeds $300 trillion, yet we rarely question whether debt has to work this way.\n\nQard hasan, the beautiful loan, expects only the principal back\u2014no interest, no compound traps. Sukuk turn debt into shared ownership of real assets. These aren't utopian theories. The UK and Hong Kong issue sovereign sukuk.\n\nThe 7th-century insight that debt should serve people rather than enslave them feels more relevant than ever.",
+      "post": "Global debt exceeds $300 trillion, yet we rarely question whether debt has to work this way.\n\nQard hasan, the beautiful loan, expects only the principal back—no interest, no compound traps. Sukuk turn debt into shared ownership of real assets. These aren't utopian theories. The UK and Hong Kong issue sovereign sukuk.\n\nThe 7th-century insight that debt should serve people rather than enslave them feels more relevant than ever.",
       "discussion_prompt": "Could interest-free lending models work at scale in modern economies?",
-      "topic_suggestion": "Islamic alternatives to conventional\u2026",
+      "topic_suggestion": "Islamic alternatives to conventional…",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-6"
     },
     "short_video": {
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_a4041d48.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a4041d48.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a4041d48.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c938b2a194ba150382fce1"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c938b2a194ba150382fd07"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c938b3feab374107173234"
+    }
+  }
 }

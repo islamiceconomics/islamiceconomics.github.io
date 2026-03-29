@@ -37,7 +37,7 @@
     },
     "linkedin": {
       "post": "Classical Islamic economists had clear views on government borrowing. Abu Yusuf argued that the state treasury (bayt al-mal) should be managed with the same principles that govern individual finances: no riba, no gharar, no burdening future generations with obligations they didn't consent to. Today, every nation on earth borrows money. The United States owes over $34 trillion. Japan's debt-to-GDP ratio exceeds 260%. This represents a fundamental departure from the economic vision of early Islamic jurists, who debated whether a caliph could even borrow on behalf of the ummah. The contrast between their principles and our reality raises profound questions about sovereignty, consent, and intergenerational justice in modern economics. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-1",
-      "comment_prompt": "How do you reconcile the need for government investment with the principle of not burdening future generations with\u2026"
+      "comment_prompt": "How do you reconcile the need for government investment with the principle of not burdening future generations with…"
     },
     "instagram": {
       "caption": "Abu Yusuf, the 8th-century Islamic economist, had a radical idea: state treasuries should follow the same principles as individual finances. No riba, no gharar, no burdening future generations with obligations they didn't consent to. Fast forward to today. The United States owes over $34 trillion. Japan's debt-to-GDP ratio exceeds 260%. Every nation on earth borrows money. Classical Islamic jurists debated whether a caliph could borrow on behalf of the ummah, and under what conditions. The bayt al-mal operated under strict principles that seem impossible in our modern world. What would these early economists say about a system where every nation is indebted? Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-be-1 #IslamicEconomics #SovereignDebt #Economics #IslamicFinance #Podcast",
@@ -53,7 +53,7 @@
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
-      "post": "Abu Yusuf argued that state treasuries should follow the same principles as individual finances: no riba, no gharar, no burdening future generations with obligations they didn't consent to.\n\nThe United States owes over $34 trillion. Japan's debt-to-GDP ratio exceeds 260%. Every nation on earth borrows money.\n\nClassical Islamic jurists debated whether a caliph could even borrow on behalf of the ummah. The contrast between their vision and our\u2026",
+      "post": "Abu Yusuf argued that state treasuries should follow the same principles as individual finances: no riba, no gharar, no burdening future generations with obligations they didn't consent to.\n\nThe United States owes over $34 trillion. Japan's debt-to-GDP ratio exceeds 260%. Every nation on earth borrows money.\n\nClassical Islamic jurists debated whether a caliph could even borrow on behalf of the ummah. The contrast between their vision and our…",
       "discussion_prompt": "Should governments be bound by the same financial principles that govern individuals?",
       "topic_suggestion": "Islamic perspectives on sovereign debt",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-1"
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_254b580e.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_254b580e.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_254b580e.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c938aafeab3741071730d2"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c938aba194ba150382fba9"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c938aba194ba150382fbcf"
+    }
+  }
 }

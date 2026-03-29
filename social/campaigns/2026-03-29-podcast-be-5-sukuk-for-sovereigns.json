@@ -43,13 +43,13 @@
       "caption": "The UK made history in 2014 by becoming the first Western nation to issue sovereign sukuk, raising 200 million pounds backed by government property. Conventional bonds = lending money to governments at interest Sukuk = buying shares in real government assets Malaysia leads with over $200 billion in outstanding sukuk. Hong Kong, Luxembourg, and South Africa have followed. Instead of promising fixed interest, these bonds give you returns from actual asset performance. A government can raise hundreds of millions without taking on a single penny of debt. The assets stay productive, investors get real ownership stakes, and everyone wins. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-be-5 #sukuk #islamicfinance #sovereigndebt #bonds #malaysia",
       "carousel_slides": [
         "2014: UK becomes first Western nation to issue sovereign sukuk",
-        "\u00a3200 million raised backed by government property, not debt",
+        "£200 million raised backed by government property, not debt",
         "Malaysia: World's largest sukuk market Over $200 billion outstanding",
         "Hong Kong, Luxembourg, South Africa followed suit",
         "Sukuk = ownership in real assets Bonds = loans with interest"
       ],
       "reel_caption": "The UK changed sovereign finance forever in 2014 with its first sukuk issuance. Instead of borrowing, they sold ownership stakes in government property. #sukuk #islamicfinance #bonds",
-      "cover_text": "UK's Historic Sukuk: \u00a3200M Without Debt",
+      "cover_text": "UK's Historic Sukuk: £200M Without Debt",
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
@@ -59,7 +59,7 @@
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-5"
     },
     "short_video": {
-      "title": "How the UK Raised \u00a3200M Without Borrowing",
+      "title": "How the UK Raised £200M Without Borrowing",
       "hook": "In 2014, the UK did something no Western nation had ever done",
       "voiceover": "In 2014, the UK became the first Western nation to issue sovereign sukuk, raising 200 million pounds without taking on debt. Instead of borrowing at interest, they sold ownership stakes in government property to investors. Malaysia leads the world with over 200 billion in outstanding sukuk. Hong Kong, Luxembourg, and South Africa followed. Conventional bonds are loans with interest. Sukuk are ownership in real assets. The returns come from what those assets actually generate, not predetermined rates. A government can raise hundreds of millions without borrowing a penny.",
       "shot_list": [
@@ -70,8 +70,8 @@
         },
         {
           "time": "4-8s",
-          "visual": "\u00a3200M graphic with property images",
-          "on_screen_text": "\u00a3200M Raised"
+          "visual": "£200M graphic with property images",
+          "on_screen_text": "£200M Raised"
         },
         {
           "time": "9-15s",
@@ -89,7 +89,7 @@
           "on_screen_text": "Asset Returns, Not Interest"
         }
       ],
-      "caption": "The UK changed sovereign finance forever in 2014. Instead of borrowing \u00a3200M, they sold ownership stakes in government assets. Malaysia now leads with over $200B in sukuk. #sukuk #islamicfinance #sovereigndebt",
+      "caption": "The UK changed sovereign finance forever in 2014. Instead of borrowing £200M, they sold ownership stakes in government assets. Malaysia now leads with over $200B in sukuk. #sukuk #islamicfinance #sovereigndebt",
       "hashtags": [
         "#sukuk",
         "#islamicfinance",
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_f909e882.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f909e882.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f909e882.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69c938b1feab3741071731e6"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69c938b1a194ba150382fcbb"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69c938b1feab37410717320d"
+    }
+  }
 }
