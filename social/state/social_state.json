@@ -288,6 +288,66 @@
         }
       ]
     },
+    "podcast-be-1-when-nations-borrow": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-29-podcast-be-1-when-nations-borrow",
+          "generated_at": "2026-03-29T14:32:31.061296+00:00",
+          "json_path": "social/campaigns/2026-03-29-podcast-be-1-when-nations-borrow.json",
+          "markdown_path": "social/campaigns/2026-03-29-podcast-be-1-when-nations-borrow.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-be-2-the-debt-trap": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-29-podcast-be-2-the-debt-trap",
+          "generated_at": "2026-03-29T14:33:00.423040+00:00",
+          "json_path": "social/campaigns/2026-03-29-podcast-be-2-the-debt-trap.json",
+          "markdown_path": "social/campaigns/2026-03-29-podcast-be-2-the-debt-trap.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-be-3-petrodollars-and-paradox": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-29-podcast-be-3-petrodollars-and-paradox",
+          "generated_at": "2026-03-29T14:33:25.555677+00:00",
+          "json_path": "social/campaigns/2026-03-29-podcast-be-3-petrodollars-and-paradox.json",
+          "markdown_path": "social/campaigns/2026-03-29-podcast-be-3-petrodollars-and-paradox.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-be-4-the-zakat-alternative": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-29-podcast-be-4-the-zakat-alternative",
+          "generated_at": "2026-03-29T14:33:52.748333+00:00",
+          "json_path": "social/campaigns/2026-03-29-podcast-be-4-the-zakat-alternative.json",
+          "markdown_path": "social/campaigns/2026-03-29-podcast-be-4-the-zakat-alternative.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-be-5-sukuk-for-sovereigns": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-29-podcast-be-5-sukuk-for-sovereigns",
+          "generated_at": "2026-03-29T14:34:19.740409+00:00",
+          "json_path": "social/campaigns/2026-03-29-podcast-be-5-sukuk-for-sovereigns.json",
+          "markdown_path": "social/campaigns/2026-03-29-podcast-be-5-sukuk-for-sovereigns.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
     "podcast-ie-s1-ep01-forgotten-economists": {
       "history": [
         {
@@ -642,6 +702,18 @@
           "json_path": "social/campaigns/2026-03-28-podcast-wd-5-interest-in-disguise.json",
           "markdown_path": "social/campaigns/2026-03-28-podcast-wd-5-interest-in-disguise.md",
           "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-wd-6-debt-without-chains": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-29-podcast-wd-6-debt-without-chains",
+          "generated_at": "2026-03-29T14:32:06.051062+00:00",
+          "json_path": "social/campaigns/2026-03-29-podcast-wd-6-debt-without-chains.json",
+          "markdown_path": "social/campaigns/2026-03-29-podcast-wd-6-debt-without-chains.md",
+          "x_voice_pattern": "question"
         }
       ]
     }

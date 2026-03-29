@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-29-podcast-be-2-the-debt-trap",
+  "generated_at": "2026-03-29T14:33:00.423040+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-be-2-the-debt-trap",
+    "kind": "podcast",
+    "title": "The Debt Trap",
+    "summary": "From Ottoman debt to IMF programs: how sovereign lending creates dependency, and where borrowers share responsibility.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-be-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In 1881, European creditors established the Ottoman Public Debt Administration, taking control of Ottoman state revenues. A century later, the IMF offered structural adjustment programs to dozens of countries including many Muslim-majority nations. The pattern has similarities, but the reality is more nuanced than simple predation. IMF loans come at below-market rates, and countries like South Korea used them as a bridge to reform. Others, like Pakistan, cycled through program after program without making structural changes, a failure of domestic governance as much as external pressure. This episode traces the evolution of sovereign lending, examines what structural adjustment actually did in Egypt, Pakistan, Indonesia, and Nigeria, and asks harder questions about shared responsibility between lenders and borrowers.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Ottoman Public Debt Administration seized state revenues in 1881. The IMF offers structural adjustment programs today. Both involve foreign control of domestic policy. Pakistan has cycled through 24 IMF programs since 1958.",
+      "voice_pattern": "connection",
+      "thread": [
+        "The Ottoman Public Debt Administration seized state revenues in 1881. The IMF offers structural adjustment programs today. Both involve foreign control of domestic policy.",
+        "But the pattern isn't simple predation. IMF loans come at below-market rates. South Korea used them as a bridge to genuine reform and never needed to return.",
+        "Pakistan tells a different story. Twenty-four IMF programs since 1958. Each time promising structural changes that never come. The problem isn't just external pressure.",
+        "Sovereign debt creates dependency when borrowers refuse to change and lenders keep lending anyway. https://islamiceconomics.github.io/podcast.html#ep-be-2"
+      ],
+      "hashtags": [
+        "#DebtTrap"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-2"
+    },
+    "linkedin": {
+      "post": "The Ottoman Public Debt Administration seized control of Ottoman state revenues in 1881. A century later, the IMF began offering structural adjustment programs to dozens of countries, many of them Muslim-majority nations. The pattern seems familiar: foreign creditors gaining control over domestic policy. But the reality is more complex than simple predation. IMF loans come at below-market rates. South Korea used its 1997 program as a bridge to genuine reform and never needed to return. Pakistan tells a different story\u201424 IMF programs since 1958, each time promising structural changes that never come. The debt trap isn't just about predatory lending. It's about the willingness of both borrowers and lenders to repeat cycles that serve neither economic development nor citizen welfare. Sometimes the failure is as much about domestic governance as external pressure. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-2",
+      "comment_prompt": "What role does domestic governance play in sovereign debt cycles?"
+    },
+    "instagram": {
+      "caption": "From Ottoman debt to IMF programs: the pattern of sovereign lending creating dependency spans centuries. In 1881, European creditors established the Ottoman Public Debt Administration, taking direct control of Ottoman state revenues. Fast forward to today's structural adjustment programs\u2014the mechanism looks familiar, but the story is more nuanced. IMF loans actually come at below-market rates. South Korea used its 1997 program to implement genuine reforms and graduated permanently. Pakistan has cycled through 24 programs since 1958, promising changes that never materialize. The real trap isn't just predatory lending\u2014it's when both sides accept a cycle that serves neither development nor citizens. Sometimes the failure is as much about what happens after the money arrives as the terms of borrowing itself. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-be-2 #DebtTrap #SovereignDebt #EconomicHistory #StructuralAdjustment #IMF",
+      "carousel_slides": [
+        "1881: European creditors seize Ottoman state revenues through the Public Debt\u2026",
+        "Today: IMF structural adjustment programs operate across dozens of countries",
+        "The pattern looks familiar: foreign control of domestic economic policy",
+        "But reality is nuanced. South Korea: 1 program, genuine reform, permanent graduation",
+        "Pakistan: 24 programs since 1958. Same promises. Same cycle. The trap needs two willing\u2026"
+      ],
+      "reel_caption": "The debt trap pattern: Ottoman 1881 vs IMF today. Same mechanism, different outcomes. Pakistan: 24 programs since 1958. South Korea: 1 program, graduated forever. The difference? What happens after the money arrives. #DebtTrap #EconomicHistory",
+      "cover_text": "Ottoman Debt vs IMF Programs: The Pattern\u2026",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Ottoman Public Debt Administration seized control of state revenues in 1881. The IMF offers structural adjustment programs today. The pattern looks identical\u2014foreign creditors controlling domestic policy.\n\nBut South Korea took one IMF program in 1997, implemented genuine reforms, and graduated permanently. Pakistan has cycled through 24 programs since 1958, each time promising changes that never come.\n\nThe debt trap requires two willing\u2026",
+      "discussion_prompt": "Why do some countries graduate from IMF programs while others cycle endlessly through them?",
+      "topic_suggestion": "Domestic governance in sovereign debt\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-2"
+    },
+    "short_video": {
+      "title": "Why Some Countries Escape Debt Traps and Others Don't",
+      "hook": "Pakistan has taken 24 IMF loans since 1958. South Korea took one and never returned.",
+      "voiceover": "In 1881, European creditors seized Ottoman state revenues through the Public Debt Administration. Today, the IMF offers structural adjustment programs with similar control mechanisms. But here's what's interesting: South Korea took one IMF program in 1997, implemented painful but genuine reforms, and graduated permanently. Pakistan has cycled through twenty-four programs since 1958, each time promising structural changes that never materialize. The debt trap isn't just about predatory lending. It's about what happens after the money arrives. Sometimes the failure is as much about domestic governance as external pressure.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Historical map showing Ottoman Empire",
+          "on_screen_text": "1881: European Creditors Seize Ottoman Revenues"
+        },
+        {
+          "time": "5-10s",
+          "visual": "Modern IMF building",
+          "on_screen_text": "Today: IMF Structural Adjustment Programs"
+        },
+        {
+          "time": "10-20s",
+          "visual": "Split screen: South Korean flag vs Pakistan flag",
+          "on_screen_text": "South Korea: 1 Program | Pakistan: 24 Programs"
+        },
+        {
+          "time": "20-30s",
+          "visual": "Graph showing economic indicators",
+          "on_screen_text": "One Graduated, One Cycles Endlessly"
+        },
+        {
+          "time": "30-40s",
+          "visual": "Text overlay with key insight",
+          "on_screen_text": "The Trap Needs Two Willing Participants"
+        }
+      ],
+      "caption": "The debt trap pattern spans centuries, but outcomes depend on what borrowers do after receiving the money. #DebtTrap #EconomicHistory #IMF #SovereignDebt #Pakistan",
+      "hashtags": [
+        "#DebtTrap",
+        "#EconomicHistory",
+        "#IMF",
+        "#SovereignDebt",
+        "#StructuralAdjustment"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_32b82109.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_32b82109.png"
+}
