@@ -348,6 +348,18 @@
         }
       ]
     },
+    "podcast-be-6-after-the-default": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-30-podcast-be-6-after-the-default",
+          "generated_at": "2026-03-30T15:01:40.768789+00:00",
+          "json_path": "social/campaigns/2026-03-30-podcast-be-6-after-the-default.json",
+          "markdown_path": "social/campaigns/2026-03-30-podcast-be-6-after-the-default.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
     "podcast-ie-s1-ep01-forgotten-economists": {
       "history": [
         {
@@ -510,6 +522,42 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.md",
           "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-mm-1-what-money-was": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-30-podcast-mm-1-what-money-was",
+          "generated_at": "2026-03-30T15:02:07.353660+00:00",
+          "json_path": "social/campaigns/2026-03-30-podcast-mm-1-what-money-was.json",
+          "markdown_path": "social/campaigns/2026-03-30-podcast-mm-1-what-money-was.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-mm-2-the-central-bank-question": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-30-podcast-mm-2-the-central-bank-question",
+          "generated_at": "2026-03-30T15:02:30.050084+00:00",
+          "json_path": "social/campaigns/2026-03-30-podcast-mm-2-the-central-bank-question.json",
+          "markdown_path": "social/campaigns/2026-03-30-podcast-mm-2-the-central-bank-question.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-mm-3-the-dollar-s-world": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-30-podcast-mm-3-the-dollar-s-world",
+          "generated_at": "2026-03-30T15:03:00.738114+00:00",
+          "json_path": "social/campaigns/2026-03-30-podcast-mm-3-the-dollar-s-world.json",
+          "markdown_path": "social/campaigns/2026-03-30-podcast-mm-3-the-dollar-s-world.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },

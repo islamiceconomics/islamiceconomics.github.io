@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-30-podcast-mm-2-the-central-bank-question",
+  "generated_at": "2026-03-30T15:02:30.050084+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-mm-2-the-central-bank-question",
+    "kind": "podcast",
+    "title": "The Central Bank Question",
+    "summary": "What central banks actually do, why every country has one, and the fundamental tension with Islamic economics.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Central banks solved real problems: bank runs, credit crunches, currency instability. But they also created new ones: moral hazard, inflation bias, regressive distributional effects. This episode gives central banking an even-handed examination: what it does well, where it fails, and what the bayt al-mal as an Islamic monetary authority might look like. Turkey's inflation crisis illustrates what happens when central bank independence is compromised. The fundamental tension: Islamic economics prohibits interest rates, but modern central banking runs entirely on them. Can that circle be squared?",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "What central banks actually do, why every country has one, and the fundamental tension with Islamic economics. The parallels to today are hard to ignore.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Renaissance merchants needed no central bank. Their trade bills cleared across continents without anyone manipulating prices.",
+        "Central banks prevent bank runs and currency crises. They also create moral hazard and inflation bias. Every solution becomes a new problem.",
+        "Islamic economics faces a fundamental tension: it prohibits interest rates entirely. But modern central banking runs on nothing else.",
+        "Turkey's inflation hit 85% when politicians compromised central bank independence. The bayt al-mal offers a different monetary model. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-2"
+      ],
+      "hashtags": [
+        "#CentralBanking"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-2"
+    },
+    "linkedin": {
+      "post": "The central banking question cuts to the heart of modern monetary policy. Central banks solved real problems: bank runs, credit crunches, currency instability. But they also created new ones: moral hazard, inflation bias, regressive distributional effects. Islamic economics faces a fundamental tension here. The system prohibits interest rates entirely, but modern central banking runs on nothing else. Turkey's recent inflation crisis illustrates what happens when central bank independence is compromised - inflation hit 85%. The bayt al-mal as an Islamic monetary authority offers a different model. Worth examining how medieval Islamic finance cleared transactions across continents without interest-based central intervention. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-2",
+      "comment_prompt": "How do you think Islamic monetary principles could reshape modern central banking?"
+    },
+    "instagram": {
+      "caption": "Central banks solved real problems: bank runs, credit crunches, currency instability. But they also created new ones: moral hazard, inflation bias, regressive distributional effects. Islamic economics faces a fundamental tension with modern central banking. The system prohibits interest rates entirely, but central banking runs on nothing else. Turkey's inflation crisis shows what happens when independence is compromised - inflation hit 85%. The bayt al-mal as an Islamic monetary authority offers a different model entirely. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-mm-2 #IslamicEconomics #CentralBanking #MonetaryPolicy #Economics #Finance",
+      "carousel_slides": [
+        "The Central Bank Question: What they actually do and why every country has one",
+        "Central banks solved: Bank runs, Credit crunches, Currency instability",
+        "But created new problems: Moral hazard, Inflation bias, Regressive effects",
+        "Islamic economics prohibits interest rates. Modern central banking runs entirely on them.",
+        "Turkey's inflation hit 85% when politicians compromised central bank independence"
+      ],
+      "reel_caption": "The fundamental tension between Islamic economics and modern central banking. Turkey's 85% inflation shows what happens when independence is compromised. Listen to the full discussion at the link. #IslamicEconomics #CentralBanking #MonetaryPolicy",
+      "cover_text": "Central Banks vs Islamic Economics",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Central banks solved real problems: bank runs, credit crunches, currency instability. But they also created moral hazard, inflation bias, and regressive distributional effects.\n\nIslamic economics faces a fundamental tension here. It prohibits interest rates entirely, but modern central banking runs on nothing else. Turkey's inflation hit 85% when politicians compromised central bank independence.",
+      "discussion_prompt": "Can Islamic monetary principles offer a viable alternative to interest-based central banking?",
+      "topic_suggestion": "The bayt al-mal as Islamic monetary\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-2"
+    },
+    "short_video": {
+      "title": "Why Islamic Economics Clashes with Central Banking",
+      "hook": "Every country has a central bank. Islamic economics says they shouldn't exist.",
+      "voiceover": "Central banks solved real problems: bank runs, credit crunches, currency crashes. But they created new ones: moral hazard, inflation bias, wealth concentration. Islamic economics prohibits interest rates entirely. Modern central banking runs on nothing else. Turkey's inflation hit eighty-five percent when politicians took over monetary policy. The bayt al-mal offers a different model: Islamic monetary authority without interest manipulation. Renaissance merchants cleared transactions across continents without central banks. Maybe we're solving the wrong problems.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Central bank building exterior",
+          "on_screen_text": "Every country has one"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Historical bank run footage",
+          "on_screen_text": "Solved: Bank runs, Credit crunches"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Inflation chart rising",
+          "on_screen_text": "Created: Moral hazard, Inflation bias"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Turkey economic data",
+          "on_screen_text": "Turkey: 85% inflation"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Medieval Islamic coins",
+          "on_screen_text": "Bayt al-mal: Different model"
+        }
+      ],
+      "caption": "The fundamental tension between Islamic economics and modern central banking. Can the bayt al-mal model work today?",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#CentralBanking",
+        "#MonetaryPolicy",
+        "#Economics",
+        "#Finance"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c63d8b5e.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c63d8b5e.png"
+}
