@@ -53,7 +53,7 @@
     "upscrolled": {
       "post": "Central banks solved real problems: bank runs, credit crunches, currency instability. But they also created moral hazard, inflation bias, and regressive distributional effects.\n\nIslamic economics faces a fundamental tension here. It prohibits interest rates entirely, but modern central banking runs on nothing else. Turkey's inflation hit 85% when politicians compromised central bank independence.",
       "discussion_prompt": "Can Islamic monetary principles offer a viable alternative to interest-based central banking?",
-      "topic_suggestion": "The bayt al-mal as Islamic monetary\u2026",
+      "topic_suggestion": "The bayt al-mal as Islamic monetary…",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-2"
     },
     "short_video": {
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c63d8b5e.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c63d8b5e.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c63d8b5e.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69ca90e6e0298983d8d599c4"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69ca90e73e57f928f0d36331"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69ca90e73e57f928f0d36357"
+    }
+  }
 }

@@ -34,17 +34,17 @@
       "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-6"
     },
     "linkedin": {
-      "post": "What happens when a nation simply cannot pay its debts? Argentina has defaulted nine times. Lebanon's debt-to-GDP hit 150% before its economy collapsed. Sri Lanka defaulted in 2022 after running out of foreign reserves. The modern financial system offers few options: impose austerity, restructure the debt, or watch the economy collapse. But Islamic tradition suggests a different approach. The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. The concept of odious debt\u2014that populations shouldn't repay loans taken by dictators against their interests\u2014resonates deeply with Islamic principles of justice. This perspective isn't just historical. As debt crises multiply globally, Islamic frameworks for sovereign debt resolution prioritize human welfare over rigid contractual obligations. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-be-6",
+      "post": "What happens when a nation simply cannot pay its debts? Argentina has defaulted nine times. Lebanon's debt-to-GDP hit 150% before its economy collapsed. Sri Lanka defaulted in 2022 after running out of foreign reserves. The modern financial system offers few options: impose austerity, restructure the debt, or watch the economy collapse. But Islamic tradition suggests a different approach. The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. The concept of odious debt—that populations shouldn't repay loans taken by dictators against their interests—resonates deeply with Islamic principles of justice. This perspective isn't just historical. As debt crises multiply globally, Islamic frameworks for sovereign debt resolution prioritize human welfare over rigid contractual obligations. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-be-6",
       "comment_prompt": "Have you seen examples of debt forgiveness creating better long-term outcomes than austerity?"
     },
     "instagram": {
-      "caption": "Argentina has defaulted nine times. Lebanon's debt hit 150% of GDP before total collapse. Sri Lanka ran out of foreign reserves in 2022. The modern system offers three options when nations can't pay: brutal austerity, debt restructuring, or economic death. But Islamic tradition has always recognized something different. The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. This isn't charity. It's the recognition that crushing debt serves no one's long-term interests. That sustainable economics requires breathing room for recovery. The concept of odious debt\u2014that populations shouldn't repay loans taken by dictators\u2014resonates deeply with Islamic principles of justice. As debt crises multiply globally, maybe it's time to remember these older wisdoms. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-be-6 #IslamicEconomics #DebtCrisis #EconomicJustice #SovereignDebt #DebtForgiveness",
+      "caption": "Argentina has defaulted nine times. Lebanon's debt hit 150% of GDP before total collapse. Sri Lanka ran out of foreign reserves in 2022. The modern system offers three options when nations can't pay: brutal austerity, debt restructuring, or economic death. But Islamic tradition has always recognized something different. The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. This isn't charity. It's the recognition that crushing debt serves no one's long-term interests. That sustainable economics requires breathing room for recovery. The concept of odious debt—that populations shouldn't repay loans taken by dictators—resonates deeply with Islamic principles of justice. As debt crises multiply globally, maybe it's time to remember these older wisdoms. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-be-6 #IslamicEconomics #DebtCrisis #EconomicJustice #SovereignDebt #DebtForgiveness",
       "carousel_slides": [
-        "Argentina has defaulted 9 times. Lebanon's debt hit 150% of GDP. Sri Lanka ran out of\u2026",
-        "The modern system offers three options when nations can't pay: austerity, restructuring\u2026",
-        "The Quran explicitly encourages creditors to forgive debts when debtors face genuine\u2026",
+        "Argentina has defaulted 9 times. Lebanon's debt hit 150% of GDP. Sri Lanka ran out of…",
+        "The modern system offers three options when nations can't pay: austerity, restructuring…",
+        "The Quran explicitly encourages creditors to forgive debts when debtors face genuine…",
         "Odious debt: populations shouldn't repay loans taken by dictators against their interests.",
-        "Islamic principles prioritize human welfare over rigid contractual obligations in debt\u2026"
+        "Islamic principles prioritize human welfare over rigid contractual obligations in debt…"
       ],
       "reel_caption": "When nations can't pay their debts, the Quran offers a different path than endless austerity. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-6 #IslamicEconomics #DebtCrisis #EconomicJustice #SovereignDebt #DebtForgiveness",
       "cover_text": "After the Default",
@@ -53,7 +53,7 @@
     "upscrolled": {
       "post": "Argentina has defaulted nine times. Lebanon's debt hit 150% of GDP before collapse. The modern system offers three brutal choices: austerity, restructuring, or economic death.\n\nThe Quran explicitly encourages creditors to forgive debts when debtors face hardship. Not as charity, but as recognition that crushing debt serves no one's long-term interests.\n\nMaybe sustainable economics requires breathing room for recovery.",
       "discussion_prompt": "When has debt forgiveness created better outcomes than austerity in your experience?",
-      "topic_suggestion": "Islamic approaches to sovereign debt\u2026",
+      "topic_suggestion": "Islamic approaches to sovereign debt…",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-6"
     },
     "short_video": {
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_255e467e.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_255e467e.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_255e467e.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69ca90e3e0298983d8d5991a"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69ca90e43e57f928f0d36266"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69ca90e43e57f928f0d3628c"
+    }
+  }
 }
