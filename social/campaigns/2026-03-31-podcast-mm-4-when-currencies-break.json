@@ -51,8 +51,8 @@
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
-      "post": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon follow the same pattern. External dollar pressure hits peripheral economies equally, but internal governance determines the outcome.\n\nTurkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across multiple fronts. Lebanon's banking system was captured by elites entirely.\n\nThe dollar system creates vulnerability, but domestic choices\u2026",
-      "discussion_prompt": "Do you think external economic pressures or domestic governance failures matter more in determining a country's\u2026",
+      "post": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon follow the same pattern. External dollar pressure hits peripheral economies equally, but internal governance determines the outcome.\n\nTurkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across multiple fronts. Lebanon's banking system was captured by elites entirely.\n\nThe dollar system creates vulnerability, but domestic choices…",
+      "discussion_prompt": "Do you think external economic pressures or domestic governance failures matter more in determining a country's…",
       "topic_suggestion": "Currency crises and governance",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
     },
@@ -99,5 +99,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_576b1376.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_576b1376.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_576b1376.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69cbe19ae99747ab240863cd"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69cbe19ce79e5d89391ecf65"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69cbe19ce79e5d89391ecf8b"
+    }
+  }
 }

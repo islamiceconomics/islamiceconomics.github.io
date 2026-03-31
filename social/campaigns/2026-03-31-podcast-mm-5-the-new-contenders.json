@@ -43,7 +43,7 @@
       "caption": "De-dollarization dominates headlines, but the reality is more complex than the rhetoric suggests. The dollar's structural advantages remain vast. BRICS faces coordination challenges while China resists the capital account openness needed for yuan internationalization. CBDCs promise financial inclusion but raise surveillance concerns that complicate Islamic finance debates. The trend at the margins is real, but systemic change moves slowly. Muslim-majority economies find themselves as observers rather than architects of global monetary evolution. Listen to the full episode for deeper analysis. #dedollarization #BRICS #islamiceconomics #monetarypolicy #globalfinance https://islamiceconomics.github.io/podcast.html#ep-mm-5",
       "carousel_slides": [
         "De-dollarization: Rhetoric vs Reality",
-        "The dollar has structural advantages so vast that alternatives struggle with basic\u2026",
+        "The dollar has structural advantages so vast that alternatives struggle with basic…",
         "China won't open capital accounts for yuan internationalization",
         "CBDCs offer inclusion but raise surveillance concerns",
         "Muslim economies remain observers, not shapers of monetary change"
@@ -53,9 +53,9 @@
       "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
     },
     "upscrolled": {
-      "post": "De-dollarization fills conference halls and news cycles, but the dollar's structural advantages remain enormous.\n\nBRICS nations can't coordinate basic policies. China refuses the capital account openness that yuan internationalization requires. CBDCs promise financial inclusion but introduce surveillance concerns that make Islamic Bitcoin debates look simple.\n\nMuslim-majority economies stay on the sidelines, observers rather than architects of\u2026",
+      "post": "De-dollarization fills conference halls and news cycles, but the dollar's structural advantages remain enormous.\n\nBRICS nations can't coordinate basic policies. China refuses the capital account openness that yuan internationalization requires. CBDCs promise financial inclusion but introduce surveillance concerns that make Islamic Bitcoin debates look simple.\n\nMuslim-majority economies stay on the sidelines, observers rather than architects of…",
       "discussion_prompt": "Should Muslim economies actively shape global monetary systems or focus on regional alternatives?",
-      "topic_suggestion": "The future of Islamic finance in a\u2026",
+      "topic_suggestion": "The future of Islamic finance in a…",
       "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-5"
     },
     "short_video": {
@@ -101,5 +101,23 @@
     }
   },
   "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_ff818b92.png",
-  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_ff818b92.png"
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_ff818b92.png",
+  "buffer": {
+    "x": {
+      "status": "queued",
+      "buffer_update_id": "69cbe19de99747ab24086461"
+    },
+    "linkedin": {
+      "status": "skipped",
+      "reason": "missing BUFFER_PROFILE_ID_LINKEDIN"
+    },
+    "instagram": {
+      "status": "queued",
+      "buffer_update_id": "69cbe19ee99747ab2408648b"
+    },
+    "threads": {
+      "status": "queued",
+      "buffer_update_id": "69cbe19ee79e5d89391ecfca"
+    }
+  }
 }
