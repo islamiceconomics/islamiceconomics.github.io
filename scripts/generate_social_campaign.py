@@ -1795,6 +1795,13 @@ def build_campaign(item: ContentItem, use_ai: bool, voice_pattern: Optional[Dict
                 ),
                 "source_video_path": item.local_video_path,
             },
+            "threads": {
+                "post": truncate_text(
+                    (generated_channels or {}).get("threads", {}).get("post")
+                    or fallback_channels.get("threads", {}).get("post", ""),
+                    THREADS_POST_LIMIT,
+                ),
+            },
         },
     }
 
