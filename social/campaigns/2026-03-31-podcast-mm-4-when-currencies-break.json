@@ -1,0 +1,103 @@
+{
+  "campaign_id": "2026-03-31-podcast-mm-4-when-currencies-break",
+  "generated_at": "2026-03-31T14:59:12.034287+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-mm-4-when-currencies-break",
+    "kind": "podcast",
+    "title": "When Currencies Break",
+    "summary": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. The dollar creates vulnerability, but governance determines the outcome.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across the board. Egypt's is structural economic narrowness. Iran's combines sanctions with internal dysfunction. Lebanon's is elite capture of the entire banking system. Each case gets specific, fair treatment, with no heroes and no villains. The common thread: the dollar system creates vulnerability for peripheral economies, but domestic governance determines whether that vulnerability becomes a crisis. The same external pressures produce very different outcomes depending on how countries are governed.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Currency crises reveal something uncomfortable. External dollar pressure hits everyone equally, but internal governance determines who survives. Lebanon's banking system was captured by elites.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Currency crises reveal something uncomfortable. External dollar pressure hits everyone equally, but internal governance determines who survives.",
+        "Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across the board. Egypt's is structural economic narrowness.",
+        "Iran combines sanctions with internal dysfunction. Lebanon's banking system was captured by elites entirely.",
+        "The dollar system creates vulnerability for peripheral economies, but domestic choices determine the outcome. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+    },
+    "linkedin": {
+      "post": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon tell the same uncomfortable story. External dollar pressure hits peripheral economies equally, but internal governance determines who survives. Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across multiple fronts. Egypt's stems from structural economic narrowness. Iran combines sanctions with internal dysfunction. Lebanon's represents complete elite capture of the banking system. The pattern is clear: the dollar system creates vulnerability for economies on the periphery, but domestic governance choices determine whether that vulnerability becomes a full crisis. Same external pressures, vastly different outcomes. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+      "comment_prompt": "Which factor do you think matters more in currency crises: external pressures or domestic governance failures?"
+    },
+    "instagram": {
+      "caption": "Currency crises reveal an uncomfortable truth about how economic power actually works. External dollar pressure hits peripheral economies equally, but internal governance determines who survives. Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across the board. Egypt's is structural economic narrowness. Iran combines sanctions with internal dysfunction. Lebanon's banking system was captured by elites entirely. The dollar system creates vulnerability for economies on the periphery, but domestic choices determine whether that vulnerability becomes a crisis. Same external pressures, vastly different outcomes depending on how countries are governed. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-4 #IslamicEconomics #CurrencyCrisis #Economics #Governance #DollarSystem",
+      "carousel_slides": [
+        "Currency crises reveal an uncomfortable truth",
+        "External dollar pressure hits everyone equally",
+        "But internal governance determines who survives",
+        "Turkey: Erdogan overrode central bank independence",
+        "Lebanon: Banking system captured by elites entirely"
+      ],
+      "reel_caption": "Why do some countries survive currency crises while others collapse? The answer reveals how economic power actually works. Listen to the full analysis. #IslamicEconomics #CurrencyCrisis #Economics",
+      "cover_text": "When Currencies Break",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon follow the same pattern. External dollar pressure hits peripheral economies equally, but internal governance determines the outcome.\n\nTurkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across multiple fronts. Lebanon's banking system was captured by elites entirely.\n\nThe dollar system creates vulnerability, but domestic choices\u2026",
+      "discussion_prompt": "Do you think external economic pressures or domestic governance failures matter more in determining a country's\u2026",
+      "topic_suggestion": "Currency crises and governance",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+    },
+    "short_video": {
+      "title": "Why Some Countries Survive Currency Crises",
+      "hook": "Currency crises reveal an uncomfortable truth about power",
+      "voiceover": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon reveal something uncomfortable. External dollar pressure hits everyone equally, but internal governance determines who survives. Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure. Egypt's is structural narrowness. Iran combines sanctions with dysfunction. Lebanon's banking system was captured by elites entirely. The dollar system creates vulnerability for peripheral economies, but domestic choices determine the outcome.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "World map highlighting affected countries",
+          "on_screen_text": "5 Currency Crises"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Dollar bills flowing globally",
+          "on_screen_text": "External pressure hits equally"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Split screen showing stable vs collapsing economies",
+          "on_screen_text": "Internal governance decides outcome"
+        },
+        {
+          "time": "26-35s",
+          "visual": "News footage of each country's specific crisis",
+          "on_screen_text": "Each crisis has unique causes"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Central bank buildings and government offices",
+          "on_screen_text": "Domestic choices matter most"
+        }
+      ],
+      "caption": "External pressures hit equally, but governance determines who survives currency crises. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#CurrencyCrisis",
+        "#Economics",
+        "#Governance",
+        "#GlobalEconomy"
+      ],
+      "source_video_path": ""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_576b1376.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_576b1376.png"
+}

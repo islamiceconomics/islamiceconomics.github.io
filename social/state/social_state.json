@@ -561,6 +561,30 @@
         }
       ]
     },
+    "podcast-mm-4-when-currencies-break": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-31-podcast-mm-4-when-currencies-break",
+          "generated_at": "2026-03-31T14:59:12.034287+00:00",
+          "json_path": "social/campaigns/2026-03-31-podcast-mm-4-when-currencies-break.json",
+          "markdown_path": "social/campaigns/2026-03-31-podcast-mm-4-when-currencies-break.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-mm-5-the-new-contenders": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-03-31-podcast-mm-5-the-new-contenders",
+          "generated_at": "2026-03-31T14:59:39.435138+00:00",
+          "json_path": "social/campaigns/2026-03-31-podcast-mm-5-the-new-contenders.json",
+          "markdown_path": "social/campaigns/2026-03-31-podcast-mm-5-the-new-contenders.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
     "podcast-pu-1-the-forbidden-throw": {
       "history": [
         {
