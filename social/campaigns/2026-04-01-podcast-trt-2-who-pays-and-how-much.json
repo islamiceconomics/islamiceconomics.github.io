@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-01-podcast-trt-2-who-pays-and-how-much",
+  "generated_at": "2026-04-01T15:02:58.939536+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-trt-2-who-pays-and-how-much",
+    "kind": "podcast",
+    "title": "Who Pays and How Much",
+    "summary": "Tax incidence, deadweight loss, and how Islamic tax instruments compare to modern systems.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Taxes change behavior. Income taxes discourage earning; sales taxes discourage spending; property taxes discourage holding. The economics of tax design is about minimizing these distortions while raising enough revenue. This episode covers tax incidence (who really bears the burden), deadweight loss, and the efficiency-equity tradeoff. Then it examines Islamic tax instruments: zakat as a wealth tax with a 2.5% rate and nisab threshold, kharaj as a land/output tax, ushur as a trade levy. Each has specific economic properties. Zakat's flat rate is simple but possibly insufficient for a modern state. The jizya receives an honest treatment: discriminatory by modern standards, though it had a specific fiscal logic in its historical context.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Medieval sultans charged merchants 5% to cross their lands. Medieval caliphs charged farmers based on their harvest. Both understood what modern tax theory calls deadweight loss. Zakat remains a 2.5% wealth tax.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Medieval sultans charged merchants 5% to cross their lands. Medieval caliphs charged farmers based on their harvest. Both understood what modern tax theory calls deadweight loss.",
+        "Every tax changes behavior. Income taxes discourage earning. Sales taxes discourage spending. Property taxes discourage holding land.",
+        "Islamic tax instruments were designed around this reality. Zakat hits wealth, not income. Kharaj targets land productivity. Ushur applies to trade flows.",
+        "The efficiency-equity tradeoff that dominates modern tax policy was already embedded in 7th-century Medina. https://islamiceconomics.github.io/podcast.html#ep-trt-2"
+      ],
+      "hashtags": [
+        "#taxation",
+        "#economics",
+        "#policy"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-2"
+    },
+    "linkedin": {
+      "post": "Tax design has always been about balancing efficiency with revenue needs. Medieval Islamic rulers understood this intuitively. Zakat functions as a wealth tax at 2.5% with a nisab threshold. Kharaj targets agricultural output and land productivity. Ushur applies to trade flows at borders. Each instrument addresses what economists now call tax incidence and deadweight loss\u2014concepts that were embedded in fiscal policy 1,300 years ago. The efficiency-equity tradeoff that dominates modern tax debates was already being navigated in 7th-century economic policy. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2",
+      "comment_prompt": "How do you think wealth taxes compare to income taxes in terms of economic efficiency?"
+    },
+    "instagram": {
+      "caption": "Tax policy has ancient roots in economic wisdom. Medieval Islamic rulers understood that every tax changes behavior. Income taxes discourage earning. Sales taxes discourage spending. Their solution was elegant. Zakat: 2.5% wealth tax with threshold Kharaj: Land and agricultural output tax Ushur: Trade levy at 5% Each addressed what we now call deadweight loss and tax incidence\u2014concepts embedded in policy 1,300 years before modern economics gave them names. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2 #taxation #economics #islamicfinance #policy #history",
+      "carousel_slides": [
+        "Tax Policy Has Ancient Economic Wisdom",
+        "Every tax changes behavior: \u2022 Income taxes \u2192 discourage earning \u2022 Sales taxes \u2192\u2026",
+        "Islamic Tax Instruments: \u2022 Zakat: 2.5% wealth tax \u2022 Kharaj: Land/output tax \u2022 Ushur: 5%\u2026",
+        "These addressed deadweight loss and tax incidence 1,300 years before modern economics\u2026",
+        "The efficiency-equity tradeoff was already being solved in 7th-century Medina"
+      ],
+      "reel_caption": "Ancient tax wisdom that still applies today. Islamic fiscal policy understood behavioral economics centuries before we had the theory. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2 #taxation #economics #islamicfinance #policy #history",
+      "cover_text": "Ancient Tax Wisdom",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Medieval rulers understood tax incidence before we had economic theory to explain it.\n\nZakat functions as a 2.5% wealth tax with a nisab threshold. Kharaj targets land productivity. Ushur applies to trade at borders. Each instrument addresses what economists now call deadweight loss.\n\nThe efficiency-equity tradeoff was already embedded in 7th-century Medina.",
+      "discussion_prompt": "Do you think wealth taxes are more efficient than income taxes?",
+      "topic_suggestion": "Historical origins of modern tax policy",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-2"
+    },
+    "short_video": {
+      "title": "Ancient Tax Wisdom",
+      "hook": "Medieval rulers understood tax economics before we had the theory",
+      "voiceover": "Medieval sultans charged merchants five percent to cross their lands. Caliphs taxed farmers based on harvest yields. They understood something economists wouldn't name for centuries: deadweight loss. Every tax changes behavior. Income taxes discourage earning. Sales taxes discourage spending. Islamic tax instruments were designed around this reality. Zakat hits wealth at two point five percent. Kharaj targets land productivity. The efficiency-equity tradeoff that dominates modern policy was already solved in seventh-century Medina.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ancient trade routes map",
+          "on_screen_text": "5% merchant crossing fee"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Tax behavior diagram",
+          "on_screen_text": "Every tax changes behavior"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Islamic tax instruments chart",
+          "on_screen_text": "Zakat: 2.5% wealth tax"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Historical timeline",
+          "on_screen_text": "Solved in 7th century Medina"
+        },
+        {
+          "time": "36-40s",
+          "visual": "Modern economics textbook",
+          "on_screen_text": "Theory came 1,300 years later"
+        }
+      ],
+      "caption": "Tax policy wisdom from 1,300 years ago that still applies today. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2 #taxation #economics #islamicfinance #policy #history",
+      "hashtags": [
+        "#taxation",
+        "#economics",
+        "#islamicfinance",
+        "#policy",
+        "#history"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Medieval sultans charged merchants 5% to cross their lands. Medieval caliphs charged farmers based on their harvest. Both understood what modern tax theory calls deadweight loss centuries before we had a name for it. Every tax changes behavior\u2014income taxes discourage earning, sales taxes discourage spending, property taxes discourage holding. Islamic tax instruments were designed around this reality. Zakat remains a 2.5% wealth tax with a nisab threshold."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c6ee3e37.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c6ee3e37.png"
+}

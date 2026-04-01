@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-01-podcast-trt-5-the-borrower-s-bargain",
+  "generated_at": "2026-04-01T15:04:23.894504+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-trt-5-the-borrower-s-bargain",
+    "kind": "podcast",
+    "title": "The Borrower's Bargain",
+    "summary": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Governments borrow for good reasons and bad ones. Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies: all defensible. Funding consumption, hiding true fiscal costs, kicking problems to future generations: all dangerous. This episode covers government bond markets, debt sustainability metrics, Ricardian equivalence, and the real-world debt crises that happen when these frameworks break down. The Islamic constraint is clear: interest-bearing debt is prohibited. Sukuk offer an alternative, but the substance-versus-form debate is honest and unresolved. Revenue-backed financing creates real fiscal discipline but also limits government flexibility during crises.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Most people think government borrowing is about getting money when you need it. It's actually about who bears the risk when things go wrong. Revenue-backed financing puts the burden on governments. Interest-bearing debt puts it on taxpayers.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "Most people think government borrowing is about getting money when you need it. It's actually about who bears the risk when things go wrong.",
+        "When governments issue bonds, they're promising future taxpayers will pay. When they use revenue-backed financing, they're promising the project itself will pay.",
+        "The difference matters most during crises. Bond-financed governments can always raise taxes or print money. Revenue-backed governments must actually deliver value.",
+        "Islamic finance prohibits interest-bearing debt entirely. The constraint sounds limiting until you realize it forces governments to think like businesses. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+      ],
+      "hashtags": [
+        "#IslamicFinance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+    },
+    "linkedin": {
+      "post": "Government borrowing isn't really about accessing capital. It's about risk allocation. When governments issue conventional bonds, they're making a promise that future taxpayers will honor the debt regardless of project outcomes. The government gets immediate funding, but citizens inherit the obligation. Revenue-backed financing works differently. The government promises that specific revenue streams will service the debt. If the project fails to generate returns, the financing arrangement itself bears the loss. Islamic public finance prohibits interest-bearing debt entirely. This constraint initially seems limiting, but it creates genuine fiscal discipline. Governments can't simply promise to tax their way out of problems\u2014they must structure financing around projects that generate measurable value. The substance versus form debate in sukuk markets reflects this tension between genuine risk-sharing and conventional debt dressed in Islamic clothing. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+      "comment_prompt": "How do you think revenue-backed financing would change government spending priorities in practice?"
+    },
+    "instagram": {
+      "caption": "Government borrowing reveals who really bears the risk when public projects fail. Conventional bonds promise that future taxpayers will pay regardless of outcomes. The government gets money now, citizens inherit the debt later. Revenue-backed financing ties repayment to actual project performance. If the infrastructure doesn't generate expected returns, the financing structure absorbs the loss. Islamic finance prohibits interest-bearing government debt entirely. This creates real fiscal discipline\u2014governments must think like businesses, structuring deals around measurable value creation rather than promises to tax later. The constraint sounds limiting until you realize it forces accountability that conventional systems often lack. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicFinance #PublicFinance #GovernmentDebt #FiscalPolicy #EthicalFinance",
+      "carousel_slides": [
+        "Government borrowing isn't about getting money. It's about who bears the risk.",
+        "Conventional bonds: Future taxpayers pay regardless of project outcomes",
+        "Revenue-backed financing: Project performance determines repayment success",
+        "Islamic constraint: No interest-bearing debt means no promises to tax later",
+        "Real fiscal discipline comes from tying financing to actual value creation"
+      ],
+      "reel_caption": "The hidden truth about government borrowing and who really pays the price. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicFinance #PublicFinance #GovernmentDebt #FiscalPolicy #EthicalFinance",
+      "cover_text": "Who Bears the Risk?",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Government borrowing isn't about accessing capital. It's about who bears the risk when projects fail.\n\nConventional bonds promise future taxpayers will pay regardless of outcomes. Revenue-backed financing ties repayment to actual project performance. Islamic finance prohibits the first option entirely, forcing governments to think like businesses rather than tax collectors.",
+      "discussion_prompt": "Should government financing always be tied to measurable project outcomes?",
+      "topic_suggestion": "Risk allocation in public finance",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+    },
+    "short_video": {
+      "title": "The Hidden Truth About Government Borrowing",
+      "hook": "Government borrowing isn't really about getting money",
+      "voiceover": "Government borrowing isn't about getting money when you need it. It's about who bears the risk when things go wrong. Conventional bonds promise future taxpayers will pay regardless of project outcomes. Revenue-backed financing ties repayment to actual performance. Islamic finance prohibits interest-bearing debt entirely, forcing governments to structure deals around measurable value creation rather than promises to tax later. The constraint creates fiscal discipline that conventional systems often lack.",
+      "shot_list": [
+        {
+          "time": "0-8s",
+          "visual": "Government building with money flowing in",
+          "on_screen_text": "Government borrowing isn't about getting money"
+        },
+        {
+          "time": "8-16s",
+          "visual": "Split screen: taxpayers vs project outcomes",
+          "on_screen_text": "It's about who bears the risk"
+        },
+        {
+          "time": "16-28s",
+          "visual": "Comparison chart of financing methods",
+          "on_screen_text": "Conventional vs Revenue-backed"
+        },
+        {
+          "time": "28-36s",
+          "visual": "Islamic geometric patterns with finance icons",
+          "on_screen_text": "Islamic constraint forces discipline"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Balance scale showing accountability",
+          "on_screen_text": "Real accountability through structure"
+        }
+      ],
+      "caption": "The difference between conventional bonds and revenue-backed financing changes everything about government accountability. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+      "hashtags": [
+        "#IslamicFinance",
+        "#PublicFinance",
+        "#GovernmentDebt",
+        "#FiscalPolicy",
+        "#EthicalFinance"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Most people think government borrowing is about getting money when you need it. It's actually about who bears the risk when things go wrong. Revenue-backed financing puts the burden on governments to deliver real value. Interest-bearing debt puts the burden on future taxpayers to pay regardless of outcomes. The Islamic constraint against interest seems limiting until you realize it forces governments to think like businesses. They can't just promise to tax their way out of problems. They have\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_8912a38c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_8912a38c.png"
+}

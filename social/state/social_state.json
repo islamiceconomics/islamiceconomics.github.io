@@ -585,6 +585,18 @@
         }
       ]
     },
+    "podcast-mm-6-building-the-system": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-mm-6-building-the-system",
+          "generated_at": "2026-04-01T15:02:10.595596+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-mm-6-building-the-system.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-mm-6-building-the-system.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
     "podcast-pu-1-the-forbidden-throw": {
       "history": [
         {
@@ -642,6 +654,66 @@
           "json_path": "social/campaigns/2026-03-27-podcast-pu-6-building-on-solid-ground.json",
           "markdown_path": "social/campaigns/2026-03-27-podcast-pu-6-building-on-solid-ground.md",
           "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-trt-1-why-governments-tax-and-spend": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-1-why-governments-tax-and-spend",
+          "generated_at": "2026-04-01T15:02:33.059107+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-1-why-governments-tax-and-spend.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-1-why-governments-tax-and-spend.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-trt-2-who-pays-and-how-much": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-2-who-pays-and-how-much",
+          "generated_at": "2026-04-01T15:02:58.939536+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-2-who-pays-and-how-much.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-2-who-pays-and-how-much.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-trt-3-what-the-state-owes": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-3-what-the-state-owes",
+          "generated_at": "2026-04-01T15:03:28.666665+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-3-what-the-state-owes.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-3-what-the-state-owes.md",
+          "x_voice_pattern": "content_share"
+        }
+      ]
+    },
+    "podcast-trt-4-what-lies-beneath": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-4-what-lies-beneath",
+          "generated_at": "2026-04-01T15:03:55.992048+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-4-what-lies-beneath.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-4-what-lies-beneath.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-trt-5-the-borrower-s-bargain": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-5-the-borrower-s-bargain",
+          "generated_at": "2026-04-01T15:04:23.894504+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },

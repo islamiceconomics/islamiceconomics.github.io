@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-01-podcast-trt-4-what-lies-beneath",
+  "generated_at": "2026-04-01T15:03:55.992048+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-trt-4-what-lies-beneath",
+    "kind": "podcast",
+    "title": "What Lies Beneath",
+    "summary": "The resource curse, Dutch disease, critical minerals, and the Islamic concept of communal resource ownership.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Countries that discover oil or minerals often end up worse off, not better. The resource curse is one of the most robust findings in development economics: resource wealth weakens institutions, concentrates power, and crowds out productive sectors through Dutch disease. This episode covers the mechanism, the evidence, and the exceptions (Norway, Botswana). Then it turns to Islamic resource economics: the fay' principle that communal resources belong to the community, the hima system of protected commons, and how sovereign wealth funds (particularly the Gulf model) represent a partial modern application. Pakistan's critical minerals reserves make this directly relevant. The honest assessment: Islamic principles point in the right direction, but no Muslim-majority resource economy has fully solved the institutional challenge.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Countries that find oil often end up poorer, not richer. The resource curse weakens institutions while Dutch disease kills productive industries. Norway and Botswana broke the pattern.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Countries that find oil often end up poorer, not richer. The resource curse weakens institutions while Dutch disease kills productive industries.",
+        "Islamic law says communal resources belong to the community, not rulers. The fay' principle and hima commons systems understood this centuries ago.",
+        "Gulf sovereign wealth funds represent a partial return to this idea. But no Muslim-majority resource economy has fully implemented Islamic resource principles.",
+        "Pakistan sits on untapped critical minerals. The question is whether it will follow the curse or find a different path. https://islamiceconomics.github.io/podcast.html#ep-trt-4"
+      ],
+      "hashtags": [
+        "#ResourceCurse",
+        "#IslamicEconomics",
+        "#DutchDisease"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-4"
+    },
+    "linkedin": {
+      "post": "One of development economics' most robust findings: countries that discover oil or minerals often end up worse off, not better. The resource curse weakens institutions, concentrates power, and triggers Dutch disease\u2014where resource wealth crowds out productive sectors. Norway and Botswana are rare exceptions. Islamic economics anticipated this challenge. The fay' principle establishes that communal resources belong to the community, not rulers. The hima system created frameworks for protecting commons from overexploitation. Gulf sovereign wealth funds represent a partial modern application of these principles, channeling resource wealth for broader benefit. Yet no Muslim-majority resource economy has fully implemented Islamic resource governance. With Pakistan sitting on significant critical minerals reserves, these questions move from academic to urgent. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-4",
+      "comment_prompt": "What other examples have you seen of traditional governance systems that anticipated modern economic challenges?"
+    },
+    "instagram": {
+      "caption": "The resource curse is real: countries that discover oil or minerals often end up poorer, not richer. Resource wealth weakens institutions and triggers Dutch disease, crowding out productive sectors. Norway and Botswana are rare exceptions that broke the pattern. Islamic economics understood this centuries ago. The fay' principle says communal resources belong to the community, not rulers. The hima system protected commons from exploitation. Gulf sovereign wealth funds partially apply these ideas today, but no Muslim-majority resource economy has fully implemented Islamic resource governance. Pakistan sits on untapped critical minerals. The path forward matters. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-4 #ResourceCurse #IslamicEconomics #DutchDisease #Pakistan #SovereignWealthFunds",
+      "carousel_slides": [
+        "The Resource Curse: Countries that find oil often get poorer, not richer",
+        "Dutch Disease: Resource wealth kills productive industries by crowding them out",
+        "Islamic Solution: The fay' principle - communal resources belong to the community",
+        "Modern Application: Gulf sovereign wealth funds channel resource wealth for broader\u2026",
+        "Pakistan's Challenge: Critical minerals reserves await the right governance framework"
+      ],
+      "reel_caption": "The resource curse explained: why oil discoveries often make countries poorer. Plus: how Islamic economics anticipated this problem centuries ago. #ResourceCurse #IslamicEconomics #Pakistan",
+      "cover_text": "Why Oil Makes Countries Poorer",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Countries that discover oil often end up worse off, not better. This isn't speculation\u2014it's one of development economics' most robust findings.\n\nThe resource curse weakens institutions while Dutch disease kills productive industries. Norway and Botswana broke the pattern, but most don't.\n\nIslamic law anticipated this through the fay' principle: communal resources belong to the community, not rulers. Pakistan sits on critical minerals reserves.",
+      "discussion_prompt": "Why do you think Norway succeeded where most oil-rich countries failed?",
+      "topic_suggestion": "The resource curse and Islamic\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-4"
+    },
+    "short_video": {
+      "title": "Why Oil Makes Countries Poorer",
+      "hook": "Oil should make countries rich. Instead, it usually makes them poorer.",
+      "voiceover": "Countries that discover oil often end up worse off, not better. It's called the resource curse. Resource wealth weakens institutions and triggers Dutch disease, where oil money crowds out productive industries. Norway and Botswana are rare exceptions. Islamic economics understood this centuries ago. The fay' principle says communal resources belong to the community, not rulers. Gulf sovereign wealth funds partially apply this idea today. Pakistan sits on critical minerals reserves. The governance model they choose will determine whether they follow the curse or break it.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Oil derricks and refineries",
+          "on_screen_text": "Oil = Wealth?"
+        },
+        {
+          "time": "5-10s",
+          "visual": "Economic decline charts",
+          "on_screen_text": "The Resource Curse"
+        },
+        {
+          "time": "10-20s",
+          "visual": "Factory closures",
+          "on_screen_text": "Dutch Disease Kills Industries"
+        },
+        {
+          "time": "20-30s",
+          "visual": "Norway flag and sovereign wealth fund",
+          "on_screen_text": "Norway: The Exception"
+        },
+        {
+          "time": "30-40s",
+          "visual": "Islamic architecture and manuscripts",
+          "on_screen_text": "Islamic Solution: Fay' Principle"
+        }
+      ],
+      "caption": "The resource curse explains why oil discoveries often make countries poorer. Islamic economics offered solutions centuries ago through the fay' principle. #ResourceCurse #IslamicEconomics #Pakistan #DutchDisease #SovereignWealthFunds",
+      "hashtags": [
+        "#ResourceCurse",
+        "#IslamicEconomics",
+        "#Pakistan",
+        "#DutchDisease",
+        "#SovereignWealthFunds"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Countries that find oil often end up poorer, not richer. The resource curse weakens institutions while Dutch disease kills productive industries. Norway and Botswana are the rare exceptions that broke the pattern. Islamic law understood this danger centuries ago through the fay' principle: communal resources belong to the community, not rulers. The hima system protected commons from exploitation. Gulf sovereign wealth funds represent a partial modern return to these principles, but no\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_5c9edb45.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_5c9edb45.png"
+}

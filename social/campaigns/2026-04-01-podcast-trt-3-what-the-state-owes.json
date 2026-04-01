@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-01-podcast-trt-3-what-the-state-owes",
+  "generated_at": "2026-04-01T15:03:28.666665+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-trt-3-what-the-state-owes",
+    "kind": "podcast",
+    "title": "What the State Owes",
+    "summary": "Government spending, public goods provision, and the dual model of bayt al-mal and waqf.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Once you collect taxes, how do you spend them? This episode examines government spending categories (defense, infrastructure, education, healthcare, transfers), the efficiency arguments for and against public provision, and the problems of bureaucracy, crowding out, and rent-seeking. The Islamic historical record shows a dual model: the bayt al-mal funded defense, infrastructure, and poverty relief directly, while the waqf system created a parallel, voluntary layer of public goods provision including hospitals, schools, and water infrastructure. Neither was perfect. The waqf system suffered from rigidity and eventual state capture under the Ottomans. But the institutional design, combining state and non-state provision, is worth studying on its own terms.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Islamic world ran a dual system for centuries: the bayt al-mal handled defense and infrastructure while waqf endowments built hospitals and schools. The Ottomans eventually captured the waqf system. https://islamiceconomics.github.io/podcast.html#ep-trt-3",
+      "voice_pattern": "content_share",
+      "thread": [
+        "The Islamic world ran a dual system for centuries: the bayt al-mal handled defense and infrastructure while waqf endowments built hospitals and schools.",
+        "The state treasury funded what only states can do. The voluntary endowments created a parallel layer of public goods that didn't depend on tax collection.",
+        "Neither system was perfect. The waqf suffered from rigidity over time. Donors locked in specific uses that couldn't adapt to changing needs.",
+        "The Ottomans eventually captured the entire waqf system. What started as voluntary provision became another arm of state control. https://islamiceconomics.github.io/podcast.html#ep-trt-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-3"
+    },
+    "linkedin": {
+      "post": "Government spending raises fundamental questions: What should states provide directly, and what can emerge from voluntary coordination? The Islamic historical record offers an interesting case study. For centuries, Muslim societies operated a dual model: the bayt al-mal (state treasury) funded defense, infrastructure, and poverty relief, while the waqf system created a parallel layer of public goods provision. The waqf endowments built hospitals, schools, and water infrastructure without depending on tax collection or bureaucratic approval. Wealthy individuals and communities voluntarily funded public goods that served broad social needs. Neither system was perfect. The waqf suffered from rigidity\u2014donors locked in specific uses that couldn't adapt to changing circumstances. The Ottomans eventually captured the entire system, turning voluntary provision into another arm of state control. But the institutional design itself\u2014combining state and non-state provision\u2014remains worth studying. It addressed both the efficiency problems of pure state provision and the coordination problems of pure market provision. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-3",
+      "comment_prompt": "What modern examples have you seen of effective voluntary provision of public goods?"
+    },
+    "instagram": {
+      "caption": "The Islamic world solved the public goods problem differently. For centuries, they ran a dual system: the bayt al-mal (state treasury) handled defense and infrastructure, while waqf endowments created a parallel layer of hospitals, schools, and public infrastructure. The genius was institutional design. The state funded what only states can do\u2014defense, basic infrastructure, poverty relief. The endowments handled everything else through voluntary coordination, without depending on tax collection or bureaucratic approval. Neither was perfect. The waqf system suffered from rigidity as donors locked in specific uses that couldn't adapt over time. The Ottomans eventually captured the entire system, turning voluntary provision into state control. But the model itself addressed both the efficiency problems of pure state provision and the coordination problems of pure market provision. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-trt-3 #IslamicEconomics #PublicGoods #History #Economics #Waqf",
+      "carousel_slides": [
+        "The Islamic world ran public goods differently for centuries",
+        "Dual system: Bayt al-mal funded defense & infrastructure",
+        "Waqf endowments built hospitals, schools & water systems",
+        "Voluntary provision without taxes or bureaucracy",
+        "The Ottomans captured the waqf system and ended the experiment"
+      ],
+      "reel_caption": "How the Islamic world solved the public goods problem through a dual system that lasted centuries. The bayt al-mal and waqf model offers lessons for modern public policy. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-3 #IslamicEconomics #PublicGoods #History #Economics #PolicyDesign",
+      "cover_text": "The Dual System of Public Goods",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Islamic world ran a fascinating dual system for centuries. The bayt al-mal funded defense and infrastructure while waqf endowments built hospitals and schools voluntarily.\n\nThe institutional design was brilliant: state provision for what only states can do, voluntary coordination for everything else. No bureaucracy, no tax collection required for the endowments.\n\nThe Ottomans eventually captured the entire waqf system. What started as\u2026",
+      "discussion_prompt": "What modern examples have you seen of effective voluntary provision of public goods?",
+      "topic_suggestion": "Historical models of public goods\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-3"
+    },
+    "short_video": {
+      "title": "The Islamic Dual System for Public Goods",
+      "hook": "The Islamic world solved public goods differently",
+      "voiceover": "For centuries, the Islamic world ran a dual system. The bayt al-mal, or state treasury, handled defense and basic infrastructure. Meanwhile, waqf endowments created a parallel layer of public goods. Wealthy individuals voluntarily funded hospitals, schools, and water systems. No taxes required, no bureaucracy involved. The genius was institutional design: states did what only states can do, while voluntary coordination handled everything else. The system wasn't perfect. Endowments became rigid over time, and the Ottomans eventually captured the whole waqf system. But the model addressed both state inefficiency and market coordination problems simultaneously.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Historical Islamic city illustration",
+          "on_screen_text": "The Islamic dual system"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Animation of state treasury building",
+          "on_screen_text": "Bayt al-mal: Defense & Infrastructure"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Animation of hospital and school buildings",
+          "on_screen_text": "Waqf: Voluntary Public Goods"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Split screen showing both systems",
+          "on_screen_text": "State + Voluntary = Dual Model"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Ottoman-era imagery",
+          "on_screen_text": "Ottomans captured the system"
+        }
+      ],
+      "caption": "The Islamic world's dual model for public goods: state treasury for defense, voluntary endowments for hospitals and schools. The Ottomans ended the experiment. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-3",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#PublicGoods",
+        "#History",
+        "#Economics",
+        "#Policy"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Islamic world ran a dual system for centuries: the bayt al-mal handled defense and infrastructure while waqf endowments built hospitals and schools. The state treasury funded what only states can do\u2014defense, basic infrastructure, poverty relief. The voluntary endowments created a parallel layer of public goods that didn't depend on tax collection or bureaucratic approval. Neither system was perfect. The waqf suffered from rigidity as donors locked in specific uses that couldn't adapt to\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c955b32a.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c955b32a.png"
+}
