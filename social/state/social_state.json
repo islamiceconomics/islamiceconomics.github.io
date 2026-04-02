@@ -657,6 +657,18 @@
         }
       ]
     },
+    "podcast-re-1-what-makes-countries-rich": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-02-podcast-re-1-what-makes-countries-rich",
+          "generated_at": "2026-04-02T14:53:36.662313+00:00",
+          "json_path": "social/campaigns/2026-04-02-podcast-re-1-what-makes-countries-rich.json",
+          "markdown_path": "social/campaigns/2026-04-02-podcast-re-1-what-makes-countries-rich.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
     "podcast-trt-1-why-governments-tax-and-spend": {
       "history": [
         {
@@ -714,6 +726,18 @@
           "json_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.json",
           "markdown_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.md",
           "x_voice_pattern": "reframing"
+        }
+      ]
+    },
+    "podcast-trt-6-building-the-treasury": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-02-podcast-trt-6-building-the-treasury",
+          "generated_at": "2026-04-02T14:53:14.717248+00:00",
+          "json_path": "social/campaigns/2026-04-02-podcast-trt-6-building-the-treasury.json",
+          "markdown_path": "social/campaigns/2026-04-02-podcast-trt-6-building-the-treasury.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
