@@ -669,6 +669,30 @@
         }
       ]
     },
+    "podcast-re-2-the-growth-engine": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-03-podcast-re-2-the-growth-engine",
+          "generated_at": "2026-04-03T14:41:11.311750+00:00",
+          "json_path": "social/campaigns/2026-04-03-podcast-re-2-the-growth-engine.json",
+          "markdown_path": "social/campaigns/2026-04-03-podcast-re-2-the-growth-engine.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-re-3-who-saves-and-why": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-03-podcast-re-3-who-saves-and-why",
+          "generated_at": "2026-04-03T14:41:36.405648+00:00",
+          "json_path": "social/campaigns/2026-04-03-podcast-re-3-who-saves-and-why.json",
+          "markdown_path": "social/campaigns/2026-04-03-podcast-re-3-who-saves-and-why.md",
+          "x_voice_pattern": "question"
+        }
+      ]
+    },
     "podcast-trt-1-why-governments-tax-and-spend": {
       "history": [
         {
