@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-04-podcast-ppr-1-the-architecture-of-debt",
+  "generated_at": "2026-04-04T14:32:47.470130+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-ppr-1-the-architecture-of-debt",
+    "kind": "podcast",
+    "title": "The Architecture of Debt",
+    "summary": "What is a bond? How did debt become the operating system of modern civilization? And why did Islamic scholars see the structural flaw centuries ago?",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "A bond is the simplest thing in finance: a promise to pay back more than you borrowed. But when governments, corporations, and households all run on these promises, you've built a civilization on debt. The global bond market is $130 trillion, dwarfing the stock market, and yet most people never think about it. This episode starts from scratch: what bonds are, how they work, why governments issue them, and how this creates a system where debt isn't just tolerated but required. Al-Ghazali warned that money should facilitate exchange, not generate returns on its own. Ibn Khaldun observed that empires collapse when their debts outgrow their productive capacity. The foundation of the modern financial system is built on something Islamic scholars identified as structurally flawed over 700 years ago.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How did debt become the operating system of modern civilization?",
+      "voice_pattern": "observation",
+      "thread": [
+        "A bond is a promise to pay back more than you borrowed. When governments, corporations, and households all run on these promises, you've built civilization on debt.",
+        "The global bond market is $130 trillion, dwarfing the stock market, yet most people never think about it. This is the operating system running beneath everything.",
+        "Al-Ghazali warned that money should facilitate exchange, not generate returns on its own. Ibn Khaldun observed that empires collapse when debts outgrow productive capacity.",
+        "Islamic scholars identified this structural flaw over 700 years ago. We built the modern financial system on something they knew would break. https://islamiceconomics.github.io/podcast.html#ep-ppr-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-1"
+    },
+    "linkedin": {
+      "post": "What is a bond? The simplest thing in finance: a promise to pay back more than you borrowed. But when governments, corporations, and households all run on these promises, you've built a civilization on debt. The global bond market is $130 trillion, dwarfing the stock market, and yet most people never think about it. This is the operating system running beneath everything we call modern finance. Centuries ago, Islamic scholars saw the structural flaw. Al-Ghazali warned that money should facilitate exchange, not generate returns on its own. Ibn Khaldun observed that empires collapse when their debts outgrow their productive capacity. We built the foundation of the modern financial system on something they identified as fundamentally broken over 700 years ago. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-1",
+      "comment_prompt": "What do you think about building an economic system on debt promises?"
+    },
+    "instagram": {
+      "caption": "A bond is the simplest thing in finance: a promise to pay back more than you borrowed. But when governments, corporations, and households all run on these promises, you've built a civilization on debt. The global bond market is $130 trillion, dwarfing the stock market, yet most people never think about it. This is the operating system running beneath everything we call modern finance. Centuries ago, Islamic scholars saw what we missed. Al-Ghazali warned that money should facilitate exchange, not generate returns on its own. Ibn Khaldun observed that empires collapse when their debts outgrow their productive capacity. We built the foundation of the modern financial system on something they identified as structurally flawed over 700 years ago. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-ppr-1 #IslamicEconomics #Finance #Bonds #Debt #Economics",
+      "carousel_slides": [
+        "What is a bond? The simplest thing in finance: a promise to pay back more than you\u2026",
+        "When governments, corporations, and households all run on these promises, you've built\u2026",
+        "The global bond market is $130 trillion, dwarfing the stock market, yet most people\u2026",
+        "Al-Ghazali warned that money should facilitate exchange, not generate returns on its own.",
+        "We built the modern financial system on something Islamic scholars identified as flawed\u2026"
+      ],
+      "reel_caption": "The $130 trillion bond market is civilization running on debt promises. Islamic scholars saw the structural flaw centuries ago. #IslamicEconomics #Finance #Bonds",
+      "cover_text": "The Architecture of Debt",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "A bond is a promise to pay back more than you borrowed. Simple enough. But when governments, corporations, and households all run on these promises, you've built civilization on debt.\n\nThe global bond market is $130 trillion, dwarfing the stock market, yet most people never think about it. Al-Ghazali warned that money should facilitate exchange, not generate returns on its own.\n\nWe built the foundation of the modern financial system on\u2026",
+      "discussion_prompt": "Should money itself generate returns, or just facilitate exchange?",
+      "topic_suggestion": "The hidden bond market that runs\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-1"
+    },
+    "short_video": {
+      "title": "The $130 Trillion System You Never Think About",
+      "hook": "What if I told you civilization runs on debt promises?",
+      "voiceover": "A bond is simple: a promise to pay back more than you borrowed. But when governments, corporations, and households all run on these promises, you've built civilization on debt. The global bond market is 130 trillion dollars, dwarfing the stock market. Al-Ghazali warned that money should facilitate exchange, not generate returns on its own. We built the modern financial system on something Islamic scholars identified as structurally flawed over seven hundred years ago.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Animated bond certificate",
+          "on_screen_text": "What is a bond?"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Buildings, corporations, government buildings",
+          "on_screen_text": "Everyone runs on debt promises"
+        },
+        {
+          "time": "15-25s",
+          "visual": "$130 trillion visualization",
+          "on_screen_text": "$130 trillion bond market"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Historical Islamic scholar illustration",
+          "on_screen_text": "Al-Ghazali's warning"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Modern financial district",
+          "on_screen_text": "Built on a known flaw"
+        }
+      ],
+      "caption": "The bond market is $130 trillion and runs everything. Islamic scholars saw the structural flaw centuries ago. Listen to the full episode.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Finance",
+        "#Bonds",
+        "#Debt",
+        "#Economics"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "A bond is a promise to pay back more than you borrowed. When governments, corporations, and households all run on these promises, you've built civilization on debt. The global bond market is $130 trillion, dwarfing the stock market, yet most people never think about it. Al-Ghazali warned that money should facilitate exchange, not generate returns on its own. Ibn Khaldun observed that empires collapse when their debts outgrow their productive capacity. We built the modern financial system on\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_1064cc26.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_1064cc26.png"
+}
