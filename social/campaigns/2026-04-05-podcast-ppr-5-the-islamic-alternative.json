@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-05-podcast-ppr-5-the-islamic-alternative",
+  "generated_at": "2026-04-05T14:33:51.647314+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-ppr-5-the-islamic-alternative",
+    "kind": "podcast",
+    "title": "The Islamic Alternative",
+    "summary": "Sukuk, musharakah, waqf: Islamic finance has real alternatives to bonds. But does the $4.5 trillion industry actually use them, or just relabel conventional debt?",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Islamic finance offers genuine structural alternatives to the bond market: sukuk backed by real assets, musharakah partnerships where risk is shared, mudarabah ventures tied to real economic activity, and waqf endowments that funded entire civilizations without debt. But the honest reckoning is uncomfortable: the $4.5 trillion Islamic finance industry largely replicates conventional debt with Arabic terminology. Scholars like Taqi Usmani have criticized the gap between principle and practice. This episode examines what real Islamic alternatives look like, what's working, what's window dressing, and what it would take to build a financial system from first principles rather than retrofitting an existing one.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Islamic finance has genuine alternatives to debt: partnerships where risk is shared, ventures tied to real activity, endowments that funded entire civilizations. The $4.5 trillion industry mostly just relabels conventional bonds with Arabic terms.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Islamic finance has genuine alternatives to debt: partnerships where risk is shared, ventures tied to real activity, endowments that funded entire civilizations. The $4.5 trillion industry mostly just relabels conventional bonds.",
+        "Sukuk should be backed by real assets. Musharakah should mean actual partnership. Mudarabah should fund real ventures. Waqf endowments once built universities and hospitals without borrowing a single coin.",
+        "Even Islamic scholars like Taqi Usmani criticize the gap between principle and practice. You can't build an alternative financial system by simply retrofitting the old one with new vocabulary.",
+        "The tools exist. The capital exists. What's missing is the will to actually use Islamic finance as something other than conventional finance with Arabic terminology. https://islamiceconomics.github.io/podcast.html#ep-ppr-5"
+      ],
+      "hashtags": [
+        "#IslamicFinance",
+        "#Ethics",
+        "#Finance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-5"
+    },
+    "linkedin": {
+      "post": "The Islamic finance industry has reached $4.5 trillion by largely replicating conventional debt structures with Arabic terminology. Yet genuine alternatives exist: sukuk backed by real assets, musharakah partnerships where risk is truly shared, mudarabah ventures tied to actual economic activity, and waqf endowments that historically funded entire civilizations without debt. Even prominent scholars like Taqi Usmani have criticized this gap between Islamic principles and current practice. The industry has the tools and capital to build something fundamentally different, but continues retrofitting existing financial structures rather than creating from first principles. The question isn't whether Islamic alternatives to conventional finance are possible\u2014it's whether the industry has the will to actually implement them. https://islamiceconomics.github.io/podcast.html#ep-ppr-5",
+      "comment_prompt": "What would it take for Islamic finance to move beyond relabeling conventional products?"
+    },
+    "instagram": {
+      "caption": "Islamic finance has grown to $4.5 trillion, but here's the uncomfortable truth: it largely replicates conventional debt with Arabic names. Real alternatives exist and have worked for centuries: \u2022 Sukuk backed by actual assets, not synthetic structures \u2022 Musharakah partnerships with genuine risk-sharing \u2022 Mudarabah ventures tied to real economic activity \u2022 Waqf endowments that built entire civilizations without debt Even scholars like Taqi Usmani criticize the gap between Islamic principles and current practice. The industry has the tools to build something fundamentally different\u2014but continues retrofitting the old system instead of creating from first principles. The capital exists. The knowledge exists. What's missing is the courage to actually implement Islamic finance as more than conventional finance with new vocabulary. Listen to the full discussion at the link in bio. #IslamicFinance #EthicalFinance #Finance #Economics #Sukuk",
+      "carousel_slides": [
+        "The $4.5 trillion Islamic finance industry has a problem: it mostly just relabels\u2026",
+        "Real alternatives exist: Sukuk backed by actual assets, not synthetic debt structures",
+        "Musharakah partnerships where risk is genuinely shared between all parties",
+        "Waqf endowments that funded entire civilizations without borrowing a single coin",
+        "Even Islamic scholars like Taqi Usmani criticize the gap between principle and practice"
+      ],
+      "reel_caption": "Islamic finance has real alternatives to conventional debt\u2014but does the $4.5 trillion industry actually use them? Listen to explore what genuine Islamic finance looks like versus window dressing. #IslamicFinance #EthicalFinance #Finance #Economics #Sukuk",
+      "cover_text": "Real Islamic Finance vs Window Dressing",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Islamic finance promises alternatives to conventional debt: partnerships where risk is shared, ventures tied to real economic activity, endowments that funded entire civilizations without borrowing.\n\nThe $4.5 trillion industry mostly just relabels conventional bonds with Arabic terminology. Even scholars like Taqi Usmani criticize this gap between principle and practice.\n\nThe tools exist. The capital exists. What's missing is the will to build\u2026",
+      "discussion_prompt": "Why do you think Islamic finance ended up replicating conventional structures instead of creating genuine alternatives?",
+      "topic_suggestion": "Building financial systems from first\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-5"
+    },
+    "short_video": {
+      "title": "Islamic Finance: Real Alternative or Rebranding?",
+      "hook": "The $4.5 trillion Islamic finance industry has a problem",
+      "voiceover": "Islamic finance has genuine alternatives to conventional debt. Sukuk backed by real assets. Musharakah partnerships where risk is actually shared. Waqf endowments that funded entire civilizations without borrowing. But here's the uncomfortable truth: the four-point-five trillion dollar industry mostly just relabels conventional bonds with Arabic terms. Even Islamic scholars like Taqi Usmani criticize this gap between principle and practice. The tools exist to build something fundamentally different. What's missing is the will to actually use them.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Financial charts and Islamic geometric patterns",
+          "on_screen_text": "$4.5 trillion industry"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Traditional Islamic architecture and modern banks",
+          "on_screen_text": "Real alternatives exist"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Split screen: Arabic text vs conventional finance",
+          "on_screen_text": "Relabeling vs restructuring"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Scholar speaking, traditional Islamic texts",
+          "on_screen_text": "Even scholars criticize the gap"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Question mark over financial buildings",
+          "on_screen_text": "Tools exist. Will doesn't."
+        }
+      ],
+      "caption": "Islamic finance has real alternatives to debt\u2014but does the $4.5 trillion industry actually use them, or just relabel conventional products? Listen to the full discussion to explore genuine Islamic finance versus window dressing.",
+      "hashtags": [
+        "#IslamicFinance",
+        "#EthicalFinance",
+        "#Finance",
+        "#Economics",
+        "#Sukuk"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Islamic finance has genuine alternatives to debt: partnerships where risk is shared, ventures tied to real economic activity, endowments that funded entire civilizations without borrowing. The $4.5 trillion industry mostly just relabels conventional bonds with Arabic terms. Sukuk should represent real assets, not synthetic structures. Musharakah should mean actual partnership in profit and loss. Waqf endowments once built entire universities and hospital systems without debt. Even scholars\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_1b3d744e.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_1b3d744e.png"
+}
