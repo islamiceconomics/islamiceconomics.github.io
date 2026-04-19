@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>İslam Ekonomisinin Biçimsel Teorisi - İslam Ekonomisi</title>
+<meta content="İslami ekonomi teorisi: İslami aksiyomlara dayanan tüketici tercihi, üretim, piyasa yapısı ve genel dengenin resmi matematiksel modelleri." name="description"/>
+<link href="https://islamiceconomics.github.io/tr/theory.html" rel="canonical"/><link href="https://islamiceconomics.github.io/theory.html" hreflang="en" rel="alternate"/><link href="https://islamiceconomics.github.io/ur/theory.html" hreflang="ur" rel="alternate"/><link href="https://islamiceconomics.github.io/ar/theory.html" hreflang="ar" rel="alternate"/><link href="https://islamiceconomics.github.io/tr/theory.html" hreflang="tr" rel="alternate"/><link href="https://islamiceconomics.github.io/theory.html" hreflang="x-default" rel="alternate"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<script>
+      (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+<style>
+        /* Chapter Card Styling */
+        .chapter-card {
+            border-left: 5px solid #999;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: #fafafa;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .chapter-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapter-card.available {
+            border-left-color: #10b981;
+        }
+
+        .chapter-card.in-progress {
+            border-left-color: #f59e0b;
+        }
+
+        .chapter-card.coming-soon {
+            border-left-color: #d1d5db;
+        }
+
+        .chapter-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .chapter-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            font-family: 'Georgia', serif;
+            line-height: 1.3;
+        }
+
+        .chapter-description {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .chapter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e5e7eb;
+            color: #374151;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .chapter-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .status-badge.available {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-badge.in-progress {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-badge.coming-soon {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .read-chapter-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .read-chapter-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .read-chapter-link.disabled {
+            color: #9ca3af;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Methodology Section */
+        .methodology-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .methodology-box h3 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+
+        .methodology-list {
+            margin-left: 1.5rem;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .methodology-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Connection Box */
+        .connection-box {
+            background-color: #f5f3ff;
+            border-left: 4px solid #8b5cf6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .connection-box h3 {
+            color: #6d28d9;
+            margin-top: 0;
+        }
+
+        .connection-box p {
+            color: #4c1d95;
+            line-height: 1.8;
+        }
+
+        .connection-box a {
+            color: #7c3aed;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .connection-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Related Sections */
+        .related-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .related-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-color: #d1d5db;
+        }
+
+        .related-card h4 {
+            color: #1f2937;
+            margin-top: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .related-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .related-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .related-card a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Introduction Section Enhancement */
+        .introduction-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        /* Chapter Grid */
+        .chapters-grid {
+            margin: 2rem 0;
+        }
+
+        /* Section divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+            margin: 3rem 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .chapter-card {
+                padding: 1.5rem;
+            }
+
+            .chapter-number {
+                font-size: 2rem;
+            }
+
+            .chapter-title {
+                font-size: 1.4rem;
+            }
+
+            .chapter-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .related-sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+<div class="container nav-container">
+<a class="nav-logo" href="index.html">İslam Ekonomisi</a>
+<button aria-label="Gezinmeyi değiştir" class="nav-toggle" data-nav-toggle="">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-menu">
+<li><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+<li class="nav-dropdown">
+<button class="nav-dropdown-toggle active">Öğren <span class="nav-dropdown-arrow">▾</span></button>
+<ul class="nav-dropdown-menu">
+<li><a href="foundations.html">Temeller</a></li>
+<li><a class="active" href="theory.html">Teori</a></li>
+<li><a href="research.html">Araştırma</a></li>
+<li><a href="history.html">Tarih</a></li>
+<li><a href="comparative.html">Mukayeseli Ekonomi</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="scriptures.html">Ayet ve Hadis</a></li>
+<li><a class="nav-link" href="dashboard.html">Kontrol Paneli</a></li>
+<li><a class="nav-link" href="podcast.html">Medya</a></li>
+<li><a class="nav-link" href="blog.html">Al-Tijarah</a></li>
+<li><a class="nav-link" href="about.html">Hakkında</a></li>
+</ul>
+<div aria-label="Dil secici" class="lang-switcher"><a class="lang-toggle" href="../theory.html" lang="en">EN</a><a class="lang-toggle" href="../ur/theory.html" lang="ur">اردو</a><a class="lang-toggle" href="../ar/theory.html" lang="ar">العربية</a><a aria-current="page" class="lang-toggle active" href="theory.html" lang="tr">Türkçe</a></div>
+<button aria-label="Karanlık modu değiştir" class="theme-toggle">
+<span class="icon-moon">☾</span>
+<span class="icon-sun">☼</span>
+</button>
+</div>
+</nav>
+<!-- Hero Banner -->
+<section class="hero hero-small">
+<div class="container">
+<nav aria-label="Ekmek kırıntısı" class="breadcrumb">
+<a href="index.html">Ana Sayfa</a> <span>/</span> <span>Biçimsel Teori</span>
+</nav>
+<h1 class="hero-title">İslam Ekonomisinin Biçimsel Teorisi</h1>
+<p class="hero-subtitle">Tercih aksiyomlarından genel dengeye kadar İslami ilkelere dayanan titiz bir matematiksel çerçeve</p>
+</div>
+</section>
+<!-- Introduction Section -->
+<section class="section introduction-section">
+<div class="container">
+<div class="section-intro fade-in">
+<h2>Amaç ve Kapsam</h2>
+<p>Bu bölüm, standart mikroekonomik teorinin metodolojisini (Mas-Colell, Whinston &amp; Green'in çalışmasında örneklendiği gibi) takip ederek, ilk prensiplerden itibaren İslam ekonomisinin matematiksel temellerini geliştirmektedir. <em>Mikroekonomik Teori</em>İslami teoloji, içtihat ve felsefi ilkelerden türetilen normatif kısıtlamaları ve etik aksiyomları sistematik olarak birleştirirken. Amaç tamamen bağlantısız bir sistem yaratmak değil, daha ziyade İslami ilkelerin standart ekonomik teoriyi izlenebilir, işlevsel hale getirilebilir yollarla nasıl değiştirdiğini, iyileştirdiğini ve genişlettiğini matematiksel bir hassasiyetle göstermektir.</p>
+<p>Temel anlayış, İslam ekonomisinin, kısıtlamaların etik açıdan temellendirildiği kısıtlı bir optimizasyon problemi olarak resmileştirilebileceğidir. Standart mikroekonomi tercihleri ​​verili olarak alır ve bunların sonuçlarını anlamaya çalışırken, İslami ekonomi teorisi hangi tercihlerin ve seçimlerin İslami açıdan caiz olduğunu inceleyerek başlar ve ardından bu kısıtlamalara tabi olan optimizasyonu analiz eder. Yasaklanması <em>faiz</em> (faiz) zamanlar arası tercihi ve finansal sözleşmeyi değiştirir. yükümlülüğü <em>zekat</em> (zorunlu sadaka) hem bir kısıtlama hem de faydanın bir bileşeni olarak işlev görür. İzin verilmemesi <em>garar</em> (aşırı belirsizlik) uygulanabilir sözleşmeler dizisini kısıtlar. Kavramı <em>faiz</em> (kamu yararı) ve <em>Makasid el-şeriat</em> (İslam hukukunun amaçları) faydacı çerçevelere alternatif sosyal refah kriterleri sağlar. Bunlar geçici kısıtlamalar değil, tutarlı bir etik dünya görüşünden kaynaklanan sistematik değişikliklerdir.</p>
+<p>Her bölüm, bireysel tercih teorisinden piyasa yapılarına, genel denge ve makroekonomik birikime doğru ilerleyerek sırayla inşa ediliyor. Baştan sona üç taahhüdümüzü sürdürüyoruz: (1) modern ekonominin biçimsel aygıtlarını kullanarak matematiksel titizlik ve kesinlik; (2) her kısıtlamayı açıkça İslami kaynaklara ve ilkelere bağlayan teolojik temellendirme; ve (3) ortaya çıkan modellerin analitik olarak çözülebilir ve ampirik olarak tahmin edilebilir olmasını sağlayan ekonomik izlenebilirlik. Sonuç, hem İslam alimlerine hem de eğitimli iktisatçılara akıcı bir şekilde hitap eden, tarihsel olarak İslam hukukunu ekonomi biliminden ayıran disiplin ayrılığı arasında köprü kuran bir çerçevedir.</p>
+</div>
+</div>
+</section>
+<!-- Connection to Foundations -->
+<section class="section">
+<div class="container">
+<div class="connection-box fade-in">
+<h3>Bunun Temellerle Baglantisi Nedir?</h3>
+<p>Bu resmi modellerin altında yatan teolojik ve hukuksal ilkeler, bizim çalışmamızda kapsamlı bir şekilde geliştirilmiştir. <a href="foundations.html">Temeller bölümü</a>. Burada temel kavramlar için Kur'an, Sünnet ve Fıkıh temellerini oluşturuyoruz: <em>faiz</em> ve kâr ve ücretten farkı; kurumu <em>zekat</em> ve makroekonomik istikrar sağlayıcı rolü; mekanizması <em>vakıf</em> ve daimi güvenler; gibi ortaklık yapıları <em>Mudaraba</em> Ve <em>muşaraka</em>; İslami finans araçları dahil <em>murabaha</em>, <em>kira</em>, <em>selam</em>, Ve <em>istisna</em>; ve ilkesi <em>faiz</em> (kamu yararı) hukuki muhakemede. Bu Teori bölümü, aksiyomların ve kısıtlamaların kesin olarak tanımlandığı modeller oluşturarak bu ilkeleri resmi matematik diline çevirir, test edilebilir önermeler türetmemize ve politika analizi ve ampirik araştırmalar için hesaplanabilir çerçeveler oluşturmamıza olanak tanır.</p>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Chapter Listing -->
+<section class="section">
+<div class="container">
+<h2 class="section-title fade-in">Resmi Bölümler</h2>
+<p class="section-subtitle fade-in">Bireysel tercihlerden makroekonomik çerçevelere kadar İslami ekonomi teorisinin sistematik bir şekilde ele alınması</p>
+<div class="chapters-grid">
+<!-- Chapter 1 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">BEN</div>
+<h3 class="chapter-title">İslami Tercihler Aksiyomları</h3>
+<p class="chapter-description">Herhangi bir ekonomik sistemde tüketici teorisinin temeli tercih ilişkilerine dayanır. Bu bölümde standart mikroekonomik aksiyomların (tamlık, geçişlilik, süreklilik, monotonluk ve dışbükeylik) İslami etik çerçeve içerisinde nasıl değiştirildiği incelenmektedir. Monotonluk İslam'ın yasakladığı şeylerle sınırlıdır. <em>israf</em> (israf ve israf), bu da doyum noktalarının ve tüketim tavanlarının varlığını ima eder. Tüketim seti, optimizasyondan önce helal/haram sınıflandırmaları ile sınırlandırılır ve izin verilmeyen mallar uygun seçim setinden hariç tutulur. Aksiyomunu tanıtıyor ve resmileştiriyoruz <em>vasatiyye</em> (ılımlılık) ve tercihlerin toplanması ve nesiller arası fayda için biçimsel sonuçlarını türetin.</p>
+<div class="chapter-tags">
+<span class="tag">Tercihler</span>
+<span class="tag">Yardımcı Program</span>
+<span class="tag">Helal Kısıtlaması</span>
+<span class="tag">Israf</span>
+<span class="tag">Vasatiyye</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter1_axioms_of_islamic_preferences.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 2 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">II</div>
+<h3 class="chapter-title">Kamu Hizmeti Temsilciliği ve İslami Temsilci</h3>
+<p class="chapter-description">Tercih aksiyomlarına dayanarak İslami tercihlerle tutarlı fayda temsilleri elde ediyoruz. Bu bölümün merkezinde, iki bileşenli bir fayda çerçevesinin tanıtılması yer almaktadır: dünyevi bir bileşen (bu yaşamdaki maddi tüketimden elde edilen tatminle ilgili, <em>dünya</em>) ve eskatolojik bir bileşen (ahiretle ilgili, <em>Sonunda</em>). Bu çerçevede aşağıdaki gibi eylemler <em>zekat</em>, <em>sadaka</em> (gönüllü hayır kurumu) ve <em>vakıf</em> Ahiret bileşeninde maddi tüketim getirilerini azaltan, fedakarlığa veya sosyal tercihlere başvurmadan gönüllü servet transferi için katı bir rasyonellik sağlayan kuruluş. Bu genişletilmiş fayda gösterimi için varlık ve teklik teoremlerini kanıtlıyoruz, bu tür temsillerin sürekli ve monoton olduğu koşulları oluşturuyoruz ve tüketim-tasarruf kararları ve uzun vadeli planlama için çıkarımlar türetiyoruz.</p>
+<div class="chapter-tags">
+<span class="tag">Yardımcı İşlev</span>
+<span class="tag">Dünya-Ahirah Modeli</span>
+<span class="tag">Zekat Rasyonelliği</span>
+<span class="tag">Varlık Teoremleri</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter2_utility_representation.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 3 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">III</div>
+<h3 class="chapter-title">İslami Kısıtlamalar Altında Tüketici Teorisi</h3>
+<p class="chapter-description">Standart tüketici optimizasyonu üç temel İslami kısıtlama tarafından değiştirilmektedir: (1) izin verilmeyen ürünleri a priori hariç tutan helal tüketim seti; (2) <em>zekat</em> kesin olarak tanımlanmış oranlar ve muafiyet eşikleri ile zorunlu bir servet veya gelir vergisi işlevi gören yükümlülük; ve (3) <em>faiz</em> dönemlerarası borçlanmayı kısıtlayan ve geleneksel borç temelli tüketim yumuşatmayı ortadan kaldıran yasak. Bu bölüm, bu kısıtlamalar altında Marshallian ve Hicksian talep fonksiyonlarını türetmekte, zekat ve helal kısıtlamalarının varlığında Slutsky ayrıştırmasını oluşturmakta ve zekat yükümlülüğünün mallar ve zaman dilimleri genelinde optimal tüketim paketlerini nasıl etkilediğini karakterize etmektedir. Fiyatlar, zenginlik ve zekat oranı açısından karşılaştırmalı istatistikleri inceliyoruz, talep sistemleri için istikrar koşullarını türetiyoruz ve eşdeğer çeşitlilik ve telafi edici değişkenlik önlemleri yoluyla standart çerçevelere karşı İslami kısıtlamaların refah sonuçlarını analiz ediyoruz.</p>
+<div class="chapter-tags">
+<span class="tag">Talep Teorisi</span>
+<span class="tag">Slutsky Denklemi</span>
+<span class="tag">Zekat Kısıtlaması</span>
+<span class="tag">Bütçe Setleri</span>
+<span class="tag">Karşılaştırmalı Statik</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter3_consumer_theory.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 4 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">IV</div>
+<h3 class="chapter-title">Üretici Teorisi ve İslami Firma</h3>
+<p class="chapter-description">İslami firma, geleneksel firmalarla karşılaştırıldığında temelde farklı finansman ve sözleşme kısıtlamaları altında faaliyet göstermektedir. Faize dayalı borçlanma yasağıyla karşı karşıyadır (<em>faiz</em>gibi özkaynağa benzer araçlara güvenmeyi gerektirir. <em>Mudaraba</em> (emek-sermaye ayrımlı kar paylaşımlı ortaklıklar) ve <em>muşaraka</em> (sermaye, yönetim ve kar-zararın paylaşıldığı iş ortaklıkları). Yasaklanması <em>garar</em> (aşırı sözleşme belirsizliği) izin verilen finansal sözleşmelerin alanını kısıtlar. Bu bölüm, bu kısıtlamalar altında firmanın maliyet minimizasyonu ve kar maksimizasyonu sorunlarını resmileştirmekte, değiştirilmiş arz fonksiyonlarını ve faktör talep eğrilerini türetmekte ve kar-zarar paylaşımının (sabit borç hizmetinin aksine) üretim kararlarını, yatırımcılar arasındaki risk tahsisini, sermaye yapısını ve piyasaya girişi nasıl etkilediğini analiz etmektedir. Üretim verimliliği için koşullar oluşturuyoruz, finansman yapısı ile operasyonel kararlar arasındaki ilişkiyi inceliyoruz ve İslami firmanın kısıtlamalarının, üretken verimlilik ve dinamik verimlilik açısından geleneksel firmayla karşılaştırıldığında nasıl olduğunu analiz ediyoruz.</p>
+<div class="chapter-tags">
+<span class="tag">Firma Teorisi</span>
+<span class="tag">Mudaraba</span>
+<span class="tag">Muşaraka mı?</span>
+<span class="tag">घरार</span>
+<span class="tag">Kâr-Zarar Paylaşımı</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter4_producer_theory.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 5 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">V</div>
+<h3 class="chapter-title">Piyasa Yapısı ve Sözleşme Teorisi</h3>
+<p class="chapter-description">İslam ekonomisinde piyasalar sınırlı bir sözleşme alanı içerisinde faaliyet göstermektedir. Yasaklanması <em>faiz</em> borca ​​dayalı araçları ortadan kaldırır; yasaklanması <em>garar</em> spekülatif ve tanımlanmamış sözleşmeleri kısıtlar; yasaklanması <em>ihtikar</em> (tekelci istifçilik ve piyasa manipülasyonu) piyasa gücünü kısıtlar; ve sözleşmelerdeki şeffaflık gerekliliği bilgi asimetrisinden yararlanmayı sınırlandırmaktadır. Bu bölüm, bu İslami kısıtlamalar altında rekabetçi dengeyi, tekeli ve oligopolü analiz etmektedir. İslami finansal araçlar için resmi bir sözleşme teorisi çerçevesi geliştiriyoruz: <em>murabaha</em> (maliyet artı finansman), <em>kira</em> (İslami kiralama), <em>selam</em> (vadeli satış) ve <em>istisna</em> (imalat sözleşmesi), optimallik özelliklerini ve karşılaştırmalı avantajlarını karakterize eder. Bu kısıtlamaların piyasa verimliliğini (Pareto anlamında), fiyat oluşum mekanizmalarını, piyasa gücünün kötüye kullanımını ve kısıtlanmamış piyasalara göre refah sonuçlarını nasıl etkilediğini inceliyoruz. Bu bölüm, İslami piyasa kısıtlamalarının tahsis etkinliğini arttırdığı veya azalttığı resmi koşulların belirlenmesiyle sonuçlanmaktadır.</p>
+<div class="chapter-tags">
+<span class="tag">Piyasa Dengesi</span>
+<span class="tag">Sözleşme Teorisi</span>
+<span class="tag">İhtikar</span>
+<span class="tag">İslami Aletler</span>
+<span class="tag">Yeterlik</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter5_market_structure.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 6 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">VI</div>
+<h3 class="chapter-title">Genel Denge</h3>
+<p class="chapter-description">Önceki tüm İslami kısıtlamaları ve kurumları içeren resmi bir genel denge çerçevesi oluşturuyoruz. Arrow-Debreu çerçevesini temel alarak, standart GE modelini şu şekilde değiştiriyoruz: (1) varlık alanını riba bazlı araçları hariç tutacak şekilde sınırlandırıyoruz; (2) zorunlu zekat kurumunun denge içerisinde yeniden dağıtım mekanizması olarak dahil edilmesi; (3) uygulanabilir tahsis setlerine helal ve İslami etik kısıtlamalarının getirilmesi; ve (4) dünya-ahire fayda yapısını yansıtan içsel tercihlerin tanıtılması. Temel teorik sonuç, bu değişiklikler altında genel dengenin varlığıdır. Refah Ekonomisinin Temel Teoremlerinin ne zaman geçerli olduğunu tespit ediyoruz ve İslami kısıtlamaların ve yeniden dağıtımın (zekat yoluyla) standart kapitalist dengeye göre Pareto iyileştirmelerine yol açıp açmadığını inceliyoruz. Denge tahsisleri kümesini karakterize ediyoruz, denge fiyatlarının benzersizliğini analiz ediyoruz ve küçük dalgalanmalara göre dengenin istikrarını inceliyoruz. Bölüm, İslami GE ile alternatif ekonomik sistemler (sosyalist, neoklasik kapitalist ve paydaş kapitalizmi modelleri) arasındaki resmi bir karşılaştırmayla sona ermektedir.</p>
+<div class="chapter-tags">
+<span class="tag">Ok-Debreu</span>
+<span class="tag">Refah Teoremleri</span>
+<span class="tag">Varoluş</span>
+<span class="tag">Pareto Verimliliği</span>
+<span class="tag">Yeniden dağıtım</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter6_general_equilibrium.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 7 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">VII</div>
+<h3 class="chapter-title">Refah Ekonomisi ve Sosyal Seçim</h3>
+<p class="chapter-description">İslami refah ekonomisi şu kavramı ortaya koyar: <em>faiz</em> (kamu yararı ve sosyal refah), standart Pareto verimliliğinin yanında yer alan ve potansiyel olarak onunla rekabet eden birincil bir sosyal refah kriteri olarak. Biz resmi olarak maslahatı sosyal refah fonksiyonu olarak tanımlıyoruz. <em>Makasid el-şeriat</em> (İslam hukukunun amaçları): dinin, hayatın, aklın, neslin (aile ve sosyal bağlar) ve mülkiyetin korunması ve beslenmesi. Bu hedefler, sosyal tercih için faydacı, eşitlikçi ve Rawlsçu alternatiflerden farklı aksiyomatik temeller sağlar. Bu bölüm, İslami ilkeleri karşılayan, varlık ve teklik sonuçlarını ortaya koyan sosyal refah fonksiyonlarını aksiyomatik olarak karakterize etmektedir. Maslahat temelli refah ile standart sosyal seçim kriterleri arasındaki ilişkiyi inceliyoruz, bireysel tercih üzerindeki İslami kısıtlamaların (helal kısıtlama, zekat yükümlülüğü) toplam sosyal refahı nasıl etkilediğini analiz ediyoruz ve İslami sosyal refah maksimumunun faydacı optimumdan ayrıldığı koşulları karakterize ediyoruz. Bu bölüm, Rawls'un farklılık ilkelerini İslami eşitlik kavramlarıyla karşılaştırarak ve adil dağıtımın belirlenmesinde mülkiyet hakları, miras ve bağışın rolünü inceleyerek İslami çerçevelerde dağıtımcı adaletin resmi bir analiziyle sona ermektedir.</p>
+<div class="chapter-tags">
+<span class="tag">Faiz</span>
+<span class="tag">Makasid el-Şeriat</span>
+<span class="tag">Sosyal Refah</span>
+<span class="tag">Sosyal Seçim</span>
+<span class="tag">Rawls Karşılaştırması</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter7_welfare_economics.html">Bölümü Oku →</a>
+</div>
+</div>
+<!-- Chapter 8 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">VIII</div>
+<h3 class="chapter-title">Makroekonomik Temeller</h3>
+<p class="chapter-description">Bölüm I'den VII'ye kadar geliştirilen mikroekonomik teorik temel üzerine inşa edilen bu bölüm, büyüme, döngüler, enflasyon, işsizlik ve politika analizine uygun makroekonomik modelleri bir araya getiriyor. Bölüm II'deki dünya-ahire tercihlerini ve kısıtlamalarını içeren temsili bir İslami fail modeli geliştiriyoruz, standart faiz oranı aktarım mekanizmasının varlık fiyatı ve kar oranı bazlı para politikası kanallarıyla değiştirildiği İslam ekonomisine uyarlanmış bir Yeni Keynesyen Dinamik Stokastik Genel Denge (DSGE) çerçevesi oluşturuyoruz ve zekatın yeniden dağıtımı ve vakıf temelli kamu yatırımı yoluyla maliye politikasını tanıtıyoruz. Bu bölüm, riba yasağının parasal aktarımı nasıl etkilediğini, zekatın nasıl otomatik dengeleyici bir işlev gördüğünü ve İslami finansın kar paylaşımı yapısının iş çevrimi dinamiklerini nasıl etkilediğini açıkça modelliyor. Makroekonomik denge yollarının varlığını ve istikrarını belirliyoruz, parasal ve mali şoklara verilen tepkileri türetiyoruz ve İslami parasal ve mali çerçevelerin, fiyat istikrarını korurken çıktıyı ve istihdamı istikrara kavuşturmada geleneksel alternatiflerden daha iyi performans gösterdiği koşulları inceliyoruz. Bu bölüm, resmi mikroekonomik teoriden Araştırma bölümünde politika simülasyonu ve tahmin için kullanılan uygulamalı hesaplamalı modellere köprü kurar.</p>
+<div class="chapter-tags">
+<span class="tag">Toplama</span>
+<span class="tag">Yeni Keynesyen</span>
+<span class="tag">Para Politikası</span>
+<span class="tag">Maliye Politikası</span>
+<span class="tag">DSGE Köprüsü</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">Mevcut</span>
+<a class="read-chapter-link" href="../theory/chapter8_macro_foundations.html">Bölümü Oku →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Methodology Section -->
+<section class="section">
+<div class="container">
+<h2 class="section-title fade-in">Metodoloji ve Matematik Kuralları</h2>
+<div class="methodology-box fade-in">
+<h3>Resmi Standartlar ve Sunum</h3>
+<ul class="methodology-list">
+<li><strong>Matematiksel Kesinlik:</strong> Tüm resmi sonuçlar matematiksel ekonominin standart kurallarına uygundur: tanımlar kavramları kesin bir şekilde oluşturur; lemmalar ana teoremler için gereken yardımcı sonuçları kanıtlar; önermeler ikincil öneme sahip yeni sonuçlar sunar; teoremler her bölümün ana sonuçlarını belirtir. Her önerme ve teorem, mantıksal yapının doğrulanabilirliğini ve anlaşılmasını sağlamak için bölüm içinde veya özel bir ekte bir kanıt içerir.</li>
+<li><strong>Gösterim ve Erişilebilirlik:</strong> Eğitimli ekonomistlerin erişilebilirliğini sağlamak ve disiplinler arası iletişimi en üst düzeye çıkarmak için çağdaş mikroekonomik teoriden (Mas-Colell, Whinston &amp; Green ve Jehle &amp; Reny'de bulunan) standart gösterimi kullanıyoruz. Tüketim seti ℝ ile gösterilir<sub>+</sub><sup>L</sup>; tercihler ikili ilişkiler ≽, ≻ ile temsil edilir; fayda fonksiyonları u(·) ile gösterilir; fiyatlar p ∈ ℝ<sub>++</sub><sup>L</sup>; ve bütçe setleri standart çerçeveyi takip eder. İslami kısıtlamalar getirildiğinde, tüketim setini açıkça değiştiririz (örn. helal bir H ⊂ ℝ alt kümesiyle sınırlandırmak).<sub>+</sub><sup>L</sup>) ve amaç fonksiyonu (örneğin, ahiret dönüşlerinin dahil edilmesi), İslami ilkelerin standart teoriyi nerede değiştirdiği konusunda netliği korumak için.</li>
+<li><strong>Açık Teolojik Temellendirme:</strong> Her İslami aksiyom, kısıtlama veya kurum, Kur'an, Sünnet ve klasik İslam hukukundaki (fıkıh) kaynaklarına açıkça atıfta bulunularak tanıtılır. Her kısıtlama, İslami temelini belirten bir etiket taşır (örneğin, "Kısıtlama C.1: Riba Yasağı (Kuran 2:275, 3:130'dan)" veya "Aksiyom P.2: Vasatiyyah/Ilımlılık (Kuran 2:143'ten)"). Bu, resmi sonuçların teolojik temellere kadar izlenebilmesini ve İslami aksiyomlarda yapılan değişikliklerin, yalnızca matematiksel sorular olarak değil, açıkça teolojik sorular olarak tartışılabilmesini sağlar.</li>
+<li><strong>Ekonomik İzlenebilirlik:</strong> Resmi titizlik ve teolojik temel her şeyden önemli olsa da, ekonomik izlenebilirlik taahhüdümüzü sürdürüyoruz. Her model, mümkün olduğu yerde analitik olarak çözülebilir (örneğin, talep fonksiyonları için kapalı form çözümler türetme) ve analitik çözümlerin zor olduğu durumlarda hesaplama açısından tahmin edilebilir olacak şekilde inşa edilmiştir. Bu, Teoride geliştirilen modellerin Araştırma bölümünde tartışılan uygulamalı araştırma modellerinde işlevsel hale getirilmesini sağlar.</li>
+<li><strong>Karşılaştırmalı Analiz:</strong> Bu yaklaşımın önemli bir özelliği standart ekonomik teoriyle sistematik karşılaştırmadır. İslami bir kısıtlama standart bir sonucu değiştirdiğinde, sonuçları açıkça karşılaştırırız: örneğin, "Standart varsayımlar altında, Tüketici Optimizasyon Teoremi X.1, P mülkünü ima eder; Teorem X.2, zekat kısıtlaması altında bunun yerine P' mülkünün geçerli olduğunu ve talep esneklikleri ve refah için aşağıdaki çıkarımları belirler."</li>
+</ul>
+</div>
+<div class="connection-box fade-in">
+<h3>Uygulamalı Araştırmayla Bağlantı</h3>
+<p>Bu bölümde geliştirilen resmi teorik çerçeveler, çalışmamızdaki tüm uygulamalı niceliksel çalışmaların temelini oluşturmaktadır. <a href="research.html">Araştırma bölümü</a>. Bu bölümdeki hesaplamalı modeller, ekonometrik özellikler ve politika simülasyonları, burada oluşturulan teorik sonuçları işlevsel hale getirir. Örneğin, Bölüm III'te türetilen talep fonksiyonları, modern panel ekonometri teknikleri kullanılarak tahmin edilmektedir; Bölüm IV'teki firma optimizasyon sonuçları firma düzeyinde üretim fonksiyonu modellerini oluşturmak için kullanılır; ve Bölüm VIII'deki makroekonomik çerçeve, tahmin ve politika simülasyonu için kullanılan DSGE modellerinin temelini oluşturmaktadır. Teoriden Araştırmaya geçen okuyucular, artık tahmini parametreler ve ampirik doğrulamayla aynı matematiksel yapıyı ve İslami kısıtlamaları tanıyacaklardır.</p>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Related Sections -->
+<section class="section">
+<div class="container">
+<h2 class="section-title fade-in">İslam Ekonomisi Platformunda Gezinin</h2>
+<p class="section-subtitle fade-in">Teori, temeller ve uygulamalı araştırma arasındaki bağlantıları keşfedin</p>
+<div class="related-sections">
+<div class="related-card fade-in">
+<h4>Temeller</h4>
+<p>İslam ekonomisinin teolojik, hukuki ve felsefi temellerini anlayın. Bu bölümdeki matematiksel çerçeveleri temel alan riba, zekat, vakıf, mudârebe, müşâreke ve makamid-i şeriat gibi temel kavramları keşfedin.</p>
+<a href="foundations.html">Temelleri Keşfedin →</a>
+</div>
+<div class="related-card fade-in">
+<h4>Araştırma</h4>
+<p>Teorinin uygulamaya konmasını görün. Bu bölüm, burada geliştirilen resmi modelleri çağdaş ekonomik sorunlara uygulayarak ampirik kanıtları, ekonometrik tahminleri ve İslami ekonomi teorisini işlevsel hale getiren hesaplamalı DSGE modellerini sunmaktadır.</p>
+<a href="research.html">Araştırmayı Keşfedin →</a>
+</div>
+<div class="related-card fade-in">
+<h4>Tarih</h4>
+<p>İslam ekonomisi düşüncesinin tarihsel gelişimini, İbn Teymiyye ve Gazali gibi ortaçağ alimlerinden başlayarak, 20. yüzyılda İslam ekonomisinin modern canlanışına kadar inceleyin. Klasik anlayışların modern biçimsel teoriyi nasıl öngördüğünü görün.</p>
+<a href="history.html">Geçmişi Keşfedin →</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="footer-logo" href="index.html">İslam Ekonomisi</a>
+<p class="footer-brand-desc">Medine'nin en eski pazarlarından günümüzün küresel İslami finans endüstrisine kadar İslami ekonomi düşüncesinin teolojik temellerini, biçimsel teorisini, tarihsel gelişimini ve modern uygulamasını araştırmak.</p>
+<blockquote class="footer-ayah">
+<p>"Birbirinizin mallarını haksız yere yemeyin ve onu yetkililere rüşvet olarak vermeyin ki, bile bile başkalarının mallarından bir kısmını günahkarlıkla tüketesiniz."</p>
+<cite>—Bakara 2:188</cite>
+</blockquote>
+</div>
+<nav class="footer-nav">
+<div class="footer-nav-group">
+<h4 class="footer-heading">Bilgi</h4>
+<ul class="footer-links">
+<li><a href="foundations.html">Temeller</a></li>
+<li><a href="scriptures.html">Ayet ve Hadis</a></li>
+<li><a href="theory.html">Teori</a></li>
+<li><a href="history.html">Tarih</a></li>
+<li><a href="comparative.html">Mukayeseli Ekonomi</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">Modern Ekonomi</h4>
+<ul class="footer-links">
+<li><a href="research.html">Araştırma</a></li>
+<li><a href="dashboard.html">Kontrol Paneli</a></li>
+<li><a href="podcast.html">Medya</a></li>
+<li><a href="blog.html">Al-Tijarah</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">Bağlamak</h4>
+<div class="social-links">
+<a aria-label="Twitter/X" class="social-icon" href="https://x.com/theislamicecon">X</a>
+<a aria-label="instagram" class="social-icon" href="https://instagram.com/islamicecon">IG</a>
+<a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@theislamicecon">YT</a>
+<a aria-label="Tiktok" class="social-icon" href="https://www.tiktok.com/@theislamicecon">TT</a>
+</div>
+<form class="footer-subscribe" data-newsletter-form="">
+<input class="form-input" placeholder="E-postanız" required="" type="email"/>
+<button class="btn btn-primary btn-sm" type="submit">Abone</button>
+</form>
+</div>
+</nav>
+</div>
+<div class="footer-bottom">
+<p>© 2026 İslam Ekonomisi</p>
+<a class="footer-bottom-link" href="about.html">Hakkında</a>
+</div>
+</div>
+</footer>
+<button aria-label="Başa dön" class="back-to-top" data-back-to-top="">↑</button>
+<script src="../js/main.js"></script>
+<script src="../js/scripture-data-tr.js"></script>
+<script src="../js/scripture-widget.js"></script>
+<script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+</script>
+<script>
+    /* Scroll-triggered fade-up animation */
+    (function() {
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if (!fadeEls.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+    </script>
+</body>
+</html>

@@ -14,6 +14,44 @@
 // ============================================================================
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjbonlp';
 
+const getLocaleStrings = () => {
+  const lang = (document.documentElement.lang || 'en').toLowerCase();
+  const locale = lang.startsWith('ur') ? 'ur' : lang.startsWith('ar') ? 'ar' : lang.startsWith('tr') ? 'tr' : 'en';
+
+  const strings = {
+    en: {
+      newsletterThanks: 'Thank you for subscribing!',
+      invalidEmail: 'Please enter a valid email address',
+      genericError: 'Something went wrong. Please try again.',
+      sending: 'Sending...',
+      contactSuccess: 'Thank you! Your message has been sent successfully.',
+    },
+    ur: {
+      newsletterThanks: 'سبسکرائب کرنے کا شکریہ!',
+      invalidEmail: 'براہ کرم درست ای میل درج کریں',
+      genericError: 'کچھ غلط ہو گیا۔ براہ کرم دوبارہ کوشش کریں۔',
+      sending: 'بھیجا جا رہا ہے...',
+      contactSuccess: 'شکریہ! آپ کا پیغام کامیابی سے بھیج دیا گیا ہے۔',
+    },
+    ar: {
+      newsletterThanks: 'شكرا لاشتراكك!',
+      invalidEmail: 'يرجى إدخال بريد إلكتروني صحيح',
+      genericError: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
+      sending: 'جارٍ الإرسال...',
+      contactSuccess: 'شكرا لك! تم إرسال رسالتك بنجاح.',
+    },
+    tr: {
+      newsletterThanks: 'Abone oldugunuz icin tesekkurler!',
+      invalidEmail: 'Lutfen gecerli bir e-posta adresi girin',
+      genericError: 'Bir sorun olustu. Lutfen tekrar deneyin.',
+      sending: 'Gonderiliyor...',
+      contactSuccess: 'Tesekkurler! Mesajiniz basariyla gonderildi.',
+    },
+  };
+
+  return strings[locale];
+};
+
 // ============================================================================
 // 1. MOBILE NAVIGATION TOGGLE
 // ============================================================================
@@ -144,11 +182,12 @@ const newsletterFormHandler = () => {
   const form = document.querySelector('[data-newsletter-form]');
   if (!form) return;
 
+  const localeStrings = getLocaleStrings();
   const emailInput = form.querySelector('[type="email"]');
   const successMessage = document.createElement('div');
   successMessage.className = 'newsletter-success-message';
   successMessage.setAttribute('role', 'alert');
-  successMessage.innerHTML = '<p>Thank you for subscribing!</p>';
+  successMessage.innerHTML = `<p>${localeStrings.newsletterThanks}</p>`;
   successMessage.style.display = 'none';
 
   form.parentElement.appendChild(successMessage);
@@ -159,7 +198,7 @@ const newsletterFormHandler = () => {
     const email = emailInput?.value || '';
 
     if (!email || !isValidEmail(email)) {
-      showFormError(form, 'Please enter a valid email address');
+      showFormError(form, localeStrings.invalidEmail);
       return;
     }
 
@@ -191,7 +230,7 @@ const newsletterFormHandler = () => {
     } catch (err) {
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
-      showFormError(form, 'Something went wrong. Please try again.');
+      showFormError(form, localeStrings.genericError);
     }
   });
 };
@@ -204,6 +243,7 @@ const contactFormHandler = () => {
   const form = document.querySelector('[data-contact-form]');
   if (!form) return;
 
+  const localeStrings = getLocaleStrings();
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -213,13 +253,13 @@ const contactFormHandler = () => {
     const message = form.querySelector('#contact-message')?.value || '';
 
     if (!email || !isValidEmail(email)) {
-      showFormError(form, 'Please enter a valid email address');
+      showFormError(form, localeStrings.invalidEmail);
       return;
     }
 
     const submitBtn = form.querySelector('.btn-submit');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
+    submitBtn.textContent = localeStrings.sending;
     submitBtn.disabled = true;
 
     try {
@@ -230,14 +270,14 @@ const contactFormHandler = () => {
       });
 
       if (response.ok) {
-        form.innerHTML = '<div class="form-success" role="alert"><p>Thank you! Your message has been sent successfully.</p></div>';
+        form.innerHTML = `<div class="form-success" role="alert"><p>${localeStrings.contactSuccess}</p></div>`;
       } else {
         throw new Error('Submission failed');
       }
     } catch (err) {
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
-      showFormError(form, 'Something went wrong. Please try again.');
+      showFormError(form, localeStrings.genericError);
     }
   });
 };
@@ -481,6 +521,100 @@ const themeToggle = () => {
 };
 
 // ============================================================================
+// 12. LANGUAGE SWITCHER DROPDOWN
+// ============================================================================
+
+const languageSwitcherDropdown = () => {
+  const switchers = document.querySelectorAll('.lang-switcher');
+  if (switchers.length === 0) return;
+
+  const closeAllSwitchers = (exception = null) => {
+    switchers.forEach((switcher) => {
+      if (switcher === exception) return;
+
+      const trigger = switcher.querySelector('.lang-toggle.active') || switcher.querySelector('.lang-toggle');
+      switcher.classList.remove('is-open');
+
+      if (trigger) {
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  };
+
+  switchers.forEach((switcher, index) => {
+    if (switcher.dataset.dropdownReady === 'true') return;
+
+    const links = Array.from(switcher.querySelectorAll('.lang-toggle'));
+    if (links.length <= 1) return;
+
+    const activeLink = switcher.querySelector('.lang-toggle.active') || links[0];
+    const alternativeLinks = links.filter(link => link !== activeLink);
+    if (alternativeLinks.length === 0) return;
+
+    const menu = document.createElement('div');
+    menu.className = 'lang-menu';
+    menu.id = `lang-menu-${index + 1}`;
+    menu.setAttribute('aria-label', switcher.getAttribute('aria-label') || 'Language selector');
+
+    alternativeLinks.forEach((link) => {
+      menu.appendChild(link);
+    });
+
+    switcher.appendChild(menu);
+    switcher.classList.add('lang-switcher--dropdown');
+    switcher.dataset.dropdownReady = 'true';
+
+    activeLink.setAttribute('aria-haspopup', 'true');
+    activeLink.setAttribute('aria-expanded', 'false');
+    activeLink.setAttribute('aria-controls', menu.id);
+
+    activeLink.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const isOpening = !switcher.classList.contains('is-open');
+      closeAllSwitchers(isOpening ? switcher : null);
+      switcher.classList.toggle('is-open', isOpening);
+      activeLink.setAttribute('aria-expanded', isOpening ? 'true' : 'false');
+    });
+
+    activeLink.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        closeAllSwitchers(switcher);
+        switcher.classList.add('is-open');
+        activeLink.setAttribute('aria-expanded', 'true');
+        alternativeLinks[0]?.focus();
+      }
+
+      if (event.key === 'Escape') {
+        switcher.classList.remove('is-open');
+        activeLink.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    menu.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        switcher.classList.remove('is-open');
+        activeLink.setAttribute('aria-expanded', 'false');
+        activeLink.focus();
+      }
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.lang-switcher')) {
+      closeAllSwitchers();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeAllSwitchers();
+    }
+  });
+};
+
+// ============================================================================
 // INITIALIZATION
 // ============================================================================
 
@@ -513,6 +647,7 @@ const initModules = () => {
   counterAnimation();
   searchFilter();
   backToTopButton();
+  languageSwitcherDropdown();
 
   console.log('All features initialized successfully.');
 };

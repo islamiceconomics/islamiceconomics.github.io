@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kütüphane — İslam İktisadı</title>
+<meta content="İslam ekonomisi kütüphanesi - İslami finans, ekonomi tarihi ve Şeriat uyumlu ticaret üzerine seçilmiş kitaplar, bilimsel çalışmalar ve önemli metinler." name="description"/>
+<link href="https://islamiceconomics.github.io/tr/library.html" rel="canonical"/><link href="https://islamiceconomics.github.io/library.html" hreflang="en" rel="alternate"/><link href="https://islamiceconomics.github.io/ur/library.html" hreflang="ur" rel="alternate"/><link href="https://islamiceconomics.github.io/ar/library.html" hreflang="ar" rel="alternate"/><link href="https://islamiceconomics.github.io/tr/library.html" hreflang="tr" rel="alternate"/><link href="https://islamiceconomics.github.io/library.html" hreflang="x-default" rel="alternate"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'&gt;ع&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/x-icon"/>
+<script>
+    (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+<style>
+    /* ── Library Page Styles ── */
+
+    /* Featured Review Card */
+    .featured-review {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 3rem;
+    }
+    .featured-review-header {
+      display: flex;
+      gap: 2rem;
+      padding: 2.5rem;
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .featured-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+    .featured-cover {
+      width: 160px;
+      height: 220px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, #0d3d25 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-cover::before {
+      content: '';
+      position: absolute;
+      top: -30px; right: -30px;
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.15);
+    }
+    .featured-cover::after {
+      content: '';
+      position: absolute;
+      bottom: -20px; left: -20px;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: rgba(197, 160, 68, 0.1);
+    }
+    .featured-cover-icon {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .featured-cover-text {
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.4;
+      position: relative;
+      z-index: 1;
+    }
+    .featured-info {
+      flex: 1;
+    }
+    .featured-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+    .featured-meta {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    .featured-authors {
+      font-size: 0.92rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    /* Review Content Sections */
+    .featured-review-body {
+      padding: 2.5rem;
+    }
+    .review-section {
+      margin-bottom: 2.5rem;
+    }
+    .review-section:last-child {
+      margin-bottom: 0;
+    }
+    .review-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .review-section-subtitle {
+      font-size: 0.95rem;
+      color: var(--color-text-primary);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .review-text:last-child {
+      margin-bottom: 0;
+    }
+
+    /* About Authors Card */
+    .authors-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border-light);
+    }
+    .author-profile {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1.25rem;
+      background: var(--color-bg-secondary);
+      border-radius: 8px;
+    }
+    .author-initial {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--color-primary-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+    .author-info {
+      flex: 1;
+    }
+    .author-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.3rem;
+    }
+    .author-bio {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Essential Reading List */
+    .reading-list-section {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      border-top: 2px solid var(--color-border-light);
+    }
+    .reading-list-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .reading-list-subtitle {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    /* Book Categories */
+    .book-category {
+      margin-bottom: 2.5rem;
+    }
+    .book-category-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--color-primary-subtle);
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .book-item {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: all 0.25s;
+    }
+    .book-item:hover {
+      border-color: var(--color-border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .book-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .book-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 0.3rem;
+      line-height: 1.35;
+    }
+    .book-author {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+    .book-year {
+      font-size: 0.75rem;
+      color: var(--color-text-light);
+      margin-bottom: 0.75rem;
+    }
+    .book-description {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+    .book-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .book-tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .featured-review-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.75rem;
+      }
+      .featured-title {
+        font-size: 1.5rem;
+      }
+      .featured-cover {
+        width: 140px;
+        height: 200px;
+      }
+      .review-section-title {
+        font-size: 1.1rem;
+      }
+      .books-grid {
+        grid-template-columns: 1fr;
+      }
+      .featured-review-body {
+        padding: 1.5rem;
+      }
+      .reading-list-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .featured-cover {
+        width: 120px;
+        height: 180px;
+      }
+      .featured-cover-icon {
+        font-size: 2.5rem;
+      }
+      .featured-title {
+        font-size: 1.35rem;
+      }
+    }
+
+    /* Dark mode adjustments */
+    [data-theme="dark"] .featured-review,
+    [data-theme="dark"] .book-item {
+      background: var(--color-surface);
+    }
+    [data-theme="dark"] .author-profile {
+      background: rgba(255,255,255,0.04);
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+<div class="container nav-container">
+<a class="nav-logo" href="index.html">İslam Ekonomisi</a>
+<button aria-label="Gezinmeyi değiştir" class="nav-toggle" data-nav-toggle="">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-menu">
+<li><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+<li class="nav-dropdown">
+<button class="nav-dropdown-toggle active">Öğren <span class="nav-dropdown-arrow">▾</span></button>
+<ul class="nav-dropdown-menu">
+<li><a href="foundations.html">Temeller</a></li>
+<li><a href="theory.html">Teori</a></li>
+<li><a href="research.html">Araştırma</a></li>
+<li><a href="history.html">Tarih</a></li>
+<li><a class="active" href="library.html">Kütüphane</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="scriptures.html">Ayet ve Hadis</a></li>
+<li><a class="nav-link" href="dashboard.html">Kontrol Paneli</a></li>
+<li><a class="nav-link" href="podcast.html">Medya</a></li>
+<li><a class="nav-link" href="blog.html">Al-Tijarah</a></li>
+<li><a class="nav-link" href="about.html">Hakkında</a></li>
+</ul>
+<div aria-label="Dil secici" class="lang-switcher"><a class="lang-toggle" href="../library.html" lang="en">EN</a><a class="lang-toggle" href="../ur/library.html" lang="ur">اردو</a><a class="lang-toggle" href="../ar/library.html" lang="ar">العربية</a><a aria-current="page" class="lang-toggle active" href="library.html" lang="tr">Türkçe</a></div>
+<button aria-label="Karanlık modu değiştir" class="theme-toggle">
+<span class="icon-moon">☾</span>
+<span class="icon-sun">☼</span>
+</button>
+</div>
+</nav>
+<!-- Hero Banner -->
+<section class="hero hero-small">
+<div class="container">
+<nav aria-label="Ekmek kırıntısı" class="breadcrumb">
+<a href="index.html">Ana Sayfa</a> <span>/</span> <span>Kütüphane</span>
+</nav>
+<h1 class="hero-title">Kütüphane</h1>
+<p class="hero-subtitle">İslam ekonomisi alanında seçilmiş kitap incelemeleri ve temel okumalar - klasik bilimi çağdaş teori ve uygulamayla birleştiriyor</p>
+</div>
+</section>
+<!-- Main Content -->
+<section class="section" style="padding: 3rem 0 2rem;">
+<div class="container">
+<!-- Featured Review -->
+<article class="featured-review fade-up">
+<div class="featured-review-header">
+<div class="featured-cover">
+<div class="featured-cover-icon">📚</div>
+<div class="featured-cover-text">İslam Ekonomisine Giriş</div>
+</div>
+<div class="featured-info">
+<span class="featured-badge">Öne Çıkan İnceleme</span>
+<h2 class="featured-title">İslam Ekonomisine Giriş: Teori ve Uygulama</h2>
+<div class="featured-authors">Hossein Askari, Zamir Iqbal, Abbas Mirakhor</div>
+<div class="featured-meta">
+<div><strong>Yayıncı:</strong> Wiley Finans Serisi, 2015</div>
+<div><strong>ISBN:</strong> 978-1-118-73296-0</div>
+<div><strong>Sayfalar:</strong> ~400 sayfa, 14 bölüm</div>
+</div>
+</div>
+</div>
+<div class="featured-review-body">
+<!-- The Complete System Framework -->
+<div class="review-section">
+<h3 class="review-section-title">1. Komple Sistem Çerçevesi</h3>
+<p class="review-text">
+              Bu ufuk açıcı metnin en değerli katkısı, İslam ekonomisini, finansal araçların veya yasakların geçici bir derlemesi olarak değil, tutarlı ve eksiksiz bir ekonomik sistem olarak - hem serbest piyasa kapitalizmine hem de komuta ekonomisine gerçekten alternatif bir paradigma olarak - sunmasıdır. Yazarlar bu çerçeveyi sıkı bir şekilde entegre edilmiş 14 bölüm boyunca sistematik olarak geliştirerek İslam ekonomisinin tüm ekonomik teoriyi yönlendiren aynı temel sorulara kendi içinde tutarlı yanıtlara sahip olduğunu göstermektedir: Üretim nasıl organize edilmelidir? Dağıtımı ne belirler? Piyasalar nasıl işlemeli? Devlet nasıl bir rol oynamalı?
+            </p>
+<p class="review-text">
+              Bu, çoğunlukla bireysel araçları (sukuk, murabaha, muşaraka) bağımsız yenilikler olarak sunan mevcut İslami finans literatürünün çoğundan temel olarak farklıdır. Bunun yerine Askari, Iqbal ve Mirakhor, bu araçların nasıl doğal olarak mülkiyet, adalet, risk ve insan amacına ilişkin birleşik ilkeler dizisinden ortaya çıktığını gösteriyor. Bu yaklaşım, onların çalışmalarına alışılmadık bir entelektüel güç kazandırıyor ve İslam ekonomisini bir kurallar bütünü olarak değil, tutarlı bir dünya görüşü olarak anlamaya çalışan herkesin okuması gereken bir eser haline getiriyor.
+            </p>
+</div>
+<!-- The Agent-Trustee Paradigm -->
+<div class="review-section">
+<h3 class="review-section-title">2. Vekil-Kayyım (Halife) Paradigması</h3>
+<p class="review-text">
+              2. Bölüm, kitabın en dönüştürücü içgörüsünü sunuyor: İnsanoğlunun, mülkün mutlak sahibi olmaktan ziyade, Tanrı'nın yaratışının emanetçileri (halife) olarak yeniden kavramsallaştırılması. Bu değişim başlangıçta göründüğünden daha devrimcidir. Neoklasik ekonomi, homo ekonomikus (servet maksimizasyonu peşinde koşan kişisel çıkarcı rasyonel aktör) temeli üzerine inşa edilirken, İslam ekonomisi, emanet edilen kaynakları nasıl yönettiği konusunda İlahi Olan'a karşı sorumlu olan bir temsilci olan halife ile başlar.
+            </p>
+<p class="review-text">
+              Pratik çıkarımlar, takip eden her şeyden geçerek devam ediyor. Mülkiyet hakları mutlak olmaktan ziyade koşullu hale gelir. Servetiniz emanette tutulur; onun akıllıca idaresinden siz sorumlusunuz ve onu başkalarına zarar verecek veya ilahi kanunları ihlal edecek şekilde kullanmanız yasaktır. Bu, kaynak tahsisini, miras kalıplarını, nesiller arası sorumluluğu ve bireysel mülkiyet ile kolektif refah arasındaki ilişkiyi temelden yeniden şekillendiriyor. Yazarlar, bu kavramsal temelin zekat (varlık vergilendirmesi), tefecilik yasağı, emeğe yönelik muamele ve ekonomik yoğunlaşma üzerindeki sınırlamalar hakkında nasıl belirli kurallar ürettiğini izliyor. Tek bir teolojik önermenin nasıl eksiksiz bir ekonomik sisteme dönüştüğüne dair bir ustalık sınıfıdır.
+            </p>
+</div>
+<!-- Institutional Scaffolding -->
+<div class="review-section">
+<h3 class="review-section-title">3. Kurumsal İskele: Mülkiyet Hakları, Sözleşmeler ve Hisbah</h3>
+<p class="review-text">
+              Kitabın 3. Bölümü, İslam ekonomisinin sadece bir dizi prensipten ibaret olmadığını, aynı zamanda yapılandırılmış bir kurumlar sistemi olduğunu göstermektedir. Yazarlar temel kurumsal "yapı iskelesini" tanımlamaktadır: açıkça tanımlanmış mülkiyet hakları, uygulanabilir sözleşmeler, işlevsel piyasalar ve piyasa denetimi ve düzenlemesine ilişkin hisbah sistemi. Burada özellikle etkileyici olan, yazarların modern kurumsal ekonomiyi nasıl öngördüğüdür - özellikle de sadece teknoloji ve kaynakların değil kurumların da ekonomik kalkınmanın temel itici güçleri olduğunu gösterdiği için Nobel Ödülü'nü kazanan Douglass North'un çalışması.
+            </p>
+<p class="review-text">
+              Kitap, İslam hukukunun mülkiyetin ne olduğunu, sözleşmelerin tarafları nasıl bağladığını, dolandırıcılığın ne olduğunu, hangi bilgi asimetrilerine izin verildiğini ve devletin yolsuzluğu ve sömürüyü nasıl önlemesi gerektiğini tanımlamak için karmaşık çerçeveler geliştirdiğini gösteriyor. Hisbah - piyasa müfettişliği otoritesi - keyfi bir düzenleme olarak değil, ekonomistlerin yüzyıllar sonrasına kadar resmi olarak modelleyemeyeceği piyasa başarısızlıklarına ve bilgi sorunlarına rasyonel bir kurumsal yanıt olarak sunuluyor. Yazarlar, İslam medeniyetinin, modern ekonomilerin hala boğuştuğu birçok kurumsal sorunu zaten hukuk yoluyla çözmüş olduğunu gösteriyor.
+            </p>
+</div>
+<!-- Risk-Sharing vs. Risk-Shifting -->
+<div class="review-section">
+<h3 class="review-section-title">4. Risk Paylaşımı ve Riski Değiştirmek: Kitabın En Güçlü İçgörüsü</h3>
+<p class="review-text">
+              4. ve 8. bölümler, kitabın belki de uygulamaya yönelik en önemli içgörüsünü içeriyor; bu metnin, küresel mali krizden yalnızca yedi yıl sonra, 2015'te yayınlandığı düşünüldüğünde neredeyse kehanet niteliğinde bir hale geliyor. Yazarlar finansal sistemlerde risk paylaşımı ve risk değişimi arasında çok önemli bir ayrım yapıyor. Konvansiyonel finansın giderek bir risk değiştirme sistemi haline geldiğini öne sürüyorlar: bir tarafın riskini diğerine aktarmasına izin verecek şekilde tasarlanmış araçlar, ahlaki tehlike ve sistemik kırılganlık yaratıyor. Borçlanma araçları, borç alanların, olumlu kazançları korurken, aşağı yönlü riski borç verenlere kaydırmasına olanak tanır. Kredi türevleri, bankaların ücret toplarken riski bilançolarından çıkarmalarına olanak tanır. Tüm yapı, riski yönetmek yerine etrafta dolaştırmak için optimize edilmiş hale gelir.
+            </p>
+<p class="review-text">
+              İslami finans ise tam tersine risk paylaşımı ortaklıkları üzerine kuruludur. Mudarabada (kâr paylaşımı sözleşmesi), girişimci ve sermaye sağlayıcı, hem kârı hem de zararı orantılı olarak paylaşır. Muşaraka'da (ortak girişim) oyunda tüm tarafların payı vardır. Yazarlar, bu temel yapısal farklılığın 2008 mali krizini yaratan temel sorunu ele aldığını öne sürüyor: mali teşvikler gerçek riskle yanlış hizalandığında, piyasalar patlamaya hazır istikrarsız döngüler yaratıyor. Risk paylaşımı tüm tarafların dikkatli olmasını gerektirir çünkü yatırımlar başarısız olursa zarara uğrayacaklardır. Yazarlar, özsermayeye dayalı finansmana sahip faizsiz sistemlerin doğal olarak daha az konjonktürel davranış ve daha sürdürülebilir büyüme ürettiğini ileri sürerek bu anlayışı makroekonomik istikrarla ilişkilendiriyorlar. Bu bölüm tek başına kitabın tamamını okumayı haklı kılıyor.
+            </p>
+</div>
+<!-- Interest-Free Macroeconomics -->
+<div class="review-section">
+<h3 class="review-section-title">5. Faizsiz Makroekonomi: Tam Bir Model</h3>
+<p class="review-text">
+              7, 10 ve 11. Bölümler, pek çok iktisatçının (İslam ekonomisini eleştirenler de dahil) teknik açıdan en zorlu soru olarak değerlendirdiği soruyu ele alıyor: Faiz oranı, merkezi bir para politikası aracı olarak mevcut olmadığında, bütün bir ekonomi nasıl işliyor? Yazarlar, faizsiz bir finansal sistemi, alternatif parasal aktarım mekanizmalarını, İslami vergilendirmeye (zekât, humus, sadaka) dayalı maliye politikasını ve borç genişlemesine dayanmayan büyüme dinamiklerini içeren, tamamen ifade edilmiş bir makroekonomik model sunmaktadır.
+            </p>
+<p class="review-text">
+              Çarpıcı olan, modellerinin el sallamayı veya belirsizliğe çekilmeyi gerektirmemesidir. Yazarlar para arzının nasıl ayarlandığını, yatırımların faiz getiren borç olmadan nasıl finanse edildiğini, para otoritelerinin enflasyonu nasıl yönettiğini, likidite tercihlerinin faiz oranları olmadan nasıl karşılandığını ve maliye politikasının İslami vergi araçları aracılığıyla nasıl uygulanabileceğini inceliyorlar. Teknik soruları ele alıyorlar: Ekonomik durgunlukta ne olur? Nominal ve reel ücretler nasıl etkileşir? Para politikası değişikliklerinden reel çıktıya geçiş mekanizması nedir? Matematiğe erişilebilir ama titizdir. Bu bölüm, faizsiz makroekonominin yalnızca kavramsal olarak mümkün olmadığını, aynı zamanda herhangi bir geleneksel parasal ekonomi ders kitabıyla aynı karmaşıklıkla modellenebileceğini ikna edici bir şekilde göstermektedir.
+            </p>
+</div>
+<!-- Justice as Central Organizing Principle -->
+<div class="review-section">
+<h3 class="review-section-title">6. Merkezi Düzenleme Prensibi Olarak Adalet (Adl)</h3>
+<p class="review-text">
+              Kitabın tamamında Batılı ekonomi ders kitaplarının nadiren ön plana çıkardığı bir prensip işlenmiştir: ekonomik sistemlerin değerlendirilmesinde temel düzenleyici kriter olarak adalet (adl). Geleneksel ekonomide verimlilik genellikle birincil kriterdir. Bir başkasının durumunu kötüleştirmeden birinin durumunu iyileştirmenin mümkün olmadığı durumlarda tahsis verimlidir (Pareto etkinliği). Adalet ise tam tersine, birincil bir amaç olmaktan ziyade genellikle verimliliğin kısıtlanması olarak ele alınır.
+            </p>
+<p class="review-text">
+              Yazarlar İslam ekonomisinin bu hiyerarşiyi tersine çevirdiğini ileri sürmektedir. Adalet, verimlilik sağlandıktan sonra aranacak bir lüks değildir; bu temeldir. Ekonomi politikaları öncelikle adaleti (sözleşmelerde adalet, sömürünün önlenmesi, işbirliğinin faydalarının adil dağıtımı) teşvik edip etmediğine göre değerlendirilir. Verimlilik önemlidir, ancak yalnızca adaletin sınırları dahilinde. Bu kavramsal yeniden yönelimin derin sonuçları vardır. Örneğin, faizin neden sadece kural olarak değil, aynı zamanda temelde adaletsiz olduğu gerekçesiyle yasaklandığını açıklıyor (çünkü riski adil olmayan bir şekilde dağıtıyor ve üretken katkıdan farklı bir gelir yaratıyor). Spekülasyonun neden yasak olduğunu açıklıyor (karşılık gelen değer yaratımı olmadan servetin adil olmayan şekilde elde edilmesi). Zekatın neden zorunlu olduğunu açıklıyor (adalet yeniden dağıtım gerektirir). Yazarlar, bu prensip anlaşıldığında, görünüşte farklı olan kuralların birdenbire tutarlı bir etik çerçeve oluşturduğunu göstermektedir. Bu bölüm tek başına değerlerin ekonomik sistemleri nasıl yönlendirdiğine dair bir ustalık sınıfıdır.
+            </p>
+</div>
+<!-- Development and Welfare -->
+<div class="review-section">
+<h3 class="review-section-title">7. Kalkınma, Refah ve Finansal Katılım</h3>
+<p class="review-text">
+              12. ve 13. Bölümler odak noktasını kalkınma ekonomisine ve sosyal refaha kaydırıyor. Yazarlar, Amartya Sen ve onun yetenek yaklaşımı gibi figürler aracılığıyla İslam ekonomisinin finansal katılım, yoksulluğun azaltılması ve insani gelişme gibi ana kalkınma ekonomisinin merkezine taşınan soruları nasıl ele aldığını inceliyor. Yazarların ortaya koyduğu şey, İslam ekonomisinin bu endişeleri Sen'den yüzyıllar önce dile getirdiğidir. İnsan onuru (keramah) üzerindeki vurgu, sömürünün yasaklanması, servete dayalı bir güvenlik ağı olarak zekat kurumu ve salt toplam büyümeden ziyade toplum refahına yapılan vurgu, bunların tümü, ekonomik faaliyetten kimin yararlandığı ve toplumun tüm üyelerinin gelişme kapasitesine sahip olup olmadığıyla derinden ilgilenen bir ekonomik sistemi akla getirmektedir.
+            </p>
+<p class="review-text">
+              Yazarlar, İslami finans ilkelerinin az çok titizlikle uygulandığı ekonomik performansı, yoksulluk oranlarını ve kalkınma göstergelerini karşılaştıran Müslüman çoğunluklu ülkelerden ampirik kanıtlar sunuyor. Veriler karışık olsa da (Müslümanların çoğunlukta olduğu ülkeler arasında yönetişim, doğal kaynaklar ve tarih açısından büyük farklılıklar göz önüne alındığında bekleneceği gibi), yazarlar İslami ekonomi ilkelerine bağlılık ile daha iyi kalkınma sonuçları arasındaki korelasyonun, eleştirmenlerin genellikle kabul ettiğinden daha güçlü olduğunu öne sürüyorlar. Bu bölüm İslam ekonomisini saf bir teori olarak ele almaktan ziyade gerçek dünyadaki ölçüm ve değerlendirmeye dayandırmaktadır.
+            </p>
+</div>
+<!-- OIC Economic Reality -->
+<div class="review-section">
+<h3 class="review-section-title">8. Gerçekliğin Dürüst Bir Değerlendirmesi</h3>
+<p class="review-text">
+              14. Bölüm belki de kitabın entelektüel açıdan en dürüst bölümüdür. Yazarlar, muzaffer bir notla bitirmek yerine, İslam İşbirliği Teşkilatı'ndaki (İİT) Müslüman çoğunluklu ülkelerin İslami ekonomi teorisinin idealleriyle karşılaştırıldığında gerçekte nasıl performans gösterdiğine dair net bir değerlendirme sunuyor. Gerçek çok ciddi: bazı ülkelerde yüksek yoksulluk oranları, diğerlerinde servet yoğunlaşması, istikrarsız büyüme, sermaye kaçışı, yetersiz altyapı yatırımı ve yönetişim başarısızlıkları. Yazarlar teori ve pratik arasındaki bu boşluğu gizlemiyorlar. Bunun yerine, zayıf performansın İslam ekonomisinin kusurlu olduğunun kanıtı olmadığını ileri sürüyorlar; daha ziyade Müslüman çoğunluğa sahip ülkelerin çoğunun İslami ekonomi sistemlerini hiçbir zaman tutarlı bir şekilde uygulamadığı gerçeğini yansıtıyor. Genellikle sömürgecilikten miras kalan Batılı kurumsal çerçevelere gömülü kısmi uygulamalara sahiptirler. Bir sistem olarak İslam ekonomisi ile kapitalist ekonomilerdeki birkaç kurumda uygulanan İslam ekonomisi arasındaki fark çok büyüktür.
+            </p>
+<p class="review-text">
+              Bu entelektüel tevazu kitabın iddiasını zayıflatmak yerine güçlendirir. Yazarlar, İslami finans araçlarının benimsenmesinin ekonomik sorunları otomatik olarak çözeceğini iddia etmiyorlar. Mülkiyet haklarını, kurumları, para politikasını, maliye politikasını ve sosyal refahı ele alan eksiksiz bir sistem olarak anlaşılan İslam ekonomisinin, farklı sonuçlar üretebilecek tutarlı bir alternatif çerçeve sunduğunu iddia ediyorlar. Bunun gerçekten gerçekleşip gerçekleşmeyeceği uygulama derinliğine, yönetişimin kalitesine ve siyasi kararlılığa bağlıdır. Bu, saf bir savunuculuğun önerdiğinden çok daha karmaşık ve savunulabilir bir iddiadır.
+            </p>
+</div>
+<!-- About the Authors -->
+<div class="authors-section fade-up">
+<h3 class="review-section-title" style="margin-bottom: 1.5rem;">Yazarlar Hakkında</h3>
+<div class="author-profile">
+<div class="author-initial">H</div>
+<div class="author-info">
+<div class="author-name">Hüseyin Askari</div>
+<div class="author-bio">
+                  George Washington Üniversitesi'nde Uluslararası İşletme Profesörü. Uluslararası Para Fonu'nda (IMF) yönetim kurulu danışmanlığı yaptı ve çeşitli kurumlarda misafir öğretim üyesi olarak görev yaptı. Doktora MIT'den. Metnin makroekonomik modellemesine teknik titizlik ve uluslararası politika deneyimini getirir.
+                </div>
+</div>
+</div>
+<div class="author-profile">
+<div class="author-initial">Z</div>
+<div class="author-info">
+<div class="author-name">Zamir İkbal</div>
+<div class="author-bio">
+                  Dünya Bankası Baş Uzmanı ve Küresel İslami Finans Geliştirme Merkezi'nin başkanlığını yaptı. İslami finans alanındaki derin uzmanlığı Müslüman çoğunluklu ekonomilerdeki pratik kalkınma deneyimiyle birleştirir. Uygulama zorlukları ve fırsatlarına gerçek dünya perspektifini getirir.
+                </div>
+</div>
+</div>
+<div class="author-profile">
+<div class="author-initial">A</div>
+<div class="author-info">
+<div class="author-name">Abbas Mirahor</div>
+<div class="author-bio">
+                  Uluslararası İslami Finans Eğitim Merkezi'nde (INCEIF) İslami Finans Başkanı'nın ilk sahibi ve IMF yönetim kurulunda görev yaptı (1997-2008). Bilimsel derinliği üst düzey politika deneyimiyle birleştirir. Modern İslami finansın temel figürü.
+                </div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Essential Reading List -->
+<section class="section" style="padding: 3rem 0;">
+<div class="container">
+<div class="reading-list-section">
+<h2 class="reading-list-title fade-up">Temel Okuma Listesi</h2>
+<p class="reading-list-subtitle fade-up">İslam ekonomisinde temel metinler, tarihsel analizler ve çağdaş bilim</p>
+<!-- Foundational Texts -->
+<div class="book-category fade-up">
+<h3 class="book-category-title">Temel Metinler</h3>
+<div class="books-grid">
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslam ve Ekonomik Mücadele</h4>
+<div class="book-author">M. Umer Çapra</div>
+<div class="book-year">1992</div>
+<p class="book-description">İslam ekonomisinin yoksulluk, eşitsizlik ve finansal istikrarsızlık gibi çağdaş sorunları nasıl ele aldığına dair kapsamlı bir inceleme. Chapra, İslami çözümlerin sistemik doğasını ve sürdürülebilir kalkınma potansiyelini vurguluyor. Gerçek dünya sorunlarına bir yanıt olarak İslam ekonomisini anlamak için gereklidir.</p>
+<div class="book-tags">
+<span class="book-tag">İslami Finans</span>
+<span class="book-tag">Gelişim</span>
+<span class="book-tag">Sistemik Analiz</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Faizsiz Bankacılık</h4>
+<div class="book-author">Muhammed Nejatullah Sıddıkî</div>
+<div class="book-year">1993</div>
+<p class="book-description">Faizsiz bankacılığın temel incelemesi ve teorik gerekçesi. Sıddıki, finansal aracılığın faizsiz olarak nasıl işlediğini, İslami sözleşmelerin doğasını (mudaraba, muşaraka, murabaha) ve faizsiz sistemler için kurumsal gereklilikleri ele alıyor. İslami bankacılık ilkelerine ilişkin klasik metin olmaya devam ediyor.</p>
+<div class="book-tags">
+<span class="book-tag">İslami Bankacılık</span>
+<span class="book-tag">Riba</span>
+<span class="book-tag">Sözleşmeler</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslam Ekonomisine Giriş: Teori ve Uygulama</h4>
+<div class="book-author">Muhammed Nejatullah Sıddıkî</div>
+<div class="book-year">1999</div>
+<p class="book-description">Çağdaş bilim için temel çerçeveler oluşturan İslam ekonomisi ilkelerine ufuk açıcı bir genel bakış. Siddiqi'nin çalışması İslam ekonomisini geleneksel sistemlerden farklılaştırdı ve sağlam teorik temeller sağladı. İslam iktisat teorisinin ayrı bir disiplin olarak nasıl geliştiğini anlamak için gereklidir.</p>
+<div class="book-tags">
+<span class="book-tag">Teori</span>
+<span class="book-tag">Temeller</span>
+<span class="book-tag">Ufuk Açıcı Çalışma</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Ekonominin Geleceği: İslami Bir Perspektif</h4>
+<div class="book-author">M. Umer Çapra</div>
+<div class="book-year">1999</div>
+<p class="book-description">İslami ekonomi ilkelerinin ortaya çıkan küresel zorluklara nasıl çözüm getirdiğine dair ileriye dönük bir araştırma. Chapra, maddi gelişmeyi etik kısıtlamalar ve manevi değerlerle uzlaştıran ekonomik sistemlere yönelik bir vizyon ortaya koyuyor. Çevresel sürdürülebilirliği, nesiller arası adaleti ve zenginliğin insanlığın gelişmesindeki rolünü inceliyor.</p>
+<div class="book-tags">
+<span class="book-tag">Görüş</span>
+<span class="book-tag">Etik</span>
+<span class="book-tag">Sürdürülebilirlik</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Historical & Civilization -->
+<div class="book-category fade-up">
+<h3 class="book-category-title">Tarih ve Medeniyet</h3>
+<div class="books-grid">
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslam İktisat Düşüncesi Tarihi</h4>
+<div class="book-author">Abdul Azim Islahi</div>
+<div class="book-year">1997</div>
+<p class="book-description">Peygamber Muhammed'den sömürge dönemine ve modern zamanlara kadar İslam ekonomik düşüncesinin kapsamlı bir kroniği. Fiyatlandırma, para politikası, vergilendirme ve dağıtım gibi kavramların yüzlerce yıllık İslam hukuku ve bilimi boyunca gelişiminin izini sürüyor. İslam ekonomik analizinin karmaşıklığını ve sürekliliğini ortaya koyar.</p>
+<div class="book-tags">
+<span class="book-tag">Tarih</span>
+<span class="book-tag">Ortaçağ Düşüncesi</span>
+<span class="book-tag">Entelektüel Gelişim</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Ortaçağ İslamında Ortaklık ve Kâr</h4>
+<div class="book-author">İbrahim Udovitch</div>
+<div class="book-year">1970</div>
+<p class="book-description">Ortaçağ İslam ortaklıklarının ve kâr paylaşımı düzenlemelerinin ayrıntılı bir tarihsel ve hukuki analizi. Udovitch, İslam hukukunun risk paylaşımı, sermaye oluşumu ve ticari ilişkiler için nasıl karmaşık çerçeveler geliştirdiğini gösteriyor. İslami finansın tarihsel gerçekliğini uygulamalı olarak gösteren öncü çalışma.</p>
+<div class="book-tags">
+<span class="book-tag">Ortaçağ Ticareti</span>
+<span class="book-tag">ortaklıklar</span>
+<span class="book-tag">Hukuki Tarih</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İbn Teymiyye'nin Ekonomik Kavramları</h4>
+<div class="book-author">Abdul Azim Islahi</div>
+<div class="book-year">2005</div>
+<p class="book-description">İbn Teymiyye'nin para, fiyatlar, piyasa mekanizmaları ve mübadele adaleti analizini de içeren ekonomik düşüncesinin ayrıntılı bir incelemesi. 14. yüzyıl İslam ekonomisi analizinin karmaşıklığını ve bunun devam eden önemini ortaya koyuyor. Ortaçağ İslam alimlerinin daha sonra modern iktisatçılara atfedilen ilkeleri anladıklarını göstermektedir.</p>
+<div class="book-tags">
+<span class="book-tag">Ortaçağ Bilgini</span>
+<span class="book-tag">Fiyatlandırma Teorisi</span>
+<span class="book-tag">Para</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslami Tüccar: Onur, Ahlak ve Toplum</h4>
+<div class="book-author">Cynthia Guthrie</div>
+<div class="book-year">2000</div>
+<p class="book-description">Modern öncesi İslam medeniyetinde tüccar kültürlerinin ve ticari ahlakın incelenmesi. Güven, şeref, itibar ve dini yükümlülüğün ekonomik davranışı ve kurum oluşumunu nasıl şekillendirdiğini inceliyor. İslam tarihi uygulamalarında ekonomi ve etiğin birbirinden ayrılamaz olduğunu gösterir.</p>
+<div class="book-tags">
+<span class="book-tag">Ticaret</span>
+<span class="book-tag">Etik</span>
+<span class="book-tag">Sosyal Tarih</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modern Practice -->
+<div class="book-category fade-up">
+<h3 class="book-category-title">Modern Uygulama ve Uygulama</h3>
+<div class="books-grid">
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslami Finans: İlkeler ve Uygulama</h4>
+<div class="book-author">Hans Viser</div>
+<div class="book-year">2009</div>
+<p class="book-description">İslami finansal araçların kapsamlı bir analizi ve bunların çağdaş piyasalardaki pratik uygulamaları. Sukuk tasarımı, İslami bankacılık işlemleri, düzenleyici çerçeveler ve küresel piyasalarda Şeriat uyumuna ilişkin zorlukları ele alarak klasik içtihat ile modern finans arasında köprü kurar.</p>
+<div class="book-tags">
+<span class="book-tag">İslami Bankacılık</span>
+<span class="book-tag">Sukuk</span>
+<span class="book-tag">Modern Finans</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslami Finansa Giriş</h4>
+<div class="book-author">Zamir İkbal ve Abbas Mirakhor</div>
+<div class="book-year">2007</div>
+<p class="book-description">Mudaraba, muşaraka, murabaha, icara ve diğer araçları kapsayan İslami finansa pratik bir giriş. Dünya Bankası ve IMF'de politika deneyimi olan uygulayıcılar tarafından teorik titizliği gerçek dünyadaki uygulama anlayışlarıyla birleştirerek yazılmıştır. İslami finansın çağdaş piyasalarda nasıl işlediğini anlamak için gereklidir.</p>
+<div class="book-tags">
+<span class="book-tag">İslami Aletler</span>
+<span class="book-tag">Pratik</span>
+<span class="book-tag">Uygulama</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Sukuk Piyasaları: Kapsamlı Bir Araştırma</h4>
+<div class="book-author">Çeşitli Katkıda Bulunanlar</div>
+<div class="book-year">2015</div>
+<p class="book-description">İslami tahvil (sukuk) piyasalarının incelenmesi, büyümesi, yapısı ve İslami kurumların ve kalkınmanın finansmanındaki rolü. Varlığa dayalı sukuk, devlet sukuku ve İslami sermaye piyasalarının küresel finansa entegrasyonunu kapsar. Sukuk standardizasyonundaki hem fırsatları hem de zorlukları ele alır.</p>
+<div class="book-tags">
+<span class="book-tag">Sermaye Piyasaları</span>
+<span class="book-tag">Sukuk</span>
+<span class="book-tag">İslami Tahviller</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Tekafül: İslami Sigorta</h4>
+<div class="book-author">Muhammed Eyüp</div>
+<div class="book-year">2007</div>
+<p class="book-description">Tekafül (İslami sigorta) ilkeleri, ürünleri ve operasyonlarına ilişkin kapsamlı bir rehber. Karşılıklı risk paylaşımının felsefi temellerini, tekafül şirketlerinin yapısını, düzenleme konularını ve tekafül ile geleneksel sigorta arasındaki ayrımı kapsar. İslami sigortanın geleneksel sigortayla ilgili etik kaygıları nasıl giderdiğini ele alıyor.</p>
+<div class="book-tags">
+<span class="book-tag">Sigorta</span>
+<span class="book-tag">Tekafül</span>
+<span class="book-tag">Risk Paylaşımı</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Academic & Research -->
+<div class="book-category fade-up">
+<h3 class="book-category-title">Akademik ve Araştırma</h3>
+<div class="books-grid">
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslami Finans: Hukuk, Ekonomi ve Uygulama</h4>
+<div class="book-author">Mahmud A. El-Gamal</div>
+<div class="book-year">2006</div>
+<p class="book-description">İslami finansın hukuki analiz, ekonomik teori ve uygulamayı entegre eden titiz bir akademik incelemesi. El-Gamal, İslami finansın Şeriat uyumluluğu ile ekonomik verimliliği nasıl dengelediğini inceliyor, İslami sözleşmelere özgü asil-vekil sorunlarını analiz ediyor ve mevcut uygulamaların eleştirel değerlendirmesini sağlıyor. Bilimsel titizliği pratik anlayışla birleştirir.</p>
+<div class="book-tags">
+<span class="book-tag">Akademik</span>
+<span class="book-tag">Hukuk ve Ekonomi</span>
+<span class="book-tag">Eleştirel Analiz</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Modern Dünyada İslam Ekonomisi</h4>
+<div class="book-author">Doğu Kur'an</div>
+<div class="book-year">2004</div>
+<p class="book-description">Bir bilimsel disiplin olarak İslam ekonomisinin tarihinin ve günümüzdeki durumunun incelenmesi. Kuran, sömürge döneminden sonra İslami ekonomik sistemlerin neden sürdürülmediğini, 20. yüzyılın canlanma hareketini ve İslami ilkeleri küresel pazar entegrasyonuyla uzlaştırmanın mevcut zorluklarını analiz ediyor.</p>
+<div class="book-tags">
+<span class="book-tag">Kurumsal Tarih</span>
+<span class="book-tag">Modern Zorluklar</span>
+<span class="book-tag">Akademik Disiplin</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">İslami Finansta Şeriata Uyum</h4>
+<div class="book-author">Mohsin Khan ve Abbas Mirakhor (Editörler)</div>
+<div class="book-year">2007</div>
+<p class="book-description">İslami finans kurumlarının Şeriat ilkelerini piyasa baskıları ve düzenleyici gereksinimlerle nasıl dengelediğini inceleyen araştırma makalelerinden oluşan bir koleksiyon. Yönetişim konularını, uyumluluk çerçevelerini ve Şeriat alimlerinin İslami finanstaki rolünü kapsar. İslami bankacılık performansına ilişkin ampirik araştırmalar sağlar.</p>
+<div class="book-tags">
+<span class="book-tag">Yönetişim</span>
+<span class="book-tag">Şeriat</span>
+<span class="book-tag">Ampirik Araştırma</span>
+</div>
+</div>
+<div class="book-item fade-up">
+<div class="book-icon">📖</div>
+<h4 class="book-title">Kalkınma Ekonomisi ve İslami Finans</h4>
+<div class="book-author">Çeşitli Katkıda Bulunanlar</div>
+<div class="book-year">2012</div>
+<p class="book-description">Müslüman çoğunluklu ekonomilerde yoksulluğun azaltılması, finansal katılım ve sürdürülebilir kalkınmada İslami finansın rolünü inceleyen araştırma. Sonuçlara ilişkin ampirik kanıtlar, başarılı İslami finans girişimlerine ilişkin vaka çalışmaları ve İslami finans ilkelerinin kalkınma zorluklarını nasıl ele aldığına ilişkin analizler sunar.</p>
+<div class="book-tags">
+<span class="book-tag">Gelişim</span>
+<span class="book-tag">Yoksulluk</span>
+<span class="book-tag">Dahil etme</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="footer-logo" href="index.html">İslam Ekonomisi</a>
+<p class="footer-brand-desc">Medine'nin en eski pazarlarından günümüzün küresel İslami finans endüstrisine kadar İslami ekonomi düşüncesinin teolojik temellerini, biçimsel teorisini, tarihsel gelişimini ve modern uygulamasını araştırmak.</p>
+<blockquote class="footer-ayah">
+<p>"Birbirinizin mallarını haksız yere yemeyin ve onu yetkililere rüşvet olarak vermeyin ki, bile bile başkalarının mallarından bir kısmını günahkarlıkla tüketesiniz."</p>
+<cite>—Bakara 2:188</cite>
+</blockquote>
+</div>
+<nav class="footer-nav">
+<div class="footer-nav-group">
+<h4 class="footer-heading">Bilgi</h4>
+<ul class="footer-links">
+<li><a href="foundations.html">Temeller</a></li>
+<li><a href="scriptures.html">Ayet ve Hadis</a></li>
+<li><a href="theory.html">Teori</a></li>
+<li><a href="history.html">Tarih</a></li>
+<li><a href="comparative.html">Mukayeseli Ekonomi</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">Modern Ekonomi</h4>
+<ul class="footer-links">
+<li><a href="research.html">Araştırma</a></li>
+<li><a href="dashboard.html">Kontrol Paneli</a></li>
+<li><a href="podcast.html">Medya</a></li>
+<li><a href="blog.html">Al-Tijarah</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">Bağlamak</h4>
+<div class="social-links">
+<a aria-label="Twitter/X" class="social-icon" href="https://x.com/theislamicecon">X</a>
+<a aria-label="instagram" class="social-icon" href="https://instagram.com/islamicecon">IG</a>
+<a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@theislamicecon">YT</a>
+<a aria-label="Tiktok" class="social-icon" href="https://www.tiktok.com/@theislamicecon">TT</a>
+</div>
+<form class="footer-subscribe" data-newsletter-form="">
+<input class="form-input" placeholder="E-postanız" required="" type="email"/>
+<button class="btn btn-primary btn-sm" type="submit">Abone</button>
+</form>
+</div>
+</nav>
+</div>
+<div class="footer-bottom">
+<p>© 2026 İslam Ekonomisi</p>
+<a class="footer-bottom-link" href="about.html">Hakkında</a>
+</div>
+</div>
+</footer>
+<!-- Back to Top -->
+<button aria-label="Başa dön" class="back-to-top" data-back-to-top="">↑</button>
+<script src="../js/main.js"></script>
+<script>
+    /* Nav dropdown toggle */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.closest('.nav-dropdown').classList.toggle('open');
+      });
+    });
+
+    /* Scroll-triggered fade-up animation */
+    (function() {
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if (!fadeEls.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+  </script>
+</body>
+</html>
