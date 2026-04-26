@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-20GZ5E8L35');
+  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>النظرية الرسمية للاقتصاد الإسلامي - الاقتصاد الإسلامي</title>
+<meta content="النظرية الاقتصادية الإسلامية: نماذج رياضية رسمية لاختيار المستهلك، والإنتاج، وهيكل السوق، والتوازن العام ترتكز على البديهيات الإسلامية." name="description"/>
+<link href="https://islamiceconomics.github.io/ar/theory.html" rel="canonical"/><link href="https://islamiceconomics.github.io/theory.html" hreflang="en" rel="alternate"/><link href="https://islamiceconomics.github.io/ur/theory.html" hreflang="ur" rel="alternate"/><link href="https://islamiceconomics.github.io/ar/theory.html" hreflang="ar" rel="alternate"/><link href="https://islamiceconomics.github.io/tr/theory.html" hreflang="tr" rel="alternate"/><link href="https://islamiceconomics.github.io/theory.html" hreflang="x-default" rel="alternate"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<script>
+      (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+<style>
+        /* Chapter Card Styling */
+        .chapter-card {
+            border-left: 5px solid #999;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: #fafafa;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .chapter-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapter-card.available {
+            border-left-color: #10b981;
+        }
+
+        .chapter-card.in-progress {
+            border-left-color: #f59e0b;
+        }
+
+        .chapter-card.coming-soon {
+            border-left-color: #d1d5db;
+        }
+
+        .chapter-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .chapter-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            font-family: 'Georgia', serif;
+            line-height: 1.3;
+        }
+
+        .chapter-description {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .chapter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e5e7eb;
+            color: #374151;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .chapter-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .status-badge.available {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-badge.in-progress {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-badge.coming-soon {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .read-chapter-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .read-chapter-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .read-chapter-link.disabled {
+            color: #9ca3af;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Methodology Section */
+        .methodology-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .methodology-box h3 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+
+        .methodology-list {
+            margin-left: 1.5rem;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .methodology-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Connection Box */
+        .connection-box {
+            background-color: #f5f3ff;
+            border-left: 4px solid #8b5cf6;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        .connection-box h3 {
+            color: #6d28d9;
+            margin-top: 0;
+        }
+
+        .connection-box p {
+            color: #4c1d95;
+            line-height: 1.8;
+        }
+
+        .connection-box a {
+            color: #7c3aed;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .connection-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Related Sections */
+        .related-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .related-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-color: #d1d5db;
+        }
+
+        .related-card h4 {
+            color: #1f2937;
+            margin-top: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .related-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .related-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .related-card a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Introduction Section Enhancement */
+        .introduction-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        /* Chapter Grid */
+        .chapters-grid {
+            margin: 2rem 0;
+        }
+
+        /* Section divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+            margin: 3rem 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .chapter-card {
+                padding: 1.5rem;
+            }
+
+            .chapter-number {
+                font-size: 2rem;
+            }
+
+            .chapter-title {
+                font-size: 1.4rem;
+            }
+
+            .chapter-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .related-sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+<div class="container nav-container">
+<a class="nav-logo" href="index.html">الاقتصاد الإسلامي</a>
+<button aria-label="تبديل التنقل" class="nav-toggle" data-nav-toggle="">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-menu">
+<li><a class="nav-link" href="index.html">الرئيسية</a></li>
+<li class="nav-dropdown">
+<button class="nav-dropdown-toggle active">تعلّم <span class="nav-dropdown-arrow">▾</span></button>
+<ul class="nav-dropdown-menu">
+<li><a href="foundations.html">الأسس</a></li>
+<li><a class="active" href="theory.html">نظرية</a></li>
+<li><a href="research.html">الأبحاث</a></li>
+<li><a href="history.html">تاريخ</a></li>
+<li><a href="comparative.html">الاقتصاد المقارن</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="scriptures.html">النصوص الشرعية</a></li>
+<li><a class="nav-link" href="dashboard.html">لوحة القيادة</a></li>
+<li><a class="nav-link" href="podcast.html">وسائط</a></li>
+<li><a class="nav-link" href="blog.html">Al-Tijarah</a></li>
+<li><a class="nav-link" href="about.html">من نحن</a></li>
+</ul>
+<div aria-label="اختيار اللغة" class="lang-switcher"><a class="lang-toggle" href="../theory.html" lang="en">EN</a><a class="lang-toggle" href="../ur/theory.html" lang="ur">اردو</a><a aria-current="page" class="lang-toggle active" href="theory.html" lang="ar">العربية</a><a class="lang-toggle" href="../tr/theory.html" lang="tr">Türkçe</a></div>
+<button aria-label="تبديل الوضع المظلم" class="theme-toggle">
+<span class="icon-moon">☾</span>
+<span class="icon-sun">☼</span>
+</button>
+</div>
+</nav>
+<!-- Hero Banner -->
+<section class="hero hero-small">
+<div class="container">
+<nav aria-label="مسار التنقل" class="breadcrumb">
+<a href="index.html">الرئيسية</a> <span>/</span> <span>النظرية الرسمية</span>
+</nav>
+<h1 class="hero-title">النظرية الرسمية للاقتصاد الإسلامي</h1>
+<p class="hero-subtitle">إطار رياضي صارم، من بديهيات التفضيل إلى التوازن العام، مبني على المبادئ الإسلامية</p>
+</div>
+</section>
+<!-- Introduction Section -->
+<section class="section introduction-section">
+<div class="container">
+<div class="section-intro fade-in">
+<h2>الغرض والنطاق</h2>
+<p>يطور هذا القسم الأسس الرياضية للاقتصاد الإسلامي من المبادئ الأولى، باتباع منهجية نظرية الاقتصاد الجزئي القياسية (كما هو موضح في دراسة ماس كوليل ووينستون وجرين) <em>نظرية الاقتصاد الجزئي</em>) مع الدمج المنهجي للقيود المعيارية والبديهيات الأخلاقية المستمدة من اللاهوت الإسلامي والفقه والمبادئ الفلسفية. ولا يتمثل الهدف في إنشاء نظام منفصل تماما، بل في الإظهار بدقة رياضية كيف تعمل المبادئ الإسلامية على تعديل وصقل وتوسيع نطاق النظرية الاقتصادية القياسية بطرق سهلة وقابلة للتنفيذ.</p>
+<p>الفكرة الأساسية هي أن الاقتصاد الإسلامي يمكن إضفاء الطابع الرسمي عليه باعتباره مشكلة تحسين مقيدة حيث تكون القيود مستندة إلى أسس أخلاقية. فبينما يأخذ الاقتصاد الجزئي القياسي التفضيلات على النحو المعطى ويسعى إلى فهم آثارها، تبدأ نظرية الاقتصاد الإسلامي بفحص التفضيلات والاختيارات المسموح بها إسلاميا ثم تحلل التحسين الخاضع لتلك القيود. حظر <em>الربا</em> (الفائدة) تعدل الاختيار الزماني والتعاقد المالي. التزام <em>الزكاة</em> (الصدقة الإلزامية) تعمل كقيد وعنصر من عناصر المنفعة. عدم جواز <em>الغرر</em> (عدم اليقين المفرط) يقيد مجموعة العقود الممكنة. مفهوم <em>اهتمام</em> (المصلحة العامة) و <em>مقاصد الشريعة</em> (مقاصد الشريعة الإسلامية) توفر معايير رعاية اجتماعية بديلة للأطر النفعية. هذه ليست قيودًا مخصصة، بل تعديلات منهجية تنبع من رؤية عالمية أخلاقية متماسكة.</p>
+<p>يتم بناء كل فصل بشكل تسلسلي، حيث ينتقل من نظرية الاختيار الفردي من خلال هياكل السوق إلى التوازن العام وتجميع الاقتصاد الكلي. وفي جميع أنحاء، نحافظ على ثلاثة التزامات: (1) الدقة والدقة الرياضية، باستخدام الجهاز الرسمي للاقتصاد الحديث؛ (2) أسس عقائدية، تربط بوضوح كل قيد بالمصادر والمبادئ الإسلامية؛ و(3) قابلية المتابعة الاقتصادية، مما يضمن أن تكون النماذج الناتجة قابلة للحل تحليليًا وتقديرها تجريبيًا. والنتيجة هي إطار يتحدث بطلاقة لكل من العلماء المسلمين وخبراء الاقتصاد المدربين، ويسد الفجوة التأديبية التي فصلت تاريخياً الفقه الإسلامي عن العلوم الاقتصادية.</p>
+</div>
+</div>
+</section>
+<!-- Connection to Foundations -->
+<section class="section">
+<div class="container">
+<div class="connection-box fade-in">
+<h3>كيف يرتبط هذا بالمؤسسات</h3>
+<p>لقد تم تطوير المبادئ اللاهوتية والقانونية التي تقوم عليها هذه النماذج الرسمية بشكل شامل في كتابنا <a href="foundations.html">قسم الأسس</a>. وهناك نضع الأساس القرآني والسنة والفقهية للمفاهيم الأساسية: تحريم <em>الربا</em> وتمييزه عن الربح والأجر؛ مؤسسة <em>الزكاة</em> ودورها في استقرار الاقتصاد الكلي؛ آلية <em>الوقف</em> والثقات الدائمة. هياكل الشراكة مثل <em>مضاربة</em> و <em>مشاركة</em>; أدوات التمويل الإسلامي بما في ذلك <em>مرابحة</em>, <em>إيجار</em>, <em>سلام</em>، و <em>استثناء</em>; ومبدأ <em>اهتمام</em> (المصلحة العامة) في الاستدلال القانوني. يقوم قسم النظرية هذا بترجمة هذه المبادئ إلى لغة رياضية رسمية، وبناء نماذج يتم فيها تحديد البديهيات والقيود بدقة، مما يمكننا من استخلاص مقترحات قابلة للاختبار وبناء أطر قابلة للحساب لتحليل السياسات والبحث التجريبي.</p>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Chapter Listing -->
+<section class="section">
+<div class="container">
+<h2 class="section-title fade-in">الفصول الرسمية</h2>
+<p class="section-subtitle fade-in">معالجة منهجية للنظرية الاقتصادية الإسلامية، انطلاقا من الاختيار الفردي إلى أطر الاقتصاد الكلي</p>
+<div class="chapters-grid">
+<!-- Chapter 1 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">أنا</div>
+<h3 class="chapter-title">بديهيات التفضيلات الإسلامية</h3>
+<p class="chapter-description">يعتمد أساس نظرية المستهلك في أي نظام اقتصادي على علاقات التفضيل. يتناول هذا الفصل كيفية تعديل بديهيات الاقتصاد الجزئي القياسية: الاكتمال، والعبور، والاستمرارية، والرتابة، والتحدب ضمن الإطار الأخلاقي الإسلامي. الرتابة يحدها التحريم الإسلامي <em>يضيع</em> (التبذير والتبذير) مما يعني وجود نقاط الشبع وأسقف الاستهلاك. يتم تقييد مجموعة الاستهلاك قبل التحسين من خلال تصنيفات الحلال/الحرام، باستثناء السلع غير المسموح بها من مجموعة الاختيار الممكنة. نحن نقدم وإضفاء الطابع الرسمي على بديهية <em>وسطية</em> (الاعتدال) واستخلاص آثاره الرسمية على تجميع الأفضليات والمنفعة بين الأجيال.</p>
+<div class="chapter-tags">
+<span class="tag">التفضيلات</span>
+<span class="tag">جدوى</span>
+<span class="tag">القيد الحلال</span>
+<span class="tag">يضيع</span>
+<span class="tag">الوسطية</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter1_axioms_of_islamic_preferences.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 2 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">ثانيا</div>
+<h3 class="chapter-title">تمثيل المنفعة والوكيل الإسلامي</h3>
+<p class="chapter-description">بناءً على بديهيات التفضيل، فإننا نستمد تمثيلات المنفعة المتوافقة مع التفضيلات الإسلامية. من الأمور المركزية في هذا الفصل هو تقديم إطار المنفعة المكون من مكونين: مكون دنيوي (يتعلق بالرضا عن استهلاك المواد في هذه الحياة، <em>دنيا</em>) ومكون أخروي (يتعلق بالآخرة، <em>أخيراً</em>). ضمن هذا الإطار، إجراءات مثل <em>الزكاة</em>, <em>صدقة</em> (صدقة تطوعية)، و <em>الوقف</em> المؤسسات التي تقلل من عوائد استهلاك المواد في عنصر الآخرة، مما يوفر عقلانية صارمة لنقل الثروة الطوعي دون التذرع بالإيثار أو التفضيلات الاجتماعية. نحن نثبت نظريات الوجود والتفرد لتمثيل المنفعة الممتد هذا، ونحدد الظروف التي تكون فيها هذه التمثيلات مستمرة ورتيبة، ونستمد آثارًا على قرارات توفير الاستهلاك والتخطيط طويل المدى.</p>
+<div class="chapter-tags">
+<span class="tag">وظيفة المنفعة</span>
+<span class="tag">الدنيا - نموذج الآخرة</span>
+<span class="tag">عقلانية الزكاة</span>
+<span class="tag">نظريات الوجود</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter2_utility_representation.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 3 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">ثالثا</div>
+<h3 class="chapter-title">نظرية المستهلك في ظل القيود الإسلامية</h3>
+<p class="chapter-description">يتم تعديل معيار تحسين المستهلك من خلال ثلاثة قيود إسلامية أساسية: (1) مجموعة الاستهلاك الحلال، التي تستبعد السلع غير المسموح بها بداهة؛ (2) ال <em>الزكاة</em> الالتزام، الذي يعمل كضريبة إلزامية على الثروة أو الدخل بمعدلات محددة بدقة وعتبات إعفاء؛ و (3) <em>الربا</em> وهذا الحظر، الذي يقيد الاقتراض لفترات زمنية معينة ويزيل تجانس الاستهلاك التقليدي القائم على الديون. يستمد هذا الفصل وظائف الطلب المارشالية والهيكسية في ظل هذه القيود، ويحدد تحليل سلوتسكي في ظل وجود قيود الزكاة والحلال، ويصف كيف يؤثر التزام الزكاة على حزم الاستهلاك الأمثل عبر السلع والفترات الزمنية. نحن ندرس الإحصائيات المقارنة فيما يتعلق بالأسعار والثروة ومعدل الزكاة، ونستمد شروط الاستقرار لأنظمة الطلب، ونحلل الآثار المترتبة على الرفاهية للقيود الإسلامية مقابل الأطر القياسية من خلال التباين المكافئ وتدابير التباين التعويضية.</p>
+<div class="chapter-tags">
+<span class="tag">نظرية الطلب</span>
+<span class="tag">معادلة سلوتسكي</span>
+<span class="tag">قيد الزكاة</span>
+<span class="tag">مجموعات الميزانية</span>
+<span class="tag">الإحصائيات المقارنة</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter3_consumer_theory.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 4 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">رابعا</div>
+<h3 class="chapter-title">نظرية المنتج والشركة الإسلامية</h3>
+<p class="chapter-description">تعمل الشركة الإسلامية في ظل قيود تمويل وتعاقد متميزة بشكل أساسي مقارنة بالشركات التقليدية. ويواجه حظر الديون القائمة على الفائدة (<em>الربا</em>)، مما يتطلب الاعتماد على أدوات شبيهة بالأسهم مثل <em>مضاربة</em> (شراكات تقاسم الأرباح مع التمييز بين رأس المال العامل) و <em>مشاركة</em> (المشاريع المشتركة ذات رأس المال المشترك والإدارة والأرباح والخسارة). حظر <em>الغرر</em> (عدم اليقين التعاقدي المفرط) يقيد مساحة العقود المالية المسموح بها. ويضفي هذا الفصل الطابع الرسمي على مشاكل تقليل تكلفة الشركة وتعظيم الأرباح في ظل هذه القيود، ويشتق دوال العرض المعدلة ومنحنيات طلب العوامل، ويحلل كيفية تأثير تقاسم الربح والخسارة (على عكس خدمة الدين الثابتة) على قرارات الإنتاج، وتوزيع المخاطر بين المستثمرين، وهيكل رأس المال، ودخول السوق. نحن نحدد شروط كفاءة الإنتاج، ونفحص العلاقة بين هيكل التمويل والقرارات التشغيلية، ونحلل كيفية مقارنة القيود التي تواجهها الشركة الإسلامية بالشركة التقليدية من حيث الكفاءة الإنتاجية والكفاءة الديناميكية.</p>
+<div class="chapter-tags">
+<span class="tag">نظرية الشركة</span>
+<span class="tag">المضاربة</span>
+<span class="tag">هل هي مشاركة؟</span>
+<span class="tag">المنزل</span>
+<span class="tag">تقاسم الربح والخسارة</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter4_producer_theory.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 5 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">V</div>
+<h3 class="chapter-title">هيكل السوق ونظرية العقد</h3>
+<p class="chapter-description">تعمل الأسواق في الاقتصاد الإسلامي ضمن مساحة تعاقدية محدودة. حظر <em>الربا</em> ويلغي الأدوات القائمة على الديون؛ حظر <em>الغرر</em> يقيد عقود المضاربة وغير المحددة؛ حظر <em>احتكار</em> (الاكتناز الاحتكاري والتلاعب بالسوق) يقيد قوة السوق؛ ومتطلبات الشفافية في العقود تحد من استغلال عدم تناسق المعلومات. ويحلل هذا الفصل التوازن التنافسي والاحتكار واحتكار القلة في ظل هذه القيود الإسلامية. نقوم بتطوير إطار رسمي لنظرية العقد للأدوات المالية الإسلامية: <em>مرابحة</em> (التكلفة زائد التمويل)، <em>إيجار</em> (الإجارة الإسلامية)، <em>سلام</em> (البيع الآجل)، و <em>استثناء</em> (عقد التصنيع)، مع تحديد خصائصها المثالية ومزاياها النسبية. ونحن ندرس كيف تؤثر هذه القيود على كفاءة السوق (بمعنى باريتو)، وآليات تشكيل الأسعار، وإساءة استخدام قوة السوق، ونتائج الرفاهة الاجتماعية مقارنة بالأسواق غير المقيدة. ويختتم الفصل بوضع الشروط الرسمية التي بموجبها تعمل قيود السوق الإسلامية على تعزيز أو تقليل كفاءة التخصيص.</p>
+<div class="chapter-tags">
+<span class="tag">توازن السوق</span>
+<span class="tag">نظرية العقد</span>
+<span class="tag">احتكار</span>
+<span class="tag">الصكوك الإسلامية</span>
+<span class="tag">كفاءة</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter5_market_structure.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 6 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">سادسا</div>
+<h3 class="chapter-title">التوازن العام</h3>
+<p class="chapter-description">نحن نقوم ببناء إطار رسمي للتوازن العام يتضمن جميع القيود والمؤسسات الإسلامية السابقة. بناءً على إطار عمل Arrow-Debreu، قمنا بتعديل نموذج جنرال إلكتريك القياسي من خلال: (1) تقييد مساحة الأصول لاستبعاد الأدوات القائمة على الربا؛ (2) إدراج مؤسسة الزكاة الإلزامية كآلية لإعادة التوزيع ضمن التوازن؛ (3) فرض قيود الأخلاق الحلال والإسلامية على مجموعات التخصيص الممكنة؛ و(4) تقديم تفضيلات داخلية تعكس بنية منفعة الدنيا والآخرة. والنتيجة النظرية المركزية هي وجود توازن عام في ظل هذه التعديلات. نحن نحدد متى تصمد النظريات الأساسية لاقتصاديات الرفاهية ونفحص ما إذا كانت القيود الإسلامية وإعادة التوزيع (عن طريق الزكاة) تؤدي إلى تحسينات باريتو مقارنة بالتوازن الرأسمالي القياسي. نحن نميز مجموعة توزيعات التوازن، ونحلل تفرد أسعار التوازن، ونفحص استقرار التوازن فيما يتعلق بالاضطرابات الصغيرة. ويختتم الفصل بمقارنة رسمية بين جنرال إلكتريك الإسلامي والأنظمة الاقتصادية البديلة (الاشتراكية، والرأسمالية الكلاسيكية الجديدة، ورأسمالية أصحاب المصلحة).</p>
+<div class="chapter-tags">
+<span class="tag">السهم ديبرو</span>
+<span class="tag">نظريات الرفاهية</span>
+<span class="tag">وجود</span>
+<span class="tag">كفاءة باريتو</span>
+<span class="tag">إعادة التوزيع</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter6_general_equilibrium.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 7 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">سابعا</div>
+<h3 class="chapter-title">اقتصاديات الرفاهية والاختيار الاجتماعي</h3>
+<p class="chapter-description">يقدم اقتصاديات الرفاهية الإسلامية مفهوم <em>اهتمام</em> (المصلحة العامة والرعاية الاجتماعية) كمعيار أساسي للرعاية الاجتماعية، يقف جنبًا إلى جنب مع كفاءة باريتو القياسية ويحتمل أن يتنافس معها. نحن نعرّف المصلحة رسميًا على أنها وظيفة رعاية اجتماعية ترتكز على <em>مقاصد الشريعة</em> (أهداف الشريعة الإسلامية): حفظ ورعاية الدين والحياة والعقل والنسب (الروابط الأسرية والاجتماعية) والممتلكات. توفر هذه الأهداف أسسًا بديهية للاختيار الاجتماعي المتميز عن البدائل النفعية والمساواة والرولزية. يصف هذا الفصل بديهيًا وظائف الرعاية الاجتماعية التي تلبي المبادئ الإسلامية، وتثبت نتائج الوجود والتفرد. نحن ندرس العلاقة بين الرعاية الاجتماعية القائمة على المصلحة ومعايير الاختيار الاجتماعي القياسية، ونحلل كيف تؤثر القيود الإسلامية على الاختيار الفردي (تقييد الحلال، وجوب الزكاة) على الرعاية الاجتماعية الإجمالية، ونوصف الظروف التي يبتعد فيها الحد الأقصى للرعاية الاجتماعية الإسلامية عن الأمثل النفعي. ويختتم الفصل بتحليل رسمي لعدالة التوزيع في الأطر الإسلامية، ومقارنة مبادئ الاختلاف الرولزية مع مفاهيم العدالة الإسلامية ودراسة دور حقوق الملكية والميراث والوقف في تحديد التوزيعات العادلة.</p>
+<div class="chapter-tags">
+<span class="tag">اهتمام</span>
+<span class="tag">مقاصد الشريعة</span>
+<span class="tag">الرعاية الاجتماعية</span>
+<span class="tag">الاختيار الاجتماعي</span>
+<span class="tag">مقارنة رولسيان</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter7_welfare_economics.html">اقرأ الفصل →</a>
+</div>
+</div>
+<!-- Chapter 8 -->
+<div class="chapter-card available fade-up">
+<div class="chapter-number">ثامنا</div>
+<h3 class="chapter-title">أسس الاقتصاد الكلي</h3>
+<p class="chapter-description">بناءً على الأساس النظري للاقتصاد الجزئي الذي تم تطويره في الفصول من الأول إلى السابع، يجمع هذا الفصل نماذج الاقتصاد الكلي المناسبة لتحليل النمو والدورات والتضخم والبطالة والسياسة. نقوم بتطوير نموذج وكيل إسلامي تمثيلي يتضمن تفضيلات وقيود الدنيا والآخرة من الفصل الثاني، وبناء إطار التوازن العام الديناميكي الكينزي الجديد (DSGE) المكيف للاقتصاد الإسلامي حيث يتم استبدال آلية نقل أسعار الفائدة القياسية بقنوات السياسة النقدية القائمة على أسعار الأصول ومعدل الربح، وإدخال السياسة المالية من خلال إعادة توزيع الزكاة والاستثمار العام القائم على الوقف. ويعرض هذا الفصل بوضوح كيف يؤثر تحريم الربا على التحويل النقدي، وكيف تعمل الزكاة كمثبت تلقائي، وكيف يؤثر هيكل تقاسم الأرباح في التمويل الإسلامي على ديناميكيات دورة الأعمال. نحن نثبت وجود واستقرار مسارات توازن الاقتصاد الكلي، ونستنبط الاستجابات الاندفاعية للصدمات النقدية والمالية، وندرس الظروف التي تتفوق فيها الأطر النقدية والمالية الإسلامية على البدائل التقليدية في تحقيق استقرار الإنتاج والتوظيف مع الحفاظ على استقرار الأسعار. يربط هذا الفصل بين نظرية الاقتصاد الجزئي الرسمية والنماذج الحسابية التطبيقية المستخدمة لمحاكاة السياسات والتنبؤ بها في قسم الأبحاث.</p>
+<div class="chapter-tags">
+<span class="tag">تجميع</span>
+<span class="tag">الكينزية الجديدة</span>
+<span class="tag">السياسة النقدية</span>
+<span class="tag">السياسة المالية</span>
+<span class="tag">جسر دي إس جي إي</span>
+</div>
+<div class="chapter-footer">
+<span class="status-badge available">متاح</span>
+<a class="read-chapter-link" href="../theory/chapter8_macro_foundations.html">اقرأ الفصل →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Methodology Section -->
+<section class="section">
+<div class="container">
+<h2 class="section-title fade-in">المنهجية والاتفاقيات الرياضية</h2>
+<div class="methodology-box fade-in">
+<h3>المعايير الرسمية والعرض</h3>
+<ul class="methodology-list">
+<li><strong>الدقة الرياضية:</strong> تتبع جميع النتائج الرسمية الأعراف القياسية للاقتصاد الرياضي: فالتعريفات تحدد المفاهيم بدقة؛ تثبت lemmas النتائج المساعدة اللازمة للنظريات الرئيسية؛ تقدم المقترحات نتائج جديدة ذات أهمية ثانوية؛ تنص النظريات على النتائج الرئيسية لكل فصل. يتضمن كل اقتراح ونظرية دليلاً، إما داخل الفصل أو في ملحق مخصص، لضمان إمكانية التحقق وفهم البنية المنطقية.</li>
+<li><strong>التدوين وإمكانية الوصول:</strong> نحن نستخدم التدوين القياسي من نظرية الاقتصاد الجزئي المعاصرة (كما هو موجود في Mas-Colell وWhinston &amp; Green وJehle &amp; Reny) لضمان إمكانية الوصول إلى الاقتصاديين المدربين وتحقيق أقصى قدر من التواصل بين التخصصات. يُشار إلى مجموعة الاستهلاك بـ ℝ<sub>+</sub><sup>ل</sup>; يتم تمثيل التفضيلات بالعلاقات الثنائية ≽، ≻؛ يتم الإشارة إلى وظائف الأداة المساعدة u(·); الأسعار هي ص ∈ ℝ<sub>++</sub><sup>ل</sup>; وتتبع مجموعات الميزانية الإطار القياسي. عندما يتم إدخال القيود الإسلامية، نقوم بتعديل مجموعة الاستهلاك بشكل صريح (على سبيل المثال، التقييد بمجموعة فرعية حلال H ⊂ ℝ)<sub>+</sub><sup>ل</sup>) والوظيفة الموضوعية (على سبيل المثال، دمج عوائد الآخرة) للحفاظ على الوضوح حول المكان الذي تعدل فيه المبادئ الإسلامية النظرية القياسية.</li>
+<li><strong>أسس لاهوتية صريحة:</strong> يتم تقديم كل بديهية أو قيد أو مؤسسة إسلامية مع إشارة واضحة إلى مصادرها في القرآن والسنة والفقه الإسلامي الكلاسيكي. يحمل كل قيد علامة تشير إلى أساسه الإسلامي (على سبيل المثال، "القيد ج.1: تحريم الربا (من القرآن 2:275، 3:130)" أو "البديهية ص2: الوسطية/الاعتدال (من القرآن 2:143)"). وهذا يضمن أن النتائج الرسمية يمكن إرجاعها إلى الأسس اللاهوتية وأن التعديلات على البديهيات الإسلامية يمكن مناقشتها بشكل صريح كمسائل لاهوتية، وليس مجرد أسئلة رياضية.</li>
+<li><strong>القدرة الاقتصادية:</strong> في حين أن الدقة الرسمية والأسس اللاهوتية لها أهمية قصوى، إلا أننا نحافظ على التزامنا بالقابلية الاقتصادية. يتم إنشاء كل نموذج ليكون قابلاً للحل تحليليًا حيثما أمكن ذلك (على سبيل المثال، استخلاص حلول مغلقة الشكل لوظائف الطلب) وقابل للتقدير حسابيًا عندما تكون الحلول التحليلية مستعصية على الحل. يتيح ذلك تفعيل النماذج التي تم تطويرها نظريًا في نماذج البحث التطبيقية التي تمت مناقشتها في قسم الأبحاث.</li>
+<li><strong>التحليل المقارن:</strong> ومن السمات الرئيسية لهذا النهج المقارنة المنهجية مع النظرية الاقتصادية القياسية. كلما قام قيد إسلامي بتعديل نتيجة قياسية، فإننا نقارن النتائج بشكل صريح: على سبيل المثال، "في ظل الافتراضات القياسية، تتضمن نظرية تحسين المستهلك X.1 ضمنًا الخاصية P؛ وتنص النظرية X.2 على أنه في ظل قيد الزكاة، فإن الخاصية P' تحمل بدلاً من ذلك، مع الآثار التالية على مرونة الطلب والرفاهية."</li>
+</ul>
+</div>
+<div class="connection-box fade-in">
+<h3>الاتصال بالبحوث التطبيقية</h3>
+<p>توفر الأطر النظرية الرسمية التي تم تطويرها في هذا القسم الأساس لجميع الأعمال الكمية التطبيقية في مجتمعنا <a href="research.html">قسم البحوث</a>. تعمل النماذج الحسابية والمواصفات الاقتصادية القياسية ومحاكاة السياسات في هذا القسم على تفعيل النتائج النظرية المحددة هنا. على سبيل المثال، تم تقدير دوال الطلب المشتقة في الفصل الثالث باستخدام تقنيات الاقتصاد القياسي الحديثة؛ يتم استخدام نتائج تحسين الشركة من الفصل الرابع لبناء نماذج وظيفة الإنتاج على مستوى الشركة؛ ويشكل إطار الاقتصاد الكلي من الفصل الثامن الأساس لنماذج DSGE المستخدمة للتنبؤ ومحاكاة السياسات. القراء الذين ينتقلون من النظرية إلى البحث سوف يتعرفون على نفس البنية الرياضية والقيود الإسلامية، الآن مع المعلمات المقدرة والتحقق التجريبي.</p>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Related Sections -->
+<section class="section">
+<div class="container">
+<h2 class="section-title fade-in">تصفح منصة الاقتصاد الإسلامي</h2>
+<p class="section-subtitle fade-in">استكشاف الروابط بين النظرية والأسس والبحوث التطبيقية</p>
+<div class="related-sections">
+<div class="related-card fade-in">
+<h4>الأسس</h4>
+<p>فهم الأساس اللاهوتي والفقهي والفلسفي للاقتصاد الإسلامي. استكشف المفاهيم الأساسية مثل الربا والزكاة والوقف والمضاربة والمشاركة ومقاصد الشريعة التي تشكل الأساس للأطر الرياضية في هذا القسم.</p>
+<a href="foundations.html">اكتشف الأسس →</a>
+</div>
+<div class="related-card fade-in">
+<h4>الأبحاث</h4>
+<p>شاهد النظرية موضع التنفيذ. يطبق هذا القسم النماذج الرسمية التي تم تطويرها هنا على الأسئلة الاقتصادية المعاصرة، ويقدم الأدلة التجريبية والتقدير الاقتصادي القياسي ونماذج DSGE الحسابية التي تعمل على تفعيل النظرية الاقتصادية الإسلامية.</p>
+<a href="research.html">استكشاف البحث →</a>
+</div>
+<div class="related-card fade-in">
+<h4>تاريخ</h4>
+<p>دراسة التطور التاريخي للفكر الاقتصادي الإسلامي من علماء العصور الوسطى مثل ابن تيمية والغزالي وحتى النهضة الحديثة للاقتصاد الإسلامي في القرن العشرين. انظر كيف تتوقع الرؤى الكلاسيكية النظرية الرسمية الحديثة.</p>
+<a href="history.html">استكشاف التاريخ →</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="footer-logo" href="index.html">الاقتصاد الإسلامي</a>
+<p class="footer-brand-desc">استكشاف الأسس اللاهوتية، والنظرية الرسمية، والتطور التاريخي، والممارسة الحديثة للفكر الاقتصادي الإسلامي، من أقدم أسواق المدينة المنورة إلى صناعة التمويل الإسلامي العالمية اليوم.</p>
+<blockquote class="footer-ayah">
+<p>"ولا تأكلوا أموالكم بينكم بالباطل، ولا ترشوا بها أولي الأمر لتأكلوا فريقا من أموال الناس بالإثم وأنتم تعلمون".</p>
+<cite>- البقرة 2: 188</cite>
+</blockquote>
+</div>
+<nav class="footer-nav">
+<div class="footer-nav-group">
+<h4 class="footer-heading">معرفة</h4>
+<ul class="footer-links">
+<li><a href="foundations.html">الأسس</a></li>
+<li><a href="scriptures.html">النصوص الشرعية</a></li>
+<li><a href="theory.html">نظرية</a></li>
+<li><a href="history.html">تاريخ</a></li>
+<li><a href="comparative.html">الاقتصاد المقارن</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">الاقتصاد الحديث</h4>
+<ul class="footer-links">
+<li><a href="research.html">الأبحاث</a></li>
+<li><a href="dashboard.html">لوحة القيادة</a></li>
+<li><a href="podcast.html">وسائط</a></li>
+<li><a href="blog.html">Al-Tijarah</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">يتصل</h4>
+<div class="social-links">
+<a aria-label="تويتر/X" class="social-icon" href="https://x.com/theislamicecon">X</a>
+<a aria-label="انستغرام" class="social-icon" href="https://instagram.com/islamicecon">اي جي</a>
+<a aria-label="يوتيوب" class="social-icon" href="https://www.youtube.com/@theislamicecon">يوتيوب</a>
+<a aria-label="تيك توك" class="social-icon" href="https://www.tiktok.com/@theislamicecon">تي تي</a>
+</div>
+<form class="footer-subscribe" data-newsletter-form="">
+<input class="form-input" placeholder="البريد الإلكتروني الخاص بك" required="" type="email"/>
+<button class="btn btn-primary btn-sm" type="submit">يشترك</button>
+</form>
+</div>
+</nav>
+</div>
+<div class="footer-bottom">
+<p>© 2026 الاقتصاد الإسلامي</p>
+<a class="footer-bottom-link" href="about.html">من نحن</a>
+</div>
+</div>
+</footer>
+<button aria-label="العودة إلى الأعلى" class="back-to-top" data-back-to-top="">↑</button>
+<script src="../js/main.js"></script>
+<script src="../js/scripture-data-ar.js"></script>
+<script src="../js/scripture-widget.js"></script>
+<script>
+document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.closest('.nav-dropdown').classList.toggle('open');
+  });
+});
+</script>
+<script>
+    /* Scroll-triggered fade-up animation */
+    (function() {
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if (!fadeEls.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+    </script>
+</body>
+</html>

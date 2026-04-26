@@ -1,0 +1,742 @@
+\chapter{Rizq as Conserved Quantity}
+\label{ch:rizq-conservation}
+
+\epigraph{\itshape No soul will leave this world until its provision
+reaches it in full.}{--- \hadith{Sahih Muslim} 2664}
+
+\noindent
+This chapter is the first of Part III. The eight chapters of Part III
+take the canonical Islamic metaphysical claims and treat each
+rigorously, using the methodological apparatus of Part I and the
+analytical apparatus of Part II. Each chapter follows the same
+structure: state the claim, present the skeptical objection,
+formalize the claim using the modern apparatus, derive its content,
+state the empirical predictions, acknowledge what remains open, and
+identify the level of treatment achieved (\xref{ch:levels-of-rigor}).
+
+The present chapter treats the claim that \arb{rizq} is conserved
+over a lifetime: that no soul dies before completing its allotted
+provision. The treatment is Level 2 in our taxonomy, with elements
+moving toward Level 3 where the apparatus permits. The chapter
+establishes the formal framework; subsequent chapters will use the
+same framework with modifications.
+
+The chapter proceeds in nine sections.
+\xref{sec:rizq-claim} states the scriptural claim precisely and
+catalogs its loci.
+\xref{sec:rizq-objection} presents the skeptical objection.
+\xref{sec:rizq-formalization} formalizes the claim as a conservation
+law in the sense of Noether's theorem.
+\xref{sec:rizq-stochastic} develops the stochastic-process formulation.
+\xref{sec:rizq-bohmian} treats the Bohmian interpretation in which
+the lifetime trajectory is fully determined.
+\xref{sec:rizq-empirical} discusses what empirical evidence
+would support or refute the claim.
+\xref{sec:rizq-akbarian} integrates the Akbarian framework of
+\xref{ch:akbarian}.
+\xref{sec:rizq-implications} draws the practical and theoretical
+implications.
+\xref{sec:rizq-open} states what remains open.
+
+\section{The scriptural claim}
+\label{sec:rizq-claim}
+
+\subsection{The Quranic basis}
+
+We collected the Quranic loci in \xref{sec:quran}; we restate the
+most central here. The locus classicus is \Quran{11:6}:
+
+\begin{quote}
+\textit{And there is no creature on earth but that upon Allah is its
+provision (\arb{rizq}), and He knows its place of dwelling and
+place of storage. All is in a clear register.}
+\end{quote}
+
+The verse asserts three propositions: (1) every living creature has
+provision that Allah has assumed responsibility for; (2) the place
+and manner of provision are known to Allah; (3) all of this is
+recorded in a clear register. The classical exegesis (al-Tabari,
+al-Razi, al-Qurtubi) is unanimous that ``upon Allah''
+(\arb{`ala Allah}) carries the full force of divine undertaking.
+
+The verse \Quran{29:60} extends the claim beyond humans:
+
+\begin{quote}
+\textit{And how many a creature carries not its own provision!
+Allah provides for it and for you.}
+\end{quote}
+
+The decoupling of provision from the creature's provisioning capacity
+is explicit. The wild animal that cannot save or plan still receives
+its provision; the same is true, the verse implies, for human beings.
+
+The temporal structure is supplied by the hadith we cite as the
+chapter's epigraph and develop now.
+
+\subsection{The hadith on the lifetime integral}
+
+\hadith{Sahih Muslim} 2664 states:
+
+\begin{quote}
+\textit{No one of you will leave this world until his provision
+(\arb{rizq}) reaches him in full and his appointed term
+(\arb{ajal}) has been completed.}
+\end{quote}
+
+The hadith makes two claims simultaneously, and the simultaneity is
+what we must formalize. First, the lifetime integral of provision is
+fixed; it ``reaches in full'' before death. Second, the time of death
+is similarly fixed. Together they imply that no individual dies
+having received less than their decreed provision.
+
+A second key report from \hadith{Sahih al-Bukhari} 3208 establishes
+the pre-natal recording of \arb{rizq}:
+
+\begin{quote}
+\textit{...Then Allah sends an angel and orders him to write four
+things: his provision (\arb{rizq}), his lifespan (\arb{ajal}),
+his deeds, and whether he will be among the wretched or the
+felicitous.}
+\end{quote}
+
+The hadith establishes that the decree of provision is not merely
+chronologically prior to the soul's life; it is part of the
+ontological structure within which the soul is created. The
+provision is recorded before the soul exists.
+
+\subsection{The composite claim}
+
+We can now state the composite claim that the chapter will formalize:
+
+\begin{conceptbox}[The rizq-conservation claim]
+\label{conc:rizq-claim}
+For each created soul $i$, there exist:
+\begin{itemize}[leftmargin=1.5em]
+    \item A fixed total provision $K_i \in \mathbb{R}_+$,
+    pre-determined.
+    \item A fixed lifespan $T_i \in \mathbb{R}_+$, pre-determined.
+\end{itemize}
+The instantaneous provision rate $R_i(t)$ for soul $i$ at time $t$
+satisfies the conservation condition
+\[
+    \int_0^{T_i} R_i(t)\, dt = K_i.
+\]
+The lifetime integral is invariant; the temporal distribution
+$R_i(t)$ may vary, but the integral is fixed.
+\end{conceptbox}
+
+This is the precise claim. The rest of the chapter examines what it
+means, what apparatus formalizes it, what implications follow, and
+what evidence would bear on it.
+
+\section{The skeptical objection}
+\label{sec:rizq-objection}
+
+The skeptical reader will object on several grounds. We treat the
+strongest formulations.
+
+\subsection{The free-will objection}
+
+If $K_i$ and $T_i$ are pre-determined, then the soul's striving has
+no effect on the integral. Why work? Why save? Why plan? The
+classical \arb{kalam} debate on \arb{qadar} (\xref{sec:kalam}) is
+the historical articulation of this objection. We treat it
+fully in \xref{ch:qadar} (Chapter 16). For the present chapter, we
+note that the objection applies equally to any deterministic
+framework (Newtonian physics included) and is dissolved by the
+Bohmian-style structure we develop in \xref{sec:rizq-bohmian}.
+
+\subsection{The empirical objection}
+
+The objection: where is the empirical evidence? Surely we have
+abundant data on individual provision over lifetimes; if the
+integral is invariant, this should be observable. The data, as far
+as we know it, does not show such an invariance. People starve.
+People die in want. The rich and the poor experience radically
+different lifetime integrals. How can the claim be true?
+
+This objection rests on a misreading of what is being claimed. The
+$K_i$ in the conservation claim is not a constant across souls;
+each soul has its own $K_i$, decreed in advance. The claim is not
+that all souls receive the same provision; it is that each soul
+receives the provision allotted to it. The differences across
+individuals are not evidence against the conservation claim; they are
+expressions of differential decrees.
+
+The empirical question is therefore harder than it first appears.
+What we would need to establish, to confirm the claim, is that for
+each individual the lifetime integral is invariant under
+counterfactual variations of the individual's life history.
+Different choices, different circumstances, different efforts ---
+do they all produce the same integral? This is what the claim
+asserts, and it is much harder to test than the cross-individual
+question.
+
+We discuss the empirical strategy in \xref{sec:rizq-empirical}.
+
+\subsection{The metaphysical objection}
+
+The objection: how can the integral of a temporal flow be
+pre-determined before the flow occurs? The provision arrives
+day by day; what does it mean for the total to be fixed in advance?
+
+This objection is the deepest. It can be answered in several ways.
+The Akbarian framework of \xref{ch:akbarian} provides one answer:
+the soul itself, with its specific structural capacity to receive
+the manifestation of \arb{ar-Razzaq}, is what has been determined;
+the integral $K_i$ is the structural property of this capacity. The
+Bohmian framework of \xref{sec:rizq-bohmian} provides another:
+the trajectory of the soul through the configuration space of
+possible life histories is fully determined by the initial
+conditions, and the integral is a property of that trajectory. We
+develop both.
+
+\section{Formalization as a conservation law}
+\label{sec:rizq-formalization}
+
+\subsection{The Noether structure}
+
+The conservation claim has the formal structure of a conservation
+law. In physics, conservation laws are not accidents; by Noether's
+theorem (1918), every continuous symmetry of the Lagrangian
+corresponds to a conserved quantity. Conservation of energy follows
+from time-translation symmetry; conservation of momentum follows
+from spatial-translation symmetry; conservation of charge follows
+from gauge symmetry.
+
+If we treat the claim seriously as a Level 2 formal analogy
+(\xref{ch:levels-of-rigor}), we should ask: what is the symmetry
+that produces the conservation of $K_i$?
+
+\begin{conceptbox}[Candidate symmetry: counterfactual life-path invariance]
+\label{conc:counterfactual-invariance}
+Let $\Gamma_i$ denote the set of all possible life-paths of soul
+$i$ --- all the trajectories the soul could have taken, given its
+initial conditions and the decree governing its existence. For each
+$\gamma \in \Gamma_i$, let $R_i^\gamma(t)$ denote the provision rate
+along path $\gamma$, and let
+\[
+    K_i^\gamma = \int_0^{T_i} R_i^\gamma(t)\, dt.
+\]
+The conservation claim is: $K_i^\gamma = K_i$ for all $\gamma \in
+\Gamma_i$. The lifetime integral is invariant under the
+transformation ``take a different counterfactual life path.''
+\end{conceptbox}
+
+This is a strong claim with the formal structure of a Noether
+invariance. If we further suppose that $\Gamma_i$ is a continuous
+family parameterized by some variable (the soul's degree of
+striving, perhaps), then the invariance corresponds to a
+continuous symmetry, and Noether's theorem implies a conserved
+quantity. The conserved quantity is $K_i$.
+
+\subsection{What this formalization gives us and does not give us}
+
+The Noether-type formalization gives us a precise structural claim.
+It tells us that the invariance of $K_i$ has the same structural
+character as the invariance of energy in physics. The conservation
+is not arbitrary; it expresses a symmetry of the underlying
+structure.
+
+The formalization does not give us a physical mechanism. We are not
+claiming that the Lagrangian of the soul is well-defined or that
+Noether's theorem applies in its physical sense. We are claiming
+that the claim has the structural form of a conservation law and
+that this form admits Noether-type formal treatment. This is
+exactly Level 2 in our taxonomy: a formal analogy that imports
+structural insight without commitment to the underlying mechanism.
+
+\subsection{What the symmetry is symmetry of}
+
+A subtle point. In physics, the symmetry that produces a conservation
+law is a symmetry of the action functional or the Hamiltonian, both
+of which are mathematical objects. In the present case, what is the
+symmetry of?
+
+The natural answer, within the Akbarian framework, is that the
+symmetry is a symmetry of the soul's structural capacity. The soul,
+as a locus of divine self-disclosure (\xref{sec:divine-names}), has a
+specific structural character that determines what manifestations it
+can receive. The integral $K_i$ is the magnitude of the soul's
+capacity for receiving the manifestation of \arb{ar-Razzaq}.
+Different counterfactual life paths --- different temporal
+distributions of the manifestation --- do not change the soul's
+structural capacity, and therefore do not change the integral.
+
+The symmetry, in Akbarian terms, is the invariance of the soul's
+capacity under variation of the temporal manifestation of that
+capacity. The capacity is what is fixed; the manifestation is what
+varies. The conservation is the natural consequence.
+
+\section{The stochastic-process formulation}
+\label{sec:rizq-stochastic}
+
+\subsection{Provision as a stochastic process}
+
+Independent of the Noether-type formalization, we can formalize the
+conservation claim as a property of stochastic processes. Let
+$R_i(t)$ be a stochastic process representing soul $i$'s provision
+rate at time $t$. The conservation claim is:
+
+\begin{conceptbox}[Stochastic conservation]
+\label{conc:stochastic-conservation}
+The lifetime integral $\int_0^{T_i} R_i(t)\, dt$ is, with probability
+1 in the appropriate measure, equal to $K_i$. The process $R_i(t)$
+varies stochastically, but the integral is deterministic.
+\end{conceptbox}
+
+This is the time-integral analogue of the deterministic-but-real
+structure of Bohmian mechanics that we treat in \xref{sec:rizq-bohmian}.
+The process is random in its instantaneous values; its integral is
+not.
+
+\subsection{Mathematical implications}
+
+This formulation has specific mathematical implications. Standard
+stochastic processes (Brownian motion, Poisson processes) do not
+generally have deterministic integrals. The variance of the
+integral typically grows with the time horizon. The
+rizq-conservation claim asserts that the variance of the integral
+is zero.
+
+There exist mathematical objects with this property. They are
+sometimes called \emph{constrained stochastic processes}: stochastic
+processes whose paths are restricted to satisfy a deterministic
+constraint. The standard mathematical machinery for such processes
+is well-developed in the theory of stochastic differential equations
+with constraints.
+
+The simplest model: a process $R_i(t)$ that is otherwise random but
+whose accumulated integral is monitored, with adjustments to keep
+the integral on track for the predetermined value $K_i$. Such a
+process has random-looking paths (the $R_i(t)$ values vary) but
+deterministic integral (the $\int_0^{T_i} R_i(t)\, dt$ is fixed).
+
+The technical apparatus is the apparatus of bridging stochastic
+processes, particularly the Brownian bridge. A Brownian bridge is a
+Brownian motion conditioned to take a specific value at a specific
+endpoint; its paths are random but its endpoint is fixed. The
+\arb{rizq} process can be modeled as an analogous bridge: a process
+whose instantaneous values are random but whose terminal integral
+is fixed.
+
+\subsection{Implications for striving}
+
+This formulation answers the free-will objection of
+\xref{sec:rizq-objection}. The fact that $K_i$ is fixed does not
+mean that $R_i(t)$ is fixed; the temporal distribution of provision
+varies. Striving is real and effective; it shapes the
+distribution of provision across the lifetime. What striving cannot
+do is change the integral.
+
+This is consistent with the classical hadith on \arb{tawakkul}:
+
+\begin{quote}
+\textit{If you all relied on Allah with the proper trust, He would
+provide for you as He provides for the birds: they leave (their
+nests) hungry in the morning and return filled in the evening.}
+(\hadith{Tirmidhi} 2517)
+\end{quote}
+
+The hadith does not say humans should not work or plan. It asserts
+that the integral is unaffected by the worry; what worry can do is
+distort the temporal distribution. The believer who works without
+worry has the same integral as the believer who works with worry,
+but the work is more effective and the experience is more peaceful.
+
+\section{The Bohmian formulation}
+\label{sec:rizq-bohmian}
+
+\subsection{The Bohmian structure applied to lifetime trajectories}
+
+Bohmian mechanics (\xref{sec:interpretations}) gives us a formal
+structure in which trajectories are fully determined yet motion is
+real. We apply this structure to the soul's life trajectory.
+
+\begin{conceptbox}[Bohmian formulation of rizq conservation]
+\label{conc:bohmian-rizq}
+The configuration space for soul $i$ is the space of all possible
+life trajectories. The wave function $\Psi_i$ on this space is
+determined by the divine decree at the moment of the soul's
+creation. The actual life of the soul is a single trajectory through
+the configuration space, guided by $\Psi_i$ according to a
+guidance equation analogous to the Bohmian guidance equation
+(\xref{prin:bohmian}).
+
+The integral $K_i = \int_0^{T_i} R_i(t)\, dt$ is a functional of
+the trajectory. Because the trajectory is fully determined by
+$\Psi_i$ and the soul's initial position in configuration space,
+the integral is fully determined as well. Yet the motion along the
+trajectory is real; the soul actually traverses the trajectory.
+\end{conceptbox}
+
+This is a formal structural claim. We are not asserting that the
+soul is a Bohmian particle. We are asserting that the structure
+``determined trajectory + real motion + fixed integral'' is
+mathematically coherent and physically instantiated in Bohmian
+mechanics. Whatever the actual mechanism of the soul's life, it
+can have this structure without contradiction.
+
+\subsection{The dissolution of the determinism objection}
+
+The free-will objection of \xref{sec:rizq-objection} is now
+dissolved. In the Bohmian framework, the trajectory is fully
+determined yet the motion is real. Striving is not illusory; it is
+the soul's actual motion through the configuration space. The fact
+that the motion is determined does not make it less real.
+
+The classical \arb{kalam} debate on \arb{qadar}, treated in detail
+in \xref{ch:qadar} (Chapter 16), can be read as the attempt to
+articulate this structure in pre-modern vocabulary. The Mu`tazila,
+Ash`ariyya, and Maturidiyya each tried to formulate a position that
+preserved both divine determination and human responsibility. Each
+formulation has its difficulties; all are addressing the same
+underlying structure that Bohmian mechanics articulates cleanly.
+
+The claim of the present chapter is therefore not just about
+\arb{rizq}; it is about a class of phenomena that have the
+structure ``determined integral + real path + variable
+distribution.'' The structure is not paradoxical; it is exhibited
+by physical systems that we now understand mathematically. The
+metaphysical claim of the Islamic tradition is consistent with the
+mathematical structure.
+
+\subsection{Why this is Level 2 and not Level 3}
+
+The treatment of this chapter is Level 2 in our taxonomy
+(\xref{ch:levels-of-rigor}). We have given the conservation claim a
+formal structure (Noether-type, stochastic-process, Bohmian) but we
+have not identified the specific physical mechanism that produces
+the conservation. The mechanism, in the Akbarian framework, is the
+soul's structural capacity to receive divine self-disclosure
+(\xref{sec:rizq-akbarian}); but ``the soul's structural capacity''
+is itself a metaphysical claim, not a physical mechanism in the
+modern scientific sense.
+
+To reach Level 3 we would need to identify the physical
+correlates of the soul's structural capacity --- some neural,
+behavioral, or social variables whose variation across individuals
+predicts variation in $K_i$. We do not currently have these. The
+operational research program is one of the directions in which the
+Hidden Architecture project must extend; we discuss it in
+\xref{sec:rizq-empirical}.
+
+\section{The empirical challenge}
+\label{sec:rizq-empirical}
+
+\subsection{What would constitute evidence}
+
+The conservation claim is, in principle, empirical: $K_i$ is a real
+quantity for each soul, and we can in principle measure
+$\int_0^{T_i} R_i(t)\, dt$ for individuals whose lives have
+concluded. The challenge is what would count as a test of the
+claim.
+
+The naive test --- compare $K_i$ across individuals --- does not
+test the claim. Different individuals have different decreed
+$K_i$; the cross-individual variation is consistent with the claim,
+not evidence against it.
+
+The test we would want is counterfactual: for a given individual,
+would they have had the same $K_i$ if their life had unfolded
+differently? This is impossible to test directly (we cannot rerun a
+life), but it can be approached statistically through carefully
+designed natural experiments.
+
+\subsection{Natural experiments}
+
+Several types of natural experiment are relevant.
+
+First, twins reared apart. Identical twins share genetic endowment
+but, in the case of separation, experience different environments
+and different life histories. The conservation claim predicts that
+their lifetime $K_i$ values should be more similar than would be
+expected from random allocation among their shared environments.
+This is a testable prediction.
+
+Second, lottery winners. Individuals who win large lotteries
+experience a sudden, exogenous increase in $R_i(t)$ at a particular
+time. The conservation claim predicts that subsequent $R_i(t)$
+should adjust downward to keep the integral on track. The
+empirical literature on lottery winners (Imbens et al.\ 2001 and
+subsequent work) shows that lottery winners typically reduce their
+labor supply and experience a return to income trajectories not
+dramatically different from non-winners; this is suggestive but
+not definitive.
+
+Third, sudden adverse events. Individuals who experience sudden
+losses (asset seizures, business failures) might be expected to
+have subsequent $R_i(t)$ adjustments upward to keep the integral on
+track. The data on this is harder to interpret because the events
+themselves are often correlated with personal characteristics that
+affect subsequent income.
+
+Fourth, longitudinal cohort studies. Long-running cohort studies
+(the Framingham study, the British cohort studies, etc.) provide
+detailed individual income data over decades. Statistical analysis
+of the variance of lifetime income, conditional on early-life
+predictors, can shed light on the conservation claim.
+
+\subsection{Methodological challenges}
+
+Several methodological challenges must be acknowledged.
+
+First, defining $R_i(t)$ operationally. Is it monetary income? Is it
+real consumption? Does it include non-monetary provision (housing
+provided by family, food cultivated, etc.)? The choice of
+operationalization affects the empirical results. The Akbarian
+framework would suggest that $R_i(t)$ is the full manifestation of
+\arb{ar-Razzaq} in the soul's life, which is broader than monetary
+income. But broader operationalizations are harder to measure.
+
+Second, the lifetime $T_i$ is not known until death. Empirical
+studies of lifetime integrals are necessarily retrospective and
+conducted on completed lives.
+
+Third, the comparison group problem. To test the conservation claim
+statistically, we need to compare actual lifetime integrals with
+counterfactual ones. The counterfactual is unobservable.
+
+Despite these challenges, the empirical program is not impossible.
+The challenges are common to many areas of social science research
+(the difficulty of counterfactual reasoning, operationalization
+choices, comparison group construction) and methodologies have been
+developed for addressing them. The conservation claim is empirically
+testable in principle; the empirical program has not yet been
+seriously undertaken; it is one of the contributions the Hidden
+Architecture project can stimulate.
+
+\section{The Akbarian integration}
+\label{sec:rizq-akbarian}
+
+\subsection{Rizq as manifestation of ar-Razzaq}
+
+The Akbarian framework of \xref{ch:akbarian} provides the
+metaphysical substrate for the conservation claim. \arb{Rizq} is
+not an independent substance that gets distributed; it is the
+manifestation of the divine name \arb{ar-Razzaq} (the Provider) in
+the locus of the soul. The integral $K_i$ is the structural
+capacity of the soul's locus for receiving this manifestation.
+
+This metaphysical substrate explains several features of the formal
+treatment.
+
+\textbf{Why the integral is fixed.} The integral is fixed because
+the soul's structural capacity is fixed. The capacity is not a
+property the soul earns; it is what the soul is, ontologically.
+The soul is created with a specific capacity for receiving the
+manifestation of \arb{ar-Razzaq}, and the integral is just the
+total magnitude of this capacity actualized over the lifetime.
+
+\textbf{Why the temporal distribution varies.} The temporal
+distribution can vary because the actualization of the capacity is
+a temporal process subject to the soul's choices, the surrounding
+circumstances, and the moment of the divine disclosure. The
+capacity is fixed; the temporal pattern of its actualization is
+not.
+
+\textbf{Why striving matters but does not change the integral.}
+Striving affects the temporal pattern of actualization. The soul
+that strives is more receptive to the manifestation, more able to
+recognize it when it arrives, more able to use it for the soul's
+intended purposes. But the magnitude of the manifestation is fixed
+by the capacity, not by the striving.
+
+\textbf{Why the integral varies across souls.} Different souls have
+different capacities. Different capacities correspond to different
+configurations of divine names in the soul (\xref{sec:divine-names});
+the integral of \arb{ar-Razzaq} manifestation in a soul whose
+configuration emphasizes \arb{al-Ghani} (the Self-Sufficient) is
+different from the integral in a soul whose configuration
+emphasizes \arb{al-Wahhab} (the Constant Giver).
+
+\subsection{The dynamics of tajalli}
+
+The Akbarian doctrine of \arb{tajalli} (continuous self-disclosure,
+\xref{sec:tajalli-mechanism}) gives the dynamic content of the
+conservation claim. The provision $R_i(t)$ is the instantaneous
+manifestation of \arb{ar-Razzaq} in the soul at time $t$. The
+manifestation is continuous, not once-and-for-all; the soul receives
+fresh provision moment by moment, throughout the lifetime.
+
+The integral over the lifetime is the total magnitude of the
+manifestation. The total is fixed by the soul's capacity. The
+moment-by-moment distribution is the temporal unfolding of the
+manifestation, subject to the soul's actual life history.
+
+This is a richer picture than the bare conservation claim. It
+embeds the claim in a metaphysical framework in which the
+conservation is not a strange constraint imposed from outside but
+a natural consequence of the structural relationship between the
+soul and the divine self-disclosure.
+
+\subsection{Comparison with classical theological treatments}
+
+The classical theological treatment of \arb{rizq} in the
+mainstream tradition emphasized the divine guarantee of provision
+and the futility of excessive worry, but did not articulate the
+conservation structure formally. Texts like al-Ghazali's
+\textit{Ihya'} and later devotional literature treat \arb{rizq} as
+a divine assurance to be trusted; the formal mathematical structure
+we have given here was not made explicit.
+
+This is one of the contributions of the present project. The
+classical treatment had the substance right; what was missing was
+the formal framework that allows the substance to be expressed in
+modern theoretical vocabulary. The conservation structure, the
+stochastic-bridge formalism, the Bohmian analogue --- these
+articulate, in modern terms, what the classical tradition was
+asserting in its own vocabulary.
+
+\section{Implications}
+\label{sec:rizq-implications}
+
+\subsection{Practical implications}
+
+The conservation claim has direct practical implications for the
+believer.
+
+\textbf{Anxiety reduction.} If the integral is fixed by the
+soul's capacity, then anxiety about the future is misplaced. The
+provision will arrive; the only question is when and how. The
+reduction of anxiety is itself a behavioral consequence with
+empirical correlates; we treat it in \xref{ch:gratitude}.
+
+\textbf{Effort allocation.} If striving affects the temporal
+distribution but not the integral, then the optimal effort is the
+effort that makes the temporal distribution match the soul's
+purposes, not the effort that maximizes the integral. This is
+substantively different from the standard maximization framework
+and has implications for retirement planning, savings behavior,
+and intergenerational wealth transfer.
+
+\textbf{Charity behavior.} If the integral is fixed, then charity
+does not reduce the giver's lifetime provision; it shifts the
+temporal distribution. This is consistent with the Quranic
+teaching that charity does not deplete wealth (\Quran{2:261},
+\Quran{34:39}, and the hadith corpus).
+
+\subsection{Theoretical implications}
+
+The conservation claim has implications for several other parts of
+the Hidden Architecture project.
+
+\textbf{For Chapter 11 (network of provision).} The claim that
+children bring their own provision is, in part, the claim that
+each child has its own conservation integral $K_i$. The household-network
+analysis of \xref{ch:network-provision} builds on this individual
+claim.
+
+\textbf{For Chapter 14 (gratitude).} The behavioral mediation chain
+through which gratitude affects long-run wealth includes the
+disposition that recognizes provision as it arrives. The
+recognition is what allows the soul to receive its $K_i$ fully
+within the lifetime $T_i$.
+
+\textbf{For Chapter 15 (barakah).} The barakah multiplier on
+material wealth is, on the Akbarian reading, the intensity with
+which the manifestation of \arb{ar-Razzaq} is occurring. Barakah
+does not change the integral; it changes the experiential
+character of the provision.
+
+\textbf{For Chapter 16 (qadar).} The conservation claim is a
+specific instance of the general qadar structure. The Bohmian and
+QBist treatments of qadar in Chapter 16 apply directly here.
+
+\subsection{Implications for economic policy}
+
+If the conservation claim is approximately correct, several
+mainstream economic policies are at minimum questionable.
+Aggressive growth maximization, which assumes that economic policy
+can change individual lifetime provision integrals, may be
+mistaking distributional shifts for integral increases.
+Anti-poverty policies that focus on the lifetime integral may be
+less effective than those that focus on smoothing the temporal
+distribution.
+
+This is a direction that subsequent volumes of the Islamic
+Economics series will develop. The present chapter establishes the
+foundational claim; the policy implications are downstream.
+
+\section{What remains open}
+\label{sec:rizq-open}
+
+The conservation claim, as we have formalized it, is at Level 2. To
+reach Level 3 we would need:
+
+\begin{enumerate}[leftmargin=2em]
+    \item An operational specification of $R_i(t)$ that makes it
+    measurable across individuals and time.
+    \item Empirical data, from natural experiments or longitudinal
+    studies, that supports or refutes the conservation claim.
+    \item A specification of the physical correlates of the soul's
+    ``structural capacity'' that bears on the integral.
+\end{enumerate}
+
+None of these is currently available. The empirical program for
+the rizq-conservation claim is an open research direction.
+
+We should also acknowledge limits of the formal treatment. The
+Bohmian formulation is structural; we are not claiming that the
+soul is literally governed by Bohmian dynamics. The Noether
+analogy is structural; we are not claiming that the soul's life
+admits a Lagrangian formulation. These are formal analogies that
+illuminate the structure of the claim without committing to a
+specific physical realization.
+
+\section{Conclusion}
+
+Chapter 10 has formalized the rizq-conservation claim, established
+its structural coherence with modern frameworks, integrated it with
+the Akbarian metaphysical substrate, and identified the empirical
+program that would be required to move from Level 2 to Level 3.
+
+The chapter has set the template for the rest of Part III. Each
+subsequent chapter will follow the same structure: state the claim,
+present the objection, formalize using the Part II apparatus,
+integrate with the Akbarian framework, draw implications, and
+identify what remains open.
+
+The chapter that follows treats the network-theoretic articulation
+of the children-bring-rizq claim. The conservation claim of the
+present chapter is an individual-scale claim; Chapter 11 will treat
+the corresponding household-scale claim and show that it follows
+from individual conservation plus specific Islamic structural
+conditions.
+
+\begin{summarybox}[Chapter summary]
+\textbf{The claim}: for each soul $i$, the lifetime integral
+$K_i = \int_0^{T_i} R_i(t)\, dt$ is fixed in advance. The temporal
+distribution $R_i(t)$ varies; the integral is invariant.
+
+\textbf{Formalizations}:
+\begin{itemize}[leftmargin=1.5em]
+    \item Noether-type: invariance under counterfactual life-path
+    transformation.
+    \item Stochastic-process: bridge structure with deterministic
+    integral.
+    \item Bohmian: trajectory fully determined by initial wave
+    function; motion real.
+\end{itemize}
+
+\textbf{Akbarian substrate}: the integral is the soul's structural
+capacity for receiving the manifestation of \arb{ar-Razzaq};
+\arb{tajalli} provides the dynamic content.
+
+\textbf{Empirical strategy}: natural experiments (twins reared
+apart, lottery winners, adverse events, longitudinal cohorts).
+None definitively tested; research program is open.
+
+\textbf{Implications}: anxiety reduction is rational; effort
+allocation should focus on temporal distribution rather than
+integral maximization; charity does not reduce lifetime provision.
+
+\textbf{Level achieved}: Level 2. The structural claim is
+formalized; the operational mechanism is not yet specified.
+
+\textbf{What comes next}: Chapter 11 develops the network-theoretic
+articulation of the children-bring-rizq claim, building on the
+individual conservation result.
+\end{summarybox}
+
+\cleardoublepage

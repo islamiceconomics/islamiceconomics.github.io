@@ -1,0 +1,183 @@
+\chapter*{Notation}
+\addcontentsline{toc}{chapter}{Notation}
+\markboth{Notation}{Notation}
+
+The notation used throughout this book is collected here for reference.
+The reader who encounters an unfamiliar symbol in the text is
+encouraged to return to this section. Notation that is specific to a
+single chapter is defined in that chapter and is not necessarily
+listed here.
+
+\section*{Sets and standard mathematical objects}
+
+\begin{notationbox}[Sets and operators]
+\begin{description}[leftmargin=3cm,style=nextline]
+    \item[{$\mathbb{N}$}] the natural numbers, $\{0, 1, 2, \dots\}$.
+    \item[{$\mathbb{Z}$}] the integers.
+    \item[{$\mathbb{Q}$}] the rational numbers.
+    \item[{$\mathbb{R}$}] the real numbers.
+    \item[{$\mathbb{R}_+$}] the non-negative reals, $[0, \infty)$.
+    \item[{$\mathbb{R}_{++}$}] the strictly positive reals, $(0, \infty)$.
+    \item[{$\mathbb{C}$}] the complex numbers.
+    \item[{$\mathbb{R}^n$}] the $n$-dimensional real Euclidean space.
+    \item[{$\subseteq, \subset$}] subset, proper subset.
+    \item[{$\cup, \cap, \setminus$}] union, intersection, set difference.
+    \item[{$\emptyset$}] the empty set.
+    \item[{$|S|$}] cardinality of set $S$ (number of elements).
+    \item[{$f: X \to Y$}] a function from $X$ to $Y$.
+    \item[{$f \circ g$}] composition of functions, $(f \circ g)(x) = f(g(x))$.
+    \item[{$\lim_{x\to a}$}] limit as $x$ approaches $a$.
+    \item[{$\sum, \prod, \int$}] standard sum, product, integral.
+    \item[{$\partial / \partial x$}] partial derivative.
+    \item[{$\nabla$}] gradient operator.
+    \item[{$\propto$}] ``proportional to.''
+    \item[{$\sim$}] ``scales as'' or ``has the same order as.''
+    \item[{$\ll, \gg$}] much less than, much greater than.
+\end{description}
+\end{notationbox}
+
+\section*{Probability and statistics}
+
+\begin{notationbox}[Probability notation]
+\begin{description}[leftmargin=3cm,style=nextline]
+    \item[{$(\Omega, \mathcal{F}, P)$}] a probability space, with sample
+        space $\Omega$, sigma-algebra $\mathcal{F}$, and probability
+        measure $P$.
+    \item[{$P(A)$}] probability of event $A \in \mathcal{F}$.
+    \item[{$P(A \mid B)$}] conditional probability of $A$ given $B$.
+    \item[{$X, Y, Z$}] random variables (capital Latin letters).
+    \item[{$F_X(x) = P(X \leq x)$}] cumulative distribution function of $X$.
+    \item[{$f_X(x)$}] probability density function of $X$ (when it exists).
+    \item[{$\mathbb{E}[X]$}] expected value (mean) of $X$.
+    \item[{$\text{Var}(X)$}] variance of $X$.
+    \item[{$\sigma_X$ or $\text{SD}(X)$}] standard deviation of $X$.
+    \item[{$\text{Cov}(X, Y)$}] covariance.
+    \item[{$\text{Corr}(X, Y)$}] correlation.
+    \item[{$X \sim D$}] $X$ is distributed according to $D$.
+    \item[{$X_1, X_2, \dots \overset{\text{i.i.d.}}{\sim} D$}]
+        independent and identically distributed.
+    \item[{$\langle X \rangle_t$}] time average of $X$ over time interval $t$.
+    \item[{$\langle X \rangle_n$}] ensemble average of $X$ over $n$ replicas.
+    \item[{$N(\mu, \sigma^2)$}] normal distribution with mean $\mu$ and
+        variance $\sigma^2$.
+\end{description}
+\end{notationbox}
+
+The distinction between the time average $\langle X \rangle_t$ and
+the ensemble average $\langle X \rangle_n$ is fundamental to this work
+and is developed at length in Chapter 6 (in the present volume's
+sequel) and applied throughout Part III. The reader should note now
+that these are not in general equal, contrary to the assumption built
+into much of standard economics.
+
+\section*{Quantum mechanical notation}
+
+We use the standard Dirac notation throughout for quantum-mechanical
+discussions in Chapters 5 and 16.
+
+\begin{notationbox}[Quantum notation]
+\begin{description}[leftmargin=3cm,style=nextline]
+    \item[{$|\psi\rangle$}] a quantum state vector (``ket'').
+    \item[{$\langle \psi |$}] the dual vector (``bra'').
+    \item[{$\langle \psi | \phi \rangle$}] inner product of quantum states.
+    \item[{$|\psi|^2 = \langle \psi | \psi \rangle$}] squared norm.
+    \item[{$\hat{A}, \hat{H}$}] operators (e.g., Hamiltonian).
+    \item[{$\hat{A} | \psi \rangle$}] action of operator on a state.
+    \item[{$\langle \hat{A} \rangle = \langle \psi | \hat{A} | \psi \rangle$}]
+        expectation value of observable $\hat{A}$ in state $|\psi\rangle$.
+    \item[{$\hbar$}] reduced Planck constant, $h/(2\pi) \approx 1.055 \times 10^{-34}$~J$\cdot$s.
+    \item[{$|0\rangle, |1\rangle$}] computational basis states.
+    \item[{$\otimes$}] tensor product.
+\end{description}
+\end{notationbox}
+
+\section*{Economic notation}
+
+We follow the conventions of Mas-Colell, Whinston, and Green (1995)
+where applicable.
+
+\begin{notationbox}[Economic notation]
+\begin{description}[leftmargin=3cm,style=nextline]
+    \item[{$\mathcal{X}$}] consumption set (the set of consumption bundles
+        available in principle).
+    \item[{$x = (x_1, \dots, x_L) \in \mathbb{R}^L_+$}] a consumption bundle
+        of $L$ goods.
+    \item[{$\succeq, \succ, \sim$}] preference relations: weak preference,
+        strict preference, indifference.
+    \item[{$u: \mathcal{X} \to \mathbb{R}$}] a utility function.
+    \item[{$p = (p_1, \dots, p_L) \in \mathbb{R}^L_{++}$}] a price vector.
+    \item[{$w$}] wealth (sometimes endowment); occasionally written
+        $W$ when household wealth is meant.
+    \item[{$B(p, w) = \{x \in \mathcal{X} : p \cdot x \leq w\}$}]
+        Walrasian budget set.
+    \item[{$x(p, w)$}] Walrasian demand correspondence.
+    \item[{$h(p, u)$}] Hicksian (compensated) demand.
+    \item[{$v(p, w)$}] indirect utility.
+    \item[{$e(p, u)$}] expenditure function.
+    \item[{$\beta \in (0, 1)$}] discount factor.
+    \item[{$\delta$}] discount rate, often $\delta = 1 - \beta$ or
+        $\beta = e^{-\delta}$ depending on context.
+    \item[{$r$}] interest rate.
+    \item[{$g$}] growth rate.
+\end{description}
+\end{notationbox}
+
+\section*{Notation specific to this book}
+
+Several notations are introduced for the analysis of Islamic economic
+phenomena and recur throughout. They are listed here for reference and
+defined in detail at first use.
+
+\begin{notationbox}[Project-specific notation]
+\begin{description}[leftmargin=3cm,style=nextline]
+    \item[{$R_i(t)$}] the instantaneous \arb{rizq} (provision) of
+        agent $i$ at time $t$. Used in the formal treatment of the
+        rizq-conservation hypothesis.
+    \item[{$K_i$}] the lifetime integral of $R_i(t)$ for agent $i$;
+        the total provision allotment.
+    \item[{$\mathbb{I}(H)$}] the conjunction of Islamic structural
+        conditions on a household $H$, defined formally in Chapter 11.
+    \item[{$\beta$}] the scaling exponent in the wealth-size relation
+        $W(n) \sim n^\beta$. (Note: this is unrelated to the
+        discount factor of the same symbol; context disambiguates.)
+    \item[{$B_i(t)$}] the \arb{barakah} multiplier on agent $i$'s
+        wealth at time $t$; defined operationally in Chapter 15 as
+        the welfare residual after material controls.
+    \item[{$N(t), P(t)$}] nominal and productive wealth, respectively;
+        used in the riba-as-financial-entropy treatment of Chapter 13.
+    \item[{$G(t) = N(t) - P(t)$}] the riba gap; the divergence of
+        nominal from real wealth.
+    \item[{$\nu_i$}] the \arb{niyyah} variable; an indicator of
+        intentional state used in the operationalization of barakah
+        and certain transaction-level analyses.
+    \item[{$\mathbb{W}_t$}] absolute being, \arb{wujud}, in
+        Akbarian-formal contexts. We use a distinct symbol because the
+        concept does not reduce to ``existence'' in the modern sense.
+    \item[{$\mathcal{T}_n$}] the $n$-th \arb{tajalli}; the
+        $n$-th moment of divine self-disclosure, in the formal
+        treatment of continuous creation in Chapter 9.
+\end{description}
+\end{notationbox}
+
+\section*{A note on the symbol $\beta$}
+
+The symbol $\beta$ is used in this book in two unrelated senses. In
+the macroeconomic and intertemporal-choice contexts, $\beta$ denotes
+the discount factor (the standard meaning). In Chapter 11 and the
+related discussions of household scaling, $\beta$ denotes the
+exponent in the scaling relation $W(n) \sim n^\beta$. Context will
+always make clear which is intended; where the two might be confused,
+explicit subscripts are used. We have not found a way to resolve this
+without departing from established notation in one of the two
+literatures, and have judged that established notation is the lesser
+evil.
+
+\section*{A note on the use of \arb{italic}}
+
+Arabic terms appear in italic at first use and at points where the
+term is being thematized. Once a term is established, it appears in
+roman type. Mathematical variables appear in italic by the standard
+convention of \LaTeX. The reader who encounters an italicized non-Latin
+word should consult the glossary if unfamiliar.
+
+\cleardoublepage

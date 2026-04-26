@@ -1,0 +1,922 @@
+\chapter{Non-Computability and the Reality of Intention}
+\label{ch:non-computability}
+
+\epigraph{\itshape If the human brain is a computer, then there are
+mathematical truths the brain cannot understand. But the brain
+understands them. So the brain is not a computer.}{--- Roger Penrose,
+informal summary}
+
+\noindent
+This chapter develops the fourth major resource of Part II: the
+case for the non-computability of human consciousness, particularly
+in the form articulated by Sir Roger Penrose. The treatment matters
+for the larger project because it bears on the Islamic claims about
+intention (\arb{niyyah}), about the constitutive role of the inner
+state in the value of an act, and about the unity of mental and
+moral content that the Islamic tradition has consistently asserted
+and that contemporary computational accounts of mind have
+consistently denied.
+
+The chapter is mathematically demanding in places. We develop two
+foundational results --- G\"odel's first incompleteness theorem and
+Turing's halting problem --- with enough rigor that the Penrose
+argument can be evaluated. We then state the argument, examine its
+critiques, and consider the proposed Penrose-Hameroff mechanism
+(Orchestrated Objective Reduction). The chapter concludes by drawing
+the implications for the Islamic project.
+
+The chapter assumes basic familiarity with formal logic at the level
+of an undergraduate introductory course; readers who lack this
+background are walked through the necessary material. The
+mathematical level rises through the chapter; readers who find
+\xref{sec:godel-proof} difficult can take the result on trust and
+proceed.
+
+The chapter proceeds in nine sections.
+\xref{sec:computation-defined} defines what computation is, formally,
+through the Turing machine.
+\xref{sec:formal-systems} defines formal systems and provability.
+\xref{sec:godel-statement} states G\"odel's first incompleteness
+theorem.
+\xref{sec:godel-proof} sketches the proof.
+\xref{sec:godel-second} treats G\"odel's second incompleteness
+theorem briefly.
+\xref{sec:halting} treats Turing's halting problem.
+\xref{sec:penrose-argument} states the Penrose argument from G\"odel.
+\xref{sec:penrose-critiques} treats the critiques and Penrose's
+responses.
+\xref{sec:orch-or} surveys the proposed Penrose-Hameroff mechanism.
+\xref{sec:non-comp-implications} draws the implications for
+\arb{niyyah} and the broader project.
+
+\section{What is computation? The Turing machine}
+\label{sec:computation-defined}
+
+To ask whether the human mind is or is not computable, we need a
+precise notion of computation. The most influential formal
+definition was given by Alan Turing in 1936.\footnote{Turing, A. M.
+(1936), ``On computable numbers, with an application to the
+Entscheidungsproblem,'' \emph{Proceedings of the London Mathematical
+Society}, ser.\ 2, vol.\ 42, pp.\ 230--265.}
+
+\subsection{The Turing machine}
+
+\begin{definition}[Turing machine]
+\label{def:turing-machine}
+A \emph{Turing machine} consists of:
+\begin{itemize}[leftmargin=2em]
+    \item An infinite \emph{tape} divided into cells, each of which
+    contains a symbol from a finite alphabet $\Sigma$ (typically
+    including a blank symbol).
+    \item A \emph{read-write head} that reads the symbol on the
+    current cell and can write a new symbol or move the head to an
+    adjacent cell.
+    \item A finite \emph{state} from a finite set $Q$ of states,
+    including a designated initial state and one or more halting
+    states.
+    \item A \emph{transition function} $\delta: Q \times \Sigma
+    \to Q \times \Sigma \times \{L, R, S\}$ that specifies, for each
+    combination of state and read symbol, the next state, the symbol
+    to write, and whether to move the head left ($L$), right
+    ($R$), or stay ($S$).
+\end{itemize}
+The machine begins in the initial state with input written on the
+tape. At each step, it consults the transition function to determine
+its action, writes the new symbol, moves the head, and transitions
+to the new state. The machine halts when it enters a halting state
+or, alternatively, may run forever.
+\end{definition}
+
+The Turing machine is a deliberately austere model. It captures the
+essential features of computation: a finite description (the
+transition function), a step-by-step procedure, and the production
+of an output. Turing argued, and it has subsequently become standard
+that --- the Church-Turing thesis --- the Turing machine captures
+all of what is intuitively computable. Anything that can be computed
+by any algorithmic procedure can be computed by some Turing machine.
+
+The Church-Turing thesis is empirically supported: every formal
+model of computation that has been proposed (lambda calculus,
+recursive functions, register machines, modern programming languages)
+has been shown to be equivalent in power to the Turing machine. None
+exceeds it; none is weaker (modulo finite-resource considerations
+that do not bear on what is in principle computable).
+
+\subsection{Examples}
+
+A Turing machine can compute any computable function. Examples
+include:
+
+\begin{itemize}[leftmargin=2em]
+    \item Adding two numbers: a Turing machine can read two binary
+    integers from the tape and write their sum.
+    \item Multiplying, dividing, taking square roots: all standard
+    arithmetic operations are Turing-computable.
+    \item Sorting a list, searching a database, parsing a language:
+    all algorithmic tasks.
+    \item Simulating any other Turing machine (the
+    \emph{universal Turing machine}, which Turing constructed in his
+    original paper).
+\end{itemize}
+
+What Turing machines \emph{cannot} compute is the subject of the
+halting problem (\xref{sec:halting}); what mathematicians can
+prove that Turing machines cannot prove is the subject of G\"odel's
+theorem.
+
+\subsection{Why this matters}
+
+If the human mind is a Turing machine (or, equivalently, anything
+computable), then there are computable bounds on what the mind can
+do. The Penrose argument is that mathematical insight transcends
+these bounds, so the human mind is not a Turing machine. To evaluate
+this argument we need to understand what the bounds are. That is the
+work of the next several sections.
+
+\section{Formal systems and provability}
+\label{sec:formal-systems}
+
+\subsection{What a formal system is}
+
+\begin{definition}[Formal system]
+\label{def:formal-system}
+A \emph{formal system} consists of:
+\begin{itemize}[leftmargin=2em]
+    \item A finite or recursively-enumerable \emph{alphabet} of symbols.
+    \item A set of \emph{formulas} (well-formed strings of symbols),
+    specified by syntactic rules.
+    \item A set of \emph{axioms}, distinguished formulas accepted
+    without proof.
+    \item A set of \emph{inference rules}, allowing one to derive
+    new formulas from existing ones.
+\end{itemize}
+A \emph{proof} in the system is a finite sequence of formulas, each
+of which is either an axiom or follows from earlier formulas in the
+sequence by an inference rule. A formula is a \emph{theorem} if there
+exists a proof of it.
+
+A formal system is \emph{consistent} if no formula and its
+negation are both theorems.
+
+A formal system is \emph{complete} if every formula expressible in
+the system is either a theorem or has its negation as a theorem.
+\end{definition}
+
+The classical examples are systems of arithmetic and set theory.
+Peano arithmetic (PA) has axioms about the natural numbers and
+inference rules of first-order logic; its theorems are the formulas
+of arithmetic that can be derived from the axioms. Zermelo-Fraenkel
+set theory with choice (ZFC) is the standard foundation of modern
+mathematics.
+
+Hilbert, in the early twentieth century, advanced what is now called
+\emph{Hilbert's program}: the project of finding a finitely-specifiable,
+consistent, complete formal system that captures all of mathematics.
+The hope was that mathematical truth would be reducible to formal
+proof; once we had the right system, every mathematical question
+would be answerable by mechanical derivation.
+
+Hilbert's program was killed by G\"odel's theorems.
+
+\subsection{Why formal systems are computable}
+
+A formal system, as defined, is computable in a specific sense: there
+is a Turing machine that, given any candidate proof, can verify
+whether the candidate is a valid proof. Verification is mechanical:
+check whether each formula in the sequence is an axiom or follows
+from earlier formulas by an inference rule.
+
+The set of theorems of a formal system is therefore
+\emph{recursively enumerable}: a Turing machine can systematically
+generate proofs and output the theorems they prove (though the
+machine may run forever; for any given formula, we cannot in general
+tell whether it will eventually be proven).
+
+This computability of formal systems is what makes them
+mathematically tractable. It is also what makes them subject to
+G\"odel's theorem: the limitations of computability translate into
+limitations of provability.
+
+\section{G\"odel's first incompleteness theorem: statement}
+\label{sec:godel-statement}
+
+\subsection{Informal statement}
+
+\begin{conceptbox}[G\"odel's first incompleteness theorem (informal)]
+\label{conc:godel-1}
+For any consistent formal system $F$ rich enough to express
+elementary arithmetic, there exists a formula $G_F$ in the language
+of $F$ such that $G_F$ is true but cannot be proved within $F$.
+\end{conceptbox}
+
+This was proved by Kurt G\"odel in 1931. The proof technique is
+brilliant and we sketch it in \xref{sec:godel-proof}. For now, we
+note three things about the statement.
+
+First, the theorem applies to any sufficiently rich consistent
+formal system. ``Rich enough to express elementary arithmetic''
+means roughly that the system can talk about natural numbers and
+their basic operations. This includes Peano arithmetic, ZFC, and
+essentially every formal system used in mathematics.
+
+Second, the theorem produces a specific formula $G_F$ for each such
+system. The formula depends on $F$; different systems give
+different unprovable formulas. There is no single formula that no
+formal system can prove; for any unprovable-in-$F$ formula, there is
+some richer system $F'$ that proves it. The point is that any
+\emph{single} system has its own unprovable formulas.
+
+Third, the unprovable formula $G_F$ is true. This is the strongest
+and most contested claim. We discuss it in detail when we treat the
+Penrose argument.
+
+\subsection{The original wording}
+
+G\"odel's original wording is more precise. The theorem in modern
+form:
+
+\begin{theorem}[G\"odel's first incompleteness theorem (formal)]
+\label{thm:godel-1}
+Let $F$ be a consistent formal system that includes Robinson
+arithmetic (a weak fragment of Peano arithmetic). Then there exists
+a formula $G_F$ in the language of $F$ such that $F \nvdash G_F$
+and $F \nvdash \neg G_F$.
+
+(Here $\vdash$ denotes ``proves,'' so $F \nvdash G_F$ means $F$ does
+not prove $G_F$.)
+
+If $F$ is $\omega$-consistent (a slightly stronger condition than
+consistent), then $G_F$ is true (in the standard model of arithmetic).
+\end{theorem}
+
+The slightly stronger condition of $\omega$-consistency is required
+for the truth claim. If $F$ is merely consistent but not
+$\omega$-consistent, then $G_F$ is independent of $F$ but might be
+false. A subsequent strengthening by Rosser (1936) eliminated this
+gap; for $F$ merely consistent, there exists a formula independent
+of $F$.
+
+For our purposes we take the truth of $G_F$ on board.
+$\omega$-consistency is sufficient and is satisfied by all standard
+mathematical systems.
+
+\section{G\"odel's first incompleteness theorem: proof sketch}
+\label{sec:godel-proof}
+
+This section sketches the proof. The reader may take the result on
+trust and proceed to \xref{sec:godel-second} if desired; the
+detailed mechanism is intellectually beautiful but is not required
+for the rest of the chapter.
+
+\subsection{The strategy}
+
+G\"odel's proof has three main components:
+
+\begin{enumerate}[leftmargin=2em]
+    \item A method (now called \emph{G\"odel numbering}) for
+    encoding formulas and proofs as natural numbers. This makes
+    syntactic statements about $F$ expressible in the language of
+    $F$ itself.
+    \item A construction of a self-referential formula $G_F$ that
+    asserts (in coded form) ``this formula is not provable in $F$.''
+    \item An argument that, if $F$ is consistent, $G_F$ cannot be
+    proved or disproved in $F$, and is true.
+\end{enumerate}
+
+\subsection{G\"odel numbering}
+
+The first step assigns a natural number to every symbol, formula,
+and proof in the language of $F$. The numbering is constructed so
+that:
+
+\begin{itemize}[leftmargin=2em]
+    \item Different syntactic objects get different numbers.
+    \item Given the number, one can recover the original object.
+    \item Operations on syntactic objects (substitution, formation
+    of conjunctions, etc.) correspond to computable operations on
+    their numbers.
+\end{itemize}
+
+A simple G\"odel numbering: assign each symbol of the language a
+distinct prime number ($p_1 = 2, p_2 = 3, p_3 = 5, \dots$). For a
+sequence of symbols $s_{i_1} s_{i_2} \dots s_{i_n}$, define its
+G\"odel number as $p_1^{i_1} p_2^{i_2} \dots p_n^{i_n}$. By the
+fundamental theorem of arithmetic (unique prime factorization), the
+sequence can be recovered from its G\"odel number. The assignment
+extends in obvious ways to formulas (sequences of symbols) and
+proofs (sequences of formulas).
+
+The technical details are intricate but the principle is clear:
+syntactic objects can be encoded as numbers, and the encoding allows
+arithmetical statements to talk about syntactic objects. In
+particular, statements about provability in $F$ become arithmetical
+statements that can be expressed within $F$ itself.
+
+\subsection{The provability predicate}
+
+Using G\"odel numbering, define the predicate $\text{Prov}_F(n)$:
+
+\begin{quote}
+``The formula with G\"odel number $n$ is provable in $F$.''
+\end{quote}
+
+This predicate can be expressed as a formula in the language of $F$
+(this requires substantial technical work but is doable). The
+formula has the property that, for each formula $\varphi$ with
+G\"odel number $n_\varphi$:
+
+\begin{itemize}[leftmargin=2em]
+    \item If $F \vdash \varphi$, then $F \vdash \text{Prov}_F(n_\varphi)$.
+    \item If $F$ is $\omega$-consistent and $F \nvdash \varphi$, then
+    $F \nvdash \text{Prov}_F(n_\varphi)$.
+\end{itemize}
+
+The provability predicate ``represents'' provability within the
+system. Provability in the meta-language has been internalized to
+the object language.
+
+\subsection{The diagonal lemma and the construction of $G_F$}
+
+The diagonal lemma (a key technical tool, due to G\"odel and
+Carnap) states that for any formula $\psi(x)$ with one free
+variable $x$, there exists a formula $\varphi$ such that
+\[
+    F \vdash \varphi \leftrightarrow \psi(\ulcorner \varphi \urcorner),
+\]
+where $\ulcorner \varphi \urcorner$ denotes the G\"odel number of
+$\varphi$. Informally: there is a formula $\varphi$ that says
+``$\psi$ holds of me.''
+
+Apply the diagonal lemma to $\psi(x) \equiv \neg \text{Prov}_F(x)$.
+We obtain a formula $G_F$ such that
+\[
+    F \vdash G_F \leftrightarrow \neg \text{Prov}_F(\ulcorner G_F \urcorner).
+\]
+Informally: $G_F$ says ``I am not provable in $F$.''
+
+This is the self-referential formula we have been after. It is a
+statement, expressible in the language of $F$, that asserts its own
+unprovability.
+
+\subsection{The conclusion}
+
+Assume $F$ is consistent ($\omega$-consistent for the strongest
+form). Two cases.
+
+\textbf{Case 1: $F \vdash G_F$.} Then $\text{Prov}_F(\ulcorner G_F \urcorner)$
+is true and provable in $F$. But by the construction of $G_F$,
+$F \vdash \neg \text{Prov}_F(\ulcorner G_F \urcorner)$. So $F$ proves
+both $\text{Prov}_F(\ulcorner G_F \urcorner)$ and its negation,
+contradicting consistency.
+
+\textbf{Case 2: $F \vdash \neg G_F$.} Then $F$ proves
+$\text{Prov}_F(\ulcorner G_F \urcorner)$. But by the second
+property of the provability predicate, if $F$ is $\omega$-consistent
+and $F \nvdash G_F$, then $F \nvdash \text{Prov}_F(\ulcorner G_F \urcorner)$.
+Either $F$ proves $G_F$ (yielding the contradiction of Case 1) or
+$F$ does not prove $\text{Prov}_F(\ulcorner G_F \urcorner)$, contradicting
+the assumption that $F \vdash \neg G_F \to \text{Prov}_F(\ulcorner G_F \urcorner)$.
+
+Either way we have a contradiction. So $F \nvdash G_F$ and $F \nvdash
+\neg G_F$. The formula $G_F$ is independent of $F$.
+
+Moreover, $G_F$ is true. Why? Because $G_F$ asserts that $G_F$ is
+not provable in $F$, and we have just shown that $G_F$ is indeed
+not provable in $F$. The assertion is correct; $G_F$ is true.
+
+\subsection{The result is unavoidable}
+
+Several attempts to circumvent G\"odel's theorem have been made and
+none has succeeded.
+
+\begin{itemize}[leftmargin=2em]
+    \item One could add $G_F$ as a new axiom of $F$. The expanded
+    system $F' = F + G_F$ is still consistent (assuming $F$ was) and
+    proves $G_F$. But $F'$ has its own unprovable formula $G_{F'}$,
+    by the same construction.
+    \item One could try a system with infinitely many axioms. As
+    long as the axioms are recursively enumerable (the system is
+    formally specifiable), G\"odel's theorem applies.
+    \item One could try a system without G\"odel numbering. As long
+    as the system is rich enough to express arithmetic, G\"odel
+    numbering can be carried out.
+\end{itemize}
+
+The result is robust. Every consistent, recursively-axiomatized
+formal system rich enough to express arithmetic has true
+unprovable statements within it. This is a theorem of mathematics,
+not a metaphysical claim.
+
+\section{G\"odel's second incompleteness theorem}
+\label{sec:godel-second}
+
+A second result, also proved by G\"odel in 1931, strengthens the
+first.
+
+\begin{theorem}[G\"odel's second incompleteness theorem]
+\label{thm:godel-2}
+Let $F$ be a consistent formal system rich enough to express
+elementary arithmetic. Then $F$ cannot prove its own consistency.
+\end{theorem}
+
+The proof: the consistency of $F$ can be expressed as a formula
+$\text{Cons}(F)$ in the language of $F$. If $F$ proved
+$\text{Cons}(F)$, then $F$ would prove $G_F$ (because $G_F$ is
+provable from $\text{Cons}(F)$ by a standard argument). But $F$
+does not prove $G_F$, by the first incompleteness theorem.
+Therefore $F$ does not prove $\text{Cons}(F)$.
+
+The implication is striking: no consistent formal system can
+establish its own consistency. To establish that a formal system $F$
+is consistent, we must reason from outside $F$, in some richer
+system. But that richer system cannot prove its own consistency
+either; it must be established from a still richer system; and so
+on without end.
+
+The implication for Hilbert's program was decisive. Hilbert wanted
+to show that mathematics is consistent by giving a finitary
+arithmetic-internal proof of consistency. G\"odel's second theorem
+shows this cannot be done.
+
+\section{Turing's halting problem}
+\label{sec:halting}
+
+Turing's 1936 paper proved a result closely related to G\"odel's,
+in the framework of computation rather than formal systems.
+
+\subsection{Statement}
+
+\begin{theorem}[The halting problem is undecidable]
+\label{thm:halting}
+There is no Turing machine $H$ such that, given as input the
+description of a Turing machine $M$ and an input $x$ to $M$, $H$
+returns ``halt'' if $M$ halts on $x$ and ``loop'' otherwise.
+\end{theorem}
+
+The halting problem asks: given a program and an input, will the
+program eventually finish, or will it run forever? Turing showed
+that no algorithm can answer this question for all program-input
+pairs.
+
+\subsection{Proof sketch}
+
+The proof is by diagonalization, parallel to G\"odel's. Suppose,
+for contradiction, that such a halting decision algorithm $H$
+exists. Construct a new Turing machine $D$ as follows: given input
+$M$ (the description of a machine), $D$ simulates $H(M, M)$. If
+$H(M, M)$ returns ``halt,'' $D$ enters an infinite loop. If $H(M, M)$
+returns ``loop,'' $D$ halts.
+
+Now consider what happens when $D$ is given its own description as
+input: $D(D)$. By construction:
+
+\begin{itemize}[leftmargin=2em]
+    \item If $H(D, D) = $ ``halt'' (i.e., $D$ halts on $D$), then
+    $D$ goes into an infinite loop on $D$, so $D$ does not halt on
+    $D$. Contradiction.
+    \item If $H(D, D) = $ ``loop'' (i.e., $D$ does not halt on $D$),
+    then $D$ halts on $D$. Contradiction.
+\end{itemize}
+
+Either way, contradiction. The assumption that $H$ exists must be
+wrong. The halting problem is undecidable.
+
+\subsection{The connection to G\"odel}
+
+The halting problem and G\"odel's incompleteness theorem are deeply
+connected. Each can be derived from the other (via appropriate
+translations). Both arise from the same fundamental phenomenon: a
+sufficiently rich formal or computational system can ``talk about
+itself'' through self-reference, and self-reference produces
+ineliminable limitations.
+
+The two results together establish a wide-ranging conclusion: there
+are mathematical truths beyond the reach of formal proof, and
+computational tasks beyond the reach of algorithm. The classical
+hope --- that mathematics could be reduced to mechanical
+manipulation, that mind could be reduced to algorithm --- was
+shown by G\"odel and Turing to be unrealizable in principle.
+
+\section{The Penrose argument from G\"odel}
+\label{sec:penrose-argument}
+
+We now state the Penrose argument. The argument has been articulated
+in several forms; we present the strongest version.\footnote{The
+argument was developed at length in Penrose, R. (1989), \emph{The
+Emperor's New Mind}, and refined in (1994), \emph{Shadows of the
+Mind}, both Oxford University Press.}
+
+\subsection{The argument}
+
+\begin{enumerate}[leftmargin=2em]
+    \item Suppose the human mathematician's mathematical reasoning
+    corresponds to a formal system $F_M$. (This is what it means
+    for the mind to be a Turing machine: there is a finitely
+    specifiable set of axioms and inference rules that captures
+    everything the mathematician can prove.)
+    \item By G\"odel's first incompleteness theorem, there is a true
+    formula $G_{F_M}$ that $F_M$ cannot prove.
+    \item But the human mathematician, reasoning informally about
+    $F_M$, can see that $G_{F_M}$ is true. (This is the contestable
+    step; we discuss it carefully below.)
+    \item Therefore the human mathematician's reasoning is not
+    captured by $F_M$ (since the mathematician proves things $F_M$
+    cannot prove).
+    \item Since $F_M$ was arbitrary --- the argument applies to
+    any formal system that might purportedly capture the
+    mathematician's reasoning --- the human mathematician's
+    reasoning is not captured by any formal system.
+    \item Therefore human mathematical understanding is
+    non-computable.
+\end{enumerate}
+
+This is the structural argument. The conclusion --- that the human
+mind is not a Turing machine, that mathematical insight transcends
+algorithmic procedure --- is profound. Mathematicians can do
+something that no Turing machine can do.
+
+\subsection{Why the argument is intuitively compelling}
+
+The mathematician's procedure for ``seeing that $G_{F_M}$ is true''
+goes like this. Look at $G_{F_M}$. Reflect: $G_{F_M}$ asserts ``I
+am not provable in $F_M$.'' Reason: if $F_M$ proved $G_{F_M}$, then
+$G_{F_M}$ would be both provable and (by what it asserts) not
+provable, a contradiction. So $F_M$ does not prove $G_{F_M}$. But
+that is exactly what $G_{F_M}$ asserts. So $G_{F_M}$ is true.
+
+The reasoning is straightforward and convincing. It is also,
+notably, not itself a formal proof in $F_M$. It is meta-mathematical:
+it reasons \emph{about} $F_M$ from outside. That meta-reasoning,
+Penrose argues, is what cannot be captured by any formal system.
+
+\subsection{The strength of the conclusion}
+
+If the argument succeeds, the conclusion is striking. The human
+mind is doing something that no formal system can do, no algorithm
+can capture, no computer can simulate. The mind is not a
+Turing-equivalent device. It is something else, and that
+something else is what the contemporary cognitive sciences cannot,
+even in principle, fully describe in computational terms.
+
+The conclusion does not say what the mind is. Penrose proposes a
+specific hypothesis (Orchestrated Objective Reduction, treated in
+\xref{sec:orch-or}), but that is separate from the negative claim.
+The negative claim is that the mind is not just a computer. Whatever
+it is, it transcends the computational.
+
+\section{Critiques of the Penrose argument}
+\label{sec:penrose-critiques}
+
+The argument has attracted substantial criticism. We treat the most
+serious critiques and Penrose's responses.
+
+\subsection{The consistency objection}
+
+The most common critique: the mathematician's reasoning that
+$G_{F_M}$ is true depends on the assumption that $F_M$ is
+consistent. If $F_M$ is inconsistent, all formulas are provable,
+including $G_{F_M}$ and its negation; the mathematician's reasoning
+breaks down.
+
+The mathematician's actual procedure includes the meta-claim ``$F_M$
+is consistent.'' But this meta-claim is itself a formal statement,
+and the mathematician's ability to prove it might be captured by
+some larger system $F'_M$ that includes both $F_M$ and the
+consistency claim. The mathematician is then doing $F'_M$-level
+reasoning, which is also formal. The argument that the mathematician
+transcends formal systems would have to be repeated for $F'_M$, but
+the same critique would apply.
+
+This is the so-called ``escalation'' critique. It does not refute
+the Penrose conclusion but it shows that the simple form of the
+argument is insufficient.
+
+\subsection{Penrose's response}
+
+Penrose's response (developed at length in \emph{Shadows of the
+Mind}) is that the consistency assumption is justified by something
+beyond formal proof: by \emph{understanding}. We do not prove that
+$F_M$ is consistent in any system; we see that it is, by
+mathematical insight. This seeing is not a formal step. It is
+exactly the non-formal element that the argument is identifying.
+
+The escalation does not stop the argument because, at every level,
+the mathematician's seeing of consistency is non-formal. We can
+formalize at level $F_M$, then see consistency, then formalize at
+$F'_M$, then see consistency at that level, and so on. The seeing
+of consistency at each level is the non-computable element.
+
+\subsection{The Lucas-Penrose debate}
+
+The argument has a longer history than Penrose alone. It was
+introduced in essentially its present form by John Lucas in 1961,
+in a paper titled ``Minds, Machines, and G\"odel.''\footnote{Lucas,
+J. R. (1961), ``Minds, machines, and G\"odel,'' \emph{Philosophy}
+36(137): 112--127.} Lucas-Penrose has been debated for sixty years.
+The major counter-arguments are:
+
+\begin{itemize}[leftmargin=2em]
+    \item The mathematician might be inconsistent (in which case
+    G\"odel doesn't apply).
+    \item The mathematician's formal system might not be knowable
+    by the mathematician (we don't know what $F_M$ is, so we can't
+    construct $G_{F_M}$).
+    \item The mathematician might be a probabilistic Turing machine,
+    not a deterministic one (changes the analysis but not
+    fundamentally).
+    \item The argument equivocates between ``the mathematician''
+    (an idealized agent) and actual mathematicians (limited
+    creatures).
+\end{itemize}
+
+Each has its responses, none of which has settled the debate. The
+most thorough recent treatment is probably Feferman's, who is
+sympathetic to Penrose's intuition but skeptical of his specific
+arguments.\footnote{Feferman, S. (1995), ``Penrose's G\"odelian
+argument,'' \emph{Psyche} 2: 21--32; and (2009), ``G\"odel,
+Nagel, minds, and machines,'' \emph{Journal of Philosophy} 106:
+201--219.}
+
+For our purposes, the precise resolution is not required. What
+matters is that the argument is taken seriously by working
+philosophers and mathematicians of the first rank. The negative
+claim --- that human mathematical insight may not be reducible to
+algorithm --- is at minimum a live possibility. It cannot be
+casually dismissed.
+
+\subsection{The status of the argument}
+
+The author's assessment, after engagement with both sides: the
+argument as Penrose presents it does not establish its conclusion
+beyond reasonable doubt, but it is highly suggestive and
+philosophically serious. The intuition that mathematical
+understanding involves something beyond mechanical derivation is
+strong and is not refuted by the standard objections. The detailed
+reduction of mathematical insight to algorithmic procedure has
+not been carried out by anyone in a way that captures the actual
+phenomenology of mathematical discovery.
+
+For the present project, the negative claim is sufficient. We do not
+need to establish that the mind is non-computable; we need only to
+establish that the position is intellectually serious, that it is
+defended by leading thinkers, and that it has not been refuted in
+any way that has gained universal acceptance. All three are true.
+
+This is enough to disable the materialist-computationalist objection
+to the Islamic doctrine of \arb{niyyah}. If the mind \emph{might}
+be non-computable, then the constitutive role of intention in the
+moral and economic value of action \emph{might} be a real
+phenomenon that no algorithmic description can capture. The
+materialist who insists that intention reduces to brain state and
+brain state reduces to computational state is making a strong
+philosophical commitment, not a settled scientific finding.
+
+\section{The Penrose-Hameroff Orch-OR theory}
+\label{sec:orch-or}
+
+If consciousness is non-computable, what physical process supports
+it? Classical neural networks are Turing-equivalent (they implement
+Turing machines, perhaps with stochastic elements that do not change
+their fundamental power). Quantum systems, however, exhibit
+phenomena that classical computation cannot capture. Penrose, in
+collaboration with the anesthesiologist Stuart Hameroff, has
+proposed that the relevant non-classical processes occur in the
+microtubules of neuronal cells.
+
+\subsection{The hypothesis}
+
+\begin{conceptbox}[Orchestrated Objective Reduction (Orch-OR)]
+\label{conc:orch-or}
+\begin{enumerate}[leftmargin=1.5em]
+    \item Consciousness arises from objective gravitational
+    reduction events --- spontaneous wave-function collapses driven
+    by gravitational self-energy, as proposed in Penrose's objective
+    collapse theory.
+    \item These collapses occur in cellular microtubules:
+    cylindrical protein structures within neurons that, the theory
+    argues, can support coherent quantum states for biologically
+    relevant timescales.
+    \item Each collapse event is a moment of conscious experience.
+    The orchestration of many such events, organized by the
+    microtubule structure, produces the unified stream of
+    consciousness.
+    \item Because the underlying gravitational collapse is non-computable
+    (Penrose argues), consciousness inherits this non-computability,
+    explaining how human mathematical insight can transcend formal
+    systems.
+\end{enumerate}
+\end{conceptbox}
+
+The hypothesis combines several speculative elements. It depends on
+the gravity-induced objective collapse interpretation of quantum
+mechanics (one of several interpretations, as we saw in Chapter 5).
+It depends on microtubules being the relevant biological substrate
+(contested empirically). It depends on the collapse being
+non-computable (mathematically subtle).
+
+\subsection{Empirical status}
+
+The empirical status is contested. Early objections included the
+prediction by Tegmark (2000) that quantum coherence in microtubules
+would decohere far too quickly to be biologically relevant.\footnote{Tegmark,
+M. (2000), ``Importance of quantum decoherence in brain processes,''
+\emph{Physical Review E} 61: 4194--4206.} Subsequent work has refined
+the estimates, with mixed results. Recent experimental studies
+(2022--2025) have produced both supporting and contradicting
+evidence.
+
+The author's assessment: the empirical case for Orch-OR specifically
+is currently weak. The hypothesis is a productive research direction
+but has not been established. The reader should not treat it as
+settled science.
+
+\subsection{Why the empirical status doesn't matter for our project}
+
+The Orch-OR hypothesis is one specific proposal for how the
+non-computability of mind might be physically realized. The Penrose
+argument from G\"odel does not depend on this specific proposal;
+the argument is logical, not empirical. Even if Orch-OR turns out
+to be empirically false, the argument that the mind is non-computable
+remains. The physical mechanism would then be something else.
+
+For the present project, what matters is the negative claim: there
+is a serious, professionally-defended argument that the human mind
+is not a Turing machine. The argument has been around for sixty
+years, has resisted definitive refutation, and is taken seriously
+by leading thinkers. The argument's specific physical embodiment
+(Orch-OR or otherwise) is not what we need.
+
+\section{Implications for niyyah and the Hidden Architecture project}
+\label{sec:non-comp-implications}
+
+We now draw the implications of the non-computability work for the
+Islamic project. Three implications are central.
+
+\subsection{Niyyah as constitutive of action}
+
+The Islamic tradition holds, on the authority of the opening hadith
+of \hadith{Sahih al-Bukhari}, that ``actions are by intentions, and
+every person will have only what they intended.'' The hadith
+asserts that the same physical action has different reality
+depending on the intention behind it. Two people performing the same
+prayer with different intentions are doing different things; two
+people giving the same charity with different intentions have given
+different charities.
+
+The materialist-computationalist framework cannot accommodate this
+claim cleanly. If intention is just a brain state, and brain states
+are computational states, then two physically identical brain
+states have the same intention, and two identical actions performed
+by identical brain states are the same action. The claim that they
+might differ in moral value would have to be reduced to differences
+elsewhere (in social context, in subsequent behavior, etc.).
+
+The non-computability framework permits a richer reading. If mind
+is not reducible to computation, then there is something to
+intention beyond what the computational description captures. The
+``something'' is not magical; it is the non-formal element that the
+Penrose argument identifies. The same physical action, performed by
+two minds with different non-formal mental states, is genuinely
+different at a level the computational description cannot reach.
+
+This is exactly what the Islamic tradition has been claiming.
+\arb{Niyyah} is constitutive because it is the non-formal mental
+content that gives the action its character; the action's character
+is therefore not reducible to its computational description.
+
+\subsection{Qadar and the limits of formal description}
+
+A second connection. The classical \arb{kalam} debate on \arb{qadar}
+(treated in \xref{sec:kalam}) attempted to specify, formally, the
+relationship between divine decree and human action. The Mu`tazila,
+Ash`ariyya, and Maturidiyya gave different formal answers. None was
+fully satisfying, partly because the problem itself may admit no
+formal answer.
+
+The non-computability work suggests that this is to be expected.
+The relationship between divine knowledge (perfect, complete) and
+human reasoning (finite, formal) cannot be expected to be expressible
+within human formal systems. Any attempt to give a formal account
+of \arb{qadar} from within a formal system will either misrepresent
+divine knowledge as another formal system (incorrect, by infinite
+regress arguments) or misrepresent human reasoning as something
+that can fully grasp the divine framework (incorrect, by G\"odel-style
+arguments).
+
+The right response is not to give a formal account but to recognize
+the structural impossibility of one. The classical \arb{kalam}
+debates have been valuable as articulations of the structure of
+the problem; they have not produced a formal solution because no
+formal solution is available. The non-computability work explains
+why.
+
+\subsection{The dignity of the human}
+
+A broader connection. The Islamic tradition treats the human as
+\arb{khalifah} --- vicegerent, steward of creation --- with a dignity
+that the materialist tradition has been unable to reproduce. The
+materialist account of the human as a computational system is
+deflationary: humans are sophisticated automata, and the moral and
+spiritual claims about human dignity are folk-psychological residues
+to be eliminated as the science matures.
+
+The non-computability work resists this deflation. If the mind is
+not a Turing machine, then the human is not a sophisticated automaton.
+The dignity of the human is not a folk residue; it tracks a real
+feature of the world that the computational description misses.
+
+The Islamic claim is not, of course, established by this. The
+Islamic tradition has always grounded human dignity in the
+relationship of the human to the divine, not in cognitive
+non-computability. But the non-computability work removes an
+obstacle. The materialist who insists that humans are nothing but
+computational systems and therefore have no dignity beyond what
+the computational view can grant has made a philosophical
+commitment that is far from established. The Islamic tradition's
+richer view of the human is consistent with the contemporary
+philosophical literature; it is materialism that is in trouble.
+
+\section{Conclusion of Chapter 8}
+
+We have developed the non-computability argument and its
+implications. The chapter has been mathematically demanding;
+readers who have stayed with the proof of G\"odel's theorem in
+\xref{sec:godel-proof} will, the author hopes, appreciate the
+elegance of the result and the strength of the conclusion.
+
+The cumulative case for the Hidden Architecture project is now
+substantially built. We have:
+
+\begin{itemize}[leftmargin=2em]
+    \item Quantum interpretations that permit determinism and
+    motion to coexist (Bohmian mechanics) and probability to be
+    perspectival (QBism). [\xref{ch:quantum-foundations}]
+    \item Ergodicity economics that shows the time average of
+    wealth dynamics differs from the ensemble average and that
+    Islamic prohibitions correctly identify the time-averaged
+    consequence. [\xref{ch:ergodicity}]
+    \item Analytical idealism that takes mind as fundamental and
+    physical reality as appearance, structurally matching Islamic
+    \arb{tawhid}. [\xref{ch:analytical-idealism}]
+    \item Non-computability that gives \arb{niyyah} ontological
+    standing it cannot have within the materialist framework.
+    [\xref{ch:non-computability}]
+\end{itemize}
+
+What remains for Part II is the development of the Akbarian
+tradition itself, the Islamic articulation of the metaphysical
+position that the contemporary frameworks have approached from
+outside. That is the work of Chapter 9.
+
+\begin{summarybox}[Chapter summary]
+\textbf{The Turing machine}: the formal model of computation, due
+to Turing 1936. Captures everything that is intuitively computable
+(Church-Turing thesis).
+
+\textbf{Formal systems}: alphabets, formulas, axioms, inference
+rules, theorems. Provability is computable; the set of theorems is
+recursively enumerable.
+
+\textbf{G\"odel's first incompleteness theorem}: any consistent
+formal system rich enough to express arithmetic contains a true
+formula it cannot prove. The proof uses G\"odel numbering, the
+provability predicate, the diagonal lemma, and self-referential
+construction.
+
+\textbf{G\"odel's second incompleteness theorem}: no such system
+can prove its own consistency. Killed Hilbert's program.
+
+\textbf{Turing's halting problem}: no Turing machine can decide,
+for arbitrary program-input pairs, whether the program halts. Same
+diagonal structure as G\"odel.
+
+\textbf{The Penrose argument from G\"odel}: if the human mind is a
+Turing machine, then it is captured by a formal system $F_M$. By
+G\"odel, $F_M$ has unprovable formulas the mind can see to be true.
+Therefore the mind is not captured by $F_M$. Therefore the mind is
+not a Turing machine.
+
+\textbf{The contestable step}: that the mind sees the truth of
+$G_{F_M}$ in a non-formal way. This step has been disputed for sixty
+years; no consensus refutation has emerged.
+
+\textbf{Orch-OR}: the proposed mechanism for non-computability ---
+gravitationally-driven objective collapse in cellular microtubules.
+Empirically contested; not required for the Penrose argument.
+
+\textbf{Implications for the Islamic project}:
+\begin{itemize}[leftmargin=1.5em]
+    \item \arb{Niyyah} can be genuinely constitutive of action,
+    beyond what the computational description captures.
+    \item The classical \arb{kalam} debates on \arb{qadar} were
+    addressing a problem that may have no formal solution.
+    \item Human dignity is not a folk-psychological residue but a
+    real feature that materialism cannot capture.
+\end{itemize}
+
+\textbf{What comes next}: Chapter 9 develops Akbarian metaphysics,
+the Islamic articulation of the metaphysical position the
+contemporary frameworks have approached from outside.
+\end{summarybox}
+
+\cleardoublepage

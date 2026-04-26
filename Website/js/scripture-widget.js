@@ -9,6 +9,59 @@
   // Don't load on the Sources page itself
   if (window.location.pathname.includes('scriptures.html')) return;
 
+  const lang = (document.documentElement.lang || 'en').toLowerCase();
+  const locale = lang.startsWith('ur') ? 'ur' : lang.startsWith('ar') ? 'ar' : lang.startsWith('tr') ? 'tr' : 'en';
+  const STRINGS = {
+    en: {
+      title: 'Search Scripture',
+      header: 'Scripture Search',
+      fullLibrary: 'Full Library',
+      placeholder: 'Search ayahs, hadith, topics...',
+      noResults: 'No matches found. Try different keywords.',
+      quran: 'Quran',
+      hadith: 'Hadith',
+      viewFull: 'View in full library',
+      statsMany: (count) => `Showing 20 of ${count} results`,
+      statsSingle: (count) => `${count} result${count !== 1 ? 's' : ''}`,
+    },
+    ur: {
+      title: 'قرآن و حدیث تلاش کریں',
+      header: 'قرآن و حدیث تلاش',
+      fullLibrary: 'مکمل کتب خانہ',
+      placeholder: 'آیات، احادیث، موضوعات تلاش کریں...',
+      noResults: 'کوئی نتیجہ نہیں ملا۔ مختلف الفاظ آزمائیں۔',
+      quran: 'قرآن',
+      hadith: 'حدیث',
+      viewFull: 'مکمل کتب خانے میں دیکھیں',
+      statsMany: (count) => `${count} میں سے 20 نتائج دکھائے جا رہے ہیں`,
+      statsSingle: (count) => `${count} نتیجہ`,
+    },
+    ar: {
+      title: 'ابحث في النصوص الشرعية',
+      header: 'البحث في النصوص الشرعية',
+      fullLibrary: 'المكتبة الكاملة',
+      placeholder: 'ابحث في الآيات والأحاديث والموضوعات...',
+      noResults: 'لم يتم العثور على نتائج. جرّب كلمات مختلفة.',
+      quran: 'القرآن',
+      hadith: 'الحديث',
+      viewFull: 'عرض داخل المكتبة الكاملة',
+      statsMany: (count) => `عرض 20 من ${count} نتيجة`,
+      statsSingle: (count) => `${count} نتيجة`,
+    },
+    tr: {
+      title: 'Naslari ara',
+      header: 'Nas aramasi',
+      fullLibrary: 'Tam kutuphane',
+      placeholder: 'Ayet, hadis ve konulari ara...',
+      noResults: 'Eslesme bulunamadi. Farkli anahtar kelimeler deneyin.',
+      quran: "Kur'an",
+      hadith: 'Hadis',
+      viewFull: 'Tam kutuphanede gor',
+      statsMany: (count) => `${count} sonucun 20 tanesi gosteriliyor`,
+      statsSingle: (count) => `${count} sonuc`,
+    },
+  }[locale];
+
   // Inject CSS
   const style = document.createElement('style');
   style.textContent = `
@@ -281,20 +334,21 @@
   const fab = document.createElement('button');
   fab.className = 'scripture-fab';
   fab.innerHTML = '&#128214;';
-  fab.title = 'Search Scripture';
+  fab.title = STRINGS.title;
   document.body.appendChild(fab);
 
   // Create panel
   const panel = document.createElement('div');
   panel.className = 'scripture-panel';
+  panel.dir = document.documentElement.getAttribute('dir') || 'ltr';
   panel.innerHTML = `
     <div class="sw-header">
       <span style="font-size:1.1rem">&#128214;</span>
-      <span class="sw-header-title">Scripture Search</span>
-      <a href="scriptures.html" class="sw-header-link">Full Library &rarr;</a>
+      <span class="sw-header-title">${STRINGS.header}</span>
+      <a href="scriptures.html" class="sw-header-link">${STRINGS.fullLibrary} &rarr;</a>
     </div>
     <div class="sw-search">
-      <input type="text" placeholder="Search ayahs, hadith, topics..." id="swSearchInput">
+      <input type="text" placeholder="${STRINGS.placeholder}" id="swSearchInput">
     </div>
     <div class="sw-filters" id="swFilters"></div>
     <div class="sw-results" id="swResults"></div>
@@ -364,7 +418,7 @@
     const statsEl = document.getElementById('swStats');
 
     if (shown.length === 0) {
-      resultsEl.innerHTML = '<div class="sw-no-results">No matches found. Try different keywords.</div>';
+      resultsEl.innerHTML = `<div class="sw-no-results">${STRINGS.noResults}</div>`;
       statsEl.textContent = '';
       return;
     }
@@ -373,21 +427,21 @@
       const isExp = swExpanded.has(entry.id);
       return `<div class="sw-result-card${isExp ? ' expanded' : ''}" data-eid="${entry.id}">
         <div class="sw-result-header">
-          <span class="sw-result-badge ${entry.type}">${entry.type === 'quran' ? 'Quran' : 'Hadith'}</span>
+          <span class="sw-result-badge ${entry.type}">${entry.type === 'quran' ? STRINGS.quran : STRINGS.hadith}</span>
           <span class="sw-result-ref">${entry.reference}</span>
         </div>
         <div class="sw-result-preview">${entry.translation}</div>
         <div class="sw-result-expanded">
           <div class="sw-result-arabic">${entry.arabic}</div>
           <div class="sw-result-context">${entry.context}</div>
-          <a class="sw-view-full" href="scriptures.html?q=${encodeURIComponent(entry.reference)}">View in full library &rarr;</a>
+          <a class="sw-view-full" href="scriptures.html?q=${encodeURIComponent(entry.reference)}">${STRINGS.viewFull} &rarr;</a>
         </div>
       </div>`;
     }).join('');
 
     statsEl.textContent = entries.length > 20
-      ? `Showing 20 of ${entries.length} results`
-      : `${entries.length} result${entries.length !== 1 ? 's' : ''}`;
+      ? STRINGS.statsMany(entries.length)
+      : STRINGS.statsSingle(entries.length);
   }
 
   // Events

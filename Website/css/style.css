@@ -4958,6 +4958,50 @@ html[data-theme] .deeper-work-card {
   right: 0;
 }
 
+.lang-switcher {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  margin-left: 0.15rem;
+}
+
+.lang-switcher--dropdown {
+  min-width: max-content;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: max-content;
+  padding: 0.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-0.35rem);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: var(--z-dropdown);
+}
+
+.lang-switcher.is-open .lang-menu,
+.lang-switcher:hover .lang-menu,
+.lang-switcher:focus-within .lang-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 /* ---- Language toggle button ---- */
 .lang-toggle {
   display: inline-flex;
@@ -4977,6 +5021,36 @@ html[data-theme] .deeper-work-card {
   flex-shrink: 0;
   font-family: var(--font-sans);
   line-height: 1;
+  white-space: nowrap;
+}
+
+.lang-menu .lang-toggle {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.lang-toggle.active {
+  border-color: var(--color-primary);
+  background: rgba(26, 92, 58, 0.1);
+  color: var(--color-primary);
+}
+
+.lang-toggle.active::after {
+  content: '';
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-left: 0.45rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-0.05rem);
+  transition: transform 0.2s ease;
+  opacity: 0.85;
+}
+
+.lang-switcher.is-open .lang-toggle.active::after,
+.lang-switcher:hover .lang-toggle.active::after,
+.lang-switcher:focus-within .lang-toggle.active::after {
+  transform: rotate(-135deg) translate(-0.05rem, -0.05rem);
 }
 
 .lang-toggle:hover {
@@ -4989,10 +5063,33 @@ html[data-theme] .deeper-work-card {
   background: rgba(76, 200, 130, 0.1);
 }
 
+[data-theme="dark"] .lang-toggle.active {
+  background: rgba(76, 200, 130, 0.16);
+}
+
+[dir="rtl"] .lang-switcher {
+  margin-left: 0;
+  margin-right: 0.15rem;
+}
+
+[dir="rtl"] .lang-menu {
+  left: auto;
+  right: 0;
+}
+
 [dir="rtl"] .lang-toggle {
   margin-left: 0;
   margin-right: 0.1rem;
   font-family: var(--font-sans);
+}
+
+[dir="rtl"] .lang-menu .lang-toggle {
+  margin-right: 0;
+}
+
+[dir="rtl"] .lang-toggle.active::after {
+  margin-left: 0;
+  margin-right: 0.45rem;
 }
 
 /* ---- Hero RTL ---- */

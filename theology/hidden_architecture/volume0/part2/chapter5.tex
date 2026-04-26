@@ -1,0 +1,1007 @@
+\chapter{Quantum Foundations and the Measurement Problem}
+\label{ch:quantum-foundations}
+
+\epigraph{\itshape I think I can safely say that nobody understands
+quantum mechanics.}{--- Richard Feynman, \textit{The Character of
+Physical Law}, 1965}
+
+\noindent
+This chapter develops the quantum-mechanical apparatus we will need
+in subsequent chapters. The treatment is pedagogical: it assumes no
+prior physics. The reader who has worked through an undergraduate
+physics course will find the early sections elementary; the reader
+who has not will find them sufficient. The mathematical level is
+calibrated to the conceptual demands of the subsequent material;
+where we need a piece of mathematics, we develop it.
+
+The chapter has a specific purpose within the larger work. We are
+not writing a quantum-mechanics textbook. We are extracting the
+specific features of the quantum-mechanical formalism that bear on
+the questions Part III will address: the relationship between
+determination and freedom (\arb{qadar} and \arb{ikhtiyar}), the
+status of probability in non-classical systems, the role of the
+observer in instantiating outcomes, and the philosophical commitments
+that different interpretations of the formalism imply. Each of these
+will be developed only to the depth required.
+
+The chapter proceeds in nine sections.
+\xref{sec:qm-why} explains why a chapter on quantum mechanics is in
+this book at all.
+\xref{sec:complex-vectors} develops the mathematical preliminaries
+(complex numbers, vectors, Hilbert spaces) for readers who need them.
+\xref{sec:wavefunction} introduces the wave function and the
+principle of superposition.
+\xref{sec:schrodinger} treats the Schr\"odinger equation and unitary
+evolution.
+\xref{sec:born-rule} treats observables, eigenvalues, and the Born
+rule.
+\xref{sec:measurement} states the measurement problem.
+\xref{sec:interpretations} surveys the major interpretations
+(Copenhagen, Many-Worlds, Bohmian mechanics, QBism, objective
+collapse, relational quantum mechanics) with their philosophical
+commitments.
+\xref{sec:bell} treats Bell's theorem and the question of locality.
+\xref{sec:qm-implications} draws the implications for the Hidden
+Architecture project, particularly for the treatment of \arb{qadar}
+in Chapter 16.
+
+\section{Why a chapter on quantum mechanics is in this book}
+\label{sec:qm-why}
+
+The reader may reasonably ask why an Islamic economics treatise
+contains a quantum-mechanics chapter. The answer was previewed in
+\xref{ch:modern-tools}; we expand on it here.
+
+The classical \arb{kalam} debate on \arb{qadar} (treated in
+\xref{sec:kalam}) attempted to reconcile two theological commitments:
+that all events are determined by divine decree, and that human
+choice is real and morally responsible. The Mu`tazila preserved
+human agency by restricting divine creative activity to events
+other than human acts. The Ash`ariyya preserved divine omnipotence
+by adopting the doctrine of \arb{kasb}, in which God creates human
+acts but humans ``acquire'' them. The Maturidiyya took a middle
+position. Each formulation has strengths; each leaves residual
+puzzles.
+
+The puzzles persist because the classical theologians were working
+within a Newtonian-Aristotelian framework in which determinism and
+the reality of motion seemed mutually exclusive. If everything is
+determined, motion is a mere unfolding of what was already settled;
+if motion is real, things could have been otherwise; the two seem
+incompatible. The classical theologians did remarkable work
+articulating positions within this framework, but the framework
+itself constrained what could be said.
+
+The framework began to come apart in the early twentieth century.
+The discovery of quantum mechanics --- and, more importantly, the
+ongoing dispute about what quantum mechanics means --- has shown
+that several of the classical assumptions about determinism, motion,
+probability, and the role of the observer were not necessary. Other
+options exist. Specifically, two options exist that map cleanly onto
+the structure the classical \arb{kalam} debate was trying to
+articulate.
+
+The first is \emph{Bohmian mechanics}. In Bohmian mechanics, the
+wave function (which is real and deterministic) guides particles
+that have definite trajectories at all times. The trajectory of any
+given particle is fully determined by the initial wave function and
+the particle's initial position. Yet the motion is real: the
+particle actually moves, the trajectory is the description of its
+motion, and the wave function does not replace the particle but
+guides it. Determinism and the reality of motion coexist.
+
+This is exactly the structure that the Ash`ari doctrine of
+\arb{kasb} was attempting. God creates the wave function (the
+trajectory of the universe); humans ``acquire'' their actions in the
+sense that the actions are the actual motion through the
+configuration space that the wave function determines. Both
+descriptions are correct; neither contradicts the other; the
+apparent contradiction was a product of Newtonian assumptions that
+quantum mechanics has dissolved.
+
+The second is \emph{QBism} (Quantum Bayesianism). In QBism, the wave
+function does not describe an objective state of the world; it
+describes the beliefs of an agent. Different agents can have
+different valid wave functions for the same system, depending on
+what each agent knows. Probability, in QBism, is irreducibly
+perspectival.
+
+This too maps onto a classical \arb{kalam} concern. Divine knowledge
+is perfect; human knowledge is finite. From the divine perspective,
+all outcomes are known; from the human perspective, outcomes are
+uncertain and probabilistic. The two perspectives are both correct
+because probability is perspectival; there is no contradiction.
+
+These are not idle philosophical curiosities. They are working
+interpretations defended by serious physicists, and they provide the
+formal vocabulary in which the Islamic position on \arb{qadar} can
+be articulated without contradiction. To show this, we must develop
+the quantum mechanics carefully enough that the structure becomes
+visible. This chapter does that work.
+
+\section{Mathematical preliminaries}
+\label{sec:complex-vectors}
+
+Before we can develop quantum mechanics we need three mathematical
+preliminaries: complex numbers, vector spaces, and the inner
+product. Readers familiar with these may skim or skip the section.
+
+\subsection{Complex numbers}
+
+A \emph{complex number} is a number of the form $z = a + bi$ where
+$a$ and $b$ are real numbers and $i$ is a symbol satisfying $i^2 =
+-1$. The number $a$ is called the \emph{real part} of $z$, written
+$\text{Re}(z)$; the number $b$ is the \emph{imaginary part},
+written $\text{Im}(z)$.
+
+Complex numbers obey the standard arithmetic of real numbers, with
+the additional rule that $i^2 = -1$:
+
+\begin{align}
+(a + bi) + (c + di) &= (a+c) + (b+d)i \\
+(a + bi) \cdot (c + di) &= (ac - bd) + (ad + bc)i.
+\end{align}
+
+The \emph{complex conjugate} of $z = a + bi$ is $\bar{z} = a - bi$.
+The \emph{modulus} (or absolute value) of $z$ is
+$|z| = \sqrt{a^2 + b^2} = \sqrt{z \bar{z}}$. The square of the
+modulus, $|z|^2 = z\bar{z} = a^2 + b^2$, is real and non-negative;
+it will play a major role in what follows.
+
+A complex number can be visualized as a point in a two-dimensional
+plane (the \emph{complex plane}), with the real part along the
+horizontal axis and the imaginary part along the vertical. The
+modulus $|z|$ is the distance from the origin to the point.
+
+Equivalently, every complex number can be written in \emph{polar
+form} as $z = r e^{i\theta}$, where $r = |z|$ and $\theta$ is the
+angle measured counterclockwise from the positive real axis. Euler's
+formula gives the connection: $e^{i\theta} = \cos\theta + i\sin\theta$.
+
+\begin{example}[Multiplication of complex numbers in polar form]
+If $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$, then
+$z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$. Multiplication
+multiplies the moduli and adds the phases. This is structurally
+significant: it is why quantum interference, which involves
+multiplication of complex amplitudes, depends on the phases as well
+as the magnitudes.
+\end{example}
+
+\subsection{Vector spaces}
+
+A \emph{vector space over a field} (we will use either the real
+numbers $\mathbb{R}$ or the complex numbers $\mathbb{C}$) is a set
+$V$ equipped with two operations:
+
+\begin{itemize}[leftmargin=2em]
+    \item \emph{Vector addition}: for any $u, v \in V$, the sum
+    $u + v \in V$.
+    \item \emph{Scalar multiplication}: for any $c$ in the field
+    (so $c \in \mathbb{R}$ or $c \in \mathbb{C}$) and any $v \in V$,
+    the product $c v \in V$.
+\end{itemize}
+
+These operations satisfy the standard rules: addition is
+commutative and associative, scalar multiplication distributes over
+addition, and so on. The reader has met vectors before in the form
+of arrows in space, where addition is geometric (tip-to-tail) and
+scalar multiplication is rescaling.
+
+For quantum mechanics, the relevant vectors live in a complex vector
+space, meaning the scalars used are complex numbers rather than
+real. This generalizes the geometric intuition: vectors can be added
+and multiplied by complex scalars to form new vectors in the same
+space.
+
+A vector space has a \emph{basis}: a minimal set of vectors
+$\{e_1, e_2, \dots, e_n\}$ such that every vector $v$ in the space
+can be written uniquely as a linear combination
+\[
+    v = c_1 e_1 + c_2 e_2 + \dots + c_n e_n
+\]
+for some scalars $c_1, c_2, \dots, c_n$. The number $n$ is the
+\emph{dimension} of the space. For finite-dimensional spaces, $n$
+is finite; for infinite-dimensional spaces (which arise in quantum
+mechanics), the basis is infinite and the linear combination becomes
+an infinite series.
+
+\subsection{Inner products and Hilbert space}
+
+An \emph{inner product} on a complex vector space $V$ is a function
+that takes two vectors $u, v \in V$ and returns a complex number,
+written $\langle u, v \rangle$ or $\langle u | v \rangle$. The inner
+product satisfies:
+
+\begin{itemize}[leftmargin=2em]
+    \item \emph{Linearity in the second argument}:
+    $\langle u, c_1 v_1 + c_2 v_2 \rangle =
+     c_1 \langle u, v_1 \rangle + c_2 \langle u, v_2 \rangle$.
+    \item \emph{Conjugate symmetry}:
+    $\langle u, v \rangle = \overline{\langle v, u \rangle}$.
+    \item \emph{Positive definiteness}: $\langle v, v \rangle \geq 0$
+    for all $v$, with equality only if $v = 0$.
+\end{itemize}
+
+The inner product permits the definition of \emph{length} (or
+\emph{norm}) of a vector: $\|v\| = \sqrt{\langle v, v \rangle}$.
+And of \emph{orthogonality}: vectors $u$ and $v$ are orthogonal if
+$\langle u, v \rangle = 0$.
+
+A \emph{Hilbert space} is a complex inner-product space that is
+``complete'' in a technical sense (every Cauchy sequence converges
+to a limit in the space). The technical detail does not concern us;
+what matters is that Hilbert spaces are the natural setting for
+quantum mechanics.
+
+In quantum mechanics, the inner product is conventionally written
+using \emph{Dirac notation}: $\langle \phi | \psi \rangle$ for the
+inner product of $\phi$ and $\psi$. The vector $|\psi\rangle$ is
+called a \emph{ket}; the vector $\langle\phi|$ is called a \emph{bra};
+together they form a ``bra-ket,'' which is the inner product.
+
+\begin{notationbox}[Bra-ket conventions]
+\begin{itemize}[leftmargin=2em]
+    \item $|\psi\rangle$ is a vector (a ``ket'') in the Hilbert space.
+    \item $\langle\phi|$ is the corresponding linear functional (a
+    ``bra'').
+    \item $\langle\phi|\psi\rangle$ is a complex number, the inner
+    product of $\phi$ and $\psi$.
+    \item The norm of $|\psi\rangle$ is $\|\psi\| =
+    \sqrt{\langle\psi|\psi\rangle}$, which is real and non-negative.
+    \item A vector with norm 1 is called \emph{normalized}.
+\end{itemize}
+\end{notationbox}
+
+\section{The wave function and superposition}
+\label{sec:wavefunction}
+
+\subsection{States as vectors}
+
+The first postulate of quantum mechanics:
+
+\begin{principlebox}[Postulate 1: States are vectors in Hilbert space]
+The state of a quantum system is described by a normalized vector
+$|\psi\rangle$ in a complex Hilbert space $\mathcal{H}$. Two vectors
+that differ by a global phase --- $|\psi\rangle$ and $e^{i\theta}
+|\psi\rangle$ for any real $\theta$ --- represent the same physical
+state.
+\end{principlebox}
+
+This is a strong claim and deserves emphasis. The state of a
+quantum system --- everything that can be known about it for the
+purposes of physics --- is captured by a vector in a complex Hilbert
+space. The vector encodes, in a precise sense we will spell out, the
+probabilities of every possible outcome of every possible measurement
+on the system.
+
+What a vector represents depends on the system. For a single quantum
+particle in three-dimensional space, the wave function is a complex-valued
+function $\psi(x, y, z)$ on three-dimensional space; the Hilbert space
+is the space of all such (square-integrable) functions. For a quantum
+spin system, the wave function is a finite-dimensional vector; the
+Hilbert space is $\mathbb{C}^2$ for a single spin-1/2 particle, or
+$\mathbb{C}^4$ for a pair of them, and so on.
+
+\subsection{Superposition}
+
+The fundamental novelty of quantum mechanics is the
+\emph{superposition principle}: if $|\psi_1\rangle$ and $|\psi_2\rangle$
+are valid quantum states, then any normalized linear combination
+\[
+    |\psi\rangle = \alpha |\psi_1\rangle + \beta |\psi_2\rangle, \qquad
+    |\alpha|^2 + |\beta|^2 = 1
+\]
+is also a valid quantum state. The system in state $|\psi\rangle$
+is said to be in a \emph{superposition} of $|\psi_1\rangle$ and
+$|\psi_2\rangle$ with amplitudes $\alpha$ and $\beta$.
+
+The superposition principle has no analogue in classical physics. A
+classical particle can be at position $x_1$ or at position $x_2$,
+but not in a superposition of both. A quantum particle can be in a
+superposition of being at $x_1$ and being at $x_2$, with the
+superposition being a perfectly definite (and physically distinct)
+state.
+
+\begin{example}[Schr\"odinger's cat]
+The famous thought experiment: a cat in a sealed box is connected to
+a quantum coin-flip device. If the device produces outcome $A$, the
+cat lives; outcome $B$, the cat dies. Before the box is opened, the
+combined system is in state
+\[
+    |\psi\rangle = \frac{1}{\sqrt{2}} \left( |\text{alive}\rangle +
+    |\text{dead}\rangle \right).
+\]
+The cat, on the standard reading, is in a superposition of being
+alive and being dead. Schr\"odinger proposed the example as a
+reductio of the Copenhagen interpretation: surely a cat cannot be
+in such a superposition? But the mathematics says exactly that, and
+the question of how to resolve the apparent paradox is one of the
+central problems of quantum interpretation.
+\end{example}
+
+\subsection{The complex amplitudes have meaning}
+
+A crucial fact: the complex numbers $\alpha$ and $\beta$ in a
+superposition are not just bookkeeping. Their relative phases ---
+the difference in their angular position in the complex plane --- can
+have observable consequences through interference effects. Two
+superpositions with the same magnitudes $|\alpha|$ and $|\beta|$ but
+different relative phases describe physically distinct states.
+
+This is the source of quantum interference, the most distinctive
+empirical signature of quantum mechanics. The double-slit experiment
+--- in which a single particle, sent through a barrier with two
+slits, produces an interference pattern characteristic of waves ---
+is the classical demonstration. The pattern arises because the
+amplitudes for the particle going through one slit and through the
+other add coherently, with their relative phases determining where
+constructive and destructive interference occur.
+
+\section{The Schr\"odinger equation and unitary evolution}
+\label{sec:schrodinger}
+
+\subsection{Time evolution is deterministic}
+
+The second postulate of quantum mechanics:
+
+\begin{principlebox}[Postulate 2: Time evolution is deterministic]
+A closed quantum system evolves according to the time-dependent
+Schr\"odinger equation:
+\[
+    i\hbar \frac{d}{dt} |\psi(t)\rangle = \hat{H} |\psi(t)\rangle,
+\]
+where $\hbar$ is the reduced Planck constant and $\hat{H}$ is the
+Hamiltonian operator (the energy operator) of the system.
+\end{principlebox}
+
+The Schr\"odinger equation is a deterministic differential equation.
+Given a starting state $|\psi(0)\rangle$ and the Hamiltonian
+$\hat{H}$, it determines $|\psi(t)\rangle$ for all subsequent times.
+There is no randomness in this evolution; it is fully predictable.
+
+Equivalently, we can write the evolution as
+\[
+    |\psi(t)\rangle = U(t) |\psi(0)\rangle, \qquad U(t) = e^{-i\hat{H}t/\hbar},
+\]
+where $U(t)$ is a unitary operator (an operator that preserves inner
+products and norms). The state at time $t$ is obtained from the
+state at time 0 by applying the unitary $U(t)$. Unitary evolution
+preserves superposition: if the initial state was a superposition,
+so is the evolved state, with the amplitudes evolving in a definite
+way.
+
+\subsection{Determinism and unpredictability}
+
+Note carefully what the determinism does and does not say. The wave
+function evolves deterministically. But the wave function does not
+correspond directly to observable quantities; what is observable is
+the result of measurements, which (according to the standard
+treatment) introduces probability. The deterministic evolution of
+$|\psi\rangle$ is consistent with probabilistic measurement
+outcomes.
+
+This is the central tension of standard quantum mechanics. The
+mathematics has both a deterministic part (Schr\"odinger evolution)
+and a probabilistic part (measurement). These two parts seem to be
+of fundamentally different kinds. Most of the interpretive disputes
+concern how to reconcile them.
+
+\section{Observables, eigenvalues, and the Born rule}
+\label{sec:born-rule}
+
+\subsection{Observables as operators}
+
+The third postulate:
+
+\begin{principlebox}[Postulate 3: Observables are Hermitian operators]
+Every physical observable (position, momentum, energy, spin, etc.)
+is represented by a Hermitian operator on the Hilbert space. A
+Hermitian operator $\hat{A}$ satisfies $\langle\phi | \hat{A} \psi
+\rangle = \langle \hat{A}\phi | \psi\rangle$ for all $|\phi\rangle$
+and $|\psi\rangle$.
+\end{principlebox}
+
+Hermitian operators have two key properties that make them suitable
+for representing observables:
+
+\begin{enumerate}[leftmargin=2em]
+    \item Their eigenvalues are real numbers.
+    \item Their eigenvectors form a complete orthonormal basis for
+    the Hilbert space.
+\end{enumerate}
+
+Recall that for an operator $\hat{A}$ and a vector $|a\rangle$, if
+$\hat{A} |a\rangle = a |a\rangle$ for some scalar $a$, we say
+$|a\rangle$ is an \emph{eigenvector} (or \emph{eigenstate}) of
+$\hat{A}$ with \emph{eigenvalue} $a$. The eigenvectors of a
+Hermitian operator span the Hilbert space, meaning every state can
+be written as a superposition of eigenstates.
+
+\subsection{The Born rule}
+
+The fourth postulate is where probability enters quantum mechanics.
+
+\begin{principlebox}[Postulate 4: The Born rule]
+When a measurement of observable $\hat{A}$ is performed on a system
+in state $|\psi\rangle$, the only possible outcomes are the
+eigenvalues of $\hat{A}$. The probability of obtaining eigenvalue
+$a$ is
+\[
+    P(a) = |\langle a | \psi\rangle|^2,
+\]
+where $|a\rangle$ is the (normalized) eigenvector of $\hat{A}$
+corresponding to eigenvalue $a$.
+
+After the measurement, the state of the system collapses to
+$|a\rangle$.
+\end{principlebox}
+
+The Born rule has three components, each of which is a strong
+claim.
+
+First, the only possible outcomes are eigenvalues. Whatever value
+the system is in superposition over, the measurement always returns
+one of the eigenvalues, never a value in between or outside.
+
+Second, the probability of each outcome is given by the squared
+modulus of the corresponding amplitude. This is where the complex
+numbers connect to observable probabilities; the squared modulus is
+real and non-negative, as a probability should be.
+
+Third, after the measurement, the state collapses to the eigenstate
+corresponding to the observed eigenvalue. The system is no longer
+in a superposition; it is in a definite eigenstate of the measured
+observable.
+
+\subsection{An example: spin}
+
+Consider a spin-1/2 particle, the simplest non-trivial quantum
+system. The Hilbert space is $\mathbb{C}^2$, with basis vectors
+$|0\rangle$ and $|1\rangle$ (sometimes written $|\uparrow\rangle$
+and $|\downarrow\rangle$, representing ``spin up'' and ``spin
+down''). A general state is
+\[
+    |\psi\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad
+    |\alpha|^2 + |\beta|^2 = 1.
+\]
+
+The observable corresponding to ``spin in the $z$ direction'' is the
+operator $\hat{S}_z$, which has eigenstates $|0\rangle$ and
+$|1\rangle$ with eigenvalues $+\hbar/2$ and $-\hbar/2$, respectively.
+If we measure $\hat{S}_z$ on the state $|\psi\rangle$:
+
+\begin{itemize}[leftmargin=2em]
+    \item The probability of obtaining $+\hbar/2$ is $|\alpha|^2$.
+    \item The probability of obtaining $-\hbar/2$ is $|\beta|^2$.
+    \item These probabilities sum to 1, as required.
+    \item After the measurement, the state collapses to $|0\rangle$
+    or $|1\rangle$ depending on the outcome.
+\end{itemize}
+
+If $\alpha = \beta = 1/\sqrt{2}$, the two outcomes are equally
+probable. If $\alpha = 1, \beta = 0$, the system is already in
+$|0\rangle$ and the outcome is certainly $+\hbar/2$.
+
+\section{The measurement problem}
+\label{sec:measurement}
+
+We now have all the elements needed to state the central problem of
+quantum interpretation.
+
+\subsection{Two kinds of evolution}
+
+The standard formalism contains two distinct kinds of dynamics.
+
+\textbf{Schr\"odinger evolution} (Postulate 2): the wave function
+evolves smoothly, deterministically, linearly, and reversibly,
+according to $i\hbar \frac{d}{dt} |\psi\rangle = \hat{H} |\psi\rangle$.
+This evolution preserves superposition; if the initial state was a
+superposition, so is the evolved state.
+
+\textbf{Measurement collapse} (Postulate 4): when a measurement is
+performed, the wave function collapses suddenly, probabilistically,
+non-linearly, and irreversibly, to one of the eigenstates of the
+measured observable. This evolution destroys superposition; the
+post-measurement state is a definite eigenstate.
+
+These two kinds of evolution are mutually inconsistent. Schr\"odinger
+evolution preserves superposition; measurement collapse destroys it.
+A given physical interaction either preserves or destroys
+superposition; it cannot do both.
+
+\subsection{What counts as a measurement?}
+
+The standard treatment does not specify what counts as a measurement.
+Is the measurement performed by a detector? By a human observer? By
+the environment? At what point in the chain --- system $\to$
+detector $\to$ recording apparatus $\to$ display $\to$ retina $\to$
+brain $\to$ conscious experience --- does the wave function collapse?
+
+The standard treatment is silent. Different schools have given
+different answers, none entirely satisfactory.
+
+\begin{conceptbox}[The measurement problem]
+\label{conc:measurement-problem}
+The Schr\"odinger equation predicts that any physical system,
+including a measurement apparatus interacting with a quantum system,
+will end up in a superposition of macroscopically distinct states.
+But measurements always yield definite outcomes. Either:
+\begin{enumerate}[leftmargin=1.5em]
+    \item The Schr\"odinger equation is incomplete, and some
+    additional dynamics governs collapse; or
+    \item The Schr\"odinger evolution is the only fundamental
+    dynamics, and measurement collapse is some kind of effective
+    description of something else; or
+    \item There is no measurement collapse at all, and we are
+    misdescribing what happens at measurement.
+\end{enumerate}
+The history of quantum interpretation is the history of attempts to
+resolve this problem.
+\end{conceptbox}
+
+\section{Major interpretations of quantum mechanics}
+\label{sec:interpretations}
+
+We now survey the major interpretations of quantum mechanics. Each
+takes a different position on the measurement problem and, by
+extension, on the broader metaphysical questions: what is the wave
+function, what is collapse, what is reality, what is the role of the
+observer.
+
+\subsection{The Copenhagen interpretation}
+
+The Copenhagen interpretation, developed by Niels Bohr, Werner
+Heisenberg, and others in the 1920s, is the textbook ``orthodox''
+view from roughly 1927 to the 1980s. In its standard form:
+
+\begin{itemize}[leftmargin=2em]
+    \item The wave function is not a description of physical reality;
+    it is a tool for computing measurement-outcome probabilities.
+    \item The boundary between quantum system and classical
+    measurement apparatus is real and primitive; one does not ask
+    quantum-mechanical questions about the apparatus.
+    \item Measurement collapse is a primitive process, not derivable
+    from anything more fundamental; it is what happens when the
+    quantum domain interacts with the classical.
+    \item It is meaningless to ask what the system was doing between
+    measurements.
+\end{itemize}
+
+The Copenhagen view is empirically adequate --- it reproduces all
+experimental predictions of quantum mechanics --- but
+philosophically uncomfortable in several ways. It leaves
+``measurement'' unexplained. It draws a line between the quantum
+and the classical that does not appear anywhere in the formalism. It
+denies that the wave function describes reality, but is unclear what
+it does describe (probabilities? Knowledge? Information?). The
+Copenhagen view has been called by its critics ``shut up and
+calculate'' --- a methodological injunction to use the formalism
+without asking what it means.
+
+The view's longevity owed much to its institutional dominance, the
+authority of Bohr, and the practical adequacy of the formalism for
+the calculations physicists wanted to do. From the 1980s onward, as
+philosophical engagement with quantum foundations grew and as
+alternative interpretations were developed, Copenhagen has receded
+in influence.
+
+\subsection{The Many-Worlds interpretation}
+
+In 1957 Hugh Everett, a Princeton graduate student, proposed a
+radical alternative.\footnote{Everett, H. (1957), ``Relative state
+formulation of quantum mechanics,'' \emph{Reviews of Modern Physics}
+29: 454--462.} \textbf{Take the Schr\"odinger equation seriously and
+deny that measurement collapse occurs at all.} The wave function
+never collapses. What happens at measurement is that the experimenter
+and the system become entangled: the experimenter who observed
+$|\text{alive}\rangle$ and the experimenter who observed
+$|\text{dead}\rangle$ both exist, in different branches of a single
+universal wave function. All branches are equally real.
+
+\begin{principlebox}[The Many-Worlds Interpretation (MWI)]
+The wave function of the universe evolves deterministically
+according to the Schr\"odinger equation. Measurement is not a
+special process; it is ordinary entanglement between a system and
+an observer. After a measurement with $n$ possible outcomes, the
+universal wave function contains $n$ branches, each containing a
+copy of the observer who observed that outcome. All branches are
+equally real.
+\end{principlebox}
+
+This sounds extravagant. The mathematical claim is, however, the
+\emph{conservative} one: take the Schr\"odinger equation at face
+value and don't add an extra rule for measurement. The extravagant
+ontology (many worlds) is the price of mathematical conservatism.
+
+The major technical difficulty for Many-Worlds is the so-called
+\emph{Born rule problem}: if all outcomes occur in different
+branches, what does it mean to say that one outcome is ``more
+probable'' than another? The branches are equally real; they cannot
+have different probabilities in the conventional sense. Various
+attempted solutions exist (decision-theoretic derivations from
+Deutsch and Wallace, branch-counting arguments, derivations from
+self-locating uncertainty), but none has gained universal
+acceptance.
+
+The leading contemporary defender of Many-Worlds is Sean Carroll
+(\emph{Something Deeply Hidden}, 2019). Carroll's case is that the
+Schr\"odinger equation is well-tested and that any addition to it
+(such as objective collapse) is unmotivated; if we take the equation
+seriously, we get Many-Worlds, and the apparent extravagance is
+just what taking the equation seriously costs.
+
+\subsection{Bohmian mechanics}
+
+Louis de Broglie proposed in 1927, and David Bohm developed in
+1952, an interpretation that takes a very different approach.
+Particles have definite positions at all times; the wave function is
+real, but it serves as a guidance field for the particles rather
+than as an exhaustive description of the system.\footnote{Bohm, D.
+(1952), ``A suggested interpretation of the quantum theory in terms
+of `hidden' variables, I and II,'' \emph{Physical Review} 85:
+166--193.}
+
+\begin{principlebox}[Bohmian mechanics]
+\label{prin:bohmian}
+The state of an $N$-particle system is given by:
+\begin{enumerate}[leftmargin=1.5em]
+    \item A wave function $\psi(\mathbf{q}_1, \dots, \mathbf{q}_N, t)$
+    on the configuration space.
+    \item The actual positions $\mathbf{Q}_1(t), \dots, \mathbf{Q}_N(t)$
+    of the $N$ particles.
+\end{enumerate}
+The wave function evolves according to the Schr\"odinger equation.
+The positions evolve according to the guidance equation:
+\[
+    \frac{d\mathbf{Q}_k}{dt} = \frac{\hbar}{m_k}
+    \text{Im}\left( \frac{\nabla_k \psi}{\psi}
+    \right)\bigg|_{\mathbf{q}_1 = \mathbf{Q}_1, \dots, \mathbf{q}_N = \mathbf{Q}_N}.
+\]
+Particles never lose their definite positions; the wave function never
+collapses; measurement is just an interaction that produces correlations
+between system and apparatus.
+\end{principlebox}
+
+Bohmian mechanics is empirically equivalent to standard quantum
+mechanics --- it makes the same predictions for every experiment ---
+but it has a very different ontology. Particles are real and have
+definite positions. The wave function is real and guides them. The
+formalism is deterministic: given the initial wave function and the
+initial positions, the future positions are fully determined.
+
+The interpretation is non-local: the guidance for one particle
+depends, in general, on the positions of all the other particles,
+no matter how far away. Non-locality is unavoidable in any
+hidden-variable theory consistent with quantum predictions, by
+Bell's theorem (which we treat in \xref{sec:bell}); Bohmian
+mechanics accepts the non-locality openly.
+
+For our project, Bohmian mechanics has a special role. It provides a
+formal model in which:
+\begin{itemize}[leftmargin=2em]
+    \item Trajectories are fully determined.
+    \item Motion is real (the particle actually moves, not just its
+    description).
+    \item Probability is epistemic (we don't know the initial
+    position; if we did, we would predict the trajectory).
+\end{itemize}
+This is structurally what the classical \arb{kasb} doctrine was
+trying to articulate. Chapter 16 develops the connection.
+
+\subsection{QBism (Quantum Bayesianism)}
+
+QBism, developed primarily by Christopher Fuchs, R\"udiger Schack,
+and N. David Mermin, takes yet another approach.\footnote{Fuchs, C.
+A., Mermin, N. D., \& Schack, R. (2014), ``An introduction to QBism
+with an application to the locality of quantum mechanics,''
+\emph{American Journal of Physics} 82: 749--754.} The wave function
+does not describe an objective state of the world; it describes the
+beliefs of an agent. Probability is irreducibly perspectival.
+
+\begin{principlebox}[QBism]
+\label{prin:qbism}
+The wave function $|\psi\rangle$ assigned to a system by an agent
+represents that agent's degrees of belief about the outcomes of
+measurements they might perform. Different agents can have
+different valid wave functions for the same system, depending on
+what each agent knows. The Born rule is a personalist constraint
+on coherent gambling; quantum probabilities are subjective
+probabilities in a precise Bayesian sense.
+
+Measurement collapse is the agent's update of beliefs in light of
+new information. It is not a physical process happening in the
+world; it is an epistemic event happening in the agent.
+\end{principlebox}
+
+QBism is radical in a different way from Many-Worlds. It does not
+posit additional ontological structure; it removes ontological
+structure that other interpretations posit. The wave function, on
+QBism, does not represent anything in the world; it represents the
+agent's relationship to the world. Probability is not an objective
+feature of physical processes; it is the agent's own commitment.
+
+For our project, QBism has special importance because it gives us
+the conceptual structure in which probability can be irreducibly
+perspectival. Different agents (or knowledge states) can have
+different probability assignments without contradiction. Applied to
+the question of \arb{qadar}: divine knowledge is perfect (the divine
+``wave function'' is, in QBism's language, fully concentrated on
+the actual outcome); human knowledge is finite (the human wave
+function spreads probability over multiple outcomes). Both are
+correct; the difference is one of perspective. There is no
+contradiction. We develop this in Chapter 16.
+
+\subsection{Objective collapse theories}
+
+Objective collapse theories, developed in various forms by
+Ghirardi, Rimini, and Weber (GRW), Pearle, Diosi, and Penrose,
+modify the Schr\"odinger equation by adding a small additional term
+that produces spontaneous collapse at random times. The collapse is
+a real physical process, not a primitive of measurement.
+
+The most physically interesting version is Penrose's gravity-induced
+collapse, in which the collapse rate is determined by the
+gravitational self-energy of the superposition. Macroscopic objects
+collapse rapidly (because their gravitational self-energies are
+large); microscopic objects collapse slowly. The transition between
+quantum and classical regimes is then explained by the same
+underlying mechanism, with no need for a primitive
+quantum/classical boundary.
+
+Objective collapse theories are empirically distinguishable from
+standard quantum mechanics in principle, but the predicted effects
+are extremely small and have not yet been definitively detected or
+ruled out. The Penrose-Hameroff Orch-OR theory of consciousness
+(treated in Chapter 8) is built on objective collapse.
+
+\subsection{Relational quantum mechanics}
+
+Carlo Rovelli's relational quantum mechanics (RQM) takes the
+position that the state of a system is always defined relative to
+another system. There is no absolute, observer-independent state.
+Different observers can describe the same system differently, and
+both descriptions are correct, because state is inherently
+relational.
+
+RQM is in some ways a synthesis of QBism's perspectival approach
+and Bohmian-style realism: states are real, but they are real
+relative to other systems, not absolutely. The position has gained
+attention in the philosophical literature but is less developed
+formally than the major alternatives.
+
+\subsection{Comparing the interpretations}
+
+The interpretations differ on several dimensions:
+
+\begin{center}
+\begin{tabular}{l@{\hspace{1em}}c@{\hspace{1em}}c@{\hspace{1em}}c@{\hspace{1em}}c}
+\toprule
+\textbf{Interpretation} & \textbf{Wave fn.\ real?} & \textbf{Determ.?} & \textbf{Local?} & \textbf{Collapse?} \\
+\midrule
+Copenhagen & no & no & yes (?) & primitive \\
+Many-Worlds & yes & yes & yes & no \\
+Bohmian & yes & yes & no & no \\
+QBism & no & no (?) & yes & epistemic \\
+Objective collapse & yes & no & yes & physical \\
+Relational QM & relative & --- & --- & relative \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The choice among interpretations is not adjudicable by current
+experiments; they all reproduce the same empirical predictions. The
+choice is at the level of philosophical commitment, informed but
+not determined by the physics.
+
+\section{Bell's theorem and the question of locality}
+\label{sec:bell}
+
+A brief treatment of one of the most important results in quantum
+foundations.
+
+\subsection{The EPR argument}
+
+In 1935, Einstein, Podolsky, and Rosen (EPR) argued that quantum
+mechanics is incomplete.\footnote{Einstein, A., Podolsky, B., \&
+Rosen, N. (1935), ``Can quantum-mechanical description of physical
+reality be considered complete?'' \emph{Physical Review} 47:
+777--780.} Their argument used a thought experiment with two
+particles whose properties are correlated; the wave function for the
+pair is a superposition such that measuring one particle yields
+information about the other.
+
+If, said EPR, the second particle has a definite property (which we
+can determine without disturbing it, by measuring the first), then
+that property must have been definite all along. But the wave
+function does not assign it a definite value. Therefore the wave
+function does not contain all the relevant information; quantum
+mechanics is incomplete. There must be ``hidden variables'' that
+the formalism omits.
+
+\subsection{Bell's theorem}
+
+In 1964, John Bell proved a remarkable theorem.\footnote{Bell, J. S.
+(1964), ``On the Einstein-Podolsky-Rosen paradox,'' \emph{Physics}
+1: 195--200.} Any local hidden-variable theory --- any theory in
+which physical properties are determined by hidden variables and in
+which no physical influence propagates faster than light --- makes
+predictions that differ from those of quantum mechanics. Specifically,
+Bell derived an inequality that any local hidden-variable theory must
+satisfy and that quantum mechanics violates.
+
+Subsequent experiments (Aspect 1982, Hensen et al.\ 2015, and many
+others) have confirmed the quantum predictions to high precision and
+violated Bell's inequality. The conclusion is that no local
+hidden-variable theory is consistent with the experimental facts.
+
+\begin{conceptbox}[What Bell's theorem rules out]
+\label{conc:bell}
+Any theory satisfying \emph{both} of the following conditions is
+ruled out by experiment:
+\begin{enumerate}[leftmargin=1.5em]
+    \item \emph{Locality}: no influence propagates faster than
+    light, and physical properties at one location depend only on
+    causal influences from the past light cone.
+    \item \emph{Hidden variables}: physical properties are determined
+    by underlying variables, possibly inaccessible to measurement,
+    that fully specify the state.
+\end{enumerate}
+At least one of these must be wrong.
+\end{conceptbox}
+
+The implications are striking. If we want a hidden-variable theory
+(such as Bohmian mechanics), we must accept non-locality. If we
+want locality, we must give up the idea that quantum systems have
+definite properties prior to measurement. Either way, the world is
+not the local-realist Newtonian universe that classical physics
+described.
+
+\subsection{Why this matters for our project}
+
+Bell's theorem is important to the present project for two reasons.
+
+First, it shows that the classical Newtonian-realist worldview is
+empirically refuted. The world is not a collection of objects with
+definite properties interacting locally according to deterministic
+laws. Some other framework is required. This dissolves the
+philosophical pressure that made Islamic metaphysical claims look
+implausible from a classical-materialist perspective.
+
+Second, it makes the Bohmian and QBist interpretations
+philosophically defensible. Bohmian mechanics requires non-locality
+but is consistent with Bell; QBism gives up the assumption that
+quantum systems have definite properties prior to measurement and
+is also consistent with Bell. Both interpretations, which we will
+use in Chapter 16 to articulate \arb{qadar}, are not refuted by
+Bell; in fact, they are the natural responses to it.
+
+\section{Implications for the Hidden Architecture project}
+\label{sec:qm-implications}
+
+We have developed enough quantum mechanics to draw the implications
+that the rest of the book will depend on. Three implications are
+central.
+
+\subsection{Determinism and motion are not opposed}
+
+The classical \arb{kalam} debate on \arb{qadar} assumed that
+determinism (everything is determined by divine decree) and motion
+(human action is real) were in tension. The Bohmian interpretation
+shows that this assumption was wrong. In Bohmian mechanics, the
+trajectory of a particle is fully determined by the initial wave
+function and initial position, yet the motion is real and the
+particle actually traverses the trajectory.
+
+Translated to the \arb{qadar} question: the trajectory of a human
+life is fully determined by divine decree (analogous to the wave
+function), yet the action is real and the person actually performs
+the action (analogous to the particle's motion along the trajectory).
+There is no contradiction.
+
+This is not to claim that the human mind is governed by Bohmian
+quantum mechanics. The claim is structural: Bohmian mechanics shows
+that the structure ``determined trajectory + real motion'' is
+mathematically coherent. Whatever the actual mechanism of human
+action is, it can have this structure without contradiction. The
+classical theological worry that determinism makes motion illusory
+was a worry about a structure that turns out to be available.
+
+We develop this in detail in Chapter 16.
+
+\subsection{Probability can be perspectival}
+
+The classical theological worry that divine perfect knowledge
+contradicts genuine human uncertainty assumed that probability must
+be a single objective fact. QBism shows that this assumption was
+wrong. Probability can be irreducibly perspectival: different
+agents, with different information, can have different valid
+probability assignments for the same event without contradiction.
+
+Translated: divine knowledge of all events is perfect. The divine
+``probability assignment'' is concentrated on the actual outcome.
+Human knowledge is finite. The human ``probability assignment'' is
+spread over multiple outcomes. Both are correct; they reflect the
+different epistemic positions of the divine and human perspectives.
+
+This too is structural. The claim is not that the divine mind is a
+QBist agent. The claim is that the structure ``different valid
+probability assignments for the same event'' is mathematically and
+philosophically coherent, as QBism shows for the quantum case.
+
+\subsection{The materialist worldview is not forced}
+
+Classical materialism --- the view that reality consists of
+particles in definite positions interacting locally according to
+deterministic laws --- is not the worldview of contemporary
+fundamental physics. Bell's theorem rules out local realism. Some
+form of either non-locality (Bohmian) or non-realism (QBism) is
+required.
+
+This does not establish Islamic metaphysics. It does, however,
+remove an obstacle. The reader who comes to this book convinced
+that ``science has shown that materialism is correct and that
+metaphysical claims about decree, intention, and blessing are
+therefore unscientific'' is operating with a false picture of where
+science currently stands. The materialist picture is one option;
+several others are equally consistent with the empirical evidence;
+each makes different metaphysical commitments. The choice among
+them is philosophical, not empirical.
+
+The Islamic metaphysical claims are not in conflict with science.
+They are in conflict with one philosophical interpretation of
+science --- an interpretation that has been declining in
+professional credibility for several decades.
+
+\begin{summarybox}[Chapter summary]
+\textbf{Mathematical preliminaries}: complex numbers (with modulus
+and conjugate), complex vector spaces, inner products, Hilbert
+spaces, Dirac bra-ket notation.
+
+\textbf{The four postulates of quantum mechanics}:
+\begin{itemize}[leftmargin=1.5em]
+    \item States are normalized vectors in a complex Hilbert space.
+    \item Time evolution is given by the Schr\"odinger equation;
+    deterministic, linear, reversible.
+    \item Observables are Hermitian operators; their eigenvalues
+    are real and possible measurement outcomes.
+    \item The Born rule: probability of outcome $a$ is
+    $|\langle a | \psi\rangle|^2$; after measurement, state
+    collapses to $|a\rangle$.
+\end{itemize}
+
+\textbf{The measurement problem}: Schr\"odinger evolution preserves
+superposition; measurement collapse destroys it. The two cannot
+both be fundamental. Different interpretations resolve this
+differently.
+
+\textbf{Major interpretations}:
+\begin{itemize}[leftmargin=1.5em]
+    \item Copenhagen: collapse is primitive; wave function is a
+    calculation tool.
+    \item Many-Worlds: no collapse; all outcomes occur in
+    different branches.
+    \item Bohmian: particles have definite positions; wave function
+    guides them; deterministic; non-local.
+    \item QBism: wave function represents agent beliefs; probability
+    is perspectival; collapse is epistemic.
+    \item Objective collapse: collapse is a real physical process,
+    via additional dynamics.
+\end{itemize}
+
+\textbf{Bell's theorem}: rules out local hidden-variable theories.
+The world is either non-local (Bohmian) or has no definite
+properties prior to measurement (QBism, Many-Worlds).
+
+\textbf{For the Hidden Architecture project}: Bohmian mechanics
+provides the formal structure for ``determined trajectory + real
+motion'' that the \arb{kasb} doctrine was attempting; QBism
+provides the structure for ``perspectival probability'' that
+resolves the apparent tension between divine knowledge and human
+uncertainty; classical materialism is not the only option, removing
+the philosophical obstacle to the metaphysical claims.
+
+\textbf{What comes next}: Chapter 6 develops ergodicity economics,
+the second major resource of Part II.
+\end{summarybox}
+
+\cleardoublepage

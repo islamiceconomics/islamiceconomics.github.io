@@ -1,0 +1,944 @@
+\chapter{Ergodicity Economics}
+\label{ch:ergodicity}
+
+\epigraph{\itshape Three hundred years of expected utility theory
+rested on a confusion of two very different averages.}{--- Paraphrase
+of Peters \& Gell-Mann (2016)}
+
+\noindent
+This chapter develops the second major resource of Part II:
+ergodicity economics. The treatment is the most directly applied of
+any in this part of the book; the framework we develop here is used
+in essentially every chapter of Part III, but most decisively in
+Chapter 12 (halal versus haram dynamics) and Chapter 13 (riba as
+financial entropy).
+
+The chapter assumes some familiarity with intermediate economics ---
+the concepts of expected utility, risk aversion, and basic finance
+should be familiar. It assumes no background in measure-theoretic
+probability or stochastic processes; both are developed where
+needed. The mathematical level is set so that a graduate student in
+economics can follow without further preparation.
+
+The chapter has two main goals. The first is to develop the formal
+machinery of ergodicity --- random variables, expectations, time
+versus ensemble averages --- with the precision required for the
+worked treatments in Part III. The second is to demonstrate the
+specific empirical and theoretical claims that ergodicity economics
+makes about wealth dynamics, and to begin to draw out the
+implications for Islamic economic claims.
+
+The chapter proceeds in eleven sections.
+\xref{sec:probability-basics} establishes the basic vocabulary of
+probability theory.
+\xref{sec:bernoulli-puzzle} introduces the St.\ Petersburg paradox
+and the Bernoulli framework that has shaped expected utility theory.
+\xref{sec:hidden-assumption} identifies the hidden assumption ---
+ergodicity --- in the standard framework.
+\xref{sec:ensemble-time} develops the formal distinction between
+ensemble and time averages.
+\xref{sec:coin-flip} works the canonical multiplicative coin-flip
+example in full.
+\xref{sec:multiplicative-dynamics} develops multiplicative wealth
+dynamics in general.
+\xref{sec:kelly-criterion} treats the Kelly criterion.
+\xref{sec:absorbing-barriers} develops absorbing barriers and their
+implications.
+\xref{sec:dissolved-puzzles} shows how several long-standing economic
+puzzles are dissolved by the ergodicity framework.
+\xref{sec:risk-pooling} treats risk pooling as the rational response
+to non-ergodic dynamics.
+\xref{sec:riba-preview} previews the connection to riba, developed
+in Chapter 13.
+
+\section{Probability foundations}
+\label{sec:probability-basics}
+
+We begin with the basic vocabulary, stated precisely so that later
+sections can build on it. The reader who has studied probability
+formally can skim; the reader who has not should attend.
+
+\subsection{Random variables and probability spaces}
+
+A \emph{probability space} is a triple $(\Omega, \mathcal{F}, P)$ where:
+
+\begin{itemize}[leftmargin=2em]
+    \item $\Omega$ is the \emph{sample space}: the set of all
+    possible outcomes of the random experiment.
+    \item $\mathcal{F}$ is a \emph{$\sigma$-algebra} (sigma-algebra)
+    on $\Omega$: a collection of subsets of $\Omega$ closed under
+    complements and countable unions, called \emph{events}.
+    \item $P$ is a \emph{probability measure}: a function from
+    $\mathcal{F}$ to $[0, 1]$ such that $P(\Omega) = 1$ and
+    countable disjoint unions are additive.
+\end{itemize}
+
+A \emph{random variable} $X$ is a measurable function from $\Omega$
+to the real numbers $\mathbb{R}$. The reader can think of $X$ as a
+quantity whose value depends on the random outcome: when the
+experiment is run and outcome $\omega \in \Omega$ occurs, the random
+variable takes the value $X(\omega)$.
+
+\begin{example}[A coin flip]
+Let $\Omega = \{H, T\}$ be the sample space for a single coin flip.
+Let $\mathcal{F} = \{\emptyset, \{H\}, \{T\}, \Omega\}$ be the
+$\sigma$-algebra. Let $P(\{H\}) = P(\{T\}) = 1/2$ for a fair coin.
+Define a random variable $X$ by $X(H) = 1, X(T) = -1$. Then $X$ is
+a real-valued random variable taking values $+1$ or $-1$ with equal
+probability.
+\end{example}
+
+\subsection{Expectation, variance, and moments}
+
+The \emph{expected value} of a random variable $X$ is
+\[
+    \mathbb{E}[X] = \int_\Omega X(\omega)\, dP(\omega).
+\]
+For a discrete random variable taking values $x_1, x_2, \dots, x_n$
+with probabilities $p_1, p_2, \dots, p_n$, this becomes
+\[
+    \mathbb{E}[X] = \sum_{i=1}^n p_i x_i.
+\]
+For a continuous random variable with density $f_X(x)$,
+\[
+    \mathbb{E}[X] = \int_{-\infty}^\infty x f_X(x)\, dx.
+\]
+
+The expected value is a single real number that we interpret as the
+``average'' value of $X$. The interpretation is not innocent, as we
+shall see; it conflates two distinct notions of ``average'' that
+turn out to be different in important cases.
+
+The \emph{variance} of $X$ is
+\[
+    \text{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2] =
+    \mathbb{E}[X^2] - (\mathbb{E}[X])^2.
+\]
+The variance measures the spread of $X$ around its mean. Higher
+moments ($\mathbb{E}[X^k]$ for $k \geq 3$) measure further features
+of the distribution; we will use them sparingly.
+
+\subsection{The law of large numbers}
+
+The fundamental result of classical probability theory, due to Jacob
+Bernoulli (1713):
+
+\begin{theorem}[Strong Law of Large Numbers]
+\label{thm:lln}
+Let $X_1, X_2, X_3, \dots$ be a sequence of independent and
+identically distributed random variables with finite mean
+$\mathbb{E}[X_i] = \mu$. Then with probability 1,
+\[
+    \lim_{n \to \infty} \frac{1}{n} \sum_{i=1}^n X_i = \mu.
+\]
+\end{theorem}
+
+In words: if you repeat the experiment many times and take the
+sample average of the results, the sample average converges to the
+expected value as the number of repetitions grows.
+
+The Law of Large Numbers is the formal foundation for the intuitive
+identification of ``expected value'' with ``long-run average.'' If
+you flip a fair coin many times and count the proportion of heads,
+the proportion approaches 1/2.
+
+But notice the structure of the theorem carefully. The
+``many-times'' is across many \emph{independent repetitions}. The
+sample average is the average across many copies. The theorem says
+that this average converges to the expected value.
+
+What if we cannot get many independent copies? What if the
+experiment we care about is something that happens once, sequentially,
+to a single agent over time? Then the Law of Large Numbers does not
+directly apply. The interpretation of expected value as ``long-run
+average'' assumes that ``long-run'' means many independent copies, not
+many sequential trials by a single agent.
+
+For most economic applications, the relevant ``long run'' is
+sequential, not parallel. An individual investor's wealth dynamics
+unfold over time, in a single trajectory. The investor cannot run
+many copies of their own life in parallel. The Law of Large Numbers
+does not, in this case, validate the use of expected value as a
+decision criterion.
+
+This is the central observation of ergodicity economics. We unpack
+it carefully in the next several sections.
+
+\section{The Bernoulli framework and the St.\ Petersburg paradox}
+\label{sec:bernoulli-puzzle}
+
+\subsection{The St.\ Petersburg paradox}
+
+In 1738 Daniel Bernoulli (Jacob's nephew) published an analysis of a
+gambling problem proposed by his cousin Nicolas, now known as the
+\emph{St.\ Petersburg paradox}.\footnote{Bernoulli, D. (1738),
+``Specimen theoriae novae de mensura sortis'' (``Exposition of a new
+theory on the measurement of risk''), translated by Sommer (1954),
+\emph{Econometrica} 22: 23--36.}
+
+The setup: a fair coin is flipped repeatedly until it lands heads.
+If the first heads occurs on the $k$-th flip, the player wins
+$2^k$ ducats. The expected payoff is
+\[
+    \mathbb{E}[X] = \sum_{k=1}^\infty \frac{1}{2^k} \cdot 2^k =
+    \sum_{k=1}^\infty 1 = \infty.
+\]
+The expected value is infinite. By standard expected-value
+reasoning, the player should be willing to pay any finite amount to
+play this game. Yet, asked how much they would actually pay, real
+people offer modest amounts --- a few ducats, perhaps a few dozen.
+
+The discrepancy is the paradox. Either people are irrational (in
+which case standard decision theory misdescribes their behavior), or
+expected value is the wrong decision criterion (in which case
+standard decision theory is missing something).
+
+\subsection{Bernoulli's resolution}
+
+Bernoulli proposed that what people maximize is not expected
+\emph{wealth} but expected \emph{utility} of wealth, where utility
+is a concave function of wealth. The most common choice is the
+logarithm:
+\[
+    \mathbb{E}[\log W] = \sum_{k=1}^\infty \frac{1}{2^k} \log(W_0 + 2^k - c),
+\]
+where $W_0$ is the player's initial wealth and $c$ is the price of
+playing. Because $\log$ grows much more slowly than linearly, the
+sum converges, and a finite price equates expected utility with the
+status quo.
+
+This is the foundation of \emph{expected utility theory}, formalized
+by von Neumann and Morgenstern (1944) and now the standard framework
+in economics and finance.\footnote{von Neumann, J. \& Morgenstern,
+O. (1944), \emph{Theory of Games and Economic Behavior}, Princeton
+University Press.} Modern decision theory teaches that rational
+agents maximize the expected value of a utility function over
+outcomes; the curvature of the utility function captures their
+attitude toward risk.
+
+The framework has become so standard that few economists ask whether
+the underlying maneuver --- using \emph{expected} utility ---
+involves a substantive assumption. It does. The assumption is that
+the relevant criterion is the ensemble average of the utility, which
+is the same as the time average only if the process is ergodic.
+
+\subsection{Why Bernoulli's resolution is incomplete}
+
+Bernoulli's introduction of utility was a real advance, but it
+missed the deeper issue. The expected-utility framework still
+computes an \emph{expectation} (the ensemble average), then
+interprets that expectation as guiding individual decisions. The
+question of whether the ensemble average represents the experience
+of the individual is not asked.
+
+Ergodicity economics, beginning with the work of Peters (2011) and
+Peters and Gell-Mann (2016), has shown that the question must be
+asked. For non-ergodic processes --- including most realistic
+wealth dynamics --- the ensemble average and the time average
+diverge. The agent who maximizes the ensemble average makes
+decisions appropriate for an ensemble; the agent who experiences
+their own wealth over time makes decisions on the time average. The
+two are different criteria with different optimal strategies.
+
+We develop this in the rest of the chapter.
+
+\section{The hidden assumption}
+\label{sec:hidden-assumption}
+
+We now state the hidden assumption explicitly.
+
+\begin{conceptbox}[The hidden assumption of standard decision theory]
+\label{conc:hidden-assumption}
+Standard decision theory uses the expected value (ensemble average)
+of the relevant random variable as the criterion for individual
+decisions. This is appropriate if and only if the relevant process
+is ergodic --- that is, if the time average experienced by an
+individual realization equals the ensemble average across
+realizations.
+
+For non-ergodic processes, the ensemble average is the wrong
+criterion for the individual. The individual experiences the time
+average; their decisions, if rational, should optimize the time
+average.
+
+The assumption of ergodicity is rarely made explicit in standard
+decision theory, but it is required to justify the use of expected
+value as a decision criterion.
+\end{conceptbox}
+
+The reader unfamiliar with this distinction may find the claim
+disorienting. The ensemble average and the time average are
+\emph{usually thought to be the same thing}; the conflation is
+built into intuitive thinking about probability and into most
+treatments of decision theory.
+
+The conflation is correct for ergodic processes, which include some
+important cases (notably, the additive random walks and stationary
+processes that the Law of Large Numbers most directly addresses).
+But it is incorrect for non-ergodic processes, which include
+multiplicative wealth dynamics, processes with absorbing barriers
+(such as bankruptcy), and many other realistic cases.
+
+The next section develops the distinction with mathematical
+precision.
+
+\section{Ensemble and time averages: definitions and the difference}
+\label{sec:ensemble-time}
+
+\subsection{Two kinds of average}
+
+Suppose we have a stochastic process $X(t)$ defined for $t \geq 0$.
+Two natural ways to compute an ``average'' of the process:
+
+\begin{definition}[Ensemble average]
+\label{def:ensemble-avg}
+The \emph{ensemble average} of $X$ at time $t$ is
+\[
+    \langle X \rangle_{\text{ens}}(t) = \mathbb{E}[X(t)] =
+    \int X(t, \omega)\, dP(\omega),
+\]
+the average of $X(t)$ across all possible realizations of the
+process. If we run the process many independent times, the
+ensemble average is the limit of the sample average across runs.
+\end{definition}
+
+\begin{definition}[Time average]
+\label{def:time-avg}
+The \emph{time average} of $X$ for a single realization is
+\[
+    \langle X \rangle_{\text{time}} = \lim_{T \to \infty}
+    \frac{1}{T} \int_0^T X(t)\, dt,
+\]
+the average of $X$ over time within a single realization (provided
+the limit exists).
+\end{definition}
+
+For multiplicative processes, the relevant time average is not the
+arithmetic time average but the time-averaged growth rate:
+\[
+    g_{\text{time}} = \lim_{T \to \infty} \frac{1}{T} \log\frac{X(T)}{X(0)}.
+\]
+This is the quantity that determines the long-run growth of an
+individual realization.
+
+\subsection{The definition of ergodicity}
+
+\begin{definition}[Ergodicity]
+\label{def:ergodicity}
+A process $X(t)$ is \emph{ergodic} (with respect to the relevant
+average) if the time average for a single realization equals the
+ensemble average:
+\[
+    \langle X \rangle_{\text{time}} = \langle X \rangle_{\text{ens}}
+    \quad \text{(with probability 1).}
+\]
+A process for which this equality fails is \emph{non-ergodic}.
+\end{definition}
+
+The textbook examples of ergodic processes include independent
+identically distributed sums (the Law of Large Numbers result) and
+many stationary stochastic processes. The textbook examples of
+non-ergodic processes include multiplicative wealth dynamics,
+processes with absorbing barriers, and dynamical systems with
+multiple equilibrium attractors.
+
+The terminology comes from Boltzmann's work on statistical mechanics
+in the late nineteenth century. Boltzmann assumed that physical
+systems are ergodic --- that the time average of a quantity over a
+long enough time equals the ensemble average over a phase-space
+distribution --- in order to derive the laws of thermodynamics from
+microscopic mechanics. The assumption is satisfied for many physical
+systems but not all. For our purposes, what matters is that economic
+systems involving wealth dynamics are typically \emph{not} ergodic.
+
+\subsection{Why ensemble and time can differ}
+
+A simple example illustrates how the two averages can diverge.
+Consider a two-step random process. At each step, the value $X$ is
+multiplied by either 2 (probability 1/2) or 1/2 (probability 1/2).
+Starting from $X(0) = 1$.
+
+\textbf{Ensemble computation.} After one step, the expected value of
+$X$ is
+\[
+    \mathbb{E}[X(1)] = \frac{1}{2} \cdot 2 + \frac{1}{2} \cdot \frac{1}{2}
+    = 1.25.
+\]
+After $n$ steps, by independence,
+\[
+    \mathbb{E}[X(n)] = (1.25)^n.
+\]
+The ensemble average grows exponentially, with growth rate
+$\log(1.25) \approx 0.223$ per step.
+
+\textbf{Time computation.} For a single realization, after $n$
+steps with $k$ multiplications by 2 and $n-k$ multiplications by 1/2,
+\[
+    X(n) = 2^k \cdot (1/2)^{n-k} = 2^{2k-n}.
+\]
+With probability 1/2 of multiplying by 2 each step, $k \approx n/2$
+for large $n$ (by the Law of Large Numbers applied to the
+\emph{number of} multiplications). So for a typical realization,
+\[
+    X(n) \approx 2^{n - n} = 1
+\]
+or more precisely, the time-averaged growth rate is
+\[
+    g_{\text{time}} = \lim_{n \to \infty} \frac{1}{n} \log X(n)
+    = \frac{1}{2} \log 2 + \frac{1}{2} \log\frac{1}{2} = 0.
+\]
+A typical realization has zero long-run growth rate.
+
+\textbf{The discrepancy.} The ensemble average grows at rate $\log
+1.25$. The time average grows at rate 0. These are different. Both
+are correct; they are answering different questions. The ensemble
+average answers ``what is the average behavior across many
+independent realizations?''; the time average answers ``what is the
+behavior of a typical individual realization?''
+
+For an investor facing this gamble, the relevant question is the
+second. The investor experiences a single realization, not the
+ensemble. They will, with high probability, end up with $X(n)$ near
+1, not near $(1.25)^n$. The ensemble average is, in this sense,
+misleading about individual experience.
+
+\section{The canonical multiplicative coin-flip example}
+\label{sec:coin-flip}
+
+We now develop the canonical example of ergodicity economics in
+full. The example is structurally simple but mathematically
+illuminating.
+
+\subsection{Setup}
+
+A fair coin is flipped repeatedly. Each flip:
+
+\begin{itemize}[leftmargin=2em]
+    \item If heads (probability 1/2), wealth is multiplied by
+    $1 + a$ for some positive $a$.
+    \item If tails (probability 1/2), wealth is multiplied by
+    $1 - b$ for some positive $b$, with $b < 1$.
+\end{itemize}
+
+Starting wealth is $W_0$. After $n$ flips with $h$ heads and $t = n - h$
+tails:
+\[
+    W(n) = W_0 (1+a)^h (1-b)^{n-h}.
+\]
+
+\subsection{Ensemble average}
+
+The expected wealth after one flip is
+\[
+    \mathbb{E}[W(1)] = W_0 \left[ \frac{1}{2}(1+a) + \frac{1}{2}(1-b) \right]
+    = W_0 \left[ 1 + \frac{a-b}{2} \right].
+\]
+Define $r_e = \frac{a-b}{2}$, the \emph{ensemble-average return per
+flip}. Then
+\[
+    \mathbb{E}[W(n)] = W_0 (1 + r_e)^n.
+\]
+If $a > b$, the ensemble average grows; if $a < b$, it shrinks; if
+$a = b$, it stays the same.
+
+\subsection{Time average}
+
+For large $n$, by the Law of Large Numbers, $h \approx n/2$ and
+$n - h \approx n/2$. The realized wealth is approximately
+\[
+    W(n) \approx W_0 (1+a)^{n/2} (1-b)^{n/2} = W_0 \left[ (1+a)(1-b) \right]^{n/2}.
+\]
+The time-averaged growth rate is
+\[
+    g_{\text{time}} = \lim_{n \to \infty} \frac{1}{n} \log\frac{W(n)}{W_0}
+    = \frac{1}{2} \log[(1+a)(1-b)].
+\]
+Define $r_t$ implicitly by $1 + r_t = e^{g_{\text{time}}} =
+\sqrt{(1+a)(1-b)}$. This is the \emph{time-average return per flip}.
+
+\subsection{Comparison: the +50\%/-40\% case}
+
+Consider the specific case $a = 0.5, b = 0.4$. So heads multiplies
+wealth by 1.5, tails by 0.6.
+
+\textbf{Ensemble average.}
+\[
+    r_e = \frac{0.5 - 0.4}{2} = 0.05.
+\]
+The ensemble-average return is $+5\%$ per flip. Standard decision
+theory, applied naively, would say: this is a profitable gamble, the
+investor should play it.
+
+\textbf{Time average.}
+\[
+    g_{\text{time}} = \frac{1}{2} \log[(1.5)(0.6)] = \frac{1}{2} \log(0.9) \approx -0.0527.
+\]
+The time-average growth rate is approximately $-5.3\%$ per flip.
+The investor's wealth shrinks over time at this rate.
+
+\textbf{The startling discrepancy.} In the ensemble, the gamble has
+positive expected return: across many investors, the average wealth
+grows. In the individual time series, the gamble has negative
+return: the typical investor's wealth shrinks.
+
+The two statements are both correct. They describe different
+quantities. An investor who follows the ensemble-average advice and
+plays this gamble will, with probability approaching 1, lose
+substantial wealth over time. The ``positive expected return'' is
+real but it lives in a few extreme realizations where one happens
+to flip heads many more times than tails; in the typical
+realization, the wealth shrinks.
+
+\subsection{Why this happens}
+
+The mechanism is geometric. Multiplicative random factors satisfy
+the inequality
+\[
+    \text{geometric mean} \leq \text{arithmetic mean}
+\]
+with equality only when all factors are equal. The arithmetic mean
+of the two factors $\{1.5, 0.6\}$ is $1.05$ (the ensemble average).
+The geometric mean is $\sqrt{1.5 \cdot 0.6} = \sqrt{0.9} \approx 0.949$
+(below 1). The arithmetic mean is what the ensemble grows at; the
+geometric mean is what the typical individual experiences.
+
+This is a mathematical fact about multiplicative dynamics. It has
+nothing to do with risk aversion, behavioral biases, or
+psychological idiosyncrasy. It is structural.
+
+\subsection{The general principle}
+
+Generalize: for any random multiplicative factor $1 + R$ where $R$
+is a non-degenerate random variable with $\mathbb{E}[R] > 0$ and
+$\text{Var}(R) > 0$, the long-run time-averaged growth rate
+satisfies
+\[
+    g_{\text{time}} = \mathbb{E}[\log(1+R)] < \log(1 + \mathbb{E}[R])
+    = g_{\text{ens}}
+\]
+by Jensen's inequality (since $\log$ is concave). The strict
+inequality means the time average is always strictly less than the
+ensemble average for any non-trivial random multiplicative factor.
+
+\begin{theorem}[Time-ensemble divergence for multiplicative dynamics]
+\label{thm:time-ensemble-divergence}
+Let $W_0, W_1, W_2, \dots$ be a wealth process with
+$W_{n+1} = W_n (1 + R_{n+1})$ where the $R_n$ are independent and
+identically distributed random variables with finite second moment.
+Let $r = \mathbb{E}[R_n]$. The ensemble-average growth rate is
+$\log(1 + r)$. The time-averaged growth rate is
+$\mathbb{E}[\log(1 + R_n)]$. By Jensen's inequality,
+\[
+    \mathbb{E}[\log(1 + R_n)] \leq \log(1 + r),
+\]
+with equality only if $R_n$ is degenerate (constant). Strict
+inequality holds whenever $R_n$ has positive variance.
+\end{theorem}
+
+\begin{proof}
+The function $\log(1+x)$ is strictly concave for $x > -1$. By
+Jensen's inequality, for any non-degenerate random variable $X$
+taking values in $(-1, \infty)$,
+\[
+    \mathbb{E}[\log(1+X)] < \log(1 + \mathbb{E}[X]).
+\]
+Apply this to $X = R_n$. The conclusion follows.
+\end{proof}
+
+The theorem is the formal foundation of all the qualitative claims
+of ergodicity economics. The ensemble average always overstates the
+time-averaged growth for multiplicative dynamics with random
+returns. The standard expected-value framework, applied without
+recognizing this, systematically advises strategies that reduce
+individual long-run wealth.
+
+\section{The Kelly criterion}
+\label{sec:kelly-criterion}
+
+Given that the time-averaged growth rate is the appropriate
+criterion for an investor experiencing wealth over time, what
+investment fraction maximizes it? The answer was given by John Kelly
+in 1956, in a paper that has subsequently become foundational for
+modern probability theory and information theory.\footnote{Kelly,
+J. L. (1956), ``A new interpretation of information rate,''
+\emph{Bell System Technical Journal} 35: 917--926.}
+
+\subsection{The setup}
+
+Consider a sequence of bets, each with probability $p$ of winning and
+$q = 1 - p$ of losing. A win returns $b$ times the amount bet (so
+betting \$1 returns \$$b$ on a win, plus the original \$1; a loss
+loses the entire bet).
+
+The investor begins with wealth $W_0$ and bets a fraction $f$ of
+their current wealth on each round. After a win, wealth becomes
+$W(1 + bf)$. After a loss, wealth becomes $W(1 - f)$.
+
+The objective: choose $f$ to maximize the long-run time-averaged
+growth rate of wealth.
+
+\subsection{The Kelly formula}
+
+The time-averaged growth rate as a function of $f$ is
+\[
+    g(f) = p \log(1 + bf) + q \log(1 - f).
+\]
+To maximize, take the derivative with respect to $f$ and set it
+equal to zero:
+\[
+    \frac{dg}{df} = \frac{pb}{1 + bf} - \frac{q}{1 - f} = 0.
+\]
+Solving:
+\[
+    pb(1 - f) = q(1 + bf),
+\]
+\[
+    pb - pbf = q + qbf,
+\]
+\[
+    pb - q = (pb + q) bf,
+\]
+\[
+    f^* = \frac{pb - q}{b(pb + q)} = \frac{p - q/b}{1 + q b / b} = p - \frac{q}{b}.
+\]
+The Kelly fraction is
+\[
+    \boxed{f^* = p - \frac{q}{b}.}
+\]
+
+\subsection{What the formula says}
+
+The Kelly fraction depends on both the win probability $p$ and the
+payoff ratio $b$. Several special cases:
+
+\begin{itemize}[leftmargin=2em]
+    \item If $pb \leq q$ (the expected gross return is non-positive),
+    then $f^* \leq 0$: don't bet (or bet against, if shorting is
+    available).
+    \item If $b = 1$ (even-money bet) and $p = 0.6, q = 0.4$, then
+    $f^* = 0.6 - 0.4 = 0.2$: bet 20\% of wealth.
+    \item If $b$ is very large (high payoff), $q/b \to 0$ and
+    $f^* \to p$: bet the win probability.
+    \item If $p$ is close to 1 (near-certain win), $f^*$ is close
+    to 1 minus a small correction: bet most of wealth.
+\end{itemize}
+
+\subsection{What the formula does not say}
+
+The Kelly criterion is not the same as expected-value maximization.
+A naive expected-value maximizer who computed
+\[
+    \mathbb{E}[\Delta W \mid \text{bet fraction } f]
+    = pf b - qf > 0 \quad \text{whenever } pb > q
+\]
+would conclude: bet everything. The maximum expected return
+strategy is $f = 1$. But $f = 1$ guarantees ruin on the first loss.
+The Kelly fraction is strictly less than 1 except for the
+degenerate case of certain wins; it represents the intermediate
+between cowardly under-betting and ruinous over-betting that
+maximizes long-run growth.
+
+The Kelly criterion is an example of \emph{time-average optimization}
+applied correctly. It tells the agent: to maximize the long-run
+growth rate of your individual wealth trajectory, bet this much.
+The advice differs from expected-value maximization. The advice is
+empirically validated --- investors who follow Kelly outperform
+investors who follow expected-value strategies in the long run.
+
+\subsection{The historical neglect}
+
+Despite Kelly's 1956 publication and its substantial subsequent
+development by Edward Thorp, William Poundstone, Mark Spitznagel, and
+others, the Kelly criterion has not become standard in mainstream
+economics or finance. Most textbooks teach expected utility
+maximization with a concave utility function (the Bernoulli
+framework) and treat Kelly as a special case for ``log utility.''
+The teaching obscures the conceptual point: the Kelly criterion is
+not a special-case utility function; it is the \emph{correct
+criterion} for time-averaged growth, and the failure of standard
+expected-utility theory to recommend it is a signal that standard
+theory is using the wrong average.
+
+The contemporary ergodicity-economics program, led by Ole Peters at
+the London Mathematical Laboratory, has reframed Kelly's result and
+its implications. The reframing has not yet been fully absorbed by
+mainstream economics, but it is gaining recognition.
+
+\section{Absorbing barriers and bankruptcy}
+\label{sec:absorbing-barriers}
+
+A particularly important class of non-ergodic processes involves
+absorbing barriers. We treat them in this section because they are
+the structural feature of debt-based dynamics that connects the
+ergodicity framework to the Islamic prohibition of riba.
+
+\subsection{Definition}
+
+\begin{definition}[Absorbing barrier]
+\label{def:absorbing}
+An \emph{absorbing barrier} in a stochastic process is a state that,
+once entered, cannot be left. The process is ``trapped'' at the
+absorbing state for all subsequent times.
+\end{definition}
+
+The canonical economic absorbing barrier is bankruptcy. A wealth
+process that hits zero (or some negative threshold representing
+insolvency) cannot recover; the agent exits the game and stays out.
+The wealth dynamics ``before bankruptcy'' and ``after bankruptcy''
+are not symmetric; bankruptcy is irreversible.
+
+\subsection{Why absorbing barriers destroy ergodicity}
+
+The presence of an absorbing barrier guarantees that the time
+average of any wealth process eventually equals the value at the
+absorbing barrier (since the process spends an arbitrarily large
+fraction of time there once it has been absorbed). The ensemble
+average, by contrast, is dominated by the realizations that have
+\emph{not} been absorbed, which can be far above the barrier.
+
+The divergence between time and ensemble averages is therefore
+extreme in the presence of absorbing barriers. The ensemble average
+gives a reading of how the few survivors are doing; the time
+average for any individual gives a reading of where they will end
+up, which (if absorption is possible) is the absorbing state.
+
+\subsection{Interest with default risk: a non-ergodic process}
+
+Standard interest-bearing lending has the structural feature that
+makes it non-ergodic: in case of default, the lender loses the
+principal. The borrower, having defaulted, may also face severe
+economic consequences (asset seizure, loss of social standing,
+imprisonment in earlier eras, persistent disqualification from
+credit in modern eras).
+
+Consider a simplified model. The borrower invests at gross return
+$1+r$ each period. With probability $p$, the investment succeeds
+and the borrower repays principal plus interest. With probability
+$q = 1 - p$, the investment fails and the borrower defaults; their
+wealth goes to zero (or below).
+
+For the borrower, the wealth process is non-ergodic with an
+absorbing barrier at zero. The expected return per period is
+\[
+    \mathbb{E}[\text{return}] = p(1 + r) + q \cdot 0 = p(1 + r) - 1.
+\]
+This is positive if $p(1+r) > 1$, that is, if the success
+probability is high enough. The ensemble average grows.
+
+But the time average is dominated by the absorbing barrier. The
+probability of survival to time $n$ is $p^n \to 0$ as $n \to
+\infty$. With probability 1 in the long run, the borrower is
+bankrupt. The time average of wealth is zero.
+
+The divergence between ensemble and time averages here is total: the
+ensemble average grows; the time average converges to the absorbing
+barrier value. An investor who maximizes the ensemble average will,
+with probability 1, eventually be ruined.
+
+\subsection{The Quranic statement on riba}
+
+This is the formal content of the Quranic statement that ``Allah
+destroys riba'' (\Quran{2:276}). The statement is not merely moral.
+It is mathematically descriptive of what happens to the time average
+of wealth in interest-based dynamics with default risk: the time
+average converges to the absorbing barrier, regardless of how
+favorable the ensemble-average return appears.
+
+We develop this in detail in Chapter 13. The point of the present
+section is to establish the mathematical framework: absorbing
+barriers destroy ergodicity, and the structural feature of riba ---
+the irreversibility of default --- is precisely what creates the
+absorbing barrier.
+
+\section{Long-standing economic puzzles dissolved}
+\label{sec:dissolved-puzzles}
+
+Several puzzles in the standard economic literature dissolve once
+the ergodicity framework is adopted. We treat three briefly.
+
+\subsection{The equity premium puzzle}
+
+Mehra and Prescott (1985) noted that historical stock returns have
+exceeded bond returns by an amount that, on standard expected-utility
+analysis, requires implausibly high risk aversion to
+explain.\footnote{Mehra, R. \& Prescott, E. C. (1985), ``The equity
+premium: a puzzle,'' \emph{Journal of Monetary Economics} 15:
+145--161.} The standard model predicts a much smaller equity
+premium than is observed.
+
+Under ergodicity-economics analysis, the puzzle is reduced. The
+relevant comparison is not the ensemble-average returns but the
+time-averaged growth rates. Multiplicative wealth dynamics with
+high variance (stocks) have a substantial gap between
+ensemble-average return and time-averaged growth rate. The
+``risk premium'' compensates investors not for risk in some
+psychological sense but for the time-ensemble divergence: the
+ensemble-average return is higher, but the time-averaged growth
+rate is lower; investors must be paid in ensemble-average terms to
+accept the lower time-averaged growth.
+
+\subsection{The insurance puzzle}
+
+Why do people buy insurance, given that the insurance company makes
+positive expected profit (so the customer's expected return on the
+insurance contract is negative)? The standard answer is risk
+aversion. The ergodicity answer is more direct: insurance pools
+risk, converting non-ergodic individual situations into ergodic
+collective ones. The pool experiences the ensemble average; the
+individuals, without pooling, would experience the (much lower)
+time average. Insurance is rational because it converts the
+relevant criterion to one's favor.
+
+\subsection{The cost of inequality}
+
+Standard welfare analysis can struggle to articulate why inequality
+is costly. If the total wealth is unchanged, the standard analysis
+sees no reduction in welfare from a more unequal distribution.
+
+Ergodicity analysis offers a sharper account. Wealth distributions
+have non-ergodic dynamics: small wealth shocks can permanently
+disqualify an individual from certain economic activities (because
+of capital requirements, credit access, etc.). The ensemble average
+of wealth may grow, but the time average for low-wealth individuals
+can stagnate or decline if their non-ergodic dynamics keep them
+trapped near absorbing barriers. The cost of inequality is then a
+real cost, not just a normative judgment.
+
+The Islamic economic prohibitions and prescriptions ---
+particularly the package of zakat, riba prohibition, inheritance
+partition, and waqf treated in Chapter 17 --- can be read as
+addressing exactly this non-ergodic structure of unconstrained
+wealth dynamics.
+
+\section{Risk pooling as the rational response}
+\label{sec:risk-pooling}
+
+The ergodicity framework leads to a structural conclusion that
+mainstream finance has been slow to absorb: risk pooling is not just
+risk-aversion accommodation. It is the conversion of a non-ergodic
+individual situation into an ergodic collective one.
+
+\subsection{The mechanism}
+
+Consider $N$ agents, each facing a non-ergodic random wealth
+dynamics. Each agent's individual wealth has time-averaged growth
+rate $g_t < g_e$ (where $g_e$ is the ensemble-average growth rate).
+The agents pool their wealth: instead of each holding their own
+random wealth, they hold equal shares of the combined pool.
+
+The pool's wealth, by the Law of Large Numbers, has time-averaged
+growth approaching the ensemble average $g_e$ as $N$ grows large.
+Each agent, holding $1/N$ of the pool, has time-averaged growth
+close to $g_e$.
+
+The pool transforms the non-ergodic individual situation into an
+ergodic collective one. Each agent's expected long-run growth is
+strictly higher in the pool than in the individual case. Pooling is
+a Pareto improvement; everyone is better off.
+
+\subsection{The Islamic structures}
+
+The Islamic financial structures that the prohibition of riba was
+designed to enable --- \arb{mudarabah} (profit-sharing partnership),
+\arb{musharakah} (equity partnership), \arb{takaful} (mutual
+insurance) --- are precisely the structures that pool risk in this
+way. They are not arbitrary moral preferences; they are the rational
+response to non-ergodic wealth dynamics. The prohibition of riba
+prevents the absorbing-barrier dynamics that destroy individual
+ergodicity; the affirmative recommendations create the pooled
+structures that restore it.
+
+This is the deepest connection between ergodicity economics and
+Islamic economic claims, and it is what Chapter 13 will develop in
+full mathematical detail.
+
+\section{Preview: the connection to riba}
+\label{sec:riba-preview}
+
+We end the chapter with a preview of how the ergodicity framework
+connects to the Islamic prohibition of riba. The full development is
+the subject of Chapter 13.
+
+The Quranic statement is direct: ``Allah destroys riba and increases
+charities'' (\Quran{2:276}). The classical reading is moral and
+theological. The ergodicity reading is mathematical: in
+interest-based lending with default risk, the wealth process is
+non-ergodic with an absorbing barrier; the time average of the
+borrower's wealth converges to the barrier; the long-run experience
+is destruction of wealth. The ensemble average can be positive;
+the time average is not. The Quranic statement correctly identifies
+the time-averaged outcome.
+
+The classical reading and the ergodicity reading are not in tension.
+They are the same insight at different levels of formalism. The
+moral and theological reading captures the lived experience of
+debt-driven economies (the periodic financial crises, the persistent
+inequality, the ruination of borrowers, the destabilization of
+communities); the ergodicity reading captures the mathematical
+mechanism that produces these outcomes. Both are correct.
+
+The advantage of the ergodicity reading is that it makes the claim
+formally derivable. The reader who is told ``riba is forbidden
+because Allah forbids it'' has a moral injunction without a
+mechanism. The reader who is shown the time-ensemble divergence,
+the absorbing-barrier dynamics, and the Jensen inequality
+underlying them has a mathematical argument that survives independent
+scrutiny. The two readings reinforce each other; neither replaces
+the other; together they constitute a stronger case than either
+alone.
+
+This is what we mean by Level 3 treatment in the sense of \xref{ch:levels-of-rigor}:
+the metaphysical claim corresponds to a real mechanism whose
+operation is mathematically demonstrable. The treatment in Chapter
+13 carries out the demonstration in full.
+
+\begin{summarybox}[Chapter summary]
+\textbf{Probability foundations}: random variables, expectation,
+variance, the Strong Law of Large Numbers (which says the sample
+average across many independent realizations converges to the
+expected value).
+
+\textbf{The hidden assumption}: standard decision theory uses the
+expected value (ensemble average) as the criterion for individual
+decisions. This is appropriate only if the process is ergodic.
+
+\textbf{Ensemble vs.\ time average}: ensemble average is across
+realizations; time average is within a single realization. They are
+equal for ergodic processes and differ for non-ergodic ones.
+
+\textbf{The canonical example}: a coin flip with $+50\%$/$-40\%$
+multiplicative outcomes has ensemble-average return $+5\%$ per
+flip and time-averaged growth $-5.3\%$ per flip. The two are
+mathematically distinct; both are correct; they answer different
+questions.
+
+\textbf{Theorem on time-ensemble divergence}: for any
+multiplicative wealth process with random returns, the time-average
+growth rate is strictly less than the ensemble-average growth rate
+unless the returns are deterministic. This follows from Jensen's
+inequality applied to the concave function $\log$.
+
+\textbf{The Kelly criterion}: $f^* = p - q/b$. Maximizes long-run
+time-averaged growth. Differs from expected-value maximization,
+which is ruinous for non-ergodic processes.
+
+\textbf{Absorbing barriers}: bankruptcy is the canonical economic
+absorbing barrier. Their presence destroys ergodicity completely:
+the time average converges to the barrier value, regardless of how
+favorable the ensemble-average appears.
+
+\textbf{The connection to riba}: interest with default risk is
+non-ergodic with an absorbing barrier. The time-averaged outcome is
+destruction of wealth. The Quranic statement that Allah destroys
+riba is mathematically descriptive.
+
+\textbf{Risk pooling}: the rational response to non-ergodic
+dynamics. \arb{Mudarabah}, \arb{musharakah}, and \arb{takaful} are
+precisely the pool structures that convert non-ergodic individual
+situations into ergodic collective ones. Pareto improvements.
+
+\textbf{What comes next}: Chapter 7 develops analytical idealism,
+the third major resource of Part II.
+\end{summarybox}
+
+\cleardoublepage

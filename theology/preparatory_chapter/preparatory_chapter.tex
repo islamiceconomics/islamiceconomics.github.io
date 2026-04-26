@@ -1,0 +1,1789 @@
+\documentclass[11pt,a4paper]{book}
+
+% --- Packages -------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins,breakable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{epigraph}
+\usepackage{graphicx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal!60!black,
+    urlcolor=teal!60!black,
+    citecolor=teal!60!black
+}
+
+% --- Theme colors --------------------------------------------------------
+\definecolor{themegreen}{HTML}{1a5c3a}
+\definecolor{themegold}{HTML}{b8962e}
+\definecolor{themecream}{HTML}{faf8f4}
+\definecolor{themelight}{HTML}{e8e4dc}
+\definecolor{themedark}{HTML}{1a1a2e}
+
+% --- Custom environments -------------------------------------------------
+\newtcolorbox{conceptbox}[1][]{
+    enhanced, breakable,
+    colback=themecream, colframe=themegreen,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    title={#1},
+    boxrule=0.5pt,
+    arc=2pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt
+}
+
+\newtcolorbox{notationbox}[1][]{
+    enhanced, breakable,
+    colback=themelight!50, colframe=themegold,
+    fonttitle=\bfseries,
+    coltitle=themedark,
+    title={#1},
+    boxrule=0.5pt,
+    arc=2pt
+}
+
+\newtcolorbox{watchbox}[1][]{
+    enhanced, breakable,
+    colback=white, colframe=themedark,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    title={#1},
+    boxrule=0.6pt,
+    arc=2pt
+}
+
+\newtheoremstyle{cleanrm}{6pt}{6pt}{}{}{\bfseries}{.}{0.5em}{}
+\theoremstyle{cleanrm}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+
+% --- Chapter formatting --------------------------------------------------
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries\color{themegreen}}
+  {\filright\Large\color{themegold}\textsc{Chapter \thechapter}}
+  {0.5ex}
+  {\titlerule[0.5pt]\vspace{1ex}\filright}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{themegreen}}
+  {\thesection}{0.5em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{themegreen!80!black}}
+  {\thesubsection}{0.5em}{}
+
+% --- Header / footer -----------------------------------------------------
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase\leftmark}
+\fancyhead[RO]{\nouppercase\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Title page ----------------------------------------------------------
+\title{\Huge\textbf{Five Conceptual Foundations}\\[0.4em]
+    \LARGE A Reader's Companion to the Hidden Architecture Project}
+\author{\Large Islamic Economics}
+\date{}
+
+% =========================================================================
+\begin{document}
+% =========================================================================
+
+\frontmatter
+
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\color{themegreen}\rule{0.5\textwidth}{1pt}}\\[1em]
+{\Huge\bfseries\color{themegreen} Five Conceptual\\[0.2em] Foundations\par}
+\vspace{1em}
+{\color{themegold}\rule{0.3\textwidth}{0.5pt}}\\[1em]
+{\Large\itshape A Reader's Companion to the\\ Hidden Architecture Project\par}
+\vspace{4cm}
+{\large
+A primer on the conceptual machinery of:\\[0.5em]
+\textbf{Many-Worlds Quantum Mechanics}\\
+\textbf{Ergodicity Economics}\\
+\textbf{Analytical Idealism}\\
+\textbf{Akbarian Metaphysics}\\
+\textbf{Non-Computable Consciousness}\\
+}
+\vfill
+{\large \textit{Islamic Economics}}\\[0.3em]
+{\small Companion volume: \emph{The Hidden Architecture}}
+\end{titlepage}
+
+\tableofcontents
+\cleardoublepage
+
+% --- Preface -------------------------------------------------------------
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+This document is a companion piece. Its function is narrow: to prepare
+the reader to watch five specific lectures and interviews and to extract
+from them the conceptual machinery the larger project requires. The
+larger project, \emph{The Hidden Architecture}, is an attempt to give
+mathematically rigorous treatment to a set of metaphysical claims that
+the Islamic economic tradition has carried for fourteen centuries: that
+provision is decreed, that children come bearing their own portion,
+that gratitude multiplies wealth, that interest destroys what it appears
+to build, that some wealth carries blessing and other wealth does not.
+
+These claims have been treated almost everywhere in two ways. In
+homiletic literature they appear as moral exhortation: the believer is
+told to trust them. In academic Islamic economics they are mostly
+ignored: the field has built itself on neoclassical foundations and the
+metaphysical claims have been quietly retired to the seminary. Neither
+treatment serves the reader who wishes to know whether the claims are
+\emph{true} in any sense that an outside observer could be brought to
+recognize.
+
+A third path is available. Several of the claims, when properly
+formalized, correspond to genuine results in modern mathematics,
+physics, and economics. The match is not coincidence; nor is it
+prediction; it is the consequence of two independent traditions
+arriving at structural features of the world that classical materialism
+overlooked. Modern physics has found that observers participate in
+outcomes, that probability is sometimes irreducibly perspectival, that
+information is more fundamental than matter, and that consciousness
+resists computational reduction. Modern economics has found that time
+averages diverge from ensemble averages, that wealth dynamics are
+non-ergodic, that interest-bearing systems collapse with mathematical
+necessity. The Islamic tradition has been describing some of these
+features in its own vocabulary all along.
+
+To read those convergences honestly, one must first hold the
+contemporary frameworks clearly in mind. This chapter is the
+preparation. It walks the reader through five thinkers whose work, in
+combination, supplies the vocabulary the larger project will use. The
+five are not chosen because they agree with Islamic metaphysics. Sean
+Carroll is a committed atheist. Roger Penrose has no theological
+program. Ole Peters works in pure economics. Bernardo Kastrup is a
+philosopher of mind with no Islamic interest. Only William Chittick
+works inside the tradition. The five are chosen because each, in his
+own register, dismantles one of the assumptions that makes the Islamic
+metaphysical claims look unintelligible to modern readers. Once those
+assumptions are gone, the claims look like what they are: precise
+descriptions of features of the world.
+
+The reader is advised to read this primer first, then watch the
+lectures in the order given, then return to the larger project. The
+total preparation should take fifteen to twenty hours. After it, the
+formal treatment of the eight canonical Islamic metaphysical claims
+will be intelligible at the level of derivation, not merely
+exhortation.
+
+\vspace{1em}
+\hfill\textit{The author}
+\vspace{1em}
+
+% --- Notation guide ------------------------------------------------------
+\chapter*{Notation Guide}
+\addcontentsline{toc}{chapter}{Notation Guide}
+
+The following symbols recur throughout the chapter. We list them here
+once so the reader is not slowed down by re-identification.
+
+\begin{notationbox}[Mathematical symbols]
+\begin{description}[leftmargin=2.5cm,style=nextline]
+    \item[{$\mathbb{R}$}] the real numbers.
+    \item[{$\mathbb{C}$}] the complex numbers.
+    \item[{$\mathbb{N}$}] the natural numbers $\{0, 1, 2, \dots\}$.
+    \item[{$\mathbb{E}[X]$}] the expected value (mean) of a random variable $X$.
+    \item[{$\mathrm{Var}(X)$}] the variance of a random variable $X$.
+    \item[{$P(A)$}] the probability of event $A$.
+    \item[{$\langle \psi | \phi \rangle$}] the inner product of quantum states $\psi$ and $\phi$.
+    \item[{$|\psi\rangle$}] a quantum state vector (``ket'').
+    \item[{$\hat{H}$}] the Hamiltonian operator.
+    \item[{$\hbar$}] the reduced Planck constant.
+    \item[{$\bar{x}_t$}] time-average of $x$ over interval $t$.
+    \item[{$\bar{x}_n$}] ensemble-average of $x$ over $n$ replicas.
+    \item[{$\propto$}] ``proportional to.''
+    \item[{$\sim$}] ``scales as.''
+    \item[{$\to$}] ``approaches'' or ``maps to.''
+\end{description}
+\end{notationbox}
+
+\begin{notationbox}[Arabic terms (transliterated)]
+\begin{description}[leftmargin=3.5cm,style=nextline]
+    \item[\emph{rizq}] provision; that which is allotted to a soul as sustenance.
+    \item[\emph{barakah}] divine blessing; the multiplier on material inputs.
+    \item[\emph{qadar}] divine decree; the determination of all events.
+    \item[\emph{ikhtiyar}] human choice; the element of free will.
+    \item[\emph{tawhid}] divine unity; the metaphysical ground of all things.
+    \item[\emph{wujud}] being, existence; ontological ground.
+    \item[\emph{wahdat al-wujud}] the unity of being (Ibn Arabi's central doctrine).
+    \item[\emph{tajalli}] divine self-disclosure; the unfolding of the divine names.
+    \item[\emph{insan al-kamil}] the perfect human; the universal locus of all divine names.
+    \item[\emph{riba}] interest, usury; the gratuitous return on debt.
+    \item[\emph{niyyah}] intention; the inner state that gives an act its meaning.
+    \item[\emph{waqf}] charitable endowment; perpetual alienation of property to a beneficiary.
+\end{description}
+\end{notationbox}
+
+\mainmatter
+
+% =========================================================================
+\chapter{Introduction: How to Use This Primer}
+% =========================================================================
+
+\epigraph{\itshape The fault is not in the data but in our theories about
+what the data can be.}{}
+
+\section{Why these five thinkers}
+
+The five lectures and conversations recommended for viewing have been
+selected with one criterion: \emph{each removes a specific obstacle}
+that prevents the modern reader from making sense of an Islamic
+metaphysical claim. They are not selected because their authors agree
+with Islam, share its commitments, or even know much about it. With
+one exception (Chittick), they have no Islamic agenda whatever. Three
+are not religious in any conventional sense; one (Penrose) is an
+agnostic Platonist; one (Kastrup) is a non-religious idealist. The
+selection is intellectually adversarial in the best sense: if a reader
+who reads only these five sources can be brought to see the structural
+plausibility of the Islamic metaphysical claims, then the claims have
+not been smuggled in by appeal to shared faith.
+
+The obstacles each thinker removes are:
+
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Carroll} removes the assumption that physics has
+    settled what reality is. He shows that the dominant interpretation
+    of quantum mechanics --- the Copenhagen interpretation --- is
+    philosophically problematic and that several alternative
+    interpretations exist. Once interpretations are on the table,
+    the claim that human observation is irrelevant to outcomes is no
+    longer obvious.
+    \item \textbf{Peters} removes the assumption that conventional
+    economic reasoning is the right reasoning. He shows that the
+    arithmetic of expected values, on which modern finance is built,
+    silently assumes a property (ergodicity) that wealth dynamics
+    do not have. This dismantles the claim that interest is
+    self-evidently a path to growth.
+    \item \textbf{Kastrup} removes the assumption that consciousness is
+    a byproduct of matter. He argues, with mathematical
+    rigor, that the only consistent ontology is one in which mind is
+    fundamental and matter is derivative. This re-opens the question of
+    what wealth and provision ultimately are.
+    \item \textbf{Chittick} provides the conceptual register in which
+    the Islamic tradition has always answered that question.
+    He explains Ibn Arabi's metaphysics: a system in which all of
+    existence is the unfolding self-disclosure of a single ontological
+    ground.
+    \item \textbf{Penrose} removes the assumption that the human mind
+    is a classical computer. He shows, with proof from G\"odel's
+    theorems, that human mathematical insight cannot be reduced to
+    algorithm. This re-opens the question of what cognition,
+    intention, and \emph{niyyah} are.
+\end{enumerate}
+
+The five together do not establish Islamic metaphysics. They establish
+the negative claim that materialist, computationalist, ergodic
+economics is not the only intellectually serious framework. Once the
+field is cleared, the project of the larger work --- mathematically
+rigorous treatment of the metaphysical claims --- becomes possible.
+
+\section{How to read this primer}
+
+The primer is written to be read \emph{before} viewing each lecture.
+For each thinker, we proceed in three steps:
+
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Background.} What is the field this thinker works
+    in? What problem are they responding to? What are the historical
+    debates that frame their position?
+    \item \textbf{Core argument.} What, exactly, is the thinker
+    claiming? What is the structure of their argument? What
+    mathematics or philosophy is involved?
+    \item \textbf{Connection.} How does this connect to the Hidden
+    Architecture project? Which Islamic metaphysical claim does this
+    work make intelligible?
+\end{enumerate}
+
+A short \textbf{Watch For} section follows, listing the specific
+points to attend to during the lecture so the reader extracts
+maximum value.
+
+After all five chapters, a short synthesis (Chapter 7) draws the
+threads together. A glossary collects the key terms.
+
+\section{What the reader should expect to learn}
+
+If the primer succeeds, the reader will, after watching all five
+lectures, be in a position to:
+
+\begin{itemize}[leftmargin=2em]
+    \item Distinguish the major interpretations of quantum mechanics
+    and articulate why each makes different metaphysical commitments.
+    \item State and apply the distinction between time average and
+    ensemble average and recognize when economic claims silently
+    assume ergodicity.
+    \item Articulate the hard problem of consciousness and explain why
+    materialism struggles with it.
+    \item State the central thesis of \emph{wahdat al-wujud} and connect
+    it to operational claims about wealth and existence.
+    \item State G\"odel's first incompleteness theorem in informal but
+    accurate language and explain the Penrose argument from G\"odel.
+\end{itemize}
+
+These are non-trivial skills. Most graduate-trained economists,
+philosophers, or theologians have only some of them. After this
+primer and the five lectures, the reader will have all five.
+
+% =========================================================================
+\chapter{Sean Carroll and the Interpretations of Quantum Mechanics}
+% =========================================================================
+
+\epigraph{\itshape The wave function is real, and there is nothing else.}
+{--- Sean Carroll, summarizing Many-Worlds}
+
+\section{Background: what is quantum mechanics?}
+
+Quantum mechanics is the branch of physics, developed between 1900 and
+1930, that describes nature at very small scales: atoms, electrons,
+photons. Its predictions have been confirmed to extraordinary
+precision and constitute the foundation of essentially all modern
+technology, from semiconductors to lasers to medical imaging. By any
+empirical standard, quantum mechanics is the most successful scientific
+theory ever produced.
+
+What it \emph{means}, however, has been disputed since the day it was
+formulated. The mathematics is clear; the ontology is not. Two physicists
+can use the same equations to make the same predictions while disagreeing
+violently about what those equations describe. The resulting field of
+study --- the \emph{interpretation} of quantum mechanics --- is one of
+the most active areas of philosophy of physics today.
+
+Sean Carroll, professor at Johns Hopkins and a major popularizer, holds
+a specific view: the \textbf{Many-Worlds Interpretation}, originally
+proposed by Hugh Everett in 1957. The Royal Institution lecture
+recommended for viewing is his most accessible exposition of the
+position. To get value from it, the reader needs to understand what
+problem Many-Worlds is solving.
+
+\section{The wave function and superposition}
+
+\begin{definition}[Quantum state]
+The state of a quantum system is described by a mathematical object
+called a \emph{wave function} or \emph{state vector}, denoted $|\psi\rangle$.
+The wave function lives in a complex vector space called Hilbert space.
+Operationally, it encodes the probability of every possible outcome of
+every possible measurement on the system.
+\end{definition}
+
+The strangeness of quantum mechanics begins with the fact that wave
+functions can be added together. If $|\psi_1\rangle$ and $|\psi_2\rangle$
+are valid states, then so is the linear combination
+\[
+    |\psi\rangle = \alpha |\psi_1\rangle + \beta |\psi_2\rangle, \qquad
+    \alpha, \beta \in \mathbb{C}, \qquad |\alpha|^2 + |\beta|^2 = 1.
+\]
+This is called \emph{superposition}. The system is, in some sense, in
+both states at once, weighted by the complex coefficients $\alpha$ and
+$\beta$.
+
+\begin{example}[Schr\"odinger's cat]
+The famous thought experiment: a cat in a sealed box is connected to a
+quantum coin-flip device. If the device produces outcome $A$, the cat
+lives; outcome $B$, the cat dies. Before the box is opened, the
+combined system is in state
+\[
+    |\psi\rangle = \frac{1}{\sqrt{2}} \left( |\text{alive}\rangle +
+    |\text{dead}\rangle \right).
+\]
+The cat is, in a precise mathematical sense, neither alive nor dead but
+in a superposition of both. The thought experiment was Schr\"odinger's
+attempt to ridicule the implications of the standard interpretation
+--- but the mathematics says exactly that.
+\end{example}
+
+\section{The measurement problem}
+
+The wave function evolves in time according to a deterministic equation
+called the \emph{Schr\"odinger equation}:
+\[
+    i\hbar \frac{\partial}{\partial t} |\psi(t)\rangle = \hat{H} |\psi(t)\rangle.
+\]
+Given a starting state $|\psi(0)\rangle$ and a Hamiltonian $\hat{H}$
+(the energy operator), the equation determines $|\psi(t)\rangle$ for
+all future times. There is nothing probabilistic about it.
+
+The probabilistic content of quantum mechanics arises only at the
+moment of \emph{measurement}. When an experimenter observes the
+system, the wave function appears to ``collapse'' to one of the
+component states: in the Schr\"odinger cat case, either
+$|\text{alive}\rangle$ or $|\text{dead}\rangle$, with probability
+$|\alpha|^2$ or $|\beta|^2$ respectively. The measurement is the only
+moment in standard quantum mechanics where indeterminism enters.
+
+\begin{conceptbox}[The measurement problem]
+The Schr\"odinger equation is deterministic, linear, and continuous.
+Measurement collapse is probabilistic, non-linear, and discontinuous.
+The two cannot both be fundamental. Either the equation is incomplete
+(some other dynamics governs collapse), or measurement collapse is
+not a fundamental process (it is some kind of effective description of
+something else). The \emph{measurement problem} is the question of
+which it is.
+\end{conceptbox}
+
+The history of quantum interpretations is the history of attempts to
+resolve this tension.
+
+\section{The Copenhagen interpretation}
+
+The dominant view from roughly 1927 to the 1980s, due to Niels Bohr,
+Werner Heisenberg, and others. In its standard form, Copenhagen
+asserts:
+
+\begin{itemize}[leftmargin=2em]
+    \item The wave function is not a description of reality; it is a
+    tool for predicting measurement outcomes.
+    \item Measurement collapses the wave function in a way that is
+    fundamentally probabilistic and not further explicable.
+    \item It is meaningless to ask what the system was doing before
+    measurement.
+\end{itemize}
+
+The Copenhagen view is empirically adequate --- it reproduces all
+experimental results --- but philosophically uncomfortable. It treats
+``measurement'' as a primitive process without saying what
+distinguishes it from any other physical interaction. (When does a
+photon interacting with a detector count as a measurement? When the
+detector clicks? When a human looks at the printout?) Copenhagen has
+been called by its critics ``shut up and calculate.'' Most working
+physicists have, in practice, calculated.
+
+\section{Many-Worlds: Carroll's view}
+
+In 1957 Hugh Everett, a Princeton graduate student, proposed a radical
+alternative. \textbf{Take the Schr\"odinger equation seriously and
+deny that measurement collapse occurs at all.} The wave function never
+collapses. What happens at measurement is that the experimenter and the
+system become \emph{entangled}: the experimenter who observed
+$|\text{alive}\rangle$ and the experimenter who observed
+$|\text{dead}\rangle$ both exist, in different branches of a single
+universal wave function.
+
+\begin{definition}[Many-Worlds Interpretation (MWI)]
+The wave function of the universe evolves deterministically according
+to the Schr\"odinger equation. Measurement is not a special process; it
+is ordinary entanglement between system and observer. After a
+measurement with $n$ possible outcomes, the universal wave function
+contains $n$ branches, each containing a copy of the observer who
+observed that outcome. All branches are equally real.
+\end{definition}
+
+This sounds extravagant. The mathematical claim is, in fact, the
+\emph{conservative} one: take the equations at face value and don't
+add any extra rule for measurement. The extravagant ontology
+(many worlds) is the price of mathematical conservatism.
+
+\begin{remark}
+Whether the proliferation of worlds is a virtue or a vice of the
+theory is a matter of taste. Carroll regards it as elegantly
+unavoidable. Critics regard it as a reductio ad absurdum. Both views
+are defensible.
+\end{remark}
+
+\section{Other major interpretations}
+
+For completeness, the reader should also be aware of:
+
+\begin{description}[leftmargin=1.5cm]
+    \item[Bohmian mechanics (de Broglie--Bohm).] Particles have definite
+    positions at all times, guided by a non-local pilot wave. The wave
+    function is real and so are the particles. Deterministic; no
+    measurement collapse; non-local.
+    \item[QBism (Quantum Bayesianism).] The wave function is not a
+    description of reality but a description of an agent's beliefs.
+    Probability is irreducibly perspectival. Different observers can
+    have different valid wave functions for the same system.
+    \item[Objective collapse theories (GRW, CSL).] The Schr\"odinger
+    equation is amended with a small additional term that causes
+    spontaneous collapse at random times. Collapse is a real physical
+    process.
+    \item[Relational quantum mechanics (Rovelli).] The state of a
+    system is always defined relative to another system. There is no
+    absolute, observer-independent state.
+\end{description}
+
+All of these reproduce the experimental predictions of quantum
+mechanics. They differ on what the world is like underneath the
+equations. Selecting among them is a problem of philosophy of
+physics, not a problem of experiment.
+
+\section{Connection to the Hidden Architecture project}
+
+The relevance for our project is severalfold.
+
+First, \textbf{materialist physicalism does not have a clean,
+agreed-upon picture of reality even at the level of fundamental
+physics.} The naive view that ``science has settled what the world is
+made of'' is wrong. The professional physicists most concerned with
+the issue divide into camps. This re-opens conceptual room that the
+secularizing pressure of the last two centuries had closed.
+
+Second, the Bohmian and QBism interpretations specifically map onto
+Islamic metaphysical claims. Bohmian mechanics gives us a coherent
+formal framework in which (a) the trajectory is fully determined, and
+(b) the particle has real motion --- a structure that resolves the
+classical tension between \emph{qadar} and \emph{ikhtiyar}. QBism
+gives us a perspectival framework in which probability reflects
+agent-belief rather than ontic indeterminism --- a structure that
+permits divine knowledge to be perfect while human knowledge remains
+finite.
+
+Third, Many-Worlds itself, in the Carroll formulation, gives us a
+universe in which all possible outcomes are realized, but only one
+is realized in our branch. The Islamic concept of decree (\emph{qadar})
+operates on \emph{this} branch. The thought experiment of
+``what if I had done otherwise'' becomes, in Many-Worlds, a question
+about a different branch. The actual branch is fully determined.
+
+\begin{watchbox}[Watch For: Carroll's Royal Institution Lecture]
+\begin{enumerate}[leftmargin=2em]
+    \item How does Carroll motivate the move from Copenhagen to
+    Many-Worlds? What problem with Copenhagen does Many-Worlds solve?
+    \item Note carefully Carroll's claim that Many-Worlds is
+    ``what you get when you take the equations seriously.''
+    Is this a strong argument or a question-begging one?
+    \item Pay attention to how Carroll handles the question of
+    \emph{probability} in Many-Worlds. If all branches happen, what
+    does it mean to say one outcome is ``more probable'' than another?
+    The Born Rule problem in Many-Worlds is the major technical
+    difficulty.
+    \item Listen for any moment when Carroll acknowledges that
+    Many-Worlds is not the only viable interpretation. He is honest
+    about this, but it is easy to miss in the rhetorical flow.
+    \item Note: at no point does Carroll engage with theology. He is
+    a committed atheist. The relevance of his work to our project is
+    purely structural.
+\end{enumerate}
+\end{watchbox}
+
+% =========================================================================
+\chapter{Ole Peters and Ergodicity Economics}
+% =========================================================================
+
+\epigraph{\itshape Three hundred years of expected utility theory rested
+on a confusion of two very different averages.}
+{--- Paraphrase of Peters \& Gell-Mann (2016)}
+
+\section{Background: probability and economics}
+
+Modern economics treats decisions under uncertainty using expected
+utility theory, a framework introduced by Daniel Bernoulli in 1738 and
+formalized by John von Neumann and Oskar Morgenstern in 1944. The
+central tool is the \emph{expectation} of a random variable.
+
+\begin{definition}[Expected value]
+For a random variable $X$ taking values $x_1, x_2, \dots, x_n$ with
+probabilities $p_1, p_2, \dots, p_n$, the \emph{expected value} is
+\[
+    \mathbb{E}[X] = \sum_{i=1}^{n} p_i \cdot x_i.
+\]
+For continuous variables with probability density $f(x)$,
+\[
+    \mathbb{E}[X] = \int_{-\infty}^{\infty} x \cdot f(x)\, dx.
+\]
+The expected value is the average outcome, weighted by probability.
+\end{definition}
+
+The intuition behind using $\mathbb{E}[X]$ is that, if a gamble is
+played many times, the long-run average outcome converges to
+$\mathbb{E}[X]$. This is the \emph{law of large numbers} (Bernoulli,
+1713).
+
+The trouble is that there are two distinct ways to ``play many times,''
+and they do not always give the same answer.
+
+\section{Ensemble average versus time average}
+
+Suppose we have a probabilistic system. Two ways of asking about its
+average behavior:
+
+\begin{description}[leftmargin=2em]
+    \item[Ensemble average.] We make many copies of the system, all
+    starting from the same initial conditions. We let each copy evolve
+    independently, observe all outcomes, and take the average.
+    Mathematically:
+    \[
+        \langle X \rangle_{\text{ensemble}} = \frac{1}{N} \sum_{i=1}^{N} X_i.
+    \]
+    \item[Time average.] We take a single copy of the system, let it
+    evolve for a long time, and average its behavior over time.
+    Mathematically:
+    \[
+        \langle X \rangle_{\text{time}} = \lim_{T \to \infty}
+        \frac{1}{T} \int_0^T X(t)\, dt.
+    \]
+\end{description}
+
+\begin{definition}[Ergodicity]
+A process is \emph{ergodic} if the ensemble average equals the time
+average. That is,
+\[
+    \langle X \rangle_{\text{ensemble}} = \langle X \rangle_{\text{time}}.
+\]
+A process is \emph{non-ergodic} if these averages differ.
+\end{definition}
+
+This is the central distinction. Ergodicity is the property that
+\emph{averaging across copies} gives the same answer as
+\emph{averaging across time}. It is a strong assumption. Bernoulli and
+his successors, working with simple gambling games, did not always
+distinguish the two and assumed they coincide. For many systems,
+they do; for some, they do not.
+
+The systems for which they do not are precisely the systems that
+exhibit \emph{absorbing barriers}: states that, once entered, cannot
+be left. Bankruptcy is the canonical economic absorbing barrier.
+
+\section{The classic example: a multiplicative gamble}
+
+Consider a coin flip with the following payoff:
+
+\begin{itemize}[leftmargin=2em]
+    \item If heads, your wealth increases by 50\%.
+    \item If tails, your wealth decreases by 40\%.
+\end{itemize}
+
+The probabilities are equal: $p = 0.5$ for each outcome.
+
+\textbf{Ensemble reasoning:} Imagine 1000 people, each starting with
+\$100, each playing the gamble once. After one round, 500 of them have
+\$150 and 500 have \$60. Average wealth: $(500 \cdot 150 + 500 \cdot
+60)/1000 = \$105$. The expected return is $+5\%$ per round. Over
+many rounds, the ensemble average grows.
+
+\textbf{Time reasoning:} Imagine one person, starting with \$100,
+playing the gamble repeatedly. Each round, their wealth is multiplied
+by either $1.5$ (heads) or $0.6$ (tails). Over many rounds, the
+multiplicative product converges to a specific value. The geometric
+mean of $\{1.5, 0.6\}$ is $\sqrt{1.5 \cdot 0.6} = \sqrt{0.9} \approx
+0.949$. The time-averaged growth rate is approximately $-5.1\%$ per
+round. \textbf{The single player's wealth declines over time, even
+though the ensemble average grows.}
+
+\begin{conceptbox}[The fundamental result]
+For multiplicative wealth dynamics, the time-averaged growth rate is
+the \emph{geometric mean} of the per-round multipliers, not the
+arithmetic mean. The geometric mean is always less than the arithmetic
+mean unless all multipliers are equal. Therefore, for any non-trivial
+random multiplicative process, the time average is strictly less than
+the ensemble average. The system is non-ergodic.
+\end{conceptbox}
+
+\section{The Kelly criterion}
+
+In 1956, John Kelly Jr.\ derived the optimal investment fraction for
+a multiplicative gamble. The Kelly fraction $f^*$ that maximizes
+long-run wealth growth, given an edge with probability $p$ of winning
+and odds $b$, is
+\[
+    f^* = p - \frac{1-p}{b}.
+\]
+The crucial insight is that Kelly maximizes the \emph{geometric mean}
+of returns, not the arithmetic mean. An investor maximizing arithmetic
+expected value will, almost surely, lose everything in finite time.
+An investor following the Kelly criterion will not, but their realized
+growth rate will be lower than the arithmetic expectation suggests.
+
+\begin{remark}
+Most introductory finance courses teach arithmetic expected value
+maximization. The Kelly criterion is taught only in some specialized
+courses. The implication --- that the standard textbook approach
+recommends strategies that lead to ruin --- is rarely flagged.
+\end{remark}
+
+\section{Peters's program}
+
+Ole Peters, working at the London Mathematical Laboratory, has built
+an entire research program on the observation that economics has
+silently assumed ergodicity for three centuries.\footnote{See Peters
+\& Gell-Mann (2016), ``Evaluating gambles using dynamics,'' \emph{Chaos}
+26(2): 023103; and Peters (2019), ``The ergodicity problem in
+economics,'' \emph{Nature Physics} 15: 1216--1221.} His central
+claims are:
+
+\begin{enumerate}[leftmargin=2em]
+    \item Wealth dynamics are non-ergodic. Ensemble averages do not
+    represent the experience of any individual.
+    \item Optimization of expected value (the standard recommendation)
+    leads to ruin in non-ergodic systems.
+    \item Many ``puzzles'' in economics --- the equity premium puzzle,
+    insurance behavior, the welfare cost of inequality --- dissolve
+    once we use the correct (time-averaged) framework.
+\end{enumerate}
+
+The empirical implications are substantial. Risk-pooling (mutual
+insurance) is, under the time-average framework, strictly superior to
+individual risk-bearing for any non-trivial risk. This is because
+risk-pooling \emph{converts} a non-ergodic situation (where each
+individual faces ruin) into an ergodic one (where the pool grows
+according to the ensemble average). The pool, viewed as a single
+entity, experiences the arithmetic expectation; the individuals do not.
+
+\section{Connection to the Hidden Architecture project}
+
+The connection to Islamic economic claims is direct.
+
+The Quranic prohibition of \emph{riba} can now be stated with
+mathematical precision. Interest-bearing systems with default risk are
+multiplicative random processes with absorbing barriers. They are
+non-ergodic. The arithmetic expected return is positive (the
+ensemble average grows), but the time average for any individual
+participant is negative. Riba is therefore, in literal mathematical
+sense, a system that destroys participant wealth while appearing to
+grow it.
+
+The Quranic emphasis on profit-and-loss sharing (\emph{mudarabah},
+\emph{musharakah}) is the structural opposite. These contracts pool
+risk: the multiplicative outcomes are shared, which is exactly what
+Peters identifies as the rational response to non-ergodic dynamics.
+
+The Quranic verse 2:276 --- ``Allah destroys riba and increases
+charity'' --- is a precise statement of the time-average versus
+ensemble-average distinction. Charity (zakat, sadaqah) is a
+redistribution that pools risk and converts the system from
+non-ergodic to ergodic. Riba, by contrast, accelerates the
+non-ergodic divergence.
+
+We will derive these claims rigorously in the larger work. For now,
+the reader should grasp the structural point: \textbf{the Islamic
+financial prohibitions are not arbitrary moral rules. They are the
+economic discipline of an agent who has correctly identified the
+non-ergodic character of wealth dynamics.}
+
+\begin{watchbox}[Watch For: Peters's Lecture on Ergodicity]
+\begin{enumerate}[leftmargin=2em]
+    \item Note the core example carefully: the multiplicative coin
+    flip with $+50\%$ / $-40\%$ outcomes. Get the numbers exactly. The
+    intuition that ensemble average $\neq$ time average is the entire
+    point.
+    \item Pay attention to the historical claim: that this distinction
+    was lost when economics adopted the Bernoulli framework.
+    Bernoulli himself, working in 1738, was actually closer to the
+    correct view than the modern textbooks.
+    \item Listen for the connection to insurance and risk-pooling.
+    Peters argues these are not ``risk aversion'' (an irrational
+    psychological quirk) but rational time-average optimization.
+    This directly maps to the Islamic notion of \emph{takaful}.
+    \item Note Peters's caution about the Kelly criterion. He
+    accepts it as the right answer for multiplicative wealth
+    but extends the framework far beyond it.
+    \item At no point does Peters discuss Islamic economics.
+    The structural match has not been noticed in the mainstream
+    literature. Our project is partly the assertion of that match.
+\end{enumerate}
+\end{watchbox}
+
+% =========================================================================
+\chapter{Bernardo Kastrup and Analytical Idealism}
+% =========================================================================
+
+\epigraph{\itshape The whole of nature, including ourselves and our
+inner experiences, is the extrinsic appearance of a unitary mental
+process.}{--- Bernardo Kastrup}
+
+\section{Background: the hard problem of consciousness}
+
+Of all the puzzles in modern philosophy, none has resisted resolution
+as stubbornly as the \emph{hard problem of consciousness}, named by
+the philosopher David Chalmers in 1995. The problem can be stated
+simply: \emph{why is there subjective experience at all?}
+
+A complete physical description of a human brain --- every neuron,
+every synapse, every electrochemical signal --- does not appear to
+contain any term for what it \emph{feels like} to be that brain. The
+neuroscientist can describe how visual information enters the retina,
+how it is processed by the visual cortex, how it is associated with
+motor responses. None of this description \emph{is} the experience of
+seeing red. The subjective character of experience --- what
+philosophers call \emph{qualia} --- is unaccounted for.
+
+Materialism (or physicalism), the dominant view in modern Western
+academic philosophy, holds that consciousness is somehow produced by
+matter. The trouble is that no one has been able to specify the
+``somehow.'' How does grey jelly in a skull, however complex, produce
+the felt sense of being? This is the hard problem.
+
+\section{The major positions}
+
+The contemporary philosophical landscape on consciousness includes:
+
+\begin{description}[leftmargin=2em]
+    \item[Materialism / Physicalism.] Consciousness is identical to,
+    or reducible to, brain processes. The hard problem is either an
+    illusion or will be solved by future neuroscience. Defended by
+    Daniel Dennett, Patricia Churchland, others.
+    \item[Property Dualism.] Mind and matter are distinct kinds of
+    properties of the same underlying substance. Defended by David
+    Chalmers (in some moods), others.
+    \item[Substance Dualism.] Mind and matter are distinct
+    substances. Defended historically by Descartes; rare today.
+    \item[Panpsychism.] Consciousness is a fundamental feature of
+    matter, present in all things, however attenuated. Defended by
+    Galen Strawson, Philip Goff, recently Chalmers.
+    \item[Idealism.] Mind is fundamental; matter is an appearance
+    within mind. Defended historically by Berkeley, Hegel; today,
+    most rigorously, by Bernardo Kastrup.
+\end{description}
+
+Idealism is the position the modern reader is most likely to dismiss
+without examination. It is also the position most consonant with
+classical Islamic and other Abrahamic metaphysics. The work of
+Bernardo Kastrup is its most systematic modern defense.
+
+\section{Kastrup's argument}
+
+Kastrup, a Dutch philosopher with PhDs in computer engineering and
+philosophy, builds his case from a series of careful arguments.\footnote{See
+Kastrup (2019), \emph{The Idea of the World}; (2021), \emph{Decoding
+Schopenhauer's Metaphysics}; (2023), \emph{Why Materialism is
+Baloney}.} The structure of the argument runs:
+
+\begin{enumerate}[leftmargin=2em]
+    \item Materialism faces the hard problem and has not solved it.
+    Its predictions about what brain configurations correspond to
+    what experiences are descriptive correlations, not explanations.
+    \item Property dualism inherits the hard problem in a different
+    form: it has to explain why physical states have the specific
+    qualia they do.
+    \item Panpsychism faces the \emph{combination problem}: how do
+    the elementary consciousnesses of fundamental particles combine
+    into the unified consciousness of a brain?
+    \item Idealism, in the form Kastrup defends, has none of these
+    problems. Mind is fundamental; physical reality is the
+    extrinsic appearance of mental processes; there is no need to
+    explain how mind arises from matter, because mind never arose
+    from matter --- it is matter that ``arises'' as the appearance of
+    mind to mind.
+\end{enumerate}
+
+\begin{definition}[Analytical Idealism]
+The metaphysical thesis that there is a single, universal mind
+(\emph{Mind-at-Large}) which is the only fundamental reality.
+Individual minds are localized, dissociated alters of this universal
+mind, analogous to the dissociated personalities in dissociative
+identity disorder. Physical reality, including brains and bodies, is
+how Mind-at-Large appears extrinsically when its dissociated portions
+become aware of one another.
+\end{definition}
+
+The dissociation analogy is critical and is Kastrup's distinctive
+contribution. We know, from clinical psychiatry, that a single mind
+can fragment into multiple personalities that are mutually unaware,
+each with its own subjective character, even its own physiological
+correlates (different alters can have different visual acuity,
+different allergies). Kastrup argues that this is the correct model
+for individual minds within Mind-at-Large.
+
+\section{The empirical credentials of idealism}
+
+The reader is likely to find Kastrup's position counter-intuitive.
+This is because we are habituated to materialism. It is worth noting
+that idealism is, by most measures, in better empirical standing than
+materialism:
+
+\begin{itemize}[leftmargin=2em]
+    \item Materialism predicts that brain damage should correlate
+    with cognitive impairment. It does, but only weakly: hydrocephalic
+    patients with $90\%$ of normal brain volume replaced by fluid have
+    been documented with normal IQ. The correlation between brain
+    matter and mind is far less tight than materialism predicts.
+    \item Materialism predicts that mental complexity should
+    correspond to neural complexity. But studies of psychedelic
+    experience consistently find \emph{decreased} brain activity
+    correlated with \emph{increased} richness of experience.
+    \item Quantum mechanics has been interpreted (notably by John
+    Wheeler) as requiring observers to participate in the
+    instantiation of physical reality. This is at minimum awkward for
+    materialism; it is natural for idealism.
+\end{itemize}
+
+These are not knock-down arguments. The point is that idealism is not
+a fanciful position to be dismissed; it is a serious contender that
+has been overshadowed by sociological factors in academic philosophy
+rather than defeated empirically.
+
+\section{Connection to the Hidden Architecture project}
+
+The relevance to Islamic metaphysics is striking. The Quranic
+ontology is fundamentally idealist in Kastrup's sense. Allah is the
+only reality (\emph{la ilaha illa Allah} --- ``there is no being but
+the Real''), and all of creation is His self-disclosure. Individual
+beings are not independently existing substances; they are loci of the
+divine names, sustained moment-to-moment by divine attention. This is
+not a vague mysticism; it is the explicit teaching of the Quran
+(``Wherever you turn, there is the face of Allah,'' 2:115) and the
+classical \emph{kalam} tradition.
+
+In Kastrup's terms, the Islamic doctrine of \emph{tawhid} states that
+there is one Mind-at-Large; the doctrine of creation states that the
+universe is its self-disclosure (Ibn Arabi's \emph{tajalli}); the
+doctrine of individual souls states that we are dissociated alters of
+that Mind. The match is not approximate; it is structural.
+
+This re-frames every claim about wealth and provision in our project.
+If the universe is the appearance of Mind-at-Large, then wealth is
+not ultimately a configuration of matter but a configuration of mental
+attention. Provision (\emph{rizq}) is the manifestation of the divine
+name \emph{ar-Razzaq} (the Provider) in the locus of a particular soul.
+\emph{Barakah} is the strength of that manifestation. \emph{Riba} is
+an attempt to extract material from the manifestation without
+participating in the underlying mental process --- which, like
+extracting energy from a thermodynamic system without doing work,
+should not work and ultimately does not.
+
+These are the claims to which the larger work must give rigorous
+expression. Kastrup's analytical idealism is the conceptual register
+in which they make sense.
+
+\begin{watchbox}[Watch For: Kastrup on Theories of Everything (Curt Jaimungal)]
+\begin{enumerate}[leftmargin=2em]
+    \item How does Kastrup state the hard problem of consciousness?
+    Note that he treats it as decisive against materialism --- is
+    his confidence justified?
+    \item Listen for the dissociation analogy. The clinical literature
+    on dissociative identity disorder is the empirical anchor for
+    his theory of how individual minds are alters of Mind-at-Large.
+    \item Pay attention to his treatment of brain damage and
+    psychedelics. The empirical anomalies he cites are ones
+    materialism has trouble explaining.
+    \item Note that Kastrup is not religious. He is an idealist.
+    The convergence with Islamic metaphysics is structural, not
+    confessional. This is exactly the kind of argument that can
+    persuade non-Muslim thinkers without requiring them to adopt
+    Islamic faith.
+    \item Be alert to where Kastrup's idealism differs from Islamic
+    metaphysics. He does not claim Mind-at-Large is personal,
+    benevolent, or the source of moral law. The Islamic tradition
+    does. The analytical machinery is the same; the theological
+    content is added by the Islamic tradition.
+\end{enumerate}
+\end{watchbox}
+
+% =========================================================================
+\chapter{William Chittick and Ibn Arabi's \emph{Wahdat al-Wujud}}
+% =========================================================================
+
+\epigraph{\itshape The cosmos is His self-disclosure to Himself in
+the loci of His self-disclosure.}{--- Ibn Arabi (paraphrased)}
+
+\section{Background: who is Ibn Arabi and why does he matter?}
+
+Muhyi al-Din Ibn al-Arabi (1165--1240 CE), known in the tradition as
+\emph{al-Shaykh al-Akbar} (the Greatest Master), is arguably the most
+influential metaphysician in the Islamic tradition after the Prophet.
+Born in Murcia, Andalusia; trained in Seville; traveled through North
+Africa, Mecca, Damascus; died in Damascus. His written corpus
+includes the \emph{Futuhat al-Makkiyyah} (Meccan Revelations), a
+multi-volume metaphysical encyclopedia, and the \emph{Fusus al-Hikam}
+(Bezels of Wisdom), a more compressed exposition of his central
+doctrines.
+
+Ibn Arabi's metaphysics dominated post-13th-century Islamic
+intellectual life from Andalusia to the Indian subcontinent. The
+Ottoman, Safavid, and Mughal courts all included scholars deeply
+influenced by him. His ideas pass through Mulla Sadra (1571--1640) and
+Shah Wali Allah Dehlawi (1703--1762), reaching the modern period in
+the work of figures such as Sayyid Hossein Nasr, Toshihiko Izutsu,
+William Chittick, and Sa\'id ad-Din al-Farghani.
+
+William Chittick, professor at SUNY Stony Brook, is the leading
+Western academic interpreter of Ibn Arabi. His major works include
+\emph{The Sufi Path of Knowledge} (1989) and \emph{The Self-Disclosure
+of God} (1998). Chittick's lectures, available on YouTube, are the
+most accessible scholarly introduction to Ibn Arabi's thought. To
+make use of them, the reader needs an orientation to the central
+concepts.
+
+\section{\emph{Wujud}: the foundational concept}
+
+\begin{definition}[\emph{Wujud}]
+An Arabic term variously translated as ``being,'' ``existence,''
+``finding,'' ``presence.'' In Ibn Arabi's vocabulary, \emph{wujud} is
+the foundational ontological category: that-which-is. Crucially,
+\emph{wujud} is not a property; it is the ground in which all
+properties subsist.
+\end{definition}
+
+The English ``existence'' is misleading. We are accustomed to think
+of existence as a binary property: a thing either exists or it does
+not. Ibn Arabi's \emph{wujud} is not like this. \emph{Wujud} admits
+of degrees. A stone has \emph{wujud} in one mode; a plant in another;
+an animal in another; a human in another; an angel in another. Each
+mode of being is a distinct gradation of \emph{wujud}. Above them all,
+the absolute and infinite \emph{wujud} of Allah.
+
+\section{\emph{Wahdat al-wujud}: the central thesis}
+
+\begin{definition}[\emph{Wahdat al-wujud}]
+The Unity of Being. The thesis that there is, ultimately, only one
+\emph{wujud} --- Allah --- and that all created things are not
+independent existents but \emph{loci} (\emph{mazahir}) of divine
+self-disclosure. Created things are real, but their reality is
+borrowed; their being is not their own.
+\end{definition}
+
+This is the doctrine the casual Western reader is most likely to
+mis-hear as pantheism (the equation of God with the world). It is
+\textbf{not} pantheism. Pantheism collapses God into the world. Ibn
+Arabi maintains a clear distinction: God is the absolute being; the
+world is the appearance of that being to itself, in finite loci.
+
+\begin{conceptbox}[Pantheism vs. \emph{wahdat al-wujud}]
+\textbf{Pantheism:} ``Everything is God.'' The world is the totality
+of divine being.\\
+\textbf{Wahdat al-wujud:} ``There is no being but God.'' The world is
+the appearance of divine being in finite, conditioned modes; the world
+is real \emph{as appearance} and unreal \emph{as independent
+existent}.
+\end{conceptbox}
+
+The latter is closer to Berkeley's idealism than to Spinoza's
+pantheism, and closer still to Kastrup's analytical idealism.
+Mind-at-Large in Kastrup's vocabulary corresponds to absolute
+\emph{wujud} in Ibn Arabi's. Dissociated alters in Kastrup's
+vocabulary correspond to the loci of self-disclosure in Ibn Arabi's.
+
+\section{The divine names}
+
+The mechanism by which absolute \emph{wujud} appears in finite loci is
+the \emph{divine names} (\emph{al-asma' al-husna}). The Quran lists
+the most beautiful names of God: \emph{ar-Rahman} (the Merciful),
+\emph{al-Khaliq} (the Creator), \emph{ar-Razzaq} (the Provider),
+\emph{al-Hakim} (the Wise), and many others. In the dominant theology
+these are descriptors of God's attributes. In Ibn Arabi's metaphysics
+they are something more: they are the structural principles by which
+absolute \emph{wujud} unfolds into the determinate being of creatures.
+
+Each created thing is the locus of a specific configuration of divine
+names. A grain of wheat is the locus of \emph{al-Khaliq} (creating
+existence), \emph{ar-Razzaq} (the divine providing nature manifested
+as nutriment), \emph{al-Latif} (the subtle, manifested in the
+delicacy of the seed). A human being is the locus of all the divine
+names, in differing proportions for differing individuals, with the
+\emph{insan al-kamil} (the perfect human) being the locus that
+manifests them in equilibrium.
+
+\section{\emph{Tajalli}: divine self-disclosure}
+
+\begin{definition}[\emph{Tajalli}]
+Theophany; divine self-disclosure. The active process by which
+absolute \emph{wujud} manifests in finite loci. Each moment of
+created existence is a fresh \emph{tajalli}; the universe is not a
+created clockwork that runs on its own but a continuous unfolding of
+divine self-disclosure.
+\end{definition}
+
+This concept is critical and easily missed. In the Aristotelian
+worldview, God is the creator who set the world in motion and now
+sustains it from outside. In Ibn Arabi's worldview, the world is
+\emph{being created at every instant}: the divine self-disclosure is
+continuous; if the disclosure ceased, the world would not just stop
+but cease to be.
+
+This has direct consequences for our project. Wealth is not a
+substance we accumulate; it is a manifestation that we are, at this
+moment, receiving. To claim absolute possession of wealth (``my
+wealth'') is, in Akbarian terms, a metaphysical error: the wealth is
+the divine \emph{ar-Razzaq} self-disclosing in the locus of the
+moment. The discipline of zakat, the prohibition of riba, the practice
+of charity --- these are not arbitrary moral rules but disciplines
+that align the locus with the source of its provision.
+
+\section{The imagination as ontologically real}
+
+A distinctive Akbarian doctrine: the imagination (\emph{khayal}) is
+not a less-real or merely-mental faculty. It is an intermediate
+ontological domain, in between pure spirit and pure matter, in which
+both meet. Visions, dreams, prophetic experiences are not
+hallucinations but encounters with the imaginal world (\emph{`alam
+al-mithal}).
+
+This doctrine, which sounds bizarre to materialist ears, is the
+classical Islamic answer to the question of how soul (immaterial) and
+body (material) can interact. The imagination is the bridge.
+
+\section{Connection to the Hidden Architecture project}
+
+Ibn Arabi gives us the conceptual register in which the Islamic
+metaphysical claims about wealth are not merely figurative but
+ontologically literal. Some illustrations:
+
+\begin{itemize}[leftmargin=2em]
+    \item ``Every soul comes with its own \emph{rizq}'' is, in
+    Akbarian terms, the claim that the locus of a soul's
+    self-disclosure includes the manifestation of \emph{ar-Razzaq}
+    in proportion to that soul's structure. The \emph{rizq} is not
+    independently existing material that gets distributed; it is a
+    facet of the soul's own being.
+    \item ``Barakah'' is the intensity with which the divine name is
+    manifested in a given configuration. Two people with the same
+    income but different \emph{barakah} are loci of differently
+    intense theophanies of \emph{ar-Razzaq}.
+    \item Riba is, ontologically, an attempt to generate
+    self-disclosure where none is present: an attempt to make the
+    locus produce manifestation by mechanical multiplication, rather
+    than by alignment with the source. The Akbarian prediction is
+    that this should not work --- and in the time-average framework
+    we already discussed, it does not.
+    \item The continuity of \emph{tajalli} explains why intention
+    (\emph{niyyah}) is constitutive: the locus's manifestation
+    depends on its disposition toward the source. A transaction
+    performed with proper intention is a different theophany from
+    the same physical transaction performed without it.
+\end{itemize}
+
+These reformulations are not arbitrary. They are the Akbarian
+articulation of what the Quranic statements have meant all along.
+Chittick's role for our project is to give us the rigorous
+philological and conceptual access to this articulation.
+
+\begin{watchbox}[Watch For: Chittick on Ibn Arabi]
+\begin{enumerate}[leftmargin=2em]
+    \item Listen for the distinction between \emph{wujud} and
+    ``existence'' in the colloquial English sense. \emph{Wujud}
+    admits of degrees; existence (in the modern sense) does not.
+    \item Note Chittick's careful distinction between \emph{wahdat
+    al-wujud} and pantheism. He has spent decades correcting the
+    misreading.
+    \item Pay attention to how the divine names function as
+    \emph{principles of articulation} for the divine self-disclosure.
+    This is the move that translates monotheism from a numerical
+    claim about gods into an ontological claim about the structure of
+    being.
+    \item Listen for any discussion of the imagination (\emph{khayal})
+    as a real ontological domain. This is one of the strangest doctrines
+    to modern ears but central to the Akbarian system.
+    \item Be alert to the contemporary relevance Chittick draws.
+    He often connects Ibn Arabi to modern questions in philosophy
+    of mind. These connections are valuable signposts.
+\end{enumerate}
+\end{watchbox}
+
+% =========================================================================
+\chapter{Penrose and Non-Computable Consciousness}
+% =========================================================================
+
+\epigraph{\itshape If the human brain is a computer, then there are
+mathematical truths the brain cannot understand. But the brain
+understands them. So the brain is not a computer.}{--- Roger Penrose,
+informal summary}
+
+\section{Background: Penrose and his program}
+
+Sir Roger Penrose (b.\ 1931) is a mathematical physicist of the first
+rank. His early work on the geometry of black holes (with Stephen
+Hawking) earned him the 2020 Nobel Prize in Physics. His philosophical
+program, advanced in \emph{The Emperor's New Mind} (1989) and
+\emph{Shadows of the Mind} (1994), is far more controversial: he
+argues that human consciousness involves quantum-gravitational
+processes that are non-computable, and that the seat of these
+processes is the cellular microtubules of neurons.
+
+Most working scientists regard the Penrose-Hameroff hypothesis with
+skepticism. The skepticism is partly justified: the empirical case
+is thin and the proposed quantum effects are at scales where
+decoherence should suppress them. Nevertheless, the \emph{argument}
+that consciousness is non-computable --- the negative claim, prior to
+any specific mechanism --- is a substantial mathematical argument
+that deserves serious engagement. The Royal Institution lecture
+recommended for viewing is Penrose's most accessible exposition. To
+extract value from it, the reader needs to understand G\"odel's first
+incompleteness theorem.
+
+\section{G\"odel's first incompleteness theorem}
+
+In 1931, the Austrian logician Kurt G\"odel proved a result that
+shattered a century of optimism about the foundations of mathematics.
+The result, in informal but accurate language:
+
+\begin{conceptbox}[G\"odel's first incompleteness theorem (informal)]
+For any consistent formal system $F$ rich enough to express elementary
+arithmetic, there exists a statement $G_F$ that is true but cannot be
+proven within $F$.
+\end{conceptbox}
+
+The proof technique is brilliant. G\"odel constructs a formula in the
+language of $F$ that, when interpreted, says of itself: ``This
+statement cannot be proven in $F$.'' If $F$ could prove $G_F$, then
+$G_F$ would be both provable and (by what it asserts) unprovable, a
+contradiction. So $F$ cannot prove $G_F$. But that is exactly what
+$G_F$ asserts; therefore $G_F$ is true. We have a true statement that
+$F$ cannot prove.
+
+The technical machinery (G\"odel numbering, primitive recursive
+arithmetic) is intricate, but the upshot is clean. \textbf{Any
+formal system that is rich enough to be useful is necessarily
+incomplete.} There are mathematical truths beyond its reach.
+
+\begin{example}[Concrete G\"odel statement]
+Consider the formal system $\text{ZFC}$ (Zermelo-Fraenkel set theory
+with the axiom of choice), the standard foundation of mathematics.
+G\"odel's theorem guarantees that there is a true statement of
+arithmetic --- expressible in the language of $\text{ZFC}$ --- that
+$\text{ZFC}$ cannot prove. (The continuum hypothesis is one historically
+important example, though its independence rests on a more refined
+result by G\"odel and Cohen.)
+\end{example}
+
+\section{Turing and the halting problem}
+
+In 1936, five years after G\"odel, Alan Turing proved a closely
+related result for computation. He defined a precise mathematical
+notion of \emph{algorithm} --- the Turing machine --- and proved that
+no algorithm can decide, for an arbitrary input program, whether that
+program will eventually halt or run forever. This is the
+\emph{halting problem}, and it is provably undecidable.
+
+\begin{conceptbox}[The halting problem]
+There is no algorithm $H(P, x)$ that, given a program $P$ and input
+$x$, returns ``halt'' if $P$ halts on $x$ and ``loop'' otherwise.
+\end{conceptbox}
+
+The proof, by diagonalization, parallels G\"odel's. Turing machines
+are equivalent in power to all standard models of computation
+(Church-Turing thesis), so the result applies to every conceivable
+classical computer.
+
+\section{Penrose's argument from G\"odel}
+
+The argument runs as follows:
+
+\begin{enumerate}[leftmargin=2em]
+    \item Suppose the human mathematician's mathematical reasoning
+    corresponds to a formal system $F$. (This is what is meant by
+    ``the brain is a computer.'')
+    \item By G\"odel's theorem, there is a true statement $G_F$ that
+    $F$ cannot prove.
+    \item But the human mathematician, reasoning informally about
+    $F$, can see that $G_F$ is true. (This is the key contestable
+    step.)
+    \item Therefore the human mathematician's reasoning is not
+    captured by $F$.
+    \item Since $F$ was arbitrary, the human mathematician's
+    reasoning is not captured by any formal system.
+    \item Therefore human mathematical understanding is non-computable.
+\end{enumerate}
+
+The contestable step is (3). Critics argue that the mathematician's
+ability to see that $G_F$ is true depends on a meta-mathematical
+assumption (that $F$ is consistent), and this assumption itself is
+a formal claim that some larger system $F'$ can express and prove.
+The critics conclude that the mathematician is only doing $F'$-level
+reasoning, which is also formal.
+
+Penrose's reply is that the meta-claim is justified by something
+beyond formal proof: by understanding. We do not prove that $F$ is
+consistent; we see that it is. This seeing is not a step in any
+formal system; it is precisely the non-formal element that the
+argument was attempting to identify.
+
+The debate continues. The reader does not need to settle it. What
+matters for our project is that there is a credible mathematical
+argument for the non-reducibility of mind to algorithm, made by a
+Nobel laureate, and that the argument has not been refuted in any
+way that has gained universal acceptance.
+
+\section{The Penrose-Hameroff Orch-OR theory}
+
+If consciousness is non-computable, what physical process supports
+it? Classical neural networks are Turing-equivalent (they implement
+Turing machines, perhaps in noisy fashion). Quantum systems, however,
+exhibit phenomena that classical computation does not. Penrose, in
+collaboration with the anesthesiologist Stuart Hameroff, has proposed
+that the relevant non-classical processes occur in the
+\emph{microtubules} of neuronal cells: cylindrical protein structures
+that may, the theory argues, support coherent quantum states long
+enough for them to be functionally relevant.
+
+The mechanism --- Orchestrated Objective Reduction --- combines
+Penrose's view that quantum gravity drives an objective
+(observer-independent) collapse of the wave function with Hameroff's
+view that microtubules are the relevant biological substrate. The
+collapse, on this account, is the moment of conscious experience.
+
+Empirical status: contested. Recent experimental work (the Tegmark
+estimates, then the Google Quantum AI 2022 results, then the more
+favorable findings of 2024 from the Wellesley group) has gone back
+and forth. The theory is not dead, but it is far from established.
+
+\section{The relevance is the negative claim}
+
+For the Hidden Architecture project, the precise mechanism does not
+matter. What matters is the negative claim: \textbf{there is a serious
+argument, made at the highest level of mathematical sophistication,
+that mind cannot be reduced to algorithm.} This argument is not
+theological. It does not depend on Islamic premises. It does not
+depend on any premises beyond the foundations of mathematics and
+logic.
+
+This negative claim is what the Islamic metaphysical claims about
+intention, consciousness, and \emph{niyyah} require to be coherent.
+If mind is just algorithm, then ``intention'' is a folk-psychological
+description of computational state, and the Islamic emphasis on
+intention as constitutive of action becomes incomprehensible. If mind
+is non-computable --- if there is something to it that no algorithmic
+description can capture --- then \emph{niyyah} is real in a way that
+neoclassical economics, with its reduced agents and revealed
+preferences, has no vocabulary for.
+
+\section{Connection to the Hidden Architecture project}
+
+Three direct connections:
+
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Non-computability gives weight to intention.}
+    Two physically identical transactions can have different
+    \emph{niyyah}. If mind is not algorithm, the difference is real,
+    not merely a difference in informational state. The Islamic
+    insistence that ``actions are by intention'' (the famous opening
+    hadith of Bukhari) is structurally vindicated.
+    \item \textbf{Non-computability gives weight to qadar.}
+    If outcomes are not determined by computation alone, then the
+    classical determinism objection to qadar (``if everything is
+    decreed, computation should suffice'') loses force. The decree
+    can include non-computable elements that classical analysis
+    cannot represent.
+    \item \textbf{Non-computability connects to wave function
+    collapse.} Penrose argues that the moment of collapse is the
+    moment of consciousness. In Akbarian terms, this is the moment
+    of \emph{tajalli}. Each conscious experience is a fresh
+    self-disclosure of \emph{wujud} in a finite locus.
+\end{enumerate}
+
+\begin{watchbox}[Watch For: Penrose's Royal Institution Lecture]
+\begin{enumerate}[leftmargin=2em]
+    \item Listen for the careful exposition of G\"odel. Penrose is one
+    of the few popularizers who explains the proof itself, not just
+    the conclusion.
+    \item Note Penrose's position on the standard interpretations of
+    quantum mechanics. He rejects Many-Worlds and Copenhagen alike,
+    arguing for an objective collapse process driven by quantum gravity.
+    \item Pay attention to the specific role of \emph{understanding}
+    in the argument. The contestable step is whether mathematical
+    understanding is or is not formal. Penrose's defense is worth
+    careful attention.
+    \item Listen for any discussion of microtubules. The biological
+    side of Orch-OR is the most contested empirically. Penrose is
+    typically careful to separate the philosophical argument
+    (non-computability) from the biological hypothesis
+    (microtubules).
+    \item At the end, note Penrose's caution. He does not claim
+    consciousness is supernatural. He claims it is physical but
+    non-computable. This is the position our project requires:
+    physical, but in a richer sense than algorithm.
+\end{enumerate}
+\end{watchbox}
+
+% =========================================================================
+\chapter{Synthesis: The Argument for the Hidden Architecture}
+% =========================================================================
+
+\epigraph{\itshape Five threads, one cloth.}{}
+
+\section{What the five thinkers, taken together, establish}
+
+If the reader has worked through the five chapters and watched the
+five lectures, the following positions should now be clear:
+
+\begin{enumerate}[leftmargin=2em]
+    \item (\textbf{Carroll}) Physics has not settled what reality is.
+    Multiple coherent interpretations exist. Some, like Bohmian
+    mechanics, are deterministic; some, like QBism, are
+    perspectival. The materialist common-sense picture is one option
+    among several, and not the favorite of many specialists.
+    \item (\textbf{Peters}) Standard economics, built on ensemble
+    averages, mis-describes wealth dynamics. The correct framework is
+    the time-averaged framework, which makes risk-pooling rational
+    and pure interest-based growth ruinous. The Quranic prohibitions
+    are aligned with the correct framework.
+    \item (\textbf{Kastrup}) Materialism cannot solve the hard problem
+    of consciousness. Idealism, in Kastrup's analytical form, can. The
+    universe is the appearance of Mind-at-Large. This is structurally
+    aligned with Islamic \emph{tawhid}.
+    \item (\textbf{Chittick}) Ibn Arabi's metaphysics articulates,
+    within the Islamic tradition, a complete idealist ontology in
+    which all of being is the self-disclosure of absolute \emph{wujud}.
+    Wealth, soul, and provision are loci of this self-disclosure.
+    The framework is rigorous and has fourteen centuries of
+    philosophical development.
+    \item (\textbf{Penrose}) The human mind is not reducible to
+    algorithm. Mathematical understanding involves something that
+    classical computation cannot capture. This vindicates
+    \emph{niyyah}, intention, and consciousness as real ontological
+    factors, not merely descriptive folk concepts.
+\end{enumerate}
+
+\section{The cumulative effect}
+
+No single one of these arguments forces a specific Islamic
+metaphysical commitment. Carroll could be a Bohmian or a
+many-worlder; that does not make him a Muslim. Peters could be a
+secular ergodicist; that does not make him a Quranic exegete.
+
+The cumulative effect, however, is a different matter. Take the five
+positions together:
+
+\begin{itemize}[leftmargin=2em]
+    \item Reality is fundamentally mind-like (Kastrup).
+    \item Mind is non-computable (Penrose).
+    \item Probability is perspectival or arises from branch-selection
+    in a deterministic substrate (Carroll, in either of his preferred
+    interpretations).
+    \item Economic processes are non-ergodic; wealth is not what
+    accumulation theory thinks it is (Peters).
+    \item All of being is the self-disclosure of a single ontological
+    ground (Chittick).
+\end{itemize}
+
+This is no longer materialist economics with a religious veneer. It
+is a coherent ontology in which the Islamic metaphysical claims about
+provision, blessing, intention, and decree are not merely
+\emph{permitted} but \emph{natural}. Within the materialist-ergodic
+worldview, the Islamic claims look magical. Within the
+mind-fundamental, non-ergodic, non-computable worldview, they look
+descriptive.
+
+The Hidden Architecture project, then, is the formal articulation
+of this descriptive content.
+
+\section{Recommended reading order}
+
+The optimal sequence for the lectures, after this primer, is the
+order in which the chapters of this primer were written: Carroll,
+Peters, Kastrup, Chittick, Penrose. This order builds outward from
+the most accessible (Carroll, on a topic the reader has at least
+heard of) to the most challenging (Penrose, on a topic that requires
+mathematical maturity), passing through the economic (Peters), the
+metaphysical (Kastrup), and the traditional (Chittick) in turn. By
+the time the reader reaches Penrose, they will have the conceptual
+preparation to extract maximum value.
+
+A serious reader will want to revisit Chittick after Penrose, however.
+The convergence between Akbarian metaphysics and Penrose's
+non-computability is among the most striking single features of this
+intellectual landscape, and it is best appreciated after both have
+been understood independently.
+
+\section{What comes next}
+
+After this primer and the five lectures, the reader is prepared for
+the formal work. The Hidden Architecture project consists of:
+
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{The foundational paper.} A 60-80 page rigorous
+    treatment of eight canonical Islamic metaphysical claims, each
+    given Level 2 or Level 3 mathematical reformulation. Currently
+    in draft.
+    \item \textbf{The podcast series.} Six episodes, derived from
+    the paper, accessible to general listeners.
+    \item \textbf{The short essays.} Web-length pieces tied to each
+    podcast episode, archived on the project website.
+\end{enumerate}
+
+The reader who has worked through this primer is in a position to
+read the paper without preliminary explanation, listen to the podcast
+without confusion, and engage critically with the essays.
+
+That is the entire purpose of this volume.
+
+% =========================================================================
+\chapter*{Glossary}
+\addcontentsline{toc}{chapter}{Glossary}
+% =========================================================================
+
+\begin{description}[leftmargin=3.5cm,style=nextline]
+
+\item[Absorbing barrier] A state in a stochastic process which, once
+entered, cannot be left. Bankruptcy is the canonical example in
+economics. Absorbing barriers are the source of non-ergodicity.
+
+\item[Akbarian] Pertaining to Ibn Arabi (\emph{al-Shaykh al-Akbar},
+the Greatest Master). Refers especially to his metaphysical school
+and its later development.
+
+\item[Analytical idealism] Bernardo Kastrup's contemporary version of
+idealism, in which Mind-at-Large is the fundamental reality and
+individual minds are dissociated alters of it.
+
+\item[\emph{Barakah}] Divine blessing; the multiplier on material
+inputs that distinguishes wealth (or time, or knowledge) of the same
+nominal magnitude into different effective magnitudes.
+
+\item[Bohmian mechanics] The interpretation of quantum mechanics
+proposed by de Broglie and developed by David Bohm, in which
+particles have definite positions guided by a non-local pilot wave.
+Deterministic and non-local.
+
+\item[Born rule] In standard quantum mechanics, the rule that the
+probability of a measurement outcome is the squared modulus of the
+relevant amplitude. Its derivation is straightforward in Copenhagen,
+disputed in Many-Worlds, and a fundamental given in QBism.
+
+\item[Combination problem] The objection to panpsychism that asks how
+elementary consciousnesses combine into the unified consciousness of a
+brain. A central difficulty for panpsychism; absent in idealism.
+
+\item[Copenhagen interpretation] The standard textbook interpretation
+of quantum mechanics, due to Bohr, Heisenberg, and others. The wave
+function is a tool for predicting measurement outcomes; measurement
+collapse is fundamental and irreducible.
+
+\item[Decoherence] The process by which a quantum system, interacting
+with its environment, becomes effectively classical. Explains why
+macroscopic superpositions are not observed, but does not by itself
+solve the measurement problem.
+
+\item[Dissociation (in Kastrup)] The clinical and metaphysical
+phenomenon by which a single underlying mind appears as multiple
+mutually-unaware mental processes. Empirically demonstrated in
+dissociative identity disorder; metaphysically applied to the
+relationship between Mind-at-Large and individual minds.
+
+\item[Ensemble average] The average of a quantity across many copies
+of a system. Compare time average.
+
+\item[Ergodicity] The property that ensemble average equals time
+average. Strong assumption frequently made implicitly in economics.
+
+\item[Expected value] The probability-weighted average of a random
+variable. Standard tool of decision theory; subtly inappropriate for
+non-ergodic dynamics.
+
+\item[\emph{Fusus al-Hikam}] The Bezels of Wisdom; Ibn Arabi's compact
+exposition of metaphysical doctrines.
+
+\item[\emph{Futuhat al-Makkiyyah}] The Meccan Revelations; Ibn Arabi's
+multi-volume metaphysical encyclopedia.
+
+\item[G\"odel's incompleteness theorem] The result, proved in 1931,
+that every consistent formal system rich enough to express elementary
+arithmetic contains true statements that cannot be proven within the
+system.
+
+\item[Halting problem] The provably-undecidable problem of
+determining, from a program and input, whether the program halts.
+The computational analogue of G\"odel's theorem.
+
+\item[Hard problem of consciousness] David Chalmers's term for the
+question of why physical processes give rise to subjective experience.
+The central unresolved problem of philosophy of mind.
+
+\item[Hidden variables] Underlying degrees of freedom not represented
+in the wave function but determining measurement outcomes. Bohmian
+mechanics is the leading hidden-variables theory. Bell's theorem
+(1964) constrains the structure of any viable hidden-variables theory.
+
+\item[Hilbert space] The complex vector space in which quantum states
+live. Inner product structure allows definitions of probability,
+expectation, and observable.
+
+\item[\emph{Ikhtiyar}] Choice; the human freedom of decision.
+Compatibly co-existing with \emph{qadar} in classical Islamic
+theology.
+
+\item[\emph{Insan al-kamil}] The perfect human; the locus that
+manifests the divine names in equilibrium. The Prophet Muhammad in
+Akbarian thought is the exemplar.
+
+\item[Kelly criterion] John Kelly's 1956 result on the optimal
+fraction of wealth to bet in a multiplicative gamble; equivalent to
+maximizing expected logarithm of wealth.
+
+\item[Many-Worlds Interpretation] Hugh Everett's 1957 interpretation
+of quantum mechanics, in which the wave function never collapses and
+all possible measurement outcomes occur in different branches of a
+single universal wave function.
+
+\item[Microtubules] Cylindrical protein structures within neurons
+proposed by Penrose and Hameroff as the substrate for quantum
+processes underlying consciousness. Empirically contested.
+
+\item[Mind-at-Large] Bernardo Kastrup's term for the universal mind
+that is the only fundamental reality in analytical idealism.
+
+\item[\emph{Mudarabah}] An Islamic profit-sharing partnership in
+which one party provides capital and the other expertise; profits
+shared, losses borne by capital provider only.
+
+\item[\emph{Musharakah}] An Islamic equity partnership in which all
+parties contribute capital and share both profits and losses.
+
+\item[Non-ergodic] Of a process: time average does not equal ensemble
+average. Wealth dynamics under multiplicative randomness with
+absorbing barriers are non-ergodic.
+
+\item[\emph{Niyyah}] Intention; the inner state that gives an act its
+spiritual and (in our framework) economic meaning.
+
+\item[Orch-OR] Orchestrated Objective Reduction; the
+Penrose-Hameroff theory of consciousness as the result of
+gravity-driven wave function collapse in neuronal microtubules.
+
+\item[Pilot wave] In Bohmian mechanics, the wave function understood
+as a real, physical guidance field that determines particle
+trajectories.
+
+\item[\emph{Qadar}] Divine decree; the determination of all events
+according to divine knowledge and will.
+
+\item[QBism] Quantum Bayesianism; the interpretation of quantum
+mechanics in which the wave function represents an agent's beliefs
+rather than an objective state of the world.
+
+\item[Quantum Bayesianism] See QBism.
+
+\item[\emph{Riba}] Interest, usury; the gratuitous return on debt.
+Strictly prohibited in Islamic law.
+
+\item[\emph{Rizq}] Provision, sustenance; the divine allotment to a
+soul of all that materially supports its life.
+
+\item[Schr\"odinger equation] The fundamental equation of quantum
+mechanics governing the time-evolution of the wave function.
+Deterministic and linear.
+
+\item[Self-disclosure] (See \emph{tajalli}.)
+
+\item[Superposition] The property of quantum states by which valid
+states can be linearly combined to form new valid states.
+
+\item[\emph{Tajalli}] Theophany; divine self-disclosure. The active
+process by which absolute \emph{wujud} manifests in finite loci of
+existence.
+
+\item[\emph{Takaful}] An Islamic mutual cooperative insurance
+arrangement; the structural counterpart to the risk-pooling that
+Peters identifies as the rational response to non-ergodic dynamics.
+
+\item[\emph{Tawhid}] Divine unity; the metaphysical ground of all
+things. The first article of Islamic faith.
+
+\item[Time average] The average of a quantity over time for a single
+realization of a process. Compare ensemble average.
+
+\item[Turing machine] Alan Turing's mathematical model of
+computation. Equivalent in power to all standard models; the
+canonical reference for what is computable.
+
+\item[\emph{Wahdat al-wujud}] The Unity of Being; Ibn Arabi's central
+metaphysical doctrine that there is, ultimately, only one
+\emph{wujud}, and that all created things are loci of its
+self-disclosure.
+
+\item[\emph{Waqf}] An Islamic charitable endowment; the perpetual
+alienation of property to a beneficiary purpose.
+
+\item[Wave function] The mathematical object representing a quantum
+state. Lives in Hilbert space; satisfies the Schr\"odinger equation;
+yields probabilities of measurement outcomes via the Born rule.
+
+\item[\emph{Wujud}] Being, existence; in Akbarian metaphysics, the
+foundational ontological category, admitting of degrees, with
+absolute \emph{wujud} (Allah) the source of all derived
+\emph{wujud}.
+
+\item[\emph{Zakat}] The obligatory annual alms in Islamic law; a
+proportional levy on wealth held for a year, redistributed to
+specified categories of recipients.
+
+\end{description}
+
+% =========================================================================
+\chapter*{Selected References for Further Study}
+\addcontentsline{toc}{chapter}{Selected References}
+% =========================================================================
+
+\section*{On quantum interpretations}
+\begin{itemize}[leftmargin=2em]
+    \item Carroll, S. (2019). \emph{Something Deeply Hidden: Quantum
+    Worlds and the Emergence of Spacetime}. Dutton.
+    \item Maudlin, T. (2019). \emph{Philosophy of Physics: Quantum
+    Theory}. Princeton University Press.
+    \item Bohm, D. (1952). ``A Suggested Interpretation of the
+    Quantum Theory in Terms of `Hidden' Variables.'' \emph{Physical
+    Review} 85: 166--193.
+    \item Fuchs, C., Mermin, N. D., \& Schack, R. (2014). ``An
+    introduction to QBism with an application to the locality of
+    quantum mechanics.'' \emph{American Journal of Physics} 82:
+    749--754.
+\end{itemize}
+
+\section*{On ergodicity economics}
+\begin{itemize}[leftmargin=2em]
+    \item Peters, O. \& Gell-Mann, M. (2016). ``Evaluating gambles
+    using dynamics.'' \emph{Chaos} 26(2): 023103.
+    \item Peters, O. (2019). ``The ergodicity problem in economics.''
+    \emph{Nature Physics} 15: 1216--1221.
+    \item Taleb, N. N. (2018). \emph{Skin in the Game}. Random House.
+\end{itemize}
+
+\section*{On analytical idealism}
+\begin{itemize}[leftmargin=2em]
+    \item Kastrup, B. (2019). \emph{The Idea of the World: A
+    Multi-Disciplinary Argument for the Mental Nature of Reality}.
+    Iff Books.
+    \item Kastrup, B. (2014). \emph{Why Materialism is Baloney}.
+    Iff Books.
+    \item Chalmers, D. (1995). ``Facing Up to the Problem of
+    Consciousness.'' \emph{Journal of Consciousness Studies} 2(3):
+    200--219.
+\end{itemize}
+
+\section*{On Akbarian metaphysics}
+\begin{itemize}[leftmargin=2em]
+    \item Chittick, W. (1989). \emph{The Sufi Path of Knowledge: Ibn
+    al-`Arabi's Metaphysics of Imagination}. SUNY Press.
+    \item Chittick, W. (1998). \emph{The Self-Disclosure of God:
+    Principles of Ibn al-`Arabi's Cosmology}. SUNY Press.
+    \item Izutsu, T. (1984). \emph{Sufism and Taoism: A Comparative
+    Study of Key Philosophical Concepts}. University of California
+    Press.
+\end{itemize}
+
+\section*{On non-computable consciousness}
+\begin{itemize}[leftmargin=2em]
+    \item Penrose, R. (1989). \emph{The Emperor's New Mind}. Oxford
+    University Press.
+    \item Penrose, R. (1994). \emph{Shadows of the Mind}. Oxford
+    University Press.
+    \item Hameroff, S. \& Penrose, R. (2014). ``Consciousness in the
+    universe: A review of the `Orch OR' theory.'' \emph{Physics of
+    Life Reviews} 11(1): 39--78.
+\end{itemize}
+
+\vspace{2em}
+\hrule
+\vspace{1em}
+\noindent\textit{End of preparatory chapter. The reader is now
+prepared to begin the five lectures, in the order given. Total
+preparation time, including this primer: approximately 18--22 hours.
+After completion, the reader is invited to proceed to the
+foundational paper of the Hidden Architecture project.}
+
+\end{document}

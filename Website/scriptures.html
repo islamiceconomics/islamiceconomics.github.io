@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
-  <script>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-20GZ5E8L35"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-20GZ5E8L35');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Scriptures — Search Quranic ayahs and authentic ahadith on Islamic economic topics. A comprehensive reference for riba, zakat, trade, justice, and more.">
-  <title>Scriptures — Islamic Economics</title>
-
-  <link rel="canonical" href="https://islamiceconomics.github.io/scriptures.html">
-  <link rel="alternate" hreflang="en" href="https://islamiceconomics.github.io/scriptures.html">
-  <link rel="alternate" hreflang="ur" href="https://islamiceconomics.github.io/ur/scriptures.html">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'>ع</text></svg>">
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Scriptures — Search Quranic ayahs and authentic ahadith on Islamic economic topics. A comprehensive reference for riba, zakat, trade, justice, and more." name="description"/>
+<title>Scriptures — Islamic Economics</title>
+<link href="https://islamiceconomics.github.io/scriptures.html" rel="canonical"/><link href="https://islamiceconomics.github.io/scriptures.html" hreflang="en" rel="alternate"/><link href="https://islamiceconomics.github.io/ur/scriptures.html" hreflang="ur" rel="alternate"/><link href="https://islamiceconomics.github.io/ar/scriptures.html" hreflang="ar" rel="alternate"/><link href="https://islamiceconomics.github.io/tr/scriptures.html" hreflang="tr" rel="alternate"/><link href="https://islamiceconomics.github.io/scriptures.html" hreflang="x-default" rel="alternate"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='75' font-size='75' font-weight='bold' fill='%231a5c3a'&gt;ع&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/x-icon"/>
+<script>
     (function(){var t=localStorage.getItem('ie-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
   </script>
-  <style>
+<style>
     /* ========== SOURCES PAGE STYLES ========== */
 
     .sources-search-bar {
@@ -518,155 +514,143 @@
   </style>
 </head>
 <body>
-  <!-- NAVIGATION -->
-  <nav class="nav" id="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-logo">Islamic Economics</a>
-      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-dropdown">
-          <button class="nav-dropdown-toggle">Learn <span class="nav-dropdown-arrow">&#9662;</span></button>
-          <ul class="nav-dropdown-menu">
-            <li><a href="foundations.html">Foundations</a></li>
-            <li><a href="theory.html">Theory</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="history.html">History</a></li>
-                    <li><a href="comparative.html">Comparative</a></li>
-            </ul>
-        </li>
-        <li><a href="scriptures.html" class="nav-link active">Scriptures</a></li>
-        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
-        <li><a href="podcast.html" class="nav-link">Media</a></li>
-        <li><a href="blog.html" class="nav-link">Al-Tijarah</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-      </ul>
-      <a href="ur/scriptures.html" class="lang-toggle" aria-label="اردو میں دیکھیں">اردو</a>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
-        <span class="icon-moon">&#9790;</span>
-        <span class="icon-sun">&#9788;</span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero-sm">
-    <div class="container">
-      <h1 class="fade-up">Scriptures</h1>
-      <p>A comprehensive reference of Quranic ayahs and authentic ahadith on Islamic economic topics — searchable, cross-referenced, and interconnected.</p>
-    </div>
-  </section>
-
-  <!-- MAIN CONTENT -->
-  <main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
-
-    <!-- Search Bar -->
-    <div class="sources-search-bar">
-      <span class="search-icon">&#128269;</span>
-      <input type="text" id="sourceSearch" placeholder="Search verses, hadith, or keywords..." autocomplete="off">
-      <button class="search-clear" id="searchClear">&times;</button>
-    </div>
-
-    <!-- Stats -->
-    <div class="sources-stats" id="sourcesStats"></div>
-
-    <!-- Source Type Toggle -->
-    <div class="source-type-toggle">
-      <button class="type-btn active" data-type="all">All Sources</button>
-      <button class="type-btn" data-type="quran">Quran</button>
-      <button class="type-btn" data-type="hadith">Hadith</button>
-    </div>
-
-    <!-- Topic Filter Chips -->
-    <div class="topic-filters" id="topicFilters"></div>
-
-    <!-- Topic Detail Banner -->
-    <div class="topic-detail-banner" id="topicDetailBanner">
-      <button class="topic-detail-close" id="topicDetailClose">&times;</button>
-      <h3 id="topicDetailName"></h3>
-      <span class="topic-ar" id="topicDetailAr"></span>
-      <p id="topicDetailDesc"></p>
-    </div>
-
-    <!-- Entry Cards -->
-    <div class="entries-grid" id="entriesGrid"></div>
-
-    <!-- No Results -->
-    <div class="no-results" id="noResults" style="display:none;">
-      <div class="no-results-icon">&#128214;</div>
-      <h3>No matching sources found</h3>
-      <p>Try adjusting your search or filters.</p>
-    </div>
-
-    <!-- Interlinkage Map -->
-    <div class="interlinkage-section" id="interlinkageSection">
-      <h2>Topic Interlinkages</h2>
-      <p>See how Islamic economic topics are interconnected through shared scriptural sources. Click any topic to filter.</p>
-      <div class="topic-network" id="topicNetwork"></div>
-    </div>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo">Islamic Economics</a>
-          <p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought, from the earliest markets of Medina to today's global Islamic finance industry.</p>
-          <blockquote class="footer-ayah">
-            <p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
-            <cite>— Al-Baqarah 2:188</cite>
-          </blockquote>
-        </div>
-        <nav class="footer-nav">
-          <div class="footer-nav-group">
-            <h4 class="footer-heading">Knowledge</h4>
-            <ul class="footer-links">
-              <li><a href="foundations.html">Foundations</a></li>
-              <li><a href="scriptures.html">Scriptures</a></li>
-              <li><a href="theory.html">Theory</a></li>
-              <li><a href="history.html">History</a></li>
-                    <li><a href="comparative.html">Comparative</a></li>
-            </ul>
-          </div>
-          <div class="footer-nav-group">
-            <h4 class="footer-heading">Modern Economy</h4>
-            <ul class="footer-links">
-              <li><a href="research.html">Research</a></li>
-              <li><a href="dashboard.html">Dashboard</a></li>
-              <li><a href="podcast.html">Media</a></li>
-              <li><a href="blog.html">Al-Tijarah</a></li>
-            </ul>
-          </div>
-          <div class="footer-nav-group">
-            <h4 class="footer-heading">Connect</h4>
-            <div class="social-links">
-              <a href="https://x.com/theislamicecon" class="social-icon" aria-label="Twitter/X">X</a>
-              <a href="https://instagram.com/islamicecon" class="social-icon" aria-label="Instagram">IG</a>
-              <a href="https://www.youtube.com/@theislamicecon" class="social-icon" aria-label="YouTube">YT</a>
-              <a href="https://www.tiktok.com/@theislamicecon" class="social-icon" aria-label="TikTok">TT</a>
-            </div>
-            <form class="footer-subscribe" data-newsletter-form>
-              <input type="email" placeholder="Your email" class="form-input" required>
-              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
-            </form>
-          </div>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Islamic Economics</p>
-        <a href="about.html" class="footer-bottom-link">About</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Load scripture data -->
-  <script src="js/scripture-data.js"></script>
-  <script src="js/main.js"></script>
-
-  <script>
+<!-- NAVIGATION -->
+<nav class="nav" id="navbar">
+<div class="container nav-container">
+<a class="nav-logo" href="index.html">Islamic Economics</a>
+<button aria-label="Toggle navigation" class="nav-toggle" data-nav-toggle="">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-menu">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-dropdown">
+<button class="nav-dropdown-toggle">Learn <span class="nav-dropdown-arrow">▾</span></button>
+<ul class="nav-dropdown-menu">
+<li><a href="metaphysics.html">Metaphysics</a></li>
+<li><a href="foundations.html">Foundations</a></li>
+<li><a href="theory.html">Theory</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="comparative.html">Comparative</a></li>
+</ul>
+</li>
+<li><a class="nav-link active" href="scriptures.html">Scriptures</a></li>
+<li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+<li><a class="nav-link" href="podcast.html">Media</a></li>
+<li><a class="nav-link" href="blog.html">Al-Tijarah</a></li>
+<li><a class="nav-link" href="about.html">About</a></li>
+</ul>
+<div aria-label="Language selector" class="lang-switcher"><a aria-current="page" class="lang-toggle active" href="scriptures.html" lang="en">EN</a><a class="lang-toggle" href="ur/scriptures.html" lang="ur">اردو</a><a class="lang-toggle" href="ar/scriptures.html" lang="ar">العربية</a><a class="lang-toggle" href="tr/scriptures.html" lang="tr">Türkçe</a></div>
+<button aria-label="Toggle dark mode" class="theme-toggle">
+<span class="icon-moon">☾</span>
+<span class="icon-sun">☼</span>
+</button>
+</div>
+</nav>
+<!-- HERO -->
+<section class="hero-sm">
+<div class="container">
+<h1 class="fade-up">Scriptures</h1>
+<p>A comprehensive reference of Quranic ayahs and authentic ahadith on Islamic economic topics — searchable, cross-referenced, and interconnected.</p>
+</div>
+</section>
+<!-- MAIN CONTENT -->
+<main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+<!-- Search Bar -->
+<div class="sources-search-bar">
+<span class="search-icon">🔍</span>
+<input autocomplete="off" id="sourceSearch" placeholder="Search verses, hadith, or keywords..." type="text"/>
+<button class="search-clear" id="searchClear">×</button>
+</div>
+<!-- Stats -->
+<div class="sources-stats" id="sourcesStats"></div>
+<!-- Source Type Toggle -->
+<div class="source-type-toggle">
+<button class="type-btn active" data-type="all">All Sources</button>
+<button class="type-btn" data-type="quran">Quran</button>
+<button class="type-btn" data-type="hadith">Hadith</button>
+</div>
+<!-- Topic Filter Chips -->
+<div class="topic-filters" id="topicFilters"></div>
+<!-- Topic Detail Banner -->
+<div class="topic-detail-banner" id="topicDetailBanner">
+<button class="topic-detail-close" id="topicDetailClose">×</button>
+<h3 id="topicDetailName"></h3>
+<span class="topic-ar" id="topicDetailAr"></span>
+<p id="topicDetailDesc"></p>
+</div>
+<!-- Entry Cards -->
+<div class="entries-grid" id="entriesGrid"></div>
+<!-- No Results -->
+<div class="no-results" id="noResults" style="display:none;">
+<div class="no-results-icon">📖</div>
+<h3>No matching sources found</h3>
+<p>Try adjusting your search or filters.</p>
+</div>
+<!-- Interlinkage Map -->
+<div class="interlinkage-section" id="interlinkageSection">
+<h2>Topic Interlinkages</h2>
+<p>See how Islamic economic topics are interconnected through shared scriptural sources. Click any topic to filter.</p>
+<div class="topic-network" id="topicNetwork"></div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="footer-logo" href="index.html">Islamic Economics</a>
+<p class="footer-brand-desc">Exploring the theological foundations, formal theory, historical evolution, and modern practice of Islamic economic thought, from the earliest markets of Medina to today's global Islamic finance industry.</p>
+<blockquote class="footer-ayah">
+<p>"And do not consume one another's wealth unjustly, nor use it to bribe those in authority, so that you may knowingly consume a portion of others' wealth sinfully."</p>
+<cite>— Al-Baqarah 2:188</cite>
+</blockquote>
+</div>
+<nav class="footer-nav">
+<div class="footer-nav-group">
+<h4 class="footer-heading">Knowledge</h4>
+<ul class="footer-links">
+<li><a href="metaphysics.html">Metaphysics</a></li>
+<li><a href="foundations.html">Foundations</a></li>
+<li><a href="scriptures.html">Scriptures</a></li>
+<li><a href="theory.html">Theory</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="comparative.html">Comparative</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">Modern Economy</h4>
+<ul class="footer-links">
+<li><a href="research.html">Research</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="podcast.html">Media</a></li>
+<li><a href="blog.html">Al-Tijarah</a></li>
+</ul>
+</div>
+<div class="footer-nav-group">
+<h4 class="footer-heading">Connect</h4>
+<div class="social-links">
+<a aria-label="Twitter/X" class="social-icon" href="https://x.com/theislamicecon">X</a>
+<a aria-label="Instagram" class="social-icon" href="https://instagram.com/islamicecon">IG</a>
+<a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@theislamicecon">YT</a>
+<a aria-label="TikTok" class="social-icon" href="https://www.tiktok.com/@theislamicecon">TT</a>
+</div>
+<form class="footer-subscribe" data-newsletter-form="">
+<input class="form-input" placeholder="Your email" required="" type="email"/>
+<button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+</form>
+</div>
+</nav>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Islamic Economics</p>
+<a class="footer-bottom-link" href="about.html">About</a>
+</div>
+</div>
+</footer>
+<!-- Load scripture data -->
+<script src="js/scripture-data.js"></script>
+<script src="js/main.js"></script>
+<script>
 document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -674,8 +658,7 @@ document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
   });
 });
 </script>
-
-  <script>
+<script>
   /* Scroll-triggered fade-up animation */
   (function() {
     var fadeEls = document.querySelectorAll('.fade-up');
@@ -691,8 +674,7 @@ document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
     fadeEls.forEach(function(el) { observer.observe(el); });
   })();
   </script>
-
-  <script>
+<script>
   (function() {
     'use strict';
 
