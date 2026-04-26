@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-05-podcast-ppr-6-built-on-borrowed-time",
+  "generated_at": "2026-04-05T14:34:12.983481+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-ppr-6-built-on-borrowed-time",
+    "kind": "podcast",
+    "title": "Built on Borrowed Time",
+    "summary": "The bond market contains the seeds of its own destruction. A system built on riba is a system built on borrowed time. The Quran warned us. The math confirms it.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "US federal interest payments now exceed defense spending at $1.1 trillion per year. The government borrows to pay interest on previous borrowing. Japan's debt is 260% of GDP. The system needs perpetual growth just to service existing debt, and that growth is slowing. Gold has surged, central banks are quietly losing faith, and bilateral trade agreements bypass the dollar. The Quran describes those who consume riba as unable to stand straight, an image of instability and madness. The hadith warned that riba's dust would reach everyone. Islamic scholars weren't just making moral points; they were describing a mathematical flaw. This finale ties the entire series together: the bond market isn't just a financial system. It's a civilizational choice. And a civilization built on debt is a civilization built on borrowed time.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The bond market contains the seeds of its own destruction.",
+      "voice_pattern": "observation",
+      "thread": [
+        "US federal interest payments now exceed defense spending at $1.1 trillion per year. The government borrows money to pay interest on money it already borrowed.",
+        "Japan's debt is 260% of GDP. The system needs perpetual growth just to service existing debt, and that growth is slowing.",
+        "Gold has surged. Central banks are quietly losing faith. Bilateral trade agreements bypass the dollar.",
+        "The Quran describes those who consume riba as unable to stand straight. Islamic scholars weren't making moral points \u2014 they were describing a mathematical flaw. https://islamiceconomics.github.io/podcast.html#ep-ppr-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-6"
+    },
+    "linkedin": {
+      "post": "The numbers tell a story that Islamic scholars understood centuries ago. US federal interest payments now exceed defense spending at $1.1 trillion per year. The government borrows money to pay interest on money it already borrowed. Japan's debt has reached 260% of GDP. The system demands perpetual growth just to service existing debt, and that growth is slowing. Meanwhile, gold surges. Central banks quietly lose faith. Bilateral trade agreements bypass the dollar. The Quran describes those who consume riba as unable to stand straight \u2014 an image of instability and madness. The hadith warned that riba's dust would reach everyone. Islamic scholars weren't just making moral points; they were describing a mathematical flaw built into the foundation. A civilization built on debt is a civilization built on borrowed time. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-6",
+      "comment_prompt": "What parallels do you see between historical economic collapses and current debt dynamics?"
+    },
+    "instagram": {
+      "caption": "The math that Islamic scholars warned about is playing out in real time. US federal interest payments: $1.1 trillion per year \u2014 more than defense spending. The government borrows money to pay interest on money it already borrowed. Japan's debt sits at 260% of GDP. The system demands perpetual growth just to service existing debt, and that growth is slowing. Gold surges. Central banks quietly lose faith. Bilateral trade agreements bypass the dollar. The Quran describes those who consume riba as unable to stand straight. The hadith warned that riba's dust would reach everyone. Islamic scholars weren't making moral arguments \u2014 they were describing a mathematical flaw. A civilization built on debt is a civilization built on borrowed time. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-6 #IslamicEconomics #Riba #DebtCrisis #EconomicJustice #FinancialSystem",
+      "carousel_slides": [
+        "US federal interest payments now exceed defense spending at $1.1 trillion per year",
+        "The government borrows money to pay interest on money it already borrowed",
+        "Japan's debt: 260% of GDP. The system needs perpetual growth just to survive",
+        "Gold surges. Central banks lose faith. Trade bypasses the dollar",
+        "Islamic scholars weren't making moral points \u2014 they were describing mathematical reality"
+      ],
+      "reel_caption": "The numbers Islamic scholars warned about are here. US interest payments: $1.1 trillion. Japan's debt: 260% of GDP. The system borrows to pay interest on previous borrowing. Listen to the full analysis. #IslamicEconomics #DebtCrisis #Riba",
+      "cover_text": "Built on Borrowed Time",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "US federal interest payments now exceed defense spending at $1.1 trillion per year. The government borrows money to pay interest on money it already borrowed.\n\nJapan's debt sits at 260% of GDP. The system demands perpetual growth just to service existing debt, and that growth is slowing. Gold surges while central banks quietly lose faith.\n\nThe Quran describes those who consume riba as unable to stand straight. Islamic scholars weren't making\u2026",
+      "discussion_prompt": "How do you see the relationship between moral warnings and mathematical realities in economic systems?",
+      "topic_suggestion": "The intersection of ancient wisdom and\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-6"
+    },
+    "short_video": {
+      "title": "The Math Islamic Scholars Warned About",
+      "hook": "US interest payments just exceeded defense spending",
+      "voiceover": "US federal interest payments now exceed defense spending at one point one trillion dollars per year. The government borrows money to pay interest on money it already borrowed. Japan's debt is two hundred sixty percent of GDP. The system needs perpetual growth just to service existing debt, and that growth is slowing. Gold has surged. Central banks are quietly losing faith. The Quran describes those who consume riba as unable to stand straight. Islamic scholars weren't making moral points \u2014 they were describing a mathematical flaw. A civilization built on debt is a civilization built on borrowed time.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Rising graph of US interest payments",
+          "on_screen_text": "$1.1 trillion interest payments"
+        },
+        {
+          "time": "5-10s",
+          "visual": "Circular debt visualization",
+          "on_screen_text": "Borrowing to pay interest"
+        },
+        {
+          "time": "10-20s",
+          "visual": "Japan debt chart",
+          "on_screen_text": "260% of GDP"
+        },
+        {
+          "time": "20-30s",
+          "visual": "Gold price chart ascending",
+          "on_screen_text": "Central banks losing faith"
+        },
+        {
+          "time": "30-40s",
+          "visual": "Ancient Islamic text overlay",
+          "on_screen_text": "Mathematical flaw, not moral opinion"
+        }
+      ],
+      "caption": "The numbers Islamic scholars warned about are playing out in real time. Listen to the full analysis.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#DebtCrisis",
+        "#Riba",
+        "#FinancialSystem",
+        "#EconomicWisdom"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "US federal interest payments now exceed defense spending at $1.1 trillion per year. The government borrows money to pay interest on money it already borrowed. Japan's debt sits at 260% of GDP. The system demands perpetual growth just to service existing debt, and that growth is slowing. Gold surges while central banks quietly lose faith and bilateral trade agreements bypass the dollar entirely."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_89343800.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_89343800.png"
+}

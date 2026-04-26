@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-03-podcast-re-2-the-growth-engine",
+  "generated_at": "2026-04-03T14:41:11.311750+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-re-2-the-growth-engine",
+    "kind": "podcast",
+    "title": "The Growth Engine",
+    "summary": "The Solow growth model, steady states, convergence failures, and why human capital is the missing variable.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Solow growth model is the workhorse of growth economics. An economy produces output using capital and labor. Each year, some output is saved and invested. But capital depreciates, and diminishing returns set in. The key insight: capital accumulation alone can't sustain growth forever. Only technological progress drives long-run growth. The model predicts convergence: poor countries should grow faster. But many Muslim-majority countries haven't converged. Pakistan's per-capita growth has been anemic for decades. Indonesia did better. Malaysia succeeded. The pattern isn't about Islam. It's about institutions and governance. This episode extends the model to include human capital, where the Islamic tradition's emphasis on ilm (knowledge) should be an advantage, but modern Muslim-majority states have largely failed to translate that tradition into actual educational investment.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "A jazz musician practices scales daily. Capital without skills depreciates. The Solow model predicted Pakistan would catch up to rich countries by now.",
+      "voice_pattern": "connection",
+      "thread": [
+        "A jazz musician practices scales daily. Capital without skills depreciates. The Solow model predicted Pakistan would catch up to rich countries by now.",
+        "Poor countries should grow faster than rich ones. Capital has diminishing returns. Build enough factories and each new one adds less to output.",
+        "Malaysia succeeded. Indonesia did well. Pakistan stagnated for decades. The pattern isn't about religion or culture.",
+        "Human capital changes everything. The Islamic tradition calls it ilm. Knowledge compounds without diminishing returns. https://islamiceconomics.github.io/podcast.html#ep-re-2"
+      ],
+      "hashtags": [
+        "#economics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-2"
+    },
+    "linkedin": {
+      "post": "The Solow growth model is economics' workhorse for understanding national growth. Its core insight: capital accumulation alone can't sustain long-term growth due to diminishing returns. Only technological progress drives lasting prosperity. The model makes a bold prediction: poor countries should grow faster than rich ones and eventually converge. Reality tells a different story. Pakistan's per-capita growth has been anemic for decades. Malaysia succeeded. Indonesia performed well. The pattern isn't about Islam or culture\u2014it's about institutions, governance, and critically, human capital. The Islamic intellectual tradition has always emphasized 'ilm' (knowledge) as fundamental. This should be a natural advantage, yet many Muslim-majority countries haven't fully leveraged this in their modern development strategies. When we extend the Solow model to include human capital, the convergence story changes dramatically. Knowledge compounds without diminishing returns. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-2",
+      "comment_prompt": "What role do you think human capital plays in your country's economic development story?"
+    },
+    "instagram": {
+      "caption": "The Solow growth model predicted something that hasn't happened: poor countries catching up to rich ones through capital accumulation. Pakistan's per-capita growth has been disappointing for decades. Malaysia succeeded. Indonesia did well. The difference isn't religion or culture\u2014it's human capital. The Islamic tradition has always emphasized 'ilm' (knowledge) as fundamental. This should be a natural advantage, yet many Muslim-majority countries haven't fully leveraged this insight. When economists extend the Solow model to include human capital, everything changes. Knowledge compounds without diminishing returns. It's the missing variable in the growth equation. Capital depreciates. Skills and knowledge appreciate. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-re-2 #economics #growth #humancapital #islamiceconomics #development",
+      "carousel_slides": [
+        "The Growth Puzzle Why haven't poor countries caught up to rich ones?",
+        "The Solow Model Capital + Labor = Output But diminishing returns set in",
+        "The Reality Check Pakistan: Slow growth Malaysia: Success Indonesia: Progress",
+        "The Missing Variable Human Capital Islamic tradition: 'ilm' (knowledge)",
+        "The Key Insight Capital depreciates Knowledge compounds"
+      ],
+      "reel_caption": "Why the world's most famous growth model got it wrong about poor countries catching up. The missing piece changes everything. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-2 #economics #growth #humancapital #islamiceconomics #development",
+      "cover_text": "The Growth Engine: Why Knowledge Beats Capital",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Solow growth model promised that poor countries would catch up to rich ones through capital accumulation. Pakistan's decades of anemic per-capita growth suggest otherwise.\n\nMalaysia succeeded where others stagnated. The difference isn't culture\u2014it's human capital. The Islamic tradition has always emphasized 'ilm' (knowledge) as fundamental, yet many Muslim-majority countries haven't leveraged this advantage.\n\nCapital depreciates. Knowledge\u2026",
+      "discussion_prompt": "What role has education and skill development played in your country's economic trajectory?",
+      "topic_suggestion": "Human capital vs physical capital in\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-2"
+    },
+    "short_video": {
+      "title": "Why Poor Countries Don't Catch Up",
+      "hook": "The world's most famous economic model got it completely wrong",
+      "voiceover": "The Solow model predicted poor countries would catch up to rich ones through capital accumulation. Build factories, grow the economy. Simple. But Pakistan's growth has been disappointing for decades while Malaysia succeeded. The missing variable? Human capital. Capital depreciates every year. Knowledge compounds forever. The Islamic tradition always emphasized ilm - knowledge - as fundamental. When economists added human capital to the Solow model, everything changed. It's not about having more machines. It's about having better minds to use them.",
+      "shot_list": [
+        {
+          "time": "0-3s",
+          "visual": "Factory assembly line",
+          "on_screen_text": "The Solow Model"
+        },
+        {
+          "time": "4-8s",
+          "visual": "Graph showing economic convergence",
+          "on_screen_text": "Poor countries should catch up"
+        },
+        {
+          "time": "9-15s",
+          "visual": "Split screen: Pakistan vs Malaysia flags",
+          "on_screen_text": "Reality check"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Students in classroom",
+          "on_screen_text": "Human Capital"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Arabic text showing 'ilm'",
+          "on_screen_text": "Islamic tradition: Knowledge"
+        }
+      ],
+      "caption": "The Solow growth model missed the most important variable. Listen to the full breakdown: https://islamiceconomics.github.io/podcast.html#ep-re-2",
+      "hashtags": [
+        "#economics",
+        "#growth",
+        "#humancapital",
+        "#islamiceconomics",
+        "#education"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "A jazz musician practices scales daily because technique without practice deteriorates. Capital without human skills works the same way. The Solow growth model predicted that poor countries like Pakistan would catch up to rich nations through capital accumulation alone. But Pakistan's per-capita growth has been anemic for decades while Malaysia succeeded and Indonesia did well. The missing variable isn't culture or religion. It's human capital. The Islamic tradition has always emphasized\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_a346d5b5.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a346d5b5.png"
+}

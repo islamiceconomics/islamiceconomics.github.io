@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-02-podcast-trt-6-building-the-treasury",
+  "generated_at": "2026-04-02T14:53:14.717248+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-trt-6-building-the-treasury",
+    "kind": "podcast",
+    "title": "Building the Treasury",
+    "summary": "Synthesizing the series: what an Islamic fiscal framework would look like in practice, what's missing, and what's next.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The final episode brings together the building blocks: revenue (zakat, kharaj, resource-sharing), spending (the dual bayt al-mal and waqf model), borrowing (sukuk and revenue-backed instruments), and governance (fiscal transparency, accountability, the ruler as trustee). What would a coherent Islamic fiscal framework look like in a modern state? The honest answer: it would combine Islamic tax instruments with pragmatic additional revenue sources, because zakat alone cannot fund a modern welfare state. The framework would emphasize asset-backed borrowing over interest-bearing debt, dual provision over pure state monopoly, and institutional accountability over discretionary spending. No Muslim-majority country has fully implemented this, but partial experiments in Malaysia, the Gulf, and elsewhere offer real data. Islamic fiscal theory is a work in progress, and this episode says so plainly.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Medieval Islamic rulers used zakat, kharaj, and waqf institutions. Modern Muslim states use income tax, bonds, and central budgets. We kept the names but borrowed the Westminster system.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Medieval Islamic rulers used zakat, kharaj, and waqf institutions. Modern Muslim states use income tax, bonds, and central budgets. We kept the names but borrowed the Westminster system.",
+        "The honest truth: zakat alone cannot fund a modern welfare state. Islamic fiscal theory meets reality when you need roads, hospitals, and defense budgets.",
+        "So the real framework combines Islamic instruments with pragmatic additions. Asset-backed sukuk instead of interest bonds. Dual provision through both state and waqf.",
+        "No Muslim-majority country has fully implemented this hybrid model. But Malaysia and the Gulf states have started testing pieces of what could become something entirely new. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-6"
+    },
+    "linkedin": {
+      "post": "The final episode of Building the Treasury synthesizes what an Islamic fiscal framework would actually look like in practice. The honest assessment: it would be a hybrid. Zakat, kharaj, and resource-sharing for core Islamic revenue. But pragmatic additional sources too, because zakat alone cannot fund modern welfare states. On spending: dual provision through both state budgets and waqf institutions rather than pure state monopoly. On borrowing: asset-backed sukuk and revenue-backed instruments instead of conventional bonds. On governance: fiscal transparency with rulers as trustees, not owners of public resources. No Muslim-majority country has fully implemented this framework yet, though Malaysia and Gulf states have experimented with pieces. The gap between Islamic fiscal theory and modern state requirements remains the central challenge. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-6",
+      "comment_prompt": "What do you think are the biggest practical barriers to implementing Islamic fiscal frameworks in modern states?"
+    },
+    "instagram": {
+      "caption": "The final Building the Treasury episode asks: what would an Islamic fiscal framework actually look like in practice? The honest answer: it would be a hybrid system. Revenue would combine Islamic instruments (zakat, kharaj, resource-sharing) with pragmatic additions, because zakat alone cannot fund modern welfare states. Spending would use dual provision through both state budgets and waqf institutions rather than pure state monopoly. Borrowing would emphasize asset-backed sukuk and revenue-backed instruments over conventional bonds. Governance would center on fiscal transparency with rulers as trustees of public resources. No Muslim-majority country has fully implemented this framework yet, though Malaysia and Gulf states have experimented with pieces. The synthesis reveals the central challenge: bridging Islamic fiscal theory with modern state requirements. Listen to the full episode and series synthesis. #IslamicEconomics #PublicFinance #IslamicFinance #PolicyDesign #Governance",
+      "carousel_slides": [
+        "What would an Islamic fiscal framework look like in practice?",
+        "Revenue: Islamic instruments + pragmatic additions (zakat alone can't fund welfare states)",
+        "Spending: Dual provision through state + waqf institutions",
+        "Borrowing: Asset-backed sukuk over conventional bonds",
+        "Reality: No country has fully implemented this hybrid model yet"
+      ],
+      "reel_caption": "The final Building the Treasury episode synthesizes what Islamic fiscal frameworks would actually look like in modern states - and why no country has fully implemented one yet. Listen to the complete analysis. #IslamicEconomics #PublicFinance #IslamicFinance #PolicyDesign #Governance",
+      "cover_text": "Islamic Fiscal Framework: Theory Meets Reality",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Medieval Islamic rulers built treasuries using zakat, kharaj, and waqf institutions. Modern Muslim states use income tax, bonds, and Westminster-style budgets.\n\nWe kept the Arabic names but borrowed the fiscal systems. The honest synthesis: no Muslim-majority country has fully implemented an Islamic fiscal framework because theory hasn't met modern state requirements.\n\nThe real framework would be hybrid - combining Islamic revenue instruments\u2026",
+      "discussion_prompt": "What do you think are the main barriers preventing Muslim countries from implementing Islamic fiscal frameworks?",
+      "topic_suggestion": "Islamic public finance in practice",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-6"
+    },
+    "short_video": {
+      "title": "Why No Islamic State Has Islamic Public Finance",
+      "hook": "Muslim countries kept the Arabic names but borrowed Westminster's fiscal system",
+      "voiceover": "Medieval Islamic rulers used zakat, kharaj, and waqf institutions to build their treasuries. Modern Muslim states? Income tax, government bonds, centralized budgets. We kept the Arabic names but borrowed the Westminster system. The honest truth Islamic fiscal theory must face: zakat alone cannot fund modern welfare states. You need pragmatic additions for roads, hospitals, defense. The real framework would combine Islamic instruments with practical necessities. Asset-backed sukuk instead of interest bonds. Dual provision through state and waqf institutions. No Muslim-majority country has fully implemented this hybrid model yet. Theory hasn't met modern requirements.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Historical Islamic coins and manuscripts",
+          "on_screen_text": "Medieval Islamic Treasury"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Modern government buildings and tax forms",
+          "on_screen_text": "Modern Muslim States"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Calculator showing budget numbers",
+          "on_screen_text": "Zakat alone \u2260 Modern welfare state"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Sukuk certificates and waqf buildings",
+          "on_screen_text": "Hybrid Framework"
+        },
+        {
+          "time": "36-45s",
+          "visual": "World map highlighting Muslim countries",
+          "on_screen_text": "No full implementation yet"
+        }
+      ],
+      "caption": "The final Building the Treasury episode reveals why no Muslim-majority country has fully implemented Islamic public finance - and what the hybrid framework would actually look like. Listen to the complete synthesis.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#PublicFinance",
+        "#IslamicFinance",
+        "#PolicyDesign",
+        "#Governance"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Medieval Islamic rulers used zakat, kharaj, and waqf institutions to build their treasuries. Modern Muslim states use income tax, bonds, and central budgets. We kept the names but borrowed the Westminster system. The honest truth that Islamic fiscal theory must face: zakat alone cannot fund a modern welfare state. You need pragmatic additional revenue when building roads, hospitals, and defense systems. The real framework would combine Islamic instruments with practical necessities.\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c1ecaa32.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c1ecaa32.png"
+}

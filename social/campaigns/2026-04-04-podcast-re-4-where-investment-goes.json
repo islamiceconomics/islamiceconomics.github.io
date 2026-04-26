@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-04-podcast-re-4-where-investment-goes",
+  "generated_at": "2026-04-04T14:31:43.762750+00:00",
+  "x_voice_pattern": "question",
+  "source": {
+    "content_id": "podcast-re-4-where-investment-goes",
+    "kind": "podcast",
+    "title": "Where Investment Goes",
+    "summary": "Capital allocation, the riba prohibition, real estate misallocation, and the gap between Islamic finance theory and practice.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Two countries with identical savings rates can have vastly different growth outcomes depending on how capital is allocated. The financial system channels savings into investment, and its efficiency determines growth. Capital misallocation reduces TFP in developing countries by 30 to 50 percent. Islamic economics prohibits interest, which should theoretically redirect capital: equity-based financing (mudaraba, musharaka) aligns incentives and directs capital toward productive uses rather than safe borrowers with mediocre projects. But Islamic banking in practice hasn't delivered this. Most Islamic banks use murabaha, which is economically similar to conventional lending. Genuine profit-loss sharing remains rare. Meanwhile, Muslim-majority economies suffer from massive real estate misallocation and underdeveloped equity markets. The principles are sound. The implementation gap is enormous.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Capital misallocation reduces productivity by 30 to 50 percent in developing countries. Islamic finance was designed to fix this through equity partnerships. Why did most Islamic banks choose murabaha instead?",
+      "voice_pattern": "question",
+      "thread": [
+        "Capital misallocation reduces productivity by 30 to 50 percent in developing countries. Two economies with identical savings rates can have completely different growth outcomes.",
+        "Islamic finance was supposed to solve this. Equity partnerships like mudaraba align investor incentives with productive ventures rather than rewarding safe borrowers with mediocre projects.",
+        "Instead, most Islamic banks chose murabaha\u2014economically identical to conventional lending. True profit-loss sharing remains rare across Muslim-majority economies.",
+        "The theory pointed toward better capital allocation. The practice recreated the same misallocation problems. https://islamiceconomics.github.io/podcast.html#ep-re-4"
+      ],
+      "hashtags": [
+        "#IslamicFinance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-4"
+    },
+    "linkedin": {
+      "post": "Two countries with identical savings rates can have vastly different growth outcomes. The difference lies in capital allocation\u2014how efficiently the financial system channels savings into productive investment. Capital misallocation reduces total factor productivity by 30 to 50 percent in developing countries. The financial system's efficiency in directing capital determines economic growth. Islamic economics offers a compelling alternative: equity-based financing through mudaraba and musharaka partnerships. These structures align investor incentives with productive ventures rather than simply rewarding safe borrowers with mediocre projects. Yet Islamic banking in practice hasn't delivered this transformation. Most Islamic banks rely on murabaha, which is economically similar to conventional lending. Genuine profit-loss sharing remains rare across Muslim-majority economies. The theory pointed toward better capital allocation. The practice recreated the same problems it sought to solve. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-4",
+      "comment_prompt": "What's preventing Islamic banks from implementing true equity partnerships?"
+    },
+    "instagram": {
+      "caption": "Capital allocation determines whether economies grow or stagnate. Two countries with identical savings rates can have completely different outcomes based on how their financial systems direct investment. Research shows capital misallocation reduces productivity by 30-50% in developing countries. The problem isn't lack of capital\u2014it's where that capital goes. Islamic finance was designed to solve this through equity partnerships like mudaraba and musharaka. These align investor incentives with productive ventures rather than safe but mediocre projects. Yet most Islamic banks chose murabaha\u2014economically identical to conventional lending. True profit-loss sharing remains rare. The theory promised better capital allocation. The practice recreated the same problems. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-re-4 #IslamicFinance #CapitalAllocation #EconomicDevelopment #IslamicEconomics #Finance",
+      "carousel_slides": [
+        "Capital allocation determines economic growth. Two identical savings rates, vastly\u2026",
+        "Misallocation reduces productivity by 30-50% in developing countries. The problem isn't\u2026",
+        "Islamic finance promised equity partnerships\u2014mudaraba and musharaka\u2014aligning incentives\u2026",
+        "Instead, most Islamic banks chose murabaha. Economically identical to conventional\u2026",
+        "Theory pointed toward better allocation. Practice recreated the same problems."
+      ],
+      "reel_caption": "Why Islamic finance theory didn't transform capital allocation in practice. The gap between mudaraba ideals and murabaha reality. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-4 #IslamicFinance #CapitalAllocation #EconomicDevelopment #IslamicEconomics #Finance",
+      "cover_text": "Capital Allocation Gap",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Capital misallocation reduces productivity by 30 to 50 percent in developing countries. Two economies with identical savings rates can have completely different growth trajectories.\n\nIslamic finance was designed to fix this through equity partnerships that align investor incentives with productive ventures. Most Islamic banks chose murabaha instead\u2014economically identical to conventional lending.",
+      "discussion_prompt": "Why do you think Islamic banks avoided true profit-loss sharing despite the theoretical advantages?",
+      "topic_suggestion": "Capital allocation efficiency in\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-4"
+    },
+    "short_video": {
+      "title": "Why Islamic Banking Didn't Fix Capital Allocation",
+      "hook": "Islamic finance had a solution to capital misallocation. Here's why it didn't work.",
+      "voiceover": "Capital misallocation reduces productivity by thirty to fifty percent in developing countries. Two economies with identical savings rates can have completely different growth outcomes. Islamic finance offered a solution through equity partnerships like mudaraba and musharaka. These align investor incentives with productive ventures rather than safe borrowers with mediocre projects. Instead, most Islamic banks chose murabaha, which is economically identical to conventional lending. True profit-loss sharing remains rare. The theory promised better capital allocation. The practice recreated the same problems.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Split screen showing two similar economies with different outcomes",
+          "on_screen_text": "Same savings, different growth"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Infographic showing 30-50% productivity loss",
+          "on_screen_text": "Capital misallocation costs"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Animation of equity partnership structure",
+          "on_screen_text": "Islamic solution: mudaraba"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Chart showing murabaha dominance in Islamic banking",
+          "on_screen_text": "Reality: murabaha dominance"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Text overlay on neutral background",
+          "on_screen_text": "Theory vs. practice gap"
+        }
+      ],
+      "caption": "Islamic finance theory vs. practice: the capital allocation gap that persists across Muslim-majority economies. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-re-4",
+      "hashtags": [
+        "#IslamicFinance",
+        "#CapitalAllocation",
+        "#EconomicDevelopment",
+        "#IslamicEconomics",
+        "#Finance"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Capital misallocation reduces productivity by 30 to 50 percent in developing countries. Two economies with identical savings rates can have completely different growth outcomes depending on how their financial systems channel savings into investment. Islamic finance was designed to fix this through equity partnerships like mudaraba and musharaka, aligning investor incentives with productive ventures rather than rewarding safe borrowers with mediocre projects. Instead, most Islamic banks chose\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_7b1f84c5.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_7b1f84c5.png"
+}

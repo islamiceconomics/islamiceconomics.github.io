@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-03-podcast-re-3-who-saves-and-why",
+  "generated_at": "2026-04-03T14:41:36.405648+00:00",
+  "x_voice_pattern": "question",
+  "source": {
+    "content_id": "podcast-re-3-who-saves-and-why",
+    "kind": "podcast",
+    "title": "Who Saves and Why",
+    "summary": "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Solow model says the savings rate determines the steady state. Higher savings means more capital accumulation and higher output per worker. So what determines how much people save? Standard economics offers the lifecycle hypothesis and permanent income hypothesis, both assuming a particular discount rate. The wahn thesis asks: what if the discount rate is endogenous? If an agent genuinely believes in akhirah, their effective planning horizon extends beyond death. They're not smoothing consumption over 80 years but optimizing over an infinite horizon. This changes savings behavior, charitable giving, and investment allocation simultaneously. The net effect on measured savings is ambiguous, but the allocation should be more efficient. This is theoretically interesting but empirically unproven, and this episode says so honestly.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Economic models assume people save for 80 years. But what if believers are optimizing over an infinite horizon? Does planning beyond death change the entire savings equation?",
+      "voice_pattern": "question",
+      "thread": [
+        "The Solow model says savings rates determine steady state growth. Higher savings means more capital accumulation. But what actually makes people save?",
+        "Standard economics offers the lifecycle hypothesis. People smooth consumption over their expected lifespan. They discount future utility at some fixed rate.",
+        "The wahn thesis asks: what if believers genuinely plan beyond death? If you're optimizing over an infinite horizon, not 80 years, everything changes.",
+        "Savings behavior, charitable giving, investment allocation. All simultaneous. The net effect on measured savings is ambiguous, but allocation becomes more efficient. https://islamiceconomics.github.io/podcast.html#ep-re-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Savings",
+        "#TimePreference"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-3"
+    },
+    "linkedin": {
+      "post": "Standard economic theory assumes people save to smooth consumption over their expected lifespan - roughly 80 years. The lifecycle hypothesis and permanent income hypothesis both rely on a fixed discount rate for future utility. But what if believers are actually optimizing over a different time horizon? The wahn thesis suggests that if someone genuinely believes in akhirah, their effective planning horizon extends beyond death. They're not just smoothing consumption over 80 years - they're optimizing over an infinite horizon. This fundamentally changes three things simultaneously: savings behavior, charitable giving patterns, and investment allocation decisions. The net effect on measured savings rates might be ambiguous, but the theoretical implication is fascinating: allocation should become more efficient when the planning horizon extends beyond mortality. Listen to the full exploration: https://islamiceconomics.github.io/podcast.html#ep-re-3",
+      "comment_prompt": "How do you think belief systems influence long-term financial planning in practice?"
+    },
+    "instagram": {
+      "caption": "Standard economics assumes we save to smooth consumption over our lifetime - about 80 years. The lifecycle hypothesis, permanent income hypothesis, all built on fixed discount rates. But what if believers are optimizing over a completely different time horizon? The wahn thesis suggests that genuine belief in akhirah extends the planning horizon beyond death. Not 80 years, but infinite. This changes everything simultaneously: how much we save, how we give, where we invest. The net effect on measured savings might be unclear, but allocation becomes more efficient. Time preference isn't just personal preference. It might be shaped by fundamental beliefs about what comes after. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-re-3 #IslamicEconomics #Savings #TimePreference #Economics #Behavioral",
+      "carousel_slides": [
+        "Standard economics: People save to smooth consumption over ~80 years",
+        "The lifecycle hypothesis assumes fixed discount rates for future utility",
+        "The wahn thesis: What if believers plan beyond death?",
+        "Infinite horizon changes savings, giving, and investment simultaneously",
+        "Result: More efficient allocation when planning extends beyond mortality"
+      ],
+      "reel_caption": "What if economic models got time preference completely wrong? The wahn thesis suggests believers aren't planning for 80 years - they're optimizing over infinity. Changes everything about how we think about savings behavior. #IslamicEconomics #Savings #TimePreference #Economics #Behavioral",
+      "cover_text": "Planning Beyond Death: The Wahn Thesis",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Economic theory assumes people save to smooth consumption over their expected lifespan. But what if believers are actually optimizing over an infinite horizon?\n\nThe wahn thesis suggests that genuine belief in akhirah extends planning beyond death. This changes savings behavior, charitable giving, and investment allocation simultaneously.\n\nThe net effect on measured savings is ambiguous, but allocation becomes more efficient.",
+      "discussion_prompt": "How do fundamental beliefs about the afterlife influence your financial decisions?",
+      "topic_suggestion": "Time preference in religious economics",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-3"
+    },
+    "short_video": {
+      "title": "The Infinite Horizon Problem",
+      "hook": "What if economic models got time preference completely wrong?",
+      "voiceover": "Standard economics assumes we save to smooth consumption over eighty years. The lifecycle hypothesis. Permanent income hypothesis. All built on fixed discount rates. But the wahn thesis asks: what if believers are optimizing over an infinite horizon? If you genuinely believe in akhirah, your planning extends beyond death. This changes savings behavior, charitable giving, and investment allocation simultaneously. The allocation becomes more efficient when your time horizon extends beyond mortality. Economic theory might need to account for belief systems.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Graph showing 80-year lifecycle",
+          "on_screen_text": "Standard: 80-year planning"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Economic equations on screen",
+          "on_screen_text": "Fixed discount rates"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Infinity symbol",
+          "on_screen_text": "What if: Infinite horizon?"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Three interconnected circles",
+          "on_screen_text": "Savings + Giving + Investment"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Efficiency curve going up",
+          "on_screen_text": "More efficient allocation"
+        }
+      ],
+      "caption": "The wahn thesis challenges how we think about time preference in economics. What if believers aren't planning for 80 years, but optimizing over infinity?",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Savings",
+        "#TimePreference",
+        "#Economics",
+        "#Behavioral"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Economic models assume people save to smooth consumption over their expected lifespan. The lifecycle hypothesis, permanent income hypothesis. All built on a particular discount rate for future utility. The wahn thesis asks: what if the discount rate is endogenous? If an agent genuinely believes in akhirah, their effective planning horizon extends beyond death. They're not optimizing over 80 years but over an infinite horizon. This changes savings behavior, charitable giving, and investment\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c13ea66d.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c13ea66d.png"
+}

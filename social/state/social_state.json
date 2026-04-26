@@ -585,6 +585,78 @@
         }
       ]
     },
+    "podcast-mm-6-building-the-system": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-mm-6-building-the-system",
+          "generated_at": "2026-04-01T15:02:10.595596+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-mm-6-building-the-system.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-mm-6-building-the-system.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-ppr-1-the-architecture-of-debt": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-04-podcast-ppr-1-the-architecture-of-debt",
+          "generated_at": "2026-04-04T14:32:47.470130+00:00",
+          "json_path": "social/campaigns/2026-04-04-podcast-ppr-1-the-architecture-of-debt.json",
+          "markdown_path": "social/campaigns/2026-04-04-podcast-ppr-1-the-architecture-of-debt.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-ppr-2-the-bonds-you-don-t-see": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-04-podcast-ppr-2-the-bonds-you-don-t-see",
+          "generated_at": "2026-04-04T14:33:08.050627+00:00",
+          "json_path": "social/campaigns/2026-04-04-podcast-ppr-2-the-bonds-you-don-t-see.json",
+          "markdown_path": "social/campaigns/2026-04-04-podcast-ppr-2-the-bonds-you-don-t-see.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-ppr-3-the-central-bank-trap": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-04-podcast-ppr-3-the-central-bank-trap",
+          "generated_at": "2026-04-04T14:33:30.413192+00:00",
+          "json_path": "social/campaigns/2026-04-04-podcast-ppr-3-the-central-bank-trap.json",
+          "markdown_path": "social/campaigns/2026-04-04-podcast-ppr-3-the-central-bank-trap.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-ppr-5-the-islamic-alternative": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-05-podcast-ppr-5-the-islamic-alternative",
+          "generated_at": "2026-04-05T14:33:51.647314+00:00",
+          "json_path": "social/campaigns/2026-04-05-podcast-ppr-5-the-islamic-alternative.json",
+          "markdown_path": "social/campaigns/2026-04-05-podcast-ppr-5-the-islamic-alternative.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-ppr-6-built-on-borrowed-time": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-05-podcast-ppr-6-built-on-borrowed-time",
+          "generated_at": "2026-04-05T14:34:12.983481+00:00",
+          "json_path": "social/campaigns/2026-04-05-podcast-ppr-6-built-on-borrowed-time.json",
+          "markdown_path": "social/campaigns/2026-04-05-podcast-ppr-6-built-on-borrowed-time.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
     "podcast-pu-1-the-forbidden-throw": {
       "history": [
         {
@@ -641,6 +713,150 @@
           "generated_at": "2026-03-27T14:47:30.292842+00:00",
           "json_path": "social/campaigns/2026-03-27-podcast-pu-6-building-on-solid-ground.json",
           "markdown_path": "social/campaigns/2026-03-27-podcast-pu-6-building-on-solid-ground.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-re-1-what-makes-countries-rich": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-02-podcast-re-1-what-makes-countries-rich",
+          "generated_at": "2026-04-02T14:53:36.662313+00:00",
+          "json_path": "social/campaigns/2026-04-02-podcast-re-1-what-makes-countries-rich.json",
+          "markdown_path": "social/campaigns/2026-04-02-podcast-re-1-what-makes-countries-rich.md",
+          "x_voice_pattern": "historical_fact"
+        }
+      ]
+    },
+    "podcast-re-2-the-growth-engine": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-03-podcast-re-2-the-growth-engine",
+          "generated_at": "2026-04-03T14:41:11.311750+00:00",
+          "json_path": "social/campaigns/2026-04-03-podcast-re-2-the-growth-engine.json",
+          "markdown_path": "social/campaigns/2026-04-03-podcast-re-2-the-growth-engine.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-re-3-who-saves-and-why": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-03-podcast-re-3-who-saves-and-why",
+          "generated_at": "2026-04-03T14:41:36.405648+00:00",
+          "json_path": "social/campaigns/2026-04-03-podcast-re-3-who-saves-and-why.json",
+          "markdown_path": "social/campaigns/2026-04-03-podcast-re-3-who-saves-and-why.md",
+          "x_voice_pattern": "question"
+        }
+      ]
+    },
+    "podcast-re-4-where-investment-goes": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-04-podcast-re-4-where-investment-goes",
+          "generated_at": "2026-04-04T14:31:43.762750+00:00",
+          "json_path": "social/campaigns/2026-04-04-podcast-re-4-where-investment-goes.json",
+          "markdown_path": "social/campaigns/2026-04-04-podcast-re-4-where-investment-goes.md",
+          "x_voice_pattern": "question"
+        }
+      ]
+    },
+    "podcast-re-5-work-wages-and-worth": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-04-podcast-re-5-work-wages-and-worth",
+          "generated_at": "2026-04-04T14:32:06.952963+00:00",
+          "json_path": "social/campaigns/2026-04-04-podcast-re-5-work-wages-and-worth.json",
+          "markdown_path": "social/campaigns/2026-04-04-podcast-re-5-work-wages-and-worth.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-re-6-the-alternative-growth-path": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-04-podcast-re-6-the-alternative-growth-path",
+          "generated_at": "2026-04-04T14:32:26.833379+00:00",
+          "json_path": "social/campaigns/2026-04-04-podcast-re-6-the-alternative-growth-path.json",
+          "markdown_path": "social/campaigns/2026-04-04-podcast-re-6-the-alternative-growth-path.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-trt-1-why-governments-tax-and-spend": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-1-why-governments-tax-and-spend",
+          "generated_at": "2026-04-01T15:02:33.059107+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-1-why-governments-tax-and-spend.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-1-why-governments-tax-and-spend.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-trt-2-who-pays-and-how-much": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-2-who-pays-and-how-much",
+          "generated_at": "2026-04-01T15:02:58.939536+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-2-who-pays-and-how-much.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-2-who-pays-and-how-much.md",
+          "x_voice_pattern": "connection"
+        }
+      ]
+    },
+    "podcast-trt-3-what-the-state-owes": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-3-what-the-state-owes",
+          "generated_at": "2026-04-01T15:03:28.666665+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-3-what-the-state-owes.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-3-what-the-state-owes.md",
+          "x_voice_pattern": "content_share"
+        }
+      ]
+    },
+    "podcast-trt-4-what-lies-beneath": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-4-what-lies-beneath",
+          "generated_at": "2026-04-01T15:03:55.992048+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-4-what-lies-beneath.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-4-what-lies-beneath.md",
+          "x_voice_pattern": "observation"
+        }
+      ]
+    },
+    "podcast-trt-5-the-borrower-s-bargain": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-01-podcast-trt-5-the-borrower-s-bargain",
+          "generated_at": "2026-04-01T15:04:23.894504+00:00",
+          "json_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.json",
+          "markdown_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.md",
+          "x_voice_pattern": "reframing"
+        }
+      ]
+    },
+    "podcast-trt-6-building-the-treasury": {
+      "history": [
+        {
+          "buffer": {},
+          "campaign_id": "2026-04-02-podcast-trt-6-building-the-treasury",
+          "generated_at": "2026-04-02T14:53:14.717248+00:00",
+          "json_path": "social/campaigns/2026-04-02-podcast-trt-6-building-the-treasury.json",
+          "markdown_path": "social/campaigns/2026-04-02-podcast-trt-6-building-the-treasury.md",
           "x_voice_pattern": "connection"
         }
       ]

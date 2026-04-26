@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-04-podcast-re-6-the-alternative-growth-path",
+  "generated_at": "2026-04-04T14:32:26.833379+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-re-6-the-alternative-growth-path",
+    "kind": "podcast",
+    "title": "The Alternative Growth Path",
+    "summary": "Synthesis: what an Islamic growth model would look like, what's proven, what's speculative, and the research agenda ahead.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "If you change the preference axioms, what growth path emerges? This episode brings together everything from the series: different savings behavior, equity-based investment allocation, intrinsically motivated labor, knowledge-driven institutions, and accountable governance. The theoretical prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles and less financialization. But how much of this is proven? Very little. No country has implemented a comprehensive Islamic economic system. The wahn thesis is theoretically elegant but empirically untested. We're at the \"interesting hypothesis\" stage, not the \"proven theory\" stage. This episode maps the research agenda: formalize the preference axioms, find natural experiments, study Islamic finance's actual impact on allocation, measure zakat effects at scale, and build computable models. Islamic economics isn't claiming to have all the answers. It's asking different questions. That's scientifically legitimate.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Medieval Islamic scholars built universities while Europe burned books. Modern economists assume people maximize wealth. The research question is simple: what growth path emerges when your axioms include contentment and justice.",
+      "voice_pattern": "connection",
+      "thread": [
+        "If you change the preference axioms, what growth path emerges? The theoretical prediction: potentially slower but more stable growth, with fewer boom-bust cycles.",
+        "Medieval Islamic scholars built universities while Europe burned books. They assumed people could optimize for contentment, not just wealth maximization.",
+        "No country has implemented a comprehensive Islamic economic system. We're at the \"interesting hypothesis\" stage, not the \"proven theory\" stage.",
+        "The research agenda is clear: formalize different preference axioms, find natural experiments, study what happens when justice becomes a constraint. https://islamiceconomics.github.io/podcast.html#ep-re-6"
+      ],
+      "hashtags": [
+        "#islamiceconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-6"
+    },
+    "linkedin": {
+      "post": "What happens when you build an economic model where people optimize for contentment, not just wealth maximization? The theoretical prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles and less financialization. Different savings behavior, equity-based investment allocation, intrinsically motivated labor. But here's the reality check: no country has implemented a comprehensive Islamic economic system. We're at the \"interesting hypothesis\" stage, not the \"proven theory\" stage. The research agenda is clear: formalize different preference axioms, find natural experiments, study what happens when justice becomes a constraint on growth models. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-6",
+      "comment_prompt": "What assumptions about human nature do you think mainstream economics gets wrong?"
+    },
+    "instagram": {
+      "caption": "Medieval Islamic scholars built universities while Europe burned books. They assumed people could optimize for contentment, not just wealth maximization. If you change the preference axioms, what growth path emerges? The theoretical prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles. But how much of this is proven? Very little. No country has implemented a comprehensive Islamic economic system. We're at the \"interesting hypothesis\" stage. The research question remains: what happens when justice becomes a constraint on your growth model? Listen: https://islamiceconomics.github.io/podcast.html#ep-re-6 #islamiceconomics #economics #growth #justice #research",
+      "carousel_slides": [
+        "What if people don't just maximize wealth?",
+        "Medieval Islamic scholars assumed people could optimize for contentment",
+        "The prediction: slower but more stable growth",
+        "Reality check: no country has tried this comprehensively",
+        "We're at the \"interesting hypothesis\" stage"
+      ],
+      "reel_caption": "What growth path emerges when you change the assumptions about human nature? The research agenda ahead. #islamiceconomics #economics #growth #research #theory",
+      "cover_text": "What if growth optimized for contentment?",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Medieval Islamic scholars built universities while Europe burned books. They assumed people could optimize for contentment, not just wealth maximization.\n\nThe theoretical prediction: potentially slower but more stable growth, with fewer boom-bust cycles. But no country has implemented this comprehensively. We're at the \"interesting hypothesis\" stage.",
+      "discussion_prompt": "What assumptions about human nature do you think mainstream economics gets wrong?",
+      "topic_suggestion": "Alternative economic models",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-6"
+    },
+    "short_video": {
+      "title": "What If Economics Optimized for Contentment?",
+      "hook": "Medieval scholars assumed something modern economists don't",
+      "voiceover": "Medieval Islamic scholars built universities while Europe burned books. They assumed people could optimize for contentment, not just wealth maximization. If you change the preference axioms, what growth path emerges? The theoretical prediction: potentially slower but more stable growth, with fewer boom-bust cycles. But here's the reality check: no country has implemented this comprehensively. We're at the interesting hypothesis stage, not the proven theory stage. The research question remains: what happens when justice becomes a constraint on your growth model?",
+      "shot_list": [
+        {
+          "time": "0-8s",
+          "visual": "Medieval Islamic university courtyard",
+          "on_screen_text": "Medieval Islamic scholars"
+        },
+        {
+          "time": "8-15s",
+          "visual": "Modern economic graphs and charts",
+          "on_screen_text": "Modern economics assumes wealth maximization"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Stable growth curve vs volatile curve",
+          "on_screen_text": "Slower but more stable growth?"
+        },
+        {
+          "time": "25-35s",
+          "visual": "World map with question marks",
+          "on_screen_text": "No country has tried this"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Research papers and equations",
+          "on_screen_text": "Still just a hypothesis"
+        }
+      ],
+      "caption": "What growth path emerges when you change the assumptions about human nature? The research agenda ahead.",
+      "hashtags": [
+        "#islamiceconomics",
+        "#economics",
+        "#growth",
+        "#research",
+        "#theory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Medieval Islamic scholars built universities while Europe burned books. They assumed people could optimize for contentment, not just wealth maximization. If you change the preference axioms, what growth path emerges? The theoretical prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles and less financialization. But how much of this is proven? Very little. No country has implemented a comprehensive Islamic economic system. We're at the\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_a8efcaa3.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a8efcaa3.png"
+}

@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-04-04-podcast-ppr-2-the-bonds-you-don-t-see",
+  "generated_at": "2026-04-04T14:33:08.050627+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-ppr-2-the-bonds-you-don-t-see",
+    "kind": "podcast",
+    "title": "The Bonds You Don't See",
+    "summary": "Your mortgage, your pension, your savings account: they all run through the bond market. How ordinary people became unwitting participants in the world's largest riba system.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Your monthly payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account earns interest because your bank lends your money out and buys bonds. The 2008 financial crisis wasn't really a housing crisis. It was a bond market crisis: mortgage-backed securities that nobody understood collapsed, and the entire global economy nearly went with them. This episode traces how bonds touch every aspect of ordinary life, and how the hadith about riba's dust reaching everyone has become literally true in the modern financial system.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Your mortgage gets packaged and sold as bonds to Norwegian pension funds. Your student loan is a bond. The hadith about riba's dust reaching everyone has become literally true.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Your mortgage gets packaged and sold as bonds to Norwegian pension funds. Your student loan is a bond. The hadith about riba's dust reaching everyone has become literally true.",
+        "When you make your monthly payment, you're funding someone's retirement halfway around the world. Every savings account, every pension, runs through this system.",
+        "The 2008 crisis wasn't really about housing. It was mortgage-backed securities nobody understood collapsing and nearly taking the global economy with them.",
+        "The bonds you don't see connect every financial decision you make to the world's largest riba system. https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+    },
+    "linkedin": {
+      "post": "Your mortgage doesn't stay with your bank. It gets packaged, securitized, and sold as bonds to investors around the world. Your monthly payment funds someone's retirement in Norway. Your student loan? Also a bond. Your savings account earns interest because your bank lends your money out and buys bonds with it. The 2008 financial crisis wasn't really a housing crisis. It was a bond market crisis: mortgage-backed securities that nobody understood collapsed, and the entire global economy nearly went with them. The hadith about riba's dust reaching everyone has become literally true. Every aspect of ordinary financial life now runs through the world's largest interest-based system. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+      "comment_prompt": "How aware were you of how deeply bonds are embedded in everyday financial products?"
+    },
+    "instagram": {
+      "caption": "Your mortgage gets packaged and sold as bonds to Norwegian pension funds. Your student loan is a bond. Your savings account works because your bank buys bonds. The 2008 crisis wasn't about housing\u2014it was mortgage-backed securities nobody understood collapsing and nearly taking the global economy with them. The hadith about riba's dust reaching everyone has become literally true. Every financial decision connects you to the world's largest interest-based system. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-ppr-2 #IslamicEconomics #Riba #Finance #Bonds #Mortgage",
+      "carousel_slides": [
+        "Your mortgage doesn't stay with your bank",
+        "It gets packaged and sold as bonds to investors worldwide",
+        "Your monthly payment funds someone's retirement in Norway",
+        "The 2008 crisis was really a bond market collapse",
+        "The hadith about riba's dust has become literally true"
+      ],
+      "reel_caption": "Every financial product you use runs through the bond market. The system touches everyone. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-ppr-2 #IslamicEconomics #Finance #Bonds #Riba #Mortgage",
+      "cover_text": "The Bonds You Don't See",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Your mortgage gets sold as bonds to Norwegian pension funds. Your student loan is a bond. Your savings account earns interest because your bank buys bonds.\n\nThe 2008 crisis wasn't about housing. It was mortgage-backed securities collapsing and nearly taking the global economy with them.\n\nThe hadith about riba's dust reaching everyone has become literally true.",
+      "discussion_prompt": "How does knowing this change your view of everyday financial products?",
+      "topic_suggestion": "Hidden connections in modern finance",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+    },
+    "short_video": {
+      "title": "The Hidden Bond Market in Your Life",
+      "hook": "Your mortgage doesn't stay with your bank",
+      "voiceover": "Your mortgage doesn't stay with your bank. It gets packaged and sold as bonds to investors around the world. Your monthly payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account works because your bank buys bonds. The 2008 crisis wasn't really about housing. It was mortgage-backed securities collapsing. The hadith about riba's dust reaching everyone has become literally true. Every financial decision connects you to the world's largest interest-based system.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "House with mortgage papers",
+          "on_screen_text": "Your mortgage doesn't stay with your bank"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Global map with money flows",
+          "on_screen_text": "It gets sold as bonds worldwide"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Student with loan papers",
+          "on_screen_text": "Your student loan is a bond"
+        },
+        {
+          "time": "26-35s",
+          "visual": "2008 crisis headlines",
+          "on_screen_text": "2008 was a bond market collapse"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Connected financial web",
+          "on_screen_text": "Riba's dust reaches everyone"
+        }
+      ],
+      "caption": "The bond market touches every part of your financial life. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Finance",
+        "#Bonds",
+        "#Riba",
+        "#Mortgage"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Your mortgage gets packaged and sold as bonds to Norwegian pension funds. Your student loan is a bond. Your savings account earns interest because your bank buys bonds with your money. The hadith about riba's dust reaching everyone has become literally true in ways the Prophet could never have imagined. Every monthly payment you make funds someone's retirement on the other side of the world through bonds you never agreed to buy."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_f5d66705.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f5d66705.png"
+}

@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-04-podcast-ppr-3-the-central-bank-trap",
+  "generated_at": "2026-04-04T14:33:30.413192+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-ppr-3-the-central-bank-trap",
+    "kind": "podcast",
+    "title": "The Central Bank Trap",
+    "summary": "Central banks became the bond market's biggest player. Now they can't stop buying without crashing the system, or keep buying without destroying the currency.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "After 2008, the Federal Reserve's balance sheet went from $800 billion to $9 trillion. The Bank of Japan now owns over 50% of all Japanese government bonds. Central banks created trillions of dollars, euros, and yen to buy government debt, and the inflation that followed wasn't a surprise; it was a mathematical certainty. Ibn Taymiyyah condemned currency debasement in the 13th century. Al-Maqrizi analyzed Egypt's monetary crisis in the 15th century. Both understood what modern economists struggle to admit: manipulating the price of money is manipulating the price of everything. This episode examines QE, the Erdogan experiment in Turkey, and the massive hidden wealth transfer from poor to rich.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Central banks became the bond market's biggest player.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "The Bank of Japan now owns over 50% of all Japanese government bonds.",
+        "After 2008, the Federal Reserve's balance sheet went from $800 billion to $9 trillion. Central banks became their own governments' biggest creditors.",
+        "Ibn Taymiyyah condemned currency debasement in the 13th century. Al-Maqrizi analyzed Egypt's monetary crisis in the 15th century. They both knew what we pretend not to see.",
+        "Manipulating the price of money is manipulating the price of everything. https://islamiceconomics.github.io/podcast.html#ep-ppr-3"
+      ],
+      "hashtags": [
+        "#CentralBanking",
+        "#MonetaryPolicy",
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-3"
+    },
+    "linkedin": {
+      "post": "The Bank of Japan now owns over 50% of all Japanese government bonds. The Federal Reserve's balance sheet went from $800 billion to $9 trillion after 2008. Central banks became their own governments' biggest creditors, creating a trap: they can't stop buying bonds without crashing the system, or keep buying without destroying their currencies. Ibn Taymiyyah condemned currency debasement in the 13th century. Al-Maqrizi analyzed Egypt's monetary crisis in the 15th century. Both understood what modern economists struggle to admit: manipulating the price of money is manipulating the price of everything. The inflation that followed quantitative easing wasn't a surprise. It was a mathematical certainty. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-3",
+      "comment_prompt": "What's your take on central banks owning such massive portions of government debt? Where does this lead?"
+    },
+    "instagram": {
+      "caption": "The Bank of Japan now owns over 50% of all Japanese government bonds. The Federal Reserve's balance sheet exploded from $800 billion to $9 trillion after 2008. Central banks became their own governments' biggest creditors, trapped in a system where they can't stop buying without crashing markets or keep buying without destroying currencies. Ibn Taymiyyah condemned currency debasement in the 13th century. Al-Maqrizi analyzed Egypt's monetary crisis in the 15th century. Both scholars understood what modern economists struggle to admit: manipulating the price of money is manipulating the price of everything. The inflation that followed wasn't a surprise. It was a mathematical certainty. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-ppr-3 #CentralBanking #MonetaryPolicy #IslamicEconomics #QE #Economics",
+      "carousel_slides": [
+        "The Bank of Japan owns over 50% of all Japanese government bonds",
+        "The Fed's balance sheet: $800 billion to $9 trillion after 2008",
+        "Central banks became their own governments' biggest creditors",
+        "Ibn Taymiyyah condemned currency debasement in the 13th century",
+        "Manipulating the price of money is manipulating the price of everything"
+      ],
+      "reel_caption": "Central banks created the biggest monetary experiment in history. The results were predictable. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-3 #CentralBanking #MonetaryPolicy #Economics #QE #IslamicEconomics",
+      "cover_text": "The Central Bank Trap",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Bank of Japan now owns over 50% of all Japanese government bonds. The Federal Reserve's balance sheet went from $800 billion to $9 trillion after 2008.\n\nCentral banks became their own governments' biggest creditors, trapped in a system where they can't stop buying without crashing markets or keep buying without destroying currencies.\n\nIbn Taymiyyah and Al-Maqrizi understood centuries ago what modern economists struggle to admit\u2026",
+      "discussion_prompt": "When central banks own most government debt, are they still independent? What happens when the buyer of last resort\u2026",
+      "topic_suggestion": "Medieval Islamic monetary theory vs\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-3"
+    },
+    "short_video": {
+      "title": "When Central Banks Own Everything",
+      "hook": "The Bank of Japan owns over half of all Japanese government bonds",
+      "voiceover": "The Bank of Japan now owns over fifty percent of all Japanese government bonds. After 2008, the Federal Reserve's balance sheet exploded from eight hundred billion to nine trillion dollars. Central banks became their own governments' biggest creditors, creating a trap. They can't stop buying bonds without crashing the system, or keep buying without destroying their currencies. Ibn Taymiyyah condemned currency debasement in the thirteenth century. He understood what modern economists struggle to admit: manipulating the price of money is manipulating the price of everything. The inflation that followed wasn't a surprise. It was a mathematical certainty.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Japanese yen bills cascading",
+          "on_screen_text": "Bank of Japan owns 50%+ of gov bonds"
+        },
+        {
+          "time": "6-12s",
+          "visual": "Fed building with growing balance sheet graphic",
+          "on_screen_text": "$800B \u2192 $9T after 2008"
+        },
+        {
+          "time": "13-20s",
+          "visual": "Central bank building morphing into government building",
+          "on_screen_text": "Banks became biggest creditors"
+        },
+        {
+          "time": "21-28s",
+          "visual": "Medieval Islamic scholar manuscript",
+          "on_screen_text": "Ibn Taymiyyah - 13th century"
+        },
+        {
+          "time": "29-35s",
+          "visual": "Inflation chart rising exponentially",
+          "on_screen_text": "Mathematical certainty"
+        }
+      ],
+      "caption": "Central banks created the biggest monetary experiment in history. Medieval Islamic scholars predicted exactly what would happen. Listen: https://islamiceconomics.github.io/podcast.html#ep-ppr-3",
+      "hashtags": [
+        "#CentralBanking",
+        "#MonetaryPolicy",
+        "#QE",
+        "#IslamicEconomics",
+        "#Economics"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Bank of Japan now owns over 50% of all Japanese government bonds. The Federal Reserve's balance sheet exploded from $800 billion to $9 trillion after 2008. Central banks became their own governments' biggest creditors, trapped in a system where they can't stop buying without crashing markets or keep buying without destroying currencies. Ibn Taymiyyah condemned currency debasement in the 13th century. They understood what modern economists struggle to admit: manipulating the price of money\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_1254836c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_1254836c.png"
+}

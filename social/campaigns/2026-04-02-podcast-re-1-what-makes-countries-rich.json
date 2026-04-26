@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-02-podcast-re-1-what-makes-countries-rich",
+  "generated_at": "2026-04-02T14:53:36.662313+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-re-1-what-makes-countries-rich",
+    "kind": "podcast",
+    "title": "What Makes Countries Rich",
+    "summary": "The production function, total factor productivity, the Islamic golden age, and why Muslim-majority countries are poorer today.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Why does a worker in Germany produce ten times more per hour than a worker in Bangladesh? It's not effort. It's capital, technology, and institutions. This episode introduces the production function, explains total factor productivity, and then turns to a puzzle: the Islamic world was the global productivity leader for five centuries. Baghdad, Cordoba, and Cairo were centers of innovation in agriculture, manufacturing, and finance. What drove that? And what happened? The decline wasn't just colonialism. Internal institutional failures, loss of intellectual dynamism, and resistance to new technologies all played a role. Today, Muslim-majority countries are disproportionately in the lower-middle and low-income categories. The honest diagnosis: low TFP, weak institutions, underinvestment in human capital. This series explores whether Islamic economic principles, properly understood, could address these structural problems.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "A worker in Germany produces ten times more per hour than a worker in Bangladesh. Ten times. It's not effort. It's capital, technology, and institutions.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "A worker in Germany produces ten times more per hour than a worker in Bangladesh. Ten times. It's not effort. It's capital, technology, and institutions.",
+        "For five centuries, the Islamic world was the global productivity leader. Baghdad, Cordoba, and Cairo were centers of innovation in agriculture, manufacturing, and finance.",
+        "The decline wasn't just colonialism. Internal institutional failures, loss of intellectual dynamism, and resistance to new technologies all played a role.",
+        "Today, Muslim-majority countries are disproportionately in the lower-middle and low-income categories. The honest diagnosis: low total factor productivity. https://islamiceconomics.github.io/podcast.html#ep-re-1"
+      ],
+      "hashtags": [
+        "#productivity",
+        "#economics",
+        "#institutions"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-1"
+    },
+    "linkedin": {
+      "post": "Why does a worker in Germany produce ten times more per hour than a worker in Bangladesh? It's not effort or intelligence\u2014it's capital, technology, and institutions. This productivity puzzle becomes more intriguing when you consider history. For five centuries, the Islamic world was the global productivity leader. Baghdad, Cordoba, and Cairo were centers of innovation in agriculture, manufacturing, and finance. What changed? The decline wasn't just colonialism. Internal institutional failures, loss of intellectual dynamism, and resistance to new technologies all played crucial roles. Today, Muslim-majority countries are disproportionately in the lower-middle and low-income categories. The honest diagnosis: low total factor productivity, weak institutions, underinvestment in human capital. Understanding this history\u2014both the golden age and the decline\u2014is essential for charting a path forward. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-1",
+      "comment_prompt": "What factors do you think contributed most to the Islamic world's historical productivity leadership? And what would\u2026"
+    },
+    "instagram": {
+      "caption": "A worker in Germany produces ten times more per hour than a worker in Bangladesh. Ten times. It's not effort or intelligence. It's capital, technology, and institutions. For five centuries, the Islamic world was the global productivity leader. Baghdad, Cordoba, and Cairo were centers of innovation in agriculture, manufacturing, and finance. What changed? The decline wasn't just colonialism. Internal institutional failures, loss of intellectual dynamism, and resistance to new technologies all played crucial roles. Today, Muslim-majority countries are disproportionately in the lower-middle and low-income categories. The honest diagnosis: low total factor productivity. History teaches us that productivity leadership can shift. Understanding both the golden age and the decline is essential for charting a path forward. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-1 #productivity #economics #islamichistory #development #institutions",
+      "carousel_slides": [
+        "A worker in Germany produces 10x more per hour than a worker in Bangladesh",
+        "It's not effort or intelligence. It's capital, technology, and institutions.",
+        "For 5 centuries, the Islamic world was the global productivity leader",
+        "Baghdad, Cordoba, and Cairo were centers of innovation",
+        "Today: understanding both the golden age and decline is key to moving forward"
+      ],
+      "reel_caption": "The 10x productivity gap between countries isn't about effort\u2014it's about capital, technology, and institutions. The Islamic world once led global productivity for five centuries. What changed? Listen to explore this economic puzzle. #productivity #economics #islamichistory #development #institutions",
+      "cover_text": "Why Some Countries Produce 10x More",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "A worker in Germany produces ten times more per hour than a worker in Bangladesh. Ten times. It's not effort or intelligence\u2014it's capital, technology, and institutions.\n\nFor five centuries, the Islamic world was the global productivity leader. Baghdad, Cordoba, and Cairo were centers of innovation. The decline wasn't just colonialism\u2014internal institutional failures and resistance to new technologies played crucial roles.\n\nToday, Muslim-majority\u2026",
+      "discussion_prompt": "What do you think were the most critical factors that led to the Islamic world's decline from productivity leadership?",
+      "topic_suggestion": "Historical economic leadership shifts",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-1"
+    },
+    "short_video": {
+      "title": "Why Some Countries Are 10x More Productive",
+      "hook": "A worker in Germany produces ten times more per hour than a worker in Bangladesh",
+      "voiceover": "A worker in Germany produces ten times more per hour than a worker in Bangladesh. Ten times. It's not effort or intelligence. It's capital, technology, and institutions. For five centuries, the Islamic world was the global productivity leader. Baghdad, Cordoba, and Cairo were centers of innovation in agriculture, manufacturing, and finance. The decline wasn't just colonialism. Internal institutional failures, loss of intellectual dynamism, and resistance to new technologies all played crucial roles. Today, understanding both the golden age and the decline is essential for moving forward.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Split screen: German factory vs Bangladesh workshop",
+          "on_screen_text": "10x productivity gap"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Historical maps showing Islamic golden age territories",
+          "on_screen_text": "5 centuries of leadership"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Historical illustrations of Baghdad, Cordoba, Cairo",
+          "on_screen_text": "Centers of innovation"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Graph showing economic decline over time",
+          "on_screen_text": "Internal failures"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Modern economic data visualization",
+          "on_screen_text": "Path forward"
+        }
+      ],
+      "caption": "The productivity gap between countries reveals a fascinating historical puzzle. The Islamic world once led global innovation for five centuries\u2014what changed? Listen: https://islamiceconomics.github.io/podcast.html#ep-re-1",
+      "hashtags": [
+        "#productivity",
+        "#economics",
+        "#history",
+        "#development",
+        "#innovation"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "A worker in Germany produces ten times more per hour than a worker in Bangladesh. Ten times. It's not effort. It's capital, technology, and institutions. For five centuries, the Islamic world was the global productivity leader. Baghdad, Cordoba, and Cairo were centers of innovation in agriculture, manufacturing, and finance. Then something changed. The decline wasn't just colonialism\u2014internal institutional failures, loss of intellectual dynamism, and resistance to new technologies all played a\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_99edcf30.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_99edcf30.png"
+}

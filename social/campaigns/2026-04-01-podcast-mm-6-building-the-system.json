@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-04-01-podcast-mm-6-building-the-system",
+  "generated_at": "2026-04-01T15:02:10.595596+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-mm-6-building-the-system",
+    "kind": "podcast",
+    "title": "Building the System",
+    "summary": "What an Islamic monetary system would look like, not at the bank level, but at the system level. Principles, obstacles, and the path forward.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Gold dinar revival proposals sound appealing but face practical limitations. This episode moves beyond nostalgia to ask what a modern Islamic monetary system would actually require: five design principles for an Islamic monetary authority, the question of OIC monetary cooperation, and why governance is the binding constraint, not monetary design. The principles exist, the capital exists, the technology exists, and the need is real. But building institutions requires the hardest thing of all: trust between governments that have rarely cooperated at this level.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Gold dinar revival proposals face one binding constraint that has nothing to do with gold or money. The principles exist, the capital exists, the technology exists. The missing ingredient is trust between governments that have rarely cooperated at\u2026",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "Gold dinar revival proposals face one binding constraint that has nothing to do with gold or money.",
+        "The principles exist. The capital exists. The technology exists. What's missing is trust between governments that have rarely cooperated at this scale.",
+        "Building an Islamic monetary system isn't a monetary design problem. It's an institutional problem. Five design principles exist for an Islamic monetary authority.",
+        "The real question isn't whether OIC monetary cooperation is possible. It's whether governments can build the institutions that make cooperation work. https://islamiceconomics.github.io/podcast.html#ep-mm-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#MonetarySystem",
+        "#OIC"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-6"
+    },
+    "linkedin": {
+      "post": "The conversation around Islamic monetary systems often focuses on technical details\u2014gold standards, currency baskets, or Shariah compliance frameworks. But the real challenge lies elsewhere entirely. Gold dinar revival proposals face a binding constraint that has nothing to do with monetary design. The principles exist. The capital exists. The technology exists. The need is demonstrably real across the Islamic world. What's missing is something much harder to engineer: trust between governments that have rarely cooperated at this institutional scale. Building an Islamic monetary system isn't fundamentally a monetary problem\u2014it's a governance problem. Five clear design principles exist for an Islamic monetary authority. The question of OIC monetary cooperation has technical solutions. But creating the institutions that make sustained cooperation work between sovereign nations remains the ultimate challenge. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-mm-6",
+      "comment_prompt": "What do you think is the biggest obstacle to monetary cooperation between Islamic countries\u2014technical challenges or\u2026"
+    },
+    "instagram": {
+      "caption": "Gold dinar proposals sound appealing in theory. But they face a constraint that has nothing to do with gold or monetary design. The principles exist. The capital exists. The technology exists. The need is real across the Islamic world. What's missing? Trust between governments that have rarely cooperated at this institutional scale. Building an Islamic monetary system isn't a monetary problem\u2014it's a governance problem. Five design principles exist for an Islamic monetary authority. Technical solutions exist for OIC monetary cooperation. But creating institutions that sustain cooperation between sovereign nations? That requires the hardest thing of all: building trust where it has rarely existed. Listen to the full discussion at the link in bio. #IslamicEconomics #MonetarySystem #OIC #GoldDinar #Cooperation",
+      "carousel_slides": [
+        "Gold dinar revival proposals face one binding constraint",
+        "The principles exist. The capital exists. The technology exists.",
+        "What's missing: trust between governments",
+        "It's not a monetary problem. It's a governance problem.",
+        "Building institutions requires the hardest thing: sustained cooperation"
+      ],
+      "reel_caption": "The real challenge in building an Islamic monetary system isn't what you think. Listen to the full discussion at the link in bio. #IslamicEconomics #MonetarySystem #OIC",
+      "cover_text": "The Real Challenge in Islamic Monetary Systems",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Gold dinar revival proposals face a constraint that has nothing to do with gold or monetary design. The principles exist, the capital exists, the technology exists.\n\nWhat's missing is trust between governments that have rarely cooperated at this institutional scale. Building an Islamic monetary system isn't a monetary problem\u2014it's a governance problem.",
+      "discussion_prompt": "What's the biggest barrier to monetary cooperation between Islamic countries\u2014technical challenges or institutional\u2026",
+      "topic_suggestion": "Islamic monetary cooperation",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-6"
+    },
+    "short_video": {
+      "title": "The Real Challenge in Islamic Monetary Systems",
+      "hook": "Everyone talks about gold dinars, but they're missing the real problem",
+      "voiceover": "Gold dinar revival proposals sound appealing, but they face one binding constraint that has nothing to do with gold or money. The principles exist. The capital exists. The technology exists. The need is real across the Islamic world. What's missing? Trust between governments that have rarely cooperated at this scale. Building an Islamic monetary system isn't a monetary design problem. It's a governance problem. Five design principles exist for an Islamic monetary authority, but creating institutions that make cooperation work? That's the hardest challenge of all.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Gold coins scattered on a table",
+          "on_screen_text": "Gold dinar proposals sound appealing"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Split screen showing capital flows and technology",
+          "on_screen_text": "Principles \u2713 Capital \u2713 Technology \u2713"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Empty conference room with flags",
+          "on_screen_text": "Missing: Trust between governments"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Handshake dissolving into question mark",
+          "on_screen_text": "It's a governance problem"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Building blocks falling apart",
+          "on_screen_text": "Building institutions = hardest challenge"
+        }
+      ],
+      "caption": "The real constraint in Islamic monetary systems isn't what you think. Listen to the full discussion at the link in bio.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#MonetarySystem",
+        "#OIC",
+        "#GoldDinar",
+        "#Cooperation"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Gold dinar revival proposals face one binding constraint that has nothing to do with gold or money. The principles exist, the capital exists, the technology exists, and the need is real. What's missing is trust between governments that have rarely cooperated at this scale. Building an Islamic monetary system isn't a monetary design problem. It's an institutional problem. Five design principles exist for an Islamic monetary authority, but creating the governance structures that make cooperation\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_db2e9506.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_db2e9506.png"
+}
