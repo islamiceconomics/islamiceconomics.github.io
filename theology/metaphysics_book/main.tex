@@ -1,0 +1,282 @@
+% =========================================================================
+% THE METAPHYSICS OF ISLAMIC ECONOMICS
+% A treatise on the relation between the fundamental nature of reality
+% and economic phenomena
+%
+% This is a metaphysics-only work. Modern mathematical, network-theoretic,
+% and behavioral treatments of Islamic economic concepts (ergodicity for
+% riba, network theory for family/community provision, behavioral mediation
+% for gratitude) belong to a separate companion volume in heterodox
+% economics; they are not the subject of this book.
+% =========================================================================
+
+\documentclass[11pt,a4paper,openany]{book}
+
+% --- Page geometry --------------------------------------------------------
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\setlength{\headheight}{14pt}
+
+% --- Encoding and language ------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Math packages --------------------------------------------------------
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{braket}
+
+% --- Color and boxes ------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins,breakable}
+
+% --- Lists and references -------------------------------------------------
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{epigraph}
+\usepackage{graphicx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal!60!black,
+    urlcolor=teal!60!black,
+    citecolor=teal!60!black,
+    pdftitle={The Metaphysics of Islamic Economics},
+    pdfauthor={Islamic Economics Project}
+}
+
+% --- Theme colors ---------------------------------------------------------
+\definecolor{themegreen}{HTML}{1a5c3a}
+\definecolor{themegold}{HTML}{b8962e}
+\definecolor{themecream}{HTML}{faf8f4}
+\definecolor{themelight}{HTML}{e8e4dc}
+\definecolor{themedark}{HTML}{1a1a2e}
+\definecolor{themedeep}{HTML}{0f2a1a}
+
+% --- Custom environments --------------------------------------------------
+\newtcolorbox{conceptbox}[1][]{
+    enhanced, breakable,
+    colback=themecream, colframe=themegreen,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    title={#1},
+    boxrule=0.5pt, arc=2pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt
+}
+
+\newtcolorbox{notationbox}[1][]{
+    enhanced, breakable,
+    colback=themelight!50, colframe=themegold,
+    fonttitle=\bfseries, coltitle=themedark,
+    title={#1},
+    boxrule=0.5pt, arc=2pt
+}
+
+\newtcolorbox{principlebox}[1][]{
+    enhanced, breakable,
+    colback=white, colframe=themedark,
+    fonttitle=\bfseries\color{white}, coltitle=white,
+    title={#1},
+    boxrule=0.6pt, arc=2pt
+}
+
+\newtcolorbox{summarybox}[1][]{
+    enhanced, breakable,
+    colback=themecream!50, colframe=themegreen!70!black,
+    fonttitle=\bfseries\color{white}, coltitle=white,
+    title={#1},
+    boxrule=0.5pt, arc=2pt
+}
+
+\newtcolorbox{contrastbox}[1][]{
+    enhanced, breakable,
+    colback=themelight!30, colframe=themedark,
+    fonttitle=\bfseries\color{white}, coltitle=white,
+    title={#1},
+    boxrule=0.5pt, arc=2pt
+}
+
+% --- Theorem environments -------------------------------------------------
+\newtheoremstyle{cleanrm}{8pt}{8pt}{}{}{\bfseries\color{themegreen}}{.}{0.5em}{}
+\theoremstyle{cleanrm}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+\newtheorem{claim}{Claim}[chapter]
+\newtheorem{thesis}{Thesis}[chapter]
+
+% --- Chapter formatting ---------------------------------------------------
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries\color{themegreen}}
+  {\filright\Large\color{themegold}\textsc{Chapter \thechapter}}
+  {0.5ex}
+  {\titlerule[0.5pt]\vspace{1ex}\filright}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{themegreen}}
+  {\thesection}{0.5em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{themegreen!80!black}}
+  {\thesubsection}{0.5em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\bfseries\color{themedeep}}
+  {\thesubsubsection}{0.5em}{}
+
+% --- Header / footer ------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase\leftmark}
+\fancyhead[RO]{\nouppercase\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Custom commands ------------------------------------------------------
+\newcommand{\arb}[1]{\textit{#1}}
+\newcommand{\Quran}[1]{Quran #1}
+\newcommand{\hadith}[1]{\textsc{#1}}
+\newcommand{\xref}[1]{\hyperref[#1]{\S\ref{#1}}}
+
+% =========================================================================
+\begin{document}
+% =========================================================================
+
+\frontmatter
+
+% --- Title page -----------------------------------------------------------
+\begin{titlepage}
+\centering
+\vspace*{1.5cm}
+{\color{themegreen}\rule{0.6\textwidth}{1pt}}\\[1em]
+{\Huge\bfseries\color{themegreen} The Metaphysics\\[0.2em] of Islamic Economics\par}
+\vspace{0.8em}
+{\color{themegold}\rule{0.4\textwidth}{0.5pt}}\\[1em]
+{\Large\itshape A treatise on the relation between\\[0.2em]
+the fundamental nature of reality\\[0.2em]
+and economic phenomena\par}
+\vspace{4cm}
+
+{\itshape\large
+``With Him are the keys of the Unseen; none knows them but He.''\\[0.3em]
+--- \Quran{6:59}\par}
+
+\vfill
+{\large \textit{Islamic Economics Project}}\\[0.3em]
+{\small Working draft}
+\end{titlepage}
+
+% --- About this book ------------------------------------------------------
+\thispagestyle{empty}
+\vspace*{2in}
+\noindent\textbf{About this book.} This is a metaphysics-only work. Its
+subject is the relation between the fundamental nature of reality, as
+articulated by the Islamic metaphysical tradition (most centrally Ibn
+\arb{Arabi}, Mulla \arb{Sadra}, and Shah \arb{Wali Allah}), and the
+economic phenomena we observe. It treats classical Islamic economic
+concepts --- \arb{niyyah}, \arb{qadar}, \arb{rizq}, \arb{barakah},
+\arb{halal}, \arb{haram}, \arb{riba} --- not as objects of mathematical
+modeling but as objects of metaphysical inquiry. The question is not
+\textit{how to model these phenomena} but \textit{what these phenomena
+are at the level of being}.
+
+\vspace{0.3in}
+\noindent\textbf{What this book is not.} It is not a textbook of Islamic
+economics. It does not present formal microeconomic theory; that is the
+work of a subsequent volume. It does not present ergodic, network-theoretic,
+or behavioral treatments of Islamic economic concepts; those treatments,
+which use modern applied apparatus to model the dynamics of \arb{riba},
+\arb{rizq} networks, and gratitude effects, belong to a separate companion
+volume in heterodox economics. They are valuable but they are not
+metaphysics.
+
+\vspace{0.3in}
+\noindent\textbf{The conceptual apparatus} is restricted to frameworks
+with genuine scientific authority. Two are load-bearing: quantum
+foundations (the measurement problem, the live interpretations,
+non-locality as established by the Bell experiments) and mathematical
+logic via the Penrose-G\"odel argument (the non-algorithmic character of
+mathematical understanding established from the incompleteness theorems
+and the halting problem). The Akbarian metaphysical tradition is then
+articulated in its own terms within the categorial space these two
+frameworks open. Broader philosophical traditions (Whitehead's process
+philosophy, Heideggerian phenomenology, contemporary analytical idealism)
+are mentioned in passing where they illuminate but are not treated as
+load-bearing apparatus.
+
+\vspace{0.3in}
+\noindent\textit{Comments, criticisms, and corrections are sought. The
+work is intended as a contribution to a project that has barely begun;
+its development requires the engagement of others.}
+\cleardoublepage
+
+\tableofcontents
+\cleardoublepage
+
+% --- Front matter content -------------------------------------------------
+\input{frontmatter/preface}
+
+% =========================================================================
+\mainmatter
+% =========================================================================
+
+\part{The Question}
+
+\input{part1/chapter1}
+% \input{part1/chapter2}    % The Two Layers: Manifest and Unseen
+% \input{part1/chapter3}    % Why Classical Apparatus Fails for Metaphysical Concepts
+% \input{part1/chapter4}    % The Sources: Textual and Akbarian
+
+\part{The Apparatus}
+
+% Restricted to frameworks with genuine scientific authority. Two are
+% load-bearing: quantum mechanics (the only major scientific framework
+% that overturns the classical materialist picture and gives a structural
+% correlate for the actualization-from-potentiality move); and
+% mathematical logic via the Penrose-Goedel argument (the only other
+% scientific authority that establishes a definite limit on the
+% computational reduction of understanding). Akbarian metaphysics is then
+% articulated in its own terms within the categorial space these two
+% frameworks open. Broader philosophical traditions (Whitehead's process
+% philosophy, Heideggerian phenomenology) and contemporary philosophy of
+% mind (analytical idealism) are mentioned in passing where they
+% illuminate, but they are not load-bearing apparatus for the work --- they
+% lack the empirical or mathematical authority required to ground the
+% claims.
+
+% \input{part2/chapter5}    % Quantum Foundations and the Measurement Problem
+% \input{part2/chapter6}    % Non-Computability and the Reality of Intention
+% \input{part2/chapter7}    % Akbarian Metaphysics: Wujud, Tajalli, the Divine Names
+
+\part{Worked Treatments}
+
+% \input{part3/chapter8}     % Niyyah as Non-Computable Ground
+% \input{part3/chapter9}     % Qadar and the Quantum Structure of Actualization
+% \input{part3/chapter10}    % Rizq from the Unseen
+% \input{part3/chapter11}    % Barakah as Coupling
+% \input{part3/chapter12}    % Halal and Haram as Modes of Engagement with the Real
+% \input{part3/chapter13}    % Riba as Ontological Inversion
+
+\part{Synthesis}
+
+% \input{part4/chapter14}    % The Unified Metaphysical Framework
+% \input{part4/chapter15}    % Implications for the Formal Theory (Path to Volume I)
+% \input{part4/chapter16}    % What This Book Has and Has Not Done
+
+% --- Bibliography placeholder (to be expanded) ----------------------------
+\backmatter
+% \bibliographystyle{plain}
+% \bibliography{bibliography}
+
+\end{document}
