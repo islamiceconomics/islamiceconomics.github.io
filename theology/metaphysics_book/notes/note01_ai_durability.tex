@@ -1,0 +1,613 @@
+% =========================================================================
+% NOTE 01: AI, Material Abundance, and the Durability of Islamic Metaphysics
+%
+% Companion note to "The Metaphysics of Islamic Economics" (working draft).
+% Engages the question: does the AI-driven restructuring of material
+% production threaten to make classical Islamic metaphysical concepts
+% (rizq, barakah, niyyah, riba) outdated?
+%
+% This is a working essay, not a chapter of the main treatise. It
+% may be developed into a longer paper later or absorbed into a
+% closing chapter on the contemporary relevance of the work.
+% =========================================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% --- Page geometry --------------------------------------------------------
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\setlength{\headheight}{14pt}
+
+% --- Encoding and language ------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Math and typography --------------------------------------------------
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+% --- Color and boxes ------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins,breakable}
+
+% --- Lists and references -------------------------------------------------
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{epigraph}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal!60!black,
+    urlcolor=teal!60!black,
+    citecolor=teal!60!black,
+    pdftitle={AI, Material Abundance, and the Durability of Islamic Metaphysics},
+    pdfauthor={Islamic Economics Project}
+}
+
+% --- Theme colors (matching main book) -----------------------------------
+\definecolor{themegreen}{HTML}{1a5c3a}
+\definecolor{themegold}{HTML}{b8962e}
+\definecolor{themecream}{HTML}{faf8f4}
+\definecolor{themelight}{HTML}{e8e4dc}
+\definecolor{themedark}{HTML}{1a1a2e}
+\definecolor{themedeep}{HTML}{0f2a1a}
+
+% --- Custom environments --------------------------------------------------
+\newtcolorbox{conceptbox}[1][]{
+    enhanced, breakable,
+    colback=themecream, colframe=themegreen,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    title={#1},
+    boxrule=0.5pt, arc=2pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt
+}
+
+\newtcolorbox{summarybox}[1][]{
+    enhanced, breakable,
+    colback=themecream!50, colframe=themegreen!70!black,
+    fonttitle=\bfseries\color{white}, coltitle=white,
+    title={#1},
+    boxrule=0.5pt, arc=2pt
+}
+
+\newtcolorbox{contrastbox}[1][]{
+    enhanced, breakable,
+    colback=themelight!30, colframe=themedark,
+    fonttitle=\bfseries\color{white}, coltitle=white,
+    title={#1},
+    boxrule=0.5pt, arc=2pt
+}
+
+% --- Section formatting ---------------------------------------------------
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{themegreen}}
+  {\thesection}{0.5em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{themegreen!80!black}}
+  {\thesubsection}{0.5em}{}
+
+% --- Header / footer ------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\itshape Note 01: AI and the Durability of Islamic Metaphysics}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Custom commands ------------------------------------------------------
+\newcommand{\arb}[1]{\textit{#1}}
+\newcommand{\Quran}[1]{Quran #1}
+
+\title{
+    \color{themegreen}\bfseries
+    AI, Material Abundance, and\\[0.2em]
+    the Durability of Islamic Metaphysics
+    \\[0.5em]
+    \large\color{themedark}\mdseries
+    \itshape A Note on the AI Layoff Trap and What It Does Not Threaten
+}
+\author{Islamic Economics Project}
+\date{Working draft}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\vspace{1em}
+\begin{abstract}
+\noindent A 2026 paper by Falk and Tsoukalas (``The AI Layoff Trap'')
+develops a task-based automation model in which competitive firms,
+even when fully rational and forward-looking, are trapped into
+displacing workers faster than the economy can reabsorb them ---
+ending in what the authors call ``boundless productivity and zero
+demand.'' Reading the paper raises a strategic question for any
+project that grounds Islamic economic thought in classical
+metaphysics: if AI-driven productivity is about to restructure the
+material economy as radically as Falk and Tsoukalas (and others)
+suggest, do classical concepts like \arb{rizq} (provision),
+\arb{barakah} (the blessing that makes a thing greater than its
+apparent magnitude), \arb{niyyah} (intention), and \arb{riba} (the
+prohibited interest) survive that restructuring? Or do they become
+period pieces --- valuable as tradition but inapplicable as living
+economic categories?
+
+This note argues that the classical metaphysical concepts are
+\textit{more} durable than the applied economic frameworks they are
+sometimes paired with --- specifically, more durable than the
+ergodic, network-theoretic, and behavioral treatments that have been
+developed in heterodox Islamic economics over the past two decades.
+The metaphysical concepts make claims about the structure of being,
+not about the dynamics of specific material regularities; AI-driven
+material change does not touch the level at which they operate. If
+anything, the loss of conventional meaning structures that
+accompanies large material transitions makes deep metaphysical
+orientation \textit{more} urgent, not less. The strategic
+implication is that intellectual investment in the metaphysical
+foundations of Islamic economics is the more durable use of time
+than investment in the applied frameworks that depend on the
+specific material structures of the present economy.
+\end{abstract}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\section{What the paper actually claims}
+\label{sec:paper-claims}
+
+It is worth pausing on what Falk and Tsoukalas (2026) actually
+argue, because casual reading can suggest a triumphal post-scarcity
+prediction that is not in the text.
+
+The paper develops a task-based automation model in the spirit of
+Acemoglu and Restrepo (2018), refocused from the labor market to the
+product market. In a competitive sector, each firm chooses what
+fraction of its workforce to replace with AI. Automation lowers
+costs but also reduces the income of laid-off workers, who would
+otherwise be consumers of the sector's output. Each individual
+firm captures the full cost saving of automating, but bears only a
+fraction of the resulting demand destruction; the rest falls on its
+competitors. The result is a demand externality that traps even
+fully rational, perfectly foresighted firms into an automation arms
+race that exceeds the cooperatively efficient level. In the
+frictionless limit, the game reduces to a Prisoner's Dilemma in
+which every firm replaces its entire human workforce, even though
+collective restraint would raise all profits.
+
+The endpoint of this dynamic, in Falk and Tsoukalas's striking
+phrase, is \textit{``boundless productivity and zero demand''} ---
+not as a triumphant vision but as the closing scene of a tragedy.
+The authors are clear that the result is a deadweight loss, harming
+both workers (who lose income) and firm owners (who lose the
+demand on which their profits depend). They evaluate six policy
+instruments and conclude that only a Pigouvian automation tax,
+calibrated to the unintegrated demand loss per task, can implement
+the cooperative optimum. UBI, capital income taxes, equity
+participation, and Coasian bargaining all fail.
+
+\begin{conceptbox}[The paper's actual claim]
+Falk and Tsoukalas do not predict that AI will produce abundance for
+all. They predict that competitive market structure will translate
+AI's productive capacity into a destructive externality: massive
+unused productive capacity alongside collapsed demand. The result
+is structural pathology, not utopia. The relevant comparison case
+is debt-deflation under interest-bearing debt --- a self-reinforcing
+contraction that destroys the thing it depends on. The mechanism
+is different but the structural shape is similar.
+\end{conceptbox}
+
+This matters for the present note's question because the question
+sometimes assumes a different scenario --- a Star Trek replicator
+economy where everything material is essentially free. The Falk
+and Tsoukalas paper does not describe that scenario. But the
+broader question survives reframing: \textit{whatever the
+distribution of AI's productive capacity, does the radical
+material restructuring that AI represents make classical Islamic
+metaphysical concepts about provision and meaning outdated?}
+
+The remainder of this note answers \textbf{no}, and argues that the
+metaphysical concepts are in fact \textit{more} important under
+material restructuring, not less.
+
+\section{Rizq is not about scarcity}
+\label{sec:rizq-not-scarcity}
+
+The first and most fundamental error in the worry is to treat
+\arb{rizq} as a concept whose subject matter is material scarcity.
+This is not what \arb{rizq} is, in the classical formulation. The
+Quranic and prophetic uses of \arb{rizq} consistently treat it as
+the manifest appearance of a divinely apportioned provision, not
+as the limited supply of physical goods.
+
+Consider the structural difference. A modern economic concept
+referring to material scarcity (income, output, inventory, GDP) is
+defined by the manifest layer alone --- by what enters the market
+and is consumed there. A unit of GDP requires no further
+metaphysical content to be what it is; it is an aggregation of
+manifest production. \arb{Rizq}, by contrast, is structurally
+two-layered. The manifest event (the meal eaten, the income
+received, the harvest gathered) is the appearance of an
+actualization whose source and measure lie in the Unseen
+(\arb{ghayb}). What \arb{rizq} \textit{is}, at the level of being,
+is the relation between an Unseen determination and a manifest
+event in spacetime --- a relation that does not depend on whether
+the manifest goods are scarce, abundant, or universally available.
+
+In a hypothetical future in which AI has driven the material cost
+of food, energy, and shelter to nearly zero, every meal a person
+eats is still \arb{rizq}. It still has a source. It still has a
+measure. It still arrives in a particular form, at a particular
+time, through a particular causal chain that, on the Akbarian view,
+is the appearance of an Unseen determination. The fact that the
+meal was generated by an AI-controlled vertical farm rather than by
+a peasant's labor does not change what \arb{rizq} is; it changes
+the causal chain that the actualization happens to use. The
+classical concept does not refer to peasant labor. It refers to
+the structure of provision.
+
+\begin{summarybox}[A point about ontology]
+The classical metaphysical concepts of Islamic economics are
+\textit{ontological} concepts. They are claims about what kind of
+thing a phenomenon is at the level of being. AI restructures the
+\textit{material substrate} on which manifest economic phenomena
+appear. The ontological concepts are about the relation between
+the manifest layer and the Unseen layer; they do not depend on the
+specific material substrate. Restructuring the substrate does not
+touch the ontology.
+\end{summarybox}
+
+This is a general point. Provision-from-the-Unseen is the
+structural claim. It applies to manna in the desert; to a
+medieval farmer's harvest; to a 19th-century industrial wage; to
+a 21st-century AI-mediated income. The substrate varies; the
+structure is invariant.
+
+\section{Barakah is not about scarcity either}
+\label{sec:barakah-not-scarcity}
+
+The same point applies, even more sharply, to \arb{barakah}.
+
+In the metaphysical treatment developed in the main treatise,
+\arb{barakah} is the \textit{thickness of manifestation} --- a
+measure of how much of the underlying field of divine names is
+disclosed in a given manifest event. A meal eaten in \arb{niyyah}
+with a parent and a child carries a thicker disclosure than a
+thousand identical meals consumed without orientation, even if the
+material content is identical. A modest income spent in alignment
+with the Real carries thicker disclosure than a vast income spent
+without.
+
+This characterization makes the durability point obvious in the
+opposite direction. \arb{Barakah} is not affected by the
+\textit{quantity} of material plenty available. It is affected by
+the \textit{thickness} of manifestation. A society of immense
+material abundance can have very little \arb{barakah}, if its
+abundance is undirected and consumed without orientation. A
+society of modest material conditions can have great \arb{barakah},
+if its modest provision is realized in alignment with the Real.
+
+\textit{The question of which abundance carries thick disclosure
+and which is thin material plenty becomes more urgent in an
+AI-abundant future, not less.} We are about to be drowned in cheap
+content, cheap goods, cheap services. What makes any of it carry
+meaning? What makes any of it matter? The classical Islamic
+answer --- that meaning is a function of \arb{niyyah}'s alignment
+with the Real and that thick manifestation is the visible
+correlate of that alignment --- becomes a more pressing
+philosophical claim, not a quaint historical one, when material
+constraint is no longer the carrier of meaning by default.
+
+\section{Niyyah becomes more central, not less}
+\label{sec:niyyah-central}
+
+The strongest single point. In a world of significant material
+constraint, action carries default meaning by virtue of its
+struggle and stakes. The medieval farmer's bread is laden with
+effort, weather, prayer, risk; the meaning of the action is
+co-extensive with its material conditions. In a world where AI
+performs most material tasks at near-zero cost, that automatic
+correlation between effort and meaning is broken. What
+distinguishes meaningful action from meaningless action can no
+longer be effort, output, or material consequence --- because
+those have become trivially achievable.
+
+What remains, on the classical Islamic view, is \arb{niyyah}.
+Intention --- the orientation of the soul toward the Real or away
+from it --- is what differentiates a meaningful action from a
+materially identical meaningless one. \textit{The hadith of
+\arb{niyyat} (``actions are by intentions'') is, in an AI economy,
+a more pressing claim than it has ever been} --- because in such
+an economy intentions are essentially the only thing left that can
+distinguish significant action from null activity.
+
+Concretely: an AI agent can write a poem. A human can write a
+poem. The poems may be materially indistinguishable. What is the
+difference? The classical Islamic answer is the \arb{niyyah} of
+the writer --- the orientation through which the act is performed.
+A poem written in remembrance of the Real, by a soul oriented
+toward the Real, is a different kind of thing than a stochastic
+generation of similar text by a system whose architecture has no
+orientation.
+
+This is the kind of claim that Penrose's argument from G\"odel's
+incompleteness --- that human mathematical understanding is
+non-algorithmic in principle, and that intention is therefore not
+a computational state --- is built to support. The argument
+becomes \textit{more} relevant in an AI economy, not less, because
+the AI economy raises in stark form the question of whether human
+action is ever more than what the algorithms can simulate. The
+Akbarian answer (yes, because \arb{niyyah} is non-computable) is
+suddenly load-bearing for the question of whether human work is
+distinguishable in principle from AI-generated work.
+
+\section{Riba's metaphysical critique survives AI cleanly}
+\label{sec:riba-survives}
+
+The metaphysical critique of \arb{riba} developed in the main
+treatise is that \arb{riba} is \textit{ontological inversion} ---
+the claim that capital can grow autonomously, without coupling to
+productive engagement with reality. The visible economic
+consequence (debt-driven instability, financial entropy) is
+downstream of the deeper inversion: the attribution of creative
+power to a created thing.
+
+Far from being weakened by AI, this critique applies more directly
+to AI-driven autonomous financial systems than it does to medieval
+moneylending. Consider:
+
+\begin{itemize}[leftmargin=2em]
+    \item AI-managed trading bots compounding returns through
+    high-frequency arbitrage, with no human judgment in the loop,
+    are structurally identical to interest-bearing debt at the
+    metaphysical level: they claim creative power for an autonomous
+    system divorced from manifest productive engagement.
+
+    \item AI-portfolio managers running on autopilot, generating
+    returns on capital with minimal human cognitive participation,
+    intensify the same inversion.
+
+    \item Algorithmic stablecoins, lending protocols, and
+    decentralized finance more generally instantiate the
+    \arb{riba} structure with extraordinary fidelity --- capital
+    growth as the output of an autonomous system, with no
+    human \arb{niyyah} mediating between the capital and its
+    visible appreciation.
+\end{itemize}
+
+If the medieval moneylender represented a partial instance of the
+\arb{riba} inversion (because the moneylender at least knew his
+borrowers and made human judgments about credit), the
+fully-automated AI financial system represents the limiting case.
+The inversion is structural and complete: capital grows, no
+\arb{niyyah} is involved, no productive engagement underwrites the
+growth, and no human judgment couples the system to the manifest
+ground from which legitimate growth can come.
+
+\textit{The metaphysical critique of \arb{riba} is sharpened by AI,
+not dulled by it.}
+
+\section{Halal and haram become more, not less, important}
+\label{sec:halal-haram}
+
+In the main treatise's worked treatment, \arb{halal} and
+\arb{haram} are treated as different modes of structural
+engagement with the Real, not as a list of permitted and forbidden
+items. The \arb{halal} mode of engagement is one in which the
+manifest action is aligned with the deeper structure of being; the
+\arb{haram} mode is one in which the action is misaligned, a
+disclosure of falsity rather than truth.
+
+A society that can build anything but does not know why is not a
+fulfilled society --- it is a confused one. AI-abundance presents
+exactly this challenge: capacity divorced from orientation,
+production divorced from purpose. The \arb{halal}/\arb{haram}
+distinction --- as a structural rather than juridical claim --- is
+precisely what such a society lacks and what it most needs.
+
+The juristic content of \arb{halal} and \arb{haram} (which
+transactions are permitted, which prohibited) will need to be
+extended and reinterpreted to handle AI-mediated phenomena that
+classical jurists could not have anticipated. That work is
+important and will be done in subsequent volumes. But the
+\textit{metaphysical structure} of the distinction --- aligned vs.
+misaligned modes of engagement with the Real --- does not need
+extension. It applies, intact, to every action a human or
+AI-mediated system might take.
+
+\section{The historical pattern}
+\label{sec:historical-pattern}
+
+A useful sanity check: every previous productivity revolution has
+produced predictions that the questions of human meaning would
+dissolve. None has. They have sharpened.
+
+The Industrial Revolution produced predictions, from various
+positions on the political spectrum, that material plenty would
+make traditional moral and metaphysical concerns obsolete. Marx
+and the early socialist tradition expected that material abundance
+would dissolve alienation; classical liberal optimists expected
+that scientific rationality would supersede religious tradition.
+What actually happened is the opposite: the 20th century's
+existential crisis was the 20th century's defining intellectual
+phenomenon, and traditional metaphysical concerns returned in
+force --- in phenomenology, in personalism, in the great religious
+revivals of the postwar period, and in the various confused
+spiritualities of the late 20th century that were attempting,
+often badly, to fill the meaning gap that the productive
+revolution had created.
+
+The same pattern will hold in the AI revolution. Material
+questions will be answered (food, shelter, basic goods will become
+cheaper, perhaps drastically so). The metaphysical questions ---
+what is meaningful action? what is human flourishing? what is the
+orientation of a soul that has been freed from material
+constraint? --- will sharpen, not dissolve. A serious metaphysical
+foundation for thinking about these questions will be \textit{more}
+needed in an AI-restructured world than it is now.
+
+\section{What \textit{would} be vulnerable}
+\label{sec:vulnerable}
+
+It is worth being honest about what would, in fact, age. Not
+everything in the broader Islamic-economics project survives AI
+restructuring intact. Specifically:
+
+\begin{itemize}[leftmargin=2em]
+    \item The \textbf{ergodic treatment of \arb{riba}} (which
+    formalizes the financial-entropy claim using time-vs-ensemble
+    averages on wealth dynamics) depends on the specific
+    structure of contemporary financial markets. If AI radically
+    restructures those markets --- producing UBI-dominated
+    income, eliminating wage volatility, transforming the
+    structure of household balance sheets --- the specific
+    dynamics that the ergodic model tracks would change, and
+    the model would need rebuilding.
+
+    \item The \textbf{network-theoretic treatment of \arb{rizq}}
+    (which uses super-linear scaling on family-and-community
+    networks to articulate why provision is structurally
+    multiplicative under Islamic conditions) depends on the
+    specific structure of contemporary household provisioning.
+    If AI shifts the locus of provisioning from family networks
+    to AI-mediated services, the network model becomes a model
+    of an institution that no longer exists in the same form.
+
+    \item The \textbf{behavioral mediation account of
+    \arb{barakah}} (which traces gratitude-driven productivity
+    effects through specific behavioral feedback loops) depends
+    on the specific psychology of contemporary humans interacting
+    with each other in conventional economic settings. If AI
+    radically alters how decisions are made, who makes them, and
+    what their consequences look like, the specific mediating
+    psychology that the model traces would shift.
+\end{itemize}
+
+These three lines of work --- the ergodic, network-theoretic, and
+behavioral treatments --- are precisely the work that has been
+separated, in the present author's project, from the metaphysical
+treatise and consigned to a separate companion volume in
+heterodox Islamic economics. That separation, made on
+methodological grounds (the applied work and the metaphysical work
+operate in different registers and are better served by being
+treated separately), turns out to have an additional advantage:
+\textit{it places the durable work in one volume and the
+material-structure-dependent work in another}. The metaphysical
+volume is not exposed to the kind of empirical aging that the
+applied volume is. The former articulates structural claims about
+being; the latter articulates dynamic claims about specific
+phenomena.
+
+\begin{contrastbox}[The asymmetry of durability]
+\textbf{Metaphysical work} (claims about the structure of being):
+durable across material restructurings. Aristotle's
+\textit{Metaphysics} is not outdated by quantum mechanics; Ibn
+\arb{Arabi}'s metaphysics is not outdated by AI.
+
+\textbf{Applied work} (claims about specific empirical
+regularities): contingent on the material structures it models.
+A model of debt-deflation calibrated to 2025 financial markets
+will need recalibration for 2050 financial markets.
+
+The decision to separate the metaphysical project from the
+applied project was made for methodological reasons but turns
+out to confer a durability advantage as well. The metaphysical
+project ages well; the applied project ages with the economy it
+models.
+\end{contrastbox}
+
+\section{Strategic implication}
+\label{sec:strategic}
+
+The note began with a question that had a strategic edge: is it
+worth committing serious time to the metaphysical foundation of
+Islamic economics, given that AI may radically restructure the
+material economy in ways that make the entire framework seem
+quaint?
+
+The answer the note has developed is that the strategic logic
+points the other way. \textit{Metaphysical work is the more
+durable use of time, not the less.} Applied work depends on
+specific empirical structures that AI may transform. Metaphysical
+work makes claims at a level that AI does not touch.
+
+If anything, AI's restructuring of the material economy makes the
+strategic case for metaphysical work \textit{stronger}, for two
+reasons:
+
+First, the loss of conventional meaning structures that
+accompanies large material transitions creates a sustained demand
+for deep metaphysical orientation. The post-industrial 20th
+century produced an ongoing meaning crisis that the Islamic
+tradition was, in many places, well-positioned to address. The
+post-AI 21st century will produce an even more acute version of
+the same crisis. A serious metaphysical foundation for Islamic
+economic thought is one of the few stable platforms from which to
+address it.
+
+Second, the applied work that depends on specific material
+regularities is going to need substantial rebuilding regardless of
+the metaphysical foundation's contribution. Building the
+metaphysical foundation now means that, when the time comes to
+rebuild the applied work, the foundation is already in place.
+Without the foundation, the rebuilt applied work is liable to
+inherit the same diluted methodological status that has plagued
+the existing literature.
+
+\textit{The book on the metaphysics of Islamic economics is the
+right project to be working on now}, even --- and perhaps
+especially --- given the AI transformation that may be coming.
+The applied work that surrounds it will age. The metaphysical
+work will not.
+
+\section{Coda: a note on register}
+\label{sec:coda}
+
+There is one final point, made implicitly throughout but worth
+stating directly. The view that classical Islamic metaphysics
+might come to seem ``outdated and funny'' in an AI economy is a
+view from inside a particular cultural moment --- one in which
+material progress is felt to be the master narrative of human
+history and the religious-metaphysical tradition is felt to be a
+remnant of pre-modern thought.
+
+This view is itself a product of the 17th-century mechanistic
+worldview that Nasr (1981) and others have analyzed in detail. It
+takes the priority of material development to be obvious; it
+takes the contingency of religious and metaphysical claims to be
+obvious. From inside that view, of course any project grounded in
+Akbarian metaphysics looks vulnerable to material change.
+
+The view from inside the Akbarian framework is different. From
+that view, material reality is a layer of disclosure, not a
+foundation. The structures of being --- \arb{wujud} as the One,
+\arb{tajalli} as self-disclosure, \arb{niyyah} as the orientation
+of the soul --- are prior to the material substrate, not derived
+from it. Within that framework, AI's transformation of the
+material substrate is a change at a derived level. It does not
+threaten the underlying ontology; it simply produces new
+manifestations whose structural features can be read with the
+same metaphysical apparatus.
+
+The book this note accompanies takes the second view. This note
+itself is one piece of evidence for why the second view is
+defensible: when one applies the apparatus to the AI scenario, the
+classical concepts not only survive --- they articulate the AI
+scenario more incisively than the applied frameworks do. That
+incisiveness is what one expects from a robust metaphysics
+encountering a new material situation. It is not what one expects
+from period pieces.
+
+\vspace{1em}
+\hrule
+\vspace{0.5em}
+\noindent\textit{This note is a working draft. It will be developed
+further or absorbed into a closing chapter on contemporary
+relevance in a future revision of the main treatise.}
+
+\end{document}
