@@ -381,6 +381,14 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep02-marketplace-medina.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep02-marketplace-medina.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-05-podcast-ie-s1-ep02-marketplace-medina",
+          "generated_at": "2026-05-05T15:53:50.695415+00:00",
+          "json_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep02-marketplace-medina.json",
+          "markdown_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep02-marketplace-medina.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -393,6 +401,14 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep03-house-of-wisdom.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep03-house-of-wisdom.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-05-podcast-ie-s1-ep03-house-of-wisdom",
+          "generated_at": "2026-05-05T15:53:24.026681+00:00",
+          "json_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep03-house-of-wisdom.json",
+          "markdown_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep03-house-of-wisdom.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -405,6 +421,14 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep04-coins-caliphate.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep04-coins-caliphate.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-05-podcast-ie-s1-ep04-coins-caliphate",
+          "generated_at": "2026-05-05T15:53:04.719177+00:00",
+          "json_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep04-coins-caliphate.json",
+          "markdown_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep04-coins-caliphate.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -417,6 +441,14 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep05-caravans-cathay.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep05-caravans-cathay.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-05-podcast-ie-s1-ep05-caravans-cathay",
+          "generated_at": "2026-05-05T15:52:41.632417+00:00",
+          "json_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep05-caravans-cathay.json",
+          "markdown_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep05-caravans-cathay.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
