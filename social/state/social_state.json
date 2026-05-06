@@ -369,6 +369,14 @@
           "json_path": "social/campaigns/2026-03-22-podcast-ie-s1-ep01-forgotten-economists.json",
           "markdown_path": "social/campaigns/2026-03-22-podcast-ie-s1-ep01-forgotten-economists.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-06-podcast-ie-s1-ep01-forgotten-economists",
+          "generated_at": "2026-05-06T16:02:34.219795+00:00",
+          "json_path": "social/campaigns/2026-05-06-podcast-ie-s1-ep01-forgotten-economists.json",
+          "markdown_path": "social/campaigns/2026-05-06-podcast-ie-s1-ep01-forgotten-economists.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -554,6 +562,14 @@
           "json_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.json",
           "markdown_path": "social/campaigns/2026-03-21-podcast-ie-s1-ep06-waqf-charity.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-06-podcast-ie-s1-ep06-waqf-charity",
+          "generated_at": "2026-05-06T16:02:10.926752+00:00",
+          "json_path": "social/campaigns/2026-05-06-podcast-ie-s1-ep06-waqf-charity.json",
+          "markdown_path": "social/campaigns/2026-05-06-podcast-ie-s1-ep06-waqf-charity.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },

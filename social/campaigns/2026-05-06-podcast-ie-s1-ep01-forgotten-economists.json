@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-06-podcast-ie-s1-ep01-forgotten-economists",
+  "generated_at": "2026-05-06T16:02:34.219795+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-ie-s1-ep01-forgotten-economists",
+    "kind": "podcast",
+    "title": "The Forgotten Economists",
+    "summary": "Did you know that a 14th-century Muslim scholar described supply and demand, the division of labor, and the labor theory of value, four hundred years before Adam Smith?",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-1",
+    "published_at": "2025-01-06T08:00:00+00:00",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Did you know that a 14th-century Muslim scholar described supply and demand, the division of labor, and the labor theory of value, four hundred years before Adam Smith? In this pilot episode, we trace the entire arc of Islamic economic thought: from the bustling markets of pre-Islamic Mecca and the Prophet Muhammad's career as a merchant, through the golden age of scholars like Abu Yusuf, Al-Ghazali, and Ibn Khaldun, to the colonial disruption and the remarkable modern revival of Islamic finance. Topics: Pre-Islamic Trade, Prophet Muhammad (PBUH), Riba &amp; Zakat, Golden Age Scholars, Ibn Khaldun, Trade Networks, Modern Revival Series: Historical Islamic Economics (Part I) &bull; Episode 1 of 6",
+    "asset_url": "https://islamiceconomics.github.io/images/yt-thumb-ep01.png",
+    "local_asset_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/images/yt-thumb-ep01.png",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/feed.xml",
+    "local_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP01-The-Forgotten-Economists.mp4"
+  },
+  "channels": {
+    "x": {
+      "single_post": "Most people think economics began with Adam Smith. It actually began with Ibn Khaldun describing supply and demand in 14th-century Tunis.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "Most people think economics began with Adam Smith. It actually began with Ibn Khaldun describing supply and demand in 14th-century Tunis.",
+        "The Prophet Muhammad was a merchant before he was a prophet. Abu Yusuf wrote about market regulation. Al-Ghazali explained the division of labor.",
+        "Islamic scholars were mapping trade networks from Mecca to China while Europe was still in the Dark Ages. They understood money, markets, and human behavior.",
+        "We call it the birth of economics. They were just solving the problems of their time. Listen: https://islamiceconomics.github.io/podcast.html#ep-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-1"
+    },
+    "linkedin": {
+      "post": "Most people think economics began with Adam Smith in 1776. It actually began with Ibn Khaldun describing supply and demand in 14th-century Tunis\u2014four hundred years earlier. The Prophet Muhammad was a merchant before he was a prophet. Abu Yusuf wrote about market regulation. Al-Ghazali explained the division of labor. These weren't abstract theories developed in isolation. They were practical solutions for managing vast trade networks that connected Mecca to China. Islamic scholars were mapping economic principles while Europe was still emerging from the Dark Ages. They understood money, markets, and human behavior because they lived it daily in the bustling souks of Baghdad, Cairo, and Cordoba. We've forgotten an entire tradition of economic thought that preceded and influenced what we now call classical economics. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-1",
+      "comment_prompt": "What other historical economic insights do you think have been overlooked in mainstream economics education?"
+    },
+    "instagram": {
+      "caption": "Most people think economics began with Adam Smith in 1776. It actually began with Ibn Khaldun describing supply and demand in 14th-century Tunis\u2014four hundred years earlier. The Prophet Muhammad was a merchant before he was a prophet. Abu Yusuf wrote about market regulation. Al-Ghazali explained the division of labor and labor theory of value. These weren't abstract academic theories. They were practical solutions for managing trade networks that stretched from Mecca to Canton. Islamic scholars were mapping economic principles during Europe's Dark Ages. They understood money, markets, and human behavior because they lived it in the souks of Baghdad, Cairo, and Cordoba. We've forgotten an entire tradition that preceded classical economics. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-1 #IslamicEconomics #EconomicHistory #IbnKhaldun #IslamicFinance #History",
+      "carousel_slides": [
+        "Economics didn't start with Adam Smith",
+        "Ibn Khaldun described supply & demand in 14th-century Tunis",
+        "The Prophet Muhammad was a merchant first",
+        "Islamic scholars mapped trade from Mecca to China",
+        "We forgot 400 years of economic thought"
+      ],
+      "reel_caption": "The forgotten economists who came 400 years before Adam Smith. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-1 #IslamicEconomics #EconomicHistory #IbnKhaldun #IslamicFinance #History",
+      "cover_text": "The Forgotten Economists",
+      "image_url": "https://islamiceconomics.github.io/images/yt-thumb-ep01.png"
+    },
+    "upscrolled": {
+      "post": "Most people think economics began with Adam Smith. It actually began with Ibn Khaldun describing supply and demand in 14th-century Tunis.\n\nThe Prophet Muhammad was a merchant before he was a prophet. Islamic scholars were mapping trade networks from Mecca to China while Europe was still in the Dark Ages.\n\nWe've forgotten four hundred years of economic thought that preceded The Wealth of Nations.",
+      "discussion_prompt": "What other historical economic insights have been overlooked in mainstream education?",
+      "topic_suggestion": "Medieval Islamic Trade Networks",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-1"
+    },
+    "short_video": {
+      "title": "The Economists Before Adam Smith",
+      "hook": "Economics didn't start in 1776",
+      "voiceover": "Most people think economics began with Adam Smith in seventeen seventy-six. It actually began with Ibn Khaldun describing supply and demand in fourteenth-century Tunis. The Prophet Muhammad was a merchant before he was a prophet. Abu Yusuf wrote about market regulation. Al-Ghazali explained the division of labor. These Islamic scholars were mapping trade networks from Mecca to China while Europe was still in the Dark Ages. We call it the birth of economics. They were just solving the problems of their time. Four hundred years before The Wealth of Nations.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Old manuscript pages",
+          "on_screen_text": "Economics didn't start in 1776"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Map of medieval trade routes",
+          "on_screen_text": "Ibn Khaldun - 14th century Tunis"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Historical markets/souks",
+          "on_screen_text": "Islamic scholars mapped global trade"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Book covers/manuscripts",
+          "on_screen_text": "400 years before Adam Smith"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Modern economics textbooks",
+          "on_screen_text": "The forgotten economists"
+        }
+      ],
+      "caption": "The economists who came 400 years before Adam Smith. Islamic scholars were describing supply and demand while Europe was in the Dark Ages.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#EconomicHistory",
+        "#IbnKhaldun",
+        "#IslamicFinance",
+        "#History"
+      ],
+      "source_video_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast/youtube/EP01-The-Forgotten-Economists.mp4"
+    },
+    "threads": {
+      "post": "Most people think economics began with Adam Smith. It actually began with Ibn Khaldun describing supply and demand in 14th-century Tunis. The Prophet Muhammad was a merchant before he was a prophet. Abu Yusuf wrote about market regulation four hundred years before The Wealth of Nations. Al-Ghazali explained the division of labor while Europe was still in feudalism. These weren't abstract theories. They were practical solutions for managing trade networks that stretched from Mecca to Canton."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_118b5f57.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_118b5f57.png"
+}
