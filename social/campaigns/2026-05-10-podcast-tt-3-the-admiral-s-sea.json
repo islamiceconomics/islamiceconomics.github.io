@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-10-podcast-tt-3-the-admiral-s-sea",
+  "generated_at": "2026-05-10T14:50:39.874897+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-tt-3-the-admiral-s-sea",
+    "kind": "podcast",
+    "title": "The Admiral's Sea",
+    "summary": "From amir al-bahr to admiral: how Islamic naval power shaped the language of maritime command.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Every navy in the world uses a title born from Arabic: admiral, from amir al-bahr, meaning \"commander of the sea.\" Explore the 600-ship Fatimid navy, the Indian Ocean dhow trade, Zheng He's treasure fleets commanded by a Muslim admiral, and the tragic irony of how Islamic maritime knowledge enabled the very voyages that transformed global trade routes forever.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Every admiral in every navy carries an Arabic title. Admiral comes from amir al-bahr: commander of the sea.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Every admiral in every navy carries an Arabic title. Admiral comes from amir al-bahr: commander of the sea.",
+        "The Fatimids built a 600-ship navy that controlled the Mediterranean. Their maritime knowledge spread through trade routes across three continents.",
+        "Zheng He's treasure fleets were commanded by a Muslim admiral. Islamic navigation techniques guided the largest naval expeditions in history.",
+        "The same maritime knowledge that built Islamic sea power eventually enabled the voyages that bypassed Islamic trade routes entirely. https://islamiceconomics.github.io/podcast.html#ep-tt-3"
+      ],
+      "hashtags": [
+        "#IslamicHistory",
+        "#Maritime",
+        "#NavalHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-3"
+    },
+    "linkedin": {
+      "post": "The word \"admiral\" exists in every navy because it comes from Arabic: amir al-bahr, meaning \"commander of the sea.\" This linguistic legacy points to a maritime dominance we've largely forgotten. The Fatimids operated a 600-ship navy. Islamic merchants navigated dhows across the Indian Ocean using advanced celestial techniques. Even Zheng He's massive treasure fleets were commanded by a Muslim admiral. Yet here's the tragic irony: the same Islamic maritime knowledge that built this sea power eventually enabled the European voyages that bypassed Islamic trade routes entirely. The expertise that created global Islamic commerce became the foundation for its disruption. Sometimes the tools we share become the means of our own transformation. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-3",
+      "comment_prompt": "What other examples do you know of expertise that enabled its own disruption?"
+    },
+    "instagram": {
+      "caption": "Every admiral in every navy carries the same title, and it comes from Arabic: amir al-bahr, \"commander of the sea.\" This isn't just etymology. It's evidence of maritime dominance we've forgotten. The Fatimids built a 600-ship navy that controlled Mediterranean trade. Islamic merchants navigated dhows across the Indian Ocean using celestial techniques that were centuries ahead of their time. Even Zheng He's treasure fleets \u2014 the largest naval expeditions in history \u2014 were commanded by a Muslim admiral using Islamic navigation methods. But here's the twist that changes everything: the same maritime knowledge that built Islamic sea power eventually enabled the European voyages that bypassed Islamic trade routes entirely. The expertise that created a global Islamic trading network became the foundation for its own disruption. Sometimes sharing knowledge transforms the world in ways we never intended. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-tt-3 #IslamicHistory #Maritime #NavalHistory #GlobalTrade #Economics",
+      "carousel_slides": [
+        "Every admiral in every navy uses the same Arabic title: amir al-bahr",
+        "The Fatimids built a 600-ship navy that controlled the Mediterranean",
+        "Islamic merchants navigated dhows using advanced celestial techniques",
+        "Zheng He's treasure fleets were commanded by a Muslim admiral",
+        "The same maritime knowledge eventually enabled voyages that bypassed Islamic trade routes"
+      ],
+      "reel_caption": "The word \"admiral\" comes from Arabic amir al-bahr: commander of the sea. Every navy uses this title because Islamic maritime power once dominated global trade routes. #IslamicHistory #Maritime #Etymology",
+      "cover_text": "Why Every Admiral Has an Arabic Title",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Every admiral in every navy carries an Arabic title: amir al-bahr, commander of the sea. The linguistic legacy hints at maritime dominance we've largely forgotten.\n\nThe Fatimids operated a 600-ship navy. Islamic merchants navigated the Indian Ocean with celestial techniques centuries ahead of their time. Even Zheng He's treasure fleets were commanded by a Muslim admiral.\n\nThe irony cuts deep: the same maritime knowledge that built Islamic sea\u2026",
+      "discussion_prompt": "What other examples do you know of expertise that enabled its own disruption?",
+      "topic_suggestion": "The linguistic traces of forgotten\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-3"
+    },
+    "short_video": {
+      "title": "Why Every Admiral Has an Arabic Name",
+      "hook": "Every navy in the world uses the same title, and it comes from Arabic",
+      "voiceover": "Admiral. Every navy uses this title. But it comes from Arabic: amir al-bahr, commander of the sea. The Fatimids built a 600-ship navy. Islamic merchants navigated with advanced celestial techniques. Even Zheng He's treasure fleets had a Muslim admiral. But here's the twist: the same maritime knowledge that built Islamic sea power eventually enabled the European voyages that bypassed Islamic trade routes entirely. Sometimes sharing expertise transforms the world in ways we never intended.",
+      "shot_list": [
+        {
+          "time": "0-3s",
+          "visual": "Naval officers in different uniforms",
+          "on_screen_text": "Every Admiral"
+        },
+        {
+          "time": "4-8s",
+          "visual": "Arabic calligraphy of amir al-bahr",
+          "on_screen_text": "Amir al-Bahr"
+        },
+        {
+          "time": "9-15s",
+          "visual": "Medieval Islamic ships",
+          "on_screen_text": "600-Ship Fatimid Navy"
+        },
+        {
+          "time": "16-22s",
+          "visual": "Dhow sailing",
+          "on_screen_text": "Islamic Navigation"
+        },
+        {
+          "time": "23-30s",
+          "visual": "Zheng He's treasure ships",
+          "on_screen_text": "Muslim Admiral"
+        }
+      ],
+      "caption": "The word \"admiral\" exists in every navy because it comes from Arabic: amir al-bahr, meaning \"commander of the sea.\" The linguistic legacy of forgotten Islamic maritime dominance. #IslamicHistory #Maritime #Etymology #NavalHistory #GlobalTrade",
+      "hashtags": [
+        "#IslamicHistory",
+        "#Maritime",
+        "#Etymology",
+        "#NavalHistory",
+        "#GlobalTrade"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Every admiral in every navy carries an Arabic title. Admiral comes from amir al-bahr: commander of the sea. The Fatimids built a 600-ship navy that controlled the Mediterranean, while Islamic merchants navigated dhows across the Indian Ocean using celestial knowledge that would later guide Zheng He's treasure fleets under a Muslim admiral. The irony cuts deep: the same maritime expertise that built Islamic sea power eventually enabled the European voyages that bypassed Islamic trade routes\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_7bb90e1a.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_7bb90e1a.png"
+}

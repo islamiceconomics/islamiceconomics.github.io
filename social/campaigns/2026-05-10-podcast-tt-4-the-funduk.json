@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-10-podcast-tt-4-the-funduk",
+  "generated_at": "2026-05-10T14:51:04.674724+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-tt-4-the-funduk",
+    "kind": "podcast",
+    "title": "The Funduk",
+    "summary": "From makhzan to magazine: the trade infrastructure that connected three continents.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. Step inside the medieval funduk, the complete trade ecosystem with warehouses, lodging, money changers, and translators. Explore the 3,000-strong caravanserai network, the waqf endowments that funded public infrastructure, and how Venice's fondaco district was inspired by Islamic institutional design.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Most people think warehouses store goods. In medieval Islam, the funduk stored entire civilizations. Warehouse, hotel, bank, translation center, and law court under one roof.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. But medieval Islamic funduks were far more than storage spaces.",
+        "A single funduk contained warehouses, lodging for merchants, money changers, translators, and even courts to settle disputes. Complete trade ecosystems.",
+        "The caravanserai network stretched 3,000 locations across three continents. Venice's fondaco district copied the model centuries later.",
+        "Waqf endowments funded this public infrastructure. From makhzan to magazine: the Arabic word traveled as far as the trade routes themselves. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-4"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#TradeHistory",
+        "#MedievalCommerce"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-4"
+    },
+    "linkedin": {
+      "post": "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. But medieval Islamic funduks were revolutionary business ecosystems that went far beyond storage. Imagine a single building that housed warehouses, merchant lodging, money changers, translators, and courts to settle disputes. These complete trade infrastructures formed a 3,000-strong caravanserai network spanning three continents. Waqf endowments funded this public infrastructure, creating the institutional framework that enabled medieval global commerce. Venice's fondaco district would later adopt this Islamic model. From makhzan to magazine: sometimes the most familiar words carry the deepest histories. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-4",
+      "comment_prompt": "What modern business models remind you of these medieval trade ecosystems?"
+    },
+    "instagram": {
+      "caption": "The word \"magazine\" comes from Arabic makhzan (warehouse). But medieval Islamic funduks were complete trade civilizations under one roof. Picture this: warehouse + hotel + bank + translation center + courthouse = funduk. A 3,000-location network connecting three continents. Venice's fondaco district? They copied the Islamic model centuries later. Waqf endowments funded this public infrastructure that enabled medieval global commerce. From makhzan to magazine: the Arabic etymology traveled as far as the trade routes themselves. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-tt-4 #IslamicEconomics #TradeHistory #MedievalCommerce #Etymology #Infrastructure",
+      "carousel_slides": [
+        "The word \"magazine\" comes from Arabic makhzan meaning warehouse",
+        "Medieval Islamic funduks: Warehouse + Hotel + Bank + Court in one building",
+        "3,000 caravanserai locations connected three continents",
+        "Venice's fondaco district copied the Islamic funduk model",
+        "Waqf endowments funded this revolutionary trade infrastructure"
+      ],
+      "reel_caption": "From makhzan to magazine: how Arabic shaped the word we use today. Medieval Islamic funduks were complete trade ecosystems that connected civilizations. #IslamicEconomics #Etymology #TradeHistory",
+      "cover_text": "MAGAZINE = Arabic MAKHZAN",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The word \"magazine\" traces back to Arabic makhzan, meaning warehouse. Medieval Islamic funduks weren't just storage spaces.\n\nThey were complete trade ecosystems: warehouse, hotel, bank, translation center, and courthouse under one roof. A 3,000-strong network spanning three continents.\n\nVenice's fondaco district copied this Islamic institutional model centuries later.",
+      "discussion_prompt": "What modern infrastructure combines multiple functions like these medieval trade centers?",
+      "topic_suggestion": "Etymology of common English words from\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-4"
+    },
+    "short_video": {
+      "title": "Why \"Magazine\" is Actually Arabic",
+      "hook": "The word magazine comes from Arabic makhzan",
+      "voiceover": "The word magazine comes from Arabic makhzan, meaning warehouse. But medieval Islamic funduks were far more than storage. Picture a single building with warehouses, merchant lodging, money changers, translators, and courts. Complete trade ecosystems. This 3,000-strong caravanserai network connected three continents. Venice's fondaco district copied the model centuries later. From makhzan to magazine: Arabic words traveled as far as the trade routes themselves.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Medieval Islamic architecture",
+          "on_screen_text": "MAGAZINE = MAKHZAN (Arabic)"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Bustling medieval marketplace",
+          "on_screen_text": "FUNDUK: Complete Trade Ecosystem"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Map showing trade routes",
+          "on_screen_text": "3,000 Locations Across 3 Continents"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Venice architecture",
+          "on_screen_text": "Venice Copied the Islamic Model"
+        },
+        {
+          "time": "35-40s",
+          "visual": "Modern magazine covers",
+          "on_screen_text": "Arabic Etymology Lives On"
+        }
+      ],
+      "caption": "From makhzan to magazine: how medieval Islamic trade infrastructure gave us a word we use every day. The funduk model connected civilizations across three continents.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Etymology",
+        "#TradeHistory",
+        "#Arabic",
+        "#MedievalCommerce"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Most people think warehouses store goods. In medieval Islam, the funduk stored entire civilizations. Warehouse, hotel, bank, translation center, and law court under one roof. The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. But these weren't just storage spaces. A 3,000-strong caravanserai network connected three continents, with each funduk serving as a complete trade ecosystem. Venice later copied this model for their fondaco district."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_21184b76.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_21184b76.png"
+}

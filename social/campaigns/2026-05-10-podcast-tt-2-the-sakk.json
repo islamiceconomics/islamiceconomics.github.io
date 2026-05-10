@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-10-podcast-tt-2-the-sakk",
+  "generated_at": "2026-05-10T14:50:13.186102+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-tt-2-the-sakk",
+    "kind": "podcast",
+    "title": "The Sakk",
+    "summary": "The medieval Islamic bill of exchange that became the modern cheque, and the trust networks that made it possible.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In the 9th century, Baghdad's jahbadh bankers created a system where a piece of paper could move wealth across continents without a single gold coin traveling. The sakk, or bill of exchange, enabled the hawala trust network and mudaraba profit-sharing partnerships. Discover how this Islamic financial innovation became the English word \"cheque\" and laid the foundations for modern banking.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "A 9th-century Baghdad banker could write a piece of paper that moved gold across continents without a single coin traveling. The sakk became the English word \"cheque.\" https://islamiceconomics.github.io/podcast.html#ep-tt-2",
+      "voice_pattern": "content_share",
+      "thread": [
+        "A 9th-century Baghdad banker could write a piece of paper that moved gold across continents without a single coin traveling.",
+        "The jahbadh bankers of Baghdad created the sakk \u2014 a bill of exchange that let merchants cash money 4,000 miles away on reputation alone.",
+        "This trust network enabled the hawala system and mudaraba partnerships. Islamic finance moved wealth faster than armies could march.",
+        "We call it a \"cheque\" now, borrowing the Arabic word. Medieval Baghdad invented what we think is modern banking. https://islamiceconomics.github.io/podcast.html#ep-tt-2"
+      ],
+      "hashtags": [
+        "#IslamicFinance",
+        "#MedievalHistory",
+        "#Banking"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-2"
+    },
+    "linkedin": {
+      "post": "In 9th-century Baghdad, jahbadh bankers revolutionized commerce with a simple piece of paper called the sakk. This bill of exchange could move wealth across continents without a single gold coin traveling the route. The system relied entirely on trust networks \u2014 hawala systems and mudaraba partnerships that connected merchants from Spain to China. A trader in Baghdad could write a note that would be honored 4,000 miles away in Canton, purely on reputation. This wasn't just clever bookkeeping. It was the foundation of modern banking, created centuries before European banks existed. The word \"cheque\" comes directly from the Arabic \"sakk.\" Medieval Islamic finance moved money faster than armies could march, enabling global trade on a scale that wouldn't be seen again for centuries. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-2",
+      "comment_prompt": "What modern financial innovations do you think have similar trust-based foundations?"
+    },
+    "instagram": {
+      "caption": "In 9th-century Baghdad, a piece of paper could move gold across continents without a single coin traveling. The jahbadh bankers created the sakk \u2014 a bill of exchange that became our modern cheque. These trust networks connected merchants from Spain to China through hawala systems and mudaraba partnerships. A trader could write a note in Baghdad that would be honored 4,000 miles away, purely on reputation. Islamic finance moved wealth faster than armies could march. We borrowed the Arabic word and called it innovation. Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-2 #IslamicFinance #MedievalHistory #Banking #Economics #Trust",
+      "carousel_slides": [
+        "9th-century Baghdad: A piece of paper moves gold across continents",
+        "The jahbadh bankers created the sakk \u2014 our modern \"cheque\"",
+        "Trust networks connected Spain to China through hawala systems",
+        "A note written in Baghdad honored 4,000 miles away",
+        "Islamic finance moved wealth faster than armies could march"
+      ],
+      "reel_caption": "How medieval Baghdad invented modern banking with just trust and paper \ud83d\udcdc Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-2 #IslamicFinance #Banking #History",
+      "cover_text": "Medieval Banking Revolution",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Baghdad's 9th-century bankers solved a problem that seems impossible: how do you move gold across continents without actually moving gold?\n\nThe jahbadh bankers created the sakk \u2014 a bill of exchange built on pure trust. A merchant could write a note that would be honored thousands of miles away, enabling global trade through hawala networks.\n\nWe call it a \"cheque\" now, borrowing their Arabic word and calling it innovation.",
+      "discussion_prompt": "What role does trust play in our current financial systems?",
+      "topic_suggestion": "Medieval Islamic banking innovations",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-2"
+    },
+    "short_video": {
+      "title": "How Baghdad Invented the Cheque",
+      "hook": "A piece of paper in 9th-century Baghdad could move gold across continents",
+      "voiceover": "In 9th-century Baghdad, jahbadh bankers created something revolutionary: the sakk. This piece of paper could move wealth across continents without a single gold coin traveling. The system relied on trust networks connecting merchants from Spain to China. A trader could write a note in Baghdad that would be honored 4,000 miles away, purely on reputation. Islamic finance moved money faster than armies could march. We borrowed their Arabic word and call it a cheque today.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ancient Baghdad skyline",
+          "on_screen_text": "Baghdad, 9th Century"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Merchant writing on parchment",
+          "on_screen_text": "The Sakk: Medieval Bill of Exchange"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Map showing trade routes",
+          "on_screen_text": "Trust Networks Across Continents"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Merchant in distant city receiving payment",
+          "on_screen_text": "4,000 Miles. Pure Reputation."
+        },
+        {
+          "time": "35-40s",
+          "visual": "Modern cheque being written",
+          "on_screen_text": "Arabic 'Sakk' = English 'Cheque'"
+        }
+      ],
+      "caption": "How Baghdad's bankers invented the cheque 1,200 years ago \u270d\ufe0f Listen: https://islamiceconomics.github.io/podcast.html#ep-tt-2",
+      "hashtags": [
+        "#IslamicFinance",
+        "#Banking",
+        "#History",
+        "#Baghdad",
+        "#Innovation"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "A 9th-century Baghdad banker could write a piece of paper that moved gold across continents without a single coin traveling. The jahbadh bankers created the sakk \u2014 a bill of exchange that became our modern cheque. These trust networks enabled hawala systems and mudaraba profit-sharing partnerships, moving wealth faster than armies could march. We borrowed the Arabic word and called it innovation."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_5bf7a76c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_5bf7a76c.png"
+}

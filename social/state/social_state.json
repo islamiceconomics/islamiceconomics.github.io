@@ -918,6 +918,14 @@
           "json_path": "social/campaigns/2026-03-25-podcast-tt-1-the-word-tariff.json",
           "markdown_path": "social/campaigns/2026-03-25-podcast-tt-1-the-word-tariff.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-10-podcast-tt-1-the-word-tariff",
+          "generated_at": "2026-05-10T14:49:47.856875+00:00",
+          "json_path": "social/campaigns/2026-05-10-podcast-tt-1-the-word-tariff.json",
+          "markdown_path": "social/campaigns/2026-05-10-podcast-tt-1-the-word-tariff.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -930,6 +938,14 @@
           "json_path": "social/campaigns/2026-03-25-podcast-tt-2-the-sakk.json",
           "markdown_path": "social/campaigns/2026-03-25-podcast-tt-2-the-sakk.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-10-podcast-tt-2-the-sakk",
+          "generated_at": "2026-05-10T14:50:13.186102+00:00",
+          "json_path": "social/campaigns/2026-05-10-podcast-tt-2-the-sakk.json",
+          "markdown_path": "social/campaigns/2026-05-10-podcast-tt-2-the-sakk.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -942,6 +958,14 @@
           "json_path": "social/campaigns/2026-03-25-podcast-tt-3-the-admiral-s-sea.json",
           "markdown_path": "social/campaigns/2026-03-25-podcast-tt-3-the-admiral-s-sea.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-10-podcast-tt-3-the-admiral-s-sea",
+          "generated_at": "2026-05-10T14:50:39.874897+00:00",
+          "json_path": "social/campaigns/2026-05-10-podcast-tt-3-the-admiral-s-sea.json",
+          "markdown_path": "social/campaigns/2026-05-10-podcast-tt-3-the-admiral-s-sea.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -953,6 +977,14 @@
           "generated_at": "2026-03-25T14:58:04.720162+00:00",
           "json_path": "social/campaigns/2026-03-25-podcast-tt-4-the-funduk.json",
           "markdown_path": "social/campaigns/2026-03-25-podcast-tt-4-the-funduk.md",
+          "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-10-podcast-tt-4-the-funduk",
+          "generated_at": "2026-05-10T14:51:04.674724+00:00",
+          "json_path": "social/campaigns/2026-05-10-podcast-tt-4-the-funduk.json",
+          "markdown_path": "social/campaigns/2026-05-10-podcast-tt-4-the-funduk.md",
           "x_voice_pattern": "reframing"
         }
       ]
