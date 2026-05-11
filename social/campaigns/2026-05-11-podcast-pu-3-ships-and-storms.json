@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-11-podcast-pu-3-ships-and-storms",
+  "generated_at": "2026-05-11T16:35:26.552341+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-pu-3-ships-and-storms",
+    "kind": "podcast",
+    "title": "Ships and Storms",
+    "summary": "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "A dhow loaded with pepper and silk leaves Aden for Gujarat. The voyage takes weeks. Pirates, storms, and shipwrecks are real possibilities. How do you finance a journey when insurance is forbidden and charging interest is a sin? Islamic merchants solved this through mudaraba: one partner provides the capital, the other provides the labor and expertise, and they share the profit or loss. It was venture capital a thousand years before Silicon Valley. This episode follows the Indian Ocean trade routes and shows how the prohibition on gharar didn't prevent commerce; it created more equitable ways to share risk.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Islamic merchants financed risky voyages without insurance or interest through mudaraba. One partner provided capital, the other expertise, and they split profit or loss. It was venture capital 1,000 years before Silicon Valley.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Islamic merchants financed risky voyages without insurance or interest through mudaraba. One partner provided capital, the other expertise, and they split profit or loss.",
+        "A dhow loaded with pepper and silk leaves Aden for Gujarat. Pirates and storms are real possibilities. How do you fund the journey when charging interest is forbidden?",
+        "The answer wasn't to avoid risk. It was to share it more equitably. Capital and labor become partners, not creditor and debtor.",
+        "The prohibition on gharar didn't prevent commerce. It created fairer ways to distribute both opportunity and loss across the Indian Ocean trade routes. https://islamiceconomics.github.io/podcast.html#ep-pu-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Trade",
+        "#Finance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-3"
+    },
+    "linkedin": {
+      "post": "How did Islamic merchants finance dangerous voyages across the Indian Ocean without insurance or interest-based lending? Through mudaraba\u2014a partnership where one provides capital, the other provides expertise, and they share both profits and losses. A dhow loaded with pepper and silk leaves Aden for Gujarat. The voyage takes weeks, with pirates, storms, and shipwrecks as real possibilities. Instead of avoiding risk, Islamic finance created more equitable ways to distribute it. This wasn't just trade\u2014it was venture capital operating 1,000 years before Silicon Valley. The prohibition on gharar didn't prevent commerce; it fostered innovation in risk-sharing that connected continents. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-3",
+      "comment_prompt": "What modern financial innovations could learn from medieval Islamic risk-sharing principles?"
+    },
+    "instagram": {
+      "caption": "Islamic merchants solved a problem that seems impossible: how do you finance risky voyages across the Indian Ocean without insurance or interest-based lending? Their answer: mudaraba. One partner provides the capital, the other provides the labor and expertise. They share the profit or loss together. A dhow loaded with pepper and silk leaves Aden for Gujarat. Weeks at sea, facing pirates and storms. But instead of avoiding risk, they found more equitable ways to share it. It was venture capital operating 1,000 years before Silicon Valley existed. The prohibition on gharar didn't prevent commerce\u2014it created innovation in finance that connected continents and cultures. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-3 #IslamicEconomics #Trade #Finance #History #Innovation",
+      "carousel_slides": [
+        "Ships and Storms: How Islamic merchants managed risk without insurance",
+        "The Challenge: Finance dangerous voyages when charging interest is forbidden",
+        "The Solution: Mudaraba - capital meets expertise, profits and losses shared",
+        "The Result: Venture capital 1,000 years before Silicon Valley",
+        "Innovation through constraint: prohibition on gharar created fairer finance"
+      ],
+      "reel_caption": "How Islamic merchants created venture capital 1,000 years before Silicon Valley \ud83d\udea2 #IslamicEconomics #Trade #Finance #History #Innovation",
+      "cover_text": "Venture Capital Before Silicon Valley",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Islamic merchants faced an impossible problem: financing dangerous voyages across the Indian Ocean when insurance and interest were forbidden. Their solution was mudaraba\u2014one partner provides capital, the other expertise, and they share profit or loss.\n\nA dhow loaded with pepper and silk leaves Aden for Gujarat, facing weeks of pirates and storms. Instead of avoiding risk, they found more equitable ways to distribute it.\n\nIt was venture capital\u2026",
+      "discussion_prompt": "How might modern finance change if we prioritized shared risk over guaranteed returns?",
+      "topic_suggestion": "Medieval innovation in Islamic finance",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-3"
+    },
+    "short_video": {
+      "title": "Islamic Venture Capital 1,000 Years Before Silicon Valley",
+      "hook": "How do you finance a dangerous voyage when charging interest is forbidden?",
+      "voiceover": "A dhow loaded with pepper and silk leaves Aden for Gujarat. Pirates and storms threaten the journey. Islamic merchants couldn't use insurance or charge interest. So they invented mudaraba. One partner provides capital, the other provides expertise. They share profits and losses together. It was venture capital operating a thousand years before Silicon Valley existed. The prohibition on gharar didn't stop commerce. It created fairer ways to share risk across the Indian Ocean.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Traditional dhow sailing on ocean",
+          "on_screen_text": "Dangerous Voyage"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Spices and silk being loaded",
+          "on_screen_text": "No Insurance. No Interest."
+        },
+        {
+          "time": "15-25s",
+          "visual": "Two merchants shaking hands",
+          "on_screen_text": "Mudaraba Partnership"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Split screen: profits/losses",
+          "on_screen_text": "Shared Risk = Shared Reward"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Map of Indian Ocean trade routes",
+          "on_screen_text": "Venture Capital: 1000 Years Early"
+        }
+      ],
+      "caption": "Islamic merchants created venture capital 1,000 years before Silicon Valley through mudaraba partnerships. Listen to the full episode.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Trade",
+        "#Finance",
+        "#History",
+        "#Innovation"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Islamic merchants financed risky voyages without insurance or interest through mudaraba. One partner provided capital, the other expertise, and they split profit or loss. It was venture capital 1,000 years before Silicon Valley existed. A dhow loaded with pepper and silk leaves Aden for Gujarat, facing weeks of pirates and storms. The prohibition on gharar didn't prevent commerce\u2014it created more equitable ways to share both opportunity and loss across the Indian Ocean trade routes."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_f67eb1d0.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f67eb1d0.png"
+}

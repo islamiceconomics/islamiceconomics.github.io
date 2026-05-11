@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-11-podcast-pu-1-the-forbidden-throw",
+  "generated_at": "2026-05-11T16:35:03.108980+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-pu-1-the-forbidden-throw",
+    "kind": "podcast",
+    "title": "The Forbidden Throw",
+    "summary": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But in Islamic law, the concept goes far deeper than gambling. The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't know what they're really buying. This episode traces the origins of this prohibition in the Quran and Hadith, explains why early Islamic jurists considered it as fundamental as the ban on riba, and shows how 7th-century contract law was already solving problems that would crash modern financial markets fourteen centuries later.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "The English word \"hazard\" comes from al-zahr, Arabic for dice.",
+        "The Prophet banned bay' al-gharar: transactions where one party doesn't know what they're really buying.",
+        "Early Islamic jurists considered this prohibition as fundamental as the ban on riba.",
+        "7th-century contract law was solving problems that would crash modern financial markets fourteen centuries later. https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+    },
+    "linkedin": {
+      "post": "The English word \"hazard\" comes from al-zahr, Arabic for dice. This linguistic connection reveals something profound about how Islamic economic principles shaped global understanding of risk. The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't know what they're really buying. Early Islamic jurists considered this prohibition as fundamental as the ban on riba. Remarkably, 7th-century Islamic contract law was already addressing systemic risks that would crash modern financial markets fourteen centuries later. The principles weren't just about individual fairness\u2014they were about protecting entire economic systems from uncertainty-based collapse. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+      "comment_prompt": "What other English words trace back to Arabic economic concepts?"
+    },
+    "instagram": {
+      "caption": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But this connection reveals something deeper about Islamic economic wisdom. The Prophet Muhammad banned bay' al-gharar: transactions where one party doesn't know what they're really buying. This wasn't just about gambling\u2014it was about any deal built on excessive uncertainty. Early Islamic jurists considered this prohibition as fundamental as the ban on riba. They understood that uncertainty-based transactions could destabilize entire markets. The remarkable thing? 7th-century Islamic contract law was solving problems that would crash modern financial markets fourteen centuries later. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-pu-1 #IslamicEconomics #History #Etymology #Finance #Risk",
+      "carousel_slides": [
+        "The English word \"hazard\" comes from al-zahr, Arabic for dice.",
+        "The Prophet banned bay' al-gharar: transactions built on excessive uncertainty.",
+        "One party not knowing what they're really buying was prohibited.",
+        "Islamic jurists considered this as fundamental as the ban on riba.",
+        "7th-century law solved problems that would crash modern markets."
+      ],
+      "reel_caption": "The surprising Arabic origin of the word \"hazard\" and why it matters for understanding Islamic economics. Listen to the full episode at the link in bio. #IslamicEconomics #Etymology #History #Finance #Risk",
+      "cover_text": "HAZARD = AL-ZAHR",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The English word \"hazard\" comes from al-zahr, Arabic for dice. The Prophet banned bay' al-gharar: transactions where one party doesn't know what they're really buying.\n\nEarly Islamic jurists treated this as fundamental as the ban on riba. 7th-century contract law was solving problems that would crash modern financial markets fourteen centuries later.",
+      "discussion_prompt": "How do you think ancient economic principles apply to modern financial uncertainty?",
+      "topic_suggestion": "Etymology of financial terms",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+    },
+    "short_video": {
+      "title": "Why \"Hazard\" Is an Arabic Word",
+      "hook": "The word \"hazard\" isn't English. It's Arabic.",
+      "voiceover": "The word \"hazard\" comes from al-zahr, Arabic for dice. But the Prophet Muhammad banned more than gambling. He prohibited bay' al-gharar: any transaction where one party doesn't know what they're buying. Early Islamic scholars considered this as important as banning interest. Think about it. Seventh-century law was solving problems that would crash our modern markets fourteen hundred years later. One Arabic word for dice became our word for danger.",
+      "shot_list": [
+        {
+          "time": "0-3s",
+          "visual": "Dice rolling on table",
+          "on_screen_text": "HAZARD"
+        },
+        {
+          "time": "3-8s",
+          "visual": "Arabic calligraphy",
+          "on_screen_text": "AL-ZAHR (dice)"
+        },
+        {
+          "time": "8-15s",
+          "visual": "Historical manuscript",
+          "on_screen_text": "Bay' al-gharar BANNED"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Modern trading floor",
+          "on_screen_text": "Unknown transactions"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Timeline graphic",
+          "on_screen_text": "7th century \u2192 Today"
+        }
+      ],
+      "caption": "The surprising journey from Arabic dice to English danger. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Etymology",
+        "#History",
+        "#Finance",
+        "#Risk"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But the Prophet's ban on bay' al-gharar went far beyond gambling. He prohibited any transaction built on excessive uncertainty, where one party doesn't know what they're really buying. Early Islamic jurists considered this as fundamental as the ban on riba. 7th-century contract law was already solving problems that would crash modern financial markets fourteen centuries later."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c429599d.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c429599d.png"
+}

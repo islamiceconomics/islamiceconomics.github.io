@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-11-podcast-pu-5-when-uncertainty-collapsed",
+  "generated_at": "2026-05-11T16:36:14.553124+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-pu-5-when-uncertainty-collapsed",
+    "kind": "podcast",
+    "title": "When Uncertainty Collapsed",
+    "summary": "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "A homeowner in Nevada takes a mortgage they can't afford. That mortgage is bundled with thousands of others into a CDO. The CDO is sliced into tranches rated AAA. Then someone buys insurance on that CDO using a credit default swap, without owning the bond. Layer upon layer of uncertainty, each one disguised as certainty. When the housing market turned, $10 trillion evaporated. This episode walks through the 2008 crisis step by step and asks: what would a classical Islamic jurist say? The answer is striking. Nearly every instrument at the heart of the crisis, from subprime ARMs to synthetic CDOs, would have been prohibited under gharar doctrine.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Most people think the 2008 crisis was about greed. It was actually about uncertainty disguised as certainty. A Nevada homeowner's unpayable mortgage became a AAA-rated bond that crashed when $10 trillion evaporated.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "A homeowner in Nevada takes a mortgage they can't afford. That mortgage gets bundled with thousands of others into a CDO. The CDO is sliced into tranches rated AAA.",
+        "Then someone buys insurance on that CDO using a credit default swap, without owning the bond. Layer upon layer of uncertainty, each one disguised as certainty.",
+        "When the housing market turned, $10 trillion evaporated. Classical Islamic jurists had a name for this: gharar. Excessive uncertainty in transactions.",
+        "Nearly every instrument at the heart of the crisis, from subprime ARMs to synthetic CDOs, would have been prohibited under gharar. https://islamiceconomics.github.io/podcast.html#ep-pu-5"
+      ],
+      "hashtags": [
+        "#gharar",
+        "#finance",
+        "#economics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-5"
+    },
+    "linkedin": {
+      "post": "The 2008 financial crisis wasn't just about greed. It was about layers of uncertainty packaged as certainty. A homeowner in Nevada takes a mortgage they can't afford. That mortgage gets bundled with thousands of others into a CDO. The CDO is sliced into tranches rated AAA. Then someone buys insurance on that CDO using a credit default swap, without owning the bond. Layer upon layer of uncertainty, each one disguised as certainty. When the housing market turned, $10 trillion evaporated. Classical Islamic jurists had a name for this: gharar. Excessive uncertainty in transactions. Nearly every instrument at the heart of the crisis would have been prohibited under this principle. What would our financial system look like if we designed it around transparency instead of complexity? Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-5",
+      "comment_prompt": "What role should uncertainty play in financial markets? How do we balance innovation with stability?"
+    },
+    "instagram": {
+      "caption": "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. A homeowner in Nevada takes a mortgage they can't afford. That mortgage gets bundled with thousands of others. The bundle gets sliced and rated AAA. Then someone buys insurance on it without owning it. When the housing market turned, $10 trillion evaporated. Classical Islamic jurists had a name for this kind of excessive uncertainty: gharar. Nearly every instrument at the heart of the crisis would have been prohibited under this principle. What if we designed finance around transparency instead of complexity? Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-5 #gharar #finance #economics #islamicfinance #uncertainty",
+      "carousel_slides": [
+        "The 2008 crisis wasn't about greed. It was about uncertainty disguised as certainty.",
+        "A Nevada mortgage becomes a CDO. The CDO becomes AAA-rated tranches. Someone insures it\u2026",
+        "Layer upon layer of gharar: excessive uncertainty in transactions.",
+        "When housing turned, $10 trillion evaporated. Classical Islamic law would have\u2026",
+        "What if we designed finance around transparency instead of complexity?"
+      ],
+      "reel_caption": "The 2008 crisis through Islamic economics: when uncertainty collapsed. #gharar #finance #economics #islamicfinance #uncertainty",
+      "cover_text": "When Uncertainty Collapsed: 2008 Through Islamic\u2026",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The 2008 financial crisis wasn't really about greed. It was about uncertainty disguised as certainty.\n\nA homeowner's unpayable mortgage became a AAA-rated bond. Someone bought insurance on that bond without owning it. When it collapsed, $10 trillion evaporated.\n\nClassical Islamic jurists called this gharar: excessive uncertainty in transactions. They would have prohibited nearly every instrument at the heart of the crisis.",
+      "discussion_prompt": "How do we balance financial innovation with the need for transparency and stability?",
+      "topic_suggestion": "Islamic principles in modern finance",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-5"
+    },
+    "short_video": {
+      "title": "The 2008 Crisis Through Islamic Economics",
+      "hook": "The 2008 financial crisis wasn't about greed. It was about something else entirely.",
+      "voiceover": "A homeowner in Nevada takes a mortgage they can't afford. That mortgage gets bundled into a CDO. The CDO gets sliced and rated AAA. Then someone buys insurance on it without owning the bond. Layer upon layer of uncertainty, disguised as certainty. When housing turned, ten trillion dollars evaporated. Classical Islamic jurists had a name for this: gharar. Excessive uncertainty in transactions. Nearly every instrument at the heart of the crisis would have been prohibited.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "House with foreclosure sign",
+          "on_screen_text": "Nevada, 2007"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Documents being bundled/stacked",
+          "on_screen_text": "Mortgages \u2192 CDO \u2192 AAA Rating"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Trading floor chaos",
+          "on_screen_text": "Insurance without ownership"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Falling numbers/red charts",
+          "on_screen_text": "$10 trillion evaporated"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Ancient Islamic text/manuscript",
+          "on_screen_text": "Gharar: Excessive uncertainty"
+        }
+      ],
+      "caption": "When uncertainty collapsed: the 2008 crisis through the lens of gharar.",
+      "hashtags": [
+        "#gharar",
+        "#finance",
+        "#economics",
+        "#islamicfinance",
+        "#uncertainty"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Most people think the 2008 crisis was about greed. It was actually about uncertainty disguised as certainty. A Nevada homeowner's unpayable mortgage became a AAA-rated bond, then insurance was sold on that bond by people who didn't own it. Layer upon layer of gharar. When the housing market turned, $10 trillion evaporated. Classical Islamic jurists would have prohibited nearly every instrument at the heart of the crisis."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_3f9b1615.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_3f9b1615.png"
+}

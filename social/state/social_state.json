@@ -714,6 +714,14 @@
           "json_path": "social/campaigns/2026-03-26-podcast-pu-1-the-forbidden-throw.json",
           "markdown_path": "social/campaigns/2026-03-26-podcast-pu-1-the-forbidden-throw.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-11-podcast-pu-1-the-forbidden-throw",
+          "generated_at": "2026-05-11T16:35:03.108980+00:00",
+          "json_path": "social/campaigns/2026-05-11-podcast-pu-1-the-forbidden-throw.json",
+          "markdown_path": "social/campaigns/2026-05-11-podcast-pu-1-the-forbidden-throw.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -726,6 +734,14 @@
           "json_path": "social/campaigns/2026-03-26-podcast-pu-3-ships-and-storms.json",
           "markdown_path": "social/campaigns/2026-03-26-podcast-pu-3-ships-and-storms.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-11-podcast-pu-3-ships-and-storms",
+          "generated_at": "2026-05-11T16:35:26.552341+00:00",
+          "json_path": "social/campaigns/2026-05-11-podcast-pu-3-ships-and-storms.json",
+          "markdown_path": "social/campaigns/2026-05-11-podcast-pu-3-ships-and-storms.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -738,6 +754,14 @@
           "json_path": "social/campaigns/2026-03-27-podcast-pu-4-selling-the-wind.json",
           "markdown_path": "social/campaigns/2026-03-27-podcast-pu-4-selling-the-wind.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-11-podcast-pu-4-selling-the-wind",
+          "generated_at": "2026-05-11T16:35:52.886925+00:00",
+          "json_path": "social/campaigns/2026-05-11-podcast-pu-4-selling-the-wind.json",
+          "markdown_path": "social/campaigns/2026-05-11-podcast-pu-4-selling-the-wind.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -750,6 +774,14 @@
           "json_path": "social/campaigns/2026-03-27-podcast-pu-5-when-uncertainty-collapsed.json",
           "markdown_path": "social/campaigns/2026-03-27-podcast-pu-5-when-uncertainty-collapsed.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-11-podcast-pu-5-when-uncertainty-collapsed",
+          "generated_at": "2026-05-11T16:36:14.553124+00:00",
+          "json_path": "social/campaigns/2026-05-11-podcast-pu-5-when-uncertainty-collapsed.json",
+          "markdown_path": "social/campaigns/2026-05-11-podcast-pu-5-when-uncertainty-collapsed.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -998,6 +1030,14 @@
           "json_path": "social/campaigns/2026-03-26-podcast-tt-5-risk-and-rizq.json",
           "markdown_path": "social/campaigns/2026-03-26-podcast-tt-5-risk-and-rizq.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-11-podcast-tt-5-risk-and-rizq",
+          "generated_at": "2026-05-11T16:34:15.254894+00:00",
+          "json_path": "social/campaigns/2026-05-11-podcast-tt-5-risk-and-rizq.json",
+          "markdown_path": "social/campaigns/2026-05-11-podcast-tt-5-risk-and-rizq.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1010,6 +1050,14 @@
           "json_path": "social/campaigns/2026-03-26-podcast-tt-6-written-in-trade-today.json",
           "markdown_path": "social/campaigns/2026-03-26-podcast-tt-6-written-in-trade-today.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-11-podcast-tt-6-written-in-trade-today",
+          "generated_at": "2026-05-11T16:34:42.056397+00:00",
+          "json_path": "social/campaigns/2026-05-11-podcast-tt-6-written-in-trade-today.json",
+          "markdown_path": "social/campaigns/2026-05-11-podcast-tt-6-written-in-trade-today.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
