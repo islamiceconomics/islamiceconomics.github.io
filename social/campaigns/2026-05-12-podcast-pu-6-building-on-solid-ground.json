@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-12-podcast-pu-6-building-on-solid-ground",
+  "generated_at": "2026-05-12T16:18:39.885942+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-pu-6-building-on-solid-ground",
+    "kind": "podcast",
+    "title": "Building on Solid Ground",
+    "summary": "How Islamic finance tames uncertainty today, and why the rest of the world is starting to listen.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Takaful: mutual insurance where policyholders share risk collectively. Sukuk: bonds backed by real assets rather than abstract debt. Equity-based financing where the lender shares in both profit and loss. Islamic finance has built a $4 trillion industry on the principle that uncertainty should be managed, not manufactured. This final episode examines how these instruments work in practice, where Islamic banks outperformed conventional ones during the 2008 crisis, and why mainstream institutions from the Bank of England to the World Bank are studying Islamic finance principles. The question isn't whether these ideas are relevant; it's whether we'll apply them before the next crisis.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Islamic banks outperformed conventional banks during the 2008 crisis. Their $4 trillion industry rests on one principle: manage uncertainty, don't manufacture it.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "Islamic banks outperformed conventional banks during the 2008 crisis. Their $4 trillion industry rests on one principle: manage uncertainty, don't manufacture it.",
+        "Takaful works like mutual insurance where everyone shares the risk. Sukuk bonds are backed by real assets, not abstract debt promises.",
+        "Equity-based financing means lenders share both profit and loss. You can't profit from someone else's failure because your fates are tied together.",
+        "The Bank of England and World Bank now study these principles. Sometimes old wisdom catches up to new problems. https://islamiceconomics.github.io/podcast.html#ep-pu-6"
+      ],
+      "hashtags": [
+        "#IslamicFinance",
+        "#Banking",
+        "#Economics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-6"
+    },
+    "linkedin": {
+      "post": "Islamic banks outperformed conventional banks during the 2008 financial crisis. How? They built a $4 trillion industry on managing uncertainty rather than manufacturing it. Their instruments tell the story: Takaful operates as mutual insurance where policyholders share risk collectively. Sukuk bonds are backed by real assets, not abstract debt. Equity-based financing means lenders share both profit and loss. The principle is simple: you can't profit from someone else's failure when your fates are tied together. Today, institutions from the Bank of England to the World Bank study these Islamic finance principles. Sometimes ancient wisdom catches up to modern problems. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-6",
+      "comment_prompt": "What aspects of Islamic finance do you think could strengthen conventional banking systems?"
+    },
+    "instagram": {
+      "caption": "Islamic banks outperformed conventional banks during the 2008 crisis. Their secret? A $4 trillion industry built on managing uncertainty, not manufacturing it. Takaful: mutual insurance where everyone shares the risk Sukuk: bonds backed by real assets, not abstract debt Equity financing: lenders share both profit and loss You can't profit from someone else's failure when your fates are tied together. The Bank of England and World Bank now study these principles. Ancient wisdom meets modern problems. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-pu-6 #IslamicFinance #Banking #Economics #Finance #Crisis",
+      "carousel_slides": [
+        "Islamic banks outperformed conventional banks during the 2008 crisis",
+        "$4 trillion industry built on one principle: manage uncertainty, don't manufacture it",
+        "Takaful: mutual insurance where policyholders share risk collectively",
+        "Sukuk: bonds backed by real assets, not abstract debt promises",
+        "The Bank of England and World Bank now study these ancient principles"
+      ],
+      "reel_caption": "How Islamic finance survived 2008 while others collapsed. The answer might surprise you. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-pu-6 #IslamicFinance #Banking #Crisis",
+      "cover_text": "Islamic Banks vs 2008 Crisis",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Islamic banks outperformed conventional banks during the 2008 crisis. Their $4 trillion industry operates on managing uncertainty rather than manufacturing it.\n\nTakaful creates mutual insurance where risk is shared collectively. Sukuk bonds are backed by real assets, not abstract debt. In equity-based financing, lenders share both profit and loss.\n\nThe Bank of England and World Bank now study these principles that predate modern banking by\u2026",
+      "discussion_prompt": "Could Islamic finance principles have prevented the 2008 crisis if adopted more widely?",
+      "topic_suggestion": "Ancient banking wisdom for modern crises",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-6"
+    },
+    "short_video": {
+      "title": "Why Islamic Banks Survived 2008",
+      "hook": "Islamic banks outperformed everyone during the 2008 crisis",
+      "voiceover": "Islamic banks outperformed conventional banks during the 2008 crisis. Their four trillion dollar industry rests on one principle: manage uncertainty, don't manufacture it. Takaful works like mutual insurance where everyone shares the risk. Sukuk bonds are backed by real assets, not abstract debt. In equity-based financing, lenders share both profit and loss. You can't profit from someone else's failure when your fates are tied together. Today, the Bank of England and World Bank study these ancient principles.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "2008 crisis headlines and bank collapses",
+          "on_screen_text": "2008 Crisis"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Islamic banking symbols and growth charts",
+          "on_screen_text": "$4 Trillion Industry"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Takaful and Sukuk explanation graphics",
+          "on_screen_text": "Real Assets, Shared Risk"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Bank of England and World Bank logos",
+          "on_screen_text": "Ancient Principles"
+        },
+        {
+          "time": "35-40s",
+          "visual": "Call to action with podcast cover",
+          "on_screen_text": "Listen Now"
+        }
+      ],
+      "caption": "Why Islamic banks survived while others collapsed. The $4 trillion answer. Listen: https://islamiceconomics.github.io/podcast.html#ep-pu-6",
+      "hashtags": [
+        "#IslamicFinance",
+        "#Banking",
+        "#2008Crisis",
+        "#Economics",
+        "#Finance"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Islamic banks outperformed conventional banks during the 2008 crisis. Their $4 trillion industry rests on one principle: manage uncertainty, don't manufacture it. Takaful creates mutual insurance where policyholders share risk collectively. Sukuk bonds are backed by real assets rather than abstract debt. In equity-based financing, lenders share both profit and loss. The Bank of England and World Bank now study these ancient principles."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_a8440f80.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_a8440f80.png"
+}

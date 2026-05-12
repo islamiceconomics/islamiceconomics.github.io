@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-12-podcast-wd-1-before-the-revelation",
+  "generated_at": "2026-05-12T16:19:04.619430+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-wd-1-before-the-revelation",
+    "kind": "podcast",
+    "title": "Before the Revelation",
+    "summary": "Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In pre-Islamic Arabia, debt was a weapon. A man who couldn't repay could be enslaved, his family taken as collateral, his debt doubled at every missed payment. The practice of riba al-jahiliyyah, literally \"the usury of the Age of Ignorance,\" meant that a borrowed camel could become two, then four, then eight, compounding until the borrower lost everything. When the Quran was revealed, it didn't just ban interest; it declared war on an entire system of financial oppression. This episode traces the debt practices of pre-Islamic Arabia, the revolutionary changes introduced by the Quran and Sunnah, and how the Prophet Muhammad personally forgave debts and taught that relieving a debtor's burden was among the noblest acts a Muslim could perform.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Debt slavery in pre-Islamic Arabia and how the Quran transformed the creditor-debtor relationship forever.",
+      "voice_pattern": "observation",
+      "thread": [
+        "In pre-Islamic Arabia, a borrowed camel could become two, then four, then eight, compounding until the borrower lost everything.",
+        "Debt was a weapon. Miss a payment and your family became collateral. Your children could be enslaved for what you couldn't repay.",
+        "The Arabs had a name for this system: riba al-jahiliyyah \u2014 the usury of the Age of Ignorance.",
+        "When the Quran was revealed, it didn't just ban interest. It declared war on an entire system of financial oppression. https://islamiceconomics.github.io/podcast.html#ep-wd-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-1"
+    },
+    "linkedin": {
+      "post": "In pre-Islamic Arabia, debt was more than a financial obligation \u2014 it was a path to slavery. A man who borrowed a camel and couldn't repay would see his debt double, then quadruple, then multiply again. The practice of riba al-jahiliyyah, literally \"the usury of the Age of Ignorance,\" meant that missed payments could cost you your family's freedom. Children became collateral. Entire households were enslaved for debts that grew beyond any possibility of repayment. When the Quran was revealed, it didn't just prohibit interest \u2014 it dismantled a system of financial oppression that had trapped generations in cycles of bondage. This transformation of the creditor-debtor relationship remains one of Islam's most revolutionary economic contributions. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-1",
+      "comment_prompt": "How do you think modern debt practices compare to these pre-Islamic systems?"
+    },
+    "instagram": {
+      "caption": "In pre-Islamic Arabia, debt slavery was the norm. A borrowed camel could multiply into an impossible burden \u2014 two camels, then four, then eight, compounding with every missed payment. Families lost their freedom. Children became collateral. The practice was called riba al-jahiliyyah \u2014 the usury of the Age of Ignorance. When the Quran was revealed, it didn't just ban interest. It declared war on an entire system that turned financial need into permanent bondage. This episode traces how Islam transformed the relationship between creditor and debtor forever. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-wd-1 #IslamicEconomics #DebtSlavery #PreIslamicArabia #QuranRevolution #FinancialJustice",
+      "carousel_slides": [
+        "In pre-Islamic Arabia, debt was a weapon that could destroy entire families.",
+        "Borrow a camel, miss a payment, and watch your debt double, then quadruple, then\u2026",
+        "Children became collateral. Families were enslaved for debts they could never repay.",
+        "The Arabs called it riba al-jahiliyyah \u2014 the usury of the Age of Ignorance.",
+        "The Quran didn't just ban interest. It declared war on a system of financial oppression."
+      ],
+      "reel_caption": "Before Islam transformed finance forever, debt slavery ruled pre-Islamic Arabia. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-wd-1 #IslamicEconomics #DebtSlavery #QuranRevolution",
+      "cover_text": "When Debt Meant Slavery",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "In pre-Islamic Arabia, a borrowed camel could become two, then four, then eight, compounding until the borrower lost everything. Families were enslaved for debts that multiplied beyond any hope of repayment.\n\nThe practice was called riba al-jahiliyyah \u2014 the usury of the Age of Ignorance. When the Quran was revealed, it didn't just ban interest. It declared war on an entire system of financial oppression.\n\nDebt was transformed from a weapon into\u2026",
+      "discussion_prompt": "How do you think modern debt practices compare to these pre-Islamic systems?",
+      "topic_suggestion": "Debt and Financial Justice",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-1"
+    },
+    "short_video": {
+      "title": "When Debt Meant Slavery",
+      "hook": "Before Islam, debt could literally enslave your entire family",
+      "voiceover": "In pre-Islamic Arabia, debt was a weapon. Borrow a camel, miss a payment, and watch your debt double. Then quadruple. Then multiply beyond any hope of repayment. Your family became collateral. Your children could be enslaved. The Arabs called it riba al-jahiliyyah \u2014 the usury of the Age of Ignorance. When the Quran was revealed, it didn't just ban interest. It declared war on an entire system that turned financial need into permanent bondage. Islam transformed debt from a weapon into a relationship bound by mercy.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Desert landscape, pre-Islamic Arabia",
+          "on_screen_text": "Pre-Islamic Arabia"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Animation of debt multiplying: 1 camel \u2192 2 \u2192 4 \u2192 8",
+          "on_screen_text": "Debt doubles with each missed payment"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Silhouettes of families in chains",
+          "on_screen_text": "Families enslaved for debt"
+        },
+        {
+          "time": "25-30s",
+          "visual": "Arabic text: riba al-jahiliyyah",
+          "on_screen_text": "The usury of ignorance"
+        },
+        {
+          "time": "30-40s",
+          "visual": "Quran opening, light emanating",
+          "on_screen_text": "The Quran transforms everything"
+        }
+      ],
+      "caption": "Before Islam, debt slavery was the norm in Arabia. The Quran didn't just ban interest \u2014 it declared war on financial oppression. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-1",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#DebtSlavery",
+        "#PreIslamicArabia",
+        "#QuranRevolution",
+        "#FinancialJustice"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "In pre-Islamic Arabia, a borrowed camel could become two, then four, then eight, compounding until the borrower lost everything. Debt was a weapon that could enslave entire families. Miss a payment and your children became collateral, your debt doubled at every failure. The Arabs called this riba al-jahiliyyah \u2014 the usury of the Age of Ignorance. When the Quran was revealed, it didn't just ban interest. It declared war on an entire system that turned financial need into permanent bondage."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_5007a082.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_5007a082.png"
+}
