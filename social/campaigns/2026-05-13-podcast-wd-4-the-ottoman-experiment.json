@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-13-podcast-wd-4-the-ottoman-experiment",
+  "generated_at": "2026-05-13T16:18:29.459778+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-wd-4-the-ottoman-experiment",
+    "kind": "podcast",
+    "title": "The Ottoman Experiment",
+    "summary": "Cash waqfs, state borrowing, and how European debt colonized the Ottoman Empire from within.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "For centuries, the Ottoman Empire financed itself without sovereign debt. Cash waqfs lent money to merchants at regulated rates, the state funded wars through taxation and conquest, and the empire functioned as the world's largest economy without a bond market. Then came the Crimean War. In 1854, the Ottomans issued their first foreign loan from European banks. Within two decades, debt payments consumed over half the state's revenue. By 1881, European creditors had established the Ottoman Public Debt Administration, effectively controlling the empire's finances. This episode traces how the transition from Islamic financial principles to European-style sovereign debt contributed to the collapse of the last great Islamic empire.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Ottoman Empire ran the world's largest economy for centuries without borrowing money. Their first foreign loan came in 1854. By 1881, European creditors controlled their finances.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The Ottoman Empire ran the world's largest economy for centuries without borrowing money. Their first foreign loan came in 1854.",
+        "Cash waqfs lent to merchants at regulated rates. The state funded wars through taxation and conquest. No bond markets, no sovereign debt.",
+        "Then came the Crimean War. Within two decades of that first European loan, debt payments consumed over half the state's revenue.",
+        "By 1881, European creditors had established the Ottoman Public Debt Administration \u2014 effectively controlling the empire's finances. https://islamiceconomics.github.io/podcast.html#ep-wd-4"
+      ],
+      "hashtags": [
+        "#IslamicFinance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-4"
+    },
+    "linkedin": {
+      "post": "For centuries, the Ottoman Empire operated as the world's largest economy without sovereign debt. Cash waqfs provided regulated lending to merchants, wars were funded through taxation and conquest, and the empire thrived without bond markets. Then came 1854 and the Crimean War. The Ottomans issued their first foreign loan from European banks. Within twenty years, debt payments consumed over half the state's revenue. By 1881, European creditors had established the Ottoman Public Debt Administration, effectively seizing control of the empire's finances. The transition from Islamic financial principles to European-style sovereign debt became a pathway to economic colonization. This traces a pattern we see repeated across the Islamic world \u2014 how debt became the new form of empire. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-4",
+      "comment_prompt": "Have you noticed similar patterns in how debt relationships reshape sovereignty today?"
+    },
+    "instagram": {
+      "caption": "The Ottoman Empire was the world's largest economy for centuries \u2014 without borrowing money. Cash waqfs lent to merchants at regulated rates. Wars were funded through taxation and conquest. No bond markets, no sovereign debt, no foreign creditors. Then came 1854 and the Crimean War. The Ottomans needed quick financing and issued their first foreign loan from European banks. It seemed like a practical solution. Within two decades, debt payments consumed over half the state's revenue. By 1881, European creditors had established the Ottoman Public Debt Administration \u2014 effectively controlling the empire's finances. Debt became the new form of empire. Not through military conquest, but through financial dependency. The last great Islamic empire fell not to armies, but to interest rates. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-wd-4 #IslamicFinance #OttomanEmpire #EconomicHistory #Debt #Finance",
+      "carousel_slides": [
+        "The Ottoman Empire: World's largest economy for centuries",
+        "No sovereign debt. No bond markets. No foreign creditors.",
+        "1854: First foreign loan during Crimean War",
+        "Within 20 years: Debt consumed half of state revenue",
+        "1881: European creditors controlled Ottoman finances"
+      ],
+      "reel_caption": "How the Ottoman Empire went from the world's largest economy to European financial control in just 27 years. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-wd-4 #IslamicFinance #OttomanEmpire #EconomicHistory #Debt #Finance",
+      "cover_text": "The Ottoman Debt Trap",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Ottoman Empire functioned as the world's largest economy for centuries without sovereign debt. Cash waqfs provided regulated lending, wars were funded through taxation and conquest, and the empire operated without bond markets.\n\nThen came their first foreign loan in 1854. Within two decades, debt payments consumed over half the state's revenue. By 1881, European creditors controlled Ottoman finances through the Public Debt Administration.",
+      "discussion_prompt": "How do you think modern Islamic finance principles could reshape today's debt-dependent economies?",
+      "topic_suggestion": "The Ottoman financial system before\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-4"
+    },
+    "short_video": {
+      "title": "How Debt Destroyed the Ottoman Empire",
+      "hook": "The Ottoman Empire ran the world's largest economy for centuries without borrowing money",
+      "voiceover": "For centuries, the Ottoman Empire was the world's largest economy. No sovereign debt. No bond markets. Cash waqfs lent money to merchants. Wars were funded through taxation and conquest. Then came 1854 and the Crimean War. Their first foreign loan seemed practical. Within twenty years, debt payments consumed over half the state's revenue. By 1881, European creditors controlled Ottoman finances. The last great Islamic empire fell not to armies, but to interest rates.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ottoman Empire map at peak",
+          "on_screen_text": "World's largest economy"
+        },
+        {
+          "time": "6-10s",
+          "visual": "Traditional Islamic banking symbols",
+          "on_screen_text": "No sovereign debt"
+        },
+        {
+          "time": "11-15s",
+          "visual": "Crimean War battle scene",
+          "on_screen_text": "1854: First foreign loan"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Graph showing debt growth",
+          "on_screen_text": "Debt = 50% of revenue"
+        },
+        {
+          "time": "26-35s",
+          "visual": "European officials at Ottoman palace",
+          "on_screen_text": "1881: Foreign control"
+        }
+      ],
+      "caption": "The Ottoman Empire collapsed not through military defeat, but through debt dependency. Listen to the full story about how European-style sovereign debt colonized the Islamic world's last great empire. https://islamiceconomics.github.io/podcast.html#ep-wd-4",
+      "hashtags": [
+        "#IslamicFinance",
+        "#OttomanEmpire",
+        "#EconomicHistory",
+        "#Debt",
+        "#Finance"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Ottoman Empire ran the world's largest economy for centuries without borrowing money. Cash waqfs lent to merchants at regulated rates, the state funded wars through taxation and conquest, and the empire functioned without bond markets or sovereign debt. Then came the Crimean War in 1854. Their first foreign loan from European banks opened a door that couldn't be closed. Within two decades, debt payments consumed over half the state's revenue. By 1881, European creditors had established the\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_4a9691a3.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_4a9691a3.png"
+}

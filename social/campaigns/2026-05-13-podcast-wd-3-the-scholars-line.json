@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-13-podcast-wd-3-the-scholars-line",
+  "generated_at": "2026-05-13T16:18:05.173034+00:00",
+  "x_voice_pattern": "question",
+  "source": {
+    "content_id": "podcast-wd-3-the-scholars-line",
+    "kind": "podcast",
+    "title": "The Scholars' Line",
+    "summary": "How the four madhabs drew the boundary between permissible credit sales and forbidden riba.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Quran bans riba. But what exactly is riba? Is a markup on a deferred sale the same as charging interest on a loan? The Hanafi school allowed bay' bi-thaman ajil, selling goods on credit at a higher price, while drawing a sharp line against lending money for a return. The Hanbalis were stricter, suspecting any time-value premium of concealing riba. The Shafi'is focused on the six commodities mentioned in the hadith. And the Malikis developed the concept of sadd al-dhara'i, blocking the means to forbidden ends. This episode walks through the classical debates on where legitimate commerce ends and prohibited interest begins, showing how these 8th-century discussions still define Islamic banking today.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Hanafi school allowed selling goods on credit at higher prices. The Hanbalis suspected any time-value premium. Four schools of Islamic law, four different lines on where commerce ends and riba begins. How did they each decide where to draw that\u2026",
+      "voice_pattern": "question",
+      "thread": [
+        "The Quran bans riba. But what exactly is riba? The four madhabs each drew different lines between legitimate commerce and forbidden interest.",
+        "The Hanafis allowed bay' bi-thaman ajil \u2014 selling goods on credit at higher prices \u2014 while strictly forbidding lending money for a return.",
+        "The Hanbalis were stricter, suspecting any time-value premium of concealing riba. The Shafi'is focused on six specific commodities mentioned in hadith.",
+        "The Malikis developed sadd al-dhara'i \u2014 blocking the means to forbidden ends. These 8th-century debates still define Islamic banking today. https://islamiceconomics.github.io/podcast.html#ep-wd-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Riba",
+        "#IslamicLaw"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-3"
+    },
+    "linkedin": {
+      "post": "The Quran bans riba, but defining its exact boundaries sparked centuries of scholarly debate among Islamic jurists. The four major schools of Islamic law each drew different lines: \u2022 The Hanafis permitted bay' bi-thaman ajil \u2014 selling goods on credit at higher prices \u2014 while strictly forbidding lending money for a return \u2022 The Hanbalis took a stricter stance, viewing any time-value premium with suspicion as potentially concealing riba \u2022 The Shafi'is focused their analysis on six specific commodities mentioned in prophetic traditions \u2022 The Malikis developed the concept of sadd al-dhara'i \u2014 blocking the means to forbidden ends These 8th-century debates weren't merely academic exercises. They established the theological and legal foundations that continue to shape Islamic banking products and contracts today. The question remains as relevant now as it was then: where exactly does legitimate commerce end and prohibited interest begin? Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-wd-3",
+      "comment_prompt": "Which approach to defining riba boundaries resonates most with contemporary Islamic finance challenges?"
+    },
+    "instagram": {
+      "caption": "The Quran bans riba. But what exactly counts as riba? Four schools of Islamic law, four different answers: \ud83c\udfdb\ufe0f Hanafis: You can sell goods on credit at higher prices, but never lend money for a return \u2696\ufe0f Hanbalis: Any time-value premium is suspicious \u2014 it might be concealing riba \ud83d\udcda Shafi'is: Focus on the six specific commodities mentioned in hadith \ud83d\udee1\ufe0f Malikis: Block the means to forbidden ends (sadd al-dhara'i) These 8th-century debates still define Islamic banking today. The scholars drew lines that banks follow 1,300 years later. Where does legitimate commerce end and prohibited interest begin? The answer shaped an entire financial system. Listen to the full discussion at the link in bio. #IslamicEconomics #Riba #IslamicLaw #Madhabs #IslamicBanking",
+      "carousel_slides": [
+        "The Quran bans riba. But what exactly IS riba?",
+        "HANAFIS: Sell goods on credit at higher prices \u2713 Lend money for return \u2717",
+        "HANBALIS: Any time-value premium = suspicious",
+        "SHAFI'IS: Focus on 6 commodities from hadith",
+        "MALIKIS: Block the means to forbidden ends"
+      ],
+      "reel_caption": "Four schools of Islamic law. Four different lines on riba. The 8th-century debate that still defines Islamic banking. #IslamicEconomics #Riba #IslamicLaw",
+      "cover_text": "The Riba Boundary",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Hanafi school allowed selling goods on credit at higher prices but banned lending money for return. The Hanbalis suspected any time-value premium. The Shafi'is focused on six commodities from hadith. The Malikis blocked paths to forbidden ends.\n\nFour schools of Islamic law, four ways of drawing the line between legitimate commerce and riba. These weren't abstract theological debates. They were practical questions that shaped contracts\u2026",
+      "discussion_prompt": "Which madhab's approach to defining riba boundaries makes the most sense for modern financial markets?",
+      "topic_suggestion": "Classical jurisprudence and\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-3"
+    },
+    "short_video": {
+      "title": "The Riba Line: How 4 Schools Drew Different Boundaries",
+      "hook": "The Quran bans riba. But what exactly counts as riba?",
+      "voiceover": "The Quran bans riba. But what exactly counts as riba? Four schools of Islamic law gave four different answers. The Hanafis said you could sell goods on credit at higher prices, but never lend money for a return. The Hanbalis were stricter \u2014 any time-value premium looked suspicious. The Shafi'is focused on six specific commodities mentioned in prophetic traditions. The Malikis developed blocking the means to forbidden ends. These weren't just academic debates. These 8th-century lines still define Islamic banking contracts today. Four schools, four boundaries, one question that shaped an entire financial system.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Quran text with riba highlighted",
+          "on_screen_text": "The Quran bans riba"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Four mosque silhouettes representing schools",
+          "on_screen_text": "4 Schools, 4 Answers"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Split screen: goods vs money",
+          "on_screen_text": "Hanafis: Goods \u2713 Money \u2717"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Scale weighing time and money",
+          "on_screen_text": "Hanbalis: Time = Suspicious"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Modern Islamic bank building",
+          "on_screen_text": "8th Century \u2192 Today's Banking"
+        }
+      ],
+      "caption": "Four schools of Islamic law drew four different boundaries around riba. The lines they drew in the 8th century still define Islamic banking today. Listen to the full discussion.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Riba",
+        "#IslamicLaw",
+        "#Madhabs",
+        "#IslamicBanking"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Hanafi school allowed selling goods on credit at higher prices. The Hanbalis suspected any time-value premium. Four schools of Islamic law, four different lines on where commerce ends and riba begins. How did they each decide where to draw that boundary? The Hanafis said you could sell goods on credit at markup but never lend money for return. The Hanbalis questioned any premium tied to time. The Shafi'is focused on six specific commodities from hadith. The Malikis developed sadd\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_ec6e7aab.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_ec6e7aab.png"
+}

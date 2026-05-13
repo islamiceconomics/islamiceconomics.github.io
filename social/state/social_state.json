@@ -1098,6 +1098,14 @@
           "json_path": "social/campaigns/2026-03-27-podcast-wd-2-the-longest-verse.json",
           "markdown_path": "social/campaigns/2026-03-27-podcast-wd-2-the-longest-verse.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-13-podcast-wd-2-the-longest-verse",
+          "generated_at": "2026-05-13T16:17:36.184563+00:00",
+          "json_path": "social/campaigns/2026-05-13-podcast-wd-2-the-longest-verse.json",
+          "markdown_path": "social/campaigns/2026-05-13-podcast-wd-2-the-longest-verse.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1110,6 +1118,14 @@
           "json_path": "social/campaigns/2026-03-27-podcast-wd-3-the-scholars-line.json",
           "markdown_path": "social/campaigns/2026-03-27-podcast-wd-3-the-scholars-line.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-13-podcast-wd-3-the-scholars-line",
+          "generated_at": "2026-05-13T16:18:05.173034+00:00",
+          "json_path": "social/campaigns/2026-05-13-podcast-wd-3-the-scholars-line.json",
+          "markdown_path": "social/campaigns/2026-05-13-podcast-wd-3-the-scholars-line.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1122,6 +1138,14 @@
           "json_path": "social/campaigns/2026-03-28-podcast-wd-4-the-ottoman-experiment.json",
           "markdown_path": "social/campaigns/2026-03-28-podcast-wd-4-the-ottoman-experiment.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-13-podcast-wd-4-the-ottoman-experiment",
+          "generated_at": "2026-05-13T16:18:29.459778+00:00",
+          "json_path": "social/campaigns/2026-05-13-podcast-wd-4-the-ottoman-experiment.json",
+          "markdown_path": "social/campaigns/2026-05-13-podcast-wd-4-the-ottoman-experiment.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1134,6 +1158,14 @@
           "json_path": "social/campaigns/2026-03-28-podcast-wd-5-interest-in-disguise.json",
           "markdown_path": "social/campaigns/2026-03-28-podcast-wd-5-interest-in-disguise.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-13-podcast-wd-5-interest-in-disguise",
+          "generated_at": "2026-05-13T16:18:53.000973+00:00",
+          "json_path": "social/campaigns/2026-05-13-podcast-wd-5-interest-in-disguise.json",
+          "markdown_path": "social/campaigns/2026-05-13-podcast-wd-5-interest-in-disguise.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },

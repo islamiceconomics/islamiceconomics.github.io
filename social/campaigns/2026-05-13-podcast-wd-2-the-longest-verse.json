@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-13-podcast-wd-2-the-longest-verse",
+  "generated_at": "2026-05-13T16:17:36.184563+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-wd-2-the-longest-verse",
+    "kind": "podcast",
+    "title": "The Longest Verse",
+    "summary": "Ayat al-Dayn: the Quran's most detailed verse is about debt. What does that tell us?",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Verse 2:282 of the Quran, known as Ayat al-Dayn, is the longest single verse in the entire scripture. Not a verse about prayer, pilgrimage, or fasting, but about how to write a debt contract. It mandates written documentation, witnesses, and the protection of both creditor and debtor. Scholars have marveled at this for centuries: why would God dedicate the most detailed verse in His final revelation to commercial transactions? This episode unpacks Ayat al-Dayn word by word, explores what classical scholars like al-Jassas and al-Qurtubi said about its implications, and argues that Islam treats financial justice not as a footnote to faith but as its foundation.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The longest verse in the Quran isn't about prayer or fasting. It's about writing debt contracts. Ayat al-Dayn runs 282 words of detailed commercial law.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The longest verse in the Quran isn't about prayer or fasting. It's about writing debt contracts.",
+        "Ayat al-Dayn mandates written documentation, witnesses, and protection for both creditor and debtor. Classical scholars marveled at this level of commercial detail.",
+        "Al-Jassas and al-Qurtubi saw something profound: God dedicating His most extensive guidance to financial justice.",
+        "When scripture treats debt contracts as sacred text, commerce becomes worship. https://islamiceconomics.github.io/podcast.html#ep-wd-2"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-2"
+    },
+    "linkedin": {
+      "post": "The longest verse in the Quran contains 282 words. It's not about prayer, pilgrimage, or fasting\u2014it's about debt contracts. Ayat al-Dayn mandates written documentation, requires witnesses, and details protections for both creditor and debtor. Classical scholars like al-Jassas and al-Qurtubi spent centuries analyzing why God would dedicate His most extensive guidance to commercial law. Their conclusion: Islam treats financial justice not as peripheral to faith, but as fundamental to it. When scripture elevates debt contracts to the level of sacred text, every transaction becomes an act of worship. This changes everything about how we think about business ethics and economic justice. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-2",
+      "comment_prompt": "How do you think detailed commercial guidance in religious texts affects business practices today?"
+    },
+    "instagram": {
+      "caption": "The longest verse in the Quran isn't what you'd expect. It's not about prayer or pilgrimage. It's 282 words of detailed instructions on how to write debt contracts. Ayat al-Dayn mandates documentation, witnesses, and protection for both parties. Classical scholars like al-Jassas and al-Qurtubi marveled at this level of commercial detail in sacred text. Their insight: financial justice isn't separate from spiritual life\u2014it IS spiritual life. When God dedicates His longest verse to debt contracts, every transaction becomes worship. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-2 #IslamicEconomics #DebtJustice #FinancialEthics #QuranicEconomics #CommercialLaw",
+      "carousel_slides": [
+        "The longest verse in the Quran: 282 words about debt contracts",
+        "Not prayer, not fasting\u2014commercial law gets the most detailed treatment",
+        "Ayat al-Dayn mandates: Written docs, witnesses, protection for all parties",
+        "Classical scholars asked: Why such detail for business transactions?",
+        "Answer: Financial justice isn't footnote to faith\u2014it IS faith"
+      ],
+      "reel_caption": "The Quran's longest verse isn't about prayer\u2014it's about debt contracts. Ayat al-Dayn: 282 words of commercial law as sacred text. #IslamicEconomics #DebtJustice #FinancialEthics",
+      "cover_text": "The Quran's Longest Verse: About Debt",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The longest verse in the Quran runs 282 words. It's not about prayer or pilgrimage\u2014it's detailed instructions for writing debt contracts.\n\nAyat al-Dayn mandates documentation, witnesses, and protection for both creditor and debtor. Classical scholars marveled at this commercial detail in sacred text.\n\nWhen God dedicates His most extensive guidance to financial transactions, every debt becomes worship.",
+      "discussion_prompt": "Should religious texts include detailed commercial guidance, or should faith and finance remain separate?",
+      "topic_suggestion": "Sacred economics across world religions",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-2"
+    },
+    "short_video": {
+      "title": "The Quran's Longest Verse Is About Debt Contracts",
+      "hook": "What's the longest verse in the Quran about?",
+      "voiceover": "The longest verse in the Quran isn't about prayer or fasting. It's 282 words about debt contracts. Ayat al-Dayn mandates written documentation, witnesses, and protection for both creditor and debtor. Classical scholars marveled at this: why would God dedicate His most detailed verse to commercial law? Because financial justice isn't separate from faith\u2014it is faith. When scripture treats debt contracts as sacred text, every transaction becomes worship.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Quran pages turning",
+          "on_screen_text": "Longest verse in Quran?"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Contract signing close-up",
+          "on_screen_text": "282 words about DEBT"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Ancient manuscript text",
+          "on_screen_text": "Written docs + witnesses required"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Scholar studying books",
+          "on_screen_text": "Why so much detail on business?"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Hands exchanging money",
+          "on_screen_text": "Financial justice = Faith"
+        }
+      ],
+      "caption": "The Quran's longest verse: 282 words of commercial law as sacred guidance. Listen to the full episode.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#DebtJustice",
+        "#FinancialEthics",
+        "#QuranicEconomics",
+        "#CommercialLaw"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The longest verse in the Quran isn't about prayer or fasting. It's about writing debt contracts. Ayat al-Dayn runs 282 words mandating written documentation, witnesses, and protection for both creditor and debtor. Classical scholars like al-Jassas and al-Qurtubi marveled at this: why would God dedicate His most detailed verse to commercial transactions? Because financial justice isn't a footnote to faith. It is faith."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_4f9d6b73.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_4f9d6b73.png"
+}
