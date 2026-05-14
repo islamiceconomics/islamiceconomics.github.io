@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-14-podcast-wd-6-debt-without-chains",
+  "generated_at": "2026-05-14T16:10:24.928892+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-wd-6-debt-without-chains",
+    "kind": "podcast",
+    "title": "Debt Without Chains",
+    "summary": "Sukuk, qard hasan, and reimagining what debt could look like in the 21st century.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-wd-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "What if debt didn't have to be a trap? Qard hasan, the beautiful loan, is lending with no expectation of return beyond the principal, considered one of the most virtuous acts in Islam. Sukuk transform debt into shared ownership of real assets. Diminishing musharakah lets homebuyers gradually purchase their house from the bank as co-owner rather than as debtor. This final episode looks at the alternatives, from microfinance experiments in Bangladesh to sovereign sukuk issued by the UK and Hong Kong, and asks whether Islamic principles can offer a way out of the global debt crisis. With worldwide debt exceeding $300 trillion, the question isn't academic. The 7th-century insight that debt should serve people rather than enslave them may be the most radical financial idea the modern world needs.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Sukuk, qard hasan, and reimagining what debt could look like in the 21st century.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The Quran permits trade but forbids riba because one creates value while the other extracts it. Sukuk in Malaysia represent $1.7 trillion in assets.",
+        "Qard hasan is lending with no expectation beyond the principal. The beautiful loan exists to serve people, not trap them in endless cycles.",
+        "In diminishing musharakah, you gradually buy your house from the bank as co-owner. No debtor, no compound interest, just shared ownership that transfers.",
+        "With global debt exceeding $300 trillion, the 7th-century insight that debt should serve people rather than enslave them feels urgent again. https://islamiceconomics.github.io/podcast.html#ep-wd-6"
+      ],
+      "hashtags": [
+        "#IslamicFinance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-wd-6"
+    },
+    "linkedin": {
+      "post": "What if debt didn't have to be a trap? Islamic finance offers three alternatives to conventional lending that are gaining global attention. Qard hasan is the \"beautiful loan\" - lending with no expectation beyond the principal. Sukuk transform debt into shared ownership of real assets. Diminishing musharakah lets homebuyers gradually purchase their house from the bank as co-owner rather than debtor. From microfinance in Bangladesh to sovereign sukuk issued by the UK and Hong Kong, these 7th-century principles are addressing 21st-century problems. With global debt exceeding $300 trillion, the insight that debt should serve people rather than enslave them isn't just philosophical - it's practical. Listen: https://islamiceconomics.github.io/podcast.html#ep-wd-6",
+      "comment_prompt": "What's your experience with alternative financing models? Have you encountered Islamic finance principles in practice?"
+    },
+    "instagram": {
+      "caption": "Debt doesn't have to be a trap. Islamic finance offers three powerful alternatives: \u2022 Qard hasan - the \"beautiful loan\" with no expectation beyond principal \u2022 Sukuk - debt transformed into shared ownership of real assets \u2022 Diminishing musharakah - gradually buying your home from the bank as co-owner From Bangladesh microfinance to UK sovereign sukuk, these 7th-century principles are solving 21st-century problems. With global debt exceeding $300 trillion, maybe it's time to reimagine what lending could look like. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-wd-6 #IslamicFinance #AlternativeEconomics #DebtFree #EthicalFinance #Sukuk",
+      "carousel_slides": [
+        "What if debt didn't have to be a trap?",
+        "Qard hasan: The beautiful loan with no expectation beyond the principal",
+        "Sukuk: Transform debt into shared ownership of real assets",
+        "Diminishing musharakah: Buy your home as co-owner, not debtor",
+        "Global debt exceeds $300 trillion. Time for alternatives?"
+      ],
+      "reel_caption": "Three Islamic finance principles that could revolutionize how we think about debt. From the beautiful loan to shared ownership, these alternatives put people before profit. #IslamicFinance #AlternativeEconomics #DebtFree #EthicalFinance #Sukuk",
+      "cover_text": "Debt Without Chains",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Quran permits trade but forbids riba because one creates value while the other extracts it. This distinction unlocks everything.\n\nQard hasan means lending with no expectation beyond the principal. Sukuk transform debt into shared ownership of real assets. With global debt exceeding $300 trillion, these 7th-century insights feel urgently modern.\n\nDebt should serve people, not enslave them.",
+      "discussion_prompt": "Have you experienced alternative lending models? What would change if debt creation required real asset backing?",
+      "topic_suggestion": "Islamic alternatives to conventional\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-wd-6"
+    },
+    "short_video": {
+      "title": "Islamic Finance: Debt Without Chains",
+      "hook": "What if debt didn't have to trap you?",
+      "voiceover": "The Quran permits trade but forbids riba because one creates value while the other just extracts it. Islamic finance offers three alternatives. Qard hasan is the beautiful loan with no expectation beyond the principal. Sukuk transform debt into shared ownership of real assets. Diminishing musharakah lets you buy your house from the bank as co-owner, not debtor. With global debt exceeding three hundred trillion dollars, maybe these seventh-century principles are exactly what we need.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Split screen: productive trade vs money lending",
+          "on_screen_text": "Trade creates value"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Animation of qard hasan concept",
+          "on_screen_text": "Qard hasan: Beautiful loan"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Sukuk certificates over real assets",
+          "on_screen_text": "Sukuk: Shared ownership"
+        },
+        {
+          "time": "25-35s",
+          "visual": "House ownership transfer animation",
+          "on_screen_text": "Diminishing musharakah"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Global debt counter",
+          "on_screen_text": "$300 trillion global debt"
+        }
+      ],
+      "caption": "Three Islamic finance principles that could change how we think about debt forever. Listen to the full episode for the complete story.",
+      "hashtags": [
+        "#IslamicFinance",
+        "#AlternativeEconomics",
+        "#DebtFree",
+        "#EthicalFinance",
+        "#Sukuk"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Quran permits trade but forbids riba because one creates value while the other extracts it. Trade produces something new. Riba simply moves existing wealth from borrower to lender, compounding forever. Sukuk transform this by turning debt into shared ownership of real assets. Instead of owing money that grows, you own a piece of something tangible. Malaysia has issued sukuk representing $1.7 trillion in assets."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_0e75f47e.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_0e75f47e.png"
+}

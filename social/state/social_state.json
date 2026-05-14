@@ -297,6 +297,14 @@
           "json_path": "social/campaigns/2026-03-29-podcast-be-1-when-nations-borrow.json",
           "markdown_path": "social/campaigns/2026-03-29-podcast-be-1-when-nations-borrow.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-14-podcast-be-1-when-nations-borrow",
+          "generated_at": "2026-05-14T16:10:46.268242+00:00",
+          "json_path": "social/campaigns/2026-05-14-podcast-be-1-when-nations-borrow.json",
+          "markdown_path": "social/campaigns/2026-05-14-podcast-be-1-when-nations-borrow.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1178,6 +1186,14 @@
           "json_path": "social/campaigns/2026-03-29-podcast-wd-6-debt-without-chains.json",
           "markdown_path": "social/campaigns/2026-03-29-podcast-wd-6-debt-without-chains.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-14-podcast-wd-6-debt-without-chains",
+          "generated_at": "2026-05-14T16:10:24.928892+00:00",
+          "json_path": "social/campaigns/2026-05-14-podcast-wd-6-debt-without-chains.json",
+          "markdown_path": "social/campaigns/2026-05-14-podcast-wd-6-debt-without-chains.md",
+          "x_voice_pattern": "observation"
         }
       ]
     }
