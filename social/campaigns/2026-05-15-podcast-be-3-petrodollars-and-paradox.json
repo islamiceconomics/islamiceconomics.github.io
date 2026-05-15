@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-15-podcast-be-3-petrodollars-and-paradox",
+  "generated_at": "2026-05-15T16:04:10.937695+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-be-3-petrodollars-and-paradox",
+    "kind": "podcast",
+    "title": "Petrodollars and Paradox",
+    "summary": "How petrodollars reshaped the global financial system. The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-be-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "After the 1973 oil embargo, Gulf states accumulated unprecedented wealth. Much of it was channeled into US Treasury bonds and Western financial markets, interest-bearing instruments that sit uncomfortably with Islamic prohibitions. Meanwhile, non-oil Muslim-majority countries borrowed from those same markets at commercial rates. But the full picture is more complex than a simple betrayal narrative. Gulf states also funded massive development aid through the Islamic Development Bank ($150 billion+ in financing), the Kuwait Fund, and the Saudi Development Fund. They built infrastructure across the Muslim world while simultaneously integrating into the global financial system. This episode follows the petrodollar cycle, examines what sovereign wealth funds actually invest in, and asks why, despite having the world's largest pools of Muslim capital, a fully independent Islamic financial architecture never emerged.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Medieval Islamic banks forbade interest. Modern Gulf states park oil money in US Treasury bonds. The Islamic Development Bank has financed $150 billion in projects.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Gulf states accumulated unprecedented wealth after 1973. They parked much of it in US Treasury bonds and Western markets.",
+        "These are interest-bearing instruments that sit uncomfortably with Islamic prohibitions on riba.",
+        "But the same states also funded massive development through the Islamic Development Bank, Kuwait Fund, and Saudi Development Fund.",
+        "The Islamic Development Bank alone has financed over $150 billion in projects across the Muslim world. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-3"
+    },
+    "linkedin": {
+      "post": "The petrodollar paradox reveals something fascinating about modern Islamic finance. After 1973, Gulf states accumulated unprecedented oil wealth. Much flowed into US Treasury bonds and Western financial markets - interest-bearing instruments that conflict with Islamic prohibitions on riba. Meanwhile, non-oil Muslim-majority countries borrowed from those same Western markets at commercial rates. But the story isn't simple betrayal. The same Gulf states built massive development institutions: the Islamic Development Bank ($150+ billion in financing), the Kuwait Fund, and the Saudi Development Fund. They simultaneously integrated into the global financial system while funding infrastructure across the Muslim world. This tension between principle and pragmatism shapes how sovereign wealth operates today. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-3",
+      "comment_prompt": "How do you see modern Islamic finance navigating the tension between global integration and religious principles?"
+    },
+    "instagram": {
+      "caption": "The petrodollar paradox: Gulf states park oil money in US Treasury bonds while building Islamic development banks. After 1973, unprecedented oil wealth flowed into Western financial markets. Interest-bearing instruments that sit uncomfortably with Islamic prohibitions. Non-oil Muslim countries borrowed from those same markets at commercial rates. Yet Gulf states also funded massive development through institutions like the Islamic Development Bank, which has financed over $150 billion in projects across the Muslim world. The tension between principle and pragmatism continues to shape how sovereign wealth operates. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-be-3 #IslamicEconomics #Petrodollars #SovereignWealth #IslamicFinance #GulfStates",
+      "carousel_slides": [
+        "After 1973: Gulf states accumulated unprecedented oil wealth",
+        "Much of it flowed into US Treasury bonds and Western financial markets",
+        "These are interest-bearing instruments that conflict with Islamic prohibitions",
+        "But they also built the Islamic Development Bank: $150+ billion in financing",
+        "The paradox of principle meeting pragmatism in sovereign wealth"
+      ],
+      "reel_caption": "The petrodollar paradox that reshaped global finance. Gulf oil money in US bonds while building Islamic development banks. Listen to the full story.",
+      "cover_text": "Petrodollar Paradox",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Gulf states accumulated unprecedented wealth after 1973. Much flowed into US Treasury bonds - interest-bearing instruments that conflict with Islamic law.\n\nYet the same states built the Islamic Development Bank, which has financed over $150 billion across the Muslim world.\n\nPrinciple meets pragmatism in sovereign wealth.",
+      "discussion_prompt": "How should Islamic institutions navigate global financial systems that conflict with religious principles?",
+      "topic_suggestion": "The evolution of Islamic banking",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-3"
+    },
+    "short_video": {
+      "title": "The Petrodollar Paradox",
+      "hook": "Gulf oil money sits in US Treasury bonds while funding Islamic banks",
+      "voiceover": "After 1973, Gulf states accumulated unprecedented oil wealth. Much of it flowed into US Treasury bonds and Western financial markets. These are interest-bearing instruments that sit uncomfortably with Islamic prohibitions. Meanwhile, non-oil Muslim countries borrowed from those same Western markets at commercial rates. But the same Gulf states also built massive development institutions. The Islamic Development Bank alone has financed over 150 billion dollars in projects across the Muslim world. The tension between principle and pragmatism continues shaping sovereign wealth today.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Oil derricks and Gulf skylines",
+          "on_screen_text": "1973: Oil wealth accumulates"
+        },
+        {
+          "time": "6-15s",
+          "visual": "US Treasury building and bond certificates",
+          "on_screen_text": "Flows into US Treasury bonds"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Islamic geometric patterns and prohibition symbols",
+          "on_screen_text": "Conflicts with Islamic law"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Islamic Development Bank building and construction projects",
+          "on_screen_text": "$150+ billion in Islamic financing"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Split screen: Western banks and Islamic institutions",
+          "on_screen_text": "Principle meets pragmatism"
+        }
+      ],
+      "caption": "The petrodollar paradox that reshaped global finance. Listen to the full story about how Gulf oil wealth navigated between Western markets and Islamic principles.",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#Petrodollars",
+        "#SovereignWealth",
+        "#IslamicFinance",
+        "#GulfStates"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Medieval Islamic banks forbade interest. Modern Gulf states park oil money in US Treasury bonds. The paradox runs deeper than simple betrayal. After 1973, Gulf wealth flowed into Western financial markets while non-oil Muslim countries borrowed from those same markets at commercial rates. Yet the same states built the Islamic Development Bank, which has financed over $150 billion in projects across the Muslim world."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_1c441134.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_1c441134.png"
+}

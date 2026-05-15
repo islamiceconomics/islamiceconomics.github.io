@@ -317,6 +317,14 @@
           "json_path": "social/campaigns/2026-03-29-podcast-be-2-the-debt-trap.json",
           "markdown_path": "social/campaigns/2026-03-29-podcast-be-2-the-debt-trap.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-15-podcast-be-2-the-debt-trap",
+          "generated_at": "2026-05-15T16:03:48.535316+00:00",
+          "json_path": "social/campaigns/2026-05-15-podcast-be-2-the-debt-trap.json",
+          "markdown_path": "social/campaigns/2026-05-15-podcast-be-2-the-debt-trap.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -329,6 +337,14 @@
           "json_path": "social/campaigns/2026-03-29-podcast-be-3-petrodollars-and-paradox.json",
           "markdown_path": "social/campaigns/2026-03-29-podcast-be-3-petrodollars-and-paradox.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-15-podcast-be-3-petrodollars-and-paradox",
+          "generated_at": "2026-05-15T16:04:10.937695+00:00",
+          "json_path": "social/campaigns/2026-05-15-podcast-be-3-petrodollars-and-paradox.json",
+          "markdown_path": "social/campaigns/2026-05-15-podcast-be-3-petrodollars-and-paradox.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -341,6 +357,14 @@
           "json_path": "social/campaigns/2026-03-29-podcast-be-4-the-zakat-alternative.json",
           "markdown_path": "social/campaigns/2026-03-29-podcast-be-4-the-zakat-alternative.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-15-podcast-be-4-the-zakat-alternative",
+          "generated_at": "2026-05-15T16:04:31.705147+00:00",
+          "json_path": "social/campaigns/2026-05-15-podcast-be-4-the-zakat-alternative.json",
+          "markdown_path": "social/campaigns/2026-05-15-podcast-be-4-the-zakat-alternative.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -352,6 +376,14 @@
           "generated_at": "2026-03-29T14:34:19.740409+00:00",
           "json_path": "social/campaigns/2026-03-29-podcast-be-5-sukuk-for-sovereigns.json",
           "markdown_path": "social/campaigns/2026-03-29-podcast-be-5-sukuk-for-sovereigns.md",
+          "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-15-podcast-be-5-sukuk-for-sovereigns",
+          "generated_at": "2026-05-15T16:04:59.188704+00:00",
+          "json_path": "social/campaigns/2026-05-15-podcast-be-5-sukuk-for-sovereigns.json",
+          "markdown_path": "social/campaigns/2026-05-15-podcast-be-5-sukuk-for-sovereigns.md",
           "x_voice_pattern": "observation"
         }
       ]

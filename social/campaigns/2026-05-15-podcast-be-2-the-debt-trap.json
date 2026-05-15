@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-15-podcast-be-2-the-debt-trap",
+  "generated_at": "2026-05-15T16:03:48.535316+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-be-2-the-debt-trap",
+    "kind": "podcast",
+    "title": "The Debt Trap",
+    "summary": "From Ottoman debt to IMF programs: how sovereign lending creates dependency, and where borrowers share responsibility.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-be-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In 1881, European creditors established the Ottoman Public Debt Administration, taking control of Ottoman state revenues. A century later, the IMF offered structural adjustment programs to dozens of countries including many Muslim-majority nations. The pattern has similarities, but the reality is more nuanced than simple predation. IMF loans come at below-market rates, and countries like South Korea used them as a bridge to reform. Others, like Pakistan, cycled through program after program without making structural changes, a failure of domestic governance as much as external pressure. This episode traces the evolution of sovereign lending, examines what structural adjustment actually did in Egypt, Pakistan, Indonesia, and Nigeria, and asks harder questions about shared responsibility between lenders and borrowers.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Ottoman Empire lost control of its own tax revenues to European creditors in 1881. The IMF structural adjustment programs are the modern version of the same arrangement.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The Ottoman Empire lost control of its own tax revenues to European creditors in 1881. The IMF structural adjustment programs are the modern version of the same arrangement.",
+        "South Korea used IMF loans as a bridge to reform and transformed its economy. Pakistan has cycled through program after program for decades without structural change.",
+        "The pattern repeats because sovereign lending creates dependency by design. Creditors get control over state revenues and policy. Borrowers surrender sovereignty for liquidity.",
+        "Egypt, Pakistan, Indonesia, Nigeria all followed the same script. The question isn't whether the trap exists but why some countries escape while others remain caught. https://islamiceconomics.github.io/podcast.html#ep-be-2"
+      ],
+      "hashtags": [
+        "#DebtTrap",
+        "#SovereignDebt",
+        "#IMF"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-2"
+    },
+    "linkedin": {
+      "post": "The Ottoman Public Debt Administration of 1881 was a turning point in sovereign finance. European creditors took direct control of Ottoman state revenues after the empire defaulted on its debts. A century later, the IMF offered structural adjustment programs to dozens of countries, including many Muslim-majority nations. The mechanics are different, but the pattern is remarkably similar: surrender policy autonomy for financial assistance. What's striking is how outcomes varied. South Korea used IMF programs as a bridge to economic transformation. Pakistan has cycled through program after program without making fundamental reforms. The difference often comes down to domestic governance and political will. The debt trap is real, but it's not just about predatory lending. It's about the choices borrowing nations make when they have room to maneuver. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-2",
+      "comment_prompt": "Have you observed similar patterns in sovereign debt arrangements in your field or region?"
+    },
+    "instagram": {
+      "caption": "The Ottoman Empire lost control of its tax revenues to European creditors in 1881. The IMF structural adjustment programs that followed decades later follow a remarkably similar pattern. South Korea used IMF loans as a bridge to economic reform and transformation. Pakistan has cycled through program after program for decades without making structural changes. Egypt, Pakistan, Indonesia, Nigeria all followed versions of the same script. The debt trap is real, but the story is more complex than simple predation. Some countries escape while others remain caught in cycles of borrowing and adjustment. Listen to the full discussion about sovereign lending, structural adjustment, and shared responsibility. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-2 #DebtTrap #SovereignDebt #IMF #IslamicEconomics #StructuralAdjustment",
+      "carousel_slides": [
+        "The Ottoman Empire lost control of its own tax revenues to European creditors in 1881",
+        "The IMF structural adjustment programs are the modern version of the same arrangement",
+        "South Korea escaped the trap and transformed its economy",
+        "Pakistan has cycled through program after program for decades",
+        "The question is why some countries escape while others remain caught"
+      ],
+      "reel_caption": "From Ottoman debt to IMF programs: the pattern of sovereign lending dependency spans centuries. Listen to the full episode about debt traps and shared responsibility. #DebtTrap #SovereignDebt #IMF #IslamicEconomics #History",
+      "cover_text": "The Debt Trap: From Ottoman Empire to IMF",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Ottoman Empire lost control of its own tax revenues to European creditors in 1881. The IMF structural adjustment programs are the modern version of the same arrangement.\n\nSouth Korea used IMF loans as a bridge to reform. Pakistan has cycled through program after program for decades. The difference often comes down to what borrowing nations do when they still have choices to make.\n\nThe debt trap exists, but some countries escape while others\u2026",
+      "discussion_prompt": "Why do you think some countries successfully use international loans for development while others get trapped in\u2026",
+      "topic_suggestion": "Sovereign debt and economic dependency",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-2"
+    },
+    "short_video": {
+      "title": "The Debt Trap: Ottoman Empire to IMF Programs",
+      "hook": "The same financial trap caught the Ottoman Empire and dozens of modern nations",
+      "voiceover": "In 1881, the Ottoman Empire lost control of its own tax revenues to European creditors. A century later, the IMF offered structural adjustment programs to dozens of countries. The pattern is remarkably similar. South Korea used IMF loans as a bridge to reform and transformed its economy. Pakistan has cycled through program after program for decades without structural change. The debt trap is real, but some countries escape while others remain caught. The question is why.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Historical map of Ottoman Empire",
+          "on_screen_text": "1881: Ottoman Empire loses control"
+        },
+        {
+          "time": "5-15s",
+          "visual": "IMF building/logo",
+          "on_screen_text": "Century later: IMF structural adjustment"
+        },
+        {
+          "time": "15-25s",
+          "visual": "South Korea economic growth charts",
+          "on_screen_text": "South Korea: Used loans to transform"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Pakistan economic indicators",
+          "on_screen_text": "Pakistan: Decades of cycles"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Split screen comparison",
+          "on_screen_text": "Why do some escape the trap?"
+        }
+      ],
+      "caption": "From Ottoman debt to IMF programs: the sovereign lending trap spans centuries. Some countries escape, others remain caught. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-2",
+      "hashtags": [
+        "#DebtTrap",
+        "#SovereignDebt",
+        "#IMF",
+        "#IslamicEconomics",
+        "#History"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Ottoman Empire lost control of its own tax revenues to European creditors in 1881. The IMF structural adjustment programs are the modern version of the same arrangement. South Korea used IMF loans as a bridge to reform and transformed its economy. Pakistan has cycled through program after program for decades without structural change. The pattern repeats because sovereign lending creates dependency by design. Creditors get control over state revenues and policy in exchange for below-market\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_f0f7373d.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_f0f7373d.png"
+}
