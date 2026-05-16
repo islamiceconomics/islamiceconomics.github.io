@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-16-podcast-be-6-after-the-default",
+  "generated_at": "2026-05-16T14:53:46.937787+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-be-6-after-the-default",
+    "kind": "podcast",
+    "title": "After the Default",
+    "summary": "Debt jubilees, odious debt, and whether Islamic principles offer a reset for over-indebted nations.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-be-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "What happens when a nation simply cannot pay? Argentina has defaulted nine times. Lebanon's debt-to-GDP hit 150% before its economy collapsed. Sri Lanka defaulted in 2022 after running out of foreign reserves. The modern system offers few options: austerity, restructuring, or collapse. But Islamic tradition has a different concept. The Quran explicitly encourages creditors to forgive debts when debtors face hardship. The concept of odious debt, that populations shouldn't repay loans taken by dictators against their interests, resonates deeply with Islamic principles of justice. This final episode examines historical and modern debt crises, the growing movement for debt jubilees and cancellation, and proposes an Islamic framework for sovereign debt resolution that prioritizes human welfare over creditor returns.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Argentina has defaulted nine times. Nine times.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "Argentina has defaulted nine times. Lebanon's debt hit 150% of GDP before collapse. Sri Lanka ran out of foreign reserves in 2022.",
+        "The modern system offers three options: austerity, restructuring, or collapse. All painful. All partial solutions.",
+        "The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. Not restructure. Forgive.",
+        "A different framework exists. One that puts human welfare before financial mathematics. https://islamiceconomics.github.io/podcast.html#ep-be-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-6"
+    },
+    "linkedin": {
+      "post": "When nations can't pay, the modern financial system offers three options: impose austerity, restructure the debt, or watch the economy collapse. All are painful. All are incomplete solutions. Argentina has defaulted nine times. Lebanon's debt-to-GDP ratio hit 150% before its economy collapsed. Sri Lanka defaulted in 2022 after running out of foreign reserves. But there's another framework. The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. The concept of odious debt\u2014that populations shouldn't repay loans taken by dictators against their interests\u2014resonates deeply with Islamic principles of justice. What if sovereign debt resolution prioritized human welfare over financial mathematics? What if debt jubilees weren't radical policy but moral imperative? Listen: https://islamiceconomics.github.io/podcast.html#ep-be-6",
+      "comment_prompt": "Have you seen examples where debt forgiveness worked better than austerity or restructuring?"
+    },
+    "instagram": {
+      "caption": "Argentina: 9 defaults. Lebanon: 150% debt-to-GDP before collapse. Sri Lanka: ran out of foreign reserves in 2022. The pattern repeats. Nations borrow beyond capacity, crisis hits, and the same three options emerge: austerity, restructuring, or economic collapse. All painful. All incomplete. But what if there was a different way? The Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. Not restructure. Forgive. The concept of odious debt\u2014that populations shouldn't repay loans taken by dictators against their interests\u2014aligns with Islamic principles of justice. Maybe debt jubilees aren't radical policy but moral imperative. Listen to the full exploration of Islamic approaches to sovereign debt crisis. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-6 #IslamicEconomics #DebtCrisis #SovereignDebt #EconomicJustice #DebtForgiveness",
+      "carousel_slides": [
+        "Argentina has defaulted 9 times. The modern system is broken.",
+        "Lebanon: 150% debt-to-GDP before collapse. Sri Lanka: ran out of reserves in 2022.",
+        "Three options: Austerity. Restructuring. Collapse. All painful.",
+        "The Quran encourages creditors to forgive debts during hardship. Not restructure. Forgive.",
+        "What if debt resolution prioritized human welfare over financial mathematics?"
+      ],
+      "reel_caption": "When nations can't pay their debts, history shows us the same brutal cycle: austerity, restructuring, or economic collapse. But Islamic tradition offers a different path\u2014one that puts human welfare first. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-6 #IslamicEconomics #DebtCrisis #EconomicJustice",
+      "cover_text": "After the Default: Islamic Solutions to Debt\u2026",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Argentina has defaulted nine times. Lebanon's debt hit 150% of GDP before its economy collapsed. Sri Lanka ran out of foreign reserves in 2022.\n\nThe modern system offers three options: austerity, restructuring, or collapse. All painful. All incomplete.\n\nThe Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. Not restructure the terms. Forgive the debt entirely.",
+      "discussion_prompt": "What examples have you seen where debt forgiveness worked better than traditional restructuring?",
+      "topic_suggestion": "Islamic approaches to sovereign debt\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-6"
+    },
+    "short_video": {
+      "title": "After the Default: When Nations Can't Pay",
+      "hook": "Argentina has defaulted nine times. Nine times.",
+      "voiceover": "Argentina has defaulted nine times. Lebanon's debt hit one hundred fifty percent of GDP before collapse. Sri Lanka ran out of foreign reserves in twenty twenty-two. The modern system offers three options: austerity, restructuring, or collapse. All painful. But the Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. Not restructure. Forgive. What if sovereign debt resolution prioritized human welfare over financial mathematics? A different framework exists.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Argentina flag with financial charts",
+          "on_screen_text": "Argentina: 9 Defaults"
+        },
+        {
+          "time": "6-12s",
+          "visual": "Lebanon cityscape with debt statistics",
+          "on_screen_text": "Lebanon: 150% Debt-to-GDP"
+        },
+        {
+          "time": "13-18s",
+          "visual": "Sri Lanka map with empty treasury visual",
+          "on_screen_text": "Sri Lanka: Out of Reserves 2022"
+        },
+        {
+          "time": "19-25s",
+          "visual": "Three doors labeled with options",
+          "on_screen_text": "Austerity \u2022 Restructuring \u2022 Collapse"
+        },
+        {
+          "time": "26-32s",
+          "visual": "Quran pages with highlighted text",
+          "on_screen_text": "Forgive Debts During Hardship"
+        }
+      ],
+      "caption": "When nations can't pay, the modern system offers three brutal options. But Islamic tradition provides a different path\u2014one that puts human welfare before financial mathematics. Listen: https://islamiceconomics.github.io/podcast.html#ep-be-6",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#DebtCrisis",
+        "#SovereignDebt",
+        "#EconomicJustice",
+        "#DebtForgiveness"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Argentina has defaulted nine times. Lebanon's debt reached 150% of GDP before its economy collapsed. Sri Lanka defaulted in 2022 after running out of foreign reserves. The pattern repeats: nations borrow beyond capacity, crisis hits, and the same three brutal options emerge\u2014austerity, restructuring, or collapse. But the Quran explicitly encourages creditors to forgive debts when debtors face genuine hardship. Not restructure the terms. Forgive the debt entirely."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_88f3d10c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_88f3d10c.png"
+}

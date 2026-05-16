@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-16-podcast-mm-5-the-new-contenders",
+  "generated_at": "2026-05-16T14:55:50.245198+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-mm-5-the-new-contenders",
+    "kind": "podcast",
+    "title": "The New Contenders",
+    "summary": "De-dollarization, BRICS, CBDCs, crypto. Rhetoric vs reality in the challenge to dollar dominance.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Everyone talks about de-dollarization, but the dollar's structural advantages are enormous and no alternative comes close. BRICS ambitions face coordination problems. China's yuan internationalization requires capital account openness that Beijing resists. Central Bank Digital Currencies offer financial inclusion but raise surveillance concerns. The Bitcoin and crypto Islamic debate continues. This episode separates signal from noise: the trend at the margins is real, but the dollar system isn't going anywhere soon. Muslim-majority economies remain largely passive observers rather than shapers of whatever comes next.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Everyone talks about de-dollarization but the dollar's structural advantages are enormous. China's yuan internationalization requires capital account openness that Beijing resists.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Everyone talks about de-dollarization but the dollar's structural advantages are enormous and no alternative comes close.",
+        "China's yuan internationalization requires capital account openness that Beijing resists. BRICS ambitions face coordination problems between competing powers.",
+        "Central Bank Digital Currencies offer financial inclusion but raise surveillance concerns. The Bitcoin Islamic debate continues without clear resolution.",
+        "Muslim-majority economies remain largely passive observers rather than shapers of whatever monetary system comes next. https://islamiceconomics.github.io/podcast.html#ep-mm-5"
+      ],
+      "hashtags": [
+        "#dedollarization",
+        "#BRICS",
+        "#yuan"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-5"
+    },
+    "linkedin": {
+      "post": "The de-dollarization debate is everywhere, but reality tells a different story. The dollar's structural advantages remain enormous - no alternative currency system comes close to matching its depth, liquidity, and institutional framework. China's yuan internationalization faces a fundamental contradiction: it requires capital account openness that Beijing resists for domestic political control. BRICS coordination sounds appealing in theory but faces practical problems when national interests diverge. Central Bank Digital Currencies offer genuine benefits for financial inclusion, but they also raise unprecedented surveillance concerns. The Islamic permissibility of Bitcoin and crypto remains hotly debated without clear scholarly consensus. The trend at the margins is real - some bilateral trade is moving away from dollars. But the core system isn't going anywhere soon. What's perhaps most striking is how Muslim-majority economies remain largely passive observers rather than active shapers of whatever monetary future emerges. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-mm-5",
+      "comment_prompt": "What role should Muslim-majority economies play in shaping the future of international monetary systems?"
+    },
+    "instagram": {
+      "caption": "Everyone talks about de-dollarization, but the reality is more complex than the rhetoric suggests. The dollar's structural advantages are enormous. No alternative currency system comes close to matching its depth, liquidity, and institutional framework that took decades to build. China's yuan internationalization faces a fundamental contradiction - it requires capital account openness that Beijing resists for domestic political reasons. BRICS coordination sounds good in theory but faces practical problems when national interests diverge. Central Bank Digital Currencies offer real benefits for financial inclusion, but they also raise unprecedented surveillance concerns. The Islamic permissibility debate around Bitcoin and crypto continues without clear scholarly consensus. The trend at the margins is real - some bilateral trade is shifting away from dollars. But the core system isn't going anywhere soon. What strikes me most is how Muslim-majority economies remain largely passive observers rather than active shapers of whatever monetary future emerges. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-mm-5 #dedollarization #BRICS #yuan #CBDC #IslamicEconomics",
+      "carousel_slides": [
+        "Everyone talks about de-dollarization, but the dollar's structural advantages are enormous",
+        "China's yuan internationalization requires capital account openness that Beijing resists",
+        "BRICS ambitions face coordination problems between competing national interests",
+        "CBDCs offer financial inclusion but raise surveillance concerns",
+        "Muslim-majority economies remain passive observers of monetary system changes"
+      ],
+      "reel_caption": "The de-dollarization debate: separating signal from noise. The trend at the margins is real, but the dollar system isn't going anywhere soon. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-mm-5 #dedollarization #BRICS #yuan #CBDC #IslamicEconomics",
+      "cover_text": "De-dollarization: Rhetoric vs Reality",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Everyone talks about de-dollarization but the dollar's structural advantages are enormous and no alternative comes close. China's yuan internationalization requires capital account openness that Beijing resists.\n\nCentral Bank Digital Currencies offer financial inclusion but raise surveillance concerns. The Bitcoin Islamic debate continues without resolution.\n\nMuslim-majority economies remain largely passive observers rather than shapers of\u2026",
+      "discussion_prompt": "Should Muslim-majority economies take a more active role in shaping international monetary systems?",
+      "topic_suggestion": "The future of Islamic finance in a\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-5"
+    },
+    "short_video": {
+      "title": "De-dollarization: The Reality Behind the Rhetoric",
+      "hook": "Everyone talks about de-dollarization, but here's what's really happening",
+      "voiceover": "Everyone talks about de-dollarization, but the dollar's structural advantages are enormous. China's yuan internationalization requires capital account openness that Beijing resists for political reasons. BRICS coordination faces practical problems when national interests diverge. Central Bank Digital Currencies offer financial inclusion but raise surveillance concerns. The trend at the margins is real, but the core dollar system isn't going anywhere soon. Muslim-majority economies remain passive observers rather than shapers of whatever comes next.",
+      "shot_list": [
+        {
+          "time": "0-8s",
+          "visual": "World map with dollar symbols",
+          "on_screen_text": "De-dollarization Debate"
+        },
+        {
+          "time": "8-16s",
+          "visual": "Chinese yuan notes",
+          "on_screen_text": "Yuan needs capital openness"
+        },
+        {
+          "time": "16-24s",
+          "visual": "BRICS country flags",
+          "on_screen_text": "Coordination problems"
+        },
+        {
+          "time": "24-32s",
+          "visual": "Digital currency visualization",
+          "on_screen_text": "CBDCs: inclusion vs surveillance"
+        },
+        {
+          "time": "32-40s",
+          "visual": "Islamic geometric patterns",
+          "on_screen_text": "Muslim economies: passive observers"
+        }
+      ],
+      "caption": "The de-dollarization debate separates into rhetoric versus reality. The trend is real at the margins, but structural advantages keep the dollar dominant. https://islamiceconomics.github.io/podcast.html#ep-mm-5",
+      "hashtags": [
+        "#dedollarization",
+        "#BRICS",
+        "#yuan",
+        "#CBDC",
+        "#IslamicEconomics"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Everyone talks about de-dollarization but the dollar's structural advantages are enormous and no alternative comes close. China's yuan internationalization requires the very capital account openness that Beijing resists for political control. BRICS ambitions face coordination problems between competing national interests. The trend at the margins is real, but the dollar system isn't going anywhere soon. Muslim-majority economies remain largely passive observers rather than shapers of whatever\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_beef53ca.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_beef53ca.png"
+}

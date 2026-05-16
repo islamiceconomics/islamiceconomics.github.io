@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-16-podcast-mm-1-what-money-was",
+  "generated_at": "2026-05-16T14:54:06.415924+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-mm-1-what-money-was",
+    "kind": "podcast",
+    "title": "What Money Was",
+    "summary": "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar, replacing Byzantine and Sassanid coins across the caliphate. This wasn't just currency reform. It was a declaration of monetary sovereignty. The Islamic bimetallic system that emerged had standardized weights (the mithqal), quality control through the muhtasib, proto-forex markets run by sarrafs, and mint networks spanning three continents. This episode examines how the system actually worked, where it succeeded, and where it struggled, from Mamluk debasement to silver-gold ratio instability. The key insight: Islamic civilization didn't just have money. It had a monetary system with rules, institutions, and oversight.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The first purely Islamic gold dinar was minted in 696 CE. It replaced Byzantine and Sassanid coins across the entire caliphate. https://islamiceconomics.github.io/podcast.html#ep-mm-1",
+      "voice_pattern": "content_share",
+      "thread": [
+        "The first purely Islamic gold dinar was minted in 696 CE. It replaced Byzantine and Sassanid coins across the entire caliphate.",
+        "This wasn't just currency reform. It was monetary sovereignty. The bimetallic system that followed had standardized weights and quality control.",
+        "Proto-forex markets emerged, run by sarrafs. Mint networks spanned three continents. The muhtasib enforced standards.",
+        "Islamic civilization didn't just have money. It had a complete monetary system with rules and institutions. https://islamiceconomics.github.io/podcast.html#ep-mm-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-1"
+    },
+    "linkedin": {
+      "post": "In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar, replacing Byzantine and Sassanid coins across the caliphate. This wasn't just currency reform\u2014it was a declaration of monetary sovereignty. The Islamic bimetallic system that emerged was remarkably sophisticated. It featured standardized weights (the mithqal), quality control through the muhtasib, proto-forex markets run by sarrafs, and mint networks spanning three continents. The system had its struggles\u2014Mamluk debasement, silver-gold ratio instability\u2014but the key insight remains: Islamic civilization didn't just have money. It had a complete monetary system with rules, institutions, and oversight. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-mm-1",
+      "comment_prompt": "What parallels do you see between medieval Islamic monetary institutions and modern financial systems?"
+    },
+    "instagram": {
+      "caption": "In 696 CE, something revolutionary happened. Caliph Abd al-Malik ibn Marwan minted the first purely Islamic gold dinar, replacing Byzantine and Sassanid coins across the entire caliphate. This wasn't just currency reform. It was monetary sovereignty. The system that emerged was sophisticated beyond its time: \u2022 Standardized weights (the mithqal) \u2022 Quality control through the muhtasib \u2022 Proto-forex markets run by sarrafs \u2022 Mint networks spanning three continents Yes, there were struggles\u2014debasement, ratio instability\u2014but the insight remains: Islamic civilization didn't just have money. It had a complete monetary system with institutions and rules. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-mm-1 #IslamicEconomics #MonetaryHistory #IslamicFinance #EconomicHistory #GoldStandard",
+      "carousel_slides": [
+        "696 CE: The first purely Islamic gold dinar was minted",
+        "It replaced Byzantine and Sassanid coins across the entire caliphate",
+        "This was monetary sovereignty, not just currency reform",
+        "The system had standardized weights, quality control, and proto-forex markets",
+        "Mint networks spanned three continents with institutional oversight"
+      ],
+      "reel_caption": "The moment Islamic civilization declared monetary independence. Listen to the full story at the link in bio. #IslamicEconomics #MonetaryHistory #IslamicFinance #EconomicHistory #GoldStandard",
+      "cover_text": "696 CE: The First Islamic Dinar",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "In 696 CE, Caliph Abd al-Malik ibn Marwan minted the first purely Islamic gold dinar. It replaced Byzantine and Sassanid coins across the caliphate.\n\nThis wasn't currency reform. It was monetary sovereignty. The bimetallic system that emerged had standardized weights, quality control through the muhtasib, and proto-forex markets run by sarrafs.\n\nIslamic civilization didn't just have money. It had a complete monetary system with rules and\u2026",
+      "discussion_prompt": "What made the Islamic monetary system more than just coins and currency?",
+      "topic_suggestion": "Medieval monetary sovereignty",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-1"
+    },
+    "short_video": {
+      "title": "The First Islamic Dinar Changed Everything",
+      "hook": "696 CE: The moment Islamic civilization declared monetary independence",
+      "voiceover": "In 696 CE, Caliph Abd al-Malik made a revolutionary decision. He minted the first purely Islamic gold dinar, replacing Byzantine and Sassanid coins across the entire caliphate. This wasn't just currency reform. It was monetary sovereignty. The system that emerged had standardized weights, quality control, and proto-forex markets run by sarrafs. Mint networks spanned three continents. Islamic civilization didn't just have money. It had a complete monetary system with institutions and rules.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Ancient gold coins",
+          "on_screen_text": "696 CE"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Map of caliphate",
+          "on_screen_text": "Replaced Byzantine & Sassanid coins"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Mint workshop",
+          "on_screen_text": "Standardized weights & quality control"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Trading markets",
+          "on_screen_text": "Proto-forex markets"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Three continents map",
+          "on_screen_text": "Complete monetary system"
+        }
+      ],
+      "caption": "The first Islamic dinar wasn't just a coin\u2014it was monetary sovereignty. Listen to the full story: https://islamiceconomics.github.io/podcast.html#ep-mm-1",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#MonetaryHistory",
+        "#IslamicFinance",
+        "#EconomicHistory",
+        "#GoldStandard"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The first purely Islamic gold dinar was minted in 696 CE by Caliph Abd al-Malik ibn Marwan. It replaced Byzantine and Sassanid coins across the entire caliphate. This wasn't just currency reform. It was a declaration of monetary sovereignty. The bimetallic system that emerged had standardized weights called the mithqal, quality control through the muhtasib, and proto-forex markets run by sarrafs. Mint networks spanned three continents."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_43ec6601.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_43ec6601.png"
+}

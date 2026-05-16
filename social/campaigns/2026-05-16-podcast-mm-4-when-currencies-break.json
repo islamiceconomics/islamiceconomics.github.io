@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-16-podcast-mm-4-when-currencies-break",
+  "generated_at": "2026-05-16T14:55:27.074069+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-mm-4-when-currencies-break",
+    "kind": "podcast",
+    "title": "When Currencies Break",
+    "summary": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. The dollar creates vulnerability, but governance determines the outcome.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across the board. Egypt's is structural economic narrowness. Iran's combines sanctions with internal dysfunction. Lebanon's is elite capture of the entire banking system. Each case gets specific, fair treatment, with no heroes and no villains. The common thread: the dollar system creates vulnerability for peripheral economies, but domestic governance determines whether that vulnerability becomes a crisis. The same external pressures produce very different outcomes depending on how countries are governed.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Most people think currency crises happen because countries run out of dollars. They happen because leaders destroy the institutions that manage dollars. Turkey's Erdogan fired his central bank governor three times in two years.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "Five Muslim countries faced currency collapse in recent years. Each story reveals something different about how institutions break.",
+        "Turkey's crisis was political. Erdogan fired his central bank governor three times in two years, demanding lower rates while inflation soared.",
+        "Pakistan's reflects deeper rot. Every institution failed simultaneously. Egypt's economy is too narrow. Iran faces sanctions plus internal dysfunction.",
+        "Lebanon is different. The entire banking system was captured by elites who used deposits to fund government deficits. A Ponzi scheme disguised as sovereignty. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+      ],
+      "hashtags": [
+        "#CurrencyCrisis",
+        "#MonetaryPolicy",
+        "#MiddleEast"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+    },
+    "linkedin": {
+      "post": "Currency crises reveal more about governance than economics. Recent collapses in Turkey, Pakistan, Egypt, Iran, and Lebanon each tell a distinct story about institutional failure. Turkey's crisis was political interference: Erdogan fired his central bank governor three times in two years, demanding lower rates while inflation soared. Pakistan reflected systemic breakdown across all institutions. Egypt's narrow economic base couldn't withstand external pressures. Iran combines sanctions with internal dysfunction. But Lebanon stands apart: elites captured the entire banking system, using deposits to fund government deficits in what amounted to a Ponzi scheme. The dollar system creates vulnerability for peripheral economies, but domestic governance determines whether that vulnerability becomes catastrophe. Same pressures, different institutions, vastly different outcomes. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+      "comment_prompt": "Which institutional failure do you think is hardest to recover from?"
+    },
+    "instagram": {
+      "caption": "Five Muslim countries. Five currency collapses. Five different stories about how institutions break. Turkey: Political interference. Erdogan fired his central bank governor three times in two years. Pakistan: Complete institutional breakdown across the board. Egypt: Structural economic narrowness couldn't handle external shocks. Iran: Sanctions combined with internal dysfunction. Lebanon: Elite capture of the entire banking system. They used deposits to fund government deficits. The dollar system creates vulnerability, but governance determines the outcome. Same external pressures, different institutions, completely different results. Listen to the full analysis at the link in bio. #CurrencyCrisis #Economics #Governance #MiddleEast #MonetaryPolicy",
+      "carousel_slides": [
+        "Five Countries Five Currency Collapses",
+        "Turkey: Erdogan fired his central bank governor 3 times in 2 years",
+        "Pakistan: Every institution failed simultaneously",
+        "Egypt: Economy too narrow to handle external shocks",
+        "Lebanon: Elites turned banking into a Ponzi scheme"
+      ],
+      "reel_caption": "Why do some countries survive currency pressure while others collapse? It's not about running out of dollars. Listen to the full breakdown at the link in bio. #CurrencyCrisis #Economics #Governance",
+      "cover_text": "When Currencies Break",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Currency crises aren't really about running out of dollars. They're about destroying the institutions that manage dollars.\n\nFive Muslim countries faced collapse recently. Turkey's Erdogan fired his central bank governor three times. Pakistan saw every institution fail simultaneously. Lebanon's elites turned banking into a Ponzi scheme.\n\nSame external pressures. Different governance. Completely different outcomes.",
+      "discussion_prompt": "Which type of institutional failure is hardest for a country to recover from?",
+      "topic_suggestion": "Currency Crisis Management",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+    },
+    "short_video": {
+      "title": "Why Currencies Really Collapse",
+      "hook": "Five countries, five currency crises, one surprising truth",
+      "voiceover": "Most people think currency crises happen when countries run out of dollars. They don't. They happen when leaders destroy the institutions that manage dollars. Turkey's Erdogan fired his central bank governor three times in two years. Pakistan saw every institution fail simultaneously. Egypt's economy proved too narrow. Iran faces sanctions plus dysfunction. Lebanon's elites captured banking entirely, using deposits to fund deficits. Same external pressures, different governance, completely different outcomes. The dollar creates vulnerability, but institutions determine survival.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "World map highlighting five countries",
+          "on_screen_text": "5 Countries, 5 Currency Crises"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Turkish lira chart declining",
+          "on_screen_text": "Turkey: 3 Central Bank Governors Fired"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Pakistani rupee declining",
+          "on_screen_text": "Pakistan: Complete Institutional Failure"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Lebanese pound collapse chart",
+          "on_screen_text": "Lebanon: Banking Ponzi Scheme"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Split screen comparison",
+          "on_screen_text": "Same Pressure, Different Governance"
+        }
+      ],
+      "caption": "Currency crises reveal more about institutions than economics. Listen to the full analysis of Turkey, Pakistan, Egypt, Iran, and Lebanon.",
+      "hashtags": [
+        "#CurrencyCrisis",
+        "#Economics",
+        "#Governance",
+        "#MonetaryPolicy",
+        "#MiddleEast"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Most people think currency crises happen because countries run out of dollars. They happen because leaders destroy the institutions that manage dollars. The same external pressures produce completely different outcomes depending on governance. Turkey's Erdogan fired his central bank governor three times in two years, demanding lower rates while inflation destroyed savings. Pakistan saw every institution fail simultaneously. Egypt's economy proved too structurally narrow. Iran combines\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_9717ce08.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_9717ce08.png"
+}

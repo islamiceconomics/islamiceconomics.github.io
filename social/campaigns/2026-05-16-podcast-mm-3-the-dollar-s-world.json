@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-16-podcast-mm-3-the-dollar-s-world",
+  "generated_at": "2026-05-16T14:55:01.832784+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-mm-3-the-dollar-s-world",
+    "kind": "podcast",
+    "title": "The Dollar's World",
+    "summary": "How the US dollar became the global reserve currency and what that means for Muslim-majority economies.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "From Bretton Woods to the Nixon shock to the petrodollar arrangement. The US dollar's journey to global reserve status. The dollar system provides real stability and liquidity that the world depends on. But it creates asymmetric vulnerability for peripheral economies: oil priced in dollars, debt denominated in dollars, vulnerability to Federal Reserve decisions made with American interests in mind. This episode traces how reserve currency status works in practice, what \"exorbitant privilege\" actually means, and how Muslim-majority economies navigate a system they didn't design but can't avoid.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The petrodollar system means oil prices move with American monetary policy, not Middle Eastern production. When the Fed raises rates, oil-importing countries pay twice. https://islamiceconomics.github.io/podcast.html#ep-mm-3",
+      "voice_pattern": "content_share",
+      "thread": [
+        "The petrodollar system means oil prices move with American monetary policy, not Middle Eastern production. When the Fed raises rates, oil-importing countries pay twice.",
+        "Bretton Woods made the dollar convertible to gold at $35 per ounce. Nixon ended that in 1971, but the dollar stayed global by becoming the oil currency.",
+        "Reserve currency status gives America \"exorbitant privilege\" \u2014 they can print money to pay foreign debts while others must earn dollars first.",
+        "Muslim-majority economies navigate a system they didn't design but can't escape. Oil priced in dollars, debt denominated in dollars, vulnerability baked in. https://islamiceconomics.github.io/podcast.html#ep-mm-3"
+      ],
+      "hashtags": [
+        "#islamiceconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-3"
+    },
+    "linkedin": {
+      "post": "The petrodollar arrangement reveals how monetary policy travels across borders in ways most people never consider. When the Federal Reserve adjusts interest rates, they're making decisions with American economic interests in mind. But those decisions ripple through every oil transaction on earth. Oil-importing countries find themselves paying twice when the Fed tightens \u2014 once for more expensive oil, once for the stronger dollars needed to buy it. This is the hidden architecture of \"exorbitant privilege.\" America can print money to pay foreign debts while peripheral economies must first earn those same dollars to participate in global trade. The journey from Bretton Woods to the Nixon shock to today's dollar system shows how reserve currency status works in practice. Muslim-majority economies navigate a system they didn't design but can't escape. Listen: https://islamiceconomics.github.io/podcast.html#ep-mm-3",
+      "comment_prompt": "How do you see dollar dominance affecting your country's economic policy decisions?"
+    },
+    "instagram": {
+      "caption": "The petrodollar system means oil prices move with American monetary policy, not just Middle Eastern production decisions. When the Federal Reserve raises interest rates, oil-importing countries pay twice \u2014 once for more expensive oil, once for the stronger dollars needed to buy it. This is what economists call \"exorbitant privilege\" in action. America can print money to pay foreign debts while peripheral economies must first earn those same dollars to participate in global trade. The journey from Bretton Woods to the Nixon shock to today's system reveals how reserve currency status creates asymmetric vulnerability. Muslim-majority economies navigate a monetary system they didn't design but can't escape. Oil priced in dollars, debt denominated in dollars, exposure baked into the architecture. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-mm-3 #islamiceconomics #monetarypolicy #petrodollar #globaleconomics #reservecurrency",
+      "carousel_slides": [
+        "The petrodollar system means oil prices move with American monetary policy, not Middle\u2026",
+        "When the Fed raises rates, oil-importing countries pay twice \u2014 for expensive oil and\u2026",
+        "America can print money to pay foreign debts. Other countries must earn dollars first.",
+        "Bretton Woods made dollars convertible to gold at $35/ounce. Nixon ended that in 1971.",
+        "Muslim-majority economies navigate a system they didn't design but can't escape."
+      ],
+      "reel_caption": "The hidden way Federal Reserve decisions affect oil prices worldwide. #islamiceconomics #petrodollar #monetarypolicy",
+      "cover_text": "Why Oil Prices Follow the Fed",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The petrodollar arrangement creates a strange dynamic: oil prices respond more to Federal Reserve meetings than OPEC announcements.\n\nWhen America adjusts interest rates for domestic reasons, every oil transaction on earth feels the impact. Countries importing oil pay twice when the Fed tightens \u2014 once for more expensive oil, once for stronger dollars.\n\nThis is how reserve currency status works in practice. The Nixon shock ended gold\u2026",
+      "discussion_prompt": "How do you see dollar dominance affecting economic decisions in your region?",
+      "topic_suggestion": "The hidden costs of monetary dependence",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-3"
+    },
+    "short_video": {
+      "title": "Why Oil Prices Follow the Fed",
+      "hook": "Oil prices don't just respond to Middle Eastern production \u2014 they follow American monetary policy",
+      "voiceover": "The petrodollar system creates a hidden connection between Federal Reserve decisions and global oil prices. When the Fed raises interest rates for American economic reasons, oil-importing countries pay twice. Once for more expensive oil, once for the stronger dollars needed to buy it. This is America's exorbitant privilege in action. They can print money to pay foreign debts while other economies must first earn those same dollars. The system traces back to the Nixon shock in 1971, when dollar-gold convertibility ended but dollar dominance continued through oil.",
+      "shot_list": [
+        {
+          "time": "0-8s",
+          "visual": "Federal Reserve building",
+          "on_screen_text": "Fed raises rates"
+        },
+        {
+          "time": "8-16s",
+          "visual": "Oil tankers at sea",
+          "on_screen_text": "Oil prices rise globally"
+        },
+        {
+          "time": "16-24s",
+          "visual": "Currency exchange rates",
+          "on_screen_text": "Countries pay twice"
+        },
+        {
+          "time": "24-32s",
+          "visual": "US dollar bills",
+          "on_screen_text": "Exorbitant privilege"
+        },
+        {
+          "time": "32-40s",
+          "visual": "1971 newspaper headline",
+          "on_screen_text": "Nixon shock 1971"
+        }
+      ],
+      "caption": "The petrodollar system means Federal Reserve decisions ripple through every oil transaction on earth. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-mm-3",
+      "hashtags": [
+        "#islamiceconomics",
+        "#petrodollar",
+        "#fed",
+        "#monetarypolicy",
+        "#oilprices"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The petrodollar system means oil prices move with American monetary policy, not Middle Eastern production. When the Fed raises rates, oil-importing countries pay twice \u2014 once for the more expensive oil, once for the stronger dollar needed to buy it. This is what \"exorbitant privilege\" looks like in practice: America prints money to pay foreign debts while peripheral economies must first earn those same dollars to participate in global trade. The Nixon shock ended dollar-gold convertibility in\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_1d2187d8.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_1d2187d8.png"
+}

@@ -397,6 +397,14 @@
           "json_path": "social/campaigns/2026-03-30-podcast-be-6-after-the-default.json",
           "markdown_path": "social/campaigns/2026-03-30-podcast-be-6-after-the-default.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-16-podcast-be-6-after-the-default",
+          "generated_at": "2026-05-16T14:53:46.937787+00:00",
+          "json_path": "social/campaigns/2026-05-16-podcast-be-6-after-the-default.json",
+          "markdown_path": "social/campaigns/2026-05-16-podcast-be-6-after-the-default.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -622,6 +630,14 @@
           "json_path": "social/campaigns/2026-03-30-podcast-mm-1-what-money-was.json",
           "markdown_path": "social/campaigns/2026-03-30-podcast-mm-1-what-money-was.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-16-podcast-mm-1-what-money-was",
+          "generated_at": "2026-05-16T14:54:06.415924+00:00",
+          "json_path": "social/campaigns/2026-05-16-podcast-mm-1-what-money-was.json",
+          "markdown_path": "social/campaigns/2026-05-16-podcast-mm-1-what-money-was.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -633,6 +649,14 @@
           "generated_at": "2026-03-30T15:02:30.050084+00:00",
           "json_path": "social/campaigns/2026-03-30-podcast-mm-2-the-central-bank-question.json",
           "markdown_path": "social/campaigns/2026-03-30-podcast-mm-2-the-central-bank-question.md",
+          "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-16-podcast-mm-2-the-central-bank-question",
+          "generated_at": "2026-05-16T14:54:35.891615+00:00",
+          "json_path": "social/campaigns/2026-05-16-podcast-mm-2-the-central-bank-question.json",
+          "markdown_path": "social/campaigns/2026-05-16-podcast-mm-2-the-central-bank-question.md",
           "x_voice_pattern": "connection"
         }
       ]
@@ -646,6 +670,14 @@
           "json_path": "social/campaigns/2026-03-30-podcast-mm-3-the-dollar-s-world.json",
           "markdown_path": "social/campaigns/2026-03-30-podcast-mm-3-the-dollar-s-world.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-16-podcast-mm-3-the-dollar-s-world",
+          "generated_at": "2026-05-16T14:55:01.832784+00:00",
+          "json_path": "social/campaigns/2026-05-16-podcast-mm-3-the-dollar-s-world.json",
+          "markdown_path": "social/campaigns/2026-05-16-podcast-mm-3-the-dollar-s-world.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -658,6 +690,14 @@
           "json_path": "social/campaigns/2026-03-31-podcast-mm-4-when-currencies-break.json",
           "markdown_path": "social/campaigns/2026-03-31-podcast-mm-4-when-currencies-break.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-16-podcast-mm-4-when-currencies-break",
+          "generated_at": "2026-05-16T14:55:27.074069+00:00",
+          "json_path": "social/campaigns/2026-05-16-podcast-mm-4-when-currencies-break.json",
+          "markdown_path": "social/campaigns/2026-05-16-podcast-mm-4-when-currencies-break.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -669,6 +709,14 @@
           "generated_at": "2026-03-31T14:59:39.435138+00:00",
           "json_path": "social/campaigns/2026-03-31-podcast-mm-5-the-new-contenders.json",
           "markdown_path": "social/campaigns/2026-03-31-podcast-mm-5-the-new-contenders.md",
+          "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-16-podcast-mm-5-the-new-contenders",
+          "generated_at": "2026-05-16T14:55:50.245198+00:00",
+          "json_path": "social/campaigns/2026-05-16-podcast-mm-5-the-new-contenders.json",
+          "markdown_path": "social/campaigns/2026-05-16-podcast-mm-5-the-new-contenders.md",
           "x_voice_pattern": "observation"
         }
       ]
