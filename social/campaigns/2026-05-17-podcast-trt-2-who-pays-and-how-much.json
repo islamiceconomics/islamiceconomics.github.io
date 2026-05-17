@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-17-podcast-trt-2-who-pays-and-how-much",
+  "generated_at": "2026-05-17T14:54:54.778084+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-trt-2-who-pays-and-how-much",
+    "kind": "podcast",
+    "title": "Who Pays and How Much",
+    "summary": "Tax incidence, deadweight loss, and how Islamic tax instruments compare to modern systems.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Taxes change behavior. Income taxes discourage earning; sales taxes discourage spending; property taxes discourage holding. The economics of tax design is about minimizing these distortions while raising enough revenue. This episode covers tax incidence (who really bears the burden), deadweight loss, and the efficiency-equity tradeoff. Then it examines Islamic tax instruments: zakat as a wealth tax with a 2.5% rate and nisab threshold, kharaj as a land/output tax, ushur as a trade levy. Each has specific economic properties. Zakat's flat rate is simple but possibly insufficient for a modern state. The jizya receives an honest treatment: discriminatory by modern standards, though it had a specific fiscal logic in its historical context.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Zakat's 2.5% wealth tax has a specific economic property that modern tax policy ignores. It discourages hoarding without penalizing productive investment or consumption. https://islamiceconomics.github.io/podcast.html#ep-trt-2",
+      "voice_pattern": "content_share",
+      "thread": [
+        "Zakat's 2.5% wealth tax has a specific economic property that modern tax policy ignores. It discourages hoarding without penalizing productive investment or consumption.",
+        "Income taxes discourage earning. Sales taxes discourage spending. Property taxes discourage holding. Every tax distorts behavior in predictable ways.",
+        "Islamic tax instruments were designed around different principles. Kharaj targeted land productivity. Ushur applied to trade. Each had specific economic logic.",
+        "The challenge is efficiency versus equity. Zakat's flat rate is simple but may be insufficient for modern state revenue needs. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2"
+      ],
+      "hashtags": [
+        "#tax",
+        "#economics",
+        "#zakat"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-2"
+    },
+    "linkedin": {
+      "post": "Tax design is fundamentally about behavior modification. Income taxes discourage earning, sales taxes discourage spending, property taxes discourage holding assets. Every tax creates deadweight loss through behavioral distortions. Islamic tax instruments approached this differently. Zakat's 2.5% wealth tax discourages hoarding without penalizing productive investment or consumption. Kharaj targeted land productivity. Ushur applied to trade flows. Each had specific economic properties designed for particular outcomes. The challenge remains efficiency versus equity. Zakat's flat rate keeps administration simple but may be insufficient for modern state revenue needs. The question isn't whether these systems are perfect, but what their economic logic can teach us about tax incidence and deadweight loss. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2",
+      "comment_prompt": "What tax design principles do you think create the least economic distortion while maintaining equity?"
+    },
+    "instagram": {
+      "caption": "Every tax changes behavior. Income taxes make people work less. Sales taxes make people buy less. Property taxes make people hold fewer assets. This is called deadweight loss. Islamic tax instruments were designed with different behavioral incentives. Zakat's 2.5% wealth tax discourages hoarding money without penalizing productive investment or consumption. Kharaj targeted agricultural output. Ushur applied to trade. The economics of tax design is always about tradeoffs. Efficiency versus equity. Simple administration versus progressive rates. Revenue generation versus economic distortion. Modern tax policy could learn from how historical systems approached these fundamental challenges. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2 #tax #economics #policy #zakat #wealth",
+      "carousel_slides": [
+        "Every tax changes behavior in predictable ways",
+        "Income taxes: People work less Sales taxes: People spend less Property taxes: People\u2026",
+        "Zakat: 2.5% wealth tax Discourages hoarding Doesn't penalize investment",
+        "Kharaj: Land/output tax Ushur: Trade levy Each had specific economic logic",
+        "Tax design is always about tradeoffs: Efficiency vs Equity Revenue vs Distortion"
+      ],
+      "reel_caption": "Why zakat's 2.5% rate creates different incentives than modern wealth taxes. Every tax system shapes behavior - the question is which behaviors you want to encourage. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-2 #tax #economics #zakat #policy #wealth",
+      "cover_text": "How Taxes Change Behavior",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Zakat's 2.5% wealth tax has a specific economic property that modern tax policy ignores. It discourages hoarding without penalizing productive investment or consumption.\n\nIncome taxes discourage earning. Sales taxes discourage spending. Every tax distorts behavior through what economists call deadweight loss. Islamic tax instruments approached this challenge differently, each designed for specific economic outcomes.\n\nThe question isn't whether\u2026",
+      "discussion_prompt": "What behaviors should tax policy encourage versus discourage in a modern economy?",
+      "topic_suggestion": "Tax design and behavioral economics",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-2"
+    },
+    "short_video": {
+      "title": "Why Zakat Creates Different Economic Incentives",
+      "hook": "Every tax changes behavior, but zakat does something different",
+      "voiceover": "Income taxes make people work less. Sales taxes make people spend less. Property taxes make people hold fewer assets. Every tax creates what economists call deadweight loss through behavioral changes. But zakat's 2.5% wealth tax has a different property. It discourages hoarding money without penalizing productive investment or consumption. While modern tax systems often create conflicts between earning and spending, zakat creates incentives for capital deployment rather than accumulation. The question isn't whether 2.5% is the right rate for today, but whether the mechanism itself offers lessons for tax design.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Split screen showing work/money icons",
+          "on_screen_text": "Income taxes = work less"
+        },
+        {
+          "time": "5-10s",
+          "visual": "Shopping cart with decreasing items",
+          "on_screen_text": "Sales taxes = spend less"
+        },
+        {
+          "time": "10-15s",
+          "visual": "Property/house icons shrinking",
+          "on_screen_text": "Property taxes = hold less"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Money pile with 2.5% overlay",
+          "on_screen_text": "Zakat: 2.5% on wealth"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Arrow from hoarding to investment",
+          "on_screen_text": "Discourages hoarding"
+        }
+      ],
+      "caption": "Why zakat's wealth tax creates different behavioral incentives than modern systems. Listen to the full analysis.",
+      "hashtags": [
+        "#tax",
+        "#economics",
+        "#zakat",
+        "#policy",
+        "#wealth"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Zakat's 2.5% wealth tax has a specific economic property that modern tax policy ignores. It discourages hoarding without penalizing productive investment or consumption. Unlike income taxes that discourage earning or sales taxes that discourage spending, zakat creates incentives for capital deployment rather than accumulation. The nisab threshold protects small savers while the flat rate keeps administration simple. Whether 2.5% generates enough revenue for a modern state is a separate\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_5864053b.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_5864053b.png"
+}
