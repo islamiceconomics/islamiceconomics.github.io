@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-18-podcast-trt-5-the-borrower-s-bargain",
+  "generated_at": "2026-05-18T16:48:29.070136+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-trt-5-the-borrower-s-bargain",
+    "kind": "podcast",
+    "title": "The Borrower's Bargain",
+    "summary": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Governments borrow for good reasons and bad ones. Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies: all defensible. Funding consumption, hiding true fiscal costs, kicking problems to future generations: all dangerous. This episode covers government bond markets, debt sustainability metrics, Ricardian equivalence, and the real-world debt crises that happen when these frameworks break down. The Islamic constraint is clear: interest-bearing debt is prohibited. Sukuk offer an alternative, but the substance-versus-form debate is honest and unresolved. Revenue-backed financing creates real fiscal discipline but also limits government flexibility during crises.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Governments that can't borrow at interest must build roads and hospitals with today's revenue. The rest of us mortgaged tomorrow's children for today's convenience.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Governments that can't borrow at interest must build roads and hospitals with today's revenue. The rest of us mortgaged tomorrow's children for today's convenience.",
+        "When you remove interest-bearing debt, fiscal discipline becomes automatic. No hiding costs, no kicking problems down the road. Just revenue-backed financing.",
+        "Sukuk offer an alternative but the debate is honest: are these actual partnerships or just conventional bonds dressed up in different words?",
+        "The constraint forces hard choices. Build only what you can afford today, or wait until you have the money. https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+      ],
+      "hashtags": [
+        "#IslamicFinance",
+        "#PublicFinance",
+        "#GovernmentDebt"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+    },
+    "linkedin": {
+      "post": "Most governments smooth their spending across economic cycles by borrowing money they don't have. Fund infrastructure today, tax tomorrow's citizens to pay for it. Emergency spending gets rolled into routine operations. Consumption gets disguised as investment. The Islamic prohibition on interest-bearing debt creates a different reality: governments must fund projects with current revenue. No mortgaging future generations. No hiding fiscal costs. Revenue-backed financing enforces discipline automatically. Sukuk provide an alternative structure, but the fundamental question remains unresolved: are these genuine partnerships, or conventional bonds repackaged? The substance-versus-form debate continues because the stakes are real. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+      "comment_prompt": "How do you think governments should balance current needs with future fiscal health?"
+    },
+    "instagram": {
+      "caption": "Most governments run on borrowed time \u2014 literally. They fund today's projects with tomorrow's tax revenue, smooth spending across business cycles, and sometimes hide consumption as investment. The Islamic prohibition on interest-bearing debt creates a fundamentally different system: governments must build with current revenue. No mortgaging future generations. No kicking problems down the road. Revenue-backed financing enforces fiscal discipline automatically. Sukuk offer an alternative structure, but the debate is honest and unresolved: are these genuine partnerships, or conventional bonds in Islamic clothing? The substance-versus-form question matters because the constraint is real. Listen to the full discussion about government bonds, debt sustainability, and Islamic public finance constraints. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicFinance #PublicFinance #GovernmentDebt #Sukuk #FiscalPolicy",
+      "carousel_slides": [
+        "Most governments borrow money they don't have to fund projects they want today",
+        "The Islamic constraint: no interest-bearing debt means no mortgaging future generations",
+        "Revenue-backed financing creates automatic fiscal discipline",
+        "Sukuk offer alternatives but the substance vs form debate continues",
+        "Build only what you can afford with today's revenue \u2014 a radically different approach"
+      ],
+      "reel_caption": "When governments can't borrow at interest, they must build with today's money. The rest of us mortgaged our children's future for today's convenience. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicFinance #PublicFinance #GovernmentDebt",
+      "cover_text": "The Borrower's Bargain",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Most governments fund today's projects with tomorrow's tax revenue. Emergency spending becomes routine. Consumption gets disguised as investment.\n\nThe Islamic prohibition on interest-bearing debt forces a different reality: build only what you can afford with current revenue. No mortgaging future generations. Revenue-backed financing creates automatic fiscal discipline.\n\nSukuk provide alternatives, but the substance-versus-form debate remains\u2026",
+      "discussion_prompt": "Should governments be able to borrow against future tax revenue, or should they be limited to current funds?",
+      "topic_suggestion": "Government borrowing constraints",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+    },
+    "short_video": {
+      "title": "Why Some Governments Can't Borrow Money",
+      "hook": "What if governments could only spend money they actually have?",
+      "voiceover": "Most governments run on borrowed time. They fund today's roads and hospitals with tomorrow's tax revenue. Emergency spending becomes routine operations. The Islamic prohibition on interest changes everything. No borrowing at interest means no mortgaging future generations. You build roads when you have the money, not before. Revenue-backed financing creates automatic discipline. Sukuk offer alternatives, but the debate continues: genuine partnerships or bonds in disguise? The constraint forces hard choices most governments never face.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Government buildings, construction sites",
+          "on_screen_text": "Most governments borrow to build"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Calculator, budget documents",
+          "on_screen_text": "Fund today, tax tomorrow"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Islamic geometric patterns",
+          "on_screen_text": "Islamic constraint: no interest"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Revenue charts, current funds",
+          "on_screen_text": "Build with today's money only"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Sukuk documents, question marks",
+          "on_screen_text": "Alternatives exist but debates continue"
+        }
+      ],
+      "caption": "The Islamic prohibition on interest-bearing debt forces governments to build only what they can afford today. No mortgaging future generations. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+      "hashtags": [
+        "#IslamicFinance",
+        "#PublicFinance",
+        "#GovernmentDebt",
+        "#Sukuk",
+        "#FiscalPolicy"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Governments that can't borrow at interest must build roads and hospitals with today's revenue. The rest of us mortgaged tomorrow's children for today's convenience. When you remove interest-bearing debt, fiscal discipline becomes automatic. No hiding costs, no kicking problems down the road, no funding consumption while calling it investment. Just revenue-backed financing that forces governments to build only what they can actually afford. Sukuk offer an alternative but the debate remains\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_057597aa.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_057597aa.png"
+}

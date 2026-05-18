@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-18-podcast-trt-4-what-lies-beneath",
+  "generated_at": "2026-05-18T16:48:01.462286+00:00",
+  "x_voice_pattern": "question",
+  "source": {
+    "content_id": "podcast-trt-4-what-lies-beneath",
+    "kind": "podcast",
+    "title": "What Lies Beneath",
+    "summary": "The resource curse, Dutch disease, critical minerals, and the Islamic concept of communal resource ownership.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Countries that discover oil or minerals often end up worse off, not better. The resource curse is one of the most robust findings in development economics: resource wealth weakens institutions, concentrates power, and crowds out productive sectors through Dutch disease. This episode covers the mechanism, the evidence, and the exceptions (Norway, Botswana). Then it turns to Islamic resource economics: the fay' principle that communal resources belong to the community, the hima system of protected commons, and how sovereign wealth funds (particularly the Gulf model) represent a partial modern application. Pakistan's critical minerals reserves make this directly relevant. The honest assessment: Islamic principles point in the right direction, but no Muslim-majority resource economy has fully solved the institutional challenge.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Countries that discover oil often end up poorer than before they found it. The resource curse is one of the most reliable patterns in economics. Why does finding treasure in your backyard make you worse off than your neighbors who found nothing?",
+      "voice_pattern": "question",
+      "thread": [
+        "Countries that discover oil often end up poorer than before they found it. The resource curse is one of the most reliable patterns in development economics.",
+        "Oil money weakens institutions and crowds out other industries through Dutch disease. Manufacturing dies when your currency gets too strong from resource exports.",
+        "Only a few countries escaped this trap. Norway and Botswana managed to turn resource wealth into lasting prosperity instead of temporary booms.",
+        "Islamic economics has the fay' principle: communal resources belong to the community, not rulers. Pakistan's critical minerals could test whether this works in practice. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-4"
+      ],
+      "hashtags": [
+        "#ResourceCurse",
+        "#IslamicEconomics",
+        "#DevelopmentEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-4"
+    },
+    "linkedin": {
+      "post": "One of the most counterintuitive findings in development economics is the resource curse: countries that discover oil or minerals often end up worse off, not better. The mechanism is well-documented\u2014resource wealth weakens institutions, concentrates power, and crowds out productive sectors through Dutch disease. Only a few countries like Norway and Botswana have escaped this trap. What did they do differently? They built strong institutions before the resource boom hit. Islamic economics offers an interesting perspective through the fay' principle: communal resources belong to the community, not the state. The Gulf's sovereign wealth funds represent a partial modern application of this concept. With Pakistan sitting on significant critical minerals reserves, we have a real-time test case for whether these principles can translate into practice. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-4",
+      "comment_prompt": "What examples have you seen of countries successfully managing natural resource wealth? What institutional factors\u2026"
+    },
+    "instagram": {
+      "caption": "Countries that strike oil often end up poorer, not richer. It's called the resource curse, and it's one of the most reliable patterns economists have found. Here's what happens: Oil money weakens institutions, concentrates power with rulers, and kills other industries through \"Dutch disease\" - when your currency gets too strong from resource exports that manufacturing dies. Only Norway and Botswana really escaped this trap. They built strong institutions first. Islamic economics has something interesting to offer here: the fay' principle says communal resources belong to the community, not the state. Gulf sovereign wealth funds are a partial example of this in practice. Pakistan's critical minerals could be the next test case. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-trt-4 #ResourceCurse #IslamicEconomics #DevelopmentEconomics #SovereignWealth #Pakistan",
+      "carousel_slides": [
+        "Countries that discover oil often get POORER, not richer",
+        "The Resource Curse: Oil money weakens institutions and kills other industries",
+        "Only Norway and Botswana escaped this trap by building strong institutions first",
+        "Islamic principle: Communal resources belong to the community, not rulers",
+        "Pakistan's critical minerals will test if these principles work in practice"
+      ],
+      "reel_caption": "Why finding oil makes countries poorer (the resource curse explained) #ResourceCurse #Economics #Oil #IslamicEconomics #Pakistan",
+      "cover_text": "The Resource Curse: Why Oil Makes Countries Poorer",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Finding oil in your backyard sounds like winning the lottery. But countries that discover natural resources often end up worse off than their neighbors who found nothing.\n\nThe resource curse is real: oil money weakens institutions, concentrates power, and kills manufacturing through Dutch disease. Only Norway and Botswana managed to escape this trap.\n\nIslamic economics offers the fay' principle - communal resources belong to the community, not\u2026",
+      "discussion_prompt": "Have you noticed how resource-rich countries often struggle more than resource-poor ones? What do you think makes the\u2026",
+      "topic_suggestion": "The resource curse and alternative\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-4"
+    },
+    "short_video": {
+      "title": "Why Oil Makes Countries Poorer",
+      "hook": "Countries that discover oil often end up poorer than before",
+      "voiceover": "Countries that discover oil often end up poorer than their neighbors who found nothing. This is the resource curse - one of the most reliable patterns in economics. Oil money weakens institutions and kills other industries through Dutch disease. When your currency gets strong from oil exports, manufacturing dies. Only Norway and Botswana escaped this trap by building institutions first. Islamic economics has the fay principle - communal resources belong to the community. Pakistan's critical minerals could test whether this actually works in practice.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Oil derrick/mining equipment",
+          "on_screen_text": "Finding oil = getting richer?"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Declining economic indicators/graphs",
+          "on_screen_text": "Actually, most countries get POORER"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Factory closures/industrial decline",
+          "on_screen_text": "Dutch Disease kills manufacturing"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Norway flag/Botswana",
+          "on_screen_text": "Only 2 countries escaped the curse"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Pakistan map/minerals",
+          "on_screen_text": "Pakistan: next test case?"
+        }
+      ],
+      "caption": "The resource curse explained: why discovering oil often makes countries poorer, not richer. Pakistan's critical minerals could be the next test case.",
+      "hashtags": [
+        "#ResourceCurse",
+        "#Economics",
+        "#Oil",
+        "#Pakistan",
+        "#IslamicEconomics"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Countries that discover oil often end up poorer than before they found it. The resource curse is one of the most reliable patterns in development economics. Oil money weakens institutions, concentrates power in the hands of rulers, and kills manufacturing through Dutch disease. Only Norway and Botswana escaped this trap by building strong institutions first. Islamic economics offers the fay' principle: communal resources belong to the community, not the state. Sovereign wealth funds in the\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_50a62030.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_50a62030.png"
+}

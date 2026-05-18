@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-18-podcast-trt-6-building-the-treasury",
+  "generated_at": "2026-05-18T16:48:52.061935+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-trt-6-building-the-treasury",
+    "kind": "podcast",
+    "title": "Building the Treasury",
+    "summary": "Synthesizing the series: what an Islamic fiscal framework would look like in practice, what's missing, and what's next.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The final episode brings together the building blocks: revenue (zakat, kharaj, resource-sharing), spending (the dual bayt al-mal and waqf model), borrowing (sukuk and revenue-backed instruments), and governance (fiscal transparency, accountability, the ruler as trustee). What would a coherent Islamic fiscal framework look like in a modern state? The honest answer: it would combine Islamic tax instruments with pragmatic additional revenue sources, because zakat alone cannot fund a modern welfare state. The framework would emphasize asset-backed borrowing over interest-bearing debt, dual provision over pure state monopoly, and institutional accountability over discretionary spending. No Muslim-majority country has fully implemented this, but partial experiments in Malaysia, the Gulf, and elsewhere offer real data. Islamic fiscal theory is a work in progress, and this episode says so plainly.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Most people think Islamic finance is about avoiding interest. The real framework is about asset-backed borrowing over debt, dual provision over state monopoly, and institutional accountability. No Muslim-majority country has fully implemented this.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "Most people think Islamic finance is about avoiding interest. The real framework is much deeper: asset-backed borrowing over debt, dual provision over state monopoly, institutional accountability over discretionary spending.",
+        "The honest truth: zakat alone cannot fund a modern welfare state. A coherent Islamic fiscal framework would combine Islamic tax instruments with pragmatic additional revenue sources to meet today's needs.",
+        "The building blocks exist: zakat and kharaj for revenue, dual bayt al-mal and waqf for spending, sukuk for borrowing, transparency requirements for governance. The synthesis reveals something elegant.",
+        "No Muslim-majority country has fully implemented this framework. Partial experiments exist in Malaysia and the Gulf, but the complete model remains theoretical. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#PublicFinance",
+        "#Governance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-6"
+    },
+    "linkedin": {
+      "post": "The final synthesis is revealing. Most discussions of Islamic finance focus on avoiding interest, but the real framework goes much deeper: asset-backed borrowing over interest-bearing debt, dual provision over pure state monopoly, and institutional accountability over discretionary spending. The honest assessment: zakat alone cannot fund a modern welfare state. A coherent Islamic fiscal framework would combine Islamic tax instruments with pragmatic additional revenue sources to meet contemporary needs. The building blocks exist: zakat and kharaj for revenue, the dual bayt al-mal and waqf model for spending, sukuk and revenue-backed instruments for borrowing, and fiscal transparency requirements for governance. What emerges is elegant in theory but challenging in practice. No Muslim-majority country has fully implemented this framework, though partial experiments exist in Malaysia and the Gulf. Listen: https://islamiceconomics.github.io/podcast.html#ep-trt-6",
+      "comment_prompt": "What do you think are the biggest practical obstacles to implementing a complete Islamic fiscal framework in modern\u2026"
+    },
+    "instagram": {
+      "caption": "The final piece of the puzzle reveals something unexpected about Islamic economics. Most people think Islamic finance is just about avoiding interest. The real framework is about asset-backed borrowing over debt, dual provision over state monopoly, and institutional accountability over discretionary spending. The honest truth: zakat alone cannot fund a modern welfare state. A coherent Islamic fiscal framework would combine Islamic tax instruments with pragmatic additional revenue sources. The building blocks exist: zakat and kharaj for revenue, dual bayt al-mal and waqf for spending, sukuk for borrowing, transparency for governance. What emerges is elegant in theory but challenging in practice. No Muslim-majority country has fully implemented this complete framework, though partial experiments exist in Malaysia and the Gulf. Listen to the full synthesis: https://islamiceconomics.github.io/podcast.html#ep-trt-6 #IslamicEconomics #PublicFinance #Governance #Zakat #Sukuk",
+      "carousel_slides": [
+        "Most think Islamic finance is about avoiding interest. It's actually about something\u2026",
+        "Asset-backed borrowing over debt. Dual provision over state monopoly. Institutional\u2026",
+        "Zakat alone cannot fund a modern welfare state. The framework combines Islamic\u2026",
+        "The building blocks: zakat/kharaj for revenue, bayt al-mal/waqf for spending, sukuk for\u2026",
+        "No Muslim-majority country has fully implemented this. Partial experiments exist in\u2026"
+      ],
+      "reel_caption": "The real Islamic fiscal framework goes far beyond avoiding interest. It's about institutional design, accountability, and practical governance. Listen to the full synthesis. #IslamicEconomics #PublicFinance #Governance",
+      "cover_text": "Islamic Finance Reality Check",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The synthesis reveals something unexpected. Most people think Islamic finance is about avoiding interest, but the real framework is about asset-backed borrowing over debt, dual provision over state monopoly, and institutional accountability.\n\nThe honest assessment: zakat alone cannot fund a modern welfare state. A coherent framework would combine Islamic tax instruments with pragmatic additional sources. The building blocks exist, but no\u2026",
+      "discussion_prompt": "What do you think prevents Muslim-majority countries from implementing a complete Islamic fiscal framework?",
+      "topic_suggestion": "Modern applications of classical\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-6"
+    },
+    "short_video": {
+      "title": "The Real Islamic Finance Framework",
+      "hook": "Islamic finance isn't what most people think",
+      "voiceover": "Most people think Islamic finance is about avoiding interest. The real framework is much deeper. Asset-backed borrowing over debt. Dual provision over state monopoly. Institutional accountability over discretionary spending. The honest truth: zakat alone cannot fund a modern welfare state. A coherent framework would combine Islamic instruments with pragmatic revenue sources. The building blocks exist: zakat for revenue, dual spending models, sukuk for borrowing, transparency for governance. No Muslim-majority country has fully implemented this complete framework.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Traditional Islamic geometric patterns",
+          "on_screen_text": "Islamic Finance Reality"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Modern financial buildings",
+          "on_screen_text": "Beyond Avoiding Interest"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Building blocks animation",
+          "on_screen_text": "Asset-Backed Framework"
+        },
+        {
+          "time": "25-35s",
+          "visual": "World map highlighting Malaysia/Gulf",
+          "on_screen_text": "Partial Implementation Only"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Question mark overlay",
+          "on_screen_text": "Complete Model Remains Theoretical"
+        }
+      ],
+      "caption": "The real Islamic fiscal framework goes beyond what most people think. It's about institutional design, accountability, and practical governance. #IslamicEconomics #PublicFinance #Governance #Zakat #Sukuk",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#PublicFinance",
+        "#Governance",
+        "#Zakat",
+        "#Sukuk"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Most people think Islamic finance is about avoiding interest. The real framework is about asset-backed borrowing over debt, dual provision over state monopoly, and institutional accountability over discretionary spending. The honest truth: zakat alone cannot fund a modern welfare state. A coherent Islamic fiscal framework would combine Islamic tax instruments with pragmatic additional revenue sources. The building blocks exist: zakat and kharaj for revenue, dual bayt al-mal and waqf for\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_75bf1ad2.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_75bf1ad2.png"
+}

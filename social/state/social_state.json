@@ -910,6 +910,14 @@
           "json_path": "social/campaigns/2026-04-02-podcast-re-1-what-makes-countries-rich.json",
           "markdown_path": "social/campaigns/2026-04-02-podcast-re-1-what-makes-countries-rich.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-18-podcast-re-1-what-makes-countries-rich",
+          "generated_at": "2026-05-18T16:49:12.440581+00:00",
+          "json_path": "social/campaigns/2026-05-18-podcast-re-1-what-makes-countries-rich.json",
+          "markdown_path": "social/campaigns/2026-05-18-podcast-re-1-what-makes-countries-rich.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1022,6 +1030,14 @@
           "json_path": "social/campaigns/2026-04-01-podcast-trt-3-what-the-state-owes.json",
           "markdown_path": "social/campaigns/2026-04-01-podcast-trt-3-what-the-state-owes.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-18-podcast-trt-3-what-the-state-owes",
+          "generated_at": "2026-05-18T16:47:33.913725+00:00",
+          "json_path": "social/campaigns/2026-05-18-podcast-trt-3-what-the-state-owes.json",
+          "markdown_path": "social/campaigns/2026-05-18-podcast-trt-3-what-the-state-owes.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1034,6 +1050,14 @@
           "json_path": "social/campaigns/2026-04-01-podcast-trt-4-what-lies-beneath.json",
           "markdown_path": "social/campaigns/2026-04-01-podcast-trt-4-what-lies-beneath.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-18-podcast-trt-4-what-lies-beneath",
+          "generated_at": "2026-05-18T16:48:01.462286+00:00",
+          "json_path": "social/campaigns/2026-05-18-podcast-trt-4-what-lies-beneath.json",
+          "markdown_path": "social/campaigns/2026-05-18-podcast-trt-4-what-lies-beneath.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1046,6 +1070,14 @@
           "json_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.json",
           "markdown_path": "social/campaigns/2026-04-01-podcast-trt-5-the-borrower-s-bargain.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-18-podcast-trt-5-the-borrower-s-bargain",
+          "generated_at": "2026-05-18T16:48:29.070136+00:00",
+          "json_path": "social/campaigns/2026-05-18-podcast-trt-5-the-borrower-s-bargain.json",
+          "markdown_path": "social/campaigns/2026-05-18-podcast-trt-5-the-borrower-s-bargain.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1058,6 +1090,14 @@
           "json_path": "social/campaigns/2026-04-02-podcast-trt-6-building-the-treasury.json",
           "markdown_path": "social/campaigns/2026-04-02-podcast-trt-6-building-the-treasury.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-18-podcast-trt-6-building-the-treasury",
+          "generated_at": "2026-05-18T16:48:52.061935+00:00",
+          "json_path": "social/campaigns/2026-05-18-podcast-trt-6-building-the-treasury.json",
+          "markdown_path": "social/campaigns/2026-05-18-podcast-trt-6-building-the-treasury.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
