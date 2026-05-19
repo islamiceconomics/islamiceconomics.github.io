@@ -930,6 +930,14 @@
           "json_path": "social/campaigns/2026-04-03-podcast-re-2-the-growth-engine.json",
           "markdown_path": "social/campaigns/2026-04-03-podcast-re-2-the-growth-engine.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-19-podcast-re-2-the-growth-engine",
+          "generated_at": "2026-05-19T16:50:08.655928+00:00",
+          "json_path": "social/campaigns/2026-05-19-podcast-re-2-the-growth-engine.json",
+          "markdown_path": "social/campaigns/2026-05-19-podcast-re-2-the-growth-engine.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -942,6 +950,14 @@
           "json_path": "social/campaigns/2026-04-03-podcast-re-3-who-saves-and-why.json",
           "markdown_path": "social/campaigns/2026-04-03-podcast-re-3-who-saves-and-why.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-19-podcast-re-3-who-saves-and-why",
+          "generated_at": "2026-05-19T16:50:34.818242+00:00",
+          "json_path": "social/campaigns/2026-05-19-podcast-re-3-who-saves-and-why.json",
+          "markdown_path": "social/campaigns/2026-05-19-podcast-re-3-who-saves-and-why.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -954,6 +970,14 @@
           "json_path": "social/campaigns/2026-04-04-podcast-re-4-where-investment-goes.json",
           "markdown_path": "social/campaigns/2026-04-04-podcast-re-4-where-investment-goes.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-19-podcast-re-4-where-investment-goes",
+          "generated_at": "2026-05-19T16:51:03.315788+00:00",
+          "json_path": "social/campaigns/2026-05-19-podcast-re-4-where-investment-goes.json",
+          "markdown_path": "social/campaigns/2026-05-19-podcast-re-4-where-investment-goes.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -966,6 +990,14 @@
           "json_path": "social/campaigns/2026-04-04-podcast-re-5-work-wages-and-worth.json",
           "markdown_path": "social/campaigns/2026-04-04-podcast-re-5-work-wages-and-worth.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-19-podcast-re-5-work-wages-and-worth",
+          "generated_at": "2026-05-19T16:51:26.594202+00:00",
+          "json_path": "social/campaigns/2026-05-19-podcast-re-5-work-wages-and-worth.json",
+          "markdown_path": "social/campaigns/2026-05-19-podcast-re-5-work-wages-and-worth.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },

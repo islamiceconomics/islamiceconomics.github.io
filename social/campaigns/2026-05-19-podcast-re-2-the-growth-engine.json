@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-19-podcast-re-2-the-growth-engine",
+  "generated_at": "2026-05-19T16:50:08.655928+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-re-2-the-growth-engine",
+    "kind": "podcast",
+    "title": "The Growth Engine",
+    "summary": "The Solow growth model, steady states, convergence failures, and why human capital is the missing variable.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Solow growth model is the workhorse of growth economics. An economy produces output using capital and labor. Each year, some output is saved and invested. But capital depreciates, and diminishing returns set in. The key insight: capital accumulation alone can't sustain growth forever. Only technological progress drives long-run growth. The model predicts convergence: poor countries should grow faster. But many Muslim-majority countries haven't converged. Pakistan's per-capita growth has been anemic for decades. Indonesia did better. Malaysia succeeded. The pattern isn't about Islam. It's about institutions and governance. This episode extends the model to include human capital, where the Islamic tradition's emphasis on ilm (knowledge) should be an advantage, but modern Muslim-majority states have largely failed to translate that tradition into actual educational investment.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Solow growth model predicted poor countries would grow faster than rich ones. Pakistan's per-capita growth has been anemic for decades while Malaysia succeeded.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "The Solow growth model predicted poor countries would grow faster than rich ones. Pakistan's per-capita growth has been anemic for decades while Malaysia succeeded.",
+        "The model's core insight: capital accumulation alone can't sustain growth forever. Diminishing returns always set in. Only technological progress drives long-run growth.",
+        "Many Muslim-majority countries haven't converged despite the theory. The pattern isn't about Islam. It's about institutions and governance.",
+        "When you extend the model to include human capital, the Islamic tradition's emphasis on ilm should be an advantage. But something else is missing. https://islamiceconomics.github.io/podcast.html#ep-re-2"
+      ],
+      "hashtags": [
+        "#economics",
+        "#growth",
+        "#development"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-2"
+    },
+    "linkedin": {
+      "post": "The Solow growth model remains the workhorse of growth economics, built on a simple premise: economies produce output using capital and labor, with savings driving investment. But the model's most striking prediction\u2014that poor countries should grow faster than rich ones due to diminishing returns\u2014hasn't held for many Muslim-majority nations. Pakistan's per-capita growth has been anemic for decades. Indonesia performed better. Malaysia succeeded remarkably. The pattern isn't about Islamic principles but about institutions and governance. When we extend the model to include human capital, Islam's emphasis on ilm (knowledge) should theoretically provide an advantage. Yet convergence failures persist across many Muslim-majority countries, pointing to deeper structural challenges in how knowledge translates into economic growth. Listen to the full analysis: https://islamiceconomics.github.io/podcast.html#ep-re-2",
+      "comment_prompt": "Which institutional factors do you think matter most for economic convergence in developing countries?"
+    },
+    "instagram": {
+      "caption": "The Solow growth model predicted something fascinating: poor countries should grow faster than rich ones. But reality tells a different story across Muslim-majority nations. Pakistan's per-capita growth has been anemic for decades. Malaysia succeeded. Indonesia did better than expected. The pattern reveals that convergence isn't automatic\u2014it depends on institutions and governance, not religious tradition. The model's core insight remains powerful: capital accumulation alone can't sustain growth forever. Only technological progress drives long-run growth. When extended to include human capital, Islam's emphasis on ilm (knowledge) should be an advantage. But something deeper is at work in the convergence failures we observe. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-re-2 #economics #growth #development #institutions #knowledge",
+      "carousel_slides": [
+        "The Solow Growth Model: Poor countries should grow faster than rich ones",
+        "Reality Check: Pakistan's growth has been anemic for decades while Malaysia succeeded",
+        "Key Insight: Capital accumulation alone can't sustain growth forever",
+        "The Missing Piece: Only technological progress drives long-run growth",
+        "Human Capital: Islam's emphasis on ilm should be an advantage, but institutions matter\u2026"
+      ],
+      "reel_caption": "Why don't poor countries automatically catch up to rich ones? The Solow model explains everything. Listen to the full analysis at the link in bio. #economics #growth #development",
+      "cover_text": "The Growth Engine: Why Convergence Fails",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Solow growth model predicted poor countries would grow faster than rich ones. Pakistan's per-capita growth has been anemic for decades while Malaysia succeeded.\n\nThe model's insight cuts deep: capital accumulation alone can't sustain growth forever. Only technological progress drives long-run growth. When you add human capital to the equation, Islam's emphasis on ilm should be an advantage.\n\nBut convergence failures across Muslim-majority\u2026",
+      "discussion_prompt": "What institutional factors do you think prevent economic convergence in developing countries?",
+      "topic_suggestion": "Economic growth theory and development\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-2"
+    },
+    "short_video": {
+      "title": "Why Poor Countries Don't Always Catch Up",
+      "hook": "The Solow model predicted something that doesn't always happen",
+      "voiceover": "The Solow growth model made a bold prediction: poor countries should grow faster than rich ones. But look at the reality. Pakistan's per-capita growth has been anemic for decades while Malaysia succeeded dramatically. The model reveals why capital accumulation alone can't sustain growth forever. Diminishing returns always set in. Only technological progress drives long-run growth. When you add human capital, Islam's emphasis on knowledge should be an advantage. But convergence failures across Muslim-majority countries point to something deeper: institutions and governance matter more than theory suggests.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Growth charts comparing countries",
+          "on_screen_text": "Poor countries should grow faster"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Pakistan vs Malaysia economic data",
+          "on_screen_text": "Pakistan: anemic growth Malaysia: success"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Capital accumulation visualization",
+          "on_screen_text": "Capital alone isn't enough"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Technology and knowledge graphics",
+          "on_screen_text": "Only tech progress drives long-run growth"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Institutional comparison charts",
+          "on_screen_text": "Institutions matter more than theory"
+        }
+      ],
+      "caption": "The Solow growth model predicted convergence, but reality is more complex. Listen to the full analysis.",
+      "hashtags": [
+        "#economics",
+        "#growth",
+        "#development",
+        "#solow",
+        "#convergence"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Solow growth model predicted poor countries would grow faster than rich ones. Pakistan's per-capita growth has been anemic for decades while Malaysia succeeded. The model's core insight reveals why: capital accumulation alone can't sustain growth forever. Diminishing returns always set in. Only technological progress drives long-run growth. When you extend the model to include human capital, the Islamic tradition's emphasis on ilm should theoretically be an advantage. But the convergence\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_20a6d819.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_20a6d819.png"
+}

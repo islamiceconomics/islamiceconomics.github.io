@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-19-podcast-re-5-work-wages-and-worth",
+  "generated_at": "2026-05-19T16:51:26.594202+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-re-5-work-wages-and-worth",
+    "kind": "podcast",
+    "title": "Work, Wages, and Worth",
+    "summary": "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Youth unemployment in the Middle East and North Africa is the highest in the world at 25 to 30 percent. Female labor force participation in many Muslim-majority countries is below 20 percent. Brain drain has cost countries like Pakistan hundreds of thousands of skilled professionals. These aren't problems caused by Islam. They're caused by governance failures and cultural norms sometimes falsely attributed to religion. The Islamic tradition has powerful things to say about labor: pay workers before their sweat dries, the prohibition of exploitation, the concept of ihsan (excellence) in work. But the gap between these principles and reality is vast. The kafala system in Gulf states, the informal economy employing 60 to 80 percent of workers without protections, the exclusion of women from economic participation. Closing that gap isn't just moral. It's economic. Countries that waste their human potential don't grow.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Youth unemployment in the Middle East and North Africa sits at 25 to 30 percent. The Islamic tradition says pay workers before their sweat dries.",
+      "voice_pattern": "observation",
+      "thread": [
+        "Youth unemployment in the Middle East and North Africa sits at 25 to 30 percent. The Islamic tradition says pay workers before their sweat dries.",
+        "Female labor force participation in many Muslim-majority countries is below 20 percent. Brain drain has cost Pakistan hundreds of thousands of skilled professionals.",
+        "These aren't problems caused by Islam. They're caused by governance failures and cultural norms sometimes falsely attributed to religion.",
+        "The kafala system and informal economies employing 60 to 80 percent of workers without protections show the gap between Islamic labor ethics and reality. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-5"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#LaborRights",
+        "#MENA"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-5"
+    },
+    "linkedin": {
+      "post": "Youth unemployment across the Middle East and North Africa reaches 25-30%. Female labor participation in many Muslim-majority countries sits below 20%. Brain drain has stripped Pakistan of hundreds of thousands of skilled professionals. These aren't Islamic problems. They're governance failures and cultural practices wrongly attributed to religion. The Islamic tradition speaks powerfully about labor: pay workers before their sweat dries, prohibit exploitation, pursue ihsan (excellence) in work. Yet the gap between these principles and reality is vast. The kafala system traps workers in Gulf states. Informal economies employ 60-80% of workers without basic protections. Women face systematic exclusion. Listening to conversations about Islamic labor ethics reveals how far we've drifted from founding principles that once protected workers' dignity. https://islamiceconomics.github.io/podcast.html#ep-re-5",
+      "comment_prompt": "What's driving the disconnect between Islamic labor principles and current practices in Muslim-majority countries?"
+    },
+    "instagram": {
+      "caption": "Youth unemployment in the Middle East and North Africa hits 25-30 percent. In many Muslim-majority countries, female labor participation stays below 20 percent. Brain drain has cost Pakistan hundreds of thousands of skilled professionals. These aren't Islamic problems. They're governance failures and cultural norms wrongly blamed on religion. The Islamic tradition has powerful labor ethics: pay workers before their sweat dries, prohibit exploitation, pursue excellence in all work. But the gap between these principles and reality is enormous. The kafala system traps workers in Gulf states. Informal economies employ 60-80 percent of workers without basic protections. Women face systematic exclusion from many sectors. Listening to discussions about Islamic labor ethics shows how far current practices have drifted from principles that once protected workers' dignity and rights. Listen to the full conversation: https://islamiceconomics.github.io/podcast.html#ep-re-5 #IslamicEconomics #LaborRights #MENA #YouthUnemployment #WorkersRights",
+      "carousel_slides": [
+        "Youth unemployment in MENA: 25-30% The highest rate in the world",
+        "Female labor participation in many Muslim countries: Below 20%",
+        "Brain drain cost Pakistan: Hundreds of thousands of skilled professionals",
+        "Islamic principle: \"Pay workers before their sweat dries\"",
+        "The gap between Islamic labor ethics and current reality is vast"
+      ],
+      "reel_caption": "Youth unemployment in MENA reaches 25-30 percent. The Islamic tradition says pay workers before their sweat dries. The gap between principle and practice tells the whole story. #IslamicEconomics #LaborRights #MENA #YouthUnemployment #WorkersRights",
+      "cover_text": "MENA Youth Unemployment: 25-30%",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Youth unemployment across the Middle East and North Africa sits at 25 to 30 percent. Female labor participation in many Muslim-majority countries stays below 20 percent.\n\nThe Islamic tradition says pay workers before their sweat dries. It prohibits exploitation and calls for excellence in all work.\n\nYet the kafala system traps workers in Gulf states while informal economies employ 60 to 80 percent of people without basic protections.",
+      "discussion_prompt": "What's causing the disconnect between Islamic labor principles and current employment practices?",
+      "topic_suggestion": "Labor ethics in Islamic economics",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-5"
+    },
+    "short_video": {
+      "title": "The Labor Crisis in Muslim Countries",
+      "hook": "Youth unemployment in MENA hits 25-30 percent",
+      "voiceover": "Youth unemployment in the Middle East and North Africa reaches 25 to 30 percent, the highest in the world. Female labor participation in many Muslim-majority countries sits below 20 percent. Brain drain has cost Pakistan hundreds of thousands of skilled professionals. These aren't Islamic problems but governance failures wrongly attributed to religion. The Islamic tradition says pay workers before their sweat dries and prohibits exploitation. Yet the kafala system traps workers while informal economies employ 60 to 80 percent without protections. The gap between Islamic labor ethics and reality shows how far we've drifted from principles that once protected workers' dignity.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "MENA map with unemployment statistics",
+          "on_screen_text": "MENA Youth Unemployment: 25-30%"
+        },
+        {
+          "time": "6-15s",
+          "visual": "Women working in various professions",
+          "on_screen_text": "Female participation <20%"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Brain drain visualization",
+          "on_screen_text": "Pakistan lost hundreds of thousands"
+        },
+        {
+          "time": "26-35s",
+          "visual": "Islamic calligraphy about work",
+          "on_screen_text": "Pay before sweat dries"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Workers in informal economy",
+          "on_screen_text": "60-80% lack protections"
+        }
+      ],
+      "caption": "The numbers reveal a stark disconnect between Islamic labor principles and current reality in Muslim-majority countries. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-re-5",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#LaborRights",
+        "#MENA",
+        "#YouthUnemployment",
+        "#WorkersRights"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Youth unemployment in the Middle East and North Africa sits at 25 to 30 percent. The Islamic tradition says pay workers before their sweat dries. Female labor force participation in many Muslim-majority countries is below 20 percent. Brain drain has cost Pakistan hundreds of thousands of skilled professionals. These aren't problems caused by Islam but by governance failures and cultural norms falsely attributed to religion. The kafala system in Gulf states keeps workers trapped while informal\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_7f014db8.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_7f014db8.png"
+}

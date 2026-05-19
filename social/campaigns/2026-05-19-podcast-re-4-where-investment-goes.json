@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-19-podcast-re-4-where-investment-goes",
+  "generated_at": "2026-05-19T16:51:03.315788+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-re-4-where-investment-goes",
+    "kind": "podcast",
+    "title": "Where Investment Goes",
+    "summary": "Capital allocation, the riba prohibition, real estate misallocation, and the gap between Islamic finance theory and practice.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Two countries with identical savings rates can have vastly different growth outcomes depending on how capital is allocated. The financial system channels savings into investment, and its efficiency determines growth. Capital misallocation reduces TFP in developing countries by 30 to 50 percent. Islamic economics prohibits interest, which should theoretically redirect capital: equity-based financing (mudaraba, musharaka) aligns incentives and directs capital toward productive uses rather than safe borrowers with mediocre projects. But Islamic banking in practice hasn't delivered this. Most Islamic banks use murabaha, which is economically similar to conventional lending. Genuine profit-loss sharing remains rare. Meanwhile, Muslim-majority economies suffer from massive real estate misallocation and underdeveloped equity markets. The principles are sound. The implementation gap is enormous.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Muslim countries ban interest to redirect capital from safe borrowers to productive ventures. Most Islamic banks use murabaha instead\u2014which works exactly like conventional lending.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Muslim countries ban interest to redirect capital from safe borrowers to productive ventures. Most Islamic banks use murabaha instead\u2014which works exactly like conventional lending.",
+        "Capital misallocation reduces productivity in developing countries by 30 to 50 percent. Two countries with identical savings rates can have completely different growth outcomes.",
+        "Islamic finance theory promises equity-based financing that aligns incentives. Mudaraba and musharaka should direct money toward productive uses rather than mediocre projects.",
+        "But genuine profit-loss sharing remains rare in practice. The gap between theory and reality leaves Muslim-majority economies with massive real estate bubbles. https://islamiceconomics.github.io/podcast.html#ep-re-4"
+      ],
+      "hashtags": [
+        "#IslamicFinance"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-4"
+    },
+    "linkedin": {
+      "post": "Two countries with identical savings rates can have vastly different growth outcomes. The difference? How their financial systems allocate capital. Capital misallocation reduces productivity in developing countries by 30 to 50 percent. Islamic economics recognizes this challenge and offers a theoretical solution: ban interest-based lending that favors safe borrowers with mediocre projects. Instead, Islamic finance promotes equity-based financing through mudaraba and musharaka\u2014structures that should align incentives and direct capital toward genuinely productive uses. But theory and practice diverge sharply. Most Islamic banks rely on murabaha, which functions economically like conventional lending. Genuine profit-loss sharing remains rare. The result? Muslim-majority economies still suffer from massive capital misallocation, particularly in real estate markets. The promise of redirected capital flows remains largely unfulfilled. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-4",
+      "comment_prompt": "How do you think Islamic financial institutions could better implement genuine profit-loss sharing?"
+    },
+    "instagram": {
+      "caption": "Two countries save the same percentage of their income. One grows rapidly. The other stagnates. The difference lies in how their financial systems allocate capital. Capital misallocation reduces productivity in developing countries by 30 to 50 percent. Islamic economics identified this problem centuries ago and proposed a solution: prohibit interest-based lending that rewards safe borrowers with mediocre projects. The theory is elegant. Replace debt with equity. Use mudaraba and musharaka to align investor and entrepreneur incentives. Direct capital toward genuinely productive ventures rather than the safest borrowers. But practice tells a different story. Most Islamic banks use murabaha\u2014a structure that works exactly like conventional lending. Genuine profit-loss sharing remains rare across the industry. The gap between Islamic finance theory and reality leaves Muslim-majority economies struggling with the same capital allocation problems, including massive real estate bubbles. Listen to the full discussion: https://islamiceconomics.github.io/podcast.html#ep-re-4 #IslamicFinance #CapitalAllocation #EconomicGrowth #RealEstate #Productivity",
+      "carousel_slides": [
+        "Two countries with identical savings rates can have completely different growth outcomes",
+        "Capital misallocation reduces productivity in developing countries by 30-50%",
+        "Islamic finance theory: Ban interest, use equity financing to redirect capital",
+        "Reality: Most Islamic banks use murabaha\u2014economically similar to conventional lending",
+        "The gap leaves Muslim economies with massive real estate misallocation"
+      ],
+      "reel_caption": "Why do two countries with identical savings rates grow at completely different speeds? The answer lies in capital allocation\u2014and Islamic finance tried to solve this problem centuries ago. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-4 #IslamicFinance #CapitalAllocation #EconomicGrowth #Productivity #RealEstate",
+      "cover_text": "The Capital Allocation Gap",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Two countries save identical percentages of their income. One thrives, the other stagnates. The financial system makes the difference.\n\nCapital misallocation reduces productivity in developing countries by 30 to 50 percent. Islamic economics recognized this problem and proposed equity-based solutions\u2014mudaraba and musharaka should direct money toward productive ventures rather than safe borrowers with mediocre projects.\n\nBut most Islamic banks\u2026",
+      "discussion_prompt": "Why do you think Islamic banks gravitate toward murabaha instead of genuine profit-loss sharing arrangements?",
+      "topic_suggestion": "Capital allocation efficiency across\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-4"
+    },
+    "short_video": {
+      "title": "Why Islamic Finance Theory Failed in Practice",
+      "hook": "Two countries save the exact same amount. One grows rapidly, the other stagnates.",
+      "voiceover": "Two countries save the exact same amount. One grows rapidly, the other stagnates. The difference? Capital allocation. Capital misallocation reduces productivity in developing countries by thirty to fifty percent. Islamic economics identified this problem centuries ago. The solution: ban interest, use equity financing to redirect capital from safe borrowers to productive ventures. But most Islamic banks use murabaha instead, which works exactly like conventional lending. The gap between theory and practice leaves Muslim economies with massive real estate bubbles.",
+      "shot_list": [
+        {
+          "time": "0-3s",
+          "visual": "Split screen: two identical piggy banks",
+          "on_screen_text": "Same Savings Rate"
+        },
+        {
+          "time": "3-8s",
+          "visual": "Growth charts diverging dramatically",
+          "on_screen_text": "Different Outcomes"
+        },
+        {
+          "time": "8-15s",
+          "visual": "Factory vs luxury apartment construction",
+          "on_screen_text": "Capital Misallocation = 30-50% Less Productivity"
+        },
+        {
+          "time": "15-25s",
+          "visual": "Traditional Islamic geometric patterns",
+          "on_screen_text": "Islamic Solution: Ban Interest, Use Equity"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Modern Islamic bank buildings",
+          "on_screen_text": "Reality: Murabaha = Conventional Lending"
+        }
+      ],
+      "caption": "Islamic finance theory promised to solve capital misallocation. The gap between theory and practice tells a different story. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-4",
+      "hashtags": [
+        "#IslamicFinance",
+        "#CapitalAllocation",
+        "#EconomicGrowth",
+        "#RealEstate",
+        "#Productivity"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Muslim countries ban interest to redirect capital from safe borrowers to productive ventures. The theory is elegant: equity-based financing should align incentives and fund innovation over safety. But most Islamic banks use murabaha instead\u2014which works exactly like conventional lending. The gap between Islamic finance theory and practice leaves Muslim-majority economies stuck with the same capital misallocation problems, including massive real estate bubbles."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_96fca48e.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_96fca48e.png"
+}
