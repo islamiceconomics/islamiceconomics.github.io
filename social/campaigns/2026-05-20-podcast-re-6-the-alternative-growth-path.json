@@ -1,0 +1,106 @@
+{
+  "campaign_id": "2026-05-20-podcast-re-6-the-alternative-growth-path",
+  "generated_at": "2026-05-20T16:52:27.304907+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-re-6-the-alternative-growth-path",
+    "kind": "podcast",
+    "title": "The Alternative Growth Path",
+    "summary": "Synthesis: what an Islamic growth model would look like, what's proven, what's speculative, and the research agenda ahead.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "If you change the preference axioms, what growth path emerges? This episode brings together everything from the series: different savings behavior, equity-based investment allocation, intrinsically motivated labor, knowledge-driven institutions, and accountable governance. The theoretical prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles and less financialization. But how much of this is proven? Very little. No country has implemented a comprehensive Islamic economic system. The wahn thesis is theoretically elegant but empirically untested. We're at the \"interesting hypothesis\" stage, not the \"proven theory\" stage. This episode maps the research agenda: formalize the preference axioms, find natural experiments, study Islamic finance's actual impact on allocation, measure zakat effects at scale, and build computable models. Islamic economics isn't claiming to have all the answers. It's asking different questions. That's scientifically legitimate.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Change your preference axioms and you change your growth path. This is what economists discovered studying non-Western value systems. No country has tested it yet.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Change your preference axioms and you change your growth path. This is what economists discovered studying non-Western value systems.",
+        "Different savings behavior. Equity-based investment. Intrinsically motivated labor. Knowledge-driven institutions. The theoretical prediction: slower but more stable growth.",
+        "More equitable distribution. Fewer boom-bust cycles. Less financialization. But how much is proven? Very little.",
+        "No country has implemented a comprehensive Islamic economic system. We're at the interesting hypothesis stage, not the proven theory stage. https://islamiceconomics.github.io/podcast.html#ep-re-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-6"
+    },
+    "linkedin": {
+      "post": "What happens when you change the fundamental assumptions about human behavior in economic models? This fascinating exploration examines how different preference axioms could create entirely different growth paths. The theoretical framework suggests: \u2022 Different savings behavior patterns \u2022 Equity-based rather than debt-based investment allocation \u2022 Intrinsically motivated rather than purely incentive-driven labor \u2022 Knowledge-driven institutional structures \u2022 More accountable governance systems The predicted outcome? Potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles and reduced financialization. But here's the crucial caveat: this remains largely theoretical. No country has implemented a comprehensive alternative economic system based on these principles. We're still at the \"interesting hypothesis\" stage rather than the \"proven theory\" stage. The research agenda ahead involves formalizing these preference axioms, finding natural experiments, and building empirical evidence for what sounds theoretically elegant but remains empirically untested. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-6",
+      "comment_prompt": "What natural experiments might help test alternative economic models in practice?"
+    },
+    "instagram": {
+      "caption": "What if we changed the basic assumptions about human behavior in economics? This explores how different preference axioms could create entirely different growth paths. The theory suggests different savings patterns, equity-based investment, intrinsically motivated labor, and knowledge-driven institutions. The prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles. But here's the key: this is mostly theoretical. No country has tested a comprehensive alternative economic system. We're at the hypothesis stage, not the proven theory stage. The research ahead involves finding natural experiments and building empirical evidence for what sounds elegant in theory. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-6 #IslamicEconomics #EconomicTheory #AlternativeModels #GrowthTheory #EconomicResearch",
+      "carousel_slides": [
+        "What happens when you change the basic assumptions in economic models?",
+        "Different preference axioms create different growth paths",
+        "Theory: Slower but more stable growth, more equitable distribution",
+        "Reality check: No country has tested this comprehensively",
+        "We're at the hypothesis stage, not the proven theory stage"
+      ],
+      "reel_caption": "The gap between elegant theory and empirical reality in alternative economic models. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-6 #IslamicEconomics #EconomicTheory #Research",
+      "cover_text": "Theory vs Reality in Alternative Economics",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Change your preference axioms and you change your growth path. This is what economists discovered studying non-Western value systems.\n\nDifferent savings behavior, equity-based investment, intrinsically motivated labor. The theoretical prediction: slower but more stable growth, more equitably distributed.\n\nBut no country has implemented a comprehensive Islamic economic system. We're at the interesting hypothesis stage, not the proven theory stage.",
+      "discussion_prompt": "What natural experiments might help test alternative economic models?",
+      "topic_suggestion": "The research agenda for alternative\u2026",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-6"
+    },
+    "short_video": {
+      "title": "The Untested Alternative to Modern Economics",
+      "hook": "What if changing how we think about human behavior could change entire economies?",
+      "voiceover": "Economists studying non-Western value systems discovered something fascinating. Change your preference axioms and you change your growth path. Different savings behavior. Equity-based investment. Intrinsically motivated labor. The prediction? Slower but more stable growth. More equitable distribution. Fewer boom-bust cycles. But here's the reality check: no country has tested this comprehensively. We're at the hypothesis stage, not the proven theory stage.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Split screen: traditional economic graphs vs alternative models",
+          "on_screen_text": "Change assumptions, change outcomes"
+        },
+        {
+          "time": "5-15s",
+          "visual": "Animated comparison of growth patterns",
+          "on_screen_text": "Slower but more stable"
+        },
+        {
+          "time": "15-25s",
+          "visual": "World map highlighting absence of test cases",
+          "on_screen_text": "No comprehensive tests"
+        },
+        {
+          "time": "25-35s",
+          "visual": "Research papers and question marks",
+          "on_screen_text": "Hypothesis stage"
+        },
+        {
+          "time": "35-45s",
+          "visual": "Future research roadmap visualization",
+          "on_screen_text": "The research agenda ahead"
+        }
+      ],
+      "caption": "The gap between elegant economic theory and empirical reality. Listen: https://islamiceconomics.github.io/podcast.html#ep-re-6",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#EconomicTheory",
+        "#Research",
+        "#AlternativeModels",
+        "#GrowthTheory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Change your preference axioms and you change your growth path. This is what economists discovered studying non-Western value systems. Different savings behavior leads to equity-based investment allocation. Intrinsically motivated labor changes productivity patterns. Knowledge-driven institutions reshape governance structures. The theoretical prediction: potentially slower but more stable growth, more equitably distributed, with fewer boom-bust cycles and less financialization. But no country\u2026"
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_19861d8f.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_19861d8f.png"
+}

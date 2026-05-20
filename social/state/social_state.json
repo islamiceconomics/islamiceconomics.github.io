@@ -750,6 +750,14 @@
           "json_path": "social/campaigns/2026-04-04-podcast-ppr-1-the-architecture-of-debt.json",
           "markdown_path": "social/campaigns/2026-04-04-podcast-ppr-1-the-architecture-of-debt.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-20-podcast-ppr-1-the-architecture-of-debt",
+          "generated_at": "2026-05-20T16:52:50.026431+00:00",
+          "json_path": "social/campaigns/2026-05-20-podcast-ppr-1-the-architecture-of-debt.json",
+          "markdown_path": "social/campaigns/2026-05-20-podcast-ppr-1-the-architecture-of-debt.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1009,6 +1017,14 @@
           "generated_at": "2026-04-04T14:32:26.833379+00:00",
           "json_path": "social/campaigns/2026-04-04-podcast-re-6-the-alternative-growth-path.json",
           "markdown_path": "social/campaigns/2026-04-04-podcast-re-6-the-alternative-growth-path.md",
+          "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-20-podcast-re-6-the-alternative-growth-path",
+          "generated_at": "2026-05-20T16:52:27.304907+00:00",
+          "json_path": "social/campaigns/2026-05-20-podcast-re-6-the-alternative-growth-path.json",
+          "markdown_path": "social/campaigns/2026-05-20-podcast-re-6-the-alternative-growth-path.md",
           "x_voice_pattern": "connection"
         }
       ]
