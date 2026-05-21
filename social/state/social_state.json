@@ -770,6 +770,14 @@
           "json_path": "social/campaigns/2026-04-04-podcast-ppr-2-the-bonds-you-don-t-see.json",
           "markdown_path": "social/campaigns/2026-04-04-podcast-ppr-2-the-bonds-you-don-t-see.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-21-podcast-ppr-2-the-bonds-you-don-t-see",
+          "generated_at": "2026-05-21T16:38:27.564483+00:00",
+          "json_path": "social/campaigns/2026-05-21-podcast-ppr-2-the-bonds-you-don-t-see.json",
+          "markdown_path": "social/campaigns/2026-05-21-podcast-ppr-2-the-bonds-you-don-t-see.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -782,6 +790,14 @@
           "json_path": "social/campaigns/2026-04-04-podcast-ppr-3-the-central-bank-trap.json",
           "markdown_path": "social/campaigns/2026-04-04-podcast-ppr-3-the-central-bank-trap.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-21-podcast-ppr-3-the-central-bank-trap",
+          "generated_at": "2026-05-21T16:38:46.493724+00:00",
+          "json_path": "social/campaigns/2026-05-21-podcast-ppr-3-the-central-bank-trap.json",
+          "markdown_path": "social/campaigns/2026-05-21-podcast-ppr-3-the-central-bank-trap.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -794,6 +810,14 @@
           "json_path": "social/campaigns/2026-04-05-podcast-ppr-5-the-islamic-alternative.json",
           "markdown_path": "social/campaigns/2026-04-05-podcast-ppr-5-the-islamic-alternative.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-21-podcast-ppr-5-the-islamic-alternative",
+          "generated_at": "2026-05-21T16:39:14.204111+00:00",
+          "json_path": "social/campaigns/2026-05-21-podcast-ppr-5-the-islamic-alternative.json",
+          "markdown_path": "social/campaigns/2026-05-21-podcast-ppr-5-the-islamic-alternative.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -805,6 +829,14 @@
           "generated_at": "2026-04-05T14:34:12.983481+00:00",
           "json_path": "social/campaigns/2026-04-05-podcast-ppr-6-built-on-borrowed-time.json",
           "markdown_path": "social/campaigns/2026-04-05-podcast-ppr-6-built-on-borrowed-time.md",
+          "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-05-21-podcast-ppr-6-built-on-borrowed-time",
+          "generated_at": "2026-05-21T16:39:37.068663+00:00",
+          "json_path": "social/campaigns/2026-05-21-podcast-ppr-6-built-on-borrowed-time.json",
+          "markdown_path": "social/campaigns/2026-05-21-podcast-ppr-6-built-on-borrowed-time.md",
           "x_voice_pattern": "observation"
         }
       ]

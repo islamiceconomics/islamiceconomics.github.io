@@ -1,0 +1,108 @@
+{
+  "campaign_id": "2026-05-21-podcast-ppr-2-the-bonds-you-don-t-see",
+  "generated_at": "2026-05-21T16:38:27.564483+00:00",
+  "x_voice_pattern": "question",
+  "source": {
+    "content_id": "podcast-ppr-2-the-bonds-you-don-t-see",
+    "kind": "podcast",
+    "title": "The Bonds You Don't See",
+    "summary": "Your mortgage, your pension, your savings account: they all run through the bond market. How ordinary people became unwitting participants in the world's largest riba system.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Your monthly payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account earns interest because your bank lends your money out and buys bonds. The 2008 financial crisis wasn't really a housing crisis. It was a bond market crisis: mortgage-backed securities that nobody understood collapsed, and the entire global economy nearly went with them. This episode traces how bonds touch every aspect of ordinary life, and how the hadith about riba's dust reaching everyone has become literally true in the modern financial system.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Your mortgage, your pension, your savings account: they all run through the bond market. Why isn't this discussed more?",
+      "voice_pattern": "question",
+      "thread": [
+        "Your monthly mortgage payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account earns interest because your bank buys bonds.",
+        "When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Every payment ripples through the global system.",
+        "The 2008 financial crisis wasn't really a housing crisis. It was a bond market crisis: mortgage-backed securities that nobody understood collapsed.",
+        "The hadith about riba's dust reaching everyone has become literally true in the modern financial system. https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+      ],
+      "hashtags": [
+        "#bonds",
+        "#riba",
+        "#mortgages"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+    },
+    "linkedin": {
+      "post": "Your monthly mortgage payment funds someone's retirement in Norway. Your student loan is packaged as a bond. Your savings account earns interest because your bank buys bonds with your deposits. We've all become participants in the world's largest interest-based system without realizing it. When you take out a mortgage, that loan gets securitized and sold to investors globally. The 2008 financial crisis wasn't just about housing\u2014it was about bond markets where mortgage-backed securities collapsed. This interconnected web touches every aspect of modern finance, making the ancient warning about interest's reach prophetically accurate in today's world. Listen to the full exploration: https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+      "comment_prompt": "How aware were you of your connection to global bond markets through everyday financial products?"
+    },
+    "instagram": {
+      "caption": "Your mortgage payment travels the world. Your student loan becomes someone else's investment. Your savings account connects you to global bond markets. We're all participants in the world's largest interest-based system\u2014often without knowing it. When you take out a mortgage, that loan gets packaged, securitized, and sold as bonds to investors around the world. Your monthly payment might fund a pension in Norway or a sovereign wealth fund in Singapore. The 2008 crisis wasn't just about housing. It was about bond markets where mortgage-backed securities that nobody understood collapsed, nearly taking the global economy down with them. Every deposit, every loan, every pension connects us to this vast web of interest-based finance. Listen to the full episode: https://islamiceconomics.github.io/podcast.html#ep-ppr-2 #bonds #riba #finance #islamiceconomics #mortgages",
+      "carousel_slides": [
+        "Your mortgage payment funds someone's retirement in Norway",
+        "Your student loan is packaged as a bond and sold to investors globally",
+        "Your savings account earns interest because banks buy bonds",
+        "The 2008 crisis was really a bond market collapse",
+        "We're all connected to the world's largest riba system"
+      ],
+      "reel_caption": "How your everyday financial decisions connect you to global bond markets and the world's largest interest-based system. #bonds #finance #islamiceconomics #mortgages #riba",
+      "cover_text": "The Bonds You Don't See",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Your monthly mortgage payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account earns interest because your bank buys bonds.\n\nWe've all become participants in the world's largest interest-based system without realizing it. When you take out a mortgage, that loan gets packaged, securitized, and sold as bonds to investors around the world.\n\nThe 2008 financial crisis wasn't really a housing crisis\u2014it was a\u2026",
+      "discussion_prompt": "How aware were you of your connection to global bond markets through everyday financial products?",
+      "topic_suggestion": "Hidden connections in modern finance",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+    },
+    "short_video": {
+      "title": "The Hidden Bond Market in Your Daily Life",
+      "hook": "Your mortgage payment is funding someone's retirement halfway around the world",
+      "voiceover": "Your mortgage payment funds someone's retirement in Norway. Your student loan becomes a bond sold to investors. Your savings account earns interest because banks buy bonds with your deposits. When you take out a mortgage, that loan gets packaged and sold globally. The 2008 crisis wasn't about housing\u2014it was bond markets collapsing. We're all connected to the world's largest interest-based system without knowing it.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Person making mortgage payment on phone",
+          "on_screen_text": "Your mortgage payment"
+        },
+        {
+          "time": "6-15s",
+          "visual": "World map with money flowing between countries",
+          "on_screen_text": "Travels globally as bonds"
+        },
+        {
+          "time": "16-25s",
+          "visual": "Bank building with money symbols",
+          "on_screen_text": "Banks package & sell your loans"
+        },
+        {
+          "time": "26-35s",
+          "visual": "2008 crisis headlines/graphs falling",
+          "on_screen_text": "2008: Bond market crisis"
+        },
+        {
+          "time": "36-45s",
+          "visual": "Web connecting financial institutions",
+          "on_screen_text": "We're all connected"
+        }
+      ],
+      "caption": "How your everyday financial decisions connect you to the world's largest interest-based system. Listen to the full episode at the link in bio.",
+      "hashtags": [
+        "#bonds",
+        "#finance",
+        "#mortgages",
+        "#islamiceconomics",
+        "#riba"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Your monthly mortgage payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account earns interest because your bank buys bonds. When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Every payment ripples through this system. The 2008 financial crisis wasn't really a housing crisis\u2014it was a bond market crisis where mortgage-backed securities collapsed and nearly took the global economy with them."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_95213626.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_95213626.png"
+}
