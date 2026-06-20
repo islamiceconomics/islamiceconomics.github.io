@@ -445,6 +445,14 @@
           "json_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep02-marketplace-medina.json",
           "markdown_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep02-marketplace-medina.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-20-podcast-ie-s1-ep02-marketplace-medina",
+          "generated_at": "2026-06-20T15:45:11.046800+00:00",
+          "json_path": "social/campaigns/2026-06-20-podcast-ie-s1-ep02-marketplace-medina.json",
+          "markdown_path": "social/campaigns/2026-06-20-podcast-ie-s1-ep02-marketplace-medina.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -465,6 +473,14 @@
           "json_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep03-house-of-wisdom.json",
           "markdown_path": "social/campaigns/2026-05-05-podcast-ie-s1-ep03-house-of-wisdom.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-20-podcast-ie-s1-ep03-house-of-wisdom",
+          "generated_at": "2026-06-20T15:44:49.552339+00:00",
+          "json_path": "social/campaigns/2026-06-20-podcast-ie-s1-ep03-house-of-wisdom.json",
+          "markdown_path": "social/campaigns/2026-06-20-podcast-ie-s1-ep03-house-of-wisdom.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
