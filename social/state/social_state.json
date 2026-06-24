@@ -1246,6 +1246,14 @@
           "json_path": "social/campaigns/2026-05-10-podcast-tt-1-the-word-tariff.json",
           "markdown_path": "social/campaigns/2026-05-10-podcast-tt-1-the-word-tariff.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-24-podcast-tt-1-the-word-tariff",
+          "generated_at": "2026-06-24T16:15:38.166364+00:00",
+          "json_path": "social/campaigns/2026-06-24-podcast-tt-1-the-word-tariff.json",
+          "markdown_path": "social/campaigns/2026-06-24-podcast-tt-1-the-word-tariff.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1266,6 +1274,14 @@
           "json_path": "social/campaigns/2026-05-10-podcast-tt-2-the-sakk.json",
           "markdown_path": "social/campaigns/2026-05-10-podcast-tt-2-the-sakk.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-24-podcast-tt-2-the-sakk",
+          "generated_at": "2026-06-24T16:16:02.999477+00:00",
+          "json_path": "social/campaigns/2026-06-24-podcast-tt-2-the-sakk.json",
+          "markdown_path": "social/campaigns/2026-06-24-podcast-tt-2-the-sakk.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
