@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-06-25-podcast-tt-4-the-funduk",
+  "generated_at": "2026-06-25T16:21:37.053073+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-tt-4-the-funduk",
+    "kind": "podcast",
+    "title": "The Funduk",
+    "summary": "From makhzan to magazine: the trade infrastructure that connected three continents.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. Step inside the medieval funduk, the complete trade ecosystem with warehouses, lodging, money changers, and translators. Explore the 3,000-strong caravanserai network, the waqf endowments that funded public infrastructure, and how Venice's fondaco district was inspired by Islamic institutional design.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "From makhzan to magazine: the trade infrastructure that connected three continents.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The Funduk \u2014 a thread:",
+        "From makhzan to magazine: the trade infrastructure that connected three continents.",
+        "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse.",
+        "Why it matters: Step inside the medieval funduk, the complete trade ecosystem with warehouses, lodging, money changers, and translators. Listen here: https://islamiceconomics.github.io/podcast.html#ep-tt-4"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-4"
+    },
+    "linkedin": {
+      "post": "The Funduk From makhzan to magazine: the trade infrastructure that connected three continents. Three takeaways: \u2022 From makhzan to magazine: the trade infrastructure that connected three continents. \u2022 The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. \u2022 Step inside the medieval funduk, the complete trade ecosystem with warehouses, lodging, money changers, and translators. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-tt-4",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Funduk From makhzan to magazine: the trade infrastructure that connected three continents. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-tt-4 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Funduk",
+        "From makhzan to magazine: the trade infrastructure that connected three continents.",
+        "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse.",
+        "Step inside the medieval funduk, the complete trade ecosystem with warehouses, lodging, money changers\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Funduk in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-tt-4 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Funduk",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Funduk\n\nFrom makhzan to magazine: the trade infrastructure that connected three continents.\n\nWhat I keep coming back to is this: The word \"magazine\" comes from the Arabic makhzan, meaning warehouse.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-4"
+    },
+    "short_video": {
+      "title": "The Funduk in 45 seconds",
+      "hook": "From makhzan to magazine: the trade infrastructure that connected three continents.",
+      "voiceover": "The Funduk. From makhzan to magazine: the trade infrastructure that connected three continents. Here are the key points: From makhzan to magazine: the trade infrastructure that connected three continents. The word \"magazine\" comes from the Arabic makhzan, meaning warehouse. Step inside the medieval funduk, the complete trade ecosystem with warehouses, lodging, money changers, and translators. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Funduk"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "From makhzan to magazine: the trade infrastructure that connected three\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "The word \"magazine\" comes from the Arabic makhzan, meaning warehouse."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Step inside the medieval funduk, the complete trade ecosystem with\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Funduk. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-tt-4 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "From makhzan to magazine: the trade infrastructure that connected three continents. From makhzan to magazine: the trade infrastructure that connected three continents."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_4da13272.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_4da13272.png"
+}
