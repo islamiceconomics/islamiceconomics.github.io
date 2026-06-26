@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-06-26-podcast-pu-1-the-forbidden-throw",
+  "generated_at": "2026-06-26T16:14:06.852671+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-pu-1-the-forbidden-throw",
+    "kind": "podcast",
+    "title": "The Forbidden Throw",
+    "summary": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The English word \"hazard\" comes from al-zahr, Arabic for dice. But in Islamic law, the concept goes far deeper than gambling. The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't know what they're really buying. This episode traces the origins of this prohibition in the Quran and Hadith, explains why early Islamic jurists considered it as fundamental as the ban on riba, and shows how 7th-century contract law was already solving problems that would crash modern financial markets fourteen centuries later.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "The Forbidden Throw \u2014 a thread:",
+        "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" The English word\u2026",
+        "But in Islamic law, the concept goes far deeper than gambling.",
+        "Why it matters: The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't\u2026 Listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+    },
+    "linkedin": {
+      "post": "The Forbidden Throw How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" Three takeaways: \u2022 How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" The English word\u2026 \u2022 But in Islamic law, the concept goes far deeper than gambling. \u2022 The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't\u2026 Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-1",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Forbidden Throw How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-1 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Forbidden Throw",
+        "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became\u2026",
+        "But in Islamic law, the concept goes far deeper than gambling.",
+        "The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Forbidden Throw in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-pu-1 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Forbidden Throw",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Forbidden Throw\n\nHow the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"\n\nWhat I keep coming back to is this: But in Islamic law, the concept goes far deeper than gambling.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-1"
+    },
+    "short_video": {
+      "title": "The Forbidden Throw in 45 seconds",
+      "hook": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\"",
+      "voiceover": "The Forbidden Throw. How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" Here are the key points: How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" The English word\u2026 But in Islamic law, the concept goes far deeper than gambling. The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on excessive uncertainty, where one party doesn't\u2026 Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Forbidden Throw"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How the Prophet banned bay' al-gharar, and why the Arabic\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "But in Islamic law, the concept goes far deeper than\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "The Prophet Muhammad explicitly banned bay' al-gharar: transactions built on\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Forbidden Throw. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-1 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\" How the Prophet banned bay' al-gharar, and why the Arabic word for dice became the English word \"hazard.\""
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_c429599d.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_c429599d.png"
+}

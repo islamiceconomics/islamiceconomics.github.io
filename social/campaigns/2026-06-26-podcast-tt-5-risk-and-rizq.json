@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-06-26-podcast-tt-5-risk-and-rizq",
+  "generated_at": "2026-06-26T16:13:20.214787+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-tt-5-risk-and-rizq",
+    "kind": "podcast",
+    "title": "Risk and Rizq",
+    "summary": "How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-tt-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The word \"hazard\" comes from al-zahr, Arabic for dice. Explore how the Islamic concept of rizq (divine provision) created a culture of entrepreneurial risk-taking, how the prohibition of gharar (excessive uncertainty) shaped contract ethics, and how Khadijah bint Khuwaylid embodied the merchant spirit. From mudaraba partnerships to modern takaful insurance, now a $50 billion industry.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship. The parallels to today are hard to ignore.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Risk and Rizq \u2014 a thread:",
+        "How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and\u2026",
+        "The word \"hazard\" comes from al-zahr, Arabic for dice.",
+        "Why it matters: Explore how the Islamic concept of rizq (divine provision) created a culture of entrepreneurial risk-taking, how the\u2026 Listen here: https://islamiceconomics.github.io/podcast.html#ep-tt-5"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-tt-5"
+    },
+    "linkedin": {
+      "post": "Risk and Rizq How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship. Three takeaways: \u2022 How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and\u2026 \u2022 The word \"hazard\" comes from al-zahr, Arabic for dice. \u2022 Explore how the Islamic concept of rizq (divine provision) created a culture of entrepreneurial risk-taking, how the\u2026 Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-tt-5",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Risk and Rizq How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-tt-5 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Risk and Rizq",
+        "How Islamic concepts of divine provision and chance gave the world the vocabulary of\u2026",
+        "The word \"hazard\" comes from al-zahr, Arabic for dice.",
+        "Explore how the Islamic concept of rizq (divine provision) created a culture of entrepreneurial\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Risk and Rizq in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-tt-5 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Risk and Rizq",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Risk and Rizq\n\nHow Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship.\n\nWhat I keep coming back to is this: The word \"hazard\" comes from al-zahr, Arabic for dice.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-tt-5"
+    },
+    "short_video": {
+      "title": "Risk and Rizq in 45 seconds",
+      "hook": "How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and\u2026",
+      "voiceover": "Risk and Rizq. How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship. Here are the key points: How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and\u2026 The word \"hazard\" comes from al-zahr, Arabic for dice. Explore how the Islamic concept of rizq (divine provision) created a culture of entrepreneurial risk-taking, how the\u2026 Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Risk and Rizq"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How Islamic concepts of divine provision and chance gave the\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "The word \"hazard\" comes from al-zahr, Arabic for dice."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Explore how the Islamic concept of rizq (divine provision) created\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Risk and Rizq. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-tt-5 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship. The parallels to today are hard to ignore. How Islamic concepts of divine provision and chance gave the world the vocabulary of uncertainty, insurance, and entrepreneurship."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_df1156ee.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_df1156ee.png"
+}
