@@ -934,6 +934,14 @@
           "json_path": "social/campaigns/2026-05-11-podcast-pu-3-ships-and-storms.json",
           "markdown_path": "social/campaigns/2026-05-11-podcast-pu-3-ships-and-storms.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-27-podcast-pu-3-ships-and-storms",
+          "generated_at": "2026-06-27T15:14:32.734825+00:00",
+          "json_path": "social/campaigns/2026-06-27-podcast-pu-3-ships-and-storms.json",
+          "markdown_path": "social/campaigns/2026-06-27-podcast-pu-3-ships-and-storms.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -953,6 +961,14 @@
           "generated_at": "2026-05-11T16:35:52.886925+00:00",
           "json_path": "social/campaigns/2026-05-11-podcast-pu-4-selling-the-wind.json",
           "markdown_path": "social/campaigns/2026-05-11-podcast-pu-4-selling-the-wind.md",
+          "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-27-podcast-pu-4-selling-the-wind",
+          "generated_at": "2026-06-27T15:14:55.696992+00:00",
+          "json_path": "social/campaigns/2026-06-27-podcast-pu-4-selling-the-wind.json",
+          "markdown_path": "social/campaigns/2026-06-27-podcast-pu-4-selling-the-wind.md",
           "x_voice_pattern": "reframing"
         }
       ]
