@@ -990,6 +990,14 @@
           "json_path": "social/campaigns/2026-05-11-podcast-pu-5-when-uncertainty-collapsed.json",
           "markdown_path": "social/campaigns/2026-05-11-podcast-pu-5-when-uncertainty-collapsed.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-28-podcast-pu-5-when-uncertainty-collapsed",
+          "generated_at": "2026-06-28T15:16:00.278428+00:00",
+          "json_path": "social/campaigns/2026-06-28-podcast-pu-5-when-uncertainty-collapsed.json",
+          "markdown_path": "social/campaigns/2026-06-28-podcast-pu-5-when-uncertainty-collapsed.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1010,6 +1018,14 @@
           "json_path": "social/campaigns/2026-05-12-podcast-pu-6-building-on-solid-ground.json",
           "markdown_path": "social/campaigns/2026-05-12-podcast-pu-6-building-on-solid-ground.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-28-podcast-pu-6-building-on-solid-ground",
+          "generated_at": "2026-06-28T15:16:25.542719+00:00",
+          "json_path": "social/campaigns/2026-06-28-podcast-pu-6-building-on-solid-ground.json",
+          "markdown_path": "social/campaigns/2026-06-28-podcast-pu-6-building-on-solid-ground.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -1438,6 +1454,14 @@
           "json_path": "social/campaigns/2026-05-12-podcast-wd-1-before-the-revelation.json",
           "markdown_path": "social/campaigns/2026-05-12-podcast-wd-1-before-the-revelation.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-28-podcast-wd-1-before-the-revelation",
+          "generated_at": "2026-06-28T15:16:48.418303+00:00",
+          "json_path": "social/campaigns/2026-06-28-podcast-wd-1-before-the-revelation.json",
+          "markdown_path": "social/campaigns/2026-06-28-podcast-wd-1-before-the-revelation.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
