@@ -1482,6 +1482,14 @@
           "json_path": "social/campaigns/2026-05-13-podcast-wd-2-the-longest-verse.json",
           "markdown_path": "social/campaigns/2026-05-13-podcast-wd-2-the-longest-verse.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-29-podcast-wd-2-the-longest-verse",
+          "generated_at": "2026-06-29T16:57:10.674080+00:00",
+          "json_path": "social/campaigns/2026-06-29-podcast-wd-2-the-longest-verse.json",
+          "markdown_path": "social/campaigns/2026-06-29-podcast-wd-2-the-longest-verse.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1502,6 +1510,14 @@
           "json_path": "social/campaigns/2026-05-13-podcast-wd-3-the-scholars-line.json",
           "markdown_path": "social/campaigns/2026-05-13-podcast-wd-3-the-scholars-line.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-29-podcast-wd-3-the-scholars-line",
+          "generated_at": "2026-06-29T16:57:36.556291+00:00",
+          "json_path": "social/campaigns/2026-06-29-podcast-wd-3-the-scholars-line.json",
+          "markdown_path": "social/campaigns/2026-06-29-podcast-wd-3-the-scholars-line.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -1522,6 +1538,14 @@
           "json_path": "social/campaigns/2026-05-13-podcast-wd-4-the-ottoman-experiment.json",
           "markdown_path": "social/campaigns/2026-05-13-podcast-wd-4-the-ottoman-experiment.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-29-podcast-wd-4-the-ottoman-experiment",
+          "generated_at": "2026-06-29T16:58:01.694929+00:00",
+          "json_path": "social/campaigns/2026-06-29-podcast-wd-4-the-ottoman-experiment.json",
+          "markdown_path": "social/campaigns/2026-06-29-podcast-wd-4-the-ottoman-experiment.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
