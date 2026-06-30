@@ -305,6 +305,14 @@
           "json_path": "social/campaigns/2026-05-14-podcast-be-1-when-nations-borrow.json",
           "markdown_path": "social/campaigns/2026-05-14-podcast-be-1-when-nations-borrow.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-30-podcast-be-1-when-nations-borrow",
+          "generated_at": "2026-06-30T16:23:42.368282+00:00",
+          "json_path": "social/campaigns/2026-06-30-podcast-be-1-when-nations-borrow.json",
+          "markdown_path": "social/campaigns/2026-06-30-podcast-be-1-when-nations-borrow.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -325,6 +333,14 @@
           "json_path": "social/campaigns/2026-05-15-podcast-be-2-the-debt-trap.json",
           "markdown_path": "social/campaigns/2026-05-15-podcast-be-2-the-debt-trap.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-30-podcast-be-2-the-debt-trap",
+          "generated_at": "2026-06-30T16:24:07.629250+00:00",
+          "json_path": "social/campaigns/2026-06-30-podcast-be-2-the-debt-trap.json",
+          "markdown_path": "social/campaigns/2026-06-30-podcast-be-2-the-debt-trap.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1566,6 +1582,14 @@
           "json_path": "social/campaigns/2026-05-13-podcast-wd-5-interest-in-disguise.json",
           "markdown_path": "social/campaigns/2026-05-13-podcast-wd-5-interest-in-disguise.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-30-podcast-wd-5-interest-in-disguise",
+          "generated_at": "2026-06-30T16:22:52.672065+00:00",
+          "json_path": "social/campaigns/2026-06-30-podcast-wd-5-interest-in-disguise.json",
+          "markdown_path": "social/campaigns/2026-06-30-podcast-wd-5-interest-in-disguise.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1586,6 +1610,14 @@
           "json_path": "social/campaigns/2026-05-14-podcast-wd-6-debt-without-chains.json",
           "markdown_path": "social/campaigns/2026-05-14-podcast-wd-6-debt-without-chains.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-06-30-podcast-wd-6-debt-without-chains",
+          "generated_at": "2026-06-30T16:23:18.071031+00:00",
+          "json_path": "social/campaigns/2026-06-30-podcast-wd-6-debt-without-chains.json",
+          "markdown_path": "social/campaigns/2026-06-30-podcast-wd-6-debt-without-chains.md",
+          "x_voice_pattern": "question"
         }
       ]
     }
