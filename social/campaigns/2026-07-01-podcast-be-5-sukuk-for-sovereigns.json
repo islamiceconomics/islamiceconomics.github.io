@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-07-01-podcast-be-5-sukuk-for-sovereigns",
+  "generated_at": "2026-07-01T16:25:24.938382+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-be-5-sukuk-for-sovereigns",
+    "kind": "podcast",
+    "title": "Sukuk for Sovereigns",
+    "summary": "How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-be-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In 2014, the United Kingdom became the first Western nation to issue a sovereign sukuk, raising 200 million pounds backed by government property. Malaysia has built the world's largest sukuk market, with over $200 billion in outstanding issuances. Hong Kong, Luxembourg, and South Africa have followed. Sovereign sukuk represent a genuine alternative to conventional bonds: instead of lending money at interest, investors buy a share in real government assets and receive returns from the revenue those assets generate. This episode examines how sovereign sukuk work in practice, where they've succeeded and where they've fallen short, the debate over whether they truly differ from conventional bonds in economic substance, and what a fully sukuk-based sovereign debt market might look like.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "Sukuk for Sovereigns \u2014 a thread:",
+        "How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.",
+        "In 2014, the United Kingdom became the first Western nation to issue a sovereign sukuk, raising 200 million pounds backed\u2026",
+        "Why it matters: Malaysia has built the world's largest sukuk market, with over $200 billion in outstanding issuances. Listen here: https://islamiceconomics.github.io/podcast.html#ep-be-5"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-5"
+    },
+    "linkedin": {
+      "post": "Sukuk for Sovereigns How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds. Three takeaways: \u2022 How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds. \u2022 In 2014, the United Kingdom became the first Western nation to issue a sovereign sukuk, raising 200 million pounds backed\u2026 \u2022 Malaysia has built the world's largest sukuk market, with over $200 billion in outstanding issuances. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-be-5",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Sukuk for Sovereigns How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-be-5 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Sukuk for Sovereigns",
+        "How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.",
+        "In 2014, the United Kingdom became the first Western nation to issue a sovereign\u2026",
+        "Malaysia has built the world's largest sukuk market, with over $200 billion in outstanding\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Sukuk for Sovereigns in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-be-5 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Sukuk for Sovereigns",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Sukuk for Sovereigns\n\nHow Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.\n\nWhat I keep coming back to is this: In 2014, the United Kingdom became the first Western nation to issue a sovereign sukuk, raising 200 million pounds backed\u2026",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-5"
+    },
+    "short_video": {
+      "title": "Sukuk for Sovereigns in 45 seconds",
+      "hook": "How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds.",
+      "voiceover": "Sukuk for Sovereigns. How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds. Here are the key points: How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds. In 2014, the United Kingdom became the first Western nation to issue a sovereign sukuk, raising 200 million pounds backed\u2026 Malaysia has built the world's largest sukuk market, with over $200 billion in outstanding issuances. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Sukuk for Sovereigns"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How Malaysia, the UK, and Hong Kong are experimenting with\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "In 2014, the United Kingdom became the first Western nation\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Malaysia has built the world's largest sukuk market, with over\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Sukuk for Sovereigns. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-be-5 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds. How Malaysia, the UK, and Hong Kong are experimenting with Islamic sovereign bonds."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_ac074230.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_ac074230.png"
+}

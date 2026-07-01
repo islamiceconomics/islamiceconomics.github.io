@@ -361,6 +361,14 @@
           "json_path": "social/campaigns/2026-05-15-podcast-be-3-petrodollars-and-paradox.json",
           "markdown_path": "social/campaigns/2026-05-15-podcast-be-3-petrodollars-and-paradox.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-07-01-podcast-be-3-petrodollars-and-paradox",
+          "generated_at": "2026-07-01T16:24:27.710871+00:00",
+          "json_path": "social/campaigns/2026-07-01-podcast-be-3-petrodollars-and-paradox.json",
+          "markdown_path": "social/campaigns/2026-07-01-podcast-be-3-petrodollars-and-paradox.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -381,6 +389,14 @@
           "json_path": "social/campaigns/2026-05-15-podcast-be-4-the-zakat-alternative.json",
           "markdown_path": "social/campaigns/2026-05-15-podcast-be-4-the-zakat-alternative.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-07-01-podcast-be-4-the-zakat-alternative",
+          "generated_at": "2026-07-01T16:24:57.751202+00:00",
+          "json_path": "social/campaigns/2026-07-01-podcast-be-4-the-zakat-alternative.json",
+          "markdown_path": "social/campaigns/2026-07-01-podcast-be-4-the-zakat-alternative.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -401,6 +417,14 @@
           "json_path": "social/campaigns/2026-05-15-podcast-be-5-sukuk-for-sovereigns.json",
           "markdown_path": "social/campaigns/2026-05-15-podcast-be-5-sukuk-for-sovereigns.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-07-01-podcast-be-5-sukuk-for-sovereigns",
+          "generated_at": "2026-07-01T16:25:24.938382+00:00",
+          "json_path": "social/campaigns/2026-07-01-podcast-be-5-sukuk-for-sovereigns.json",
+          "markdown_path": "social/campaigns/2026-07-01-podcast-be-5-sukuk-for-sovereigns.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -421,6 +445,14 @@
           "json_path": "social/campaigns/2026-05-16-podcast-be-6-after-the-default.json",
           "markdown_path": "social/campaigns/2026-05-16-podcast-be-6-after-the-default.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-07-01-podcast-be-6-after-the-default",
+          "generated_at": "2026-07-01T16:25:51.907497+00:00",
+          "json_path": "social/campaigns/2026-07-01-podcast-be-6-after-the-default.json",
+          "markdown_path": "social/campaigns/2026-07-01-podcast-be-6-after-the-default.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
