@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-07-02-podcast-mm-4-when-currencies-break",
+  "generated_at": "2026-07-02T16:05:55.840410+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-mm-4-when-currencies-break",
+    "kind": "podcast",
+    "title": "When Currencies Break",
+    "summary": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. The dollar creates vulnerability, but governance determines the outcome.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Turkey's crisis was Erdogan overriding central bank independence. Pakistan's reflects institutional failure across the board. Egypt's is structural economic narrowness. Iran's combines sanctions with internal dysfunction. Lebanon's is elite capture of the entire banking system. Each case gets specific, fair treatment, with no heroes and no villains. The common thread: the dollar system creates vulnerability for peripheral economies, but domestic governance determines whether that vulnerability becomes a crisis. The same external pressures produce very different outcomes depending on how countries are governed.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "When Currencies Break \u2014 a thread:",
+        "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon.",
+        "The dollar creates vulnerability, but governance determines the outcome.",
+        "Why it matters: Turkey's crisis was Erdogan overriding central bank independence. Listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+    },
+    "linkedin": {
+      "post": "When Currencies Break Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. The dollar creates vulnerability, but governance determines the outcome. Three takeaways: \u2022 Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. \u2022 The dollar creates vulnerability, but governance determines the outcome. \u2022 Turkey's crisis was Erdogan overriding central bank independence. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-4",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "When Currencies Break Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. The dollar creates vulnerability, but governance determines the outcome. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-4 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "When Currencies Break",
+        "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon.",
+        "The dollar creates vulnerability, but governance determines the outcome.",
+        "Turkey's crisis was Erdogan overriding central bank independence.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "When Currencies Break in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-mm-4 #IslamicEconomics #IslamicHistory",
+      "cover_text": "When Currencies Break",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "When Currencies Break\n\nCurrency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon.\n\nWhat I keep coming back to is this: The dollar creates vulnerability, but governance determines the outcome.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-4"
+    },
+    "short_video": {
+      "title": "When Currencies Break in 45 seconds",
+      "hook": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon.",
+      "voiceover": "When Currencies Break. Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. Here are the key points: Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. The dollar creates vulnerability, but governance determines the outcome. Turkey's crisis was Erdogan overriding central bank independence. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "When Currencies Break"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon."
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "The dollar creates vulnerability, but governance determines the outcome."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Turkey's crisis was Erdogan overriding central bank independence."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "When Currencies Break. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-4 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon. Currency crises in Turkey, Pakistan, Egypt, Iran, and Lebanon."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_d8cf3daf.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_d8cf3daf.png"
+}
