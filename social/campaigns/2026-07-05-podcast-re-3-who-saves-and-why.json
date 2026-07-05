@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-07-05-podcast-re-3-who-saves-and-why",
+  "generated_at": "2026-07-05T15:11:32.019039+00:00",
+  "x_voice_pattern": "connection",
+  "source": {
+    "content_id": "podcast-re-3-who-saves-and-why",
+    "kind": "podcast",
+    "title": "Who Saves and Why",
+    "summary": "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Solow model says the savings rate determines the steady state. Higher savings means more capital accumulation and higher output per worker. So what determines how much people save? Standard economics offers the lifecycle hypothesis and permanent income hypothesis, both assuming a particular discount rate. The wahn thesis asks: what if the discount rate is endogenous? If an agent genuinely believes in akhirah, their effective planning horizon extends beyond death. They're not smoothing consumption over 80 years but optimizing over an infinite horizon. This changes savings behavior, charitable giving, and investment allocation simultaneously. The net effect on measured savings is ambiguous, but the allocation should be more efficient. This is theoretically interesting but empirically unproven, and this episode says so honestly.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally. The parallels to today are hard to ignore.",
+      "voice_pattern": "connection",
+      "thread": [
+        "Who Saves and Why \u2014 a thread:",
+        "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings\u2026",
+        "The Solow model says the savings rate determines the steady state.",
+        "Why it matters: Higher savings means more capital accumulation and higher output per worker. Listen here: https://islamiceconomics.github.io/podcast.html#ep-re-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-3"
+    },
+    "linkedin": {
+      "post": "Who Saves and Why Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally. Three takeaways: \u2022 Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings\u2026 \u2022 The Solow model says the savings rate determines the steady state. \u2022 Higher savings means more capital accumulation and higher output per worker. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-re-3",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Who Saves and Why Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-re-3 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Who Saves and Why",
+        "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change\u2026",
+        "The Solow model says the savings rate determines the steady state.",
+        "Higher savings means more capital accumulation and higher output per worker.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Who Saves and Why in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-re-3 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Who Saves and Why",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Who Saves and Why\n\nTime preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally.\n\nWhat I keep coming back to is this: The Solow model says the savings rate determines the steady state.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-3"
+    },
+    "short_video": {
+      "title": "Who Saves and Why in 45 seconds",
+      "hook": "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings\u2026",
+      "voiceover": "Who Saves and Why. Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally. Here are the key points: Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings\u2026 The Solow model says the savings rate determines the steady state. Higher savings means more capital accumulation and higher output per worker. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Who Saves and Why"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "Time preference, the lifecycle hypothesis, and the wahn thesis: how\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "The Solow model says the savings rate determines the steady\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Higher savings means more capital accumulation and higher output per\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Who Saves and Why. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-re-3 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally. The parallels to today are hard to ignore. Time preference, the lifecycle hypothesis, and the wahn thesis: how akhirah-oriented preferences could change savings behavior fundamentally."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_ce842d1c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_ce842d1c.png"
+}

@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-07-05-podcast-re-2-the-growth-engine",
+  "generated_at": "2026-07-05T15:11:16.561051+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-re-2-the-growth-engine",
+    "kind": "podcast",
+    "title": "The Growth Engine",
+    "summary": "The Solow growth model, steady states, convergence failures, and why human capital is the missing variable.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "The Solow growth model is the workhorse of growth economics. An economy produces output using capital and labor. Each year, some output is saved and invested. But capital depreciates, and diminishing returns set in. The key insight: capital accumulation alone can't sustain growth forever. Only technological progress drives long-run growth. The model predicts convergence: poor countries should grow faster. But many Muslim-majority countries haven't converged. Pakistan's per-capita growth has been anemic for decades. Indonesia did better. Malaysia succeeded. The pattern isn't about Islam. It's about institutions and governance. This episode extends the model to include human capital, where the Islamic tradition's emphasis on ilm (knowledge) should be an advantage, but modern Muslim-majority states have largely failed to translate that tradition into actual educational investment.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. https://islamiceconomics.github.io/podcast.html#ep-re-2",
+      "voice_pattern": "content_share",
+      "thread": [
+        "The Growth Engine \u2014 a thread:",
+        "The Solow growth model, steady states, convergence failures, and why human capital is the missing variable.",
+        "The Solow growth model is the workhorse of growth economics.",
+        "Why it matters: An economy produces output using capital and labor. Listen here: https://islamiceconomics.github.io/podcast.html#ep-re-2"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-2"
+    },
+    "linkedin": {
+      "post": "The Growth Engine The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. Three takeaways: \u2022 The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. \u2022 The Solow growth model is the workhorse of growth economics. \u2022 An economy produces output using capital and labor. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-re-2",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Growth Engine The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-re-2 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Growth Engine",
+        "The Solow growth model, steady states, convergence failures, and why human capital is the\u2026",
+        "The Solow growth model is the workhorse of growth economics.",
+        "An economy produces output using capital and labor.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Growth Engine in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-re-2 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Growth Engine",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Growth Engine\n\nThe Solow growth model, steady states, convergence failures, and why human capital is the missing variable.\n\nWhat I keep coming back to is this: The Solow growth model is the workhorse of growth economics.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-2"
+    },
+    "short_video": {
+      "title": "The Growth Engine in 45 seconds",
+      "hook": "The Solow growth model, steady states, convergence failures, and why human capital is the missing variable.",
+      "voiceover": "The Growth Engine. The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. Here are the key points: The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. The Solow growth model is the workhorse of growth economics. An economy produces output using capital and labor. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Growth Engine"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "The Solow growth model, steady states, convergence failures, and why\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "The Solow growth model is the workhorse of growth economics."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "An economy produces output using capital and labor."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Growth Engine. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-re-2 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Been reading about this. The Solow growth model, steady states, convergence failures, and why human capital is the missing variable. The Solow growth model, steady states, convergence failures, and why human capital is the missing variable."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_32882bfc.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_32882bfc.png"
+}
