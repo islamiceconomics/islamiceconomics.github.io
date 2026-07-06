@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-07-06-podcast-ppr-2-the-bonds-you-don-t-see",
+  "generated_at": "2026-07-06T16:52:55.828296+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-ppr-2-the-bonds-you-don-t-see",
+    "kind": "podcast",
+    "title": "The Bonds You Don't See",
+    "summary": "Your mortgage, your pension, your savings account: they all run through the bond market. How ordinary people became unwitting participants in the world's largest riba system.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Your monthly payment funds someone's retirement in Norway. Your student loan is a bond. Your savings account earns interest because your bank lends your money out and buys bonds. The 2008 financial crisis wasn't really a housing crisis. It was a bond market crisis: mortgage-backed securities that nobody understood collapsed, and the entire global economy nearly went with them. This episode traces how bonds touch every aspect of ordinary life, and how the hadith about riba's dust reaching everyone has become literally true in the modern financial system.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Your mortgage, your pension, your savings account: they all run through the bond market.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The Bonds You Don't See \u2014 a thread:",
+        "Your mortgage, your pension, your savings account: they all run through the bond market.",
+        "How ordinary people became unwitting participants in the world's largest riba system.",
+        "Why it matters: When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Listen here: https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+    },
+    "linkedin": {
+      "post": "The Bonds You Don't See Your mortgage, your pension, your savings account: they all run through the bond market. How ordinary people became unwitting participants in the world's largest riba system. Three takeaways: \u2022 Your mortgage, your pension, your savings account: they all run through the bond market. \u2022 How ordinary people became unwitting participants in the world's largest riba system. \u2022 When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-ppr-2",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Bonds You Don't See Your mortgage, your pension, your savings account: they all run through the bond market. How ordinary people became unwitting participants in the world's largest riba system. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-ppr-2 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Bonds You Don't See",
+        "Your mortgage, your pension, your savings account: they all run through the bond market.",
+        "How ordinary people became unwitting participants in the world's largest riba system.",
+        "When you take out a mortgage, your loan gets packaged, securitized, and sold as\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Bonds You Don't See in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-ppr-2 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Bonds You Don't See",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Bonds You Don't See\n\nYour mortgage, your pension, your savings account: they all run through the bond market.\n\nWhat I keep coming back to is this: How ordinary people became unwitting participants in the world's largest riba system.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-ppr-2"
+    },
+    "short_video": {
+      "title": "The Bonds You Don't See in 45 seconds",
+      "hook": "Your mortgage, your pension, your savings account: they all run through the bond market.",
+      "voiceover": "The Bonds You Don't See. Your mortgage, your pension, your savings account: they all run through the bond market. Here are the key points: Your mortgage, your pension, your savings account: they all run through the bond market. How ordinary people became unwitting participants in the world's largest riba system. When you take out a mortgage, your loan gets packaged, securitized, and sold as bonds to investors around the world. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Bonds You Don't See"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "Your mortgage, your pension, your savings account: they all run\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "How ordinary people became unwitting participants in the world's largest\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "When you take out a mortgage, your loan gets packaged\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Bonds You Don't See. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-ppr-2 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Your mortgage, your pension, your savings account: they all run through the bond market. Your mortgage, your pension, your savings account: they all run through the bond market."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_0dfd3106.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_0dfd3106.png"
+}
