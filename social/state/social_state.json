@@ -958,6 +958,14 @@
           "json_path": "social/campaigns/2026-05-21-podcast-ppr-3-the-central-bank-trap.json",
           "markdown_path": "social/campaigns/2026-05-21-podcast-ppr-3-the-central-bank-trap.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-07-07-podcast-ppr-3-the-central-bank-trap",
+          "generated_at": "2026-07-07T16:28:16.815489+00:00",
+          "json_path": "social/campaigns/2026-07-07-podcast-ppr-3-the-central-bank-trap.json",
+          "markdown_path": "social/campaigns/2026-07-07-podcast-ppr-3-the-central-bank-trap.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -978,6 +986,14 @@
           "json_path": "social/campaigns/2026-05-21-podcast-ppr-5-the-islamic-alternative.json",
           "markdown_path": "social/campaigns/2026-05-21-podcast-ppr-5-the-islamic-alternative.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-07-07-podcast-ppr-5-the-islamic-alternative",
+          "generated_at": "2026-07-07T16:28:42.719995+00:00",
+          "json_path": "social/campaigns/2026-07-07-podcast-ppr-5-the-islamic-alternative.json",
+          "markdown_path": "social/campaigns/2026-07-07-podcast-ppr-5-the-islamic-alternative.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
