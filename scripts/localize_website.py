@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEBSITE = ROOT / "Website"
 CACHE_PATH = ROOT / "scripts" / ".translation-cache.json"
 SITE_URL = "https://islamiceconomics.github.io"
+SCRIPTURE_DATABASE_PUBLIC = (WEBSITE / "js" / "scripture-data.js").exists()
 
 TOP_LEVEL_PAGES = [
     "about.html",
@@ -759,11 +760,16 @@ def regenerate_sitemap() -> None:
             f"<priority>{priorities.get(page_name, '0.7')}</priority></url>"
         )
 
+    public_pages = [
+        page for page in TOP_LEVEL_PAGES
+        if page != "scriptures.html" or SCRIPTURE_DATABASE_PUBLIC
+    ]
+
     urls = []
-    for page in TOP_LEVEL_PAGES:
+    for page in public_pages:
         urls.append(url_entry(f"{SITE_URL}/{page}", page))
     for locale in ("ur", "ar", "tr"):
-        for page in TOP_LEVEL_PAGES:
+        for page in public_pages:
             urls.append(url_entry(f"{SITE_URL}/{locale}/{page}", page))
 
     existing_extra = re.findall(r"<url>.*?</url>", original, flags=re.DOTALL)
@@ -781,14 +787,19 @@ def regenerate_sitemap() -> None:
 
 def main() -> int:
     log("Updating localized data assets...")
-    update_urdu_scripture_name_ar()
-    generate_scripture_data()
+    if SCRIPTURE_DATABASE_PUBLIC:
+        update_urdu_scripture_name_ar()
+        generate_scripture_data()
+    else:
+        log("  scripture database is quarantined; skipping scripture data generation")
     generate_economic_data()
     CACHE.save()
 
     log("Generating Arabic and Turkish top-level pages...")
     for target in TRANSLATION_TARGETS:
         for page in TOP_LEVEL_PAGES:
+            if page == "scriptures.html" and not SCRIPTURE_DATABASE_PUBLIC:
+                continue
             log(f"  {target}/{page}")
             generate_locale_page(page, target)
             CACHE.save()
