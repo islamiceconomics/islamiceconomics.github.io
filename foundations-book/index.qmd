@@ -36,7 +36,7 @@ You don't need any prior background in Islamic studies *or* economics to follow 
 This textbook is part of the larger [Islamic Economics](../index.html) platform, which includes:
 
 - **[Formal Theory](../theory.html)** — PhD-level mathematical models (for readers who want the rigorous treatment)
-- **[Scriptures Database](../scriptures.html)** — Temporarily offline while every entry, translation, and citation is verified against its original source
+- **[Scriptures Database](../scriptures.html)** — In progress
 - **[Historical Timeline](../history.html)** — The evolution of Islamic economic institutions from 7th century Medina to today
 - **[Research Hub](../research.html)** — Contemporary academic papers and data
 - **[Podcast](../podcast.html)** — Audio discussions of key topics (available in English and Urdu)
