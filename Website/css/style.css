@@ -5586,12 +5586,18 @@ html[data-theme] .deeper-work-card {
 }
 
 .metaphysics-intro {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto 3.25rem;
   text-align: center;
 }
 
-.metaphysics-intro h2,
+.metaphysics-intro h2 {
+  max-width: 780px;
+  margin: 0 auto 1.4rem;
+  font-size: clamp(2rem, 3.35vw, 2.85rem);
+  letter-spacing: -0.025em;
+}
+
 .metaphysics-section-heading h2,
 .treatise-header h2 {
   margin-top: 0;
@@ -5599,11 +5605,12 @@ html[data-theme] .deeper-work-card {
 }
 
 .metaphysics-intro > p:not(.metaphysics-eyebrow) {
-  max-width: 780px;
+  max-width: 700px;
   margin-right: auto;
   margin-left: auto;
   color: var(--color-text-secondary);
-  font-size: 1.05rem;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .ontology-figure {
