@@ -5891,7 +5891,7 @@ html[data-theme] .deeper-work-card {
   position: absolute;
   top: calc(50% - 2.35rem);
   left: 50%;
-  width: 7.5rem;
+  width: calc(100% - 0.9rem);
   color: var(--color-text-light);
   font-size: 0.57rem;
   font-weight: 700;
