@@ -5598,6 +5598,23 @@ html[data-theme] .deeper-work-card {
   letter-spacing: -0.02em;
 }
 
+.metaphysics-title-terms {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: clamp(0.72rem, 1vw, 0.86rem);
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  line-height: 1.6;
+}
+
+.metaphysics-title-terms [lang="ar"] {
+  margin-left: 0.12rem;
+  font-size: 1.1em;
+  letter-spacing: 0;
+}
+
 .metaphysics-section-heading h2,
 .treatise-header h2 {
   margin-top: 0;
