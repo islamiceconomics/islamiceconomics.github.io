@@ -6030,6 +6030,89 @@ html[data-theme] .deeper-work-card {
   line-height: 1.4;
 }
 
+.metaphysics-approach {
+  padding-top: 5.5rem;
+  padding-bottom: 5.75rem;
+  background: var(--color-bg);
+}
+
+.approach-strands {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem;
+  max-width: 1040px;
+  margin: 0 auto 3.25rem;
+}
+
+.approach-strand {
+  padding-top: 1.35rem;
+  border-top: 2px solid rgba(26, 92, 58, 0.28);
+}
+
+.approach-domain {
+  margin: 0 0 0.85rem;
+  color: var(--color-accent);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.approach-strand h3 {
+  margin: 0 0 0.7rem;
+  color: var(--color-primary);
+  font-size: 1.18rem;
+}
+
+.approach-strand p:not(.approach-domain) {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.approach-caveat {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.6rem 1.85rem;
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.approach-caveat-label {
+  margin: 0 0 0.6rem;
+  color: var(--color-text-light);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.approach-caveat p:not(.approach-caveat-label) {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+[data-theme="dark"] .metaphysics-approach {
+  background: #0d141c;
+}
+
+[data-theme="dark"] .approach-strand {
+  border-top-color: rgba(76, 200, 130, 0.28);
+}
+
+[data-theme="dark"] .approach-strand h3 {
+  color: var(--color-primary);
+}
+
+[data-theme="dark"] .approach-caveat {
+  background: #151d28;
+  border-left-color: var(--color-accent);
+}
+
 .treatise-section {
   padding-top: 5.5rem;
   padding-bottom: 5.75rem;
@@ -6266,6 +6349,12 @@ html[data-theme] .deeper-work-card {
 }
 
 @media (max-width: 900px) {
+  .approach-strands {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
   .ontology-map {
     grid-template-columns: 1fr;
     gap: 0;
