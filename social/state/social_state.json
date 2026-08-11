@@ -1098,6 +1098,14 @@
           "json_path": "social/campaigns/2026-06-26-podcast-pu-1-the-forbidden-throw.json",
           "markdown_path": "social/campaigns/2026-06-26-podcast-pu-1-the-forbidden-throw.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-11-podcast-pu-1-the-forbidden-throw",
+          "generated_at": "2026-08-11T14:55:28.945637+00:00",
+          "json_path": "social/campaigns/2026-08-11-podcast-pu-1-the-forbidden-throw.json",
+          "markdown_path": "social/campaigns/2026-08-11-podcast-pu-1-the-forbidden-throw.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1718,6 +1726,14 @@
           "json_path": "social/campaigns/2026-06-26-podcast-tt-5-risk-and-rizq.json",
           "markdown_path": "social/campaigns/2026-06-26-podcast-tt-5-risk-and-rizq.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-11-podcast-tt-5-risk-and-rizq",
+          "generated_at": "2026-08-11T14:54:42.672135+00:00",
+          "json_path": "social/campaigns/2026-08-11-podcast-tt-5-risk-and-rizq.json",
+          "markdown_path": "social/campaigns/2026-08-11-podcast-tt-5-risk-and-rizq.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1746,6 +1762,14 @@
           "json_path": "social/campaigns/2026-06-26-podcast-tt-6-written-in-trade-today.json",
           "markdown_path": "social/campaigns/2026-06-26-podcast-tt-6-written-in-trade-today.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-11-podcast-tt-6-written-in-trade-today",
+          "generated_at": "2026-08-11T14:55:06.269342+00:00",
+          "json_path": "social/campaigns/2026-08-11-podcast-tt-6-written-in-trade-today.json",
+          "markdown_path": "social/campaigns/2026-08-11-podcast-tt-6-written-in-trade-today.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
