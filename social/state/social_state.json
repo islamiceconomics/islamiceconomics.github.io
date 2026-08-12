@@ -1134,6 +1134,14 @@
           "json_path": "social/campaigns/2026-06-27-podcast-pu-3-ships-and-storms.json",
           "markdown_path": "social/campaigns/2026-06-27-podcast-pu-3-ships-and-storms.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-12-podcast-pu-3-ships-and-storms",
+          "generated_at": "2026-08-12T15:32:09.007141+00:00",
+          "json_path": "social/campaigns/2026-08-12-podcast-pu-3-ships-and-storms.json",
+          "markdown_path": "social/campaigns/2026-08-12-podcast-pu-3-ships-and-storms.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -1162,6 +1170,14 @@
           "json_path": "social/campaigns/2026-06-27-podcast-pu-4-selling-the-wind.json",
           "markdown_path": "social/campaigns/2026-06-27-podcast-pu-4-selling-the-wind.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-12-podcast-pu-4-selling-the-wind",
+          "generated_at": "2026-08-12T15:32:32.171929+00:00",
+          "json_path": "social/campaigns/2026-08-12-podcast-pu-4-selling-the-wind.json",
+          "markdown_path": "social/campaigns/2026-08-12-podcast-pu-4-selling-the-wind.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1190,6 +1206,14 @@
           "json_path": "social/campaigns/2026-06-28-podcast-pu-5-when-uncertainty-collapsed.json",
           "markdown_path": "social/campaigns/2026-06-28-podcast-pu-5-when-uncertainty-collapsed.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-12-podcast-pu-5-when-uncertainty-collapsed",
+          "generated_at": "2026-08-12T15:33:00.114623+00:00",
+          "json_path": "social/campaigns/2026-08-12-podcast-pu-5-when-uncertainty-collapsed.json",
+          "markdown_path": "social/campaigns/2026-08-12-podcast-pu-5-when-uncertainty-collapsed.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1218,6 +1242,14 @@
           "json_path": "social/campaigns/2026-06-28-podcast-pu-6-building-on-solid-ground.json",
           "markdown_path": "social/campaigns/2026-06-28-podcast-pu-6-building-on-solid-ground.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-12-podcast-pu-6-building-on-solid-ground",
+          "generated_at": "2026-08-12T15:33:22.006650+00:00",
+          "json_path": "social/campaigns/2026-08-12-podcast-pu-6-building-on-solid-ground.json",
+          "markdown_path": "social/campaigns/2026-08-12-podcast-pu-6-building-on-solid-ground.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1798,6 +1830,14 @@
           "json_path": "social/campaigns/2026-06-28-podcast-wd-1-before-the-revelation.json",
           "markdown_path": "social/campaigns/2026-06-28-podcast-wd-1-before-the-revelation.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-12-podcast-wd-1-before-the-revelation",
+          "generated_at": "2026-08-12T15:33:42.047142+00:00",
+          "json_path": "social/campaigns/2026-08-12-podcast-wd-1-before-the-revelation.json",
+          "markdown_path": "social/campaigns/2026-08-12-podcast-wd-1-before-the-revelation.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },

@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-12-podcast-pu-3-ships-and-storms",
+  "generated_at": "2026-08-12T15:32:09.007141+00:00",
+  "x_voice_pattern": "reframing",
+  "source": {
+    "content_id": "podcast-pu-3-ships-and-storms",
+    "kind": "podcast",
+    "title": "Ships and Storms",
+    "summary": "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "A dhow loaded with pepper and silk leaves Aden for Gujarat. The voyage takes weeks. Pirates, storms, and shipwrecks are real possibilities. How do you finance a journey when insurance is forbidden and charging interest is a sin? Islamic merchants solved this through mudaraba: one partner provides the capital, the other provides the labor and expertise, and they share the profit or loss. It was venture capital a thousand years before Silicon Valley. This episode follows the Indian Ocean trade routes and shows how the prohibition on gharar didn't prevent commerce; it created more equitable ways to share risk.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. The conventional framing misses the point.",
+      "voice_pattern": "reframing",
+      "thread": [
+        "Ships and Storms \u2014 a thread:",
+        "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending.",
+        "A dhow loaded with pepper and silk leaves Aden for Gujarat.",
+        "Why it matters: Pirates, storms, and shipwrecks are real possibilities. Listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-3"
+    },
+    "linkedin": {
+      "post": "Ships and Storms How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. Three takeaways: \u2022 How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. \u2022 A dhow loaded with pepper and silk leaves Aden for Gujarat. \u2022 Pirates, storms, and shipwrecks are real possibilities. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-3",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Ships and Storms How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-3 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Ships and Storms",
+        "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending.",
+        "A dhow loaded with pepper and silk leaves Aden for Gujarat.",
+        "Pirates, storms, and shipwrecks are real possibilities.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Ships and Storms in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-pu-3 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Ships and Storms",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Ships and Storms\n\nHow Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending.\n\nWhat I keep coming back to is this: A dhow loaded with pepper and silk leaves Aden for Gujarat.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-3"
+    },
+    "short_video": {
+      "title": "Ships and Storms in 45 seconds",
+      "hook": "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending.",
+      "voiceover": "Ships and Storms. How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. Here are the key points: How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. A dhow loaded with pepper and silk leaves Aden for Gujarat. Pirates, storms, and shipwrecks are real possibilities. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Ships and Storms"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How Islamic merchants managed risk on the Indian Ocean without\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "A dhow loaded with pepper and silk leaves Aden for\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Pirates, storms, and shipwrecks are real possibilities."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Ships and Storms. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-3 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending. The conventional framing misses the point. How Islamic merchants managed risk on the Indian Ocean without insurance or interest-based lending."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_fbabb02c.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_fbabb02c.png"
+}

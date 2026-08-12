@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-12-podcast-pu-4-selling-the-wind",
+  "generated_at": "2026-08-12T15:32:32.171929+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-pu-4-selling-the-wind",
+    "kind": "podcast",
+    "title": "Selling the Wind",
+    "summary": "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-4",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Bay' al-ma'dum: the sale of what does not exist. Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. In 1637, the Dutch were trading tulip futures at prices exceeding houses, for bulbs still in the ground. In 2008, banks were selling insurance on bonds they didn't own. This episode traces the thread from medieval Islamic contract law through the South Sea Bubble, tulip mania, and modern short-selling, showing how the prohibition on selling the non-existent was a safeguard against speculative bubbles that European markets wouldn't discover for centuries.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. https://islamiceconomics.github.io/podcast.html#ep-pu-4",
+      "voice_pattern": "content_share",
+      "thread": [
+        "Selling the Wind \u2014 a thread:",
+        "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist.",
+        "Bay' al-ma'dum: the sale of what does not exist.",
+        "Why it matters: Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. Listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-4"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-4"
+    },
+    "linkedin": {
+      "post": "Selling the Wind Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Three takeaways: \u2022 Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. \u2022 Bay' al-ma'dum: the sale of what does not exist. \u2022 Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-4",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Selling the Wind Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-4 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Selling the Wind",
+        "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what\u2026",
+        "Bay' al-ma'dum: the sale of what does not exist.",
+        "Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Selling the Wind in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-pu-4 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Selling the Wind",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Selling the Wind\n\nShort-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist.\n\nWhat I keep coming back to is this: Bay' al-ma'dum: the sale of what does not exist.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-4"
+    },
+    "short_video": {
+      "title": "Selling the Wind in 45 seconds",
+      "hook": "Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist.",
+      "voiceover": "Selling the Wind. Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Here are the key points: Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Bay' al-ma'dum: the sale of what does not exist. Islamic jurists prohibited selling fish still in the sea, crops not yet harvested, and goods you don't possess. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Selling the Wind"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "Short-selling, futures, and the tulip mania: what medieval jurists already\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "Bay' al-ma'dum: the sale of what does not exist."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Islamic jurists prohibited selling fish still in the sea, crops\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Selling the Wind. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-4 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Been reading about this. Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist. Short-selling, futures, and the tulip mania: what medieval jurists already knew about selling what doesn't exist."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_1b02c167.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_1b02c167.png"
+}

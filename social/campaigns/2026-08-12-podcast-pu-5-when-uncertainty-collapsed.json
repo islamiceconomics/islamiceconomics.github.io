@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-12-podcast-pu-5-when-uncertainty-collapsed",
+  "generated_at": "2026-08-12T15:33:00.114623+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-pu-5-when-uncertainty-collapsed",
+    "kind": "podcast",
+    "title": "When Uncertainty Collapsed",
+    "summary": "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-pu-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "A homeowner in Nevada takes a mortgage they can't afford. That mortgage is bundled with thousands of others into a CDO. The CDO is sliced into tranches rated AAA. Then someone buys insurance on that CDO using a credit default swap, without owning the bond. Layer upon layer of uncertainty, each one disguised as certainty. When the housing market turned, $10 trillion evaporated. This episode walks through the 2008 crisis step by step and asks: what would a classical Islamic jurist say? The answer is striking. Nearly every instrument at the heart of the crisis, from subprime ARMs to synthetic CDOs, would have been prohibited under gharar doctrine.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "When Uncertainty Collapsed \u2014 a thread:",
+        "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty.",
+        "A homeowner in Nevada takes a mortgage they can't afford.",
+        "Why it matters: That mortgage is bundled with thousands of others into a CDO. Listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-5"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-pu-5"
+    },
+    "linkedin": {
+      "post": "When Uncertainty Collapsed The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. Three takeaways: \u2022 The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. \u2022 A homeowner in Nevada takes a mortgage they can't afford. \u2022 That mortgage is bundled with thousands of others into a CDO. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-5",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "When Uncertainty Collapsed The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-pu-5 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "When Uncertainty Collapsed",
+        "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as\u2026",
+        "A homeowner in Nevada takes a mortgage they can't afford.",
+        "That mortgage is bundled with thousands of others into a CDO.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "When Uncertainty Collapsed in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-pu-5 #IslamicEconomics #IslamicHistory",
+      "cover_text": "When Uncertainty Collapsed",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "When Uncertainty Collapsed\n\nThe 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty.\n\nWhat I keep coming back to is this: A homeowner in Nevada takes a mortgage they can't afford.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-pu-5"
+    },
+    "short_video": {
+      "title": "When Uncertainty Collapsed in 45 seconds",
+      "hook": "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty.",
+      "voiceover": "When Uncertainty Collapsed. The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. Here are the key points: The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. A homeowner in Nevada takes a mortgage they can't afford. That mortgage is bundled with thousands of others into a CDO. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "When Uncertainty Collapsed"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "The 2008 financial crisis through the lens of gharar: layers\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "A homeowner in Nevada takes a mortgage they can't afford."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "That mortgage is bundled with thousands of others into a\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "When Uncertainty Collapsed. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-pu-5 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty. The 2008 financial crisis through the lens of gharar: layers of uncertainty packaged as certainty."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_79a4d979.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_79a4d979.png"
+}
