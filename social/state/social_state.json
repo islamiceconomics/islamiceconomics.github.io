@@ -1866,6 +1866,14 @@
           "json_path": "social/campaigns/2026-06-29-podcast-wd-2-the-longest-verse.json",
           "markdown_path": "social/campaigns/2026-06-29-podcast-wd-2-the-longest-verse.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-14-podcast-wd-2-the-longest-verse",
+          "generated_at": "2026-08-14T14:47:30.687646+00:00",
+          "json_path": "social/campaigns/2026-08-14-podcast-wd-2-the-longest-verse.json",
+          "markdown_path": "social/campaigns/2026-08-14-podcast-wd-2-the-longest-verse.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1894,6 +1902,14 @@
           "json_path": "social/campaigns/2026-06-29-podcast-wd-3-the-scholars-line.json",
           "markdown_path": "social/campaigns/2026-06-29-podcast-wd-3-the-scholars-line.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-14-podcast-wd-3-the-scholars-line",
+          "generated_at": "2026-08-14T14:47:51.151416+00:00",
+          "json_path": "social/campaigns/2026-08-14-podcast-wd-3-the-scholars-line.json",
+          "markdown_path": "social/campaigns/2026-08-14-podcast-wd-3-the-scholars-line.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1922,6 +1938,14 @@
           "json_path": "social/campaigns/2026-06-29-podcast-wd-4-the-ottoman-experiment.json",
           "markdown_path": "social/campaigns/2026-06-29-podcast-wd-4-the-ottoman-experiment.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-14-podcast-wd-4-the-ottoman-experiment",
+          "generated_at": "2026-08-14T14:48:11.281460+00:00",
+          "json_path": "social/campaigns/2026-08-14-podcast-wd-4-the-ottoman-experiment.json",
+          "markdown_path": "social/campaigns/2026-08-14-podcast-wd-4-the-ottoman-experiment.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
