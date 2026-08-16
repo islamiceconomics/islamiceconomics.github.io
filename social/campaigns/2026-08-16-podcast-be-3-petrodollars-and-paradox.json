@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-16-podcast-be-3-petrodollars-and-paradox",
+  "generated_at": "2026-08-16T14:19:37.759244+00:00",
+  "x_voice_pattern": "content_share",
+  "source": {
+    "content_id": "podcast-be-3-petrodollars-and-paradox",
+    "kind": "podcast",
+    "title": "Petrodollars and Paradox",
+    "summary": "How petrodollars reshaped the global financial system. The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-be-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "After the 1973 oil embargo, Gulf states accumulated unprecedented wealth. Much of it was channeled into US Treasury bonds and Western financial markets, interest-bearing instruments that sit uncomfortably with Islamic prohibitions. Meanwhile, non-oil Muslim-majority countries borrowed from those same markets at commercial rates. But the full picture is more complex than a simple betrayal narrative. Gulf states also funded massive development aid through the Islamic Development Bank ($150 billion+ in financing), the Kuwait Fund, and the Saudi Development Fund. They built infrastructure across the Muslim world while simultaneously integrating into the global financial system. This episode follows the petrodollar cycle, examines what sovereign wealth funds actually invest in, and asks why, despite having the world's largest pools of Muslim capital, a fully independent Islamic financial architecture never emerged.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How petrodollars reshaped the global financial system. https://islamiceconomics.github.io/podcast.html#ep-be-3",
+      "voice_pattern": "content_share",
+      "thread": [
+        "Petrodollars and Paradox \u2014 a thread:",
+        "How petrodollars reshaped the global financial system.",
+        "The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money.",
+        "Why it matters: After the 1973 oil embargo, Gulf states accumulated unprecedented wealth. Listen here: https://islamiceconomics.github.io/podcast.html#ep-be-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-be-3"
+    },
+    "linkedin": {
+      "post": "Petrodollars and Paradox How petrodollars reshaped the global financial system. The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money. Three takeaways: \u2022 How petrodollars reshaped the global financial system. \u2022 The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money. \u2022 After the 1973 oil embargo, Gulf states accumulated unprecedented wealth. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-be-3",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Petrodollars and Paradox How petrodollars reshaped the global financial system. The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-be-3 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Petrodollars and Paradox",
+        "How petrodollars reshaped the global financial system.",
+        "The paradox of Muslim capital in interest-based markets, and what Gulf states actually did\u2026",
+        "After the 1973 oil embargo, Gulf states accumulated unprecedented wealth.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Petrodollars and Paradox in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-be-3 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Petrodollars and Paradox",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Petrodollars and Paradox\n\nHow petrodollars reshaped the global financial system.\n\nWhat I keep coming back to is this: The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-be-3"
+    },
+    "short_video": {
+      "title": "Petrodollars and Paradox in 45 seconds",
+      "hook": "How petrodollars reshaped the global financial system.",
+      "voiceover": "Petrodollars and Paradox. How petrodollars reshaped the global financial system. Here are the key points: How petrodollars reshaped the global financial system. The paradox of Muslim capital in interest-based markets, and what Gulf states actually did with the money. After the 1973 oil embargo, Gulf states accumulated unprecedented wealth. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Petrodollars and Paradox"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How petrodollars reshaped the global financial system."
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "The paradox of Muslim capital in interest-based markets, and what\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "After the 1973 oil embargo, Gulf states accumulated unprecedented wealth."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Petrodollars and Paradox. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-be-3 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Been reading about this. How petrodollars reshaped the global financial system. How petrodollars reshaped the global financial system."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_cf2b2d5e.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_cf2b2d5e.png"
+}
