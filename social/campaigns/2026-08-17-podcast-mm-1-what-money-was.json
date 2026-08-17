@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-17-podcast-mm-1-what-money-was",
+  "generated_at": "2026-08-17T14:23:53.060442+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-mm-1-what-money-was",
+    "kind": "podcast",
+    "title": "What Money Was",
+    "summary": "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-1",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar, replacing Byzantine and Sassanid coins across the caliphate. This wasn't just currency reform. It was a declaration of monetary sovereignty. The Islamic bimetallic system that emerged had standardized weights (the mithqal), quality control through the muhtasib, proto-forex markets run by sarrafs, and mint networks spanning three continents. This episode examines how the system actually worked, where it succeeded, and where it struggled, from Mamluk debasement to silver-gold ratio instability. The key insight: Islamic civilization didn't just have money. It had a monetary system with rules, institutions, and oversight.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "What Money Was \u2014 a thread:",
+        "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held\u2026",
+        "In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar\u2026",
+        "Why it matters: This wasn't just currency reform. Listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-1"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-1"
+    },
+    "linkedin": {
+      "post": "What Money Was The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together. Three takeaways: \u2022 The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held\u2026 \u2022 In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar\u2026 \u2022 This wasn't just currency reform. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-1",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "What Money Was The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-1 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "What Money Was",
+        "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and\u2026",
+        "In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted\u2026",
+        "This wasn't just currency reform.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "What Money Was in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-mm-1 #IslamicEconomics #IslamicHistory",
+      "cover_text": "What Money Was",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "What Money Was\n\nThe Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together.\n\nWhat I keep coming back to is this: In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar\u2026",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-1"
+    },
+    "short_video": {
+      "title": "What Money Was in 45 seconds",
+      "hook": "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that\u2026",
+      "voiceover": "What Money Was. The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together. Here are the key points: The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held\u2026 In 696 CE, Caliph Abd al-Malik ibn Marwan made a revolutionary decision: he minted the first purely Islamic gold dinar\u2026 This wasn't just currency reform. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "What Money Was"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "The Islamic monetary system as it actually functioned: gold dinars\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "In 696 CE, Caliph Abd al-Malik ibn Marwan made a\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "This wasn't just currency reform."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "What Money Was. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-1 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together. The Islamic monetary system as it actually functioned: gold dinars, silver dirhams, sarrafs, and the institutions that held it together."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_4cbbb94b.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_4cbbb94b.png"
+}

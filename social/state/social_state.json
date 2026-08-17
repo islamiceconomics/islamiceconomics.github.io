@@ -493,6 +493,14 @@
           "json_path": "social/campaigns/2026-07-01-podcast-be-6-after-the-default.json",
           "markdown_path": "social/campaigns/2026-07-01-podcast-be-6-after-the-default.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-17-podcast-be-6-after-the-default",
+          "generated_at": "2026-08-17T14:23:27.929517+00:00",
+          "json_path": "social/campaigns/2026-08-17-podcast-be-6-after-the-default.json",
+          "markdown_path": "social/campaigns/2026-08-17-podcast-be-6-after-the-default.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -830,6 +838,14 @@
           "json_path": "social/campaigns/2026-07-02-podcast-mm-1-what-money-was.json",
           "markdown_path": "social/campaigns/2026-07-02-podcast-mm-1-what-money-was.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-17-podcast-mm-1-what-money-was",
+          "generated_at": "2026-08-17T14:23:53.060442+00:00",
+          "json_path": "social/campaigns/2026-08-17-podcast-mm-1-what-money-was.json",
+          "markdown_path": "social/campaigns/2026-08-17-podcast-mm-1-what-money-was.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -858,6 +874,14 @@
           "json_path": "social/campaigns/2026-07-02-podcast-mm-2-the-central-bank-question.json",
           "markdown_path": "social/campaigns/2026-07-02-podcast-mm-2-the-central-bank-question.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-17-podcast-mm-2-the-central-bank-question",
+          "generated_at": "2026-08-17T14:24:18.371081+00:00",
+          "json_path": "social/campaigns/2026-08-17-podcast-mm-2-the-central-bank-question.json",
+          "markdown_path": "social/campaigns/2026-08-17-podcast-mm-2-the-central-bank-question.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -886,6 +910,14 @@
           "json_path": "social/campaigns/2026-07-02-podcast-mm-3-the-dollar-s-world.json",
           "markdown_path": "social/campaigns/2026-07-02-podcast-mm-3-the-dollar-s-world.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-17-podcast-mm-3-the-dollar-s-world",
+          "generated_at": "2026-08-17T14:24:53.088071+00:00",
+          "json_path": "social/campaigns/2026-08-17-podcast-mm-3-the-dollar-s-world.json",
+          "markdown_path": "social/campaigns/2026-08-17-podcast-mm-3-the-dollar-s-world.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },

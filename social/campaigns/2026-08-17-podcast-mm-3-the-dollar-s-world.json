@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-17-podcast-mm-3-the-dollar-s-world",
+  "generated_at": "2026-08-17T14:24:53.088071+00:00",
+  "x_voice_pattern": "observation",
+  "source": {
+    "content_id": "podcast-mm-3-the-dollar-s-world",
+    "kind": "podcast",
+    "title": "The Dollar's World",
+    "summary": "How the US dollar became the global reserve currency and what that means for Muslim-majority economies.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-3",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "From Bretton Woods to the Nixon shock to the petrodollar arrangement. The US dollar's journey to global reserve status. The dollar system provides real stability and liquidity that the world depends on. But it creates asymmetric vulnerability for peripheral economies: oil priced in dollars, debt denominated in dollars, vulnerability to Federal Reserve decisions made with American interests in mind. This episode traces how reserve currency status works in practice, what \"exorbitant privilege\" actually means, and how Muslim-majority economies navigate a system they didn't design but can't avoid.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "How the US dollar became the global reserve currency and what that means for Muslim-majority economies.",
+      "voice_pattern": "observation",
+      "thread": [
+        "The Dollar's World \u2014 a thread:",
+        "How the US dollar became the global reserve currency and what that means for Muslim-majority economies.",
+        "From Bretton Woods to the Nixon shock to the petrodollar arrangement.",
+        "Why it matters: The US dollar's journey to global reserve status. Listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-3"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-3"
+    },
+    "linkedin": {
+      "post": "The Dollar's World How the US dollar became the global reserve currency and what that means for Muslim-majority economies. Three takeaways: \u2022 How the US dollar became the global reserve currency and what that means for Muslim-majority economies. \u2022 From Bretton Woods to the Nixon shock to the petrodollar arrangement. \u2022 The US dollar's journey to global reserve status. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-3",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Dollar's World How the US dollar became the global reserve currency and what that means for Muslim-majority economies. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-3 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Dollar's World",
+        "How the US dollar became the global reserve currency and what that means for\u2026",
+        "From Bretton Woods to the Nixon shock to the petrodollar arrangement.",
+        "The US dollar's journey to global reserve status.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Dollar's World in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-mm-3 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Dollar's World",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Dollar's World\n\nHow the US dollar became the global reserve currency and what that means for Muslim-majority economies.\n\nWhat I keep coming back to is this: From Bretton Woods to the Nixon shock to the petrodollar arrangement.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-3"
+    },
+    "short_video": {
+      "title": "The Dollar's World in 45 seconds",
+      "hook": "How the US dollar became the global reserve currency and what that means for Muslim-majority economies.",
+      "voiceover": "The Dollar's World. How the US dollar became the global reserve currency and what that means for Muslim-majority economies. Here are the key points: How the US dollar became the global reserve currency and what that means for Muslim-majority economies. From Bretton Woods to the Nixon shock to the petrodollar arrangement. The US dollar's journey to global reserve status. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Dollar's World"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "How the US dollar became the global reserve currency and\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "From Bretton Woods to the Nixon shock to the petrodollar\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "The US dollar's journey to global reserve status."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Dollar's World. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-3 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "How the US dollar became the global reserve currency and what that means for Muslim-majority economies. How the US dollar became the global reserve currency and what that means for Muslim-majority economies."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_320d8a16.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_320d8a16.png"
+}
