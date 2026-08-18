@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-18-podcast-mm-6-building-the-system",
+  "generated_at": "2026-08-18T17:29:29.518608+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-mm-6-building-the-system",
+    "kind": "podcast",
+    "title": "Building the System",
+    "summary": "What an Islamic monetary system would look like, not at the bank level, but at the system level. Principles, obstacles, and the path forward.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-mm-6",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Gold dinar revival proposals sound appealing but face practical limitations. This episode moves beyond nostalgia to ask what a modern Islamic monetary system would actually require: five design principles for an Islamic monetary authority, the question of OIC monetary cooperation, and why governance is the binding constraint, not monetary design. The principles exist, the capital exists, the technology exists, and the need is real. But building institutions requires the hardest thing of all: trust between governments that have rarely cooperated at this level.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "What an Islamic monetary system would look like, not at the bank level, but at the system level.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "Building the System \u2014 a thread:",
+        "What an Islamic monetary system would look like, not at the bank level, but at the system level.",
+        "Principles, obstacles, and the path forward.",
+        "Why it matters: Gold dinar revival proposals sound appealing but face practical limitations. Listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-6"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-mm-6"
+    },
+    "linkedin": {
+      "post": "Building the System What an Islamic monetary system would look like, not at the bank level, but at the system level. Principles, obstacles, and the path forward. Three takeaways: \u2022 What an Islamic monetary system would look like, not at the bank level, but at the system level. \u2022 Principles, obstacles, and the path forward. \u2022 Gold dinar revival proposals sound appealing but face practical limitations. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-6",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Building the System What an Islamic monetary system would look like, not at the bank level, but at the system level. Principles, obstacles, and the path forward. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-mm-6 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Building the System",
+        "What an Islamic monetary system would look like, not at the bank level, but\u2026",
+        "Principles, obstacles, and the path forward.",
+        "Gold dinar revival proposals sound appealing but face practical limitations.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Building the System in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-mm-6 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Building the System",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Building the System\n\nWhat an Islamic monetary system would look like, not at the bank level, but at the system level.\n\nWhat I keep coming back to is this: Principles, obstacles, and the path forward.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-mm-6"
+    },
+    "short_video": {
+      "title": "Building the System in 45 seconds",
+      "hook": "What an Islamic monetary system would look like, not at the bank level, but at the system level.",
+      "voiceover": "Building the System. What an Islamic monetary system would look like, not at the bank level, but at the system level. Here are the key points: What an Islamic monetary system would look like, not at the bank level, but at the system level. Principles, obstacles, and the path forward. Gold dinar revival proposals sound appealing but face practical limitations. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Building the System"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "What an Islamic monetary system would look like, not at\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "Principles, obstacles, and the path forward."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Gold dinar revival proposals sound appealing but face practical limitations."
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Building the System. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-mm-6 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "What an Islamic monetary system would look like, not at the bank level, but at the system level. What an Islamic monetary system would look like, not at the bank level, but at the system level."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_2abb9532.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_2abb9532.png"
+}

@@ -946,6 +946,14 @@
           "json_path": "social/campaigns/2026-07-02-podcast-mm-4-when-currencies-break.json",
           "markdown_path": "social/campaigns/2026-07-02-podcast-mm-4-when-currencies-break.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-18-podcast-mm-4-when-currencies-break",
+          "generated_at": "2026-08-18T17:28:26.107610+00:00",
+          "json_path": "social/campaigns/2026-08-18-podcast-mm-4-when-currencies-break.json",
+          "markdown_path": "social/campaigns/2026-08-18-podcast-mm-4-when-currencies-break.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -973,6 +981,14 @@
           "generated_at": "2026-07-02T16:06:28.879273+00:00",
           "json_path": "social/campaigns/2026-07-02-podcast-mm-5-the-new-contenders.json",
           "markdown_path": "social/campaigns/2026-07-02-podcast-mm-5-the-new-contenders.md",
+          "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-18-podcast-mm-5-the-new-contenders",
+          "generated_at": "2026-08-18T17:28:57.222417+00:00",
+          "json_path": "social/campaigns/2026-08-18-podcast-mm-5-the-new-contenders.json",
+          "markdown_path": "social/campaigns/2026-08-18-podcast-mm-5-the-new-contenders.md",
           "x_voice_pattern": "observation"
         }
       ]
@@ -1002,6 +1018,14 @@
           "json_path": "social/campaigns/2026-07-03-podcast-mm-6-building-the-system.json",
           "markdown_path": "social/campaigns/2026-07-03-podcast-mm-6-building-the-system.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-18-podcast-mm-6-building-the-system",
+          "generated_at": "2026-08-18T17:29:29.518608+00:00",
+          "json_path": "social/campaigns/2026-08-18-podcast-mm-6-building-the-system.json",
+          "markdown_path": "social/campaigns/2026-08-18-podcast-mm-6-building-the-system.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1518,6 +1542,14 @@
           "json_path": "social/campaigns/2026-07-03-podcast-trt-1-why-governments-tax-and-spend.json",
           "markdown_path": "social/campaigns/2026-07-03-podcast-trt-1-why-governments-tax-and-spend.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-18-podcast-trt-1-why-governments-tax-and-spend",
+          "generated_at": "2026-08-18T17:30:08.467108+00:00",
+          "json_path": "social/campaigns/2026-08-18-podcast-trt-1-why-governments-tax-and-spend.json",
+          "markdown_path": "social/campaigns/2026-08-18-podcast-trt-1-why-governments-tax-and-spend.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
