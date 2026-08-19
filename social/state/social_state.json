@@ -1578,6 +1578,14 @@
           "json_path": "social/campaigns/2026-07-03-podcast-trt-2-who-pays-and-how-much.json",
           "markdown_path": "social/campaigns/2026-07-03-podcast-trt-2-who-pays-and-how-much.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-19-podcast-trt-2-who-pays-and-how-much",
+          "generated_at": "2026-08-19T14:28:50.899977+00:00",
+          "json_path": "social/campaigns/2026-08-19-podcast-trt-2-who-pays-and-how-much.json",
+          "markdown_path": "social/campaigns/2026-08-19-podcast-trt-2-who-pays-and-how-much.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1606,6 +1614,14 @@
           "json_path": "social/campaigns/2026-07-03-podcast-trt-3-what-the-state-owes.json",
           "markdown_path": "social/campaigns/2026-07-03-podcast-trt-3-what-the-state-owes.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-19-podcast-trt-3-what-the-state-owes",
+          "generated_at": "2026-08-19T14:29:11.934920+00:00",
+          "json_path": "social/campaigns/2026-08-19-podcast-trt-3-what-the-state-owes.json",
+          "markdown_path": "social/campaigns/2026-08-19-podcast-trt-3-what-the-state-owes.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
