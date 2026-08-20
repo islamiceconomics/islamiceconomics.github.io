@@ -1374,6 +1374,14 @@
           "json_path": "social/campaigns/2026-07-04-podcast-re-1-what-makes-countries-rich.json",
           "markdown_path": "social/campaigns/2026-07-04-podcast-re-1-what-makes-countries-rich.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-20-podcast-re-1-what-makes-countries-rich",
+          "generated_at": "2026-08-20T14:34:14.613244+00:00",
+          "json_path": "social/campaigns/2026-08-20-podcast-re-1-what-makes-countries-rich.json",
+          "markdown_path": "social/campaigns/2026-08-20-podcast-re-1-what-makes-countries-rich.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -1402,6 +1410,14 @@
           "json_path": "social/campaigns/2026-07-05-podcast-re-2-the-growth-engine.json",
           "markdown_path": "social/campaigns/2026-07-05-podcast-re-2-the-growth-engine.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-20-podcast-re-2-the-growth-engine",
+          "generated_at": "2026-08-20T14:34:45.242712+00:00",
+          "json_path": "social/campaigns/2026-08-20-podcast-re-2-the-growth-engine.json",
+          "markdown_path": "social/campaigns/2026-08-20-podcast-re-2-the-growth-engine.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1429,6 +1445,14 @@
           "generated_at": "2026-07-05T15:11:32.019039+00:00",
           "json_path": "social/campaigns/2026-07-05-podcast-re-3-who-saves-and-why.json",
           "markdown_path": "social/campaigns/2026-07-05-podcast-re-3-who-saves-and-why.md",
+          "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-20-podcast-re-3-who-saves-and-why",
+          "generated_at": "2026-08-20T14:35:21.159577+00:00",
+          "json_path": "social/campaigns/2026-08-20-podcast-re-3-who-saves-and-why.json",
+          "markdown_path": "social/campaigns/2026-08-20-podcast-re-3-who-saves-and-why.md",
           "x_voice_pattern": "connection"
         }
       ]
@@ -1650,6 +1674,14 @@
           "json_path": "social/campaigns/2026-07-04-podcast-trt-4-what-lies-beneath.json",
           "markdown_path": "social/campaigns/2026-07-04-podcast-trt-4-what-lies-beneath.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-20-podcast-trt-4-what-lies-beneath",
+          "generated_at": "2026-08-20T14:32:36.364052+00:00",
+          "json_path": "social/campaigns/2026-08-20-podcast-trt-4-what-lies-beneath.json",
+          "markdown_path": "social/campaigns/2026-08-20-podcast-trt-4-what-lies-beneath.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1678,6 +1710,14 @@
           "json_path": "social/campaigns/2026-07-04-podcast-trt-5-the-borrower-s-bargain.json",
           "markdown_path": "social/campaigns/2026-07-04-podcast-trt-5-the-borrower-s-bargain.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-20-podcast-trt-5-the-borrower-s-bargain",
+          "generated_at": "2026-08-20T14:33:09.688522+00:00",
+          "json_path": "social/campaigns/2026-08-20-podcast-trt-5-the-borrower-s-bargain.json",
+          "markdown_path": "social/campaigns/2026-08-20-podcast-trt-5-the-borrower-s-bargain.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1706,6 +1746,14 @@
           "json_path": "social/campaigns/2026-07-04-podcast-trt-6-building-the-treasury.json",
           "markdown_path": "social/campaigns/2026-07-04-podcast-trt-6-building-the-treasury.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-20-podcast-trt-6-building-the-treasury",
+          "generated_at": "2026-08-20T14:33:43.436594+00:00",
+          "json_path": "social/campaigns/2026-08-20-podcast-trt-6-building-the-treasury.json",
+          "markdown_path": "social/campaigns/2026-08-20-podcast-trt-6-building-the-treasury.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },

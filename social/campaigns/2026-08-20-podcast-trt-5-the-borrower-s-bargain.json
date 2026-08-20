@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-20-podcast-trt-5-the-borrower-s-bargain",
+  "generated_at": "2026-08-20T14:33:09.688522+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-trt-5-the-borrower-s-bargain",
+    "kind": "podcast",
+    "title": "The Borrower's Bargain",
+    "summary": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Governments borrow for good reasons and bad ones. Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies: all defensible. Funding consumption, hiding true fiscal costs, kicking problems to future generations: all dangerous. This episode covers government bond markets, debt sustainability metrics, Ricardian equivalence, and the real-world debt crises that happen when these frameworks break down. The Islamic constraint is clear: interest-bearing debt is prohibited. Sukuk offer an alternative, but the substance-versus-form debate is honest and unresolved. Revenue-backed financing creates real fiscal discipline but also limits government flexibility during crises.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "The Borrower's Bargain \u2014 a thread:",
+        "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+        "Governments borrow for good reasons and bad ones.",
+        "Why it matters: Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies: all\u2026 Listen here: https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+    },
+    "linkedin": {
+      "post": "The Borrower's Bargain Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance. Three takeaways: \u2022 Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance. \u2022 Governments borrow for good reasons and bad ones. \u2022 Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies: all\u2026 Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-trt-5",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "The Borrower's Bargain Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "The Borrower's Bargain",
+        "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+        "Governments borrow for good reasons and bad ones.",
+        "Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies\u2026",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "The Borrower's Bargain in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicEconomics #IslamicHistory",
+      "cover_text": "The Borrower's Bargain",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "The Borrower's Bargain\n\nGovernment bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.\n\nWhat I keep coming back to is this: Governments borrow for good reasons and bad ones.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-trt-5"
+    },
+    "short_video": {
+      "title": "The Borrower's Bargain in 45 seconds",
+      "hook": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance.",
+      "voiceover": "The Borrower's Bargain. Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance. Here are the key points: Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance. Governments borrow for good reasons and bad ones. Smoothing tax revenue across business cycles, funding infrastructure with long payoffs, responding to emergencies: all\u2026 Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "The Borrower's Bargain"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "Governments borrow for good reasons and bad ones."
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Smoothing tax revenue across business cycles, funding infrastructure with long\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "The Borrower's Bargain. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-trt-5 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance. Government bonds, debt sustainability, Ricardian equivalence, and the constraints of Islamic public finance."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_54f68e2b.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_54f68e2b.png"
+}
