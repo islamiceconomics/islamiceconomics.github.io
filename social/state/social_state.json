@@ -1054,6 +1054,14 @@
           "json_path": "social/campaigns/2026-07-06-podcast-ppr-1-the-architecture-of-debt.json",
           "markdown_path": "social/campaigns/2026-07-06-podcast-ppr-1-the-architecture-of-debt.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-21-podcast-ppr-1-the-architecture-of-debt",
+          "generated_at": "2026-08-21T14:33:02.978110+00:00",
+          "json_path": "social/campaigns/2026-08-21-podcast-ppr-1-the-architecture-of-debt.json",
+          "markdown_path": "social/campaigns/2026-08-21-podcast-ppr-1-the-architecture-of-debt.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1082,6 +1090,14 @@
           "json_path": "social/campaigns/2026-07-06-podcast-ppr-2-the-bonds-you-don-t-see.json",
           "markdown_path": "social/campaigns/2026-07-06-podcast-ppr-2-the-bonds-you-don-t-see.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-21-podcast-ppr-2-the-bonds-you-don-t-see",
+          "generated_at": "2026-08-21T14:33:45.403578+00:00",
+          "json_path": "social/campaigns/2026-08-21-podcast-ppr-2-the-bonds-you-don-t-see.json",
+          "markdown_path": "social/campaigns/2026-08-21-podcast-ppr-2-the-bonds-you-don-t-see.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1482,6 +1498,14 @@
           "json_path": "social/campaigns/2026-07-06-podcast-re-4-where-investment-goes.json",
           "markdown_path": "social/campaigns/2026-07-06-podcast-re-4-where-investment-goes.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-21-podcast-re-4-where-investment-goes",
+          "generated_at": "2026-08-21T14:30:51.770902+00:00",
+          "json_path": "social/campaigns/2026-08-21-podcast-re-4-where-investment-goes.json",
+          "markdown_path": "social/campaigns/2026-08-21-podcast-re-4-where-investment-goes.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -1510,6 +1534,14 @@
           "json_path": "social/campaigns/2026-07-06-podcast-re-5-work-wages-and-worth.json",
           "markdown_path": "social/campaigns/2026-07-06-podcast-re-5-work-wages-and-worth.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-21-podcast-re-5-work-wages-and-worth",
+          "generated_at": "2026-08-21T14:31:40.988541+00:00",
+          "json_path": "social/campaigns/2026-08-21-podcast-re-5-work-wages-and-worth.json",
+          "markdown_path": "social/campaigns/2026-08-21-podcast-re-5-work-wages-and-worth.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1538,6 +1570,14 @@
           "json_path": "social/campaigns/2026-07-06-podcast-re-6-the-alternative-growth-path.json",
           "markdown_path": "social/campaigns/2026-07-06-podcast-re-6-the-alternative-growth-path.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-21-podcast-re-6-the-alternative-growth-path",
+          "generated_at": "2026-08-21T14:32:21.181580+00:00",
+          "json_path": "social/campaigns/2026-08-21-podcast-re-6-the-alternative-growth-path.json",
+          "markdown_path": "social/campaigns/2026-08-21-podcast-re-6-the-alternative-growth-path.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },

@@ -1,0 +1,104 @@
+{
+  "campaign_id": "2026-08-21-podcast-re-5-work-wages-and-worth",
+  "generated_at": "2026-08-21T14:31:40.988541+00:00",
+  "x_voice_pattern": "historical_fact",
+  "source": {
+    "content_id": "podcast-re-5-work-wages-and-worth",
+    "kind": "podcast",
+    "title": "Work, Wages, and Worth",
+    "summary": "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.",
+    "url": "https://islamiceconomics.github.io/podcast.html#ep-re-5",
+    "published_at": "",
+    "author": "Islamic Economics",
+    "category": "Podcast",
+    "tags": [],
+    "body_text": "Youth unemployment in the Middle East and North Africa is the highest in the world at 25 to 30 percent. Female labor force participation in many Muslim-majority countries is below 20 percent. Brain drain has cost countries like Pakistan hundreds of thousands of skilled professionals. These aren't problems caused by Islam. They're caused by governance failures and cultural norms sometimes falsely attributed to religion. The Islamic tradition has powerful things to say about labor: pay workers before their sweat dries, the prohibition of exploitation, the concept of ihsan (excellence) in work. But the gap between these principles and reality is vast. The kafala system in Gulf states, the informal economy employing 60 to 80 percent of workers without protections, the exclusion of women from economic participation. Closing that gap isn't just moral. It's economic. Countries that waste their human potential don't grow.",
+    "asset_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg",
+    "local_asset_path": "",
+    "local_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/Website/podcast.html",
+    "local_video_path": ""
+  },
+  "channels": {
+    "x": {
+      "single_post": "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.",
+      "voice_pattern": "historical_fact",
+      "thread": [
+        "Work, Wages, and Worth \u2014 a thread:",
+        "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.",
+        "Youth unemployment in the Middle East and North Africa is the highest in the world at 25 to 30 percent.",
+        "Why it matters: Female labor force participation in many Muslim-majority countries is below 20 percent. Listen here: https://islamiceconomics.github.io/podcast.html#ep-re-5"
+      ],
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_note": "https://islamiceconomics.github.io/podcast.html#ep-re-5"
+    },
+    "linkedin": {
+      "post": "Work, Wages, and Worth Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics. Three takeaways: \u2022 Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics. \u2022 Youth unemployment in the Middle East and North Africa is the highest in the world at 25 to 30 percent. \u2022 Female labor force participation in many Muslim-majority countries is below 20 percent. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-re-5",
+      "comment_prompt": "Which Islamic economics topic should the next explainer or thread cover?"
+    },
+    "instagram": {
+      "caption": "Work, Wages, and Worth Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics. Swipe through for the core ideas, then go deeper and listen here: https://islamiceconomics.github.io/podcast.html#ep-re-5 #IslamicEconomics #IslamicHistory",
+      "carousel_slides": [
+        "Work, Wages, and Worth",
+        "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.",
+        "Youth unemployment in the Middle East and North Africa is the highest in the\u2026",
+        "Female labor force participation in many Muslim-majority countries is below 20 percent.",
+        "Read more at IslamicEconomics.org"
+      ],
+      "reel_caption": "Work, Wages, and Worth in under 45 seconds. Full source: https://islamiceconomics.github.io/podcast.html#ep-re-5 #IslamicEconomics #IslamicHistory",
+      "cover_text": "Work, Wages, and Worth",
+      "image_url": "https://islamiceconomics.github.io/podcast/cover-art-series1.jpg"
+    },
+    "upscrolled": {
+      "post": "Work, Wages, and Worth\n\nLabor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.\n\nWhat I keep coming back to is this: Youth unemployment in the Middle East and North Africa is the highest in the world at 25 to 30 percent.",
+      "discussion_prompt": "How would you apply this idea in a modern economic institution or community setting?",
+      "topic_suggestion": "Podcast",
+      "source_link": "https://islamiceconomics.github.io/podcast.html#ep-re-5"
+    },
+    "short_video": {
+      "title": "Work, Wages, and Worth in 45 seconds",
+      "hook": "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics.",
+      "voiceover": "Work, Wages, and Worth. Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics. Here are the key points: Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics. Youth unemployment in the Middle East and North Africa is the highest in the world at 25 to 30 percent. Female labor force participation in many Muslim-majority countries is below 20 percent. Listen in full at IslamicEconomics.org.",
+      "shot_list": [
+        {
+          "time": "0-5s",
+          "visual": "Bold title card with the episode/article headline.",
+          "on_screen_text": "Work, Wages, and Worth"
+        },
+        {
+          "time": "5-12s",
+          "visual": "Introduce the main context with archival footage, charts, or a document pull quote.",
+          "on_screen_text": "Labor markets, youth unemployment in MENA, female participation, brain drain\u2026"
+        },
+        {
+          "time": "12-22s",
+          "visual": "Show the second point with a motion graphic or a close-up of the relevant source material.",
+          "on_screen_text": "Youth unemployment in the Middle East and North Africa is\u2026"
+        },
+        {
+          "time": "22-34s",
+          "visual": "Highlight why it matters now with contemporary economic visuals.",
+          "on_screen_text": "Female labor force participation in many Muslim-majority countries is below\u2026"
+        },
+        {
+          "time": "34-45s",
+          "visual": "End card with brand, URL, and call to follow for more Islamic economics content.",
+          "on_screen_text": "Read more at IslamicEconomics.org"
+        }
+      ],
+      "caption": "Work, Wages, and Worth. Listen at the source: https://islamiceconomics.github.io/podcast.html#ep-re-5 #IslamicEconomics #IslamicHistory",
+      "hashtags": [
+        "#IslamicEconomics",
+        "#IslamicHistory"
+      ],
+      "source_video_path": ""
+    },
+    "threads": {
+      "post": "Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics. Labor markets, youth unemployment in MENA, female participation, brain drain, and Islamic labor ethics."
+    }
+  },
+  "instagram_card_path": "/home/runner/work/islamiceconomics.github.io/islamiceconomics.github.io/social/cards/card_64be3ce2.png",
+  "instagram_card_url": "https://raw.githubusercontent.com/islamiceconomics/islamiceconomics.github.io/main/social/cards/card_64be3ce2.png"
+}
