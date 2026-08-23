@@ -1198,6 +1198,14 @@
           "json_path": "social/campaigns/2026-07-08-podcast-ppr-6-built-on-borrowed-time.json",
           "markdown_path": "social/campaigns/2026-07-08-podcast-ppr-6-built-on-borrowed-time.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-08-23-podcast-ppr-6-built-on-borrowed-time",
+          "generated_at": "2026-08-23T14:19:21.944958+00:00",
+          "json_path": "social/campaigns/2026-08-23-podcast-ppr-6-built-on-borrowed-time.json",
+          "markdown_path": "social/campaigns/2026-08-23-podcast-ppr-6-built-on-borrowed-time.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
