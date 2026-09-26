@@ -1334,6 +1334,14 @@
           "json_path": "social/campaigns/2026-08-12-podcast-pu-3-ships-and-storms.json",
           "markdown_path": "social/campaigns/2026-08-12-podcast-pu-3-ships-and-storms.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-26-podcast-pu-3-ships-and-storms",
+          "generated_at": "2026-09-26T17:37:00.130533+00:00",
+          "json_path": "social/campaigns/2026-09-26-podcast-pu-3-ships-and-storms.json",
+          "markdown_path": "social/campaigns/2026-09-26-podcast-pu-3-ships-and-storms.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1370,6 +1378,14 @@
           "json_path": "social/campaigns/2026-08-12-podcast-pu-4-selling-the-wind.json",
           "markdown_path": "social/campaigns/2026-08-12-podcast-pu-4-selling-the-wind.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-26-podcast-pu-4-selling-the-wind",
+          "generated_at": "2026-09-26T17:37:20.757222+00:00",
+          "json_path": "social/campaigns/2026-09-26-podcast-pu-4-selling-the-wind.json",
+          "markdown_path": "social/campaigns/2026-09-26-podcast-pu-4-selling-the-wind.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1406,6 +1422,14 @@
           "json_path": "social/campaigns/2026-08-12-podcast-pu-5-when-uncertainty-collapsed.json",
           "markdown_path": "social/campaigns/2026-08-12-podcast-pu-5-when-uncertainty-collapsed.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-26-podcast-pu-5-when-uncertainty-collapsed",
+          "generated_at": "2026-09-26T17:37:41.773699+00:00",
+          "json_path": "social/campaigns/2026-09-26-podcast-pu-5-when-uncertainty-collapsed.json",
+          "markdown_path": "social/campaigns/2026-09-26-podcast-pu-5-when-uncertainty-collapsed.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
