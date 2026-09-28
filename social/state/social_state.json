@@ -2250,6 +2250,14 @@
           "json_path": "social/campaigns/2026-08-14-podcast-wd-2-the-longest-verse.json",
           "markdown_path": "social/campaigns/2026-08-14-podcast-wd-2-the-longest-verse.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-28-podcast-wd-2-the-longest-verse",
+          "generated_at": "2026-09-28T20:22:27.951466+00:00",
+          "json_path": "social/campaigns/2026-09-28-podcast-wd-2-the-longest-verse.json",
+          "markdown_path": "social/campaigns/2026-09-28-podcast-wd-2-the-longest-verse.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -2286,6 +2294,14 @@
           "json_path": "social/campaigns/2026-08-14-podcast-wd-3-the-scholars-line.json",
           "markdown_path": "social/campaigns/2026-08-14-podcast-wd-3-the-scholars-line.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-28-podcast-wd-3-the-scholars-line",
+          "generated_at": "2026-09-28T20:22:42.203626+00:00",
+          "json_path": "social/campaigns/2026-09-28-podcast-wd-3-the-scholars-line.json",
+          "markdown_path": "social/campaigns/2026-09-28-podcast-wd-3-the-scholars-line.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -2321,6 +2337,14 @@
           "generated_at": "2026-08-14T14:48:11.281460+00:00",
           "json_path": "social/campaigns/2026-08-14-podcast-wd-4-the-ottoman-experiment.json",
           "markdown_path": "social/campaigns/2026-08-14-podcast-wd-4-the-ottoman-experiment.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-28-podcast-wd-4-the-ottoman-experiment",
+          "generated_at": "2026-09-28T20:22:56.611194+00:00",
+          "json_path": "social/campaigns/2026-09-28-podcast-wd-4-the-ottoman-experiment.json",
+          "markdown_path": "social/campaigns/2026-09-28-podcast-wd-4-the-ottoman-experiment.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
