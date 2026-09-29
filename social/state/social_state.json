@@ -2382,6 +2382,14 @@
           "json_path": "social/campaigns/2026-08-15-podcast-wd-5-interest-in-disguise.json",
           "markdown_path": "social/campaigns/2026-08-15-podcast-wd-5-interest-in-disguise.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-29-podcast-wd-5-interest-in-disguise",
+          "generated_at": "2026-09-29T19:06:22.295601+00:00",
+          "json_path": "social/campaigns/2026-09-29-podcast-wd-5-interest-in-disguise.json",
+          "markdown_path": "social/campaigns/2026-09-29-podcast-wd-5-interest-in-disguise.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -2417,6 +2425,14 @@
           "generated_at": "2026-08-15T14:18:37.989726+00:00",
           "json_path": "social/campaigns/2026-08-15-podcast-wd-6-debt-without-chains.json",
           "markdown_path": "social/campaigns/2026-08-15-podcast-wd-6-debt-without-chains.md",
+          "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-29-podcast-wd-6-debt-without-chains",
+          "generated_at": "2026-09-29T19:06:47.229542+00:00",
+          "json_path": "social/campaigns/2026-09-29-podcast-wd-6-debt-without-chains.json",
+          "markdown_path": "social/campaigns/2026-09-29-podcast-wd-6-debt-without-chains.md",
           "x_voice_pattern": "reframing"
         }
       ]
