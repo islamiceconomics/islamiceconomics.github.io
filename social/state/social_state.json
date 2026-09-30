@@ -321,6 +321,14 @@
           "json_path": "social/campaigns/2026-08-16-podcast-be-1-when-nations-borrow.json",
           "markdown_path": "social/campaigns/2026-08-16-podcast-be-1-when-nations-borrow.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-30-podcast-be-1-when-nations-borrow",
+          "generated_at": "2026-09-30T18:49:43.805647+00:00",
+          "json_path": "social/campaigns/2026-09-30-podcast-be-1-when-nations-borrow.json",
+          "markdown_path": "social/campaigns/2026-09-30-podcast-be-1-when-nations-borrow.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -356,6 +364,14 @@
           "generated_at": "2026-08-16T14:19:19.262248+00:00",
           "json_path": "social/campaigns/2026-08-16-podcast-be-2-the-debt-trap.json",
           "markdown_path": "social/campaigns/2026-08-16-podcast-be-2-the-debt-trap.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-09-30-podcast-be-2-the-debt-trap",
+          "generated_at": "2026-09-30T18:50:02.639594+00:00",
+          "json_path": "social/campaigns/2026-09-30-podcast-be-2-the-debt-trap.json",
+          "markdown_path": "social/campaigns/2026-09-30-podcast-be-2-the-debt-trap.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
