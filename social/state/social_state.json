@@ -497,6 +497,14 @@
           "json_path": "social/campaigns/2026-08-16-podcast-be-5-sukuk-for-sovereigns.json",
           "markdown_path": "social/campaigns/2026-08-16-podcast-be-5-sukuk-for-sovereigns.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-02-podcast-be-5-sukuk-for-sovereigns",
+          "generated_at": "2026-10-02T18:59:01.706731+00:00",
+          "json_path": "social/campaigns/2026-10-02-podcast-be-5-sukuk-for-sovereigns.json",
+          "markdown_path": "social/campaigns/2026-10-02-podcast-be-5-sukuk-for-sovereigns.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -532,6 +540,14 @@
           "generated_at": "2026-08-17T14:23:27.929517+00:00",
           "json_path": "social/campaigns/2026-08-17-podcast-be-6-after-the-default.json",
           "markdown_path": "social/campaigns/2026-08-17-podcast-be-6-after-the-default.md",
+          "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-02-podcast-be-6-after-the-default",
+          "generated_at": "2026-10-02T18:59:24.067440+00:00",
+          "json_path": "social/campaigns/2026-10-02-podcast-be-6-after-the-default.json",
+          "markdown_path": "social/campaigns/2026-10-02-podcast-be-6-after-the-default.md",
           "x_voice_pattern": "content_share"
         }
       ]
@@ -926,6 +942,14 @@
           "json_path": "social/campaigns/2026-08-17-podcast-mm-1-what-money-was.json",
           "markdown_path": "social/campaigns/2026-08-17-podcast-mm-1-what-money-was.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-02-podcast-mm-1-what-money-was",
+          "generated_at": "2026-10-02T18:59:45.268244+00:00",
+          "json_path": "social/campaigns/2026-10-02-podcast-mm-1-what-money-was.json",
+          "markdown_path": "social/campaigns/2026-10-02-podcast-mm-1-what-money-was.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -962,6 +986,14 @@
           "json_path": "social/campaigns/2026-08-17-podcast-mm-2-the-central-bank-question.json",
           "markdown_path": "social/campaigns/2026-08-17-podcast-mm-2-the-central-bank-question.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-02-podcast-mm-2-the-central-bank-question",
+          "generated_at": "2026-10-02T19:00:05.799122+00:00",
+          "json_path": "social/campaigns/2026-10-02-podcast-mm-2-the-central-bank-question.json",
+          "markdown_path": "social/campaigns/2026-10-02-podcast-mm-2-the-central-bank-question.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
