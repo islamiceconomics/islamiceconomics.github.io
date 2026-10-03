@@ -1030,6 +1030,14 @@
           "json_path": "social/campaigns/2026-08-17-podcast-mm-3-the-dollar-s-world.json",
           "markdown_path": "social/campaigns/2026-08-17-podcast-mm-3-the-dollar-s-world.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-03-podcast-mm-3-the-dollar-s-world",
+          "generated_at": "2026-10-03T17:45:14.191593+00:00",
+          "json_path": "social/campaigns/2026-10-03-podcast-mm-3-the-dollar-s-world.json",
+          "markdown_path": "social/campaigns/2026-10-03-podcast-mm-3-the-dollar-s-world.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1065,6 +1073,14 @@
           "generated_at": "2026-08-18T17:28:26.107610+00:00",
           "json_path": "social/campaigns/2026-08-18-podcast-mm-4-when-currencies-break.json",
           "markdown_path": "social/campaigns/2026-08-18-podcast-mm-4-when-currencies-break.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-03-podcast-mm-4-when-currencies-break",
+          "generated_at": "2026-10-03T17:45:36.559509+00:00",
+          "json_path": "social/campaigns/2026-10-03-podcast-mm-4-when-currencies-break.json",
+          "markdown_path": "social/campaigns/2026-10-03-podcast-mm-4-when-currencies-break.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
@@ -1102,6 +1118,14 @@
           "json_path": "social/campaigns/2026-08-18-podcast-mm-5-the-new-contenders.json",
           "markdown_path": "social/campaigns/2026-08-18-podcast-mm-5-the-new-contenders.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-03-podcast-mm-5-the-new-contenders",
+          "generated_at": "2026-10-03T17:45:56.653105+00:00",
+          "json_path": "social/campaigns/2026-10-03-podcast-mm-5-the-new-contenders.json",
+          "markdown_path": "social/campaigns/2026-10-03-podcast-mm-5-the-new-contenders.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -1137,6 +1161,14 @@
           "generated_at": "2026-08-18T17:29:29.518608+00:00",
           "json_path": "social/campaigns/2026-08-18-podcast-mm-6-building-the-system.json",
           "markdown_path": "social/campaigns/2026-08-18-podcast-mm-6-building-the-system.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-03-podcast-mm-6-building-the-system",
+          "generated_at": "2026-10-03T17:46:16.696622+00:00",
+          "json_path": "social/campaigns/2026-10-03-podcast-mm-6-building-the-system.json",
+          "markdown_path": "social/campaigns/2026-10-03-podcast-mm-6-building-the-system.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
@@ -1790,6 +1822,14 @@
           "json_path": "social/campaigns/2026-08-18-podcast-trt-1-why-governments-tax-and-spend.json",
           "markdown_path": "social/campaigns/2026-08-18-podcast-trt-1-why-governments-tax-and-spend.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-03-podcast-trt-1-why-governments-tax-and-spend",
+          "generated_at": "2026-10-03T17:46:39.001923+00:00",
+          "json_path": "social/campaigns/2026-10-03-podcast-trt-1-why-governments-tax-and-spend.json",
+          "markdown_path": "social/campaigns/2026-10-03-podcast-trt-1-why-governments-tax-and-spend.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1825,6 +1865,14 @@
           "generated_at": "2026-08-19T14:28:50.899977+00:00",
           "json_path": "social/campaigns/2026-08-19-podcast-trt-2-who-pays-and-how-much.json",
           "markdown_path": "social/campaigns/2026-08-19-podcast-trt-2-who-pays-and-how-much.md",
+          "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-03-podcast-trt-2-who-pays-and-how-much",
+          "generated_at": "2026-10-03T17:47:00.459340+00:00",
+          "json_path": "social/campaigns/2026-10-03-podcast-trt-2-who-pays-and-how-much.json",
+          "markdown_path": "social/campaigns/2026-10-03-podcast-trt-2-who-pays-and-how-much.md",
           "x_voice_pattern": "content_share"
         }
       ]
