@@ -1910,6 +1910,14 @@
           "json_path": "social/campaigns/2026-08-19-podcast-trt-3-what-the-state-owes.json",
           "markdown_path": "social/campaigns/2026-08-19-podcast-trt-3-what-the-state-owes.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-04-podcast-trt-3-what-the-state-owes",
+          "generated_at": "2026-10-04T17:58:52.423163+00:00",
+          "json_path": "social/campaigns/2026-10-04-podcast-trt-3-what-the-state-owes.json",
+          "markdown_path": "social/campaigns/2026-10-04-podcast-trt-3-what-the-state-owes.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1946,6 +1954,14 @@
           "json_path": "social/campaigns/2026-08-20-podcast-trt-4-what-lies-beneath.json",
           "markdown_path": "social/campaigns/2026-08-20-podcast-trt-4-what-lies-beneath.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-04-podcast-trt-4-what-lies-beneath",
+          "generated_at": "2026-10-04T17:59:08.757663+00:00",
+          "json_path": "social/campaigns/2026-10-04-podcast-trt-4-what-lies-beneath.json",
+          "markdown_path": "social/campaigns/2026-10-04-podcast-trt-4-what-lies-beneath.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1982,6 +1998,14 @@
           "json_path": "social/campaigns/2026-08-20-podcast-trt-5-the-borrower-s-bargain.json",
           "markdown_path": "social/campaigns/2026-08-20-podcast-trt-5-the-borrower-s-bargain.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-04-podcast-trt-5-the-borrower-s-bargain",
+          "generated_at": "2026-10-04T17:59:25.781689+00:00",
+          "json_path": "social/campaigns/2026-10-04-podcast-trt-5-the-borrower-s-bargain.json",
+          "markdown_path": "social/campaigns/2026-10-04-podcast-trt-5-the-borrower-s-bargain.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -2017,6 +2041,14 @@
           "generated_at": "2026-08-20T14:33:43.436594+00:00",
           "json_path": "social/campaigns/2026-08-20-podcast-trt-6-building-the-treasury.json",
           "markdown_path": "social/campaigns/2026-08-20-podcast-trt-6-building-the-treasury.md",
+          "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-04-podcast-trt-6-building-the-treasury",
+          "generated_at": "2026-10-04T17:59:39.943801+00:00",
+          "json_path": "social/campaigns/2026-10-04-podcast-trt-6-building-the-treasury.json",
+          "markdown_path": "social/campaigns/2026-10-04-podcast-trt-6-building-the-treasury.md",
           "x_voice_pattern": "content_share"
         }
       ]
