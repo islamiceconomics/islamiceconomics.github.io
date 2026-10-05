@@ -1606,6 +1606,14 @@
           "json_path": "social/campaigns/2026-08-20-podcast-re-1-what-makes-countries-rich.json",
           "markdown_path": "social/campaigns/2026-08-20-podcast-re-1-what-makes-countries-rich.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-05-podcast-re-1-what-makes-countries-rich",
+          "generated_at": "2026-10-05T21:42:06.988130+00:00",
+          "json_path": "social/campaigns/2026-10-05-podcast-re-1-what-makes-countries-rich.json",
+          "markdown_path": "social/campaigns/2026-10-05-podcast-re-1-what-makes-countries-rich.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -1641,6 +1649,14 @@
           "generated_at": "2026-08-20T14:34:45.242712+00:00",
           "json_path": "social/campaigns/2026-08-20-podcast-re-2-the-growth-engine.json",
           "markdown_path": "social/campaigns/2026-08-20-podcast-re-2-the-growth-engine.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-05-podcast-re-2-the-growth-engine",
+          "generated_at": "2026-10-05T21:42:22.165216+00:00",
+          "json_path": "social/campaigns/2026-10-05-podcast-re-2-the-growth-engine.json",
+          "markdown_path": "social/campaigns/2026-10-05-podcast-re-2-the-growth-engine.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
@@ -1678,6 +1694,14 @@
           "json_path": "social/campaigns/2026-08-20-podcast-re-3-who-saves-and-why.json",
           "markdown_path": "social/campaigns/2026-08-20-podcast-re-3-who-saves-and-why.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-05-podcast-re-3-who-saves-and-why",
+          "generated_at": "2026-10-05T21:42:37.895651+00:00",
+          "json_path": "social/campaigns/2026-10-05-podcast-re-3-who-saves-and-why.json",
+          "markdown_path": "social/campaigns/2026-10-05-podcast-re-3-who-saves-and-why.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1714,6 +1738,14 @@
           "json_path": "social/campaigns/2026-08-21-podcast-re-4-where-investment-goes.json",
           "markdown_path": "social/campaigns/2026-08-21-podcast-re-4-where-investment-goes.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-05-podcast-re-4-where-investment-goes",
+          "generated_at": "2026-10-05T21:42:54.877199+00:00",
+          "json_path": "social/campaigns/2026-10-05-podcast-re-4-where-investment-goes.json",
+          "markdown_path": "social/campaigns/2026-10-05-podcast-re-4-where-investment-goes.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
