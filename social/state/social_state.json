@@ -1782,6 +1782,14 @@
           "json_path": "social/campaigns/2026-08-21-podcast-re-5-work-wages-and-worth.json",
           "markdown_path": "social/campaigns/2026-08-21-podcast-re-5-work-wages-and-worth.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-06-podcast-re-5-work-wages-and-worth",
+          "generated_at": "2026-10-06T19:56:24.303469+00:00",
+          "json_path": "social/campaigns/2026-10-06-podcast-re-5-work-wages-and-worth.json",
+          "markdown_path": "social/campaigns/2026-10-06-podcast-re-5-work-wages-and-worth.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1817,6 +1825,14 @@
           "generated_at": "2026-08-21T14:32:21.181580+00:00",
           "json_path": "social/campaigns/2026-08-21-podcast-re-6-the-alternative-growth-path.json",
           "markdown_path": "social/campaigns/2026-08-21-podcast-re-6-the-alternative-growth-path.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-06-podcast-re-6-the-alternative-growth-path",
+          "generated_at": "2026-10-06T19:56:42.065193+00:00",
+          "json_path": "social/campaigns/2026-10-06-podcast-re-6-the-alternative-growth-path.json",
+          "markdown_path": "social/campaigns/2026-10-06-podcast-re-6-the-alternative-growth-path.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
