@@ -1206,6 +1206,14 @@
           "json_path": "social/campaigns/2026-08-21-podcast-ppr-1-the-architecture-of-debt.json",
           "markdown_path": "social/campaigns/2026-08-21-podcast-ppr-1-the-architecture-of-debt.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-07-podcast-ppr-1-the-architecture-of-debt",
+          "generated_at": "2026-10-07T20:13:12.053576+00:00",
+          "json_path": "social/campaigns/2026-10-07-podcast-ppr-1-the-architecture-of-debt.json",
+          "markdown_path": "social/campaigns/2026-10-07-podcast-ppr-1-the-architecture-of-debt.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -1242,6 +1250,14 @@
           "json_path": "social/campaigns/2026-08-21-podcast-ppr-2-the-bonds-you-don-t-see.json",
           "markdown_path": "social/campaigns/2026-08-21-podcast-ppr-2-the-bonds-you-don-t-see.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-07-podcast-ppr-2-the-bonds-you-don-t-see",
+          "generated_at": "2026-10-07T20:13:34.530951+00:00",
+          "json_path": "social/campaigns/2026-10-07-podcast-ppr-2-the-bonds-you-don-t-see.json",
+          "markdown_path": "social/campaigns/2026-10-07-podcast-ppr-2-the-bonds-you-don-t-see.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -1278,6 +1294,14 @@
           "json_path": "social/campaigns/2026-08-22-podcast-ppr-3-the-central-bank-trap.json",
           "markdown_path": "social/campaigns/2026-08-22-podcast-ppr-3-the-central-bank-trap.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-07-podcast-ppr-3-the-central-bank-trap",
+          "generated_at": "2026-10-07T20:13:54.656335+00:00",
+          "json_path": "social/campaigns/2026-10-07-podcast-ppr-3-the-central-bank-trap.json",
+          "markdown_path": "social/campaigns/2026-10-07-podcast-ppr-3-the-central-bank-trap.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -1314,6 +1338,14 @@
           "json_path": "social/campaigns/2026-08-22-podcast-ppr-5-the-islamic-alternative.json",
           "markdown_path": "social/campaigns/2026-08-22-podcast-ppr-5-the-islamic-alternative.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-10-07-podcast-ppr-5-the-islamic-alternative",
+          "generated_at": "2026-10-07T20:14:13.020219+00:00",
+          "json_path": "social/campaigns/2026-10-07-podcast-ppr-5-the-islamic-alternative.json",
+          "markdown_path": "social/campaigns/2026-10-07-podcast-ppr-5-the-islamic-alternative.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
