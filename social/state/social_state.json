@@ -681,6 +681,14 @@
           "json_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep03-house-of-wisdom.json",
           "markdown_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep03-house-of-wisdom.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-02-podcast-ie-s1-ep03-house-of-wisdom",
+          "generated_at": "2026-11-02T22:35:15.234131+00:00",
+          "json_path": "social/campaigns/2026-11-02-podcast-ie-s1-ep03-house-of-wisdom.json",
+          "markdown_path": "social/campaigns/2026-11-02-podcast-ie-s1-ep03-house-of-wisdom.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -725,6 +733,14 @@
           "json_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep04-coins-caliphate.json",
           "markdown_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep04-coins-caliphate.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-02-podcast-ie-s1-ep04-coins-caliphate",
+          "generated_at": "2026-11-02T22:34:55.981715+00:00",
+          "json_path": "social/campaigns/2026-11-02-podcast-ie-s1-ep04-coins-caliphate.json",
+          "markdown_path": "social/campaigns/2026-11-02-podcast-ie-s1-ep04-coins-caliphate.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -769,6 +785,14 @@
           "json_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep05-caravans-cathay.json",
           "markdown_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep05-caravans-cathay.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-02-podcast-ie-s1-ep05-caravans-cathay",
+          "generated_at": "2026-11-02T22:34:39.210732+00:00",
+          "json_path": "social/campaigns/2026-11-02-podcast-ie-s1-ep05-caravans-cathay.json",
+          "markdown_path": "social/campaigns/2026-11-02-podcast-ie-s1-ep05-caravans-cathay.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
