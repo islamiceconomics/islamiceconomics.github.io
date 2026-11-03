@@ -593,6 +593,14 @@
           "json_path": "social/campaigns/2026-09-19-podcast-ie-s1-ep01-forgotten-economists.json",
           "markdown_path": "social/campaigns/2026-09-19-podcast-ie-s1-ep01-forgotten-economists.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-03-podcast-ie-s1-ep01-forgotten-economists",
+          "generated_at": "2026-11-03T20:40:20.565853+00:00",
+          "json_path": "social/campaigns/2026-11-03-podcast-ie-s1-ep01-forgotten-economists.json",
+          "markdown_path": "social/campaigns/2026-11-03-podcast-ie-s1-ep01-forgotten-economists.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
@@ -636,6 +644,14 @@
           "generated_at": "2026-09-18T17:28:39.800617+00:00",
           "json_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep02-marketplace-medina.json",
           "markdown_path": "social/campaigns/2026-09-18-podcast-ie-s1-ep02-marketplace-medina.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-03-podcast-ie-s1-ep02-marketplace-medina",
+          "generated_at": "2026-11-03T20:39:20.319727+00:00",
+          "json_path": "social/campaigns/2026-11-03-podcast-ie-s1-ep02-marketplace-medina.json",
+          "markdown_path": "social/campaigns/2026-11-03-podcast-ie-s1-ep02-marketplace-medina.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
@@ -929,6 +945,14 @@
           "generated_at": "2026-09-19T17:00:05.117692+00:00",
           "json_path": "social/campaigns/2026-09-19-podcast-ie-s1-ep06-waqf-charity.json",
           "markdown_path": "social/campaigns/2026-09-19-podcast-ie-s1-ep06-waqf-charity.md",
+          "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-03-podcast-ie-s1-ep06-waqf-charity",
+          "generated_at": "2026-11-03T20:39:51.794781+00:00",
+          "json_path": "social/campaigns/2026-11-03-podcast-ie-s1-ep06-waqf-charity.json",
+          "markdown_path": "social/campaigns/2026-11-03-podcast-ie-s1-ep06-waqf-charity.md",
           "x_voice_pattern": "historical_fact"
         }
       ]
