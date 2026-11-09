@@ -1482,6 +1482,14 @@
           "json_path": "social/campaigns/2026-09-25-podcast-pu-1-the-forbidden-throw.json",
           "markdown_path": "social/campaigns/2026-09-25-podcast-pu-1-the-forbidden-throw.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-09-podcast-pu-1-the-forbidden-throw",
+          "generated_at": "2026-11-09T23:18:14.678076+00:00",
+          "json_path": "social/campaigns/2026-11-09-podcast-pu-1-the-forbidden-throw.json",
+          "markdown_path": "social/campaigns/2026-11-09-podcast-pu-1-the-forbidden-throw.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -2438,6 +2446,14 @@
           "json_path": "social/campaigns/2026-09-25-podcast-tt-5-risk-and-rizq.json",
           "markdown_path": "social/campaigns/2026-09-25-podcast-tt-5-risk-and-rizq.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-09-podcast-tt-5-risk-and-rizq",
+          "generated_at": "2026-11-09T23:17:20.351877+00:00",
+          "json_path": "social/campaigns/2026-11-09-podcast-tt-5-risk-and-rizq.json",
+          "markdown_path": "social/campaigns/2026-11-09-podcast-tt-5-risk-and-rizq.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
@@ -2482,6 +2498,14 @@
           "json_path": "social/campaigns/2026-09-25-podcast-tt-6-written-in-trade-today.json",
           "markdown_path": "social/campaigns/2026-09-25-podcast-tt-6-written-in-trade-today.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-09-podcast-tt-6-written-in-trade-today",
+          "generated_at": "2026-11-09T23:17:45.442107+00:00",
+          "json_path": "social/campaigns/2026-11-09-podcast-tt-6-written-in-trade-today.json",
+          "markdown_path": "social/campaigns/2026-11-09-podcast-tt-6-written-in-trade-today.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
