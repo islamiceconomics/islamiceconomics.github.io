@@ -1690,6 +1690,14 @@
           "json_path": "social/campaigns/2026-09-27-podcast-pu-6-building-on-solid-ground.json",
           "markdown_path": "social/campaigns/2026-09-27-podcast-pu-6-building-on-solid-ground.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-11-podcast-pu-6-building-on-solid-ground",
+          "generated_at": "2026-11-11T21:02:59.692002+00:00",
+          "json_path": "social/campaigns/2026-11-11-podcast-pu-6-building-on-solid-ground.json",
+          "markdown_path": "social/campaigns/2026-11-11-podcast-pu-6-building-on-solid-ground.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -2574,6 +2582,14 @@
           "json_path": "social/campaigns/2026-09-27-podcast-wd-1-before-the-revelation.json",
           "markdown_path": "social/campaigns/2026-09-27-podcast-wd-1-before-the-revelation.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-11-podcast-wd-1-before-the-revelation",
+          "generated_at": "2026-11-11T21:03:20.040139+00:00",
+          "json_path": "social/campaigns/2026-11-11-podcast-wd-1-before-the-revelation.json",
+          "markdown_path": "social/campaigns/2026-11-11-podcast-wd-1-before-the-revelation.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
