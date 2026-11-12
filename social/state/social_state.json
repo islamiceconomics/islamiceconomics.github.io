@@ -2634,6 +2634,14 @@
           "json_path": "social/campaigns/2026-09-28-podcast-wd-2-the-longest-verse.json",
           "markdown_path": "social/campaigns/2026-09-28-podcast-wd-2-the-longest-verse.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-12-podcast-wd-2-the-longest-verse",
+          "generated_at": "2026-11-12T21:17:46.631360+00:00",
+          "json_path": "social/campaigns/2026-11-12-podcast-wd-2-the-longest-verse.json",
+          "markdown_path": "social/campaigns/2026-11-12-podcast-wd-2-the-longest-verse.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -2678,6 +2686,14 @@
           "json_path": "social/campaigns/2026-09-28-podcast-wd-3-the-scholars-line.json",
           "markdown_path": "social/campaigns/2026-09-28-podcast-wd-3-the-scholars-line.md",
           "x_voice_pattern": "content_share"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-12-podcast-wd-3-the-scholars-line",
+          "generated_at": "2026-11-12T21:18:00.686445+00:00",
+          "json_path": "social/campaigns/2026-11-12-podcast-wd-3-the-scholars-line.json",
+          "markdown_path": "social/campaigns/2026-11-12-podcast-wd-3-the-scholars-line.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
