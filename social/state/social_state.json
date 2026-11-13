@@ -2738,6 +2738,14 @@
           "json_path": "social/campaigns/2026-09-28-podcast-wd-4-the-ottoman-experiment.json",
           "markdown_path": "social/campaigns/2026-09-28-podcast-wd-4-the-ottoman-experiment.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-13-podcast-wd-4-the-ottoman-experiment",
+          "generated_at": "2026-11-13T20:45:33.465168+00:00",
+          "json_path": "social/campaigns/2026-11-13-podcast-wd-4-the-ottoman-experiment.json",
+          "markdown_path": "social/campaigns/2026-11-13-podcast-wd-4-the-ottoman-experiment.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -2782,6 +2790,14 @@
           "json_path": "social/campaigns/2026-09-29-podcast-wd-5-interest-in-disguise.json",
           "markdown_path": "social/campaigns/2026-09-29-podcast-wd-5-interest-in-disguise.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-13-podcast-wd-5-interest-in-disguise",
+          "generated_at": "2026-11-13T20:45:59.075618+00:00",
+          "json_path": "social/campaigns/2026-11-13-podcast-wd-5-interest-in-disguise.json",
+          "markdown_path": "social/campaigns/2026-11-13-podcast-wd-5-interest-in-disguise.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -2826,6 +2842,14 @@
           "json_path": "social/campaigns/2026-09-29-podcast-wd-6-debt-without-chains.json",
           "markdown_path": "social/campaigns/2026-09-29-podcast-wd-6-debt-without-chains.md",
           "x_voice_pattern": "reframing"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-13-podcast-wd-6-debt-without-chains",
+          "generated_at": "2026-11-13T20:46:20.606221+00:00",
+          "json_path": "social/campaigns/2026-11-13-podcast-wd-6-debt-without-chains.json",
+          "markdown_path": "social/campaigns/2026-11-13-podcast-wd-6-debt-without-chains.md",
+          "x_voice_pattern": "observation"
         }
       ]
     }
