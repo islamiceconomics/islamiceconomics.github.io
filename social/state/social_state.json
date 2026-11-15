@@ -433,6 +433,14 @@
           "json_path": "social/campaigns/2026-10-01-podcast-be-3-petrodollars-and-paradox.json",
           "markdown_path": "social/campaigns/2026-10-01-podcast-be-3-petrodollars-and-paradox.md",
           "x_voice_pattern": "observation"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-15-podcast-be-3-petrodollars-and-paradox",
+          "generated_at": "2026-11-15T19:32:16.517989+00:00",
+          "json_path": "social/campaigns/2026-11-15-podcast-be-3-petrodollars-and-paradox.json",
+          "markdown_path": "social/campaigns/2026-11-15-podcast-be-3-petrodollars-and-paradox.md",
+          "x_voice_pattern": "reframing"
         }
       ]
     },
@@ -477,6 +485,14 @@
           "json_path": "social/campaigns/2026-10-01-podcast-be-4-the-zakat-alternative.json",
           "markdown_path": "social/campaigns/2026-10-01-podcast-be-4-the-zakat-alternative.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-15-podcast-be-4-the-zakat-alternative",
+          "generated_at": "2026-11-15T19:32:38.315250+00:00",
+          "json_path": "social/campaigns/2026-11-15-podcast-be-4-the-zakat-alternative.json",
+          "markdown_path": "social/campaigns/2026-11-15-podcast-be-4-the-zakat-alternative.md",
+          "x_voice_pattern": "content_share"
         }
       ]
     },
