@@ -517,11 +517,8 @@ def regenerate_blog_html(articles_db: List[Dict], project_root: Path) -> bool:
             if a.get('category', '').lower() in ['islamic principles', 'scripture']
         ][:3]
 
-        ticker_items = [
-            {'label': 'Brent Crude', 'value': '$75.20', 'change': '-0.8%', 'direction': 'down'},
-            {'label': 'Gold', 'value': '$2,842', 'change': '+0.3%', 'direction': 'up'},
-            {'label': 'Islamic Finance AUM', 'value': '$4.5T', 'change': '+11.3%', 'direction': 'up'},
-        ]
+        # The shared market-ticker.js reads dated, sourced reference data.
+        # Never generate static prices or market changes into the newspaper.
 
         context = {
             'current_date': datetime.now().strftime('%A, %B %d, %Y'),
@@ -531,7 +528,6 @@ def regenerate_blog_html(articles_db: List[Dict], project_root: Path) -> bool:
             'oic_articles': oic_articles,
             'opinion_articles': opinion_articles,
             'scripture_articles': scripture_articles,
-            'ticker_items': ticker_items,
         }
 
         html_content = template.render(**context)

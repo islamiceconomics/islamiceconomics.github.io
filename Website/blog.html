@@ -273,79 +273,7 @@
       color: var(--color-primary);
     }
 
-    /* --- Data Ticker Strip --- */
-    .tj-ticker {
-      background: var(--color-primary);
-      color: #fff;
-      padding: 0.55rem 0;
-      font-family: var(--font-sans);
-      font-size: 0.76rem;
-      overflow: hidden;
-      margin-bottom: 2rem;
-      position: relative;
-      display: none;
-    }
-    .tj-ticker.tj-ticker-visible {
-      display: block;
-    }
-    .tj-ticker-track {
-      display: flex;
-      width: max-content;
-      animation: tickerScroll 45s linear infinite;
-    }
-    .tj-ticker-track:hover { animation-play-state: paused; }
-    @keyframes tickerScroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .tj-ticker-inner {
-      display: flex;
-      gap: 2.5rem;
-      white-space: nowrap;
-      padding: 0 1.25rem;
-    }
-    .tj-ticker-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      flex-shrink: 0;
-    }
-    .tj-ticker-sep {
-      opacity: 0.3;
-      font-size: 0.6rem;
-      flex-shrink: 0;
-    }
-    .tj-ticker-label { opacity: 0.7; }
-    .tj-ticker-value { font-weight: 700; }
-    .tj-ticker-change { font-weight: 600; }
-    .tj-ticker-up { color: #4ade80; }
-    .tj-ticker-down { color: #f87171; }
-    .tj-ticker-loading {
-      text-align: center;
-      opacity: 0.6;
-      font-style: italic;
-      padding: 0 1rem;
-    }
-    .tj-ticker-live {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-right: 0.5rem;
-      font-weight: 700;
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .tj-ticker-dot {
-      width: 6px; height: 6px;
-      background: #4ade80;
-      border-radius: 50%;
-      animation: tickerPulse 1.5s ease-in-out infinite;
-    }
-    @keyframes tickerPulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
+    /* Market ticker styles are shared across language editions. */
 
     /* --- Newsletter Banner --- */
     .tj-newsletter {
@@ -437,6 +365,7 @@
       .tj-ticker-track { animation-duration: 30s; }
     }
     </style>
+<link rel="stylesheet" href="css/market-ticker.css">
 </head>
 <body>
 <!-- Navigation -->
@@ -481,10 +410,10 @@
 <p class="tj-masthead-tagline">News, Analysis &amp; Commentary on the Global Islamic Economy</p>
 </div>
 </header>
-<!-- Live Data Ticker -->
-<div class="tj-ticker" id="tjTicker">
+<!-- Dated market reference data -->
+<div class="tj-ticker" id="tjTicker" aria-label="Market reference data">
 <div class="container" style="overflow:hidden;">
-<div class="tj-ticker-loading" id="tjTickerLoading">Loading market data...</div>
+<div class="tj-ticker-loading" id="tjTickerLoading" role="status">Loading market data...</div>
 <div class="tj-ticker-track" id="tjTickerTrack" style="display:none;"></div>
 </div>
 </div>
@@ -717,238 +646,8 @@
       });
     });
 
-    // ─── Live Ticker ─────────────────────────────────────────
-    (function() {
-      const CACHE_KEY = 'tj_ticker_cache';
-      const CACHE_TTL = 3600000; // 1 hour
-
-      // Static data (annual figures that don't change daily)
-      const staticItems = [
-        { label: 'Islamic Finance AUM', value: '$4.5T', change: '+11.3%', dir: 'up' },
-        { label: 'Global Sukuk', value: '$236B', change: '+8.1%', dir: 'up' },
-        { label: 'IEA Reserve Release', value: '400M bbl', change: 'Historic', dir: 'down' },
-        { label: 'IRN Inflation', value: '48.6%', change: '+6.4pp', dir: 'up' },
-        { label: 'Hormuz Disruption', value: '~20%', change: 'of global oil' },
-        { label: 'IDN Growth', value: '5.0%', change: '+0.2pp', dir: 'up' }
-      ];
-
-      // Fallback values if APIs fail (updated Feb 2026)
-      const fallback = {
-        gold: 5200, brent: 91.00,
-        currencies: { MYR: 4.47, PKR: 279, SAR: 3.75, TRY: 36.2, IDR: 16250, BDT: 121, EGP: 50.5 }
-      };
-
-      function getCached() {
-        try {
-          const raw = sessionStorage.getItem(CACHE_KEY);
-          if (!raw) return null;
-          const c = JSON.parse(raw);
-          if (Date.now() - c.ts > CACHE_TTL) return null;
-          return c.data;
-        } catch(e) { return null; }
-      }
-      function setCache(data) {
-        try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data })); }
-        catch(e) {}
-      }
-
-      // Fetch OIC currency rates (tries two free APIs)
-      async function fetchCurrencies() {
-        const symbols = 'MYR,PKR,SAR,TRY,IDR,BDT,EGP';
-        const urls = [
-          'https://api.frankfurter.app/latest?from=USD&to=' + symbols,
-          'https://api.frankfurter.dev/latest?from=USD&to=' + symbols
-        ];
-        for (const url of urls) {
-          try {
-            const resp = await fetch(url, { signal: AbortSignal.timeout(5000) });
-            if (resp.ok) { const d = await resp.json(); return d.rates; }
-          } catch(e) {}
-        }
-        throw new Error('All currency APIs failed');
-      }
-
-      // Fetch yesterday's rates for change calculation
-      async function fetchYesterdayCurrencies() {
-        const symbols = 'MYR,PKR,SAR,TRY,IDR,BDT,EGP';
-        const yd = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
-        const urls = [
-          'https://api.frankfurter.app/' + yd + '?from=USD&to=' + symbols,
-          'https://api.frankfurter.dev/' + yd + '?from=USD&to=' + symbols
-        ];
-        for (const url of urls) {
-          try {
-            const resp = await fetch(url, { signal: AbortSignal.timeout(5000) });
-            if (resp.ok) { const d = await resp.json(); return d.rates; }
-          } catch(e) {}
-        }
-        return null;
-      }
-
-      // Fetch gold price (tries multiple free APIs)
-      async function fetchGold() {
-        // Try metals.dev first
-        try {
-          const resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=toz', { signal: AbortSignal.timeout(5000) });
-          if (resp.ok) {
-            const d = await resp.json();
-            if (d.metals && d.metals.gold && d.metals.gold > 3000) return Math.round(d.metals.gold);
-          }
-        } catch(e) {}
-        // Try goldapi.io public endpoint
-        try {
-          const resp = await fetch('https://www.goldapi.io/api/XAU/USD', {
-            headers: { 'x-access-token': 'goldapi-demo' },
-            signal: AbortSignal.timeout(5000)
-          });
-          if (resp.ok) {
-            const d = await resp.json();
-            if (d.price && d.price > 3000) return Math.round(d.price);
-          }
-        } catch(e) {}
-        return null;
-      }
-
-      // Fetch Brent crude oil price
-      async function fetchOil() {
-        try {
-          const resp = await fetch('https://api.metals.dev/v1/latest?api_key=demo&currency=USD&unit=bbl', { signal: AbortSignal.timeout(5000) });
-          if (resp.ok) {
-            const d = await resp.json();
-            if (d.metals && d.metals.brent) return parseFloat(d.metals.brent.toFixed(2));
-          }
-        } catch(e) {}
-        return null;
-      }
-
-      function buildTickerHTML(items) {
-        const inner = items.map(it => {
-          let html = '<div class="tj-ticker-item">';
-          html += '<span class="tj-ticker-label">' + it.label + '</span>';
-          html += '<span class="tj-ticker-value">' + it.value + '</span>';
-          if (it.change) {
-            html += '<span class="tj-ticker-change tj-ticker-' + (it.dir || 'up') + '">' + it.change + '</span>';
-          }
-          html += '</div>';
-          return html;
-        }).join('<span class="tj-ticker-sep">|</span>');
-
-        // Duplicate for seamless scroll loop
-        const liveTag = '<span class="tj-ticker-live"><span class="tj-ticker-dot"></span> LIVE</span>';
-        const set = '<div class="tj-ticker-inner">' + liveTag + inner + '</div>';
-        return set + set;
-      }
-
-      function fmtCurrency(val, dec) {
-        return dec === 0 ? Math.round(val).toLocaleString() : val.toFixed(dec);
-      }
-
-      function pctChange(now, prev) {
-        if (!prev || prev === 0) return null;
-        const pct = ((now - prev) / prev * 100);
-        const sign = pct >= 0 ? '+' : '';
-        return { change: sign + pct.toFixed(1) + '%', dir: pct >= 0 ? 'up' : 'down' };
-      }
-
-      async function loadTicker() {
-        // Check cache first
-        const cached = getCached();
-        if (cached) {
-          renderTicker(cached);
-          return;
-        }
-
-        let liveItems = [];
-        try {
-          // Fetch currencies (and optionally yesterday's for % change)
-          const [rates, ydRates, goldPrice, oilPrice] = await Promise.allSettled([
-            fetchCurrencies(),
-            fetchYesterdayCurrencies(),
-            fetchGold(),
-            fetchOil()
-          ]);
-
-          const curr = rates.status === 'fulfilled' ? rates.value : fallback.currencies;
-          const yd = ydRates.status === 'fulfilled' ? ydRates.value : null;
-          const gold = goldPrice.status === 'fulfilled' && goldPrice.value ? goldPrice.value : fallback.gold;
-          const oil = oilPrice.status === 'fulfilled' && oilPrice.value ? oilPrice.value : fallback.brent;
-
-          // Gold
-          const goldItem = { label: 'Gold', value: '$' + gold.toLocaleString() };
-          liveItems.push(goldItem);
-
-          // Brent Crude Oil
-          const oilItem = { label: 'Brent Crude', value: '$' + oil.toFixed(2) };
-          liveItems.push(oilItem);
-
-          // OIC Currencies
-          const currencyMap = [
-            { code: 'MYR', label: 'MYR/USD', dec: 2 },
-            { code: 'PKR', label: 'PKR/USD', dec: 0 },
-            { code: 'SAR', label: 'SAR/USD', dec: 2 },
-            { code: 'TRY', label: 'TRY/USD', dec: 2 },
-            { code: 'IDR', label: 'IDR/USD', dec: 0 },
-            { code: 'BDT', label: 'BDT/USD', dec: 1 },
-            { code: 'EGP', label: 'EGP/USD', dec: 1 }
-          ];
-
-          currencyMap.forEach(function(c) {
-            if (!curr[c.code]) return;
-            const item = { label: c.label, value: fmtCurrency(curr[c.code], c.dec) };
-            if (yd && yd[c.code]) {
-              const ch = pctChange(curr[c.code], yd[c.code]);
-              if (ch) { item.change = ch.change; item.dir = ch.dir; }
-            }
-            liveItems.push(item);
-          });
-
-          // Add static annual data
-          liveItems = liveItems.concat(staticItems);
-          setCache(liveItems);
-
-        } catch(e) {
-          // Full fallback
-          liveItems = [
-            { label: 'Gold', value: '$' + fallback.gold.toLocaleString() },
-            { label: 'Brent Crude', value: '$' + fallback.brent },
-            { label: 'MYR/USD', value: fallback.currencies.MYR.toFixed(2) },
-            { label: 'PKR/USD', value: String(fallback.currencies.PKR) },
-            { label: 'SAR/USD', value: fallback.currencies.SAR.toFixed(2) },
-            { label: 'TRY/USD', value: fallback.currencies.TRY.toFixed(1) },
-          ].concat(staticItems);
-        }
-
-        renderTicker(liveItems);
-      }
-
-      function renderTicker(items) {
-        var track = document.getElementById('tjTickerTrack');
-        var loading = document.getElementById('tjTickerLoading');
-        var ticker = document.getElementById('tjTicker');
-        track.innerHTML = buildTickerHTML(items);
-        loading.style.display = 'none';
-        track.style.display = 'flex';
-        ticker.classList.add('tj-ticker-visible');
-      }
-
-      function hideTicker() {
-        var ticker = document.getElementById('tjTicker');
-        ticker.style.display = 'none';
-      }
-
-      var tickerTimeout = setTimeout(hideTicker, 5000);
-
-      async function loadTickerWithTimeout() {
-        try {
-          await loadTicker();
-          clearTimeout(tickerTimeout);
-        } catch(e) {
-          hideTicker();
-        }
-      }
-
-      loadTickerWithTimeout();
-    })();
+    // Market reference ticker is loaded from the shared script below.
     </script>
+<script src="js/market-ticker.js" defer></script>
 </body>
 </html>

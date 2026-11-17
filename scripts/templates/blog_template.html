@@ -258,35 +258,7 @@
       color: var(--color-primary);
     }
 
-    /* --- Data Ticker Strip --- */
-    .tj-ticker {
-      background: var(--color-primary);
-      color: #fff;
-      padding: 0.55rem 0;
-      font-family: var(--font-sans);
-      font-size: 0.76rem;
-      overflow: hidden;
-      margin-bottom: 2rem;
-    }
-    .tj-ticker-inner {
-      display: flex;
-      gap: 2.5rem;
-      overflow-x: auto;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      padding: 0 1rem;
-    }
-    .tj-ticker-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      flex-shrink: 0;
-    }
-    .tj-ticker-label { opacity: 0.7; }
-    .tj-ticker-value { font-weight: 700; }
-    .tj-ticker-change { font-weight: 600; }
-    .tj-ticker-up { color: #4ade80; }
-    .tj-ticker-down { color: #f87171; }
+    /* Market ticker styles are shared across language editions. */
 
     /* --- Newsletter Banner --- */
     .tj-newsletter {
@@ -369,6 +341,7 @@
       .tj-newsletter-form { flex-direction: column; }
     }
     </style>
+<link rel="stylesheet" href="css/market-ticker.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -413,39 +386,12 @@
       </div>
     </header>
 
-    <!-- Data Ticker -->
-    <div class="tj-ticker">
+    <!-- Dated reference data, never hardcoded market prices. -->
+    <div class="tj-ticker" id="tjTicker" aria-label="Market reference data">
       <div class="container">
-        <div class="tj-ticker-inner">
-          {% if ticker_items %}
-            {% for item in ticker_items %}
-              <div class="tj-ticker-item">
-                <span class="tj-ticker-label">{{ item.label }}</span>
-                <span class="tj-ticker-value">{{ item.value }}</span>
-                {% if item.change %}
-                  <span class="tj-ticker-change {% if item.direction == 'up' %}tj-ticker-up{% elif item.direction == 'down' %}tj-ticker-down{% endif %}">{{ item.change }}</span>
-                {% endif %}
-              </div>
-            {% endfor %}
-          {% else %}
-            <!-- Fallback ticker items -->
-            <div class="tj-ticker-item">
-              <span class="tj-ticker-label">Brent Crude</span>
-              <span class="tj-ticker-value">$75.20</span>
-              <span class="tj-ticker-change tj-ticker-down">-0.8%</span>
-            </div>
-            <div class="tj-ticker-item">
-              <span class="tj-ticker-label">Gold</span>
-              <span class="tj-ticker-value">$2,842</span>
-              <span class="tj-ticker-change tj-ticker-up">+0.3%</span>
-            </div>
-            <div class="tj-ticker-item">
-              <span class="tj-ticker-label">Islamic Finance AUM</span>
-              <span class="tj-ticker-value">$4.5T</span>
-              <span class="tj-ticker-change tj-ticker-up">+11.3%</span>
-            </div>
-          {% endif %}
-        </div>
+        <div class="tj-ticker-loading" id="tjTickerLoading" role="status">Loading reference data…</div>
+        <div class="tj-ticker-track" id="tjTickerTrack" style="display:none;"></div>
+        <noscript><a href="data/market-snapshot.json">Reference quotes and source dates</a></noscript>
       </div>
     </div>
 
@@ -643,5 +589,6 @@
       });
     });
     </script>
+<script src="js/market-ticker.js" defer></script>
 </body>
 </html>

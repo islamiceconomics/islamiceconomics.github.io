@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    # Check the latest published figures daily after European reference rates.
+    - cron: '17 18 * * *'
   workflow_dispatch:
 
 permissions:
@@ -16,6 +19,7 @@ concurrency:
 
 jobs:
   deploy:
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -24,12 +28,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Restore last available market observations
+        uses: actions/cache/restore@v4
+        with:
+          path: .market-data-cache
+          key: market-snapshot-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: market-snapshot-v1-
+
+      - name: Refresh dated market snapshots
+        id: market
+        continue-on-error: true
+        run: python3 scripts/refresh_market_data.py --cache .market-data-cache/market-snapshot.json
+
+      - name: Validate market data handling
+        run: |
+          node --check Website/js/market-ticker.js
+          node --test scripts/test_market_ticker.cjs
+          python3 -m unittest scripts.test_refresh_market_data
+
+      - name: Preserve validated observations for the next refresh
+        uses: actions/cache/save@v4
+        with:
+          path: .market-data-cache
+          key: market-snapshot-v1-${{ github.run_id }}-${{ github.run_attempt }}
+
       - name: Setup Quarto
+        if: github.event_name != 'schedule'
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.6.42"
 
       - name: Render Quarto Book
+        if: github.event_name != 'schedule'
         continue-on-error: true
         run: |
           cd foundations-book
@@ -46,3 +76,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Report unavailable market sources
+        if: always() && steps.market.outcome == 'failure'
+        run: |
+          echo '::error::Some market sources could not be refreshed. Last valid figures were retained with their observation dates. See the refresh step and market-snapshot.json.'
+          exit 1

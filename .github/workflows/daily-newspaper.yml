@@ -1,8 +1,8 @@
 name: Daily Al-Tijarah Newspaper
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
+  # Articles remain a manual editorial task. The deployment workflow refreshes
+  # sourced market facts daily without generating articles or opinions.
   workflow_dispatch:
     inputs:
       force:
