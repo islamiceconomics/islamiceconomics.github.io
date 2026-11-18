@@ -1306,6 +1306,14 @@
           "json_path": "social/campaigns/2026-10-03-podcast-mm-6-building-the-system.json",
           "markdown_path": "social/campaigns/2026-10-03-podcast-mm-6-building-the-system.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-18-podcast-mm-6-building-the-system",
+          "generated_at": "2026-11-18T21:42:25.992159+00:00",
+          "json_path": "social/campaigns/2026-11-18-podcast-mm-6-building-the-system.json",
+          "markdown_path": "social/campaigns/2026-11-18-podcast-mm-6-building-the-system.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -2094,6 +2102,14 @@
           "json_path": "social/campaigns/2026-10-03-podcast-trt-1-why-governments-tax-and-spend.json",
           "markdown_path": "social/campaigns/2026-10-03-podcast-trt-1-why-governments-tax-and-spend.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-18-podcast-trt-1-why-governments-tax-and-spend",
+          "generated_at": "2026-11-18T21:42:47.650810+00:00",
+          "json_path": "social/campaigns/2026-11-18-podcast-trt-1-why-governments-tax-and-spend.json",
+          "markdown_path": "social/campaigns/2026-11-18-podcast-trt-1-why-governments-tax-and-spend.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
