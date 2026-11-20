@@ -1890,6 +1890,14 @@
           "json_path": "social/campaigns/2026-10-05-podcast-re-2-the-growth-engine.json",
           "markdown_path": "social/campaigns/2026-10-05-podcast-re-2-the-growth-engine.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-20-podcast-re-2-the-growth-engine",
+          "generated_at": "2026-11-20T21:40:50.031817+00:00",
+          "json_path": "social/campaigns/2026-11-20-podcast-re-2-the-growth-engine.json",
+          "markdown_path": "social/campaigns/2026-11-20-podcast-re-2-the-growth-engine.md",
+          "x_voice_pattern": "question"
         }
       ]
     },
@@ -1934,6 +1942,14 @@
           "json_path": "social/campaigns/2026-10-05-podcast-re-3-who-saves-and-why.json",
           "markdown_path": "social/campaigns/2026-10-05-podcast-re-3-who-saves-and-why.md",
           "x_voice_pattern": "question"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-20-podcast-re-3-who-saves-and-why",
+          "generated_at": "2026-11-20T21:41:14.655442+00:00",
+          "json_path": "social/campaigns/2026-11-20-podcast-re-3-who-saves-and-why.json",
+          "markdown_path": "social/campaigns/2026-11-20-podcast-re-3-who-saves-and-why.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -1978,6 +1994,14 @@
           "json_path": "social/campaigns/2026-10-05-podcast-re-4-where-investment-goes.json",
           "markdown_path": "social/campaigns/2026-10-05-podcast-re-4-where-investment-goes.md",
           "x_voice_pattern": "connection"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-20-podcast-re-4-where-investment-goes",
+          "generated_at": "2026-11-20T21:41:36.582999+00:00",
+          "json_path": "social/campaigns/2026-11-20-podcast-re-4-where-investment-goes.json",
+          "markdown_path": "social/campaigns/2026-11-20-podcast-re-4-where-investment-goes.md",
+          "x_voice_pattern": "historical_fact"
         }
       ]
     },
@@ -2022,6 +2046,14 @@
           "json_path": "social/campaigns/2026-10-06-podcast-re-5-work-wages-and-worth.json",
           "markdown_path": "social/campaigns/2026-10-06-podcast-re-5-work-wages-and-worth.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-20-podcast-re-5-work-wages-and-worth",
+          "generated_at": "2026-11-20T21:41:58.786367+00:00",
+          "json_path": "social/campaigns/2026-11-20-podcast-re-5-work-wages-and-worth.json",
+          "markdown_path": "social/campaigns/2026-11-20-podcast-re-5-work-wages-and-worth.md",
+          "x_voice_pattern": "connection"
         }
       ]
     },
@@ -2066,6 +2098,14 @@
           "json_path": "social/campaigns/2026-10-06-podcast-re-6-the-alternative-growth-path.json",
           "markdown_path": "social/campaigns/2026-10-06-podcast-re-6-the-alternative-growth-path.md",
           "x_voice_pattern": "historical_fact"
+        },
+        {
+          "buffer": {},
+          "campaign_id": "2026-11-20-podcast-re-6-the-alternative-growth-path",
+          "generated_at": "2026-11-20T21:43:23.211125+00:00",
+          "json_path": "social/campaigns/2026-11-20-podcast-re-6-the-alternative-growth-path.json",
+          "markdown_path": "social/campaigns/2026-11-20-podcast-re-6-the-alternative-growth-path.md",
+          "x_voice_pattern": "observation"
         }
       ]
     },
